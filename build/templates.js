@@ -23,6 +23,7 @@ function head(page, site) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className += ' js';</script>
 <title>${esc(page.seoTitle)}</title>
 <meta name="description" content="${esc(page.seoDescription)}">${noindex}
 <link rel="canonical" href="${url}">

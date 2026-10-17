@@ -1,7 +1,8 @@
 'use strict';
-/* QA: validate internal links, in-page anchors, images, and basic HTML sanity. */
+/* QA: validate internal links, in-page anchors, images, JS syntax, and basic HTML sanity. */
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 
 const DIST = path.join(__dirname, '..', 'dist');
 
@@ -10,6 +11,15 @@ function walk(dir, out = []) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, out);
     else if (e.name.endsWith('.html')) out.push(p);
+  }
+  return out;
+}
+
+function walkExt(dir, ext, out = []) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) walkExt(p, ext, out);
+    else if (e.name.endsWith(ext)) out.push(p);
   }
   return out;
 }
@@ -90,8 +100,36 @@ files.forEach((f) => {
   if (openDiv !== closeDiv) errors.push(rel + ': div open/close mismatch ' + openDiv + '/' + closeDiv);
 });
 
+/* ---------- JS assets must parse (guards against blank-page regressions) ---------- */
+const jsAssets = path.join(DIST, 'assets', 'js');
+let jsCount = 0;
+if (fs.existsSync(jsAssets)) {
+  walkExt(jsAssets, '.js').forEach((f) => {
+    jsCount++;
+    const rel = path.relative(DIST, f).replace(/\\/g, '/');
+    try {
+      new vm.Script(fs.readFileSync(f, 'utf8'), { filename: rel });
+    } catch (err) {
+      errors.push(rel + ': JS SYNTAX ERROR — ' + err.message);
+    }
+  });
+}
+
+/* ---------- CSS assets must be non-empty ---------- */
+const cssAssets = path.join(DIST, 'assets', 'css');
+let cssCount = 0;
+if (fs.existsSync(cssAssets)) {
+  walkExt(cssAssets, '.css').forEach((f) => {
+    cssCount++;
+    if (!fs.readFileSync(f, 'utf8').trim()) {
+      errors.push(path.relative(DIST, f).replace(/\\/g, '/') + ': CSS file is empty');
+    }
+  });
+}
+
 console.log('Files scanned: ' + files.length);
 console.log('Links checked: ' + linkCount + ' (' + anchorCount + ' in-page anchors)');
+console.log('JS assets parsed: ' + jsCount + ', CSS assets checked: ' + cssCount);
 console.log('\n--- ERRORS (' + errors.length + ') ---');
 errors.forEach((e) => console.log('  ' + e));
 console.log('\n--- WARNINGS (' + warnings.length + ') ---');

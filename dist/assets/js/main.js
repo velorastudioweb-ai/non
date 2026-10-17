@@ -236,29 +236,27 @@
  });
  });
  }
- /* ---------------- Footer year ---------------- */
- $$('[data-year]').forEach(function (el){ el.textContent = String(new Date().getFullYear()); });
+  /* ---------------- Footer year ---------------- */
+  $$('[data-year]').forEach(function (el){ el.textContent = String(new Date().getFullYear()); });
+  /* ---------------- Subtle motion (tilt) ---------------- */
+  if (!prefersReduced){
+    $$('.card,.icon-card,.gallery-item,.benefit').forEach(function (el){
+      el.addEventListener('mousemove',function (e){
+        var r = el.getBoundingClientRect();
+        var x = e.clientX - r.left,y = e.clientY - r.top;
+        var cx = r.width/2,cy = r.height/2;
+        var rx = (y-cy)/cy*-1.5,ry = (x-cx)/cx*1.5;
+        el.style.transform = 'translateY(-6px) rotateX('+rx+'deg) rotateY('+ry+'deg)';
+        el.style.boxShadow = 'var(--shadow-lg)';
+      },{passive:true});
+      el.addEventListener('mouseleave',function (){
+        el.style.transform = '';
+        el.style.boxShadow = '';
+        el.style.transition = 'transform .5s var(--ease),box-shadow .5s var(--ease)';
+      });
+      el.addEventListener('mouseenter',function (){
+        el.style.transition = '';
+      });
+    });
+  }
 })();
- // reveal-on-scroll
- var reveals = document.querySelectorAll('.reveal');
- if (reveal && reveals.length){
- reveals.forEach(function (el){ reveal.observe(el); });
- }
- // subtle motion effects
- var motionEls = document.querySelectorAll('.card,.icon-card,.gallery-item,.benefit');
- motionEls.forEach(function (el){
- el.addEventListener('mousemove',function (e){
- var r = el.getBoundingClientRect();
- var x = e.clientX - r.left,y = e.clientY - r.top;
- var cx = r.width/2,cy = r.height/2;
- var rx = (y-cy)/cy*-1.5,ry = (x-cx)/cx*1.5;
- el.style.transform = 'translateY(-6px) rotateX('+rx+'deg) rotateY('+ry+'deg)';
- el.style.boxShadow = 'var(--shadow-lg)';
- },{passive:true});
- el.addEventListener('mouseleave',function (){
- el.style.transform = ''; el.style.boxShadow = ''; el.style.transition='transform .5s var(--ease),box-shadow .5s var(--ease)';
- });
- el.addEventListener('mouseenter',function (){ el.style.transition=''; });
- });
- };
-}());
