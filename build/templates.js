@@ -42,7 +42,7 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400..700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Gilda+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${site.base}assets/css/styles.css">
 <link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
 ${schema}
