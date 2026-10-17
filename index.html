@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Екатерина Каштанова — эстетика лица и тела. Премиальная косметология и аппаратные методики.">
+  <title>Екатерина Каштанова — эстетика лица и тела</title>
+
+  <!-- Google Fonts: Cyrillic subset -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marck+Script&family=Montserrat:wght@300;400&family=Playfair+Display+SC&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SVG filter for film-grain overlay -->
+  <svg class="svg-filters" width="0" height="0" aria-hidden="true">
+    <defs>
+      <filter id="noiseFilter" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.35"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Sticky navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#about">О враче</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#contacts" class="btn-outline">Записаться</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Главный экран">
+      <!-- Abstract silk/velvet petals -->
+      <div class="petals" aria-hidden="true">
+        <div class="petal petal-1"></div>
+        <div class="petal petal-2"></div>
+        <div class="petal petal-3"></div>
+        <div class="petal petal-4"></div>
+      </div>
+
+      <!-- Texture overlays -->
+      <div class="grain" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <!-- Centered logo block -->
+      <div class="hero-content">
+        <div class="monogram" aria-hidden="true">
+          <svg viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Монограмма ЕК">
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C9A66B"/>
+                <stop offset="50%" stop-color="#E8D3A3"/>
+                <stop offset="100%" stop-color="#B08A4E"/>
+              </linearGradient>
+            </defs>
+            <!-- Ornate calligraphic Е -->
+            <text x="10" y="125" font-family="'Marck Script', 'Bad Script', cursive" font-size="150" fill="url(#goldGradient)">Е</text>
+            <!-- Classic serif К -->
+            <text x="85" y="135" font-family="'Cormorant Garamond', serif" font-size="150" fill="url(#goldGradient)">К</text>
+          </svg>
+        </div>
+
+        <h1 class="brand-name">Екатерина Каштанова</h1>
+        <p class="tagline">эстетика лица и тела</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2 class="section-title">Услуги</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Инъекционная косметология</h3>
+          <p>Контурная пластика, ботулинотерапия и биоревитализация для естественной свежести лица.</p>
+        </article>
+        <article class="card">
+          <h3>Аппаратные методики</h3>
+          <p>SMAS-лифтинг, RF-омоложение и лазерные процедуры, подобранные индивидуально.</p>
+        </article>
+        <article class="card">
+          <h3>Эстетика тела</h3>
+          <p>Коррекция фигуры, липолитики и уходовые программы для гармоничного силуэта.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-inner">
+        <h2 class="section-title">О враче</h2>
+        <p>Екатерина Каштанова — врач-косметолог с многолетним опытом. Каждая процедура начинается с внимательного диагностического приёма и заканчивается естественным, но заметным результатом.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacts" class="footer">
+    <p class="footer-brand">Екатерина Каштанова</p>
+    <address>
+      <a href="tel:+70000000000">+7 (000) 000-00-00</a><br>
+      <a href="mailto:hello@kashtanova.ru">hello@kashtanova.ru</a>
+    </address>
+    <p class="footer-copy">© 2026 Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
