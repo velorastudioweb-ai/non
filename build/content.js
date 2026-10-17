@@ -774,9 +774,9 @@ pages.push({
   breadcrumb: [{ label: 'About', href: '/about-us/' }, { label: 'Dr. Vikas Singh' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'Physician', name: 'Dr. Vikas Singh', url: site.url + '/about-dr-vikas-singh/', worksFor: { '@type': 'MedicalBusiness', name: site.name } }],
   blocks: [
-    { type: 'split', eyebrow: 'A global perspective', heading: 'Aesthetic, regenerative and longevity medicine',
-      body: '<p>Dr. Vikas Singh is a cosmetic dermatologist, hair transplant surgeon and longevity &amp; regenerative medicine expert. His work spans more than 20 years across cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine.</p>' +
-        '<p>His clinical philosophy is built around four connected ideas: <strong>healthspan</strong>, <strong>appearance</strong>, <strong>regeneration</strong> and <strong>longevity</strong> — treating how a patient looks and how they age as part of the same conversation.</p>',
+    { type: 'split', eyebrow: 'A global perspective', heading: 'A career built on innovation',
+      body: '<p>Dr. Vikas Singh is a cosmetic dermatologist, hair transplant surgeon and longevity &amp; regenerative medicine expert.</p>' +
+        '<p>For more than 20 years he has worked across the evolving fields of cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine. His stated philosophy moves beyond conventional cosmetic treatment toward a broader idea of <strong>healthspan</strong> — bringing <strong>appearance</strong>, <strong>regeneration</strong> and <strong>longevity</strong> into a single conversation about how a patient looks and how they age.</p>',
       slot: 'Portrait — Dr. Vikas Singh', slotNote: 'Licensed professional portrait to be supplied',
       script: 'Understanding first' },
     { type: 'icon-grid', alt: true, eyebrow: 'At a glance', heading: 'A career built on innovation', cols: 4,
@@ -874,6 +874,15 @@ pages.push({
         { icon: 'discretion', title: 'Continuity', text: 'Pre-treatment planning, aftercare and follow-up are part of the same pathway.' }
       ]
     },
+    { type: 'icon-grid', eyebrow: 'What we value', heading: 'Science. Artistry. Care.', cols: 3,
+      items: [
+        { icon: 'scale', title: 'Multidisciplinary expertise', text: 'Specialists from several disciplines contributing to one plan.' },
+        { icon: 'personalised', title: 'Personalised treatments', text: 'Options matched to the individual, not a template.' },
+        { icon: 'sparkle', title: 'Advanced technology', text: 'Technology selected for the clinical need.' },
+        { icon: 'natural', title: 'Natural beauty', text: 'Aims that respect individual proportion and character.' },
+        { icon: 'evidence', title: 'Long-term wellness', text: 'Care that considers healthspan, not only appearance.' }
+      ]
+    },
     stdCta({ heading: 'Meet the team at a consultation' })
   ]
 });
@@ -898,6 +907,25 @@ pages.push({
         '<p>Telephone: <a href="tel:' + site.contact.phone.replace(/\s/g, '') + '">' + site.contact.phone + '</a></p>' +
         '<p>The head office houses consultation and treatment rooms, a VIP lounge and a skin and wellness boutique, offering advanced aesthetic dermatology, hair restoration, regenerative medicine, anti-ageing and longevity programmes.</p>',
       slot: 'Hong Kong head office', slotNote: 'Licensed clinic photography to be supplied', script: 'Where beauty, science and longevity meet' },
+    { type: 'icon-grid', eyebrow: 'At our head office', heading: 'Services', cols: 4,
+      items: [
+        { icon: 'evidence', title: 'Aesthetic dermatology', text: 'Advanced aesthetic dermatology.' },
+        { icon: 'personalised', title: 'Hair restoration', text: 'Hair transplant and hair restoration.' },
+        { icon: 'shape', title: 'Body contouring', text: 'Body contouring and non-surgical solutions.' },
+        { icon: 'safety', title: 'Regenerative medicine', text: 'Regenerative medicine and stem-cell therapy, subject to evidence and regulation.' },
+        { icon: 'clock', title: 'Anti-ageing & longevity', text: 'Anti-ageing and longevity programmes.' },
+        { icon: 'sparkle', title: 'Skin & beauty lounge', text: 'A premium skin and beauty lounge.' },
+        { icon: 'natural', title: 'Wellness programmes', text: 'Personalised wellness programmes.' }
+      ]
+    },
+    { type: 'cards', alt: true, cols: 4, eyebrow: 'Inside the clinic', heading: 'Spaces designed around privacy and care',
+      items: [
+        { title: 'Consultation room', text: 'Private, personalised, premium.', slot: 'Consultation room', slotNote: 'Licensed clinic photography to be supplied' },
+        { title: 'Treatment room', text: 'Advanced technology, considered care.', slot: 'Treatment room', slotNote: 'Licensed clinic photography to be supplied' },
+        { title: 'VIP lounge', text: 'Luxury, comfort and discretion.', slot: 'VIP lounge', slotNote: 'Licensed clinic photography to be supplied' },
+        { title: 'Skin & wellness boutique', text: 'Curated brands with expert guidance.', slot: 'Wellness boutique', slotNote: 'Licensed clinic photography to be supplied' }
+      ]
+    },
     { type: 'notice', icon: 'pin', title: 'Confirm details before travelling',
       text: 'The head office address and telephone number above are as supplied by the clinic. Street addresses, opening hours and directions for international locations are published once confirmed by each location. Call ahead to confirm availability.' },
     { type: 'icon-grid', alt: true, eyebrow: 'International presence', heading: 'Clinic locations', cols: 4,
