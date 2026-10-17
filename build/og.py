@@ -9,13 +9,13 @@ from PIL import Image, ImageDraw, ImageFont, ImageChops
 W, H = 1200, 630
 OUT = os.path.join(os.path.dirname(__file__), "..", "public", "assets", "img", "og-cover.png")
 
-BG_DEEP = (46, 7, 15)      # #2E070F
-BG_MAIN = (74, 13, 26)     # #4A0D1A
-BG_VELVET = (110, 20, 39)  # #6E1427
-GLOW = (138, 27, 51)       # #8A1B33
-GOLD = (216, 177, 115)     # #D8B173
-GOLD_LIGHT = (243, 221, 174)
-BLUSH = (226, 184, 174)
+BG_DEEP = (5, 5, 5)         # #050505
+BG_MAIN = (5, 5, 5)         # #050505
+BG_VELVET = (5, 5, 5)       # #050505
+GLOW = (253, 132, 130)      # #FD8482
+GOLD = (253, 132, 130)      # #FD8482
+GOLD_LIGHT = (255, 255, 255)
+BLUSH = (255, 255, 255)
 WHITE = (255, 255, 255)
 
 FONT_DIRS = [
@@ -62,7 +62,7 @@ gdraw = ImageDraw.Draw(glow)
 cx, cy, rad = int(W * 0.8), int(H * 0.22), 560
 for i in range(rad, 0, -4):
     t = 1 - (i / rad)
-    a = (t ** 2)
+    a = (t ** 2) * 0.15
     gdraw.ellipse([cx - i, cy - i, cx + i, cy + i],
                   fill=(int(GLOW[0] * a), int(GLOW[1] * a), int(GLOW[2] * a)))
 img = ImageChops.screen(img, glow)
@@ -73,7 +73,7 @@ hdraw = ImageDraw.Draw(hot)
 hx, hy, hrad = int(W * 0.92), int(H * 0.9), 380
 for i in range(hrad, 0, -4):
     t = 1 - (i / hrad)
-    a = (t ** 2) * 0.35
+    a = (t ** 2) * 0.1
     hdraw.ellipse([hx - i, hy - i, hx + i, hy + i],
                   fill=(int(GOLD[0] * a), int(GOLD[1] * a), int(GOLD[2] * a)))
 img = ImageChops.screen(img, hot)
@@ -91,10 +91,10 @@ for p in petals:
     pts = [(bx + x * s, by + y * s) for (x, y) in p]
     draw.line(pts, fill=GOLD, width=3, joint="curve")
 
-draw.text((96, 232), "QUANTUMHEALTH", font=f_brand, fill=GOLD_LIGHT)
+draw.text((96, 232), "QUANTUMHEALTH", font=f_brand, fill=GOLD)
 draw.text((96, 310), "A More Informed Approach", font=f_title, fill=WHITE)
-draw.text((96, 384), "to Breast Enhancement", font=f_title, fill=WHITE)
-draw.text((96, 480), "Confidence begins with an informed consultation", font=f_tag, fill=BLUSH)
+draw.text((96, 384), "to Breast Enhancement", font=f_title, fill=GOLD)
+draw.text((96, 480), "Confidence begins with an informed consultation", font=f_tag, fill=WHITE)
 
 img.save(OUT, "PNG")
 print("Wrote", os.path.normpath(OUT), img.size)

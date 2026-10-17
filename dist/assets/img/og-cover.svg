@@ -1,29 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="QuantumHealth by Dr. Vikas Singh">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E070F"/>
-      <stop offset=".45" stop-color="#4A0D1A"/>
-      <stop offset="1" stop-color="#6E1427"/>
-    </linearGradient>
     <radialGradient id="glow" cx=".8" cy=".2" r=".7">
-      <stop offset="0" stop-color="#8A1B33" stop-opacity=".75"/>
-      <stop offset="1" stop-color="#8A1B33" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="gold" cx=".9" cy=".9" r=".6">
-      <stop offset="0" stop-color="#D8B173" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#D8B173" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FD8482" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#FD8482" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#050505"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <rect width="1200" height="630" fill="url(#gold)"/>
-  <g transform="translate(96,150)" fill="none" stroke="#D8B173" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(96,150)" fill="none" stroke="#FD8482" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
     <path d="M24 9c3.4 4.6 5 8.7 5 12.4 0 3.9-1.7 7-5 9.6-3.3-2.6-5-5.7-5-9.6C19 17.7 20.6 13.6 24 9Z"/>
     <path d="M10 18c5 .4 8.7 2 11 4.8 2.4 2.9 3.4 6.4 3 10.2-4.5.4-8-1-10.7-4C10.9 26 9.8 22.3 10 18Z"/>
     <path d="M38 18c.2 4.3-.9 8-3.3 11-2.7 3-6.2 4.4-10.7 4-.4-3.8.6-7.3 3-10.2C29.3 20 33 18.4 38 18Z"/>
   </g>
-  <text x="96" y="260" fill="#F3DDAE" font-family="Georgia, serif" font-size="30" letter-spacing="8">QUANTUMHEALTH</text>
+  <text x="96" y="260" fill="#FD8482" font-family="Georgia, serif" font-size="30" letter-spacing="8">QUANTUMHEALTH</text>
   <text x="96" y="360" fill="#FFFFFF" font-family="Georgia, serif" font-size="66">A More Informed Approach</text>
-  <text x="96" y="432" fill="#FFFFFF" font-family="Georgia, serif" font-size="66">to Breast Enhancement</text>
-  <text x="96" y="510" fill="#E2B8AE" font-family="Georgia, serif" font-size="30" font-style="italic">Confidence begins with an informed consultation</text>
+  <text x="96" y="432" fill="#FD8482" font-family="Georgia, serif" font-size="66">to Breast Enhancement</text>
+  <text x="96" y="510" fill="#FFFFFF" font-family="Georgia, serif" font-size="30" font-style="italic">Confidence begins with an informed consultation</text>
 </svg>
