@@ -199,6 +199,7 @@ const home = {
       type: 'cards',
       alt: true,
       cols: 4,
+      ratio: 'ratio-3-4',
       eyebrow: 'Treatments',
       heading: 'A closer look at individual options',
       items: [
@@ -331,7 +332,7 @@ pages.push({
       '<p>Crucially, being non-surgical does not automatically mean a treatment is safe, and not every treatment marketed for this purpose has been demonstrated to reliably increase breast volume. This section is written to help you understand those distinctions before any clinical consultation.</p>' },
     { type: 'notice', icon: 'info', title: 'The most important point',
       text: 'Dermal fillers are not approved for breast enlargement, and the FDA advises against using fillers or other injectable fillers to increase breast size because of potentially serious complications. Regenerative and biostimulatory products require careful scrutiny of their evidence and regulatory status before any claim of benefit is accepted.' },
-    { type: 'cards', cols: 3, alt: true, eyebrow: 'Options covered', heading: 'Non-surgical treatments explained individually',
+    { type: 'cards', cols: 3, alt: true, ratio: 'ratio-3-4', eyebrow: 'Options covered', heading: 'Non-surgical treatments explained individually',
       items: [
         { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications, and the serious safety questions around breast use.', href: '/non-surgical/dermal-fillers/', slot: 'Dermal filler imagery' },
         { title: 'PRP (platelet-rich plasma)', text: 'Prepared from your own blood to concentrate platelets. What it is intended to do, and how evidence is assessed.', href: '/non-surgical/prp/', slot: 'PRP preparation imagery' },
@@ -579,7 +580,7 @@ pages.push({
     { type: 'prose', html:
       '<p>Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat. It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change.</p>' +
       '<p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individual’s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>' },
-    { type: 'cards', alt: true, cols: 3, eyebrow: 'Options', heading: 'Surgical pathways',
+    { type: 'cards', alt: true, cols: 3, ratio: 'ratio-3-4', eyebrow: 'Options', heading: 'Surgical pathways',
       items: [
         { title: 'Breast augmentation', text: 'A personalised approach to increasing breast volume or altering shape using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', slot: 'Breast augmentation imagery' },
         { title: 'Silicone gel-filled implants', text: 'Medical devices with an outer shell and a silicone gel filling — not the same as injectable silicone.', href: '/surgical/silicone-breast-implants/', slot: 'Implant imagery' },

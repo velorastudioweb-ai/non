@@ -170,10 +170,11 @@ ${b.script ? `<p class="script">${esc(b.script)}</p><span class="ornament orname
 }
 function renderCards(b) {
   const cols = b.cols || 3;
+  const cardRatio = b.ratio || 'ratio-16-11';
   const sizes = '(max-width: 900px) 100vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-<div class="card__media">${media(it, { sizes, alt: it.imgAlt }, 'ratio-16-11')}</div>
+<div class="card__media ${esc(cardRatio)}">${media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>
