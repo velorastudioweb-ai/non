@@ -1,19 +1,19 @@
 /* =============================================================================
    QuantumHealth — base
-   Reset, global background (glow + film grain + vignette), typography,
-   petals backdrop, section rhythm, motion, layout utilities.
-   Colours: tokens.css only — no literals in this file.
+   Reset, global background (glow + film grain + vignette), editorial
+   typography, layered petal backdrop, section rhythm, motion,
+   layout utilities. Colours: tokens.css only — no literals in this file.
    ========================================================================== */
 
 /* ================================ reset ================================= */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
 html {
-  background: var(--bg);
+  background: var(--dark);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + var(--space-5));
-  scrollbar-color: var(--accent-dark) var(--bg);
+  scrollbar-color: var(--accent) var(--dark);
   scrollbar-width: thin;
 }
 body {
@@ -28,6 +28,7 @@ body {
   text-rendering: optimizeLegibility;
   min-height: 100vh;
   min-height: 100dvh;
+  letter-spacing: .005em;
 }
 @supports (overflow: clip) {
   html, body { overflow-x: clip; }
@@ -48,22 +49,22 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-weight: var(--w-head);
   line-height: var(--lh-head);
-  color: var(--ink-strong);
+  color: var(--ivory);
   text-wrap: balance;
+  letter-spacing: var(--ls-h1);
 }
 p { text-wrap: pretty; }
 
-::selection { background: var(--accent); color: var(--bg); }
-::placeholder { color: var(--cream-ghost); }
+::selection { background: var(--rose); color: var(--ivory); }
+::placeholder { color: var(--ivory-ghost); }
 
-/* thin gold scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--accent-dark); border-radius: var(--radius-pill); }
-::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--burgundy-deep); border-radius: var(--radius-pill); }
+::-webkit-scrollbar-thumb:hover { background: var(--rose); }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--rose-light);
   outline-offset: 3px;
   border-radius: var(--radius);
 }
@@ -74,16 +75,15 @@ svg { width: 1em; height: 1em; }
   stroke-width: 1.25;
 }
 
-/* ========================= global background ============================ */
-/* fixed burgundy radial glow behind all content */
+/* ========================== cinematic page background =================== */
 body::before {
   content: "";
   position: fixed; inset: 0;
   z-index: -1;
-  background: var(--bg-glow);
+  background: var(--bg-glow), var(--dark);
   pointer-events: none;
 }
-/* film-grain overlay (inline SVG feTurbulence) */
+/* subtle film grain across the page */
 body::after {
   content: "";
   position: fixed; inset: 0;
@@ -91,8 +91,9 @@ body::after {
   pointer-events: none;
   opacity: var(--grain-opacity);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
 }
-/* soft dark vignette */
+/* gentle vignette */
 html::after {
   content: "";
   position: fixed; inset: 0;
@@ -101,18 +102,18 @@ html::after {
   background: var(--vignette-gradient);
 }
 
-/* ============================== typography =============================== */
+/* ============================ editorial typography ====================== */
 h1 {
   font-family: var(--font-heading);
   font-size: var(--fs-h1);
   font-weight: var(--w-head);
-  text-transform: uppercase;
   letter-spacing: var(--ls-h1);
   line-height: var(--lh-tight);
+  color: var(--ivory);
 }
-h2 { font-size: var(--fs-h2); }
-h3 { font-size: var(--fs-h3); font-weight: var(--w-head-strong); }
-h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
+h2 { font-size: var(--fs-h2); letter-spacing: .01em; }
+h3 { font-size: var(--fs-h3); font-weight: var(--w-head-strong); letter-spacing: .01em; }
+h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02em; }
 
 .display {
   font-family: var(--font-heading);
@@ -120,41 +121,53 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
   line-height: var(--lh-tight);
   font-weight: var(--w-head);
   letter-spacing: var(--ls-h1);
-  text-transform: uppercase;
 }
 .h1 { font-size: var(--fs-h1); }
 .h2 { font-size: var(--fs-h2); }
 .h3 { font-size: var(--fs-h3); }
-.lead { font-size: var(--fs-lead); color: var(--text-muted); line-height: 1.7; }
-.script {
-  font-family: var(--font-script);
-  color: var(--accent-strong);
-  font-size: clamp(1.55rem, 1.1rem + 1.5vw, 2.25rem);
-  line-height: 1.25;
-  font-weight: 400;
+.lead {
+  font-size: var(--fs-lead);
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 60ch;
 }
 
+/* italic script — accent moments */
+.script {
+  font-family: var(--font-script);
+  font-style: italic;
+  color: var(--rose-light);
+  font-size: clamp(1.3rem, 1rem + 1.2vw, 1.85rem);
+  line-height: 1.3;
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+
+/* uppercase eyebrows with generous tracking and a gold rule */
 .eyebrow {
   font-family: var(--font-body);
   font-size: var(--fs-label);
   font-weight: var(--w-label);
   letter-spacing: var(--ls-eyebrow);
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--gold);
   display: inline-flex;
   align-items: center;
-  gap: .7em;
+  gap: .8em;
 }
 .eyebrow::before {
-  content: ""; width: 28px; height: var(--hairline);
-  background: var(--accent-dark); display: inline-block; flex: none;
+  content: ""; width: 32px; height: var(--hairline);
+  background: var(--gold); display: inline-block; flex: none;
+  opacity: .85;
 }
 .eyebrow--center::before { display: none; }
 .eyebrow--center { justify-content: center; }
-.eyebrow--light { color: var(--accent-strong); }
+.eyebrow--light { color: var(--gold-light); }
 .eyebrow--light::before { background: var(--gold-line-solid); }
+.eyebrow--rose { color: var(--rose-light); }
+.eyebrow--rose::before { background: var(--rose); }
 
-/* gold-gradient text — key headings only (see components.css) */
+/* gradient text — used for special headline emphasis */
 .text-gradient {
   background: var(--gold-gradient);
   -webkit-background-clip: text;
@@ -162,25 +175,20 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-.text-gradient em {
-  font-style: italic;
-  background: none;
-  -webkit-text-fill-color: var(--accent-strong);
-  color: var(--accent-strong);
-}
 
+/* ============================ section rhythm ============================ */
 .section-head { max-width: 62ch; }
 .section-head--center { margin-inline: auto; text-align: center; }
 .section-head .h2 { margin-top: var(--sp-3); }
 .section-head p { margin-top: var(--sp-3); }
 
 .rule {
-  width: 72px; height: var(--hairline);
-  background: var(--accent-dark); border: 0;
+  width: 80px; height: var(--hairline);
+  background: var(--gold); border: 0;
   margin: var(--sp-4) 0;
+  opacity: .8;
 }
 
-/* ============================== layout utils ============================= */
 .container {
   width: min(100% - (var(--gutter) * 2), var(--container));
   margin-inline: auto;
@@ -192,30 +200,20 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
 .section { padding-block: clamp(3rem, 7vw, 6rem); position: relative; }
 .section--tight { padding-block: clamp(2.75rem, 5.5vw, 4.75rem); }
 .section--alt { background: var(--bg-alt); }
-.section--wine { background: var(--bg-deep); color: var(--cream-soft); }
-.section--wine h2, .section--wine h3 { color: var(--on-dark); }
-.section--wine p { color: var(--cream-soft); }
+.section--wine { background: var(--bg-wine); color: var(--text); }
+.section--wine h2, .section--wine h3 { color: var(--ivory); }
+.section--wine p { color: var(--ivory-soft); }
 
-/* thin gold divider (line + small diamond) between sections */
-.section + .section { border-top: var(--hairline) solid var(--line); }
-.section + .section::after {
-  content: "";
-  position: absolute;
-  top: -4px; left: 50%;
-  width: 7px; height: 7px;
-  background: var(--accent);
-  transform: translateX(-50%) rotate(45deg);
-}
+.section + .section { border-top: var(--hairline) solid var(--border-soft); }
 
+/* ============================ layout utilities ========================== */
 .grid { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
 .grid > * { min-width: 0; }
 .stack > * + * { margin-top: var(--sp-3); }
 .measure { max-width: 70ch; }
 .measure-sm { max-width: 54ch; }
 
-/* ================================ petals ================================= */
-/* layered translucent velvet petals, entering left/bottom, fading right.
-   Uses ::before only — ::after stays free for the section diamond. */
+/* ============================ petals backdrop =========================== */
 .petals {
   position: relative;
   isolation: isolate;
@@ -239,7 +237,7 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
   to   { background-position: 3% 94%; }
 }
 
-/* ================================ 404 page =============================== */
+/* ============================ error / 404 ============================== */
 .err-page {
   min-height: 62vh;
   display: grid; place-items: center; text-align: center;
@@ -249,10 +247,11 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
 .err-page .display {
   font-size: clamp(3.2rem, 16vw, 7.5rem);
   line-height: .9;
+  color: var(--rose);
 }
 .err-page .display + h2 { margin-top: var(--sp-3); }
 
-/* ========================= motion / progressive ========================== */
+/* ============================ reveal-on-scroll ========================== */
 .js .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -265,11 +264,7 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
 .reveal[data-delay="2"] { transition-delay: .2s; }
 .reveal[data-delay="3"] { transition-delay: .3s; }
 
-/* =============================== responsive ==============================
-   Mobile-first. Breakpoints: 480 / 768 / 1024 / 1280
-   ======================================================================== */
-
-/* simplify petals and reduce blur on mobile for performance */
+/* ============================ responsive ================================ */
 @media (max-width: 767px) {
   :root { --blur: var(--blur-reduced); }
   .petals::before {
@@ -292,7 +287,7 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); }
 }
 
 @media (min-width: 1024px) {
-  :root { --header-h: 4.9rem; }
+  :root { --header-h: 5.1rem; }
   .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .stat-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }

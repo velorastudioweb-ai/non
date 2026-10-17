@@ -41,6 +41,11 @@ const icons = {
   quote: wrap(`<path d="M9 6c-3 1.5-4.5 4-4.5 7.5V18h5v-5H6.6c0-2.4.9-4.2 2.9-5.4L9 6ZM19 6c-3 1.5-4.5 4-4.5 7.5V18h5v-5h-2.9c0-2.4.9-4.2 2.9-5.4L19 6Z"/>`),
   scale: wrap(`<path d="M12 4v16M7 20h10M6 8h12M6 8l-2.5 5.5a3 3 0 0 0 5 0L6 8ZM18 8l-2.5 5.5a3 3 0 0 0 5 0L18 8Z"/>`),
   sparkle: wrap(`<path d="M12 3.5c.6 3.7 2.3 5.4 6 6-3.7.6-5.4 2.3-6 6-.6-3.7-2.3-5.4-6-6 3.7-.6 5.4-2.3 6-6Z"/><path d="M18.5 15.5c.3 1.6 1 2.3 2.5 2.6-1.5.3-2.2 1-2.5 2.6-.3-1.6-1-2.3-2.5-2.6 1.5-.3 2.2-1 2.5-2.6Z"/>`),
+
+  /* Feature-strip icons (luxury burgundy / gold / rose theme) */
+  collagen: wrap(`<circle cx="12" cy="12" r="2.5"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="9.5"/>`),
+  minimally: wrap(`<path d="m4 14 6-6 4 4 6-6"/><path d="M14 2h6v6"/><circle cx="9" cy="17" r="1.5"/>`),
+  longevity: wrap(`<path d="M4 12a8 8 0 0 1 14-5.3"/><path d="M18 3v4h-4"/><path d="M20 12a8 8 0 0 1-14 5.3"/><path d="M6 21v-4h4"/>`),
 };
 
 /* Decorative SVG: fine gold female-outline figure (hero lower-right accent). */

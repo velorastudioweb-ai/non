@@ -126,28 +126,23 @@ const home = {
   blocks: [
     {
       type: 'hero',
-      eyebrow: 'Physician-led aesthetic care',
-      title: 'A More Informed Approach to <em>Breast Enhancement</em>',
-      script: 'Confidence begins with an informed consultation',
+      eyebrow: 'Non-Surgical Aesthetic Care',
+      title: 'A More Informed Approach to <em class="accent-rose">Breast Enhancement</em>',
+      uppercase: 'Confidence begins with an informed consultation.',
       lead: 'Explore surgical and non-surgical options through personalised medical assessment, clear information, and a treatment plan aligned with your individual goals.',
       actions: [
         { label: 'Plan your consultation', href: '/book-consultation/', style: 'primary' },
-        { label: 'Explore treatments', href: '#treatments', style: 'ghost' }
+        { label: 'Explore treatments', href: '#treatments', style: 'outline' }
       ],
       note: 'Individual suitability, outcomes and risks vary. A consultation is required before any treatment decision.',
       slot: 'Hero portrait',
-      benefits: [
-        { icon: 'nonsurgical', label: 'Non-surgical options' },
-        { icon: 'surgical', label: 'Surgical options' },
-        { icon: 'personalised', label: 'Personalised planning' },
-        { icon: 'evidence', label: 'Evidence-informed' }
-      ],
       featureStrip: [
-        { icon: 'volume', label: 'Volume' },
-        { icon: 'shape', label: 'Shape' },
-        { icon: 'natural', label: 'Natural look' },
-        { icon: 'downtime', label: 'Minimal downtime' },
-        { icon: 'confidence', label: 'Confidence' }
+        { icon: 'natural', label: 'Natural look & feel' },
+        { icon: 'shape', label: 'Firmer & lifted breasts' },
+        { icon: 'collagen', label: 'Stimulates collagen' },
+        { icon: 'minimally', label: 'Minimally invasive' },
+        { icon: 'downtime', label: 'No downtime' },
+        { icon: 'longevity', label: 'Long lasting results' }
       ]
     },
     {

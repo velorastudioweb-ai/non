@@ -27,7 +27,7 @@ function head(page, site) {
 <title>${esc(page.seoTitle)}</title>
 <meta name="description" content="${esc(page.seoDescription)}">${noindex}
 <link rel="canonical" href="${url}">
-<meta name="theme-color" content="#0A0508">
+<meta name="theme-color" content="#35000D">
 <meta property="og:type" content="${esc(page.ogType || 'website')}">
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:title" content="${esc(page.seoTitle)}">
@@ -75,7 +75,7 @@ return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-curren
 ${links}
 </nav>
 <div class="header-cta">
-<a class="btn btn--primary btn--sm" href="${site.base}book-consultation/">Book a Consultation</a>
+<a class="btn--header" href="${site.base}book-consultation/">Book a consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
 <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -403,35 +403,45 @@ function renderFeatureStrip(items) {
 }
 /* ---------- HERO ---------- */
 function renderHero(b, site) {
-  const actions = (b.actions || []).map((a) =>
-`<a class="btn ${a.style === 'ghost' ? 'btn--ghost' : 'btn--primary'}" href="${a.href}">${esc(a.label)} ${icon('arrow')}</a>`
-  ).join('\n        ');
-  const benefits = (b.benefits || []).map((it) =>
-`<div class="benefit"><span class="benefit__icon" aria-hidden="true">${icon(it.icon)}</span><span class="benefit__label">${esc(it.label)}</span></div>`
-  ).join('\n      ');
+  const actions = (b.actions || []).map((a) => {
+    const cls = a.style === 'outline' ? 'btn--outline'
+      : a.style === 'ghost' ? 'btn--ghost'
+      : 'btn--primary';
+    return `<a class="btn ${cls}" href="${a.href}">${esc(a.label)}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>`;
+  }).join('\n          ');
   const figureBlock = b.slot
 ? `<figure class="hero__figure">${media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt },
-  { eager: true, sizes: '(max-width: 900px) 100vw, 52vw' })}
+  { eager: true, sizes: '(max-width: 900px) 100vw, 50vw' })}
 <figcaption class="hero__credit">Illustrative editorial photography</figcaption>
 </figure>`
 : '';
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
+  <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
+  <span class="hero__rose hero__rose--bl" aria-hidden="true"></span>
+  <span class="hero__rose hero__rose--tr" aria-hidden="true"></span>
   <div class="hero__inner">
-<div class="hero__head">
-${b.eyebrow ? `<p class="eyebrow eyebrow--light hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
-<h1 class="hero__title">${raw(b.title)}</h1>
-${b.script ? `<p class="script hero__script">${esc(b.script)}</p>` : ''}
-</div>
-<div class="hero__body">
-<div class="hero__copy">
-${b.lead ? `<p class="hero__lead">${esc(b.lead)}</p>` : ''}
-<div class="hero__actions">${actions}</div>
-${b.note ? `<p class="hero__note">${icon('info')}<span>${esc(b.note)}</span></p>` : ''}
-${benefits ? `<div class="benefit-rail">${benefits}</div>` : ''}
-</div>
-${figureBlock}
-</div>
+    <div class="hero__body">
+      <div class="hero__copy">
+        ${b.eyebrow ? `<p class="eyebrow hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
+        <h1 class="hero__title">${raw(b.title)}</h1>
+        ${b.uppercase ? `<p class="hero__uppercase-stmt">${esc(b.uppercase)}</p>` : ''}
+        ${b.lead ? `<p class="hero__lead">${esc(b.lead)}</p>` : ''}
+        <div class="hero__actions">
+          ${actions}
+        </div>
+        ${b.note ? `<p class="hero__note">${icon('info')}<span>${esc(b.note)}</span></p>` : ''}
+      </div>
+      ${figureBlock}
+    </div>
+  </div>
+  <div class="hero__curve" aria-hidden="true">
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+      <path d="M0 110 C 320 0, 720 0, 1440 110 L 1440 110 L 0 110 Z" fill="var(--dark)"/>
+      <path d="M0 110 C 320 0, 720 0, 1440 110" fill="none" stroke="rgba(214,184,117,.6)" stroke-width="1"/>
+    </svg>
   </div>
   ${strip}
 </section>`;

@@ -1,100 +1,135 @@
 /* =============================================================================
    QuantumHealth — design tokens
-   Dark quiet-luxury: deep burgundy silk petals on near-black, champagne gold.
-   EVERY colour, gradient and effect value on the site is defined here.
-   To restyle the site, edit this file only. To swap the petal photo, see the
-   --petals-image token below (and README.md).
+   Luxury burgundy + champagne gold + rose-pink, editorial aesthetic.
+   Deep burgundy and near-black backgrounds, warm ivory typography, rose-pink
+   accents, fine gold rules, generous letter-spaced uppercase labels.
+   Every colour, gradient and effect value on the site is defined here.
    ========================================================================== */
 
 :root {
   color-scheme: dark;
 
-  /* ---------------------------------------------------------------- palette */
-  --black:        #0A0508;      /* page background                            */
-  --black-soft:   #120A0D;      /* alternate sections                         */
-  --burgundy-950: #2A0510;
-  --burgundy-900: #3A0715;
-  --burgundy-800: #4A0A1E;
-  --burgundy-700: #6B0F2A;
-  --wine:         #7A1030;
-  --wine-light:   #9B1B40;
-  --gold:         #C9A66B;
-  --gold-light:   #E8D3A3;
-  --gold-dark:    #B08A4E;
-  --cream:        #F3E9DC;      /* main text                                  */
-  --muted:        #B9A9A0;      /* secondary text                             */
-  --line:         rgba(201,166,107,.25);
-  --glass:        rgba(74,10,30,.35);
-  --gold-gradient: linear-gradient(135deg, #B08A4E 0%, #E8D3A3 45%, #C9A66B 100%);
-  --error:        #E07A7A;
-  --success:      #8FBF9F;
+  /* ----------------------------------------------------------------- palette
+     Burgundy family (page surfaces) */
+  --burgundy:        #35000D;     /* deep burgundy — hero, page banners   */
+  --burgundy-deep:   #510018;     /* wine red — primary wash, CTA bands   */
+  --burgundy-darker: #1F0307;     /* near-black burgundy for deepest wash */
+  --dark:            #100609;     /* page background, deepest text        */
 
-  /* ------------------------------------------------------------- semantic */
-  --bg:            var(--black);
-  --bg-alt:        var(--black-soft);
-  --bg-deep:       var(--burgundy-950);
-  --text:          var(--cream);
-  --text-muted:    var(--muted);
-  --accent:        var(--gold);
-  --accent-strong: var(--gold-light);
-  --accent-dark:   var(--gold-dark);
-  --border:        var(--line);
-  --on-dark:       var(--cream);
-  --ink-strong:    var(--cream);
+  /* Rose family (accents — emphasis, highlights, primary CTAs) */
+  --rose:            #E95C82;     /* rose pink — accents, "Breast ..."    */
+  --rose-light:      #FF809B;     /* coral pink — primary CTA gradient   */
+  --rose-deep:       #C8406B;     /* hover / active state                 */
 
-  /* overlays & effects built from the palette (never literals elsewhere) */
-  --input-bg:        rgba(255,255,255,.03);
-  --header-bg:       rgba(10,5,8,.9);
-  --backdrop:        rgba(10,5,8,.9);
-  --tint-dark:       rgba(10,5,8,.55);     /* image darkening overlay          */
-  --tint-wine:       rgba(74,10,30,.32);   /* burgundy duotone on imagery       */
-  --gold-glow:       rgba(201,166,107,.22);
-  --gold-glow-soft:  rgba(201,166,107,.12);
-  --gold-glow-strong: rgba(201,166,107,.38);
-  --gold-line-solid: rgba(201,166,107,.45);
-  --gold-text-soft:  rgba(232,211,163,.75);
-  --cream-soft:      rgba(243,233,220,.82);
-  --cream-faint:     rgba(243,233,220,.62);
-  --cream-ghost:     rgba(243,233,220,.38);
-  --black-veil:      rgba(10,5,8,.78);
-  --black-mist:      rgba(10,5,8,.45);
-  --gold-sheen:      rgba(232,211,163,.5);
+  /* Gold family (chrome — rules, icons, divider lines) */
+  --gold:            #D6B875;     /* primary gold                             */
+  --gold-light:      #EBD79E;     /* lighter gold for hover/highlight       */
+  --gold-dark:       #A88A55;       /* deeper gold for emphasis               */
+  --gold-glow:       rgba(214, 184, 117, 0.55);
 
-  /* ------------------------------------------------------------- gradients */
+  /* Ivory family (typography) */
+  --ivory:           #F6EBDD;     /* warm ivory — main text, headings       */
+  --ivory-soft:      rgba(246, 235, 221, 0.82);
+  --ivory-faint:     rgba(246, 235, 221, 0.62);
+  --ivory-ghost:     rgba(246, 235, 221, 0.36);
+
+  /* Neutral muted (secondary text) */
+  --muted:           #C6B7B5;     /* warm muted — supporting copy           */
+
+  /* Borders / dividers */
+  --border:          rgba(214, 184, 117, 0.55); /* primary gold rule          */
+  --border-soft:     rgba(214, 184, 117, 0.22); /* faint gold                 */
+  --border-strong:   rgba(214, 184, 117, 0.85); /* strong gold                 */
+
+  /* Surfaces */
+  --bg:              var(--dark);
+  --bg-alt:          #1A0810;     /* alternate section wash                */
+  --bg-deep:         var(--burgundy);   /* hero/banner wash                */
+  --bg-wine:         var(--burgundy-deep);
+
+  /* Text */
+  --text:            var(--ivory);
+  --text-muted:      var(--muted);
+  --ink-strong:      var(--ivory);
+
+  /* Accent (primary accent) */
+  --accent:          var(--rose);
+  --accent-strong:   var(--rose-light);
+  --accent-dark:     var(--rose-deep);
+
+  /* Overlays & effects — derived from palette */
+  --input-bg:        rgba(246, 235, 221, 0.04);
+  --header-bg:       rgba(16, 6, 9, 0.92);
+  --backdrop:        rgba(16, 6, 9, 0.92);
+  --tint-dark:       rgba(16, 6, 9, 0.55);
+  --tint-wine:       rgba(81, 0, 24, 0.32);
+
+  /* gold-glow family */
+  --gold-glow:       rgba(214, 184, 117, 0.28);
+  --gold-glow-soft:  rgba(214, 184, 117, 0.14);
+  --gold-glow-strong: rgba(214, 184, 117, 0.48);
+  --gold-line-solid: rgba(214, 184, 117, 0.55);
+  --gold-text-soft:  rgba(235, 215, 158, 0.78);
+
+  /* cream / ivory families (legacy references — alias to ivory) */
+  --cream:           var(--ivory);
+  --cream-soft:      var(--ivory-soft);
+  --cream-faint:     var(--ivory-faint);
+  --cream-ghost:     var(--ivory-ghost);
+
+  /* black/veil aliases */
+  --black:           var(--dark);
+  --black-soft:      #1A0810;
+  --black-veil:      rgba(16, 6, 9, 0.78);
+  --black-mist:      rgba(16, 6, 9, 0.45);
+
+  /* gold sheen */
+  --gold-sheen:      rgba(235, 215, 158, 0.55);
+
+  /* glass surface (translucent burgundy) */
+  --glass:           rgba(81, 0, 24, 0.28);
+
+  /* Status */
+  --error:           #E07A7A;
+  --success:         #8FBF9F;
+
+  /* gradients */
+  --gold-gradient:   linear-gradient(135deg, #B08A4E 0%, #E8D3A3 45%, #C9A66B 100%);
+  --rose-gradient:   linear-gradient(135deg, #E95C82 0%, #FF809B 50%, #C8406B 100%);
+  --rose-pill:       linear-gradient(135deg, #E95C82 0%, #FF809B 60%, #E07090 100%);
+
+  /* ambient page glow */
   --bg-glow:
-    radial-gradient(90% 70% at 12% 8%,  rgba(122,16,48,.28), transparent 62%),
-    radial-gradient(70% 60% at 85% 92%, rgba(74,10,30,.35),  transparent 68%),
-    radial-gradient(55% 45% at 70% 20%, rgba(201,166,107,.07), transparent 70%);
+    radial-gradient(80% 60% at 8% 6%,   rgba(81, 0, 24, 0.55),  transparent 60%),
+    radial-gradient(60% 55% at 92% 90%, rgba(53, 0, 13, 0.55),  transparent 64%),
+    radial-gradient(45% 40% at 70% 18%, rgba(214, 184, 117, 0.06), transparent 70%),
+    radial-gradient(40% 35% at 12% 90%, rgba(233, 92, 130, 0.10), transparent 70%);
   --vignette-gradient:
-    radial-gradient(120% 120% at 50% 45%, transparent 55%, rgba(10,5,8,.55) 100%);
-  --shimmer: linear-gradient(105deg, transparent 38%, rgba(232,211,163,.55) 50%, transparent 62%);
-  --glass-gradient: linear-gradient(165deg, rgba(74,10,30,.42) 0%, rgba(10,5,8,.32) 100%);
+    radial-gradient(120% 120% at 50% 45%, transparent 55%, rgba(16, 6, 9, 0.55) 100%);
+  --shimmer: linear-gradient(105deg, transparent 38%, rgba(255, 230, 230, 0.45) 50%, transparent 62%);
+  --glass-gradient: linear-gradient(165deg, rgba(81, 0, 24, 0.45) 0%, rgba(16, 6, 9, 0.4) 100%);
 
   /* ------------------------------------------------------- petal backdrop
-     Reusable .petals component: layered translucent velvet-petal shapes
-     entering from the left/bottom, fading to pure black on the right.
-     SWAP FOR A PHOTO: replace the value below with e.g.
-       url("../petals.jpg") center / cover no-repeat;
-     (drop petals.jpg into public/assets/img/ and adjust the path).
-     A single url() replaces all layers.                                    */
+     Layered translucent velvet-petal shapes entering from the left/bottom,
+     in deep rose / wine / burgundy tones — fades to pure dark on the right. */
   --petals-image:
-    radial-gradient(120% 90% at -10% 110%, rgba(122,16,48,.55) 0%, transparent 58%),
-    radial-gradient(90% 80% at 18% 118%, rgba(74,10,30,.8) 0%, transparent 62%),
-    radial-gradient(70% 65% at 34% 112%, rgba(107,15,42,.55) 0%, transparent 66%),
-    radial-gradient(85% 70% at 4% 68%, rgba(58,7,21,.75) 0%, transparent 64%),
-    radial-gradient(55% 55% at 28% 78%, rgba(91,13,36,.5) 0%, transparent 70%),
-    radial-gradient(45% 60% at 52% 105%, rgba(74,10,30,.42) 0%, transparent 72%),
-    radial-gradient(40% 50% at 12% 30%, rgba(42,5,16,.6) 0%, transparent 75%);
+    radial-gradient(120% 90% at -10% 110%, rgba(233, 92, 130, 0.45) 0%, transparent 58%),
+    radial-gradient(95% 85% at 18% 118%, rgba(81, 0, 24, 0.85) 0%, transparent 62%),
+    radial-gradient(70% 65% at 34% 112%, rgba(107, 15, 42, 0.6)  0%, transparent 66%),
+    radial-gradient(85% 70% at 4% 68%,   rgba(155, 27, 64, 0.45) 0%, transparent 64%),
+    radial-gradient(55% 55% at 28% 78%,  rgba(122, 16, 48, 0.55) 0%, transparent 70%),
+    radial-gradient(45% 60% at 52% 105%, rgba(53, 0, 13, 0.55) 0%, transparent 72%),
+    radial-gradient(40% 50% at 12% 30%,  rgba(31, 3, 7, 0.65)   0%, transparent 75%);
   --petals-image-mobile:
-    radial-gradient(130% 95% at -10% 112%, rgba(122,16,48,.5) 0%, transparent 62%),
-    radial-gradient(95% 85% at 20% 120%, rgba(74,10,30,.75) 0%, transparent 68%);
-  --petals-mask: linear-gradient(90deg, var(--black) 26%, transparent 86%);
+    radial-gradient(130% 95% at -10% 112%, rgba(233, 92, 130, 0.4) 0%, transparent 62%),
+    radial-gradient(95% 85% at 20% 120%,  rgba(81, 0, 24, 0.75)  0%, transparent 68%);
+  --petals-mask: linear-gradient(90deg, var(--dark) 14%, transparent 78%);
   --petals-duration: 25s;
 
   /* ----------------------------------------------------------- typography */
-  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --font-script:  "Pinyon Script", "Segoe Script", cursive;
-  --font-body:    "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-script:  "Pinyon Script", "Cormorant Garamond", "Segoe Script", cursive;
+  --font-body:    "Inter", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 
   --fs-h1:    clamp(2.4rem, 6vw, 5rem);
   --fs-h2:    clamp(1.8rem, 4vw, 3rem);
@@ -103,7 +138,7 @@
   --fs-lead:  1.125rem;
   --fs-small: .875rem;
   --fs-label: .75rem;
-  --fs-micro: .75rem;
+  --fs-micro: .72rem;
 
   --lh-body: 1.75;
   --lh-head: 1.15;
@@ -115,10 +150,10 @@
   --w-head: 500;
   --w-head-strong: 600;
 
-  --ls-h1: .08em;
-  --ls-label: .25em;
+  --ls-h1: .02em;
+  --ls-label: .22em;
   --ls-button: .15em;
-  --ls-eyebrow: .25em;
+  --ls-eyebrow: .28em;
 
   /* ---------------------------------------------------- spacing & shape */
   --space-1: 4px;
@@ -145,20 +180,25 @@
   --gutter: var(--space-4);
   --radius: 2px;
   --radius-pill: 999px;
+  --radius-md: 8px;
   --hairline: 1px;
   --tap: 44px;
-  --header-h: 4.15rem;
+  --header-h: 4.4rem;
 
   /* ------------------------------------------------------------- effects */
-  --shadow-gold: 0 10px 40px rgba(201,166,107,.12);
-  --shadow-lift: 0 18px 55px rgba(10,5,8,.55);
-  --shadow-glow: 0 6px 28px -8px rgba(201,166,107,.35);
+  --shadow-gold: 0 10px 40px rgba(214, 184, 117, 0.14);
+  --shadow-lift: 0 18px 55px rgba(16, 6, 9, 0.55);
+  --shadow-glow: 0 6px 28px -8px rgba(233, 92, 130, 0.4);
   --blur: 12px;
   --blur-reduced: 6px;
-  --grain-opacity: .06;
-  /* burgundy duotone for photography (dark overlay + wine tint) */
-  --img-tint: brightness(.62) contrast(1.05) saturate(.72) sepia(.5) hue-rotate(-28deg);
+  --grain-opacity: .04;
+
+  /* burgundy duotone for photography */
+  --img-tint: brightness(.62) contrast(1.05) saturate(.78) sepia(.5) hue-rotate(-30deg);
   --img-tint-soft: brightness(.8) contrast(1.02) saturate(.85) sepia(.35) hue-rotate(-22deg);
+
+  /* no-image tint on hero portrait — keep the editorial portrait intact */
+  --img-tint-hero: none;
 
   --ease: cubic-bezier(.22,.61,.36,1);
   --dur: .4s;
