@@ -27,7 +27,7 @@ function head(page, site) {
 <title>${esc(page.seoTitle)}</title>
 <meta name="description" content="${esc(page.seoDescription)}">${noindex}
 <link rel="canonical" href="${url}">
-<meta name="theme-color" content="#050505">
+<meta name="theme-color" content="#FCF9F7">
 <meta property="og:type" content="${esc(page.ogType || 'website')}">
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:title" content="${esc(page.seoTitle)}">
@@ -340,7 +340,7 @@ ${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${
 <div class="form-row">
 <div class="field">
 <label for="cf-phone">Phone number <span class="field__hint">(optional)</span></label>
-<input id="cf-phone" name="phone" type="tel" autocomplete="tel" placeholder="Include your country code" aria-describedby="cf-phone-err">
+<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Include your country code" aria-describedby="cf-phone-err">
 <span class="field__error" id="cf-phone-err" role="alert"></span>
 </div>
 <div class="field">
