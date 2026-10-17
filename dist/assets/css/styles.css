@@ -358,7 +358,7 @@ body.nav-open { overflow: hidden; }
   padding-block: clamp(3.25rem, 7vw, 6rem);
   min-height: clamp(620px, 88vh, 900px);
 }
-.hero__head { position: relative; z-index: 1; }
+.hero__head { position: relative; z-index: 1; max-width: 660px; }
 .hero__body {
   display: grid;
   grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr);
@@ -369,9 +369,9 @@ body.nav-open { overflow: hidden; }
 .hero__eyebrow { color: var(--color-orchid); }
 .hero__title {
   font-family: var(--font-serif);
-  font-size: calc(var(--fs-hero) * 2);
+  font-size: clamp(3.6rem, 1.4rem + 7.2vw, 7.5rem);
   font-weight: 500;
-  line-height: .98;
+  line-height: .92;
   letter-spacing: -.02em;
   margin-top: var(--sp-3);
   color: var(--color-ivory);
