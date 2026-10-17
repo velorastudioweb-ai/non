@@ -7,6 +7,7 @@
     "build": "node build/gen.js",
     "qa": "node build/gen.js && node build/qa.js",
     "serve": "node build/serve.js",
-    "dev": "node build/gen.js && node build/serve.js --watch"
+    "dev": "node build/gen.js && node build/serve.js --watch",
+    "deploy": "vercel --prod --yes"
   }
 }
