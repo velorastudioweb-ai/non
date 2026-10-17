@@ -21,7 +21,7 @@ const site = {
     // and opening hours remain unpublished until confirmed.
     phone: '+852 4460 8658',
     email: 'enquiries@nonsurgicalbreastenlargement.in',
-    address: 'Sun Tun Muen Center, 55–56 Lung Mung Road, New Territories, Hong Kong',
+    address: 'Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong',
     addressNote: 'Head office address as supplied by the clinic; street addresses for international locations are published once confirmed.',
     hours: 'Consultation hours to be confirmed'
   },
@@ -205,6 +205,24 @@ const home = {
       ]
     },
     {
+      type: 'icon-grid',
+      alt: true,
+      eyebrow: 'Beyond breast enhancement',
+      heading: 'More aesthetic solutions',
+      lead: 'Quantum Health also lists the wider clinic services below, alongside regenerative and longevity medicine. Availability and services differ by location — confirm with the clinic.',
+      cols: 4,
+      items: [
+        { icon: 'sparkle', title: 'Botox', text: 'Treatments for fine lines and youthful-looking skin.' },
+        { icon: 'natural', title: 'Skin boosters', text: 'Injectable treatments for hydrated, glowing skin.' },
+        { icon: 'shape', title: 'Body contouring', text: 'Non-surgical body contouring and shaping.' },
+        { icon: 'personalised', title: 'Hair restoration', text: 'Hair transplantation and restoration.' },
+        { icon: 'clock', title: 'Anti-ageing', text: 'Anti-ageing medicine and treatments.' },
+        { icon: 'safety', title: 'IV therapy', text: 'Intravenous wellness therapy.' },
+        { icon: 'scale', title: 'Slimming', text: 'Slimming and body-toning programmes.' },
+        { icon: 'evidence', title: 'Wellness & longevity', text: 'Personalised wellness and longevity programmes.' }
+      ]
+    },
+    {
       type: 'split',
       reverse: true,
       eyebrow: 'Physician-led aesthetic care',
@@ -261,7 +279,7 @@ const home = {
       heading: 'Where to find us',
       lead: 'Head office in Hong Kong, with clinic presence across the Middle East, Canada, Thailand and India.',
       items: [
-        { title: 'Hong Kong — head office', text: 'Sun Tun Muen Center, 55–56 Lung Mung Road, New Territories. Consultation and treatment rooms, VIP lounge and wellness boutique.', href: '/locations/', slot: 'Hong Kong clinic imagery' },
+        { title: 'Hong Kong — head office', text: 'Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong. Consultation and treatment rooms, VIP lounge and wellness boutique.', href: '/locations/', slot: 'Hong Kong clinic imagery' },
         { title: 'Eight international locations', text: 'Dubai, Bahrain, Toronto, Bangkok, Bangalore, Hyderabad, Mumbai and Chennai, each with its own service focus.', href: '/locations/', slot: 'International locations imagery' },
         { title: 'Enquiries', text: 'Request a consultation and the clinic team will confirm availability with you directly.', href: '/book-consultation/' }
       ]
@@ -872,11 +890,11 @@ pages.push({
   schema: [{
     '@context': 'https://schema.org', '@type': 'MedicalClinic', name: 'QuantumHealth Head Office',
     url: site.url + '/locations/', telephone: site.contact.phone,
-    address: { '@type': 'PostalAddress', streetAddress: 'Sun Tun Muen Center, 55–56 Lung Mung Road', addressLocality: 'New Territories', addressCountry: 'HK' }
+    address: { '@type': 'PostalAddress', streetAddress: 'Sun Tuen Mun Center, 55–56 Lung Mun Road', addressLocality: 'New Hong Kong Territories', addressCountry: 'HK' }
   }],
   blocks: [
     { type: 'split', eyebrow: 'Head office', heading: 'Hong Kong',
-      body: '<p><strong>Sun Tun Muen Center, 55–56 Lung Mung Road, New Territories, Hong Kong</strong></p>' +
+      body: '<p><strong>Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong</strong></p>' +
         '<p>Telephone: <a href="tel:' + site.contact.phone.replace(/\s/g, '') + '">' + site.contact.phone + '</a></p>' +
         '<p>The head office houses consultation and treatment rooms, a VIP lounge and a skin and wellness boutique, offering advanced aesthetic dermatology, hair restoration, regenerative medicine, anti-ageing and longevity programmes.</p>',
       slot: 'Hong Kong head office', slotNote: 'Licensed clinic photography to be supplied', script: 'Where beauty, science and longevity meet' },

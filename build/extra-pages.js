@@ -60,7 +60,7 @@ const consultation = {
       type: 'notice',
       icon: 'phone',
       title: 'Prefer to contact us directly?',
-      text: 'Call <a href="tel:+85244608658">+852 4460 8658</a> or email <a href="mailto:enquiries@nonsurgicalbreastenlargement.in">enquiries@nonsurgicalbreastenlargement.in</a>. Head office: Sun Tun Muen Center, 55–56 Lung Mung Road, New Territories, Hong Kong. Opening hours are confirmed when booking.'
+      text: 'Call <a href="tel:+85244608658">+852 4460 8658</a> or email <a href="mailto:enquiries@nonsurgicalbreastenlargement.in">enquiries@nonsurgicalbreastenlargement.in</a>. Head office: Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong. Opening hours are confirmed when booking.'
     },
     {
       type: 'icon-grid',
