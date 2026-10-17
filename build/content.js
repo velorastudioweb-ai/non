@@ -8,12 +8,14 @@
    into informational language, per medical-advertising / evidence requirements.
    ============================================================================= */
 
+const SITE_URL = (process.env.SITE_URL || 'https://quantumhealth-website.vercel.app').replace(/\/+$/, '');
+
 const site = {
   name: 'QuantumHealth by Dr. Vikas Singh',
   shortName: 'QuantumHealth',
   tagline: 'Breast enhancement education and personalised aesthetic consultation.',
-  domain: 'nonsurgicalbreastenlargement.in',
-  url: 'https://nonsurgicalbreastenlargement.in',
+  domain: SITE_URL.replace(/^https?:\/\//, ''),
+  url: SITE_URL,
   base: '/',
   defaultOg: '/assets/img/og-cover.svg',
   contact: {
@@ -105,13 +107,13 @@ const home = {
   schema: [
     {
       '@context': 'https://schema.org', '@type': 'WebSite',
-      name: 'QuantumHealth by Dr. Vikas Singh', url: 'https://nonsurgicalbreastenlargement.in/'
+      name: 'QuantumHealth by Dr. Vikas Singh', url: site.url + '/'
     },
     {
       '@context': 'https://schema.org', '@type': 'MedicalBusiness',
       name: 'QuantumHealth by Dr. Vikas Singh',
       description: 'Physician-led breast enhancement education and aesthetic consultation.',
-      url: 'https://nonsurgicalbreastenlargement.in/',
+      url: site.url + '/',
       areaServed: 'IN'
     }
   ],

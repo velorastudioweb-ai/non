@@ -2,6 +2,8 @@
 
 /* Consultation page + legal/consent pages (drafts requiring review) */
 
+const { site } = require('./content');
+
 function legalPage(o) {
   return {
     url: o.url, slug: o.slug, h1: o.h1,
@@ -9,7 +11,7 @@ function legalPage(o) {
     bannerEyebrow: 'Policy', bannerLead: o.lead,
     breadcrumb: [{ label: o.label }],
     noindex: true,
-    schema: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: o.h1, url: 'https://nonsurgicalbreastenlargement.in' + o.url }],
+    schema: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: o.h1, url: site.url + o.url }],
     blocks: [
       { type: 'notice', blush: true, icon: 'evidence', title: 'Draft — requires legal review',
         text: 'This policy is an editable starting template. It must be completed and reviewed by the clinic’s legal adviser to reflect the clinic’s actual data practices, jurisdiction and obligations before publication. It is marked noindex until then.' },
@@ -26,7 +28,7 @@ const consultation = {
   bannerEyebrow: 'Consultation',
   bannerLead: 'Share your preferred contact details and the type of information you would like to discuss. The clinic team can then confirm availability and next steps.',
   breadcrumb: [{ label: 'Book a consultation' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Request a Consultation', url: 'https://nonsurgicalbreastenlargement.in/book-consultation/' }],
+    schema: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Request a Consultation', url: site.url + '/book-consultation/' }],
   blocks: [
     {
       type: 'form',

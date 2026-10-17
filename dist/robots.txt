@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nonsurgicalbreastenlargement.in/sitemap.xml
+Sitemap: https://quantumhealth-website.vercel.app/sitemap.xml
