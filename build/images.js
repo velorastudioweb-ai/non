@@ -201,15 +201,14 @@ function pictureFor(item, opts) {
 /* Designed replacement for a photograph that must not be faked:
    consented clinical cases and not-yet-recorded videos. */
 function pendingFrame(item, cls) {
-  const slot = (item && (item.slot || item.caption)) || 'Awaiting photography';
-  const note = (item && item.slotNote) || 'Not yet published';
+  const slot = (item && (item.slot || item.caption)) || '';
   const isVideo = slot === 'Video thumbnail';
-  const label = isVideo ? 'Video to be recorded' : note;
+  const label = isVideo ? 'Video to be recorded' : 'Awaiting consented photography';
   const detail = isVideo
-    ? 'Published once the content has been recorded and verified.'
-    : 'Published only with documented, genuine consent.';
+    ? 'Published once recorded and verified'
+    : 'Published only with documented consent';
   return '<div class="pending ' + (cls || '') + '" role="img" aria-label="' +
-    esc(slot + ' — ' + detail) + '">' +
+    esc(label + '. ' + detail + '.') + '">' +
     '<span class="pending__mark" aria-hidden="true">' + (isVideo ? '&#9654;' : '&#9670;') + '</span>' +
     '<strong>' + esc(label) + '</strong>' +
     '<span class="pending__note">' + esc(detail) + '</span>' +
