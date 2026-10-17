@@ -136,7 +136,6 @@ const home = {
       ],
       note: 'Individual suitability, outcomes and risks vary. A consultation is required before any treatment decision.',
       slot: 'Hero portrait',
-      slotNote: 'Licensed editorial / model photography — burgundy-to-blush gradient stood in for now',
       benefits: [
         { icon: 'nonsurgical', label: 'Non-surgical options' },
         { icon: 'surgical', label: 'Surgical options' },
@@ -238,7 +237,6 @@ const home = {
       body: '<p>Dr. Vikas Singh is a cosmetic dermatologist, hair transplant surgeon and regenerative medicine practitioner, with more than 20 years across cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine.</p>' +
         '<p>His stated philosophy centres on healthspan — bringing appearance, regeneration and longevity into one considered plan for each patient.</p>',
       slot: 'Portrait — Dr. Vikas Singh',
-      slotNote: 'Licensed professional portrait to be supplied',
       link: { label: "Discover Dr. Singh's profile", href: '/about-dr-vikas-singh/' }
     },
     {
@@ -274,10 +272,10 @@ const home = {
       heading: 'Real experiences, presented responsibly',
       lead: 'Where genuine, consented clinical cases exist, they are shown with consistent photography, clinical context and a clear statement that individual results vary. Before-and-after imagery is never fabricated or digitally altered to exaggerate outcomes.',
       items: [
-        { caption: 'Breast augmentation — consented case (placeholder)', slot: 'Consented case 01', slotNote: 'Awaiting genuine consented photography' },
-        { caption: 'Fat transfer — consented case (placeholder)', slot: 'Consented case 02', slotNote: 'Awaiting genuine consented photography' },
-        { caption: 'Pre-treatment reference (placeholder)', slot: 'Clinical reference', slotNote: 'Awaiting genuine consented photography' },
-        { caption: 'Follow-up reference (placeholder)', slot: 'Clinical reference', slotNote: 'Awaiting genuine consented photography' }
+        { caption: 'Breast augmentation — consented case', slot: 'Consented case 01' },
+        { caption: 'Fat transfer — consented case', slot: 'Consented case 02' },
+        { caption: 'Pre-treatment reference', slot: 'Clinical reference' },
+        { caption: 'Follow-up reference', slot: 'Clinical reference' }
       ]
     },
     {
@@ -785,7 +783,7 @@ pages.push({
     { type: 'split', eyebrow: 'A global perspective', heading: 'A career built on innovation',
       body: '<p>Dr. Vikas Singh is a cosmetic dermatologist, hair transplant surgeon and longevity &amp; regenerative medicine expert.</p>' +
         '<p>For more than 20 years he has worked across the evolving fields of cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine. His stated philosophy moves beyond conventional cosmetic treatment toward a broader idea of <strong>healthspan</strong> — bringing <strong>appearance</strong>, <strong>regeneration</strong> and <strong>longevity</strong> into a single conversation about how a patient looks and how they age.</p>',
-      slot: 'Portrait — Dr. Vikas Singh', slotNote: 'Licensed professional portrait to be supplied',
+      slot: 'Portrait — Dr. Vikas Singh',
       script: 'Understanding first' },
     { type: 'icon-grid', alt: true, eyebrow: 'At a glance', heading: 'A career built on innovation', cols: 4,
       items: [
@@ -827,7 +825,7 @@ pages.push({
         '<li>International Society of Hair Restoration Surgery</li>' +
         '<li>American Board of Hair Restoration Surgery</li>' +
         '<li>Cardiff University dermatology training (Wales, UK)</li></ul>',
-      slot: 'Award & conference photography', slotNote: 'Licensed photography to be supplied' },
+      slot: 'Award & conference photography' },
     { type: 'notice', blush: true, icon: 'info', title: 'Listed by the clinic, pending verification',
       text: 'Awards, memberships, fellowship details and registration status above are reproduced as supplied by the clinic and remain subject to documentary verification. Registration status and specific procedure credentials should be confirmed with the relevant professional body before reliance.' },
     stdCta({ heading: 'Request a consultation with Dr. Singh' })
@@ -914,7 +912,7 @@ pages.push({
       body: '<p><strong>Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong</strong></p>' +
         '<p>Telephone: <a href="tel:' + site.contact.phone.replace(/\s/g, '') + '">' + site.contact.phone + '</a></p>' +
         '<p>The head office houses consultation and treatment rooms, a VIP lounge and a skin and wellness boutique, offering advanced aesthetic dermatology, hair restoration, regenerative medicine, anti-ageing and longevity programmes.</p>',
-      slot: 'Hong Kong head office', slotNote: 'Licensed clinic photography to be supplied', script: 'Where beauty, science and longevity meet' },
+      slot: 'Hong Kong head office', script: 'Where beauty, science and longevity meet' },
     { type: 'icon-grid', eyebrow: 'At our head office', heading: 'Services', cols: 4,
       items: [
         { icon: 'evidence', title: 'Aesthetic dermatology', text: 'Advanced aesthetic dermatology.' },
@@ -928,10 +926,10 @@ pages.push({
     },
     { type: 'cards', alt: true, cols: 4, eyebrow: 'Inside the clinic', heading: 'Spaces designed around privacy and care',
       items: [
-        { title: 'Consultation room', text: 'Private, personalised, premium.', slot: 'Consultation room', slotNote: 'Licensed clinic photography to be supplied' },
-        { title: 'Treatment room', text: 'Advanced technology, considered care.', slot: 'Treatment room', slotNote: 'Licensed clinic photography to be supplied' },
-        { title: 'VIP lounge', text: 'Luxury, comfort and discretion.', slot: 'VIP lounge', slotNote: 'Licensed clinic photography to be supplied' },
-        { title: 'Skin & wellness boutique', text: 'Curated brands with expert guidance.', slot: 'Wellness boutique', slotNote: 'Licensed clinic photography to be supplied' }
+        { title: 'Consultation room', text: 'Private, personalised, premium.', slot: 'Consultation room' },
+        { title: 'Treatment room', text: 'Advanced technology, considered care.', slot: 'Treatment room' },
+        { title: 'VIP lounge', text: 'Luxury, comfort and discretion.', slot: 'VIP lounge' },
+        { title: 'Skin & wellness boutique', text: 'Curated brands with expert guidance.', slot: 'Wellness boutique' }
       ]
     },
     { type: 'notice', icon: 'pin', title: 'Confirm details before travelling',
@@ -977,12 +975,12 @@ pages.push({
     { type: 'gallery', eyebrow: 'Consented cases', heading: 'Clinical gallery',
       lead: 'Each case study includes the procedure performed, the timeframe, the patient’s treatment goals (described with consent), relevant follow-up information and a clear statement that individual results vary.',
       items: [
-        { caption: 'Breast augmentation — consented case (placeholder)', slot: 'Consented case 01', slotNote: 'Genuine consented photography required' },
-        { caption: 'Breast augmentation — consented case (placeholder)', slot: 'Consented case 02', slotNote: 'Genuine consented photography required' },
-        { caption: 'Silicone gel implants — consented case (placeholder)', slot: 'Consented case 03', slotNote: 'Genuine consented photography required' },
-        { caption: 'Fat transfer — consented case (placeholder)', slot: 'Consented case 04', slotNote: 'Genuine consented photography required' },
-        { caption: 'Fat transfer — consented case (placeholder)', slot: 'Consented case 05', slotNote: 'Genuine consented photography required' },
-        { caption: 'Other procedure — consented case (placeholder)', slot: 'Consented case 06', slotNote: 'Genuine consented photography required' }
+        { caption: 'Breast augmentation — consented case', slot: 'Consented case 01' },
+        { caption: 'Breast augmentation — consented case', slot: 'Consented case 02' },
+        { caption: 'Silicone gel implants — consented case', slot: 'Consented case 03' },
+        { caption: 'Fat transfer — consented case', slot: 'Consented case 04' },
+        { caption: 'Fat transfer — consented case', slot: 'Consented case 05' },
+        { caption: 'Other procedure — consented case', slot: 'Consented case 06' }
       ]
     },
     { type: 'icon-grid', alt: true, eyebrow: 'Responsible presentation', heading: 'What every case includes', cols: 4,
@@ -1009,7 +1007,7 @@ pages.push({
   schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Video Gallery', url: site.url + '/video-gallery/' }],
   blocks: [
     { type: 'cards', cols: 2, eyebrow: 'Video library', heading: 'Educational video content',
-      lead: 'Videos are published only once recorded and verified. Placeholders below indicate the planned structure.',
+      lead: 'Videos are published only once recorded and verified. The cards below outline the planned structure of the library.',
       items: [
         { title: 'Meet Dr. Vikas Singh', text: 'A professional introduction, clinical philosophy and approach to patient consultations.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' },
         { title: 'Understanding breast augmentation', text: 'An educational overview of implants, fat transfer, suitability and recovery.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' },

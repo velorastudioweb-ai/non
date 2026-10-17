@@ -42,7 +42,7 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Gilda+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${site.base}assets/css/styles.css">
 <link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
 ${schema}
@@ -415,16 +415,20 @@ function renderHero(b, site) {
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero">
   <div class="hero__inner">
-<div class="hero__copy">
+<div class="hero__head">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--light hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h1 class="hero__title">${raw(b.title)}</h1>
 ${b.script ? `<p class="script hero__script">${esc(b.script)}</p>` : ''}
+</div>
+<div class="hero__body">
+<div class="hero__copy">
 ${b.lead ? `<p class="hero__lead">${esc(b.lead)}</p>` : ''}
 <div class="hero__actions">${actions}</div>
 ${b.note ? `<p class="hero__note">${icon('info')}<span>${esc(b.note)}</span></p>` : ''}
 ${benefits ? `<div class="benefit-rail">${benefits}</div>` : ''}
 </div>
 ${figureBlock}
+</div>
   </div>
   ${strip}
 </section>`;
