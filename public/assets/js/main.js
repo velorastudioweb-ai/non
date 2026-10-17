@@ -210,13 +210,13 @@
  // Honeypot spam trap
  var hp = $('[name="company_website"]',form);
  if (hp && hp.value.trim() !== ''){ setStatus('ok','Thank you — your enquiry has been received.'); form.reset(); return; }
- if (!endpoint){
- // No delivery service configured — do NOT fake success.
- setStatus('err',
- 'This enquiry form is not yet connected to a delivery service. ' +
- 'Please contact the clinic directly by phone or email,or configure a form endpoint before launch.');
- return;
- }
+  if (!endpoint){
+  // No delivery service configured — do NOT fake success.
+  setStatus('err',
+  'Thank you. This enquiry form is still being finalised,so your message has not been sent yet. ' +
+  'Please contact the clinic directly by phone or email and the team will assist you.');
+  return;
+  }
  var data = new FormData(form);
  var original = submitBtn.innerHTML;
  submitBtn.classList.add('is-loading');

@@ -19,13 +19,19 @@ const site = {
   base: '/',
   defaultOg: '/assets/img/og-cover.svg',
   contact: {
-    // As supplied in the client's PDF blueprint; international city addresses
-    // and opening hours remain unpublished until confirmed.
+    // ---------------------------------------------------------------------
+    // PLACEHOLDER VALUES — replace with confirmed clinic details before launch.
+    // Each is intentionally flagged so it is obvious what still needs sign-off.
+    // ---------------------------------------------------------------------
     phone: '+852 4460 8658',
-    email: 'enquiries@nonsurgicalbreastenlargement.in',
+    email: 'enquiries@nonsurgicalbreastenlargement.in', // placeholder — real address to be confirmed
     address: 'Sun Tuen Mun Center, 55–56 Lung Mun Road, New Hong Kong Territories, Hong Kong',
     addressNote: 'Head office address as supplied by the clinic; street addresses for international locations are published once confirmed.',
-    hours: 'Consultation hours to be confirmed'
+    hours: 'Mon – Sat, 10:00 – 19:00 (to be confirmed)', // placeholder hours
+    // Placeholder delivery endpoint. Leave empty to keep the form honest (it
+    // will NOT fake a successful submission). Set a real Web3Forms/Formspree/
+    // custom URL to enable delivery.
+    formEndpoint: ''
   },
   footerBlurb: 'Physician-led breast enhancement education, personalised assessment and consultation for surgical and non-surgical options.',
   medicalDisclaimerShort: '',

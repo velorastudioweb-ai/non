@@ -1,14 +1,14 @@
 ﻿'use strict';
 const { icons, figure, flourish, divider } = require('./icons');
+const { keyFor, picture, pictureFor, pendingFrame, srcFor, esc } = require('./images');
 /* ---------- tiny helpers ---------- */
-const esc = (s) => String(s == null ? '' : s)
-  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const raw = (s) => s; // trusted authored HTML fragments
-function mediaSlot(label, note, cls) {
-  return `<div class="media-slot ${cls || ''}" role="img" aria-label="${esc('Placeholder image: ' + label)}">
-<strong>${esc(label)}</strong>
-<span>${esc(note || 'Licensed image to be supplied')}</span>
-  </div>`;
+/* Photograph for a content item — or a designed "not published" frame when the
+   content must never be faked (consented cases, not-yet-recorded videos). */
+function media(item, opts, cls) {
+  const key = keyFor(item);
+  if (!key) return pendingFrame(item, cls);
+  return pictureFor(item, opts);
 }
 function icon(name) { return icons[name] || ''; }
 /* ---------- HEAD ---------- */
@@ -36,13 +36,13 @@ function head(page, site) {
 <meta property="og:image" content="${site.url}/assets/img/og-cover.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="QuantumHealth by Dr. Vikas Singh â€” A more informed approach to breast enhancement">
+<meta property="og:image:alt" content="QuantumHealth by Dr. Vikas Singh — A more informed approach to breast enhancement">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(page.seoTitle)}">
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Gilda+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400..700&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${site.base}assets/css/styles.css">
 <link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
 ${schema}
@@ -111,15 +111,16 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
 ${site.contact.phone ? `<li><a href="tel:${esc(String(site.contact.phone).replace(/\s/g, ''))}">${esc(site.contact.phone)}</a></li>` : ''}
 ${site.contact.email ? `<li><a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a></li>` : ''}
 ${site.contact.address ? `<li>${esc(site.contact.address)}</li>` : ''}
+${site.contact.hours ? `<li>${esc(site.contact.hours)}</li>` : ''}
 </ul>
 </div>
 ${col('Explore', site.footerExplore)}
 ${col('Patient information', site.footerPatient)}
 ${col('Contact', site.footerContact)}
 </div>
-<div class="footer-disclaimer">
+${site.medicalDisclaimerShort ? `<div class="footer-disclaimer">
 ${esc(site.medicalDisclaimerShort)}
-</div>
+</div>` : ''}
 <div class="footer-bottom">
 <p>&copy; <span data-year>2026</span> ${esc(site.name)}. All rights reserved.</p>
 <div class="footer-legal">
@@ -135,6 +136,7 @@ function pageBanner(page, site) {
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
   return `<section class="page-banner">
+  <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}
 <h1>${esc(page.h1)}</h1>
@@ -148,8 +150,8 @@ function renderProse(b) {
   return `<div class="container"><div class="prose reveal">${raw(b.html)}</div></div>`;
 }
 function renderSplit(b) {
-  const media = b.slot
-? mediaSlot(b.slot, b.slotNote, 'ratio-4-5')
+  const mediaHtml = b.slot
+? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw' })
 : (b.media || '');
   return `<div class="container">
   <div class="split ${b.reverse ? 'split--reverse' : ''}">
@@ -160,16 +162,18 @@ ${b.body ? `<div class="prose" style="margin-top:var(--sp-3)">${raw(b.body)}</di
 ${b.link ? `<p style="margin-top:var(--sp-4)"><a class="link-arrow" href="${b.link.href}">${esc(b.link.label)} ${icon('arrow')}</a></p>` : ''}
 </div>
 <div class="split__media reveal" data-delay="1">
-<div class="media-frame ${b.mediaRatio || 'ratio-4-5'}">${media}</div>
-${b.script ? `<p class="script" style="margin-top:var(--sp-3);text-align:right">${esc(b.script)}</p>` : ''}
+<div class="media-frame ${b.mediaRatio || 'ratio-4-5'}">${mediaHtml}</div>
+${b.script ? `<p class="script">${esc(b.script)}</p><span class="ornament ornament--split" aria-hidden="true">${flourish}</span>` : ''}
 </div>
   </div>
 </div>`;
 }
 function renderCards(b) {
   const cols = b.cols || 3;
+  const sizes = '(max-width: 900px) 100vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
+    Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-<div class="card__media">${mediaSlot(it.slot || 'Image', it.slotNote, '')}</div>
+<div class="card__media">${media(it, { sizes, alt: it.imgAlt }, 'ratio-16-11')}</div>
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>
@@ -216,7 +220,7 @@ ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead" style="margin-top:var(--sp-3)">${esc(b.lead)}</p>` : ''}
 <hr class="rule">
-${b.slot ? `<div class="media-frame ratio-4-3">${mediaSlot(b.slot, b.slotNote)}</div>` : ''}
+${b.slot ? `<div class="media-frame ratio-4-3">${media(b, { sizes: '(max-width: 900px) 100vw, 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
 </div>
 <div class="steps reveal" data-delay="1">${items}</div>
   </div>
@@ -267,11 +271,21 @@ ${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}
 </div>`;
 }
 function renderGallery(b) {
-  const items = b.items.map((it, i) => `<button class="gallery-item reveal" type="button" data-lightbox
-data-full="${it.full || ''}" data-caption="${esc(it.caption)}" aria-label="${esc('Open image: ' + it.caption)}">
-${mediaSlot(it.slot || it.caption, it.slotNote, it.ratio || 'ratio-4-5')}
+  const items = b.items.map((it) => {
+    const key = keyFor(it);
+    const ratio = it.ratio || 'ratio-4-5';
+    if (!key) {
+      return `<figure class="gallery-item gallery-item--pending reveal">
+${pendingFrame(it, ratio)}
+<figcaption class="gallery-item__cap">${esc(it.caption)}</figcaption>
+  </figure>`;
+    }
+    return `<button class="gallery-item reveal" type="button" data-lightbox
+ data-full="${it.full || srcFor(key)}" data-caption="${esc(it.caption)}" aria-label="${esc('Open image: ' + it.caption)}">
+${picture(key, { sizes: '(max-width: 640px) 100vw, (max-width: 1300px) 25vw, 300px', alt: it.imgAlt })}
 <span class="gallery-item__cap">${esc(it.caption)}</span>
-  </button>`).join('\n    ');
+  </button>`;
+  }).join('\n    ');
   return `<div class="container">
   <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal">
 ${b.eyebrow ? `<p class="eyebrow ${b.center !== false ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
@@ -283,6 +297,7 @@ ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
 }
 function renderCta(b) {
   return `<div class="container">
+  <span class="ornament ornament--cta" aria-hidden="true">${divider}</span>
   <div class="cta-band__inner reveal">
 <div>
 ${b.eyebrow ? `<p class="eyebrow eyebrow--light">${esc(b.eyebrow)}</p>` : ''}
@@ -296,7 +311,7 @@ ${b.text ? `<p>${esc(b.text)}</p>` : ''}
 function renderForm(b, site) {
   const interests = (b.interests || []).map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
   const contacts = (b.contactMethods || ['Phone', 'Email']).map((m, i) => `<label><input type="radio" name="contact_method" value="${esc(m)}"${i === 0 ? ' checked' : ''}> ${esc(m)}</label>`).join('\n        ');
-  const sidebar = b.points ? `<ul class="stack">${b.points.map((p) => `<li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--gold-deep);flex:none">${icon('check')}</span><span>${esc(p)}</span></li>`).join('')}</ul>` : '';
+  const sidebar = b.points ? `<ul class="stack">${b.points.map((p) => `<li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none">${icon('check')}</span><span>${esc(p)}</span></li>`).join('')}</ul>` : '';
   return `<div class="container">
   <div class="split" style="align-items:start">
 <div class="reveal">
@@ -305,7 +320,7 @@ ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 ${b.lead ? `<p class="lead" style="margin-top:var(--sp-3)">${esc(b.lead)}</p>` : ''}
 <hr class="rule">
 ${sidebar}
-${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${mediaSlot(b.slot, b.slotNote)}</div>` : ''}
+${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${media(b, { sizes: '(max-width: 900px) 100vw, 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
 </div>
 <div class="reveal" data-delay="1">
 <form class="form" data-consult-form data-endpoint="${esc(b.endpoint || '')}" novalidate>
@@ -330,7 +345,7 @@ ${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${
 <div class="field">
 <label for="cf-interest">Area of interest <span class="req" aria-hidden="true">*</span></label>
 <select id="cf-interest" name="interest" required aria-describedby="cf-interest-err">
-<option value="">Please chooseâ€¦</option>
+<option value="">Please choose…</option>
 ${interests}
 </select>
 <span class="field__error" id="cf-interest-err" role="alert"></span>
@@ -353,7 +368,7 @@ ${contacts}
 </div>
 </div>
 <div class="field">
-<label for="cf-message">Anything you would like us to know? <span class="field__hint">(optional â€” please do not include sensitive medical details)</span></label>
+<label for="cf-message">Anything you would like us to know? <span class="field__hint">(optional — please do not include sensitive medical details)</span></label>
 <textarea id="cf-message" name="message"></textarea>
 </div>
 <div class="hp-field" aria-hidden="true">
@@ -392,11 +407,14 @@ function renderHero(b, site) {
 `<div class="benefit"><span class="benefit__icon" aria-hidden="true">${icon(it.icon)}</span><span class="benefit__label">${esc(it.label)}</span></div>`
   ).join('\n      ');
   const figureBlock = b.slot
-? `<div class="hero__figure">${mediaSlot(b.slot, b.slotNote)}</div>`
+? `<figure class="hero__figure">${media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt },
+  { eager: true, sizes: '(max-width: 900px) 100vw, 52vw' })}
+<figcaption class="hero__credit">Illustrative editorial photography</figcaption>
+</figure>`
 : '';
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero">
-  <div class="container hero__inner">
+  <div class="hero__inner">
 <div class="hero__copy">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--light hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h1 class="hero__title">${raw(b.title)}</h1>
@@ -404,11 +422,9 @@ ${b.script ? `<p class="script hero__script">${esc(b.script)}</p>` : ''}
 ${b.lead ? `<p class="hero__lead">${esc(b.lead)}</p>` : ''}
 <div class="hero__actions">${actions}</div>
 ${b.note ? `<p class="hero__note">${icon('info')}<span>${esc(b.note)}</span></p>` : ''}
-</div>
-<div class="hero__aside">
-${figureBlock}
 ${benefits ? `<div class="benefit-rail">${benefits}</div>` : ''}
 </div>
+${figureBlock}
   </div>
   ${strip}
 </section>`;
@@ -449,7 +465,7 @@ ${footer(page, site)}
 </body>
 </html>`;
 }
-module.exports = { layout, head, header, footer, icon, mediaSlot, renderFeatureStrip, esc, raw };
+module.exports = { layout, head, header, footer, icon, media, renderFeatureStrip, esc, raw };
 
 
 
