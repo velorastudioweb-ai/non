@@ -1,0 +1,243 @@
+{
+  "source": "Client-supplied PDF blueprint — 15 pages (8, 9, 11, 15 duplicate 3, 4, 2, 12)",
+  "brand": {
+    "name": "QUANTUM HEALTH",
+    "lines": ["Aesthetics | Regenerative | Wellness", "Longevity"],
+    "taglines": [
+      "Look Better / Feel Sexier / Be More Confident",
+      "Beauty. Science. Longevity.",
+      "Where Beauty, Science and Longevity Meet"
+    ],
+    "footerBadges": [
+      "Premium Clinics",
+      "International Standards",
+      "Advanced Technology",
+      "Expert Team",
+      "Safe & Effective",
+      "Beauty for a Longer You"
+    ]
+  },
+  "contact": {
+    "phone": "+852-44608658",
+    "addressAsPrinted": "Sun Tun Muen Center, 55-56 Lung Mung Road, New Hong Kong Terroritories",
+    "note": "Address exactly as printed in source (contains typo 'Terroritories')"
+  },
+  "drVikasSingh": {
+    "titles": [
+      "Cosmetic Dermatologist",
+      "Hair Transplant Surgeon",
+      "Longevity & Regenerative Medicine Expert"
+    ],
+    "line": "A Global Perspective in Aesthetic, Regenerative and Longevity Medicine",
+    "careerYears": "20+ years",
+    "careerFields": ["cosmetology", "dermatology", "hair transplantation", "anti-ageing", "regenerative medicine"],
+    "philosophy": ["healthspan", "appearance", "regeneration", "longevity"],
+    "clinicalWork": [
+      "Advanced Cosmetic Dermatology",
+      "Clinical & Aesthetic Dermatology",
+      "Hair Transplantation & Restoration",
+      "Micro-Bio FUE & Advanced FUE",
+      "Regenerative Hair Therapies",
+      "Hair & Scalp Microbiome Approaches",
+      "Anti-Aging & Longevity Medicine",
+      "Stem-Cell & Regenerative Medicine",
+      "Advanced Facial Rejuvenation",
+      "Body Contouring & Body Aesthetics",
+      "Non-Surgical Breast Aesthetic Procedures",
+      "Advanced Skin Rejuvenation",
+      "Personalized Longevity & Wellness Programs"
+    ],
+    "badges": [
+      "20+ Years",
+      "International Consulting Presence",
+      "Global Patients",
+      "Innovation in Aesthetics & Regenerative Medicine",
+      "Healthspan / Appearance / Regeneration / Longevity"
+    ],
+    "photoCaption": "Award photo at 'IGA', 'Media Iconic Gold Awards 2017' (partly legible)",
+    "awardsFromMockup": [
+      "The Times (Times Magazine Featured Doctor)",
+      "Zee Business Best Doctor Award (2019)",
+      "Aarogya Jyoti Award",
+      "Arab Health Global Recognition for Innovation in Aesthetics",
+      "Cosmo Prof",
+      "IMCAS"
+    ],
+    "membershipsFromMockup": [
+      "American Academy of Aesthetic Medicine (U.S.A)",
+      "International Society of Hair Restoration Surgery",
+      "American Board of Hair Restoration Surgery",
+      "Cardiff University Dermatology Training (Wales, U.K.)"
+    ]
+  },
+  "doctorsPanel": [
+    { "name": "Dr. Vikas Singh", "role": "Founder & CEO", "credentials": "MBBS, MD (Dermatology); Fellowships in Aesthetic Medicine AAAM (USA), ISHRS" },
+    { "name": "Dr. Surindher D.S.A", "role": "Plastic Surgeon", "credentials": "MBBS, MS (General Surgery), MCh (Plastic Surgery)" },
+    { "name": "Dr. Amod Rao", "role": "Consultant, Cosmetic Surgery", "credentials": "MBBS, MS (General Surgery), Fellowship in Aesthetic Surgery (Brazil)" },
+    { "name": "Dr. Arivazhagan", "role": "Cardiologist, Cardiothoracic & Vascular Surgeon", "credentials": "MBBS, MCh (Cardio Thoracic & Vascular Surgery), MS (General Surgery); 38 years' experience" },
+    { "name": "Dr. Subramini", "role": "Consultant Cosmetic, Plastic & Craniofacial Reconstructive Surgeon", "credentials": "MS, MCh, F.I.C.S., F.A.I.S., Ph.D.; ALIMS (Bangalore Medical College & Research Centre)" },
+    { "name": "Dr. D R Sekhar", "role": "Senior Consultant, Plastic, Aesthetic & Reconstructive Surgery", "credentials": "MBBS, MS (General Surgery), MCh (Plastic Surgery)" },
+    { "name": "Dr. Nandita", "role": "Oral & Maxillofacial Surgeon", "credentials": "MDS (OMFS)" },
+    { "name": "Dr. Alisha Khan", "role": "Aesthetic Healer & Cosmetologist", "credentials": "Aesthetic Treatments, Cosmetology, Skin, Hair, Laser, Wellness, Training & Education" }
+  ],
+  "doctorsPanelQuote": "A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.",
+  "teamFromMockup": [
+    { "name": "Dr. Vikas Singh", "role": "Founder & CEO" },
+    { "name": "Dr. Madhusudan", "role": "Plastic Surgery Trainee" },
+    { "name": "Dr. Subramaniam", "role": "Aesthetic Surgeon" },
+    { "name": "Dr. Shekhar", "role": "Cosmetic Surgeon" },
+    { "name": "Dr. Amod Rao", "role": "Aesthetic Plastic Surgeon" },
+    { "name": "A. Modi", "role": "Aesthetic Physician" },
+    { "name": "Dr. Sunita Devraj", "role": "Longevity Expert & Nutritionist" },
+    { "name": "Dr. Alisha Khan", "role": "Beauty Skin Trainer & Area Manager" },
+    { "name": "Pinky Singh", "role": "Clinic Manager" }
+  ],
+  "locations": [
+    { "city": "Dubai", "country": "UAE", "services": ["Aesthetics", "Regenerative Medicine", "Wellness", "Longevity"] },
+    { "city": "Bahrain", "country": "", "services": ["Aesthetics", "Skin & Hair", "Wellness", "Anti-Ageing"] },
+    { "city": "Toronto", "country": "Canada", "services": ["Aesthetics", "Cosmetic Surgery", "Regenerative Medicine", "Wellness"] },
+    { "city": "Bangkok", "country": "Thailand", "services": ["Aesthetics", "Body Contouring", "Wellness", "Anti-Ageing"] },
+    { "city": "Bangalore", "country": "India", "services": ["Aesthetics", "Hair Transplant", "Skin & Laser", "Regenerative Medicine"] },
+    { "city": "Hyderabad", "country": "India", "services": ["Aesthetics", "Cosmetology", "Wellness", "Anti-Ageing"] },
+    { "city": "Mumbai", "country": "India", "services": ["Aesthetics", "Plastic Surgery", "Skin & Hair", "Wellness"] },
+    { "city": "Chennai", "country": "India", "services": ["Aesthetics", "Dermatology", "Body Contouring", "Wellness"] }
+  ],
+  "hongKongHeadOffice": {
+    "role": "Head Office",
+    "services": [
+      "Advanced Aesthetic Dermatology",
+      "Hair Transplant & Restoration",
+      "Body Contouring & Non-Surgical Solutions",
+      "Regenerative Medicine & Stem Cell Therapy",
+      "Anti-Aging & Longevity Programs",
+      "Premium Skin & Beauty Lounge",
+      "Personalized Wellness Programs"
+    ],
+    "spaces": ["Consultation Room", "Treatment Room", "VIP Lounge", "Skin & Wellness Boutique"],
+    "badges": [
+      "International Standards",
+      "Ultra Luxury Experience",
+      "Global Patients",
+      "Advanced Technology",
+      "Safe. Scientific. Effective."
+    ]
+  },
+  "treatments": {
+    "nonSurgicalBreastEnlargement": {
+      "tagline": "Natural. Refined. Confident.",
+      "items": [
+        { "name": "Dermal Filler (Breast Enhancement)", "desc": "instant volume, shape and lift with premium fillers" },
+        { "name": "Sculptra (Breast Lift)", "desc": "stimulates natural collagen for long-lasting lift and firmness" },
+        { "name": "Dharmaflex Ultra PRP (Breast Lift)", "desc": "advanced PRP technology for natural rejuvenation and firmer, youthful breasts" },
+        { "name": "PDO Threads (Breast Lift)", "desc": "lifts, tightens, improves shape with minimal downtime" }
+      ],
+      "badges": ["Personalised Consultation", "Advanced Technology", "Natural Results", "Safe & Effective"]
+    },
+    "breastSculptra": {
+      "tagline": "Regeneration. Firmness. Natural Enhancement.",
+      "what": "\"FDA-approved\" injectable of Poly-L-Lactic Acid (PLLA), 150 mg/vial, stimulates collagen",
+      "howItWorks": ["1 Injection", "2 Collagen Stimulation", "3 Natural Enhancement"],
+      "benefits": ["Natural Volume", "Improves Firmness", "Stimulates Collagen", "Improves Skin Quality", "Minimally Invasive", "Natural Feel & Look"],
+      "idealFor": [
+        "loss of volume (weight loss/pregnancy)",
+        "mild sagging and laxity",
+        "improving shape and firmness",
+        "enhancement without implants"
+      ],
+      "badges": ["Natural Collagen Boost", "Gradual Visible Results", "Long-Lasting Firmness", "Minimal Downtime", "Safe & Effective"]
+    },
+    "breastDermaFiller": {
+      "tagline": "Natural curves. Firmer shape. Greater confidence.",
+      "what": "cross-linked hyaluronic acid (HA) fillers for volume, shape and contour",
+      "fillerTypes": [
+        { "name": "Restylane Lyft", "note": "high cohesivity and lift" },
+        { "name": "Juvederm Voluma", "note": "volume and contour" },
+        { "name": "Belotero Volume", "note": "natural feel and smoothness" },
+        { "name": "RHA Volume", "note": "flexible and long-lasting" }
+      ],
+      "howItWorks": ["Adds Volume", "Enhances Contour", "Stimulates Collagen", "Immediate Results"],
+      "keyUses": [
+        "enhance size",
+        "improve shape and symmetry",
+        "correct asymmetry",
+        "restore volume after weight loss or pregnancy",
+        "improve cleavage",
+        "non-surgical alternative to implants"
+      ],
+      "badges": ["Minimally Invasive", "Natural Results", "Quick Procedure", "Minimal Downtime", "Safe & Effective"]
+    },
+    "vampireBreastLift": {
+      "tagline": "Natural rejuvenation. Firmer. Fuller. Youthful.",
+      "what": "uses your own Platelet-Rich Plasma (PRP) from blood",
+      "steps": ["1 Blood Collection", "2 PRP Preparation", "3 PRP Injection", "4 Natural Regeneration"],
+      "benefits": ["Natural Enhancement", "Stimulates Collagen", "Improves Skin Quality", "Minimally Invasive", "Safe & Natural"],
+      "idealFor": [
+        "mild volume loss",
+        "post-pregnancy changes",
+        "laxity and sagging",
+        "improving texture",
+        "natural enhancement",
+        "a more youthful and firmer look"
+      ],
+      "badges": ["Natural Rejuvenation", "Visible Improvement", "Minimal Downtime", "Long-Lasting Results", "Safe & Effective"]
+    },
+    "nonSurgicalBreastLift": {
+      "tagline": "Natural curves. Firmer shape. Greater confidence.",
+      "features": ["Natural Look", "Firmer Shape", "Improved Volume", "No Surgery / Minimal Downtime", "Safe & Effective"],
+      "treatments": ["Dermal Filler (Breast Enhancement)", "Sculptra", "Dharmaflex Ultra PRP", "PDO Threads"],
+      "footer": ["Consultation", "Personalised Plan", "Advanced Technology", "Natural Results"]
+    },
+    "breastPdoThreadLift": {
+      "tagline": "Lift. Tighten. Shape. Natural & long-lasting.",
+      "what": "PDO (Polydioxanone) threads, biocompatible absorbable sutures",
+      "cogThreads": [
+        "stronger lift",
+        "immediate lift",
+        "better for sagging",
+        "enhances shape and projection",
+        "long-term collagen"
+      ],
+      "monoThreads": [
+        "improves skin quality",
+        "stimulates collagen",
+        "firmness and elasticity",
+        "ideal for early sagging",
+        "subtle enhancement"
+      ],
+      "howItWorks": ["1 Insertion", "2 Instant Lift", "3 Collagen Stimulation"],
+      "benefits": [
+        "Lifts & Firms",
+        "Improves Shape & Symmetry",
+        "Stimulates Collagen",
+        "Enhances Skin Elasticity",
+        "Minimally Invasive",
+        "Natural Look & Feel",
+        "Short Downtime"
+      ]
+    }
+  },
+  "websiteMockupNav": [
+    "Home", "About", "Breast Enlargement", "Treatments", "Our Team", "Locations", "Gallery", "Contact", "Book Consultation"
+  ],
+  "mockupHero": {
+    "title": "Non-Surgical Breast Enlargement",
+    "tagline": "Natural. Beautiful. Confident.",
+    "badges": ["Natural Look & Feel", "Firm & Youthful", "Minimally Invasive", "No Implants", "Quick Recovery"],
+    "cta": "Book a Consultation",
+    "sub": "Enhance. Restore. Rejuvenate. Your natural beauty."
+  },
+  "mockupMoreSolutions": [
+    "Botox", "Skin Boosters", "Body Contouring", "Hair Restoration",
+    "Anti-Ageing", "IV Therapy", "Slimming", "Wellness"
+  ],
+  "contactFormFields": ["Full Name", "Phone Number", "Email Address", "Your Message"],
+  "contactFormButton": "Send Message",
+  "inconsistencies": [
+    "Dr. Subramaniam (P5, P14) and Dr. Subramini (P13) are probably the same person",
+    "P5/P14 list Dr. Madhusudan, Dr. Shekhar, A. Modi, Dr. Sunita Devraj, Pinky Singh — absent from P13",
+    "P13 adds Dr. Surindher, Dr. Arivazhagan, Dr. Nandita — absent from P5/P14",
+    "Hong Kong is 'Head Office' on P6 but missing from P5/P14 location lists",
+    "Typos in source: 'AESTHET C', 'BFTER SCULPTRA', 'Terroritories'",
+    "Stray AI-generated caption visible at bottom of P14"
+  ]
+}

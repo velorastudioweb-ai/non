@@ -1,0 +1,12 @@
+{
+  "name": "quantumhealth-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static marketing website for QuantumHealth by Dr. Vikas Singh. Builds plain HTML/CSS/JS into dist/ with no runtime dependencies.",
+  "scripts": {
+    "build": "node build/gen.js",
+    "qa": "node build/gen.js && node build/qa.js",
+    "serve": "node build/serve.js",
+    "dev": "node build/gen.js && node build/serve.js --watch"
+  }
+}
