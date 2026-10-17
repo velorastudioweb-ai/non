@@ -89,7 +89,7 @@ files.forEach((f) => {
   if (!/<title>[^<]+<\/title>/.test(html)) errors.push(rel + ': missing <title>');
   if (!/name="description" content="[^"]+"/.test(html)) errors.push(rel + ': missing meta description');
   if (!/rel="canonical"/.test(html)) warnings.push(rel + ': missing canonical');
-  if (!/lang="en"/.test(html)) errors.push(rel + ': missing lang');
+  if (!/lang="en(?:-[A-Za-z]+)?"/.test(html)) errors.push(rel + ': missing lang');
 
   // unclosed section balance (rough)
   const openSection = (html.match(/<section[\s>]/g) || []).length;

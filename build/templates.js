@@ -19,7 +19,7 @@ function head(page, site) {
   const schema = (page.schema || []).map((s) =>
 `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n  ');
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@ function head(page, site) {
 <title>${esc(page.seoTitle)}</title>
 <meta name="description" content="${esc(page.seoDescription)}">${noindex}
 <link rel="canonical" href="${url}">
-<meta name="theme-color" content="#FCF9F7">
+<meta name="theme-color" content="#0A0508">
 <meta property="og:type" content="${esc(page.ogType || 'website')}">
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:title" content="${esc(page.seoTitle)}">
@@ -42,8 +42,10 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${site.base}assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${site.base}assets/css/tokens.css">
+<link rel="stylesheet" href="${site.base}assets/css/base.css">
+<link rel="stylesheet" href="${site.base}assets/css/components.css">
 <link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
 ${schema}
 </head>`;
@@ -135,7 +137,7 @@ function pageBanner(page, site) {
   const crumbs = [`<a href="${site.base}">Home</a>`]
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
-  return `<section class="page-banner">
+  return `<section class="page-banner petals">
   <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}
@@ -414,7 +416,7 @@ function renderHero(b, site) {
 </figure>`
 : '';
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
-  return `<section class="hero">
+  return `<section class="hero petals">
   <div class="hero__inner">
 <div class="hero__head">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--light hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
@@ -449,7 +451,7 @@ case 'table': return `<section${sid} class="section${b.alt ? ' section--alt' : '
 case 'faq': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderFaq(b)}</section>`;
 case 'gallery': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderGallery(b)}</section>`;
 case 'form': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderForm(b, site)}</section>`;
-case 'cta': return `<section${sid} class="section section--tight cta-band">${renderCta(b)}</section>`;
+case 'cta': return `<section${sid} class="section section--tight cta-band petals">${renderCta(b)}</section>`;
 default: return '';
   }
 }
