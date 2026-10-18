@@ -1,6 +1,6 @@
 ﻿'use strict';
 const { icons, figure, flourish, divider } = require('./icons');
-const { keyFor, picture, pictureFor, pendingFrame, srcFor, esc } = require('./images');
+const { keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = require('./images');
 /* ---------- tiny helpers ---------- */
 const raw = (s) => s; // trusted authored HTML fragments
 /* Photograph for a content item — or a designed "not published" frame when the
@@ -46,6 +46,7 @@ function head(page, site) {
 <link rel="stylesheet" href="${site.base}assets/css/tokens.css">
 <link rel="stylesheet" href="${site.base}assets/css/base.css">
 <link rel="stylesheet" href="${site.base}assets/css/components.css">
+<link rel="stylesheet" href="${site.base}assets/css/banners.css">
 <link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
 ${schema}
 </head>`;
@@ -134,10 +135,16 @@ ${site.footerLegal.map((i) => `<a href="${i.href}">${esc(i.label)}</a>`).join('\
 }
 /* ---------- PAGE BANNER ---------- */
 function pageBanner(page, site) {
+  const bannerImage = picture(bannerFor(page), {
+    className: 'page-banner__image',
+    sizes: '100vw',
+    eager: true
+  });
   const crumbs = [`<a href="${site.base}">Home</a>`]
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
   return `<section class="page-banner petals">
+  <div class="page-banner__art" aria-hidden="true">${bannerImage}</div>
   <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}

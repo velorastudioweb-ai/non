@@ -1,0 +1,44 @@
+/* Bold breast-medical artwork treatment for every generated page banner. */
+.page-banner {
+  position: relative;
+  isolation: isolate;
+}
+.page-banner__art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.page-banner__art img {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+}
+.page-banner__art::after {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(18, 3, 10, .96) 0%, rgba(27, 3, 13, .88) 36%, rgba(31, 3, 14, .48) 70%, rgba(20, 3, 10, .30) 100%),
+    linear-gradient(0deg, rgba(16, 6, 9, .62), transparent 58%);
+}
+.page-banner .container { position: relative; z-index: 2; }
+.page-banner__inner {
+  padding-block: clamp(4rem, 9vw, 7.25rem);
+  max-width: 68ch;
+}
+.page-banner h1 {
+  font-weight: 600;
+  text-wrap: balance;
+  text-shadow: 0 3px 28px rgba(0, 0, 0, .45);
+}
+.page-banner .eyebrow,
+.page-banner p {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .45);
+}
+@media (min-width: 1024px) {
+  .page-banner__figure {
+    opacity: .20;
+    z-index: 1;
+  }
+}
