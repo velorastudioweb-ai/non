@@ -1,0 +1,280 @@
+{
+  "generated": "2026-10-19",
+  "source": "National Health Service (NHS, UK)",
+  "sourceUrl": "https://www.nhs.uk/",
+  "about": "NHS patient information related to breast enlargement (implants), cosmetic procedure decision-making, choosing a practitioner, NHS funding, surgery abroad and reporting problems.",
+  "categories": [
+    {
+      "id": "breast-enlargement",
+      "name": "Breast enlargement (implants)",
+      "description": "The NHS page on breast enlargement: what the operation involves, costs, implant choices, longevity, recovery, complications, BIA-ALCL, PIP implants, the implant registry and breast screening."
+    },
+    {
+      "id": "deciding",
+      "name": "Deciding whether to go ahead",
+      "description": "NHS advice on working out whether a cosmetic procedure is right for you, and the steps to take before committing to any procedure."
+    },
+    {
+      "id": "choosing-practitioner",
+      "name": "Choosing who will do the procedure",
+      "description": "How to check a surgeon or practitioner is properly qualified, registered and insured, and what to ask at a consultation."
+    },
+    {
+      "id": "nhs-availability",
+      "name": "Cosmetic surgery on the NHS",
+      "description": "When the NHS may fund cosmetic procedures such as breast enlargement, and how that differs from reconstructive surgery."
+    },
+    {
+      "id": "abroad",
+      "name": "Cosmetic surgery abroad",
+      "description": "NHS advice on weighing savings against risks when considering cosmetic surgery in another country, including aftercare and flying after surgery."
+    }
+  ],
+  "documents": [
+    {
+      "id": "breast-enlargement",
+      "title": "Breast enlargement (implants)",
+      "category": "breast-enlargement",
+      "kind": "Patient information page",
+      "url": "https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/",
+      "updated": "2023-09-21",
+      "summary": "The NHS overview of breast enlargement (also called a boob job or breast augmentation). Implants are inserted to increase size, change shape or make breasts more even. The page covers funding, UK costs, choosing a surgeon and implants, how long implants last, the operation itself, recovery, complications, BIA-ALCL, PIP implants, the implant registry, breast screening and how to report problems.",
+      "keyPoints": [
+        "Breast enlargement is major surgery; results are not guaranteed and there are risks to weigh up.",
+        "It is usually paid for privately. The NHS may fund it in some circumstances, for example very uneven breasts or no breasts, depending on local rules.",
+        "In the UK, breast implant surgery costs around £3,500 to £8,000, which does not usually include consultations or follow-up care.",
+        "Two implant types are offered: silicone (most common in the UK) and saline. Placement is either behind the breast tissue or behind the chest muscle.",
+        "Implants are not lifetime devices; some women need further surgery after about 10 years.",
+        "The operation is done under general anaesthetic and takes between 60 and 90 minutes; most people go home the same day or stay overnight.",
+        "Recovery takes a few weeks: one or two weeks off work, no driving for at least a week, and no heavy lifting or strenuous exercise for at least a month.",
+        "Reported problems include capsular contracture, rupture, rippling, rotation, nipple sensation changes and reduced breast milk while breastfeeding.",
+        "BIA-ALCL is an uncommon immune-system cell cancer associated with implants; breast implant illness is a term for symptoms some women report after surgery.",
+        "PIP implants were banned in the UK in 2010; a ruptured implant should be removed as soon as possible.",
+        "The Breast and Cosmetic Implant Registry (BCIR), set up in 2016, allows implants to be traced if a safety concern arises.",
+        "Breast screening still matters after implants; mammograms are safe and can be performed differently so as much breast tissue as possible is seen."
+      ]
+    },
+    {
+      "id": "right-for-me",
+      "title": "Is a cosmetic procedure right for me?",
+      "category": "deciding",
+      "kind": "Advice page",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/advice/cosmetic-procedure-right-for-me/",
+      "updated": "2023-05-09",
+      "summary": "NHS advice on working out whether a cosmetic procedure is a sound decision: questions to ask yourself, how to research, speaking to an expert, taking time, avoiding pressure and considering mental health.",
+      "keyPoints": [
+        "Ask what you want to change and why, how long you have thought about it, what triggered it now, and whether there are other ways to achieve the same change.",
+        "Ask whether you are expecting the procedure to change your life as well as your appearance, and whether you want it for yourself or to please someone else.",
+        "Consider all costs, including aftercare, correcting problems and future procedures needed to maintain the look.",
+        "You should be given a cooling-off period after your consultation to decide.",
+        "Avoid time-limited offers, extra treatments you had not considered, group treatment events involving alcohol, and mobile services operating in private homes or hotels.",
+        "Tell the person treating you for a mental health condition, and your cosmetic practitioner, about any mental health problems past or present.",
+        "Free NHS talking therapies are available for anxiety and depression if appearance concerns are affecting your wellbeing."
+      ]
+    },
+    {
+      "id": "before-you-have",
+      "title": "Before you have a cosmetic procedure",
+      "category": "deciding",
+      "kind": "Advice page",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/advice/before-you-have-a-cosmetic-procedure/",
+      "updated": "2023-05-22",
+      "summary": "NHS checklist for people considering a cosmetic procedure, surgical (such as breast implants) or non-surgical (such as dermal fillers or Botox): be clear about why, speak to an expert, research, understand costs, choose a qualified practitioner, ask questions, be cautious with social media and take time.",
+      "keyPoints": [
+        "All cosmetic procedures carry some risks, and complications can be serious if they are not done correctly.",
+        "A GP or mental health professional can be a good first conversation, alongside a consultation with the practitioner.",
+        "Understand the full costs including aftercare and any future procedures needed to maintain the result.",
+        "Choose a practitioner who is trained, experienced and has the right insurance to correct anything that goes wrong.",
+        "Social media influencers are usually paid to advertise services, so research anything found there with extra care.",
+        "You should be offered a cooling-off period after any consultation, and you can walk away at any point."
+      ]
+    },
+    {
+      "id": "choosing-practitioner",
+      "title": "Choosing who will do your cosmetic procedure",
+      "category": "choosing-practitioner",
+      "kind": "Advice page",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/advice/choosing-who-will-do-your-procedure/",
+      "updated": "2023-06-23",
+      "summary": "NHS guidance on selecting a practitioner with the right training, skills and insurance: what to ask at a consultation, what the practitioner should explain, checks for cosmetic surgery in England (CQC clinic registration, GMC medical register, RCS certification, BAAPS/BAPRAS membership) and registers for non-surgical practitioners.",
+      "keyPoints": [
+        "Always book a consultation with the person who will do the procedure before deciding.",
+        "Ask how many procedures they have done, their qualifications, common complications, aftercare, what to do if something goes wrong, and the full cost including any further treatment.",
+        "The practitioner should explain how the procedure is done, how long it takes, whether anaesthetic is needed, expected pain, recovery time, risks, how long results last and what to expect afterwards.",
+        "Do not pay for a procedure until you have had a consultation.",
+        "In England, all independent hospitals and clinics providing cosmetic surgery must be registered with the Care Quality Commission (CQC), which publishes quality ratings.",
+        "Only registered doctors can perform cosmetic surgery in England; check the GMC medical register, and note the Royal College of Surgeons certifies cosmetic surgeons against a national standard.",
+        "For non-surgical procedures, look for practitioners on PSA-accredited voluntary registers such as JCCP or Save Face.",
+        "Avoid group treatments, treatment vouchers from discount sites, mobile services in homes or hotels, and practitioners who only advertise on social media.",
+        "Dermal filler complications can be serious, including infection, nerve damage and blindness, so avoid practitioners with only short training courses."
+      ]
+    },
+    {
+      "id": "cosmetic-surgery-nhs",
+      "title": "Is cosmetic surgery available on the NHS?",
+      "category": "nhs-availability",
+      "kind": "Advice page",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/advice/cosmetic-procedures-on-the-nhs/",
+      "updated": "2023-04-17",
+      "summary": "Cosmetic surgery is not routinely provided on the NHS, though it may occasionally be funded for psychological or other health reasons. Breast enlargement may be funded for very uneven breasts or no breasts causing significant psychological distress. Reconstructive plastic surgery, such as breast rebuilding after mastectomy or cleft lip and palate repair, is different and often available.",
+      "keyPoints": [
+        "Most people who want cosmetic surgery pay for it privately.",
+        "NHS breast enlargement funding depends on local commissioning rules; your GP can explain the rules in your area.",
+        "Other examples where the NHS may pay include nose reshaping for breathing problems, ear correction, and breast reduction causing backache.",
+        "Male breast reduction may be funded for long-standing gynaecomastia that has not responded to other treatments and causes considerable pain or distress.",
+        "Reconstructive surgery aims to repair or reconstruct missing or damaged tissue after illness, accident or birth defect, and is often available on the NHS."
+      ]
+    },
+    {
+      "id": "surgery-abroad",
+      "title": "Cosmetic surgery abroad",
+      "category": "abroad",
+      "kind": "Advice page",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/advice/cosmetic-surgery-abroad/",
+      "updated": "2022-12-14",
+      "summary": "NHS advice on cosmetic surgery abroad: lower prices must be weighed against risks, follow-up care may be missing or of a different standard, holiday packages need caution, and aftercare, insurance and flying plans should be sorted out in advance.",
+      "keyPoints": [
+        "Overseas clinics may not provide follow-up treatment, or not to the same standard as the UK, and may have no UK professional you can see if problems arise.",
+        "Be cautious of websites selling cosmetic surgery as part of a holiday: meet the surgeon, and do not pay for a hospital you have never seen or a surgeon you have not met.",
+        "Recovering straight after a holiday is unrealistic; rest is required, with no alcohol, sunbathing, sightseeing or swimming.",
+        "Find out what happens if there are complications, where follow-ups will be, how easily you could travel back for more surgery, and how much it would cost.",
+        "Standards and qualifications abroad may differ, so find out how surgeons and clinics are regulated in the chosen country.",
+        "You should have two consultations with the treating surgeon before surgery, giving a cooling-off period; they should explain the procedure, its limitations, alternatives and risks, and show before-and-after pictures.",
+        "Travel insurance normally does not cover things going wrong with surgery; check clinic insurance, travel cover and how you would get home in an emergency.",
+        "Do not fly for 5 to 7 days after procedures such as breast surgery, as air travel plus major surgery increases the risk of a life-threatening blood clot."
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "Funding",
+      "statement": "Breast enlargement is usually paid for privately. The NHS may fund it in some circumstances, for example very uneven breasts or no breasts, and it often depends on the rules in your local area; your GP can explain them.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "NHS funding exceptions",
+      "statement": "Cosmetic surgery is not routinely provided on the NHS, but may be provided for psychological or other health reasons, such as breast enlargement causing significant psychological distress.",
+      "source": "cosmetic-surgery-nhs"
+    },
+    {
+      "topic": "Cost in the UK",
+      "statement": "Breast implant surgery costs around £3,500 to £8,000 in the UK. This does not usually include consultations or follow-up care, and future follow-up surgery is also payable.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "What the operation does",
+      "statement": "Implants are inserted to increase breast size, change their shape or make breasts more even. The procedure is often known as a boob job or breast augmentation.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Implant types",
+      "statement": "There are two types of implant: silicone and saline. Silicone is the most common in the UK — less likely to wrinkle and feels more natural, but can spread into the breast and cause lumps. Saline is more likely to fold, rupture or deflate over time, but leaked saline is safely absorbed by the body.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Implant placement",
+      "statement": "Implants are placed either behind the breast tissue or behind the chest muscle, and size, shape and placement are discussed with the surgeon before the operation.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Implant longevity",
+      "statement": "Breast implants do not last a lifetime and will probably need replacing at some point. Some women need further surgery after about 10 years because of implant problems or because the breasts have changed around the implants.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "The operation",
+      "statement": "Breast implant surgery is usually done under general anaesthetic. An incision is made next to or below the breast, the implant is positioned, and the incision is stitched and dressed. The operation takes between 60 and 90 minutes, with same-day discharge or an overnight stay.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Recovery",
+      "statement": "Take one or two weeks off work, do not drive for at least one week, and avoid heavy lifting or strenuous exercise for at least a month. Stitches come out after one to two weeks, most normal activity resumes after about six weeks, and breasts settle over a few months. Some surgeons recommend a sports bra 24 hours a day for up to three months.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Sunbathing and flying",
+      "statement": "It is safe to sunbathe and fly if you have breast implants, once recovered. Separately, the NHS advises not flying for 5 to 7 days after breast surgery because of blood clot risk.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Common implant problems",
+      "statement": "Breast implants can cause thick scarring, capsular contracture (the breast feeling hard as scar tissue shrinks around the implant), rupture, creases or folds, rotation, rippling, nipple nerve changes that may be temporary or permanent, and slightly less breast milk while breastfeeding.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "General surgical risks",
+      "statement": "As with any operation there is a small risk of bleeding and clots (blood clots can be life threatening), infection treated with antibiotics, and allergic reaction to medicines or products used during surgery such as antibiotics or latex.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Rupture detection",
+      "statement": "A ruptured implant may cause small tender lumps (siliconomas) visible only on breast scans, and the implant will need to be removed. Ultrasound or MRI scans can check whether implants have ruptured.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "BIA-ALCL",
+      "statement": "There is an association between breast implants and an uncommon immune system cell cancer called breast implant associated anaplastic large cell lymphoma (BIA-ALCL), which develops in the scar tissue around implants in a very small number of people.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Breast implant illness",
+      "statement": "Some women report symptoms after breast implant surgery such as tiredness, anxiety and joint pain, sometimes referred to as breast implant illness.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "PIP implants",
+      "statement": "PIP (Poly Implant Prostheses) implants were banned in the UK in 2010 after they were found to contain unapproved silicone gel and to be more likely to split. Anyone with PIP implants should get medical advice, and a ruptured implant should be removed as soon as possible.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Implant registry",
+      "statement": "The Breast and Cosmetic Implant Registry (BCIR) was set up in 2016 to record the details of anyone who has breast implants for any reason, so they can be traced if there is a safety concern about a specific implant type.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Screening after implants",
+      "statement": "You can still get breast cancer after implants and should continue regular breast screening. Mammograms are safe and do not rupture implants; because X-rays cannot pass through implants, the mammogram may be done differently so as much breast tissue as possible can be seen.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Reporting problems",
+      "statement": "Problems with breast implants can be reported through the government's Yellow Card Scheme. Concerns about care can go to the Care Quality Commission, and concerns about a doctor to the General Medical Council.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Choosing a clinic in England",
+      "statement": "All independent clinics and hospitals providing cosmetic surgery in England must be registered with the Care Quality Commission (CQC), which publishes quality ratings online.",
+      "source": "choosing-practitioner"
+    },
+    {
+      "topic": "Choosing a surgeon",
+      "statement": "Check the surgeon is registered with the General Medical Council (GMC), listed on the specialist register and holding a licence to practise. Many are also members of BAPRAS or BAAPS, whose registers can be checked, and the Royal College of Surgeons certifies cosmetic surgeons against an agreed national standard.",
+      "source": "choosing-practitioner"
+    },
+    {
+      "topic": "Questions for your surgeon",
+      "statement": "The NHS suggests asking about qualifications and experience, professional association membership, how many breast enlargements they have performed, how many operations involved complications, the implant type, manufacturer and why it is used, the surgical technique and placement, expected results, follow-up if things go wrong, patient satisfaction rates and alternative options.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Time to decide",
+      "statement": "You should be given a cooling-off period after your consultation. The NHS warns against time-limited offers, extra treatments pushed at the clinic, group events involving alcohol, and mobile services operating in private homes or hotels.",
+      "source": "right-for-me"
+    },
+    {
+      "topic": "Payment",
+      "statement": "Do not pay for a procedure until you have had a consultation to make sure it is right for you.",
+      "source": "choosing-practitioner"
+    },
+    {
+      "topic": "Social media advertising",
+      "statement": "Be cautious about procedures or clinics found on social media; influencers are usually paid to advertise, and practitioners who only advertise on social media should be avoided.",
+      "source": "before-you-have"
+    },
+    {
+      "topic": "Surgery abroad",
+      "statement": "Cosmetic surgery abroad can cost less, but follow-up care may be missing or of a different standard, travel insurance normally does not cover surgical complications, and you should have two consultations with the surgeon before surgery. Do not fly for 5 to 7 days after breast surgery.",
+      "source": "surgery-abroad"
+    }
+  ]
+}

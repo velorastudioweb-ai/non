@@ -157,7 +157,7 @@ const fdaPage = {
       title: 'Regulatory scope and jurisdiction',
       text:
         '<p>FDA statements describe the position of the U.S. regulator. Approvals, warnings and labeling requirements can differ in other countries, and the FDA does not regulate where a procedure is performed or by whom outside its jurisdiction. Local registration, advertising rules and clinical standards still apply.</p>' +
-        '<p>For published research rather than regulator guidance, see the <a href="/research/breast-enlargement/">PMC research library</a>. For an evidence overview of non-surgical options, see the <a href="/breast-enlargement-without-surgery/">evidence guide</a>.</p>'
+        '<p>For published research rather than regulator guidance, see the <a href="/research/breast-enlargement/">PMC research library</a>. For UK patient information, see the <a href="/research/nhs-breast-enlargement/">NHS information library</a>. For an evidence overview of non-surgical options, see the <a href="/breast-enlargement-without-surgery/">evidence guide</a>.</p>'
     },
     {
       type: 'prose',

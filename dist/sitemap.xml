@@ -141,6 +141,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://quantumhealth-website.vercel.app/breast-enlargement-research/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://quantumhealth-website.vercel.app/technology-and-medical-standards/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -167,6 +172,11 @@
   </url>
   <url>
     <loc>https://quantumhealth-website.vercel.app/research/fda-breast-enlargement/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/research/nhs-breast-enlargement/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

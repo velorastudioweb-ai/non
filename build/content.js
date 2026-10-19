@@ -52,6 +52,7 @@ const site = {
     { label: 'Media & press', href: '/media-and-press/' },
     { label: 'PMC research library', href: '/research/breast-enlargement/' },
     { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
+    { label: 'NHS information', href: '/research/nhs-breast-enlargement/' },
     { label: 'Dr. Vikas Singh', href: '/about-dr-vikas-singh/' },
     { label: 'Book a consultation', href: '/book-consultation/' }
   ],
@@ -62,6 +63,7 @@ const site = {
     { label: 'Fat transfer', href: '/surgical/fat-transfer-breast-augmentation/' },
     { label: 'Treatment comparison', href: '/breast-enhancement-comparison/' },
     { label: 'What works: evidence guide', href: '/breast-enlargement-without-surgery/' },
+    { label: 'Research (PubMed)', href: '/breast-enlargement-research/' },
     { label: 'Gallery', href: '/before-after-gallery/' }
   ],
   footerPatient: [
@@ -71,6 +73,7 @@ const site = {
     { label: 'Insights & articles', href: '/blogs/' },
     { label: 'PMC research library', href: '/research/breast-enlargement/' },
     { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
+    { label: 'NHS information', href: '/research/nhs-breast-enlargement/' },
     { label: 'FAQs', href: '/faqs/' },
     { label: 'Video gallery', href: '/video-gallery/' },
     { label: 'Media & press', href: '/media-and-press/' }
@@ -1598,6 +1601,119 @@ pages.push({
       ]
     },
     stdCta({ heading: 'Still have questions? Arrange a consultation' })
+  ]
+});
+
+/* ---------- Breast enlargement research (PubMed) ---------- */
+const pubmed = (id, label) => '<a href="https://pubmed.ncbi.nlm.nih.gov/' + id + '/" rel="noopener">' + (label || 'PMID ' + id) + '</a>';
+pages.push({
+  url: '/breast-enlargement-research/', slug: 'breast-enlargement-research',
+  h1: 'Breast Enlargement Research: What the Published Evidence Shows',
+  seoTitle: 'Breast Enlargement Research & PubMed Evidence | QuantumHealth',
+  seoDescription: 'Peer-reviewed breast enlargement research indexed in PubMed — fat transfer, implants, external expansion, fillers and global trends, with links to every study.',
+  bannerEyebrow: 'Research library · PubMed',
+  bannerLead: 'Breast enlargement studies indexed in PubMed — surgical and non-surgical — summarised by topic, with a link to every original record.',
+  breadcrumb: [{ label: 'Research' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enlargement Research (PubMed)', url: site.url + '/breast-enlargement-research/' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>This page collects peer-reviewed research on breast enlargement — surgical and non-surgical — indexed in PubMed, the US National Library of Medicine’s database of biomedical literature. In October 2026 we searched PubMed using title and abstract terms covering breast augmentation, breast enlargement, fat transfer and autologous fat grafting, non-surgical enlargement, breast implants and breast fillers. Of 77 unique records retrieved, the most relevant are summarised here, grouped by topic, with a link to each original PubMed record.</p>' +
+      '<p><strong>What the literature shows in brief:</strong> breast augmentation with implants remains one of the most frequently performed aesthetic operations worldwide, with predictable volume but real complication and revision rates. Autologous fat grafting is the best-supported route to lasting volume without an implant, but the gain is modest and complications occur in roughly a quarter of cases in the largest systematic review. External vacuum expansion has produced true tissue growth in small studies, but demands weeks of daily device wear. Injectable fillers are not approved for breast enlargement, and published case series document serious complications. Creams, pills and most devices have no credible supporting trials.</p>' },
+    { type: 'notice', icon: 'evidence', title: 'How this page was compiled',
+      text: 'Searches were run on PubMed (National Library of Medicine, USA) in October 2026 using title/abstract terms: “breast augmentation”, “breast enlargement”, (“fat transfer” OR “autologous fat grafting” OR “fat grafting”) AND breast augmentation, (“non-surgical” OR filler OR PRP OR “platelet-rich plasma”) AND breast enlargement, and breast implants AND (augmentation OR enlargement). 77 unique records were retrieved; the studies most relevant to breast enlargement are summarised below. Summaries use abstract-level data — consult the full article and current guidelines before drawing clinical conclusions. Inclusion here is not an endorsement of any study or treatment.' },
+    { type: 'table', alt: true, eyebrow: 'Evidence at a glance', heading: 'The headline findings, by question',
+      lead: 'Each row links to the PubMed record behind the finding.',
+      head: ['Question', 'What the published evidence shows', 'Key studies'],
+      rows: [
+        ['Does fat transfer enlarge breasts?', 'Yes — modestly. The largest systematic review (35 studies, 3,757 women) reported an average 58% fat retention from about 300 mL injected per breast — roughly one cup — with a 27.8% overall complication rate and 92% average patient satisfaction.', 'Seth 2024 (' + pubmed('37166041') + ')'],
+        ['Is fat transfer better than implants?', 'The only randomised trial identified found implants gave more evident and durable augmentation (87.5% vs 70% “excellent” aesthetic outcomes), while fat grafting produced more natural-looking results and better correction of chest-wall deformity.', 'Gentile 2026 (' + pubmed('40908320') + ')'],
+        ['Can a vacuum device enlarge breasts without surgery?', 'A 2000 study reported a stable 55% average size increase after 10 weeks of daily external expansion (10–12 h/day); MRI confirmed growth of fat and fibroglandular tissue. Evidence remains limited and largely developer-led.', 'Khouri 2000 (' + pubmed('10845308') + '); Kardorff 2004 (' + pubmed('16285326') + ')'],
+        ['Do breast fillers work — and are they safe?', 'Hyaluronic acid gel was briefly authorised for breast use in Europe (2008), then withdrawn worldwide after side effects. A 31-patient complication series found 88.9% of conservatively treated aquafilling cases needed reoperation. Regulators advise against fillers for breast enlargement.', 'Siebert 2014 (' + pubmed('24507861') + '); Gierej 2023 (' + pubmed('37721627') + '); Jeyaratnam 2021 (' + pubmed('34849315') + ')'],
+        ['How often do implants need revision?', 'Reported revision rates after primary augmentation are as high as 36%, most commonly for capsular contracture, implant malposition and ptosis of the ageing breast.', 'Denney 2021 (' + pubmed('34121945') + ')'],
+        ['Is “breast implant illness” established?', 'Systemic symptoms attributed to implants are widely reported, but a 2024 Danish review notes the correlation with implants is not established, evidence is limited, and it is not a recognised diagnosis.', 'Borhani-Khomani 2024 (' + pubmed('38808767') + ')'],
+        ['How common is augmentation worldwide?', 'ISAPS 14-year global data show breast augmentation consistently among the top five surgical aesthetic procedures. Implant removal has been the fastest-growing procedure since 2015 (+46.3% over five years).', 'Triana 2024 (' + pubmed('39103642') + ')']
+      ],
+      note: 'Study figures describe the groups studied and may not apply to any individual. Evidence and regulatory positions change — check the linked records and current regulator guidance before acting.' },
+    { type: 'prose', html:
+      '<h2 class="h3">Fat transfer (autologous fat grafting)</h2>' +
+      '<p>Fat transfer removes fat by liposuction from another body area and injects it into the breast. It is the best-documented route to real, lasting volume without an implant — but the gain is modest, and the evidence base, while growing, is still dominated by retrospective series rather than controlled trials.</p>' },
+    { type: 'table', eyebrow: 'Fat transfer studies', heading: 'What fat-grafting research reports',
+      head: ['Study', 'Design', 'What it found'],
+      rows: [
+        ['Seth I, et al. 2024 — <em>Plast Reconstr Surg</em> (' + pubmed('37166041') + ')', 'Systematic review: 35 studies, 3,757 women', 'Average 300 mL injected per breast; 58% volume retention (range 44–83%); 27.8% overall complication rate, fat necrosis the most common (43.7% of complications); radiologic fat necrosis 9.4%, calcification 1.2%; 92% average satisfaction at one year.'],
+        ['Gentile P. 2026 — <em>Aesthetic Plast Surg</em> (' + pubmed('40908320') + ')', 'Randomised open-label trial: 95 implants vs 90 lipofilling', '87.5% of implant patients vs 70% of lipofilling patients had excellent aesthetic outcomes at 12 months. Implant results were significantly more durable; lipofilling results were judged more natural and improved pectus excavatum. Both were safe and effective.'],
+        ['Voglimacci M, et al. 2015 — <em>Aesthetic Surg J</em> (' + pubmed('25908697') + ')', 'Systematic review: 42 articles', 'Evidence mostly low level (one level-2 study). Two cancers among 2,023 patients (0.09%) with insufficient follow-up for long-term conclusions. Concludes registries with proper follow-up are needed.'],
+        ['Leopardi D, et al. 2014 — <em>ANZ J Surg</em> (' + pubmed('23656507') + ')', 'Systematic review vs implant comparators', 'No comparative studies were found. Fat necrosis, cysts and lumps were the most common complications; reabsorption occurs mainly in the first 12 months; efficacy could not be determined from the available evidence.'],
+        ['Hivernaud V, et al. 2015 — <em>Aesthetic Plast Surg</em> (' + pubmed('26085223') + ')', 'Technique review', 'High resorption remains the central problem of large-volume grafting; refinements in harvesting and graft preparation aim to improve fat viability and long-term success.'],
+        ['Coleman SR, Saboeiro AP. 2015 — <em>Clin Plast Surg</em> (' + pubmed('26116935') + ')', 'Technique review', 'The 2009 ASPS Fat Graft Task Force concluded fat grafting may be considered for breast augmentation, with results dependent on technique and surgeon expertise.'],
+        ['Finzi E. 2003 — <em>Dermatol Surg</em> (' + pubmed('12930335') + ')', 'Retrospective record review', 'Breast enlargement occurred in 43% of patients after tumescent liposuction of other body areas; 30% gained one cup size or more — an incidental, redistribution-based effect.'],
+        ['Seth I, et al. 2023 — <em>Gland Surg</em> (' + pubmed('36761486') + ')', 'Method paper: hybrid augmentation', 'Proposes a preoperative formula to estimate fat-graft volume when combining implants with lipofilling (hybrid breast augmentation).']
+      ] },
+    { type: 'prose', alt: true, html:
+      '<h2 class="h3">Non-surgical enlargement: external expansion</h2>' +
+      '<p>External vacuum expansion devices (bra-like systems worn for hours a day) aim to grow tissue through controlled mechanical stretch. Small studies report measurable growth; the regimens are demanding, and critics have questioned measurement consistency.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Expansion studies', heading: 'External expansion: the published record',
+      head: ['Study', 'Design', 'What it found'],
+      rows: [
+        ['Khouri RK, et al. 2000 — <em>Plast Reconstr Surg</em> (' + pubmed('10845308') + ')', 'Single-group study: 17 women (12 completed)', 'A brassiere-like system applying 20 mmHg per breast, 10–12 h/day for 10 weeks: peak increase 98%; after recoil, a stable long-term increase of 55% (range 15–115%). MRI confirmed proportionate growth of adipose and fibroglandular tissue. No adverse events recorded.'],
+        ['Kardorff B, et al. 2004 — <em>JDDG</em> (' + pubmed('16285326') + ')', 'German case report using the same protocol', 'Chest circumference at the nipple level remained 4 cm above baseline at three months after oedema resolved. Side effects were limited to transient irritant contact dermatitis and folliculitis.'],
+        ['He Y, et al. 2017 — <em>Plast Reconstr Surg</em> (' + pubmed('28350663') + ')', 'Preclinical/technique study', 'Combining minimally invasive tissue dissection with external volume expansion generated far more adipose tissue than expansion alone, mediated by release of cell-contact inhibition.'],
+        ['Tebbetts JB. 2001 — <em>Plast Reconstr Surg</em> (' + pubmed('11379562') + ')', 'Critical review', 'Argued that claimed non-surgical enlargement largely reflects measurement variability and soft-tissue change rather than reliable true tissue growth — a caution against overstating the early expansion data.'],
+        ['Uyulmaz S, et al. 2020 — <em>Praxis</em> (' + pubmed('33109001') + ')', 'Clinical review', 'Reviews implant-free cosmetic augmentation: mastopexy for optical lift and lipofilling for volume; large-volume or high-goal augmentation with fat alone remains limited.']
+      ] },
+    { type: 'prose', html:
+      '<h2 class="h3">Fillers and injectable products</h2>' +
+      '<p>No injectable filler is approved for breast enlargement by major regulators. The published literature documents what happens when fillers are used in the breast: product withdrawal, complication series and reoperation.</p>' },
+    { type: 'table', eyebrow: 'Filler safety evidence', heading: 'What the filler studies report',
+      head: ['Study', 'Design', 'What it found'],
+      rows: [
+        ['Siebert T, et al. 2014 — <em>Ann Chir Plast Esthet</em> (' + pubmed('24507861') + ')', 'Literature review (Macrolane)', 'Hyaluronic acid gel (Macrolane) received European authorisation for breast augmentation in 2008, then was withdrawn from the worldwide breast-augmentation market after numerous side-effect controversies.'],
+        ['Gierej P, et al. 2023 — <em>Aesthetic Plast Surg</em> (' + pubmed('37721627') + ')', 'Observational cohort: 31 women with aquafilling-gel complications', '88.9% of patients treated conservatively required reoperation, vs 22.7% after radical surgery. Needle aspiration was ineffective and associated with infection (75% positive cultures). More filler injected correlated with more symptoms.'],
+        ['Jeyaratnam S, Joethy J. 2021 — <em>PRS Global Open</em> (' + pubmed('34849315') + ')', 'Case-based review', 'Documents the dangers of filler breast augmentation, consistent with regulator advice against the practice.']
+      ] },
+    { type: 'prose', alt: true, html:
+      '<h2 class="h3">Implant augmentation: outcomes, complications and revision</h2>' +
+      '<p>Implant surgery has the largest evidence base of any augmentation method. The studies below cover complication prevention, revision burden, device history, imaging and patient-reported systemic symptoms.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Implant studies', heading: 'Implant augmentation: the study data',
+      head: ['Study', 'Design', 'What it found'],
+      rows: [
+        ['Denney BD, et al. 2021 — <em>Semin Plast Surg</em> (' + pubmed('34121945') + ')', 'Review', 'Revision rates after primary augmentation remain as high as 36%; the commonest causes are capsular contracture, implant malposition and ptosis of the ageing breast.'],
+        ['Nava MB, et al. 2017 — <em>Gland Surg</em> (' + pubmed('28497025') + ')', 'Evidence review', 'No high-level evidence identifies a single best technique or implant; complication reduction follows established surgical principles rather than device fashion.'],
+        ['Nahabedian MY. 2019 — <em>Plast Reconstr Surg</em> (' + pubmed('31246764') + ')', 'Review of form-stable implants', 'Reviews diagnosis and management of complications with modern cohesive-gel implants; no implant lasts forever, though devices remain safe and effective per clinical and epidemiologic studies.'],
+        ['Kaoutzanis C, et al. 2019 — <em>Semin Plast Surg</em> (' + pubmed('31632203') + ')', 'Historical review', 'Traces implant evolution since 1962, including the silicone-gel controversies, and how successive generations improved safety and aesthetics.'],
+        ['Correia-Sá I, et al. 2013 — <em>Aesthetic Plast Surg</em> (' + pubmed('23943050') + ')', 'Case report with histology', 'PIP implants showed increased rupture and leakage risk; documents clinical, histologic and microbiologic findings after rupture, including siliconoma and lymph-node involvement.'],
+        ['Monstrey S, et al. 2004 — <em>Plast Reconstr Surg</em> (' + pubmed('15108875') + ')', 'Case series: 13 patients', 'Trilucent (soybean-oil-filled) implants failed because of lipid-oxidation metabolites; UK and Belgian authorities advised removal — a documented device-withdrawal precedent.'],
+        ['Simádo TS. 2021 — <em>Plast Reconstr Surg</em> (' + pubmed('33885442') + ')', 'Clinical algorithm', 'Galactorrhea and galactocele after breast augmentation: a diagnosis and treatment algorithm.'],
+        ['Green LA, et al. 2018 — <em>Clin Imaging</em> (' + pubmed('28918365') + ')', 'Imaging review', 'Breast-cancer screening must continue after augmentation; radiologists need familiarity with surgical techniques, implant appearances and MRI findings.'],
+        ['Faguy K. 2018 — <em>Radiol Technol</em> (' + pubmed('29793920') + ')', 'Imaging review', 'Catalogues adverse effects and imaging appearances of breast implants for technologists and radiologists.'],
+        ['Borhani-Khomani K, et al. 2024 — <em>Ugeskr Læger</em> (' + pubmed('38808767') + ')', 'Danish review', 'Self-reported systemic symptoms attributed to implants (“breast implant illness”): the correlation is not established, evidence is limited, and the condition is not currently a recognised diagnosis.'],
+        ['Luan J. 2023 — <em>Clin Plast Surg</em> (' + pubmed('36396254') + ')', 'Technique review', 'Endoscopic-assisted transaxillary augmentation: the axillary approach remains preferred by many patients in Asia; endoscopy improves control and stability of the result.'],
+        ['Bekeny JC, et al. 2020 — <em>Gland Surg</em> (' + pubmed('32775269') + ')', 'Review (transfeminine augmentation)', 'Augmentation for transfeminine patients is technically similar to that for cisgender peers, with equivalent complication rates and documented quality-of-life benefits.'],
+        ['Holst-Albrechtsen S, et al. 2018 — <em>Ugeskr Læger</em> (' + pubmed('29886889') + ')', 'Clinical study', 'Post-operative infections after cosmetic surgery abroad (“cosmetic tourism”) — treatment abroad carries identifiable infection risk.']
+      ] },
+    { type: 'prose', html:
+      '<h2 class="h3">Global trends and contemporary benchmarks</h2>' +
+      '<p>Large registry analyses show how often augmentation is performed, how preferences are shifting, and where the field is heading.</p>' },
+    { type: 'table', eyebrow: 'Trends', heading: 'What the registry and benchmark studies report',
+      head: ['Study', 'Design', 'What it found'],
+      rows: [
+        ['Triana L, et al. 2024 — <em>Aesthetic Plast Surg</em> (' + pubmed('39103642') + ')', 'ISAPS global statistics, 2010–2023', '34.9 million aesthetic procedures worldwide in 2023. Breast augmentation has remained consistently in the top five surgical procedures for 14 years, with a first decline in the most recent year; implant removal is the fastest-growing procedure since 2015 (+46.3% over five years).'],
+        ['Glicksman CA. 2026 — <em>Clin Plast Surg</em> (' + pubmed('41826039') + ')', 'Benchmarks review', 'Contemporary benchmarks in breast augmentation surgery — current reference points for planning and outcomes.'],
+        ['Lhuaire M, et al. 2019 — <em>Plast Reconstr Surg</em> (' + pubmed('31764702') + ')', 'Technique paper', 'Minimally invasive inframammary breast augmentation — approaches aimed at smaller, hidden incisions.'],
+        ['Lin Y, et al. 2022 — <em>Aesthetic Plast Surg</em> (' + pubmed('33403418') + ')', 'Anthropometric study', 'Body and breast measurements in augmentation planning — objective sizing data supporting implant selection.']
+      ] },
+    { type: 'faq', id: 'res', eyebrow: 'Questions', heading: 'About this research page',
+      items: [
+        { q: 'What is PubMed, and why use it?', a: '<p>PubMed is the US National Library of Medicine’s free index of biomedical literature, covering thousands of peer-reviewed journals. Searching it gives a structured, reproducible view of what has actually been studied — rather than what is advertised.</p>' },
+        { q: 'Does listing a study mean we recommend its findings?', a: '<p>No. Listing means the study is part of the published evidence base. Individual studies vary in quality — a small case report carries far less weight than a systematic review or randomised trial. Nothing on this page is a recommendation for any individual.</p>' },
+        { q: 'Why do study findings sometimes disagree?', a: '<p>Different designs, patient groups, surgical techniques, measurement methods and eras produce different results. Systematic reviews that pool many studies sit at the top of the evidence ladder; single-centre case series sit lower.</p>' },
+        { q: 'How current is this page?', a: '<p>The PubMed search was run in October 2026. New studies are indexed continuously — check PubMed for the latest work, and look for updated systematic reviews and regulator statements.</p>' },
+        { q: 'Where can I read the full articles?', a: '<p>Each link opens the study’s PubMed record with its abstract. Many full texts sit behind journal subscriptions; ask a librarian, university library or your clinician for access, and treat any claim you cannot verify with caution.</p>' }
+      ]
+    },
+    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
+      text: 'This page summarises published research for general education. It cannot account for your health, anatomy or circumstances, and it does not recommend any treatment. Study figures may not transfer to individuals. Decisions about breast enlargement should be made with a qualified, registered clinician after proper assessment. If you notice a new breast lump or any urgent symptom, seek medical care promptly.' },
+    stdCta({ heading: 'Want to discuss what the evidence means for you?' })
   ]
 });
 
