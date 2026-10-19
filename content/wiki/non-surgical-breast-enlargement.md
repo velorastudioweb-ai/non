@@ -19,7 +19,7 @@ faq:
   - q: How much volume can fat transfer realistically add?
     a: Systematic reviews show average retention of about 58% of transferred fat. A typical gain is roughly 175 mL per breast, or about one cup size. Results vary based on technique and individual factors.
   - q: Are dermal fillers approved for breast enlargement?
-    a: No. The US FDA recommends against using dermal fillers to enlarge breasts. Fillers are not approved for this use and can cause migration, granulomas, interference with mammograms and other serious complications that may be difficult to reverse.
+    a: No. The US FDA recommends against using dermal fillers to enlarge breasts. Fillers are not approved for this use and can cause migration, granulomas, interference with mammograms and other serious complications that may be difficult to reverse. For general information, see <a href="https://www.nhs.uk/">NHS</a>.
   - q: Do creams, pills or supplements work for breast enlargement?
     a: There is no reliable clinical evidence showing lasting breast enlargement from creams, herbal pills or supplements. Some contain hormone-active ingredients that can cause side effects or interact with medications.
   - q: Can exercise make breasts bigger?
@@ -34,6 +34,8 @@ references:
   - U.S. Food and Drug Administration. Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).
   - Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (India) and draft Amendment Bill, 2020.
   - MedicHorizon. Non Surgical Breast Enhancement in India: A Complete Guide for International Patients. https://medichorizon.com/treatment/non-surgical-breast-enhancement-india/
+  - NHS. Breast enlargement (cosmetic). https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+  - NHS. https://www.nhs.uk/
 ---
 
 Non-surgical breast enhancement is the collective name for minimally invasive and completely non-invasive treatments that are promoted as ways to improve the shape, firmness or volume of the breast without implants, incisions or a long recovery. The category includes energy-based devices (ultrasound, radiofrequency, laser and HIFU), platelet-rich plasma injections, dermal fillers and thread-based suture lifts. Most leave no scar, require no general anaesthetic and can be done as a day-case, which is why they attract interest from people who do not want surgery. They also come with firm limits: most produce modest, temporary changes rather than a large lasting increase in size, several lack strong evidence for breast enlargement, and at least one category — injectable fillers — is not approved for this use and carries serious risks. This page summarises the options as they are currently offered, particularly in India, along with the costs, evidence, risks and recovery reported for them.

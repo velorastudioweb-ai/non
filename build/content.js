@@ -50,6 +50,7 @@ const site = {
     { label: 'FAQs', href: '/faqs/' },
     { label: 'Video gallery', href: '/video-gallery/' },
     { label: 'Media & press', href: '/media-and-press/' },
+    { label: 'PMC research library', href: '/research/breast-enlargement/' },
     { label: 'Dr. Vikas Singh', href: '/about-dr-vikas-singh/' },
     { label: 'Book a consultation', href: '/book-consultation/' }
   ],
@@ -67,6 +68,7 @@ const site = {
     { label: 'Dr. Vikas Singh', href: '/about-dr-vikas-singh/' },
     { label: 'Our doctors panel', href: '/our-team/' },
     { label: 'Insights & articles', href: '/blogs/' },
+    { label: 'PMC research library', href: '/research/breast-enlargement/' },
     { label: 'FAQs', href: '/faqs/' },
     { label: 'Video gallery', href: '/video-gallery/' },
     { label: 'Media & press', href: '/media-and-press/' }
@@ -1118,6 +1120,8 @@ pages.push({
         '<li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li>' +
         '<li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li>' +
         '</ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting.' },
+    { type: 'notice', icon: 'evidence', title: 'Browse the complete published literature',
+      text: 'This guide cites selected sources. The <a href="/research/breast-enlargement/">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles.' },
     { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
       text: 'This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly.' },
     stdCta({ heading: 'Talk through the options with a qualified clinician' })

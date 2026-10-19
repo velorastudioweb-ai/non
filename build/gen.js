@@ -6,6 +6,7 @@ const { layout } = require('./templates');
 const { site, pages, home, stdCta } = require('./content');
 const { articles } = require('./blog');
 const { consultation, legal } = require('./extra-pages');
+const { researchPage } = require('./research');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -109,7 +110,7 @@ function build() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   ensureDir(DIST);
 
-  const all = [home].concat(pages, [consultation], legal, [blogIndex], articles.map(articleToPage));
+  const all = [home].concat(pages, [consultation], legal, [blogIndex], [researchPage], articles.map(articleToPage));
 
   const written = [];
   all.forEach((page) => {
