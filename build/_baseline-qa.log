@@ -1,0 +1,36 @@
+Responsive QA — 18 pages x 20 viewports
+Browser: C:\Program Files\Google\Chrome\Application\chrome.exe
+Serving snapshot: build/_qa-snapshot
+
+  checked 320x568 (small mobile) (18 page renders)
+  checked 360x800 (standard mobile) (36 page renders)
+  checked 375x812 (iPhone X) (54 page renders)
+  checked 390x844 (iPhone 13) (72 page renders)
+  checked 430x932 (iPhone Pro Max) (90 page renders)
+  checked 480x854 (large mobile) (108 page renders)
+  checked 560x320 (mobile landscape) (126 page renders)
+  checked 600x900 (small tablet) (144 page renders)
+  checked 768x1024 (tablet portrait) (162 page renders)
+  checked 820x1180 (iPad Air) (180 page renders)
+  checked 844x390 (iPhone landscape) (198 page renders)
+  checked 900x700 (intermediate) (216 page renders)
+  checked 1024x768 (tablet landscape) (234 page renders)
+  checked 1200x800 (intermediate) (252 page renders)
+  checked 1280x800 (laptop) (270 page renders)
+  checked 1366x768 (laptop) (288 page renders)
+  checked 1440x900 (desktop) (306 page renders)
+  checked 1600x900 (desktop) (324 page renders)
+  checked 1920x1080 (full HD) (342 page renders)
+  checked 2560x1440 (QHD) (360 page renders)
+
+================ RESPONSIVE QA REPORT ================
+Page renders checked: 360
+  page-level horizontal overflow : 0
+  element-outside-viewport hits  : 0
+  clipped-text hits              : 0
+  broken images                  : 0
+  distorted images               : 0
+  navigation/HTTP failures       : 0
+  console/network errors         : 0
+
+RESULT: PASS (no structural overflow/broken-asset issues)
