@@ -66,6 +66,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://quantumhealth-website.vercel.app/surgical/breast-revision/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/surgical/breast-reduction/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/surgical/breast-lift/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/surgical/mastectomy-chest-surgery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/surgical/breast-filler-removal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://quantumhealth-website.vercel.app/breast-enlargement-without-surgery/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

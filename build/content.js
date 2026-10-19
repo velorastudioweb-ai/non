@@ -582,6 +582,15 @@ pages.push({
         { title: 'Fat transfer', text: 'Using your own fat, transferred from a donor area, for a modest and individualised increase in volume.', href: '/surgical/fat-transfer-breast-augmentation/', slot: 'Fat transfer imagery' }
       ]
     },
+    { type: 'cards', alt: true, cols: 3, ratio: 'ratio-3-4', eyebrow: 'More procedures', heading: 'Revision, reduction, lift and corrective surgery',
+      items: [
+        { title: 'Breast revision', text: 'Implant exchange, removal or repair when a previous operation needs attention.', href: '/surgical/breast-revision/', slot: 'Revision surgery imagery' },
+        { title: 'Breast reduction', text: 'Reducing breast size and weight to relieve physical symptoms and restore proportion.', href: '/surgical/breast-reduction/', slot: 'Breast reduction imagery' },
+        { title: 'Breast lift (mastopexy)', text: 'Reshaping and raising sagging breasts without adding volume.', href: '/surgical/breast-lift/', slot: 'Breast lift imagery' },
+        { title: 'Mastectomy & chest surgery', text: 'Removal of breast tissue for chest contouring, risk reduction or treatment.', href: '/surgical/mastectomy-chest-surgery/', slot: 'Chest surgery imagery' },
+        { title: 'Breast filler removal', text: 'Corrective surgery for injected fillers and liquid silicone that have caused problems.', href: '/surgical/breast-filler-removal/', slot: 'Corrective surgery imagery' }
+      ]
+    },
     { type: 'icon-grid', eyebrow: 'What patients should understand', heading: 'Key considerations before surgery', cols: 3,
       items: [
         { icon: 'scale', title: 'Implant vs. fat transfer', text: 'The difference between implant-based augmentation and autologous fat transfer.' },
@@ -707,6 +716,183 @@ pages.push(treatmentPage({
     }
   ],
   ctaHeading: 'Discuss whether fat transfer suits your goals'
+}));
+
+pages.push(treatmentPage({
+  url: '/surgical/breast-revision/', slug: 'breast-revision',
+  h1: 'Breast Revision Surgery: When Implants Need Attention',
+  seoTitle: 'Breast Revision Surgery: Implant Exchange, Removal & Repair | QuantumHealth',
+  seoDescription: 'Breast revision surgery: why implants may need revision — capsular contracture, rupture, displacement, asymmetry or a change in preferences — and what revision planning involves.',
+  bannerEyebrow: 'Surgical · Revision',
+  bannerLead: 'Breast revision surgery is performed when a previous breast operation needs correction, adjustment or reversal — for example implant exchange, removal, or repair of capsule-related changes.',
+  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast revision' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>Breast implants are not lifetime devices. Over time, the capsule of scar tissue that naturally forms around an implant can tighten (capsular contracture), an implant can rupture or change position, or the breasts can change with pregnancy, weight change and ageing. Some people also simply wish to change size. Revision surgery addresses any of these situations.</p>' +
+      '<p>Revision is often more complex than a first operation: scar tissue, stretched skin, thinned breast tissue and previous implant position all shape what can safely be achieved. Planning should therefore be led by a suitably qualified surgeon who will examine you, review any previous operative records and imaging, and discuss realistic options — which may include implant exchange, removal with or without replacement, capsulectomy, or combining revision with a breast lift.</p>' },
+    { type: 'icon-grid', eyebrow: 'Common reasons', heading: 'Why revision surgery is considered', cols: 3,
+      items: [
+        { icon: 'safety', title: 'Capsular contracture', text: 'Scar tissue tightening around an implant, causing firmness, distortion or discomfort.' },
+        { icon: 'info', title: 'Implant rupture or deflation', text: 'Loss of implant integrity, confirmed by examination and imaging where indicated.' },
+        { icon: 'shape', title: 'Position or shape changes', text: 'Displacement, rotation, bottoming out or an unnatural appearance over time.' },
+        { icon: 'scale', title: 'Asymmetry', text: 'Differences between sides that developed after the original surgery.' },
+        { icon: 'personalised', title: 'Change of preference', text: 'A wish to change size, or to remove implants entirely (explantation).' },
+        { icon: 'downtime', title: 'Tissue changes', text: 'Sagging or skin laxity after pregnancy, weight change or ageing.' }
+      ]
+    },
+    { type: 'notice', icon: 'info', title: 'Revision is individualised',
+      text: 'What is possible depends on the remaining breast tissue, skin quality, implant position and your goals. In some cases a good result requires combining implant revision with a breast lift, or accepting that implant removal alone will leave a less full shape.' },
+    { type: 'faq', alt: true, id: 'rev', eyebrow: 'Questions', heading: 'Breast revision FAQs',
+      items: [
+        { q: 'How long do breast implants last?', a: '<p>There is no fixed lifespan. Implants may remain stable for many years, but additional operations are common over a lifetime of implant use. Regular review and prompt assessment of any new change are recommended.</p>' },
+        { q: 'Can implants be removed without replacement?', a: '<p>Yes — explantation without replacement is possible. The resulting shape depends on how much natural breast tissue remains and the degree of skin laxity; some people choose to combine removal with a lift.</p>' },
+        { q: 'Is revision surgery more complex than first-time surgery?', a: '<p>Often, yes. Existing scar tissue, altered anatomy and thinner breast tissue can make revision longer and less predictable. A thorough consultation, including imaging where indicated, is essential before planning.</p>' }
+      ]
+    }
+  ],
+  ctaHeading: 'Discuss your revision concerns with a qualified surgeon'
+}));
+
+pages.push(treatmentPage({
+  url: '/surgical/breast-reduction/', slug: 'breast-reduction',
+  h1: 'Breast Reduction Surgery: Relief, Proportion and Recovery',
+  seoTitle: 'Breast Reduction Surgery: Benefits, Techniques & Recovery | QuantumHealth',
+  seoDescription: 'Breast reduction surgery: how reducing breast volume and weight can relieve physical symptoms, what the procedure involves, scarring, recovery and factors that shape the outcome.',
+  bannerEyebrow: 'Surgical · Reduction',
+  bannerLead: 'Breast reduction removes skin, fat and glandular tissue to reduce breast size and weight, and repositions the breast into a more proportionate shape.',
+  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast reduction' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>Very large or heavy breasts can cause persistent neck, shoulder and back pain, shoulder-groove marks from bra straps, skin irritation beneath the breasts, and difficulty with physical activity. Breast reduction addresses both the symptoms and the proportions, by removing excess tissue and reshaping the remaining breast.</p>' +
+      '<p>The operation is planned around your anatomy, the degree of reduction desired, blood supply to the nipple–areola complex and your overall health. Scarring is an unavoidable part of the procedure; incisions are placed so that scars fall within the bra line or along the areola border where possible. Because breast reduction is performed to relieve documented physical symptoms, it may in some cases be approached through medical insurance — criteria vary and require documentation.</p>' },
+    { type: 'icon-grid', alt: true, eyebrow: 'What patients should understand', heading: 'Key considerations', cols: 3,
+      items: [
+        { icon: 'scale', title: 'Symptom relief', text: 'Reduction commonly relieves back, neck and shoulder strain caused by breast weight.' },
+        { icon: 'shape', title: 'Scars are permanent', text: 'Incision lines around the areola, vertically, or along the inframammary fold.' },
+        { icon: 'personalised', title: 'Symmetry is approximate', text: 'Perfectly equal breasts cannot be promised; some asymmetry is normal.' },
+        { icon: 'downtime', title: 'Recovery period', text: 'Several weeks away from heavy lifting and exercise, with gradual return to activity.' },
+        { icon: 'safety', title: 'Sensation changes', text: 'Nipple and breast skin sensation may temporarily or permanently change.' },
+        { icon: 'info', title: 'Breastfeeding', text: 'Future breastfeeding ability can be affected; this is discussed in advance.' }
+      ]
+    },
+    { type: 'faq', id: 'red', eyebrow: 'Questions', heading: 'Breast reduction FAQs',
+      items: [
+        { q: 'Can breast reduction be combined with a lift?', a: '<p>Breast reduction inherently includes lifting and reshaping the breast. A separate lift is generally not needed, although the specific technique is tailored to each case.</p>' },
+        { q: 'Will the breasts grow back after reduction?', a: '<p>Reduced tissue does not regrow, but substantial weight gain, pregnancy and hormonal changes can alter breast size again. Long-term results depend on stable weight and individual anatomy.</p>' },
+        { q: 'How much tissue is removed?', a: '<p>The amount depends on your anatomy, symptoms and goals, and is planned with your surgeon. The aim is a proportionate, symptom-relieving result rather than a specific cup size, which cannot be guaranteed.</p>' }
+      ]
+    }
+  ],
+  ctaHeading: 'Discuss whether breast reduction could relieve your symptoms'
+}));
+
+pages.push(treatmentPage({
+  url: '/surgical/breast-lift/', slug: 'breast-lift',
+  h1: 'Breast Lift (Mastopexy): Restoring Shape',
+  seoTitle: 'Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity | QuantumHealth',
+  seoDescription: 'Breast lift (mastopexy): what it changes — sagging skin, nipple position and breast shape — how it differs from augmentation, scarring, longevity and combination options.',
+  bannerEyebrow: 'Surgical · Mastopexy',
+  bannerLead: 'A breast lift raises and reshapes sagging breasts by removing excess skin and repositioning the breast tissue and nipple. It changes shape, not volume.',
+  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast lift' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>Sagging (ptosis) develops with ageing, pregnancy, breastfeeding, weight change and gravity. A breast lift addresses it by removing loose skin, reshaping the remaining breast tissue and repositioning the nipple–areola complex higher on the chest. Unlike augmentation, a lift on its own does not add volume — the breast is reshaped using the tissue already present.</p>' +
+      '<p>The degree of lift required determines the pattern of scars: around the areola alone for mild sagging, plus a vertical line for moderate sagging, or an additional line within the inframammary fold for more significant sagging. Where more fullness is also desired, a lift can be combined with an implant or fat transfer, with the trade-offs of each discussed at consultation.</p>' },
+    { type: 'table', eyebrow: 'At a glance', heading: 'Lift compared with augmentation and reduction',
+      head: ['Procedure', 'What it changes', 'Volume'],
+      rows: [
+        ['<strong>Breast lift (mastopexy)</strong>', 'Shape and position — raises sagging tissue and repositions the nipple', 'Unchanged'],
+        ['<strong>Augmentation</strong>', 'Volume and fullness — implants or fat transfer', 'Increased'],
+        ['<strong>Reduction</strong>', 'Volume, weight and shape — removes tissue', 'Decreased']
+      ]
+    },
+    { type: 'icon-grid', alt: true, eyebrow: 'Key points', heading: 'What to understand before deciding', cols: 3,
+      items: [
+        { icon: 'shape', title: 'Scars are permanent', text: 'Scars fade with time but do not disappear; their pattern depends on the lift required.' },
+        { icon: 'clock', title: 'Results are long-lasting, not permanent', text: 'Pregnancy, weight change and ageing continue to affect the breast over time.' },
+        { icon: 'personalised', title: 'Combination is common', text: 'Lift with implant or fat transfer when both shape and volume need change.' },
+        { icon: 'safety', title: 'Sensation and feeding', text: 'Nipple sensation and future breastfeeding may be affected; this is discussed in advance.' }
+      ]
+    },
+    { type: 'faq', id: 'lift', eyebrow: 'Questions', heading: 'Breast lift FAQs',
+      items: [
+        { q: 'What is the difference between a breast lift and augmentation?', a: '<p>Augmentation adds volume with an implant or fat; a lift reshapes and raises existing tissue without adding volume. Some people need one, some need both, and the right combination depends on your anatomy and goals.</p>' },
+        { q: 'How long does a breast lift last?', a: '<p>The reshaping is durable, but the breast continues to age. Pregnancy, weight change and gravity gradually affect the result, and some people eventually choose further surgery.</p>' },
+        { q: 'Can a lift be done without visible scars?', a: '<p>No. Every lift technique involves incisions and therefore permanent scars, although they are planned to sit within the areola border or bra line. No procedure can promise scarless results.</p>' }
+      ]
+    }
+  ],
+  ctaHeading: 'Discuss whether a breast lift suits your goals'
+}));
+
+pages.push(treatmentPage({
+  url: '/surgical/mastectomy-chest-surgery/', slug: 'mastectomy-chest-surgery',
+  h1: 'Mastectomy and Chest Contouring Surgery',
+  seoTitle: 'Mastectomy & Chest Contouring Surgery: Patient Information | QuantumHealth',
+  seoDescription: 'Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.',
+  bannerEyebrow: 'Surgical · Chest surgery',
+  bannerLead: 'Mastectomy removes breast tissue. When performed to create a flatter, more contoured chest, it is often called chest masculinisation or top surgery.',
+  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Mastectomy & chest surgery' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>Mastectomy is the surgical removal of breast tissue. It is performed for several reasons, including gender-affirming chest masculinisation, reduction of elevated cancer risk in selected patients, and treatment of disease. This page provides general educational information; the appropriate procedure, eligibility and timing are determined through individual medical assessment.</p>' +
+      '<p>When the goal is chest contouring rather than treatment of disease, the technique is tailored to the amount of breast tissue, skin laxity and the desired chest shape. Approaches may include a double-incision technique with nipple grafting, or a periareolar (keyhole) approach in suitable anatomy. The surgeon also considers scar placement, chest-wall contour and future revision options.</p>' },
+    { type: 'icon-grid', eyebrow: 'What to discuss', heading: 'Questions for your consultation', cols: 3,
+      items: [
+        { icon: 'personalised', title: 'Which technique suits you', text: 'The approach depends on tissue volume, skin elasticity and the contour you want.' },
+        { icon: 'shape', title: 'Scars and nipple position', text: 'Where incisions fall and how nipple–areola position and sensation are planned.' },
+        { icon: 'safety', title: 'Risks', text: 'Bleeding, infection, contour irregularity, sensation changes and the possibility of revision.' },
+        { icon: 'downtime', title: 'Recovery', text: 'Drain use, compression garments, activity restrictions and follow-up schedule.' },
+        { icon: 'evidence', title: 'Eligibility assessment', text: 'Medical and psychological assessment where required, and any eligibility criteria that apply.' },
+        { icon: 'info', title: 'Future procedures', text: 'Whether staged or additional surgery may be needed to refine the result.' }
+      ]
+    },
+    { type: 'notice', icon: 'info', title: 'Assessment comes first',
+      text: 'Chest surgery is elective and requires assessment by an appropriately qualified surgeon, including a discussion of risks, alternatives, realistic outcomes and — where required — eligibility criteria. No outcome can be guaranteed.' },
+    { type: 'faq', alt: true, id: 'mast', eyebrow: 'Questions', heading: 'Mastectomy & chest surgery FAQs',
+      items: [
+        { q: 'What is the difference between mastectomy and breast reduction?', a: '<p>Breast reduction removes a portion of tissue to make the breasts smaller while preserving a feminine breast shape. Mastectomy for chest contouring removes breast tissue to create a flatter, more masculine chest wall, with a different approach to nipple position and scars.</p>' },
+        { q: 'Will I need follow-up surgery?', a: '<p>Most people are satisfied with a single procedure, but refinement or revision surgery is sometimes desired for contour or scar reasons. This is discussed in advance.</p>' },
+        { q: 'How long is recovery?', a: '<p>Recovery varies with the technique and individual healing. Compression garments, limited arm activity and drain care are commonly required for a period after surgery, with a gradual return to full activity as advised by your surgeon.</p>' }
+      ]
+    }
+  ],
+  ctaHeading: 'Arrange a confidential consultation to discuss chest surgery'
+}));
+
+pages.push(treatmentPage({
+  url: '/surgical/breast-filler-removal/', slug: 'breast-filler-removal',
+  h1: 'Breast Filler Removal: Addressing Injected Fillers and Silicone',
+  seoTitle: 'Breast Filler Removal: Clearing Injected Fillers & Silicone | QuantumHealth',
+  seoDescription: 'Breast filler removal: why injected fillers and liquid silicone cause complications, how removal is approached, and what to expect regarding imaging, scars and staged treatment.',
+  bannerEyebrow: 'Surgical · Corrective',
+  bannerLead: 'Injectable fillers and liquid silicone are not approved for breast enlargement. When they cause pain, migration, lumps or infection, removal surgery may be required.',
+  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast filler removal' }],
+  blocks: [
+    { type: 'notice', icon: 'safety', title: 'Fillers are not implants',
+      text: 'Dermal fillers approved for facial use must never be assumed suitable for the breasts. Injected silicone and fillers can migrate, form granulomas, cause chronic inflammation and infection, and complicate breast imaging. They are not an equivalent or safer substitute for a breast implant.' },
+    { type: 'prose', html:
+      '<p>People who have had fillers or liquid silicone injected into the breasts may present with pain, hardness, migrating lumps, asymmetry, skin changes or recurrent infection. Removal is corrective surgery: the injected material is not neatly contained like an implant, and it interleaves with breast tissue, so complete removal is not always possible in one operation.</p>' +
+      '<p>Surgical approaches may include removal of the injected material together with the surrounding affected tissue, staged procedures, and in some cases combining removal with implant placement or a lift once healthy tissue has healed. Imaging (such as ultrasound or mammography) is usually assessed before planning, because injected material can distort images and mask or mimic lesions.</p>' },
+    { type: 'icon-grid', alt: true, eyebrow: 'What patients should understand', heading: 'Key considerations', cols: 3,
+      items: [
+        { icon: 'info', title: 'Removal may be incomplete', text: 'Injected material spreads through tissue; complete clearance in one operation cannot be promised.' },
+        { icon: 'evidence', title: 'Imaging first', text: 'Breast imaging is typically reviewed before surgery to map the material and assess the tissue.' },
+        { icon: 'downtime', title: 'Staged treatment', text: 'More than one operation may be needed, with healing periods in between.' },
+        { icon: 'shape', title: 'Scarring & shape', text: 'Removal can leave contour changes; reconstruction options are discussed case by case.' },
+        { icon: 'safety', title: 'Pathology', text: 'Removed tissue may be sent for histological examination, as routine.' },
+        { icon: 'clock', title: 'Delayed presentation', text: 'Complications can appear years after injection, so history matters at consultation.' }
+      ]
+    },
+    { type: 'faq', id: 'fill', eyebrow: 'Questions', heading: 'Breast filler removal FAQs',
+      items: [
+        { q: 'Can all injected material be removed?', a: '<p>Not always. Injected silicone and fillers intermingle with breast tissue rather than sitting in a pocket, so complete removal in a single operation is not always achievable. The surgical aim is to remove as much affected material and tissue as safely possible.</p>' },
+        { q: 'Can implants be placed at the same time as removal?', a: '<p>Sometimes, but staged surgery is often safer when there is chronic inflammation or infection. Your surgeon will advise based on the condition of the tissue.</p>' },
+        { q: 'Do injected fillers affect breast screening?', a: '<p>Injected material can distort imaging and make interpretation harder. It is important to tell radiologists and surgeons about any prior injections, and to keep up with recommended screening.</p>' }
+      ]
+    }
+  ],
+  ctaHeading: 'Discuss filler removal and corrective options with a surgeon'
 }));
 
 /* ---------- Evidence guide: breast enlargement without surgery ---------- */
