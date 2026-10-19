@@ -21,7 +21,7 @@ const articles = [
       ['Recovery and risk', '<p>“Non-surgical” does not mean risk-free. Any procedure carries some risk, and the consequences of complications can differ substantially between approaches. Surgery carries surgical and implant-related risks and may involve future procedures.</p>'],
       ['How to decide', '<p>The appropriate option depends on your health, anatomy, expectations and risk tolerance, and on the evidence for the intended treatment. That assessment should be made by an appropriately qualified clinician, not from advertising alone.</p>']
     ],
-    references: ['U.S. FDA — Dermal Fillers (approved uses and safety communications)', 'U.S. FDA — Regenerative medicine and stem cell safety'],
+    references: ['U.S. FDA — Dermal Fillers (approved uses and safety communications)', 'U.S. FDA — Regenerative medicine and stem cell safety', 'American Society of Plastic Surgeons — Breast augmentation and fat transfer patient information (https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation)'],
     related: ['ten-questions-to-ask-at-a-breast-enhancement-consultation', 'prp-and-breast-enhancement-what-the-evidence-says']
   },
   {
@@ -40,7 +40,7 @@ const articles = [
       ['Long-term monitoring', '<p>Breast implants are not lifetime devices. Additional operations may be needed, and complications can occur, so long-term monitoring is an important part of the decision.</p>'],
       ['Revision surgery', '<p>Some patients require revision surgery at some point. Understanding this possibility in advance is part of realistic planning.</p>']
     ],
-    references: ['U.S. FDA — Breast implants (risks and long-term monitoring)'],
+    references: ['U.S. FDA — Breast implants (risks and long-term monitoring)', 'American Society of Plastic Surgeons — Breast augmentation: implant types and safety (https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants)'],
     related: ['surgical-vs-non-surgical-breast-enhancement', 'ten-questions-to-ask-at-a-breast-enhancement-consultation']
   },
   {
@@ -75,7 +75,7 @@ const articles = [
       ['7–8: Risks and alternatives', '<p>What are the risks and possible complications, and how would they be managed? What alternatives exist, including doing nothing?</p>'],
       ['9–10: Cost and aftercare', '<p>What is the full cost, including any revision or follow-up? What aftercare and follow-up will I receive, and when should I seek medical attention?</p>']
     ],
-    references: ['U.S. FDA — Dermal fillers and their approved uses', 'U.S. FDA — Breast implants'],
+    references: ['U.S. FDA — Dermal fillers and their approved uses', 'U.S. FDA — Breast implants', 'American Society of Plastic Surgeons — Questions to ask your plastic surgeon (https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/questions)'],
     related: ['surgical-vs-non-surgical-breast-enhancement', 'before-choosing-breast-implants']
   },
   {
@@ -116,7 +116,8 @@ const articles = [
       'U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory meeting executive summary',
       'Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review (35 studies, 3,757 women)',
       'Adipose-derived stem cell enrichment is counter-productive for primary aesthetic breast augmentation by autologous fat transfer: a systematic review. J Plast Reconstr Aesthet Surg, 2020',
-      '“Bust enhancing” herbal products. Obstet Gynecol, 2003;101(6):1345–9'
+      '“Bust enhancing” herbal products. Obstet Gynecol, 2003;101(6):1345–9',
+      'American Society of Plastic Surgeons — 2025 plastic surgery statistics; breast augmentation patient information (https://www.plasticsurgery.org/news/plastic-surgery-statistics)'
     ],
     related: ['breast-fillers-sculptra-and-biostimulators-safety-questions', 'surgical-vs-non-surgical-breast-enhancement', 'prp-and-breast-enhancement-what-the-evidence-says']
   }

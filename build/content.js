@@ -51,6 +51,7 @@ const site = {
     { label: 'Video gallery', href: '/video-gallery/' },
     { label: 'Media & press', href: '/media-and-press/' },
     { label: 'PMC research library', href: '/research/breast-enlargement/' },
+    { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
     { label: 'Dr. Vikas Singh', href: '/about-dr-vikas-singh/' },
     { label: 'Book a consultation', href: '/book-consultation/' }
   ],
@@ -69,6 +70,7 @@ const site = {
     { label: 'Our doctors panel', href: '/our-team/' },
     { label: 'Insights & articles', href: '/blogs/' },
     { label: 'PMC research library', href: '/research/breast-enlargement/' },
+    { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
     { label: 'FAQs', href: '/faqs/' },
     { label: 'Video gallery', href: '/video-gallery/' },
     { label: 'Media & press', href: '/media-and-press/' }
@@ -647,7 +649,92 @@ pages.push(treatmentPage({
         { q: 'Are the results permanent?', a: '<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>' },
         { q: 'How do I know which approach is right for me?', a: '<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. This should be determined through assessment by an appropriately qualified clinician.</p>' }
       ]
-    }
+    },
+    { type: 'prose', html:
+      '<h2 class="h3">Breast augmentation: data from the American Society of Plastic Surgeons</h2>' +
+      '<p>The figures and lists below summarise patient information published by the American Society of Plastic Surgeons (ASPS), the largest association of board-certified plastic surgeons in the United States. They are reproduced here for education and context. ASPS guidance reflects United States practice and regulation and does not replace assessment by a suitably qualified clinician in your own jurisdiction.</p>' },
+    { type: 'table', eyebrow: 'ASPS patient information', heading: 'What breast augmentation can — and cannot — do',
+      head: ['Goal', 'What ASPS patient information says'],
+      rows: [
+        ['Increase fullness and projection', 'Breast implants or fat transfer can increase the size and projection of the breasts.'],
+        ['Improve balance and proportion', 'Augmentation can improve the balance between breast and hip contours.'],
+        ['Support body image', 'ASPS notes the procedure may enhance self-image and self-confidence.'],
+        ['Breast reconstruction', 'Implants may also be used for breast reconstruction after mastectomy or injury.'],
+        ['Severe drooping', 'Augmentation alone does not correct severely drooping breasts; a breast lift may be needed, at the same time or as a separate operation.']
+      ] },
+    { type: 'steps', eyebrow: 'ASPS patient information', heading: 'How the procedure is usually performed',
+      lead: 'ASPS describes the operation in five broad stages.',
+      items: [
+        { title: 'Anesthesia', text: 'Intravenous sedation or general anaesthesia is used, so the procedure is comfortable throughout.' },
+        { title: 'Incision', text: 'Peri-areolar, inframammary fold or axillary incisions are the usual routes; ASPS notes that the belly-button approach carries a higher complication rate.' },
+        { title: 'Placement', text: 'The implant is placed either under the pectoral muscle (submuscular) or behind the breast tissue over the muscle (subglandular).' },
+        { title: 'Closure', text: 'Layered sutures close the tissue, with sutures, skin adhesive or surgical tape on the skin. Scars fade over time and are affected by genetics, nicotine and infection.' },
+        { title: 'Results', text: 'Results are visible immediately, with the final shape settling as swelling resolves.' }
+      ] },
+    { type: 'table', alt: true, eyebrow: 'ASPS patient information', heading: 'Types of breast implants',
+      head: ['Implant', 'What ASPS patient information says'],
+      rows: [
+        ['Saline', 'Sterile salt water; collapses and is absorbed or expelled if the shell leaks; uniform shape and firmness; FDA-approved from age 18.'],
+        ['Structured saline', 'Salt water with an internal structure for a more natural feel.'],
+        ['Silicone gel', 'Gel feels more like natural breast tissue; does not collapse if it leaks; regular ultrasound or MRI screening is advised; FDA-approved from age 22.'],
+        ['Form-stable (“gummy bear”)', 'Keeps its shape even if the shell breaks; firmer and thicker; a shaped version gives more bottom projection but can look unusual if it rotates; requires a longer incision.'],
+        ['Round', 'Generally a fuller look; higher profiles add more projection; less concern about rotation.'],
+        ['Smooth', 'Softest feel and natural movement, but rippling may be felt or seen.'],
+        ['Textured', 'Tissue adheres to the surface so it is less likely to move and may reduce capsular contracture, but textured surfaces are where BIA-ALCL occurs most often.']
+      ] },
+    { type: 'notice', icon: 'downtime', title: 'Recovery and results (ASPS patient information)',
+      text: '<ul>' +
+        '<li>Immediately after surgery the breasts are wrapped in gauze, with an elastic bandage or support bra to limit swelling and support healing.</li>' +
+        '<li>Patients are monitored in recovery and are usually permitted home about an hour after surgery once stable for discharge.</li>' +
+        '<li>The support garment (a bra or elastic band) is worn around the clock as instructed; wound care instructions differ between surgeons and should be followed exactly.</li>' +
+        '<li>Acute pain typically subsides after one to five days, but soreness and swelling may persist for a few weeks.</li>' +
+        '<li>Final results settle over a few weeks as swelling subsides; incision lines may take several months to a couple of years to fade.</li>' +
+        '<li>Breasts change over time with ageing, weight fluctuation, hormones and gravity; some people later choose a lift or an implant exchange.</li>' +
+        '<li>Implants are not guaranteed to last a lifetime, so further surgery may eventually be needed.</li>' +
+        '</ul>' },
+    { type: 'notice', icon: 'safety', title: 'Risks and safety (ASPS patient information)',
+      text: '<p>ASPS lists the following possible risks of breast augmentation surgery, discussed fully before consent:</p><ul>' +
+        '<li>Anaesthesia risks.</li>' +
+        '<li>Breast implant-associated anaplastic large cell lymphoma (BIA-ALCL) or other very rare cancers in the capsule, such as breast implant-associated squamous cell carcinoma (BIA-SCC).</li>' +
+        '<li>Bleeding or haematoma.</li>' +
+        '<li>Changes in nipple or breast sensation.</li>' +
+        '<li>Fluid accumulation (seroma).</li>' +
+        '<li>Tight scar tissue forming around the implant (capsular contracture).</li>' +
+        '<li>Implant leakage or rupture.</li>' +
+        '<li>Infection and persistent pain.</li>' +
+        '<li>Poor scarring, wrinkling of the skin over the implant, or the implant sitting in the wrong position.</li>' +
+        '<li>The possibility that revision surgery will be needed.</li>' +
+        '</ul><p>For silicone implants, the FDA recommends screening with MRI or ultrasound five to six years after placement and every two to three years thereafter. Risk factors include pregnancy, weight change and the menopause. Routine examinations help confirm that an implant is intact, because a ruptured implant sometimes causes no symptoms.</p>' },
+    { type: 'table', eyebrow: 'ASPS patient information', heading: 'US average costs',
+      head: ['Procedure', 'ASPS average surgeon fee'],
+      rows: [
+        ['Breast augmentation with implants', '$4,875'],
+        ['Breast augmentation with fat grafting', '$5,719']
+      ],
+      note: 'ASPS averages cover the surgeon’s fee only and exclude anaesthesia, operating-room facilities, medical tests, post-surgery garments and prescriptions. Most health insurance plans do not cover cosmetic breast augmentation or a later revision.' },
+    { type: 'table', alt: true, eyebrow: 'ASPS 2025 statistics', heading: 'Breast augmentation at a glance',
+      head: ['Measure', 'ASPS 2025 data'],
+      rows: [
+        ['Year-on-year change', 'Breast augmentation rose about 11% in 2025.'],
+        ['Rank', 'Second most common cosmetic surgical procedure, behind liposuction.'],
+        ['Among women', 'Narrowly the most popular cosmetic procedure, ahead of liposuction.'],
+        ['By age', 'Favourite procedure for ages 36–45; gains across ages 26–65; the 66+ group grew fastest overall (+24%).'],
+        ['Preference', 'A shift towards smaller, more proportionate implants was noted.'],
+        ['Related trends', 'Breast lifts rose about 8% and breast reductions about 7%; 82% of member surgeons reported GLP-1-related consultation requests.']
+      ],
+      note: 'Figures are from the ASPS 2025 plastic surgery statistics and describe the United States, so they do not represent Indian or regional practice.' },
+    { type: 'notice', blush: true, icon: 'evidence', title: 'Source: American Society of Plastic Surgeons',
+      text: '<p>Summarised from ASPS patient information and statistics pages:</p><ul>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation">Breast augmentation</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/candidates">Candidates</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants">Types of breast implants</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/procedure">Procedure steps</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery">Recovery</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/results">Results</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety">Risks and safety</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/cost">Cost</a></li>' +
+        '<li><a href="https://www.plasticsurgery.org/news/plastic-surgery-statistics">2025 plastic surgery statistics</a></li>' +
+        '</ul>' }
   ],
   ctaHeading: 'Plan a personalised breast augmentation consultation'
 }));
@@ -680,6 +767,15 @@ pages.push(treatmentPage({
     },
     { type: 'notice', blush: true, icon: 'evidence', title: 'Verify before publishing',
       text: 'Only implant brands, models and regulatory claims that the clinic can verify should be published. Specific brand names are intentionally omitted here until verified.' },
+    { type: 'notice', icon: 'evidence', title: 'Implant data from the American Society of Plastic Surgeons',
+      text: '<ul>' +
+        '<li>Silicone gel implants feel more like natural breast tissue and do not collapse if the shell leaks; saline implants contain sterile salt water and collapse and are absorbed or expelled if they leak.</li>' +
+        '<li>The FDA approves saline implants from age 18 and silicone implants from age 22.</li>' +
+        '<li>For silicone implants, the FDA recommends screening with MRI or ultrasound five to six years after placement and every two to three years thereafter.</li>' +
+        '<li>Breast implants are not guaranteed to last a lifetime; future surgery may be needed to replace one or both implants.</li>' +
+        '<li>ASPS lists BIA-ALCL and BIA-SCC among the very rare cancers that can occur in the capsule around an implant, and notes that textured implants are where BIA-ALCL occurs most often.</li>' +
+        '<li>Some patients report systemic symptoms (fatigue, “brain fog”, muscle or joint pain and rash) that they attribute to implants and which are commonly referred to as breast implant illness (BII).</li>' +
+        '</ul><p><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants">ASPS: Types of breast implants</a> · <a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety">ASPS: Risks and safety</a></p>' },
     { type: 'faq', id: 'sil', eyebrow: 'Questions', heading: 'Silicone implant FAQs',
       items: [
         { q: 'What is the difference between silicone implants and injectable silicone?', a: '<p>They are entirely different. Injectable silicone is a different product and should not be used as a substitute for a breast implant; it can cause serious, potentially permanent harm.</p>' },
@@ -701,6 +797,8 @@ pages.push(treatmentPage({
   blocks: [
     { type: 'prose', html:
       '<p>The amount of fat that can be transferred safely, and the proportion that remains over time, vary. Some transferred fat may not survive, and more than one procedure may be needed to approach a patient’s goals.</p>' },
+    { type: 'notice', icon: 'evidence', title: 'Fat transfer data from the American Society of Plastic Surgeons',
+      text: '<p>ASPS describes fat transfer breast augmentation as using liposuction to remove fat from another part of the body and inject it into the breasts, and notes that it is best suited to patients who want a relatively small increase with a natural result. The ASPS average surgeon fee for breast augmentation with fat grafting is $5,719 (United States, surgeon’s fee only). ASPS also refers to the technique as breast augmentation with fat grafting, and cites research into mega-volume fat transfer with pre-expansion and into techniques intended to double breast size using the patient’s own fat.</p><p><a href="https://www.plasticsurgery.org/cosmetic-procedures/fat-transfer-breast-augmentation">ASPS: Fat transfer breast augmentation</a></p>' },
     { type: 'icon-grid', eyebrow: 'Topics to cover', heading: 'What to discuss at consultation', cols: 3,
       items: [
         { icon: 'personalised', title: 'Candidacy', text: 'Who may be an appropriate candidate for fat transfer.' },
@@ -1119,6 +1217,7 @@ pages.push({
         '<li>Khouri RK, et al. — Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li>' +
         '<li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li>' +
         '<li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li>' +
+        '<li>American Society of Plastic Surgeons — breast augmentation patient information and the 2025 plastic surgery statistics. <a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation">plasticsurgery.org</a> · <a href="https://www.plasticsurgery.org/news/plastic-surgery-statistics">2025 statistics</a></li>' +
         '</ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting.' },
     { type: 'notice', icon: 'evidence', title: 'Browse the complete published literature',
       text: 'This guide cites selected sources. The <a href="/research/breast-enlargement/">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles.' },

@@ -127,7 +127,7 @@ const research = {
       title: 'Reading research responsibly',
       text:
         '<p>PubMed Central is an archive, not a recommendation service. A published paper can be small, observational, outdated or contradicted by later work. Before changing any treatment decision, read the full article, check its date and study design, and discuss it with a qualified clinician.</p>' +
-        '<p>For regulator guidance on breast procedures and injectables, see our <a href="/breast-enlargement-without-surgery/">evidence guide</a> and <a href="/candidacy-and-safety/">safety pages</a>. PMC content is subject to the <a href="https://www.ncbi.nlm.nih.gov/pmc/about/copyright/" rel="noopener">NLM copyright policy</a>; this site stores only citation metadata and abstracts.</p>'
+        '<p>For regulator guidance on breast procedures and injectables, see the <a href="/research/fda-breast-enlargement/">FDA breast enlargement information library</a>, our <a href="/breast-enlargement-without-surgery/">evidence guide</a> and <a href="/candidacy-and-safety/">safety pages</a>. PMC content is subject to the <a href="https://www.ncbi.nlm.nih.gov/pmc/about/copyright/" rel="noopener">NLM copyright policy</a>; this site stores only citation metadata and abstracts.</p>'
     },
     stdCta({ heading: 'Want help interpreting the evidence for your situation?' })
   ]
