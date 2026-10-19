@@ -31,15 +31,16 @@
 .btn .arrow { transition: transform var(--dur) var(--ease); }
 .btn svg { width: 1em; height: 1em; }
 
-/* primary — rose-pink pill with subtle gradient and dark readable text */
+/* primary — glossy ruby-to-magenta pill with a fine luminous pink border,
+   dark readable ink and a restrained orchid glow */
 .btn--primary {
   background: var(--rose-pill);
-  color: #1F0307;
-  border-color: transparent;
+  color: var(--btn-ink);
+  border-color: rgba(255, 121, 183, 0.75);
   border-radius: var(--radius-pill);
   padding-left: 32px;
   padding-right: 32px;
-  box-shadow: 0 8px 24px -10px rgba(233, 92, 130, 0.55);
+  box-shadow: 0 10px 30px -12px rgba(255, 22, 138, 0.55);
 }
 .btn--primary::after {
   content: "";
@@ -49,9 +50,9 @@
   transition: transform .65s var(--ease);
   pointer-events: none;
 }
-/* secondary — fine gold border, warm ivory text */
+/* secondary — deep-burgundy tint, fine champagne-gold border, ivory text */
 .btn--outline {
-  background: transparent;
+  background: rgba(59, 0, 27, 0.35);
   color: var(--ivory);
   border-color: var(--gold);
   border-radius: var(--radius-pill);
@@ -92,7 +93,8 @@
   .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-gold); }
   .btn:hover .arrow { transform: translateX(4px); }
   .btn--primary:hover {
-    background: linear-gradient(135deg, #FF809B 0%, #FF95AE 60%, #E07090 100%);
+    background: linear-gradient(135deg, #FF4A55 0%, #FF79B7 55%, #FF168A 100%);
+    border-color: var(--qh-pink-glow);
     box-shadow: var(--shadow-glow);
   }
   .btn--primary:hover::after { transform: translateX(130%) skewX(-18deg); }
@@ -191,18 +193,19 @@
 }
 /* on hero (transparent) the gold rule is hidden — appears on scroll */
 .site-header.is-scrolled {
-  background: var(--header-bg);
+  background:
+    linear-gradient(180deg, rgba(50, 0, 20, 0.94) 0%, rgba(24, 0, 9, 0.95) 100%);
   -webkit-backdrop-filter: blur(var(--blur));
   backdrop-filter: blur(var(--blur));
   border-bottom-color: var(--gold-line-solid);
-  box-shadow: var(--shadow-lift);
+  box-shadow: var(--shadow-lift), 0 1px 0 rgba(255, 77, 166, 0.12);
 }
 .site-header.is-on-hero {
   background: linear-gradient(to bottom,
-    rgba(16, 6, 9, .55) 0%,
-    rgba(16, 6, 9, .25) 60%,
-    rgba(16, 6, 9, 0) 100%);
-  border-bottom-color: rgba(214, 184, 117, .18);
+    rgba(36, 0, 14, .62) 0%,
+    rgba(24, 0, 9, .30) 60%,
+    rgba(18, 0, 7, 0) 100%);
+  border-bottom-color: rgba(255, 215, 130, .22);
 }
 
 .header-inner {
@@ -264,8 +267,9 @@
   position: fixed; inset: 0; z-index: var(--z-menu);
   background: var(--burgundy);
   background-image:
-    radial-gradient(80% 60% at 8% 6%,  rgba(81, 0, 24, 0.65), transparent 60%),
-    radial-gradient(60% 55% at 92% 90%, rgba(53, 0, 13, 0.65), transparent 64%);
+    radial-gradient(80% 60% at 8% 6%,  rgba(201, 0, 75, 0.28), transparent 62%),
+    radial-gradient(60% 55% at 92% 90%, rgba(255, 22, 138, 0.16), transparent 66%),
+    linear-gradient(160deg, var(--burgundy) 0%, var(--burgundy-deep) 60%, var(--dark) 100%);
   padding:
     calc(var(--header-h) + var(--space-5) + env(safe-area-inset-top, 0))
     var(--gutter)
@@ -326,6 +330,15 @@ body.nav-open { overflow: hidden; }
   color: var(--ivory);
   overflow: hidden;
   isolation: isolate;
+}
+/* luminous crimson / orchid aurora behind the hero composition */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--ruby-aurora);
+  pointer-events: none;
 }
 .hero .container { position: relative; z-index: 2; }
 
@@ -427,7 +440,9 @@ body.nav-open { overflow: hidden; }
 .hero__figure::before {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(16, 6, 9, .35) 100%);
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(18, 0, 7, .45) 100%),
+    radial-gradient(80% 60% at 100% 0%, rgba(255, 22, 138, .18), transparent 70%);
   pointer-events: none;
   z-index: 1;
 }
@@ -446,7 +461,7 @@ body.nav-open { overflow: hidden; }
 .hero__credit {
   position: absolute; left: 14px; bottom: 14px; z-index: 3;
   padding: .55rem .9rem;
-  background: rgba(16, 6, 9, .68);
+  background: rgba(18, 0, 7, .72);
   color: var(--gold-light);
   font-size: var(--fs-micro);
   letter-spacing: .2em;
@@ -454,23 +469,24 @@ body.nav-open { overflow: hidden; }
   border: var(--hairline) solid var(--border-soft);
 }
 
-/* decorative rose/petal accents overlaid inside the hero */
+/* decorative ruby / orchid glow accents overlaid inside the hero.
+   Soft radial gradients only — no blur filter, so there is no large
+   per-frame compositing cost while the hero scrolls. */
 .hero__rose {
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  filter: blur(38px);
+  opacity: .70;
+}
+.hero__rose--tl { top: -14%;  left: -12%;  width: 42vw; height: 42vw;
+  background: radial-gradient(closest-side, rgba(255, 22, 138, .40), transparent 72%);
+}
+.hero__rose--bl { bottom: -16%; left: -12%; width: 52vw; height: 52vw;
+  background: radial-gradient(closest-side, rgba(201, 0, 75, .52), transparent 72%);
+}
+.hero__rose--tr { top: 6%; right: 2%; width: 34vw; height: 34vw;
+  background: radial-gradient(closest-side, rgba(242, 27, 89, .34), transparent 72%);
   opacity: .55;
-}
-.hero__rose--tl { top: -8%;  left: -8%;  width: 38vw; height: 38vw;
-  background: radial-gradient(closest-side, rgba(233, 92, 130, .55), transparent 70%);
-}
-.hero__rose--bl { bottom: -12%; left: -10%; width: 50vw; height: 50vw;
-  background: radial-gradient(closest-side, rgba(81, 0, 24, .85), transparent 70%);
-}
-.hero__rose--tr { top: 8%; right: 6%; width: 28vw; height: 28vw;
-  background: radial-gradient(closest-side, rgba(107, 15, 42, .45), transparent 70%);
-  opacity: .35;
 }
 
 /* curved burgundy lower transition with a fine gold edge */
@@ -515,7 +531,7 @@ body.nav-open { overflow: hidden; }
 .feature-strip {
   position: relative;
   border-top: var(--hairline) solid var(--gold-line-solid);
-  background: linear-gradient(180deg, rgba(16, 6, 9, .65) 0%, rgba(16, 6, 9, .85) 100%);
+  background: linear-gradient(180deg, rgba(50, 0, 20, .55) 0%, rgba(24, 0, 9, .88) 100%);
   -webkit-backdrop-filter: blur(var(--blur));
   backdrop-filter: blur(var(--blur));
   z-index: 3;
@@ -611,8 +627,8 @@ body.nav-open { overflow: hidden; }
 /* ================================= cards ================================= */
 .card {
   display: flex; flex-direction: column;
-  background: linear-gradient(165deg, rgba(81, 0, 24, .35) 0%, rgba(16, 6, 9, .55) 100%);
-  border: var(--hairline) solid var(--border-soft);
+  background: var(--panel-gradient);
+  border: var(--hairline) solid var(--border-rose);
   border-radius: var(--radius-md);
   overflow: hidden;
   height: 100%;
@@ -622,6 +638,14 @@ body.nav-open { overflow: hidden; }
     border-color var(--dur) var(--ease),
     box-shadow var(--dur) var(--ease),
     background var(--dur) var(--ease);
+}
+/* subtle ruby sheen over card imagery ties photography into the palette */
+.card__media::before {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(201, 0, 75, .07) 0%, rgba(18, 0, 7, .42) 100%);
+  pointer-events: none;
 }
 .card__media {
   position: relative;
@@ -667,8 +691,8 @@ body.nav-open { overflow: hidden; }
 
 .icon-card {
   padding: var(--sp-4);
-  background: linear-gradient(165deg, rgba(81, 0, 24, .35) 0%, rgba(16, 6, 9, .55) 100%);
-  border: var(--hairline) solid var(--border-soft);
+  background: var(--panel-gradient);
+  border: var(--hairline) solid var(--border-rose);
   border-radius: var(--radius-md);
   height: 100%;
   transition:
@@ -709,13 +733,13 @@ body.nav-open { overflow: hidden; }
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     transform: translateY(-6px);
-    border-color: var(--gold);
-    box-shadow: var(--shadow-gold);
+    border-color: var(--border-rose-strong);
+    box-shadow: var(--shadow-rose);
   }
   .card:hover .card__media img { transform: scale(1.045); }
   .icon-card:hover {
-    border-color: var(--gold);
-    box-shadow: var(--shadow-gold);
+    border-color: var(--border-rose-strong);
+    box-shadow: var(--shadow-rose);
     transform: translateY(-6px);
   }
 }
@@ -789,13 +813,19 @@ body.nav-open { overflow: hidden; }
   border: var(--hairline) solid var(--border-soft);
   border-left: 2px solid var(--rose);
   border-radius: var(--radius-md);
-  background: linear-gradient(165deg, rgba(81, 0, 24, .35) 0%, rgba(16, 6, 9, .55) 100%);
+  background: var(--panel-gradient);
 }
 .notice > * { min-width: 0; }
 .notice__icon { color: var(--gold); margin-top: .2rem; }
 .notice h3 { font-family: var(--font-heading); color: var(--ivory); margin-bottom: .3rem; }
 .notice p { font-size: var(--fs-small); color: var(--ivory-soft); }
 .notice p + p { margin-top: var(--sp-2); }
+/* blush variant — a warmer orchid-lit panel for clinical-review notices */
+.notice--blush {
+  border-left-color: var(--rose-light);
+  background: linear-gradient(165deg, rgba(255, 22, 138, .16) 0%, rgba(33, 0, 13, .82) 100%);
+}
+.notice--blush .notice__icon { color: var(--rose-light); }
 
 /* ================================ tables ================================= */
 .table-wrap {
@@ -804,7 +834,7 @@ body.nav-open { overflow: hidden; }
   overscroll-behavior-x: contain;
   border: var(--hairline) solid var(--border-soft);
   border-radius: var(--radius-md);
-  background: rgba(16, 6, 9, .55);
+  background: rgba(18, 0, 7, .58);
 }
 table.compare { width: 100%; min-width: 45rem; }
 .compare th, .compare td {
@@ -822,7 +852,7 @@ table.compare { width: 100%; min-width: 45rem; }
   font-weight: var(--w-head-strong);
   letter-spacing: .04em;
 }
-.compare tbody tr:nth-child(even) { background: rgba(81, 0, 24, .12); }
+.compare tbody tr:nth-child(even) { background: rgba(201, 0, 75, .10); }
 .compare tbody tr:last-child td { border-bottom: 0; }
 .compare td:first-child { font-weight: var(--w-label); color: var(--ivory); }
 
@@ -887,9 +917,9 @@ table.compare { width: 100%; min-width: 45rem; }
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border: var(--hairline) solid var(--border-soft);
+  border: var(--hairline) solid var(--border-rose);
   border-radius: var(--radius-md);
-  background: rgba(81, 0, 24, .25);
+  background: rgba(59, 0, 27, .32);
   cursor: pointer;
   padding: 0;
   display: block;
@@ -914,22 +944,22 @@ table.compare { width: 100%; min-width: 45rem; }
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--ivory-faint);
-  background: rgba(16, 6, 9, .55);
+  background: rgba(18, 0, 7, .58);
 }
 button.gallery-item .gallery-item__cap {
   position: absolute; left: 0; right: 0; bottom: 0;
-  background: rgba(16, 6, 9, .78);
+  background: rgba(18, 0, 7, .80);
   color: var(--gold-light);
 }
 @media (hover: hover) and (pointer: fine) {
   .gallery-item:hover {
-    border-color: var(--gold);
-    box-shadow: var(--shadow-gold);
+    border-color: var(--border-rose-strong);
+    box-shadow: var(--shadow-rose);
     transform: translateY(-6px);
   }
   .gallery-item:hover img { transform: scale(1.05); }
   .gallery-item--pending:hover {
-    transform: none; box-shadow: none; border-color: var(--border-soft);
+    transform: none; box-shadow: none; border-color: var(--border-rose);
   }
 }
 .gallery-item:focus-visible { border-color: var(--gold); box-shadow: var(--shadow-gold); }
@@ -971,7 +1001,7 @@ button.gallery-item .gallery-item__cap {
   border-radius: var(--radius-pill);
   border: var(--hairline) solid var(--gold-line-solid);
   color: var(--gold-light);
-  background: rgba(16, 6, 9, .55);
+  background: rgba(18, 0, 7, .62);
   font-size: 1.4rem;
 }
 .lightbox__btn--prev { left: .75rem; bottom: calc(1.15rem + env(safe-area-inset-bottom, 0px)); }
@@ -983,7 +1013,7 @@ button.gallery-item .gallery-item__cap {
   border-radius: var(--radius-pill);
   border: var(--hairline) solid var(--gold-line-solid);
   color: var(--gold);
-  background: rgba(16, 6, 9, .55);
+  background: rgba(18, 0, 7, .62);
   font-size: 1.3rem;
 }
 .lightbox__count {
@@ -995,7 +1025,7 @@ button.gallery-item .gallery-item__cap {
 }
 @media (hover: hover) and (pointer: fine) {
   .lightbox__btn:hover, .lightbox__close:hover {
-    background: rgba(81, 0, 24, .65);
+    background: rgba(59, 0, 27, .78);
     border-color: var(--gold);
     color: var(--gold-light);
   }
@@ -1005,8 +1035,10 @@ button.gallery-item .gallery-item__cap {
 .form {
   display: grid;
   gap: var(--sp-4);
-  background: linear-gradient(165deg, rgba(81, 0, 24, .45) 0%, rgba(16, 6, 9, .65) 100%);
-  border: var(--hairline) solid var(--border-soft);
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(201, 0, 75, .16), transparent 62%),
+    var(--panel-gradient-alt);
+  border: var(--hairline) solid var(--border-rose);
   border-radius: var(--radius-md);
   padding: clamp(1.25rem, 3vw, 2.5rem);
 }
@@ -1043,9 +1075,9 @@ button.gallery-item .gallery-item__cap {
 .field textarea { resize: vertical; min-height: 8rem; }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none;
-  border-bottom-color: var(--rose);
-  background: rgba(233, 92, 130, .05);
-  box-shadow: 0 8px 22px -12px rgba(233, 92, 130, .35);
+  border-bottom-color: var(--rose-light);
+  background: rgba(255, 22, 138, .07);
+  box-shadow: 0 8px 22px -12px rgba(255, 22, 138, .45);
 }
 .field--error input,
 .field--error select,
@@ -1145,7 +1177,7 @@ button.gallery-item .gallery-item__cap {
 }
 .form__status.is-visible { display: block; }
 .form__status--ok {
-  background: rgba(143, 191, 159, .08);
+  background: rgba(255, 215, 130, .10);
   border-color: var(--success);
   color: var(--success);
 }
@@ -1185,11 +1217,14 @@ button.gallery-item .gallery-item__cap {
   margin-top: var(--sp-3);
   color: var(--ivory);
 }
-.page-banner p {
+.page-banner p:not(.eyebrow) {
   margin-top: var(--sp-3);
   color: var(--ivory-soft);
   max-width: 58ch;
 }
+/* keep the banner eyebrow champagne-gold — the generic paragraph rule above
+   would otherwise win on specificity and flatten the accent to ivory. */
+.page-banner .eyebrow { color: var(--gold-light); }
 .page-banner .lead {
   color: var(--ivory-soft);
   max-width: 58ch;
@@ -1272,12 +1307,13 @@ button.gallery-item .gallery-item__cap {
   isolation: isolate;
 }
 .cta-band::before {
-  /* layered radial glow on the CTA band */
+  /* layered crimson / orchid / champagne glow on the CTA band */
   content: "";
   position: absolute; inset: 0;
   background:
-    radial-gradient(60% 50% at 0% 0%, rgba(233, 92, 130, 0.18), transparent 70%),
-    radial-gradient(50% 50% at 100% 100%, rgba(214, 184, 117, 0.10), transparent 70%);
+    radial-gradient(60% 55% at 0% 0%,   rgba(255, 22, 138, 0.24), transparent 70%),
+    radial-gradient(55% 55% at 100% 100%, rgba(201, 0, 75, 0.28), transparent 70%),
+    radial-gradient(50% 50% at 62% 10%,  rgba(255, 215, 130, 0.12), transparent 72%);
   z-index: 0;
 }
 .cta-band > * { position: relative; z-index: 1; }
@@ -1312,10 +1348,15 @@ button.gallery-item .gallery-item__cap {
 
 /* ================================ footer ================================= */
 .site-footer {
-  background: linear-gradient(180deg, var(--burgundy-darker) 0%, var(--dark) 100%);
+  position: relative;
+  background:
+    radial-gradient(80% 60% at 12% 0%, rgba(201, 0, 75, 0.22), transparent 60%),
+    radial-gradient(60% 50% at 88% 0%, rgba(255, 22, 138, 0.12), transparent 64%),
+    linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-darker) 55%, var(--dark) 100%);
   color: var(--ivory-faint);
   font-size: var(--fs-small);
   border-top: var(--hairline) solid var(--gold-line-solid);
+  box-shadow: inset 0 1px 0 rgba(255, 77, 166, 0.14);
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
 .site-footer .brand__name { color: var(--ivory); }
@@ -1581,7 +1622,7 @@ button.gallery-item .gallery-item__cap {
    ============================================================ */
 .header-cta .btn--header {
   background: var(--rose-pill);
-  color: #1F0307;
+  color: var(--btn-ink);
   padding: var(--space-2) 18px;
   border-radius: var(--radius-pill);
   font-size: var(--fs-micro);
@@ -1589,7 +1630,8 @@ button.gallery-item .gallery-item__cap {
   text-transform: uppercase;
   display: inline-flex; align-items: center; gap: .55rem;
   min-height: 40px;
-  border: var(--hairline) solid transparent;
+  border: var(--hairline) solid rgba(255, 121, 183, 0.7);
+  box-shadow: 0 8px 22px -12px rgba(255, 22, 138, 0.6);
   transition:
     transform var(--dur) var(--ease),
     background var(--dur) var(--ease),
@@ -1598,7 +1640,7 @@ button.gallery-item .gallery-item__cap {
 .header-cta .btn--header svg { width: 1em; height: 1em; }
 @media (hover: hover) and (pointer: fine) {
   .header-cta .btn--header:hover {
-    background: linear-gradient(135deg, #FF809B 0%, #FF95AE 60%, #E07090 100%);
+    background: linear-gradient(135deg, #FF4A55 0%, #FF79B7 55%, #FF168A 100%);
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
   }

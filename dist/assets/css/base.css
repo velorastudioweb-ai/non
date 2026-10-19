@@ -86,7 +86,7 @@ body::before {
   content: "";
   position: fixed; inset: 0;
   z-index: -1;
-  background: var(--bg-glow), var(--dark);
+  background: var(--bg-glow);
   pointer-events: none;
 }
 /* subtle film grain across the page */
@@ -213,8 +213,21 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
 }
 .section { padding-block: clamp(3rem, 7vw, 6rem); position: relative; }
 .section--tight { padding-block: clamp(2.75rem, 5.5vw, 4.75rem); }
-.section--alt { background: var(--bg-alt); }
-.section--wine { background: var(--bg-wine); color: var(--text); }
+/* Alternate and wine bands are never flat: each carries a restrained
+   ruby / orchid radial sheen so consecutive sections read as distinct. */
+.section--alt {
+  background:
+    radial-gradient(90% 70% at 12% 0%, rgba(59, 0, 27, 0.60), transparent 62%),
+    radial-gradient(70% 60% at 100% 100%, rgba(201, 0, 75, 0.14), transparent 66%),
+    var(--bg-alt);
+}
+.section--wine {
+  background:
+    radial-gradient(80% 70% at 88% 8%, rgba(242, 27, 89, 0.20), transparent 64%),
+    radial-gradient(60% 60% at 0% 100%, rgba(255, 22, 138, 0.14), transparent 68%),
+    var(--bg-wine);
+  color: var(--text);
+}
 .section--wine h2, .section--wine h3 { color: var(--ivory); }
 .section--wine p { color: var(--ivory-soft); }
 
