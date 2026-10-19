@@ -52,6 +52,12 @@ h1, h2, h3, h4 {
   color: var(--ivory);
   text-wrap: balance;
   letter-spacing: var(--ls-h1);
+  /* Headings scale with user font size (rem). At 200% text-only zoom on a
+     320–375px screen a single long word (e.g. "Augmentation") is wider than
+     the line; `anywhere` (unlike the inherited `break-word`, which Chrome
+     skips under text-wrap:balance) keeps it inside its box. At default sizes
+     every word fits and nothing changes visually. */
+  overflow-wrap: anywhere;
 }
 p { text-wrap: pretty; }
 
@@ -166,6 +172,14 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
 .eyebrow--light::before { background: var(--gold-line-solid); }
 .eyebrow--rose { color: var(--rose-light); }
 .eyebrow--rose::before { background: var(--rose); }
+
+/* Tracked uppercase labels and buttons carry the same 200% font-scaling risk
+   as headings (long single words exceed narrow boxes) — same scoped guard. */
+.eyebrow, .hero__uppercase-stmt, .card__kicker, .tag, .stat__label,
+.feature-chip__label, .benefit__label, .breadcrumbs, .btn, .nav-toggle,
+.hero__script-line, .pending__note {
+  overflow-wrap: anywhere;
+}
 
 /* gradient text — used for special headline emphasis */
 .text-gradient {

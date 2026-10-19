@@ -1,2 +1,5 @@
 node_modules/
 .vercel
+
+build/_qa-snapshot/
+build/_diag*.js
