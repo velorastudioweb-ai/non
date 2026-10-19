@@ -210,17 +210,19 @@
   gap: var(--sp-2);
   min-height: var(--header-h);
 }
-.brand { display: inline-flex; align-items: center; gap: .75rem; }
-.brand__ico { color: var(--gold); display: inline-flex; }
+.brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; }
+.brand__ico { color: var(--gold); display: inline-flex; flex: none; }
 .brand__ico svg { width: 32px; height: 32px; }
-.brand__text { display: flex; flex-direction: column; line-height: 1; }
+.brand__text { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
 .brand__name {
   font-family: var(--font-heading);
-  font-size: 1.32rem;
+  font-size: clamp(1.24rem, 1.2rem + .15vw, 1.32rem);
   font-weight: var(--w-head-strong);
   letter-spacing: .06em;
   color: var(--ivory);
   text-transform: uppercase;
+  /* one-word brand token: break only when user font scaling forces it */
+  overflow-wrap: anywhere;
 }
 .brand__tag {
   font-size: var(--fs-micro);
@@ -759,12 +761,13 @@ body.nav-open { overflow: hidden; }
 .steps { display: grid; gap: var(--sp-4); }
 .step {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: var(--sp-3) var(--sp-4);
   align-items: start;
   padding-bottom: var(--sp-4);
   border-bottom: var(--hairline) solid var(--border-soft);
 }
+.step > * { min-width: 0; }
 .step:last-child { border-bottom: 0; padding-bottom: 0; }
 .step__num {
   font-family: var(--font-heading);
@@ -780,7 +783,7 @@ body.nav-open { overflow: hidden; }
 
 .notice {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: var(--sp-3);
   padding: var(--sp-4);
   border: var(--hairline) solid var(--border-soft);
@@ -788,6 +791,7 @@ body.nav-open { overflow: hidden; }
   border-radius: var(--radius-md);
   background: linear-gradient(165deg, rgba(81, 0, 24, .35) 0%, rgba(16, 6, 9, .55) 100%);
 }
+.notice > * { min-width: 0; }
 .notice__icon { color: var(--gold); margin-top: .2rem; }
 .notice h3 { font-family: var(--font-heading); color: var(--ivory); margin-bottom: .3rem; }
 .notice p { font-size: var(--fs-small); color: var(--ivory-soft); }
@@ -1156,6 +1160,10 @@ button.gallery-item .gallery-item__cap {
   clip: rect(0 0 0 0); clip-path: inset(50%);
   white-space: nowrap;
 }
+.hp-field > * {
+  width: 1px; height: 1px; margin: 0; padding: 0;
+  border: 0; opacity: 0; pointer-events: none;
+}
 
 /* ============================== page banner ============================== */
 .page-banner {
@@ -1383,6 +1391,21 @@ button.gallery-item .gallery-item__cap {
   .footer-legal a:hover { color: var(--rose-light); }
 }
 
+/* ===================== long identifiers (e-mail / URLs) ==================
+   Addresses such as enquiries@nonsurgicalbreastenlargement.in are single
+   unbreakable tokens wider than a 320px column. `anywhere` (unlike
+   `break-word`) also shrinks their min-content contribution so flex/grid
+   tracks stay inside the viewport on small phones. Scoped to the components
+   that carry contact details and inline links — never applied globally. */
+.footer-contact-details a,
+.footer-contact-details li,
+.notice, .notice p, .notice a,
+.footer-brand p, .footer-disclaimer,
+.form__status, .form__status *,
+.prose a, .card__text, .faq__a-inner {
+  overflow-wrap: anywhere;
+}
+
 /* =============================== responsive ==============================
    Component ladder — 480 / 768 / 1024 / 1280
    ======================================================================== */
@@ -1447,13 +1470,15 @@ button.gallery-item .gallery-item__cap {
 @media (min-width: 1024px) {
   .nav {
     display: flex; align-items: center;
-    gap: clamp(.5rem, 1.4vw, 1.6rem);
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    gap: clamp(.5rem, 1vw, .65rem);
   }
   .nav__link {
     display: inline-flex; align-items: center;
     position: relative;
     min-height: var(--tap);
-    padding: .55em .15em;
+    padding: .55em .05em;
     white-space: nowrap;
     font-size: .82rem;
     font-weight: var(--w-body-mid);
@@ -1513,9 +1538,13 @@ button.gallery-item .gallery-item__cap {
   .nav__link:hover::after { right: 0; }
 }
 
+/* Desktop header must fit inside the 1200px container alongside the brand
+   (229px) and the consultation pill. Nav links therefore keep the compact
+   .82rem/.08em setting above 1024px instead of stepping up — the step-up
+   pushed brand+nav+CTA ~90px past the container and clipped the CTA below
+   1400px viewports. */
 @media (min-width: 1280px) {
-  .header-cta { display: inline-flex; }
-  .nav__link { font-size: .92rem; letter-spacing: .1em; }
+  .header-cta { display: inline-flex; flex: none; }
   .card__body { padding: var(--sp-5) var(--sp-4) var(--sp-4); }
 }
 
@@ -1546,15 +1575,17 @@ button.gallery-item .gallery-item__cap {
 }
 
 /* ============================================================
-   Header CTA — small rose-pink BOOK A CONSULTATION pill
+   Header CTA — small rose-pink BOOK A CONSULTATION pill.
+   Tracking/padding trimmed so brand + nav + CTA fit the 1200px
+   container at 1280px without clipping (see header notes above).
    ============================================================ */
 .header-cta .btn--header {
   background: var(--rose-pill);
   color: #1F0307;
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-2) 18px;
   border-radius: var(--radius-pill);
   font-size: var(--fs-micro);
-  letter-spacing: .22em;
+  letter-spacing: .16em;
   text-transform: uppercase;
   display: inline-flex; align-items: center; gap: .55rem;
   min-height: 40px;

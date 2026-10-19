@@ -66,6 +66,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://quantumhealth-website.vercel.app/breast-enlargement-without-surgery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://quantumhealth-website.vercel.app/breast-enhancement-comparison/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -152,6 +157,11 @@
   </url>
   <url>
     <loc>https://quantumhealth-website.vercel.app/blogs/breast-fillers-sculptra-and-biostimulators-safety-questions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://quantumhealth-website.vercel.app/blogs/breast-enlargement-without-surgery-what-works/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -59,6 +59,7 @@ const site = {
     { label: 'Breast augmentation', href: '/surgical/breast-augmentation/' },
     { label: 'Fat transfer', href: '/surgical/fat-transfer-breast-augmentation/' },
     { label: 'Treatment comparison', href: '/breast-enhancement-comparison/' },
+    { label: 'What works: evidence guide', href: '/breast-enlargement-without-surgery/' },
     { label: 'Gallery', href: '/before-after-gallery/' }
   ],
   footerPatient: [
@@ -334,7 +335,8 @@ pages.push({
         { title: 'Sculptra & PLLA', text: 'Poly-L-lactic acid injectables for certain specified aesthetic indications, subject to product labelling and local authorisation.', href: '/non-surgical/sculptra-plla/', slot: 'PLLA product imagery' },
         { title: 'Biostimulators', text: 'A broad category intended to stimulate a tissue response such as collagen production, for selected indications.', href: '/non-surgical/biostimulators/', slot: 'Biostimulator imagery' },
         { title: 'Stem cells & regenerative medicine', text: 'The subject of ongoing research. “Regenerative” does not establish that a product is effective or approved.', href: '/non-surgical/regenerative-medicine/', slot: 'Regenerative research imagery' },
-        { title: 'Home care & skin quality', text: 'Supportive skin-quality measures discussed at consultation where appropriate.', href: '/non-surgical/' }
+        { title: 'Home care & skin quality', text: 'Supportive skin-quality measures discussed at consultation where appropriate.', href: '/non-surgical/' },
+        { title: 'What works: the evidence verdict', text: 'A scorecard of more than 20 popular methods — bras and fat transfer to creams, cups and fillers — with the evidence, the risks and the red flags behind each.', href: '/breast-enlargement-without-surgery/', slot: 'Evidence guide imagery' }
       ]
     },
     { type: 'steps', eyebrow: 'Assessing any non-surgical claim', heading: 'Six questions worth asking',
@@ -706,6 +708,235 @@ pages.push(treatmentPage({
   ],
   ctaHeading: 'Discuss whether fat transfer suits your goals'
 }));
+
+/* ---------- Evidence guide: breast enlargement without surgery ---------- */
+pages.push({
+  url: '/breast-enlargement-without-surgery/', slug: 'evidence-guide',
+  h1: 'Breast Enlargement Without Surgery: What Works and What Doesn’t',
+  seoTitle: 'Breast Enlargement Without Surgery: What Works | Evidence Guide',
+  seoDescription: 'An evidence-based scorecard of more than 20 popular breast enlargement methods — what adds real volume, what only changes appearance, and what to avoid.',
+  bannerEyebrow: 'Evidence guide · Scorecard',
+  bannerLead: 'What works, what doesn’t — a verdict for every popular method, with the evidence, the risks and the red flags behind it.',
+  breadcrumb: [{ label: 'Evidence guide' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enlargement Without Surgery: What Works and What Doesn’t', url: site.url + '/breast-enlargement-without-surgery/' }],
+  blocks: [
+    { type: 'prose', html:
+      '<p>This guide answers one question: which non-surgical ways of enlarging the breasts actually work, and which do not? Each method gets a verdict, the evidence behind it and the risks. It draws on regulator statements and published medical reviews, and it is general education — not a recommendation for any individual.</p>' +
+      '<p><strong>The short version:</strong> methods that change how the breasts look — a well-fitted bra, padding and styling — work immediately and safely. The only approaches shown to add real, lasting volume without an implant are fat-based: fat transfer, with or without an external device worn beforehand. Those give a modest gain and still involve a procedure. Nearly everything else sold to enlarge breasts, including creams, pills, massage and suction cups, has no reliable evidence behind it, and injectable fillers and silicone are actively dangerous.</p>' },
+    { type: 'table', eyebrow: 'How to read the verdicts', heading: 'What the five verdicts mean',
+      head: ['Verdict', 'Meaning'],
+      rows: [
+        ['<strong>WORKS</strong>', 'Delivers what it claims — either a visual change (bras, styling) or a measurable, lasting volume gain (fat transfer) — with risks that are understood.'],
+        ['<strong>PARTLY</strong>', 'Delivers part of the promise, for example a firmer-looking chest or promising but demanding results, but not a simple route to a bigger breast.'],
+        ['<strong>UNPROVEN</strong>', 'Plausible or widely used, but good evidence for breast enlargement is missing or mixed.'],
+        ['<strong>DOESN’T WORK</strong>', 'No reliable evidence of lasting enlargement, or the effect is only temporary swelling.'],
+        ['<strong>AVOID</strong>', 'Not approved for this use and linked to serious harm. The risks outweigh any possible benefit.']
+      ]
+    },
+    { type: 'table', alt: true, eyebrow: 'The scorecard', heading: 'More than 20 popular methods, judged',
+      lead: 'Each row gives a verdict, what the method actually does, and the bottom line.',
+      head: ['Method', 'Verdict', 'What it actually does', 'Bottom line'],
+      rows: [
+        ['Correctly fitted bra', '<strong>WORKS</strong> (look)', 'Changes shape and apparent size immediately', 'Best first step. No medical risk.'],
+        ['Padded, push-up and adhesive bras; inserts', '<strong>WORKS</strong> (look)', 'Adds roughly a cup visually while worn', 'Reversible and inexpensive.'],
+        ['Clothing, styling and make-up contouring', '<strong>WORKS</strong> (look)', 'Creates fullness through necklines, layers and highlight', 'Free to try.'],
+        ['Posture training', '<strong>WORKS</strong> (look)', 'Opens the chest and removes a stooped look', 'Visible difference, no cost.'],
+        ['Chest strength training', '<strong>PARTLY</strong>', 'Builds the muscle under the breast; firmer chest wall', 'Does not enlarge breast tissue.'],
+        ['Weight gain', '<strong>PARTLY</strong>', 'Raises breast fat but cannot be targeted', 'Unpredictable; not advised for this goal.'],
+        ['Fat transfer', '<strong>WORKS</strong> (modest)', 'Adds your own fat; a review averaged about 58% retained', 'Roughly one cup; it is a surgical procedure.'],
+        ['External expansion plus fat transfer', '<strong>PARTLY</strong>', 'Stretches tissue first so more fat survives', 'Promising, but demanding and mostly developer-led data.'],
+        ['PRP or stem-cell (SVF) add-ons', '<strong>UNPROVEN</strong>', 'Claimed to help fat survive', 'Debated; may cut usable volume.'],
+        ['Muscle stimulators (EMS)', '<strong>DOESN’T WORK</strong>', 'Contracts the chest muscle beneath', 'Cannot enlarge breast tissue.'],
+        ['Radiofrequency, ultrasound, laser', '<strong>DOESN’T WORK</strong>', 'Warms skin for tightening', 'Tightening, not volume.'],
+        ['Thread lifts', '<strong>DOESN’T WORK</strong>', 'Repositions tissue', 'Lift, not size.'],
+        ['Creams and lotions', '<strong>DOESN’T WORK</strong>', 'Moisturise the skin surface', 'Cannot grow glandular or fatty tissue.'],
+        ['Herbal pills and teas', '<strong>DOESN’T WORK</strong>', 'Contain plant compounds with hormonal activity', 'No clinical trials; safety concerns.'],
+        ['Foods and diets (soy, flax, milk, papaya)', '<strong>DOESN’T WORK</strong>', 'Nutrition only', 'No effect on breast volume.'],
+        ['Massage', '<strong>DOESN’T WORK</strong>', 'Relaxes and warms the skin', 'No growth.'],
+        ['Suction and vacuum cups', '<strong>DOESN’T WORK</strong>', 'Draws fluid into the tissue', 'Temporary swelling; bruising risk.'],
+        ['Hypnosis, subliminal audio, magnets, patches, acupuncture', '<strong>DOESN’T WORK</strong>', 'No credible mechanism', 'No credible evidence.'],
+        ['Hyaluronic acid, CaHA or PLLA fillers in the breast', '<strong>AVOID</strong>', 'Inject gel into the breast area', 'FDA recommends against; imaging problems.'],
+        ['Liquid silicone, oils and unknown materials', '<strong>AVOID</strong>', 'Inject permanent or unknown material', 'Linked to disfigurement and death.'],
+        ['Self-injection and needle-free filler devices', '<strong>AVOID</strong>', 'Unregulated delivery', 'Not approved; serious harm reported.'],
+        ['Hormone products without supervision', '<strong>AVOID</strong>', 'Alter hormone levels', 'Not a cosmetic route; real health risks.'],
+        ['Implants (surgical, for comparison)', '<strong>WORKS</strong> (surgical)', 'Place a prosthesis through an incision', 'Reliable size, but outside the scope of this guide.']
+      ],
+      note: '<strong>The pattern to remember:</strong> methods that work are either honest about being cosmetic — they change the look, not the breast — or honest about being a procedure — they move real tissue, with real risks. Methods that promise growth without either of these are the ones that fail.'
+    },
+    { type: 'notice', icon: 'evidence', title: 'How we judged whether a method works',
+      text: 'Four questions were applied to every method: <strong>Does it add measurable volume?</strong> — not a feeling of fullness or a better-fitting bra, but more breast. <strong>Does it last?</strong> — weeks of swelling is not enlargement. <strong>Is it safe enough for the benefit?</strong> — a small gain is not worth a serious risk. <strong>Is the evidence independent and well designed?</strong> — who ran the study, who paid for it, and were the results compared with a fair control? Systematic reviews sit at the top of the evidence ladder; manufacturer surveys, patents and testimonials sit at the bottom.'
+    },
+    { type: 'prose', alt: true, html:
+      '<h2 class="h3">Why most methods fail: how breast tissue actually grows</h2>' +
+      '<p>The breast’s duct system and the fat around it develop mainly in response to hormones, above all oestrogen, during puberty, with further changes in pregnancy and breastfeeding. In adult life, breast volume mostly follows body fat, the hormonal cycle, pregnancy and age. The signal that builds breast tissue is internal and hormonal, and nothing applied to the skin or worn over the chest sends that signal.</p>' +
+      '<p>Only three routes are known to add tissue: hormonal stimulation (which belongs under medical supervision for medical reasons only, not cosmetics), fat transfer (your own fat moved by a qualified surgeon — modest and surgical), and implants (surgery, outside this guide). Creams, pills, massage, cups and devices have no established mechanism for adding tissue at all.</p>' +
+      '<h3 class="h4">Why creams and pills cannot do it</h3>' +
+      '<p>To grow breast tissue, a cream or pill would have to deliver a growth signal to deep tissue. The only substances known to do that are hormones, which are drugs with effects throughout the body. A product that truly worked in that way would not be a harmless cosmetic — it would be an unregulated hormone treatment. A product that is harmless is, almost by definition, one that does not do the job.</p>' +
+      '<h3 class="h4">A quick test: swelling or growth?</h3>' +
+      '<ul>' +
+      '<li>If fullness fades within hours or days, it was fluid, swelling or a hormonal cycle effect, not growth.</li>' +
+      '<li>If it appears and disappears with your cycle, it is a normal cyclical change.</li>' +
+      '<li>If it follows weight gain, the fat changed — and that would happen without the product.</li>' +
+      '<li>Real, lasting added volume appears only after procedures that place tissue or material in the breast, or after hormonal development.</li>' +
+      '</ul>' },
+    { type: 'prose', html:
+      '<h2 class="h3">Works for appearance: bras, styling and posture</h2>' +
+      '<p>These options do not change the breast itself. They change how it looks and sits, and they do it immediately, cheaply and without medical risk. For many people who ask about enlargement, they are the most effective and least regrettable place to start. Fitting professionals often report that many people wear a band that is too loose and a cup that is too small — a bra that fits properly lifts and supports the breast, which projects the chest forward and changes the shape and apparent size more than any pill or cream.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Bra styles', heading: 'Styles and what they do',
+      head: ['Style', 'Effect', 'Best for'],
+      rows: [
+        ['Padded T-shirt bra', 'Smooth shape and modest added fullness', 'Everyday wear under fitted tops'],
+        ['Push-up bra', 'Lifts and brings the breasts together; often reads as about a cup larger', 'Cleavage, low necklines'],
+        ['Balconette', 'Lifts the upper curve into a rounded shape', 'Square and wide necklines'],
+        ['Plunge', 'Brings the breasts together at the centre', 'Deep necklines'],
+        ['Adhesive or stick-on', 'Lifts and shapes without straps or a band', 'Backless and strapless outfits; may irritate sensitive skin'],
+        ['Silicone or foam inserts', 'Adds volume inside a bra or swimwear', 'Asymmetry or extra fullness; keep clean and dry']
+      ],
+      note: 'Necklines such as boat, sweetheart and wrap styles draw the eye across the chest. Ruching, gathers, pleats, prints and layering add visual volume at the bust line. Rounded shoulders and a stooped upper back hide the chest — drawing the shoulders gently back and down gives an immediate difference in how the chest looks.'
+    },
+    { type: 'prose', html:
+      '<h2 class="h3">Partly works: strength training and weight</h2>' +
+      '<p>The breast is made of glandular tissue, fat and connective tissue, with skin around it. There is no muscle inside the breast. The pectoral muscles lie underneath, so chest exercises build the platform the breast sits on, not the breast. Training can firm and broaden the chest wall, improve posture and shoulder support, and make the breast sit slightly higher and fuller in clothes. It cannot enlarge glandular or fatty breast tissue, reverse sagging caused by stretched skin and ligaments, or target fat gain or loss in the breasts.</p>' +
+      '<p>Because breasts contain a lot of fat, gaining weight often increases size — but you cannot choose where weight is gained, and gaining weight purely for this goal carries its own health trade-offs, so it is not a sensible strategy. The reverse also holds: fat loss from heavy training or dieting can reduce breast size, and rapid weight change can leave skin looser.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Chest routine', heading: 'Suggested exercises if you train',
+      head: ['Exercise', 'Suggested volume', 'Notes'],
+      rows: [
+        ['Incline push-ups (hands on a bench or table)', '3 sets of 8–12', 'Lower the incline as you get stronger.'],
+        ['Dumbbell chest press', '3 sets of 8–12', 'Choose a weight that makes the last two reps challenging.'],
+        ['Dumbbell chest fly', '2 sets of 10–12', 'Light weights, elbows slightly bent.'],
+        ['Seated or bent-over row', '3 sets of 10–12', 'Balances the chest work and supports posture.']
+      ],
+      note: 'Train two to three non-consecutive days a week and warm up first. If you have a shoulder, wrist or heart condition, or are new to exercise, ask a doctor or qualified trainer first.'
+    },
+    { type: 'prose', html:
+      '<h2 class="h3">Works modestly: fat transfer</h2>' +
+      '<p>Fat transfer (also called lipofilling or autologous fat grafting) removes fat from another body area by liposuction, processes it, and injects it into the breast in small amounts. It leaves no implant. It is often marketed as non-surgical, but because it involves liposuction and, usually, sedation or anaesthesia, it is better described as minimally invasive surgery. It is the best-supported route to real, lasting volume without an implant — but the gain is modest and unpredictable, complications are not rare, and a surgeon who quotes a range rather than a guarantee is giving you honest information.</p>' },
+    { type: 'table', alt: true, eyebrow: 'What the evidence shows', heading: 'Fat transfer: the published figures',
+      head: ['Measure', 'What reviews report'],
+      rows: [
+        ['Average fat injected', 'About 300 mL per breast (range 134–610 mL) in a systematic review of 35 studies including 3,757 women'],
+        ['Average volume retained', 'About 58% (range 44–83%); another review reported 39% to 76%'],
+        ['Overall complication rate', '27.8% of cases; fat necrosis made up 43.7% of all complications'],
+        ['Imaging changes', 'Fat necrosis in 9.4% and calcification in 1.2% of cases'],
+        ['Patient satisfaction', 'Reported as high despite incomplete retention']
+      ],
+      note: 'If about 300 mL is injected and about 58% survives, the gain is around 175 mL — by the common rule of thumb that one cup is roughly 150–200 mL, about one cup size. Results vary with blood supply, surgical technique, recipient tissue, smoking and weight change. Risks include fat necrosis and oil cysts, calcifications visible on mammograms, bruising, swelling, infection, asymmetry, donor-site dents or numbness, and anaesthesia risks.'
+    },
+    { type: 'prose', html:
+      '<h2 class="h3">Promising but demanding: external expansion with fat transfer</h2>' +
+      '<p>Some clinics use a bra-like vacuum device worn for long periods each day for several weeks before fat grafting. The aim is to stretch the tissue gently and improve its blood supply, so that it accepts more fat and more of it survives. A developer-led study of 81 patients reported an average gain of 233 mL per breast at 12 months, compared with 134 mL in published series of fat transfer without expansion — though the comparison was against published series rather than a randomly assigned control group. A 2018 review of 13 studies reported graft survival between 53% and 82% at 6 to 12 months, with high satisfaction. A 2022 review concluded that external expansion improves fat survival but that complications and poor compliance are obvious, and that no standard parameters exist.</p>' +
+      '<p>The burden is heavy: many hours of device wear a day for weeks, skin problems such as swelling, bruising, blisters and dermatitis, and rare but reported serious complications including pneumothorax. The verdict is <strong>promising, not settled</strong> — the strongest numbers come from the group that developed the technique.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Add-ons and devices', heading: 'Treatments that are real — but do not enlarge the breast',
+      head: ['Treatment', 'What it can do', 'What it is sold as', 'Verdict'],
+      rows: [
+        ['PRP alone', 'May support tissue repair elsewhere in the body', 'Non-surgical breast enlargement or lift', '<strong>UNPROVEN</strong> for breast volume'],
+        ['Stem-cell or SVF enrichment', 'Experimental add-on to fat grafts', 'Higher fat survival and bigger result', '<strong>UNPROVEN</strong>; may reduce usable volume'],
+        ['Muscle stimulators (EMS)', 'Contract the chest muscle', 'Breast lifting and growth', '<strong>DOESN’T WORK</strong> for size'],
+        ['Radiofrequency, ultrasound, laser', 'Mild skin tightening', 'Firmer, bigger breasts', '<strong>DOESN’T WORK</strong> for size'],
+        ['Thread lifts', 'Reposition tissue for a limited time', 'Instant enlargement', '<strong>DOESN’T WORK</strong> for size']
+      ]
+    },
+    { type: 'prose', html:
+      '<h2 class="h3">Methods that don’t work: products you can buy</h2>' +
+      '<p><strong>Creams and lotions</strong> act on the skin surface. They can moisturise and make the skin feel smoother, and a smoother surface can look firmer for a while. There is no plausible way for a cream to grow glandular or fatty tissue underneath, and no well-designed clinical trial shows that any cream does so. Beware of creams that contain hormones that are not listed on the label.</p>' +
+      '<p><strong>Herbal pills, teas and capsules</strong> usually contain plant extracts promoted as “phytoestrogens”. A medical review of bust-enhancing herbal products published in <em>Obstetrics &amp; Gynecology</em> found that no clinical trials had been published, noted that several ingredients — including hops, saw palmetto, dong quai, chaste-tree berry, wild yam, fennel, black cohosh and fenugreek — are hormonally active, and concluded that their use should be discouraged because of lack of evidence of efficacy and long-term safety concerns. Hormone-active ingredients can cause temporary breast fullness and tenderness, which looks like growth — and can also disrupt periods and hormone levels.</p>' +
+      '<p><strong>Foods and diets</strong> (soy, flaxseed, milk, papaya and similar claims) target nothing: the amount of plant compounds in a normal diet does not enlarge the breast. <strong>Massage</strong> may relax and improve skin feel, but forceful massage can bruise and is not advisable. <strong>Suction and vacuum cups</strong> draw fluid and blood into the tissue, causing temporary swelling that fades in hours or days — the exact effect people mistake for growth — and misuse can cause bruising, broken blood vessels and skin damage. <strong>Hypnosis, subliminal audio, magnets, patches and acupuncture</strong> have no credible mechanism and no credible evidence; some patches even contain hormones or other active ingredients.</p>' +
+      '<p>People believe these methods work because of temporary swelling, cyclical changes across the menstrual cycle, small weight gains during weeks of use, better posture or a better bra, hope and the placebo effect, and the selective sharing of success stories.</p>' },
+    { type: 'notice', icon: 'safety', title: 'Methods to avoid: fillers, silicone and unsupervised hormones',
+      text: 'The US FDA recommends against using dermal fillers or any injectable filler to increase breast size — these uses are not approved, and the risks of unapproved uses are not known. In a 2017 safety communication, the FDA warned that injectable silicone and products falsely marketed as approved fillers have caused serious injuries and disfigurement when used to enlarge the breasts; large-scale injections can block blood vessels in the lungs, heart or brain, causing stroke or death, and problems can appear years later. At an August 2025 advisory meeting, the FDA raised concerns that filler can migrate, form nodules or granulomas, interfere with mammograms and breast examination, and potentially affect breastfeeding — and news coverage reported that no approved method exists for removing dermal fillers. Needle-free devices are not approved for injecting fillers, no filler is approved for over-the-counter use, and people should never inject themselves. Hormone products bought online are not a cosmetic route to larger breasts and carry real risks including blood clots.'
+    },
+    { type: 'table', alt: true, eyebrow: 'Spotting false claims', heading: 'Red flags before you spend money',
+      head: ['Claim you will see', 'Why it is a problem', 'A better question'],
+      rows: [
+        ['“Clinically proven”', 'Often means an in-house survey or a study on something else', 'Where is the independent, published trial, and what did it measure?'],
+        ['“100% natural”', 'Natural ingredients can still be hormone-active or contaminated', 'What are the ingredients, and has anyone tested their effect on breast size?'],
+        ['“Doctor recommended”', 'Which doctor, and were they paid?', 'Can I speak to a registered specialist independent of the seller?'],
+        ['“Results in 30 days”', 'Fast changes are usually swelling or weight change', 'How was the result measured, and how long did it last?'],
+        ['“FDA registered”', 'In the US, registration of a facility is not the same as approval of a product for a use', 'Is this product approved or cleared for this specific use?'],
+        ['“Permanent, no risk”', 'No breast procedure is risk-free, and few results are permanent', 'What are the complication rates, and what happens if I am unhappy?'],
+        ['Before-and-after photos', 'Lighting, posture, timing and bras change the picture', 'Are they standardised, unretouched and from real patients like me?'],
+        ['“Limited-time offer”', 'Pressure removes time to think', 'Can I take the written plan home and decide later?']
+      ],
+      note: 'Before you buy: search the product name with “warning”, “recall” or “adverse events”; check the regulator in your country for approval status; look for a published, independent study; read the full ingredient list; and ask a pharmacist or doctor about interactions with your medicines or conditions.'
+    },
+    { type: 'table', alt: true, eyebrow: 'Compared side by side', heading: 'Effort, risk and reversibility',
+      head: ['Method', 'Effort and time', 'Invasiveness', 'Time to a visible change', 'Reversible?', 'Risk level'],
+      rows: [
+        ['Bras, padding, styling', 'Minutes; ongoing', 'None', 'Immediate', 'Yes', 'None'],
+        ['Strength training', '2–3 sessions a week', 'None', 'Weeks to months', 'Yes', 'Low'],
+        ['Fat transfer', 'One or two procedures, then recovery', 'Minimally invasive surgery', 'Swelling first; final result after several months', 'Not fully; lost fat cannot be replaced without repeating', 'Moderate'],
+        ['External expansion plus fat transfer', 'Weeks of daily device wear plus a procedure', 'Device plus surgery', 'Months', 'Partly', 'Moderate'],
+        ['Creams, massage', 'Daily', 'None', 'No lasting change', 'Yes', 'Low'],
+        ['Herbal or hormone pills', 'Daily for weeks', 'Oral', 'No lasting change; swelling possible', 'Effects of hormones may persist', 'Low to moderate'],
+        ['Suction cups', 'Sessions of minutes to hours', 'External', 'Hours (swelling)', 'Yes', 'Low to moderate'],
+        ['Fillers in the breast', 'A clinic visit', 'Injection', 'Immediate', 'No reliable method of removal', 'High'],
+        ['Liquid silicone, oils', 'A clinic or unlicensed visit', 'Injection', 'Immediate', 'No', 'Very high']
+      ],
+      note: '<strong>The effort-to-reward trade:</strong> methods that ask little of you give little and cost little. Methods that give real volume ask for a procedure, recovery time and acceptance of risk. No method on this list gives a large, lasting gain for no effort and no risk, and any seller who says otherwise is selling hope.'
+    },
+    { type: 'steps', eyebrow: 'What to do instead', heading: 'A sensible order of steps',
+      lead: 'Match the method to your actual goal, then pick the least invasive option that can deliver it.',
+      items: [
+        { title: 'Look fuller in clothes', text: 'Start with a professional bra fitting, padded or push-up styles, necklines and posture. Rarely needs a specialist.' },
+        { title: 'Get a firmer chest', text: 'Strength training and posture work for 8 to 12 weeks. Consider a specialist if loose skin or marked sagging remains.' },
+        { title: 'A modest, lasting increase', text: 'Learn about fat transfer and ask for retention and complication data — if you have stable weight, enough donor fat and realistic goals.' },
+        { title: 'A large, predictable increase', text: 'Learn about surgical options, and see a qualified plastic surgeon. Compare more than one opinion, in writing, with the full cost and a revision policy.' },
+        { title: 'Different-sized breasts', text: 'A padded insert on the smaller side; have any recent change checked. Discuss fat transfer or surgery if the difference bothers you.' },
+        { title: 'Under 18', text: 'Talk with a doctor and a trusted adult — breasts keep developing for years. No product, device or procedure is appropriate.' }
+      ]
+    },
+    { type: 'table', alt: true, eyebrow: 'Real-life scenarios', heading: 'Common situations, sensible paths',
+      head: ['Situation', 'A sensible path', 'What to avoid'],
+      rows: [
+        ['“I have an event in three months and want to look fuller.”', 'Get a professional bra fitting; choose a tailored outfit and neckline; consider padded or adhesive options; work on posture.', 'Pills and quick injections: they are too slow, unproven or unsafe.'],
+        ['“I’m slim and want a modest, natural increase.”', 'Ask a qualified surgeon whether you have enough donor fat for fat transfer, and compare it with surgical options.', 'Gaining weight at random, or any filler.'],
+        ['“My breasts changed after pregnancy or weight loss.”', 'Get re-measured for bras; train the chest and back; ask a surgeon about lift or augmentation if it bothers you.', 'Creams promising to “restore” volume.'],
+        ['“An ad promises two cup sizes in 30 days.”', 'Do not buy. Check ingredients and look for independent, published trials.', 'Any product with hormone-like or undeclared ingredients.'],
+        ['“A clinic has offered me filler in my breasts.”', 'Decline, and ask for the product name, its regulatory approval for breast use and what happens if you need removal; get a second opinion from a qualified surgeon.', 'Agreeing the same day, or paying a deposit under pressure.'],
+        ['“One breast is clearly smaller.”', 'Use a padded insert on the smaller side; have any recent change examined; discuss fat transfer or surgery if it bothers you.', 'Treating one side with creams, cups or devices.']
+      ]
+    },
+    { type: 'table', alt: true, eyebrow: 'Safety', heading: 'Warning signs — and what to do',
+      head: ['Sign', 'Why it matters', 'What to do'],
+      rows: [
+        ['Fever, spreading redness, pus or worsening pain after a treatment', 'Possible infection', 'Contact your clinician the same day.'],
+        ['Pale, bluish, dusky or dark skin, or blisters', 'May mean reduced blood supply', 'Seek urgent medical care.'],
+        ['Chest pain, breathlessness or collapse', 'Possible blood clot or other serious event', 'Call emergency services.'],
+        ['Sudden vision change, severe headache or weakness after filler', 'Possible blocked blood vessel', 'Call emergency services.'],
+        ['New lump or hardness weeks or months later', 'Fat necrosis, filler reaction or something unrelated', 'Have it examined and imaged.'],
+        ['Nipple discharge, dimpling or skin changes', 'Can arise for unrelated reasons', 'See a doctor promptly.']
+      ],
+      note: 'Whatever you choose, keep up regular breast awareness and follow your national screening advice. Tell any radiographer about fat grafting, injections or implants, and keep a record of what was done, when and by whom.'
+    },
+    { type: 'faq', id: 'eg', eyebrow: 'Questions', heading: 'Frequently asked questions',
+      items: [
+        { q: 'Is there any non-surgical method that makes breasts bigger permanently?', a: '<p>Fat transfer is the best-supported option for lasting volume, but it involves liposuction and delivers modest, variable gains. External expansion before grafting may increase them.</p>' },
+        { q: 'Do breast enlargement pills work?', a: '<p>A medical review found no published clinical trials of bust-enhancing herbal products and discouraged their use. There is no controlled trial showing that any pill enlarges the breasts.</p>' },
+        { q: 'Do creams and massage work?', a: '<p>No reliable evidence shows that they enlarge breasts. They can improve how the skin feels.</p>' },
+        { q: 'Do chest exercises make breasts bigger?', a: '<p>They build the muscle beneath the breast and can improve firmness and posture, but they do not increase breast tissue.</p>' },
+        { q: 'Is filler a safe shortcut?', a: '<p>The FDA recommends against filler for breast enlargement and has not approved any for this use. Risks include nodules, migration, imaging problems and difficulty removing the material.</p>' },
+        { q: 'Is fat transfer safe?', a: '<p>It is widely used, but one review reported an overall complication rate of 27.8%, with fat necrosis the most common. Discuss the risks with a qualified surgeon.</p>' },
+        { q: 'How many cup sizes can I realistically gain without surgery?', a: '<p>Bras and padding add about a cup visually. Fat transfer is typically around one cup per session. More usually needs implants.</p>' },
+        { q: 'Will it affect mammograms?', a: '<p>Fat grafting and fillers can both cause imaging changes. Always tell your radiographer.</p>' },
+        { q: 'Why do so many people say supplements worked for them?', a: '<p>Temporary swelling, cycle changes, small weight gains and better bras can look like growth, and success stories are shared more than failures.</p>' },
+        { q: 'What is the single best first step?', a: '<p>A professional bra fitting. It costs little, carries no risk, and often changes the look more than people expect.</p>' }
+      ]
+    },
+    { type: 'notice', icon: 'evidence', title: 'Sources and further reading',
+      text: '<ul>' +
+        '<li>U.S. Food and Drug Administration — Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable silicone for body contouring.</li>' +
+        '<li>U.S. Food and Drug Administration — Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).</li>' +
+        '<li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review highlighting the need for clinical caution (35 studies, 3,757 women).</li>' +
+        '<li>Adipose-derived stem cell enrichment is counter-productive for the majority of women seeking primary aesthetic breast augmentation by autologous fat transfer: a systematic review. <em>J Plast Reconstr Aesthet Surg</em>, 2020;73(11):2025–2032.</li>' +
+        '<li>Khouri RK, et al. — Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li>' +
+        '<li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li>' +
+        '<li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li>' +
+        '</ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting.' },
+    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
+      text: 'This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly.' },
+    stdCta({ heading: 'Talk through the options with a qualified clinician' })
+  ]
+});
 
 /* ---------- Comparison ---------- */
 pages.push({

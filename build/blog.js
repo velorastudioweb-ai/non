@@ -94,6 +94,31 @@ const articles = [
     ],
     references: ['U.S. FDA — Dermal fillers and their approved uses', 'U.S. FDA — Regenerative medicine and stem cell safety'],
     related: ['prp-and-breast-enhancement-what-the-evidence-says', 'surgical-vs-non-surgical-breast-enhancement']
+  },
+  {
+    slug: 'breast-enlargement-without-surgery-what-works',
+    title: 'Breast Enlargement Without Surgery: An Evidence-Based Verdict',
+    seoTitle: 'Breast Enlargement Without Surgery: What Works | QuantumHealth',
+    seoDescription: 'A method-by-method scorecard of non-surgical breast enlargement — which options change appearance, which add real volume, and which have no evidence or real danger behind them.',
+    category: 'Evidence and research',
+    date: '2026-10-19', reviewed: '',
+    excerpt: 'A method-by-method scorecard: what changes appearance, what adds real volume, and what to avoid.',
+    intro: 'More products are sold for breast enlargement without surgery than the evidence can support. A short scorecard — summarised from our <a href="/breast-enlargement-without-surgery/">full evidence guide</a> — separates what works, what partly works, what is unproven, what does not work and what should be avoided outright.',
+    body: [
+      ['The verdict pattern', '<p>Methods that work are either honest about being cosmetic — a well-fitted bra, padding, styling and posture change the look, not the breast, immediately and safely — or honest about being a procedure. Fat transfer moves real tissue through liposuction and is the best-supported route to lasting volume without an implant, but reviews average roughly 58% fat retention from about 300 mL injected: about one cup, with a complication rate that is not trivial.</p>'],
+      ['Why most products fail', '<p>Breast tissue grows in response to internal hormonal signals, not to anything applied to the skin or worn over the chest. A cream or pill that truly delivered a growth signal would be an unregulated hormone treatment with effects throughout the body — so a harmless product is, almost by definition, one that does not enlarge the breast. Temporary fullness from suction cups, hormone-active ingredients or the menstrual cycle is swelling or cyclical change, not growth.</p>'],
+      ['Add-ons that do not enlarge the breast', '<p>EMS devices contract the pectoral muscle beneath the breast; radiofrequency, ultrasound and laser warm skin for tightening; threads reposition tissue for a lift, not size. PRP and stem-cell enrichment sold as fat-graft boosters remain unproven — one review found enrichment could double the fat required while increasing retention only modestly.</p>'],
+      ['What to avoid', '<p>The FDA recommends against using any injectable filler to increase breast size, and has warned that injectable silicone used for body contouring has caused disfigurement, blocked blood vessels and death, with problems appearing years later and no approved method of removal. Self-injection kits and unsupervised hormone products belong in the same category: decline them.</p>'],
+      ['How to spot a false claim', '<p>“Clinically proven” often means an in-house survey. “Results in 30 days” usually means swelling or weight change. “FDA registered” is facility registration, not product approval. Before spending money, search the product name with “warning” or “recall”, check your national regulator, and look for an independent published trial rather than a patent or testimonial.</p>'],
+      ['A sensible first step', '<p>Get measured for a bra properly, work on posture, and decide what you actually want — size, shape, symmetry or confidence. If you want lasting change, take the written plan from a qualified, registered surgeon, compare more than one opinion, and decline anything that involves unapproved injections or unregulated products.</p>']
+    ],
+    references: [
+      'U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory meeting executive summary',
+      'Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review (35 studies, 3,757 women)',
+      'Adipose-derived stem cell enrichment is counter-productive for primary aesthetic breast augmentation by autologous fat transfer: a systematic review. J Plast Reconstr Aesthet Surg, 2020',
+      '“Bust enhancing” herbal products. Obstet Gynecol, 2003;101(6):1345–9'
+    ],
+    related: ['breast-fillers-sculptra-and-biostimulators-safety-questions', 'surgical-vs-non-surgical-breast-enhancement', 'prp-and-breast-enhancement-what-the-evidence-says']
   }
 ];
 
