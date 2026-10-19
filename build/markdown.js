@@ -26,7 +26,7 @@ function parseFrontMatter(src) {
       const arr = owner.map[owner.pendingKey] || (owner.map[owner.pendingKey] = []);
       const kvm = /^([A-Za-z0-9_-]+):\s*(.*)$/.exec(li[1]);
       if (kvm) {
-        const obj = {}; obj[kvm[1]] = kvm[2] === '' ? null : coerce(kvm[2]); arr.push(obj); frames.push({ indent: indent+2, map: obj, pendingKey: null });
+        const obj = {}; obj[kvm[1]] = kvm[2] === '' ? null : coerce(kvm[2]); arr.push(obj); frames.push({ indent: indent, map: obj, pendingKey: null });
       } else { arr.push(coerce(li[1])); }
       continue;
     }
@@ -66,7 +66,7 @@ function markdownToHtml(md) {
     if (ul) { if (para.length) { flush(); } if (!list || list.type !== 'ul') { if (list) flush(); list = {type:'ul', items:[]}; } list.items.push(ul[1]); continue; }
     const ol = /^\d+\.\s+(.*)$/.exec(t);
     if (ol) { if (para.length) flush(); if (!list || list.type !== 'ol') { if (list) flush(); list = {type:'ol', items:[]}; } list.items.push(ol[1]); continue; }
-    if (/^\|.*\|$/.test(t)) { if (para.length) flush(); if (!list) flush(); if (!table) table = {rows:[]}; table.rows.push(t.slice(1,-1).split('|').map(function(c){return c.trim()})); continue; }
+    if (/^\|.*\|$/.test(t)) { if (para.length) flush(); if (list) flush(); if (!table) table = {rows:[]}; table.rows.push(t.slice(1,-1).split('|').map(function(c){return c.trim()})); continue; }
     para.push(t);
   }
   flush();
