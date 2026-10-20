@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19",
+  "generated": "2026-10-20",
   "source": "National Health Service (NHS, UK)",
   "sourceUrl": "https://www.nhs.uk/",
   "about": "NHS patient information related to breast enlargement (implants), cosmetic procedure decision-making, choosing a practitioner, NHS funding, surgery abroad and reporting problems.",
@@ -36,9 +36,9 @@
       "title": "Breast enlargement (implants)",
       "category": "breast-enlargement",
       "kind": "Patient information page",
-      "url": "https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/",
+      "url": "https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/cosmetic-surgery/breast-enlargement/",
       "updated": "2023-09-21",
-      "summary": "The NHS overview of breast enlargement (also called a boob job or breast augmentation). Implants are inserted to increase size, change shape or make breasts more even. The page covers funding, UK costs, choosing a surgeon and implants, how long implants last, the operation itself, recovery, complications, BIA-ALCL, PIP implants, the implant registry, breast screening and how to report problems.",
+      "summary": "The NHS overview of breast enlargement (also called a boob job or breast augmentation). Implants are inserted to increase size, change shape or make breasts more even. The page covers funding, UK costs, choosing a surgeon and implants, how long implants last, the operation itself, recovery, complications, BIA-ALCL, breast implant illness, PIP implants, the implant registry, breast screening and how to report problems.",
       "keyPoints": [
         "Breast enlargement is major surgery; results are not guaranteed and there are risks to weigh up.",
         "It is usually paid for privately. The NHS may fund it in some circumstances, for example very uneven breasts or no breasts, depending on local rules.",
@@ -51,7 +51,9 @@
         "BIA-ALCL is an uncommon immune-system cell cancer associated with implants; breast implant illness is a term for symptoms some women report after surgery.",
         "PIP implants were banned in the UK in 2010; a ruptured implant should be removed as soon as possible.",
         "The Breast and Cosmetic Implant Registry (BCIR), set up in 2016, allows implants to be traced if a safety concern arises.",
-        "Breast screening still matters after implants; mammograms are safe and can be performed differently so as much breast tissue as possible is seen."
+        "Breast screening still matters after implants; mammograms are safe and can be performed differently so as much breast tissue as possible is seen.",
+        "Check any hospital or clinic in England is registered with the CQC, and that the surgeon is on the GMC specialist register with a licence to practise; always meet the surgeon before the procedure.",
+        "The MHRA publishes a Cosmetic Breast Augmentation Patient Risk Awareness Tool to help discuss implant risks and keep a record of treatment."
       ]
     },
     {
@@ -254,6 +256,16 @@
     {
       "topic": "Questions for your surgeon",
       "statement": "The NHS suggests asking about qualifications and experience, professional association membership, how many breast enlargements they have performed, how many operations involved complications, the implant type, manufacturer and why it is used, the surgical technique and placement, expected results, follow-up if things go wrong, patient satisfaction rates and alternative options.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Risk awareness tool",
+      "statement": "The Medicines and Healthcare products Regulatory Agency (MHRA) publishes a Cosmetic Breast Augmentation Patient Risk Awareness Tool (PDF) that patients can use to discuss potential implant risks with their surgeon and keep a record of their treatment.",
+      "source": "breast-enlargement"
+    },
+    {
+      "topic": "Further information",
+      "statement": "The NHS points to patient information from the British Association of Aesthetic Plastic Surgeons (BAAPS), the British Association of Plastic, Reconstructive and Aesthetic Surgeons (BAPRAS) and the Royal College of Surgeons for more on breast augmentation and cosmetic surgery.",
       "source": "breast-enlargement"
     },
     {

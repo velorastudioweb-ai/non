@@ -1,0 +1,373 @@
+{
+  "generated": "2026-10-20",
+  "source": "NCBI Bookshelf (StatPearls Publishing)",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/",
+  "article": {
+    "id": "NBK482206",
+    "title": "Breast Augmentation",
+    "pmid": "29489168",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/",
+    "authors": "Dean Fardo; Miguel B. Sequeira Campos; Jay M. Pensler",
+    "affiliations": "King's College London; Northwestern University Feinberg School of Medicine",
+    "updated": "2023-07-18",
+    "publisher": "StatPearls Publishing, Treasure Island (FL)",
+    "citation": "Fardo D, Sequeira Campos MB, Pensler JM. Breast Augmentation. [Updated 2023 Jul 18]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2023 Jan-.",
+    "license": "CC BY-NC-ND 4.0",
+    "type": "Peer-reviewed clinical review"
+  },
+  "categories": [
+    {
+      "id": "overview",
+      "name": "Background and anatomy",
+      "description": "What breast augmentation is, why it is performed, how the FDA has treated silicone implants over time, and the anatomy the operation works on."
+    },
+    {
+      "id": "candidates",
+      "name": "Indications and contraindications",
+      "description": "Who the review says the procedure is for, and the conditions that should stop a surgeon from operating."
+    },
+    {
+      "id": "procedure",
+      "name": "The operation",
+      "description": "Equipment, theatre team, preparation, implant choices, placement, incisions, anaesthesia, duration and expected recovery."
+    },
+    {
+      "id": "outcomes",
+      "name": "Complications and outcomes",
+      "description": "Early and late complications, capsular contracture, implant longevity, reported satisfaction and how the care team reduces risk."
+    }
+  ],
+  "documents": [
+    {
+      "id": "continuing-education",
+      "title": "Continuing Education Activity",
+      "category": "overview",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s1",
+      "updated": "2023-07-18",
+      "summary": "The review's opening summary: breast augmentation increases breast size, most often with an implant and less commonly with fat transfer, and is among the most commonly performed plastic surgery procedures in the United States. It frames the activity around indications, contraindications, complications and the role of the interprofessional team before and after surgery.",
+      "keyPoints": [
+        "Objectives are to identify the different techniques, describe the indications, review the complications and improve care coordination among the team.",
+        "The FDA restricted silicone-filled implants for cosmetic enhancement from 1992; reconstructive patients continued to receive them after mastectomy.",
+        "The activity is written for the interprofessional team involved in pre- and postoperative care."
+      ]
+    },
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "category": "overview",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s2",
+      "updated": "2023-07-18",
+      "summary": "Breast augmentation is a surgical procedure in which breast size is enhanced, either by placing an implant or, less commonly, through fat transfer. The section traces FDA policy on silicone implants from the 1992 restriction to the 2006 reversal, describes the shift towards cohesive gel and form-stable implants, and sets out monitoring advice and the fact that implants are not permanent devices.",
+      "keyPoints": [
+        "Extensive research failed to confirm the disease fears that led to the 1992 silicone restriction, and the FDA allowed general use of silicone-filled implants again in 2006.",
+        "By 2017 the majority of patients undergoing augmentation received cohesive gel silicone implants, with makers introducing different levels of gel firmness.",
+        "The FDA recommends MRI screening every two years in patients with silicone implants to detect subclinical leaks, but adherence is incomplete and MRI readings can be false positive.",
+        "Higher gel cohesion may lower rupture rates, but the review states that eventually all implants will rupture or break."
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "Anatomy and Physiology",
+      "category": "overview",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s3",
+      "updated": "2023-07-18",
+      "summary": "The anatomy relevant to augmentation: the breast sits on the anterior chest wall below the clavicle, bounded medially by the sternum, laterally by the latissimus dorsi and inferiorly by the inframammary fold, with the pectoralis muscles forming its posterior boundary.",
+      "keyPoints": [
+        "The inframammary fold is a dermal structure formed by fusion of the superficial and mammary fascia.",
+        "Blood supply comes from the subdermal plexus with major contributions from the internal mammary artery, external mammary artery and intercostal perforators.",
+        "Nerve supply is mainly through the intercostal plexus, with most contribution from the third to fifth intercostal nerves."
+      ]
+    },
+    {
+      "id": "indications",
+      "title": "Indications",
+      "category": "candidates",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s4",
+      "updated": "2023-07-18",
+      "summary": "Implants are placed for reconstruction after mastectomy, for developmental disorders such as hypomastia, and for elective reasons related to self-image. Hypomastia may follow normal development or involution, especially after pregnancy, and people of all personality types may seek the procedure.",
+      "keyPoints": [
+        "Reported motivations include reconstruction, developmental under-development of the breast and elective enhancement of self-image.",
+        "The review notes that when surveyed after surgery, the vast majority of women would undergo the operation again."
+      ]
+    },
+    {
+      "id": "contraindications",
+      "title": "Contraindications",
+      "category": "candidates",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s5",
+      "updated": "2023-07-18",
+      "summary": "Most patients have no contraindications, but the review lists the conditions that should prevent surgery and the patient factors that should pause it.",
+      "keyPoints": [
+        "Absolute reasons not to operate include active infection of the breast, active cancer and pregnancy.",
+        "Relative reasons include a history of autoimmune disease, current radiation treatment, unstable medical conditions and known sensitivity to silicone.",
+        "Psychological instability or unrealistic expectations are also given as reasons not to proceed."
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "category": "procedure",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s6",
+      "updated": "2023-07-18",
+      "summary": "Routine operating-room equipment is usually sufficient. Extras depend on the approach: a lighted retractor or headlight for visualising the pocket, an endoscope for umbilical or axillary approaches, and sometimes an implant sleeve used as part of a no-touch technique.",
+      "keyPoints": [
+        "A no-touch technique limits handling of the implant to reduce implant trauma and bacterial contamination.",
+        "Endoscopic equipment may be required when the umbilical or axillary route is used."
+      ]
+    },
+    {
+      "id": "personnel",
+      "title": "Personnel",
+      "category": "procedure",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s7",
+      "updated": "2023-07-18",
+      "summary": "The operating team normally consists of the surgeon, a scrubbed assistant, an anaesthesiologist and a circulating nurse working together in the operating room.",
+      "keyPoints": [
+        "Standard theatre roles apply: surgeon, scrubbed assistant, anaesthesiologist and circulating nurse.",
+        "The team structure is described as the same as for other routine surgical procedures."
+      ]
+    },
+    {
+      "id": "preparation",
+      "title": "Preparation",
+      "category": "procedure",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s8",
+      "updated": "2023-07-18",
+      "summary": "Patients are prepared for surgery as for any other surgical procedure, following the usual preoperative pathway.",
+      "keyPoints": [
+        "Preparation follows the routine preoperative work-up used for any operation, including assessment and consent.",
+        "The review places emphasis on informed consent and on the pre-operative teaching that reduces later problems."
+      ]
+    },
+    {
+      "id": "technique",
+      "title": "Technique or Treatment",
+      "category": "procedure",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s9",
+      "updated": "2023-07-18",
+      "summary": "Two main implant types are described, saline-filled and silicone-filled, both with a silicone outer shell that can be smooth or textured. Implants can sit above or beneath the pectoralis muscle, be reached through inframammary, transaxillary or peri-areolar incisions, and are usually done as an outpatient operation under general anaesthesia.",
+      "keyPoints": [
+        "Saline implants are inserted empty and filled through a port, typically with a 25 to 50 mL range specified by the manufacturer.",
+        "Saline implants are FDA-approved from age 18 for augmentation and at any age for reconstruction; silicone gel implants are approved from age 22.",
+        "Silicone implants suit patients with thin soft-tissue coverage better, showing less rippling and a softer, more natural feel.",
+        "Texturing prevents rotation in shaped implants and may lower capsular contracture in the subglandular pocket, but not in the submuscular pocket.",
+        "No single placement method is uniformly accepted as best; the choice is made jointly by patient and surgeon.",
+        "The operation generally takes 45 to 90 minutes; most patients return to light work within a week, with full activity taking up to six weeks."
+      ]
+    },
+    {
+      "id": "complications",
+      "title": "Complications",
+      "category": "outcomes",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s10",
+      "updated": "2023-07-18",
+      "summary": "Complication rates are described as low, but no implant is a lifetime device. Early problems include infection, bleeding and sensory change; later problems include malposition, deflation or leak and capsular contracture, which may require further surgery.",
+      "keyPoints": [
+        "Surgeons commonly estimate a 15 to 20 year lifespan for implants, with no uniform recommendation on routine replacement.",
+        "Early complications listed are infection, scarring, asymmetry, haematoma, seroma, breast pain, poor cosmetic outcome and changes in nipple or breast sensation.",
+        "Later complications listed are implant malposition or displacement, implant deflation or leak, and capsular contracture.",
+        "Capsular contracture is graded 1 to 4 and may require surgical correction or implant removal when severe.",
+        "Staphylococcus epidermidis and Cutibacterium acnes are the microorganisms most commonly isolated in studies of capsular contracture, supporting a suspected biofilm or low-grade infection mechanism.",
+        "A slim possibility of breast implant-associated anaplastic large cell lymphoma (ALCL) is reported, possibly linked to a particular type of implant texturing, although the exact relationship is not yet determined."
+      ]
+    },
+    {
+      "id": "clinical-significance",
+      "title": "Clinical Significance",
+      "category": "outcomes",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s11",
+      "updated": "2023-07-18",
+      "summary": "The procedure remains highly popular, and the review stresses that clinicians treating women with implants should be aware of them, because the implants are relevant to other conditions and to screening.",
+      "keyPoints": [
+        "The American Society of Plastic Surgeons reported approximately 290,000 augmentation procedures performed in the United States in 2016.",
+        "The vast majority of patients report improved self-esteem and satisfaction with the decision.",
+        "Doctors treating these patients for other conditions should have an awareness of the procedure and of implants in general."
+      ]
+    },
+    {
+      "id": "team-outcomes",
+      "title": "Enhancing Healthcare Team Outcomes",
+      "category": "outcomes",
+      "kind": "StatPearls review section",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s12",
+      "updated": "2023-07-18",
+      "summary": "Risk reduction is described as a team effort: informed consent, nurse-led preoperative instruction, smoking cessation, pharmacist medicines checks and early recognition of problems. Outcomes are reported as good, with most patients pleased with the result.",
+      "keyPoints": [
+        "Many past litigations arose primarily from a lack of informed consent, which the pre-operative visit is meant to address.",
+        "Patients should be instructed to stop smoking and make positive lifestyle changes so results last longer.",
+        "Pharmacists contribute by checking allergies and explaining medicines, which can reduce infection and help pain control.",
+        "Surveys cited in the review indicate about 70 to 80 percent of patients are satisfied and feel the outcome was perfect."
+      ]
+    },
+    {
+      "id": "references",
+      "title": "References and Further Reading",
+      "category": "outcomes",
+      "kind": "StatPearls reference list",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482206/#article-18563.s15",
+      "updated": "2023-07-18",
+      "summary": "The review cites twelve sources spanning secondary augmentation, transgender breast contouring, anatomical versus round implants, fat grafting, capsular contracture risk factors, cosmetic-tourism infection, subclinical implant infection, outcomes series and long-term follow-up.",
+      "keyPoints": [
+        "The full reference list, with links to each PubMed record, is reproduced in the references section of this page.",
+        "Every citation can be checked at source through its PMID link."
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "What the procedure is",
+      "statement": "Breast augmentation is a surgical procedure in which breast size is enhanced, either by placing an implant or, less commonly, through fat transfer.",
+      "source": "introduction"
+    },
+    {
+      "topic": "How common it is",
+      "statement": "The review describes augmentation as one of the most commonly performed plastic surgery procedures in the United States, and the American Society of Plastic Surgeons reported about 290,000 procedures in 2016.",
+      "source": "clinical-significance"
+    },
+    {
+      "topic": "Silicone implant history",
+      "statement": "The FDA restricted silicone-filled implants for cosmetic enhancement from 1992, and allowed them again without clinical-study enrolment in 2006 after studies failed to confirm disease links.",
+      "source": "introduction"
+    },
+    {
+      "topic": "Implant monitoring",
+      "statement": "The FDA recommends MRI screening every two years for patients with silicone implants to detect subclinical leaks, but the review notes that patients and physicians do not always follow this and that MRI can be falsely positive.",
+      "source": "introduction"
+    },
+    {
+      "topic": "Implant longevity",
+      "statement": "No implant is a lifetime device: surgeons commonly estimate a 15 to 20 year lifespan, and there is no uniform recommendation on routine replacement at a set interval.",
+      "source": "complications"
+    },
+    {
+      "topic": "Gel cohesion",
+      "statement": "Current implants use more cohesive, or 'gummy', gel than earlier generations, which may lower rupture rates, but the review states that all implants will eventually rupture or break.",
+      "source": "introduction"
+    },
+    {
+      "topic": "Breast anatomy",
+      "statement": "The breast sits on the anterior chest wall below the clavicle, bounded medially by the sternum, laterally by the latissimus dorsi and inferiorly by the inframammary fold, with the pectoralis major and minor behind it.",
+      "source": "anatomy"
+    },
+    {
+      "topic": "Blood and nerve supply",
+      "statement": "Blood supply comes from the subdermal plexus with contributions from the internal mammary, external mammary and intercostal perforators; sensation is mainly from the third to fifth intercostal nerves.",
+      "source": "anatomy"
+    },
+    {
+      "topic": "Indications",
+      "statement": "Indications include reconstruction after mastectomy, developmental disorders such as hypomastia, including involution after pregnancy, and elective enhancement of self-image.",
+      "source": "indications"
+    },
+    {
+      "topic": "Patient satisfaction",
+      "statement": "The review states that the vast majority of women surveyed after surgery would undergo the operation again, and surveys cited indicate about 70 to 80 percent of patients are satisfied with the outcome.",
+      "source": "indications"
+    },
+    {
+      "topic": "Contraindications",
+      "statement": "Active breast infection, active cancer and pregnancy rule out surgery; autoimmune disease history, current radiotherapy, unstable medical conditions and known silicone sensitivity are also listed.",
+      "source": "contraindications"
+    },
+    {
+      "topic": "Patient selection",
+      "statement": "Psychological instability or unrealistic expectations are given as reasons not to operate, alongside the medical contraindications.",
+      "source": "contraindications"
+    },
+    {
+      "topic": "Saline implants",
+      "statement": "Saline implants are inserted empty and inflated through a port, usually with a 25 to 50 mL fill range set by the manufacturer, and are FDA-approved from age 18 for augmentation.",
+      "source": "technique"
+    },
+    {
+      "topic": "Silicone implants",
+      "statement": "Silicone gel implants are FDA-approved for patients aged 22 and over, though surgeons may use them off-label below 22, and they suit thin patients with little soft-tissue coverage better.",
+      "source": "technique"
+    },
+    {
+      "topic": "Surface texture",
+      "statement": "Textured shells help prevent rotation of shaped implants and may lower capsular contracture when the implant is placed in the subglandular pocket, but not in the submuscular pocket.",
+      "source": "technique"
+    },
+    {
+      "topic": "Implant placement",
+      "statement": "Implants can be placed above the muscle (subglandular) or beneath it (submuscular); no single placement is accepted as uniformly best and the choice is made jointly with the surgeon.",
+      "source": "technique"
+    },
+    {
+      "topic": "Incision approaches",
+      "statement": "Common access incisions are the inframammary crease, the transaxillary route and the peri-areolar route.",
+      "source": "technique"
+    },
+    {
+      "topic": "Anaesthesia and duration",
+      "statement": "General anaesthesia is most common, although sedation or local anaesthesia can be used in selected cases, and the operation is an outpatient procedure taking 45 to 90 minutes.",
+      "source": "technique"
+    },
+    {
+      "topic": "Recovery",
+      "statement": "Recovery is usually rapid, with a return to light work and activity within a week and a return to full activity that may take up to six weeks.",
+      "source": "technique"
+    },
+    {
+      "topic": "Theatre team",
+      "statement": "The operating team normally consists of the surgeon, a scrubbed assistant, an anaesthesiologist and a circulating nurse.",
+      "source": "personnel"
+    },
+    {
+      "topic": "No-touch technique",
+      "statement": "An implant sleeve may be used as part of a no-touch technique that minimises handling of the implant, to reduce implant trauma and bacterial contamination.",
+      "source": "equipment"
+    },
+    {
+      "topic": "Early complications",
+      "statement": "Early postoperative complications listed are infection, scarring, asymmetry, haematoma, seroma, breast pain, poor cosmetic outcome and changes in nipple or breast sensation.",
+      "source": "complications"
+    },
+    {
+      "topic": "Late complications",
+      "statement": "Later complications listed are implant malposition or displacement, implant deflation or leak, and capsular contracture, which is tightening of the tissue capsule around the implant.",
+      "source": "complications"
+    },
+    {
+      "topic": "Capsular contracture",
+      "statement": "Capsular contracture is graded 1 to 4 and may need surgical correction or implant removal; a low-grade infection or biofilm is suspected as a cause, with Staphylococcus epidermidis and Cutibacterium acnes most commonly isolated.",
+      "source": "complications"
+    },
+    {
+      "topic": "Implant-associated lymphoma",
+      "statement": "The review reports a slim possibility that women with breast implants are more likely to be diagnosed with anaplastic large cell lymphoma (ALCL), possibly associated with a certain type of texturing, although the exact relationship has not been determined.",
+      "source": "complications"
+    },
+    {
+      "topic": "Reducing complications",
+      "statement": "Nurse-led preoperative instruction, stopping smoking, pharmacist allergy and medicines checks, and interprofessional follow-up are described as ways to lower complication rates, with earlier recognition improving outcomes.",
+      "source": "team-outcomes"
+    }
+  ],
+  "references": [
+    { "n": 1, "citation": "Bensimon E. Commentary on: Long-Term Outcomes in Breast Augmentation in Trans-Women: A 20-Year Experience. Aesthet Surg J. 2019 Mar 14;39(4):391-392.", "pmid": "30285089" },
+    { "n": 2, "citation": "Montemurro P, Fischer S, Hager S, Hedén P. Secondary Breast Augmentation: Is There a Trend for Bigger Implants? Aesthetic Plast Surg. 2019 Feb;43(1):59-69.", "pmid": "30276457" },
+    { "n": 3, "citation": "Maione L, Caviggioli F, Vinci V, et al. Fat Graft in Composite Breast Augmentation with Round Implants: A New Concept for Breast Reshaping. Aesthetic Plast Surg. 2018 Dec;42(6):1465-1471.", "pmid": "30264274" },
+    { "n": 4, "citation": "Morrison SD, Wilson SC, Mosser SW. Breast and Body Contouring for Transgender and Gender Nonconforming Individuals. Clin Plast Surg. 2018 Jul;45(3):333-342.", "pmid": "29908621" },
+    { "n": 5, "citation": "Hedén P, Montemurro P, Adams WP, et al. Anatomical and Round Breast Implants: How to Select and Indications for Use. Plast Reconstr Surg. 2015 Aug;136(2):263-272.", "pmid": "26218376" },
+    { "n": 6, "citation": "Chiu CH. Autologous fat grafting for breast augmentation in underweight women. Aesthet Surg J. 2014 Sep;34(7):1066-82.", "pmid": "25056909" },
+    { "n": 7, "citation": "Bachour Y, Bargon CA, de Blok CJM, et al. Risk factors for developing capsular contracture in women after breast implant surgery: A systematic review of the literature. J Plast Reconstr Aesthet Surg. 2018 Sep;71(9):e29-e48.", "pmid": "29980456" },
+    { "n": 8, "citation": "Vikšraitis S, Zacharevskij E, Baranauskas G, Rimdeika R. Subacute Arterial Bleeding After Simultaneous Mastopexy and Breast Augmentation with Implants. World J Plast Surg. 2018 May;7(2):235-239.", "pmid": "30083509" },
+    { "n": 9, "citation": "Holst-Albrechtsen S, Birk-Sørensen L, Juel J. [Post-operative infections after cosmetic tourism]. Ugeskr Laeger. 2018 Jun 11;180(24).", "pmid": "29886889" },
+    { "n": 10, "citation": "Virden CP, Dobke MK, Stein P, Parsons C, Frank DH. Subclinical Infection of the Silicone Breast Implant Surface as a Possible Cause of Capsular Contracture. Aesthetic Plast Surg. 2020 Aug;44(4):1141-1147.", "pmid": "32766914" },
+    { "n": 11, "citation": "Diaz JF. Review of 494 Consecutive Breast Augmentation Patients: System to Improve Patient Outcomes and Satisfaction. Plast Reconstr Surg Glob Open. 2017 Oct;5(10):e1526.", "pmid": "29184739" },
+    { "n": 12, "citation": "Fakin RM, Zimmermann S, Kaye K, et al. Long-Term Outcomes in Breast Augmentation in Trans-Women: A 20-Year Experience. Aesthet Surg J. 2019 Mar 14;39(4):381-390.", "pmid": "29901707" }
+  ]
+}

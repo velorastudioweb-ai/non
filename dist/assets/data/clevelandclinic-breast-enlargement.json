@@ -1,0 +1,346 @@
+{
+  "generated": "2026-10-20",
+  "source": "Cleveland Clinic",
+  "sourceUrl": "https://my.clevelandclinic.org/",
+  "about": "Cleveland Clinic Health Library patient information related to breast enlargement: breast augmentation, breast implants (types, placement, longevity), fat transfer breast augmentation, preparation, recovery, risks and complications.",
+  "categories": [
+    {
+      "id": "augmentation",
+      "name": "Breast augmentation",
+      "description": "The Cleveland Clinic overview of breast augmentation: what it is, the two main types (implants and fat transfer), why people choose it, consultation, preparation, the operation itself and aftercare."
+    },
+    {
+      "id": "implants",
+      "name": "Breast implants",
+      "description": "Cleveland Clinic information on breast implants themselves: who gets them, implant types, natural look and feel, sizing and placement, how long they last, advantages, risks and recovery."
+    },
+    {
+      "id": "fat-transfer",
+      "name": "Fat transfer breast augmentation",
+      "description": "Cleveland Clinic information on using your own fat (liposuctioned and reinjected) to enlarge the breasts: candidacy, the procedure, how long results last, benefits, downsides, recovery and mammograms afterwards."
+    }
+  ],
+  "documents": [
+    {
+      "id": "breast-augmentation",
+      "title": "Breast Augmentation: What it is, Types, Surgery & Recovery",
+      "category": "augmentation",
+      "kind": "Treatment overview",
+      "url": "https://my.clevelandclinic.org/health/treatments/11024-breast-augmentation",
+      "updated": "2021-08-24",
+      "summary": "Cleveland Clinic's overview of breast augmentation, a common cosmetic surgery that uses breast implants or fat transfer to increase the size and shape of the breasts. It covers the implant types (saline, structured saline, silicone, form-stable, round, smooth, textured), fat transfer augmentation, why people choose the procedure, how common it is, the consultation and preparation, the steps of surgery (anaesthesia, incision, implant placement, closing), what happens afterwards, benefits, side effects and complications, cancer screening with implants, recovery time, when to call the doctor, insurance, reversibility and breastfeeding.",
+      "keyPoints": [
+        "Breast augmentation is a surgical procedure that increases the size and shape of your breasts using breast implants or fat transfer.",
+        "Two main types: breast implants and fat transfer augmentation; certain implants are only FDA-approved for certain ages.",
+        "Saline implants are filled with sterile salt water; if they break, your body absorbs the saline naturally.",
+        "Silicone implants are filled with silicone gel; if they break the gel can stay in the shell or leak into the breast, and regular checks with your surgeon may be needed.",
+        "Form-stable (\"gummy bear\") implants keep their shape even if the shell breaks, are made of thicker gel and need a longer incision.",
+        "Round implants make breasts look fuller and don't change the look of the breast if they rotate; smooth implants feel softest and move most naturally.",
+        "Textured implants encourage scar tissue to adhere so they move less, but breast implant-associated anaplastic large cell lymphoma (BIA-ALCL) occurs most frequently with textured surfaces.",
+        "In fat transfer augmentation, liposuction takes fat from the belly, flanks, back or thighs and injects it into the breasts; it is usually for a relatively small increase in size.",
+        "People choose augmentation to change size, correct asymmetry, restore size after pregnancy or weight loss, correct unevenness after other breast surgery, or to improve confidence.",
+        "Around 300,000 people in the United States have breast augmentation surgery every year; it is the most popular type of cosmetic surgery.",
+        "At consultation your surgeon reviews medications, allergies, smoking, prior surgeries and breast history; you should have realistic expectations and be in good mental and physical health.",
+        "Preparation may include a blood test, adjusting medications, stopping smoking, avoiding aspirin and anti-inflammatory drugs, and stopping recreational drugs.",
+        "Arrange a driver and someone to stay the first night; take at least three days off work, or at least three weeks for a labour-intensive job.",
+        "Surgery is done under general anaesthesia or IV sedation; incisions can be at the inframammary fold, around the areola (periareolar) or through the armpit (transaxillary).",
+        "Implants are placed either under the breast tissue in front of the muscle or behind the pectoral muscle, depending on implant type and how much size is increased.",
+        "Stitches are usually removed in about one week; no heavy lifting for at least four weeks and no sports for up to six weeks.",
+        "Full recovery takes about six to eight weeks on average; recovery varies by augmentation type and overall health.",
+        "Side effects include soreness, nipple sensitivity, bruising, bleeding and swelling; immediate complications include infection, wound healing issues and hematoma.",
+        "Longer-term complications include capsular contracture (scar tissue), implant sagging, symmastia, seroma (fluid around the implant) and implant rupture or deflation.",
+        "BIA-ALCL is a rare immune-system cancer reported with textured implants; symptoms such as size or shape changes, swelling or lumps may appear two to eight years after surgery.",
+        "Breast implants are not guaranteed to last a lifetime; pregnancy, weight loss and menopause may change the appearance of augmented breasts.",
+        "Implants can make mammograms harder to read; the American College of Radiology and related bodies recommend breast examinations at an ACR-accredited facility, which can take special views.",
+        "Breast augmentation is usually considered elective cosmetic surgery, so insurance generally does not cover it; reconstruction after cancer may be covered.",
+        "Yes, augmentation is reversible: implants can be removed, replaced or repositioned by a plastic surgeon.",
+        "Augmentation can affect nerves and ducts involved in lactation; implants placed below the muscle affect milk production less than those above, and periareolar incisions are more likely to reduce milk production."
+      ]
+    },
+    {
+      "id": "breast-implants",
+      "title": "Breast Implants: Types, Surgery, Recovery & Risks",
+      "category": "implants",
+      "kind": "Treatment overview",
+      "url": "https://my.clevelandclinic.org/health/treatments/21724-breast-implants",
+      "updated": "2021-08-31",
+      "summary": "Cleveland Clinic's guide to breast implants: artificial silicone shells filled with silicone gel or saline, inserted by plastic surgeons for augmentation or reconstruction. It covers candidacy, reasons for getting implants, how common they are, how long implants last, which implants feel and look most natural, age limits for saline and silicone implants, sizing and placement, the four incision types, the procedure, recovery timeline, follow-up schedule, advantages, risks and the questions to ask your provider.",
+      "keyPoints": [
+        "Breast implants are artificial devices (prostheses): silicone shells filled with silicone gel or saline, inserted by plastic surgeons.",
+        "Candidates should be finished developing, in good physical health and have realistic expectations.",
+        "People get implants to restore previous breast size after pregnancy, weight loss or aging, to correct asymmetry, to restore breasts after mastectomy, or to boost confidence.",
+        "About 3.5 million people in the United States have breast implants; roughly 60% contain silicone gel; about 35 million people worldwide have implants.",
+        "Breast augmentation is the procedure that makes breasts larger; breast implants are the devices used in many augmentations.",
+        "Implants typically last about 10 years; the older they get, the more likely they are to rupture; signs include changes in size, shape, firmness or swelling, though rupture can also have no signs.",
+        "Silicone implants tend to feel more natural than saline; smooth shells feel more natural and move more freely than thicker textured shells.",
+        "The FDA approved highly cohesive silicone gel (\"gummy bear\") implants in 2012; teardrop-shaped implants usually come with a textured shell so they don't rotate.",
+        "You must be at least 18 years old for saline-filled implants and the FDA recommends at least 22 years old for silicone-filled implants.",
+        "Providers assess mental health and social factors, including body dysmorphic disorder concerns and whether a partner is pressuring the decision.",
+        "Implant size is matched to body structure: larger implants suit broader shoulders or wider hips, while oversized implants on a small frame can cause back, neck and shoulder pain.",
+        "Preoperative sizing lets you try sample implants under clothing in front of a mirror before choosing size and shell type.",
+        "Two placement options: submuscular (beneath chest muscles) and subglandular (between chest muscles and breast tissue).",
+        "Four incision types: periareolar (around the areola), inframammary (breast crease), transaxillary (armpit) and transumbilical (belly button).",
+        "After surgery breasts are wrapped in a supportive bra or compression band; you need a driver and someone to care for you for the first 24 hours.",
+        "Full recovery is on average six to eight weeks; the first several days are the most painful, with swelling, bruising and slight incision bleeding.",
+        "Pain usually decreases after five to seven days; light daily activities and desk work can resume after one to two weeks, but avoid running, heavy lifting and arms above head.",
+        "Return to work is typically between two and six weeks, depending on how physically demanding the job is.",
+        "Advantages: implants are durable (about 10 years), implant surgery has a relatively low risk of complications, and implants can boost self-esteem.",
+        "Risks include short- and long-term complications, the need for additional surgery (removal, replacement, scar-tissue removal or repositioning), BIA-ALCL and breastfeeding complications.",
+        "Implants increase size but do not lift; a breast lift can be combined if sagging is a concern.",
+        "Follow-up: bandages and possibly stitches removed after one to two weeks, then reviews at four to six weeks, three months and six months.",
+        "Ask which implant type and size suit your body, how long implants last, what happens on rupture, what autologous breast augmentation is, and the full list of risks."
+      ]
+    },
+    {
+      "id": "fat-transfer",
+      "title": "Fat Transfer Breast Augmentation: Procedure, Results & Risks",
+      "category": "fat-transfer",
+      "kind": "Treatment overview",
+      "url": "https://my.clevelandclinic.org/health/treatments/24033-fat-transfer-breast-augmentation",
+      "updated": "2022-08-18",
+      "summary": "Cleveland Clinic's guide to fat transfer breast augmentation: liposuction removes fat from areas such as the belly, hips, back, legs or arms, and the purified fat is injected into the breasts to increase cup size by one to two sizes. It explains how the procedure differs from implants and reconstruction, who is and is not a candidate, how the outpatient surgery is performed, that results are lifelong (settling over up to six months), the risks, benefits and cons, recovery, when to call the doctor, and the effect on breast cancer risk and mammograms.",
+      "keyPoints": [
+        "A fat transfer breast augmentation uses fat from your own body to enlarge your breasts: fat is suctioned from several areas and injected into the breasts.",
+        "Breast augmentation is cosmetic surgery to increase breast size and enhance shape; the two types are breast implants and fat transfer.",
+        "Breast augmentation is for healthy people improving appearance and is not medically necessary; breast reconstruction after cancer always uses implants.",
+        "Good candidates want slightly larger breasts without implants; people with little body fat, obesity, drastic weight fluctuations or who smoke may not be suitable.",
+        "It is an outpatient procedure under general anaesthesia: fat is harvested by liposuction, purified in a centrifuge, then injected into different tissue layers of the breasts.",
+        "Results are described as lifelong: fat cells settle over up to six months and remain for life, though extra fat is injected because some cells die after transfer.",
+        "Risks include bleeding and bruising, fat cell death (necrosis) or fat migration, infection, and benign breast cysts or calcifications.",
+        "Benefits over implants: a natural look and feel, the donor areas (belly, hips, back, legs or arms) become slimmer, and no implant-related risks such as rupture or capsular contracture.",
+        "Cons: only one or two cup sizes of increase, breasts may still sag (a breast lift would be needed), and multiple procedures may be required.",
+        "Recovery: chest wrapped with an elastic bandage and surgical bra, about a week off work, pain bruising and swelling for up to three weeks, swelling may last up to six months.",
+        "Sleep on your back, take antibiotics and pain relievers as directed, and wear loose clothing to ease recovery.",
+        "Call your provider for excessive bleeding, swelling or bruising, nausea and vomiting, severe pain, or signs of infection such as yellow discharge or fever.",
+        "Fat transfer does not increase breast cancer risk and mammograms still work well afterwards, though it can cause microcalcifications that may need further tests such as ultrasound, MRI or needle biopsy."
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "What breast augmentation is",
+      "statement": "Breast augmentation is a common surgical procedure that increases the size and shape of your breasts using breast implants or fat transfer.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Two main types",
+      "statement": "There are two main types of breast augmentation: breast implants and fat transfer augmentation, each with several options based on how you want your breasts to look and feel.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Saline implants",
+      "statement": "Saline breast implants are filled with sterile salt water; if an implant breaks inside your breast, your body absorbs the saline and naturally gets rid of it.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Structured saline implants",
+      "statement": "Structured saline implants are also filled with sterile saline but have an inner structure that helps the implant feel more natural.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Silicone implants",
+      "statement": "Silicone breast implants are made of silicone gel; if the implant breaks the gel can stay within the shell or leak into the breast, and regular checks with your plastic surgeon may be required.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Form-stable implants",
+      "statement": "Form-stable (gummy bear) implants keep their shape even if the shell breaks; they use a thicker silicone gel, are firmer than traditional implants and need a longer skin incision.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Round vs smooth vs textured",
+      "statement": "Round implants make breasts look fuller and don't change the look of the breast if they rotate; smooth implants feel softest and move most naturally; textured implants adhere to scar tissue so they move less.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Textured implants and BIA-ALCL",
+      "statement": "Breast implant-associated anaplastic large cell lymphoma (BIA-ALCL), though rare, occurs most frequently in people with breast implants that have textured surfaces.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Fat transfer augmentation",
+      "statement": "In fat transfer augmentation, liposuction takes fat from the belly, flanks, back or thighs and injects it into the breasts; it is usually for people wanting a relatively small increase in breast size.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Reasons for augmentation",
+      "statement": "People choose breast augmentation to change breast appearance, correct asymmetry, restore size after pregnancy or weight loss, correct unevenness after other breast surgery, or improve confidence and self-esteem.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "How common it is",
+      "statement": "Breast augmentation is the most popular type of cosmetic surgery; around 300,000 people in the United States have the surgery every year.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Consultation questions",
+      "statement": "At consultation you should ask whether the surgeon is board-certified (American Board of Plastic Surgery), how often they perform breast augmentations, whether you can see before-and-after pictures, whether implants or fat transfer suit you, and what happens if you are not satisfied with the results.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Preparation",
+      "statement": "Preparation may include a blood test, adjusting medications, stopping smoking, avoiding aspirin and certain anti-inflammatory drugs (which increase bleeding), and stopping recreational drugs.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Time off work",
+      "statement": "You need someone to drive you home and stay with you the first night; take at least three days off work, or at least three weeks if you have a labour-intensive job.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Anaesthesia and incisions",
+      "statement": "Surgery is performed under general anaesthesia or IV sedation; incisions can be made at the inframammary fold (crease under the breast), around the areola (periareolar) or through the armpit (transaxillary).",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Implant placement",
+      "statement": "Implants are placed either under the breast tissue in front of the muscle or behind the pectoral muscle; placement depends on implant type and how much size you are increasing.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "After surgery",
+      "statement": "After surgery you are observed while waking up (usually about an hour), given pain medication and follow-up instructions, and sent home with a gauze bandage and possibly a surgical bra; drainage tubes are removed as instructed.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Recovery timeline",
+      "statement": "Stitches are usually removed in about one week; no heavy lifting for at least four weeks; sports may take up to six weeks; full recovery averages six to eight weeks.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Side effects",
+      "statement": "Side effects can include soreness and increased nipple sensitivity, bruising, bleeding and swelling.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Immediate complications",
+      "statement": "Immediate complications, though rare, can include infection, wound healing issues and hematoma (blood collection in the surgical area).",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Long-term complications",
+      "statement": "Long-term complications can include capsular contracture (scar tissue formation), implant sagging, symmastia (implants drifting toward the middle of the chest), seroma (fluid around the implant) and implant rupture or deflation.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Implants are not lifelong",
+      "statement": "Breast implants are not guaranteed to last your entire life; you may need another procedure to replace one or both implants, and pregnancy, weight loss and menopause may affect the result.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Cancer screening",
+      "statement": "Implants can make self-examination and mammograms more difficult; the American College of Radiology, American Cancer Society, American Society of Breast Imaging and American Society of Plastic and Reconstructive Surgeons recommend breast examinations at an ACR-accredited facility capable of special views.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Insurance",
+      "statement": "Breast augmentation is usually considered elective cosmetic surgery, so insurance generally does not cover the procedure or follow-up visits; reconstruction after breast cancer may be covered.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Reversibility",
+      "statement": "Breast augmentation is reversible: a plastic surgeon can remove, replace or reposition implants through breast implant removal surgery.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "Breastfeeding",
+      "statement": "Augmentation can affect nerves and ducts involved in lactation; implants placed below the muscle affect milk production less than those above it, and periareolar incisions are more likely to reduce milk production.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "When to call the doctor",
+      "statement": "Contact your healthcare provider immediately if you develop fever, abnormal discharge such as pus from the incision, rupture of your stitches, or increasing enlargement or firmness of a breast with pain and pressure.",
+      "source": "breast-augmentation"
+    },
+    {
+      "topic": "What implants are",
+      "statement": "Breast implants are artificial silicone shells filled with silicone gel or saline, inserted by plastic surgeons to change the size or shape of the breasts.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Implant prevalence",
+      "statement": "About 3.5 million people in the United States have breast implants (roughly 60% silicone gel), and around 35 million people worldwide.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Implant longevity",
+      "statement": "New breast implants typically last about 10 years; the older they are, the more likely they are to rupture, sometimes without any signs such as changes in size, shape, firmness or swelling.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Age limits",
+      "statement": "You have to be at least 18 years old for saline-filled breast implants, and the FDA recommends being at least 22 years old for silicone-filled implants.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Sizing",
+      "statement": "Larger implants often suit broader shoulders or wider hips, while larger implants on a smaller frame can cause back, neck and shoulder pain; preoperative sizing lets you try samples under clothing before deciding.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Natural look and feel",
+      "statement": "Silicone implants tend to feel more natural than saline; submuscular placement means you only feel natural breast tissue on top of the implant, and smooth shells feel and move more naturally than textured shells.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Incision types",
+      "statement": "Implant incisions can be periareolar (around the areola), inframammary (breast crease), transaxillary (armpit) or transumbilical (belly button).",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Risks of implants",
+      "statement": "Risks of breast implants include short- and long-term complications, additional surgery for removal, replacement, scar-tissue removal or repositioning, BIA-ALCL, and breastfeeding complications.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Implants do not lift",
+      "statement": "Breast implants increase size but do not lift the breasts; if sagging is a concern, discuss combining a breast lift with implants.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Follow-up schedule",
+      "statement": "After implant surgery, bandages and possibly stitches are removed at one to two weeks, with further reviews at four to six weeks, three months and six months.",
+      "source": "breast-implants"
+    },
+    {
+      "topic": "Fat transfer basics",
+      "statement": "Fat transfer breast augmentation suctions fat from areas such as the belly, hips, back, legs or arms and injects the purified cells into the breasts, so donor areas become slimmer while the breasts get bigger.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer candidacy",
+      "statement": "People with little body fat may not be good candidates because more fat must be removed than used; people with obesity, drastic weight fluctuations or who smoke may also be unsuitable.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer procedure",
+      "statement": "The procedure is an outpatient surgery under general anaesthesia: fat is harvested by liposuction, purified in a centrifuge, then injected into different tissue layers of the breasts.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer results",
+      "statement": "Results from a fat transfer breast augmentation are described as lifelong; final results can take up to six months to appear as fat cells settle, and extra fat is injected because some cells die after transfer.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer limits",
+      "statement": "Fat transfer increases breast size by only one or two cup sizes, does not fix sagging (a breast lift is needed for that), and may need multiple procedures to achieve the desired result.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer risks",
+      "statement": "Risks of fat transfer include bleeding and bruising, fat cell death (necrosis) or fat migrating to other parts of the body, infection, and benign breast cysts or calcifications.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Fat transfer recovery",
+      "statement": "After fat transfer the chest is wrapped with an elastic bandage and surgical bra; plan about a week off work, with pain, bruising and swelling for up to three weeks and swelling that may persist up to six months.",
+      "source": "fat-transfer"
+    },
+    {
+      "topic": "Cancer risk and mammograms",
+      "statement": "A fat transfer breast augmentation does not increase breast cancer risk and mammograms still work well afterwards, though it can cause microcalcifications that sometimes need ultrasound, MRI or needle biopsy to rule out cancer.",
+      "source": "fat-transfer"
+    }
+  ]
+}

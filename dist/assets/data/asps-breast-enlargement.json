@@ -1,0 +1,277 @@
+{
+  "generated": "2026-10-20",
+  "source": "American Society of Plastic Surgeons (ASPS)",
+  "sourceUrl": "https://www.plasticsurgery.org/",
+  "about": "American Society of Plastic Surgeons patient information related to breast enlargement: breast augmentation (augmentation mammaplasty), candidacy, consultation, questions to ask, cost, breast implant types, risks and safety, preparation, procedure steps, recovery, results, choosing a plastic surgeon and fat transfer breast augmentation.",
+  "categories": [
+    {
+      "id": "augmentation",
+      "name": "Breast augmentation",
+      "description": "The ASPS overview of breast augmentation: what the operation is, what it can and cannot do, who makes a suitable candidate, what happens at consultation and the questions patients are advised to ask."
+    },
+    {
+      "id": "implants",
+      "name": "Breast implants",
+      "description": "ASPS information on the implants themselves: fill types (saline, silicone, structured), shapes and surfaces (form-stable, round, smooth, textured), FDA age approvals and surface-related safety concerns."
+    },
+    {
+      "id": "safety",
+      "name": "Risks and safety",
+      "description": "ASPS information on the risks of augmentation and implant-specific safety concerns, including capsular contracture, rupture, BIA-ALCL, BIA-SCC, breast implant illness and FDA screening intervals."
+    },
+    {
+      "id": "surgery-and-recovery",
+      "name": "Preparation, procedure and recovery",
+      "description": "Practical steps around the operation itself: pre-operative preparation, the five surgical steps (anaesthesia, incision, placement, closure, result), immediate aftercare and the recovery timeline."
+    },
+    {
+      "id": "fat-transfer",
+      "name": "Fat transfer breast augmentation",
+      "description": "ASPS information on enlarging the breasts with your own fat: liposuction harvesting, reinjection, who it suits and the research it references."
+    },
+    {
+      "id": "cost-and-surgeon",
+      "name": "Cost and choosing a surgeon",
+      "description": "What ASPS publishes on augmentation fees, what is and is not included, insurance coverage, and the credentials an ASPS member plastic surgeon must hold."
+    }
+  ],
+  "documents": [
+    {
+      "id": "breast-augmentation",
+      "title": "Breast Augmentation (Augmentation Mammaplasty)",
+      "category": "augmentation",
+      "kind": "Procedure overview",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation",
+      "summary": "The ASPS overview of breast augmentation: a procedure that uses breast implants or fat transfer to increase breast size. It explains that augmentation can restore volume lost after weight reduction or pregnancy, create a rounder shape or correct natural asymmetry, lists what the surgery can and cannot achieve, and points patients to implant safety, fat transfer and breast lift information.",
+      "keyPoints": [
+        "Breast augmentation (also called augmentation mammaplasty) uses breast implants or fat transfer to increase the size of the breasts.",
+        "It can restore volume lost after weight reduction or pregnancy, achieve a rounder shape, or improve natural size asymmetry.",
+        "When fat from another part of the body is used, the procedure is called fat transfer breast augmentation.",
+        "Surgery can increase fullness and projection, improve the balance of breast and hip contours, and enhance self-image and confidence.",
+        "Augmentation does not correct severely drooping breasts; a breast lift may be required alongside it for sagging breasts to look fuller and lifted.",
+        "A lift can often be done at the same time as augmentation, or may require a separate operation.",
+        "Implants are also used for breast reconstruction after mastectomy or injury."
+      ]
+    },
+    {
+      "id": "candidates",
+      "title": "Breast Augmentation Candidates",
+      "category": "augmentation",
+      "kind": "Patient guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/candidates",
+      "summary": "ASPS guidance on who may be a candidate for breast augmentation. The page stresses that the procedure is deeply personal and should be chosen for oneself, lists the medical and developmental factors surgeons look for, and describes the common reasons people seek augmentation.",
+      "keyPoints": [
+        "The decision is deeply personal and should be made for yourself rather than to satisfy someone else.",
+        "Candidates should be physically healthy and not pregnant or breastfeeding.",
+        "Breasts should be fully developed and expectations should be realistic.",
+        "Common motivations include dissatisfaction with small size, loss of shape or volume after pregnancy or weight loss, and changes with aging.",
+        "Other reasons include an empty upper breast, asymmetry, or one or both breasts failing to develop normally.",
+        "Reviewing before-and-after photos and recovery information beforehand helps set reasonable expectations."
+      ]
+    },
+    {
+      "id": "consultation",
+      "title": "Breast Augmentation Consultation",
+      "category": "augmentation",
+      "kind": "Patient guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/consultation",
+      "summary": "What to expect at a breast augmentation consultation: the topics patients should be ready to discuss, the medical history the surgeon collects, and the physical assessment and measurements used to make a recommendation.",
+      "keyPoints": [
+        "Be ready to discuss your motivation, expectations and the outcome you want.",
+        "Disclose medical conditions, allergies, previous treatments, medications, supplements and any substance use.",
+        "Share family history of breast cancer and the results of previous mammograms or biopsies.",
+        "The surgeon evaluates general health and risk factors, then takes detailed breast measurements and photographs.",
+        "The examination covers size, shape, skin quality and nipple-areola placement before treatment is recommended.",
+        "The surgeon discusses the expected outcome, risks and complications, and offers a written question checklist."
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Questions to Ask Your Plastic Surgeon",
+      "category": "augmentation",
+      "kind": "Question checklist",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/questions",
+      "summary": "The ASPS checklist of questions patients should take to a breast augmentation consultation, covering surgeon credentials, facility accreditation, the surgical plan, recovery support, risk handling and long-term considerations.",
+      "keyPoints": [
+        "Verify board certification by the American Board of Plastic Surgery and plastic-surgery-specific training.",
+        "Ask about years of surgical training and where the surgeon has hospital privileges.",
+        "Confirm the surgical facility is accredited, state-licensed or Medicare-certified.",
+        "Discuss candidacy, the recommended implant shape, size and texture, and incision and placement choices.",
+        "Ask how long recovery takes, what help you will need, the risks, and how complications would be handled.",
+        "Ask about possible future operations, effects on breastfeeding, and how results change over time and after pregnancy."
+      ]
+    },
+    {
+      "id": "cost",
+      "title": "Breast Augmentation Cost",
+      "category": "cost-and-surgeon",
+      "kind": "Cost guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/cost",
+      "summary": "ASPS guidance on the cost of breast augmentation, including its published average surgeon fees for implant and fat-grafting augmentation, the expenses those figures exclude, and the insurance position for cosmetic surgery.",
+      "keyPoints": [
+        "Published average costs reflect surgeon fees only, not the total price of the procedure.",
+        "Anesthesia, operating-room or facility fees, medical tests, garments, prescriptions and related expenses are excluded.",
+        "The surgeon fee varies with experience, procedure type and geographic location.",
+        "Many surgeons offer patient financing plans.",
+        "Most insurance plans do not cover cosmetic augmentation, related complications or revision surgery.",
+        "Some carriers exclude breast-disease coverage for implant patients."
+      ]
+    },
+    {
+      "id": "implants",
+      "title": "Types of Breast Implants",
+      "category": "implants",
+      "kind": "Device overview",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants",
+      "summary": "ASPS guidance on the main implant options: fill type (saline, silicone gel, structured saline) and shape or surface (form-stable \"gummy bear\", round, smooth, textured), with the FDA age approvals and the main trade-offs of each choice.",
+      "keyPoints": [
+        "Saline implants are filled with sterile salt water; if they leak the implant collapses and the body safely absorbs the fluid.",
+        "Silicone gel implants are designed to mimic the feel of natural tissue; a leak may stay contained and the implant does not collapse.",
+        "Structured saline implants contain an inner matrix intended to give a more natural feel.",
+        "Form-stable \"gummy bear\" implants keep their shape even if the shell breaks; they use a firmer gel, need a longer incision and shaped versions can rotate.",
+        "Round implants look fuller and do not rotate out of place; smooth implants feel softest but may ripple, while textured implants grip tissue.",
+        "Textured surfaces are the surface most associated with breast implant-associated anaplastic large cell lymphoma (BIA-ALCL)."
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Breast Augmentation Risks and Safety",
+      "category": "safety",
+      "kind": "Safety guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety",
+      "summary": "The full list of risks ASPS publishes for breast augmentation — from anesthesia complications and capsular contracture to implant-associated cancers and breast implant illness — together with the reminder that implants are not lifetime devices and that FDA-recommended screening applies to silicone implants.",
+      "keyPoints": [
+        "Common risks include anesthesia complications, bleeding or hematoma, infection, capsular contracture, implant rupture, changes in sensation, poor scarring and possible revision surgery.",
+        "Rare cancers of the implant capsule (BIA-ALCL and BIA-SCC) and systemic symptoms described as breast implant illness are acknowledged.",
+        "Most people with implants never experience serious complications, but FDA-approved devices still carry documented risks.",
+        "Implants are not guaranteed for life; future replacement surgery may be needed.",
+        "Ongoing breast-health exams and implant-condition checks are needed, and pregnancy, weight loss and menopause change appearance over time.",
+        "Routine screening matters because some ruptures produce no symptoms."
+      ]
+    },
+    {
+      "id": "preparation",
+      "title": "Breast Augmentation Preparation",
+      "category": "surgery-and-recovery",
+      "kind": "Pre-operative guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/preparation",
+      "summary": "The medical and lifestyle steps ASPS advises before breast augmentation: tests and medication changes, stopping substances that increase bleeding, choosing an accredited surgical facility and arranging post-operative support.",
+      "keyPoints": [
+        "You may need blood tests and adjustments to your medications, including stopping certain drugs.",
+        "Stop smoking and avoid aspirin and anti-inflammatory drugs that can increase bleeding.",
+        "Recreational drugs such as cocaine must be stopped before surgery.",
+        "Breast augmentation should be performed in an accredited outpatient or ambulatory surgical center or a hospital.",
+        "If going home the same day, arrange a driver and someone to stay with you for at least the first night."
+      ]
+    },
+    {
+      "id": "procedure",
+      "title": "Breast Augmentation Procedure Steps",
+      "category": "surgery-and-recovery",
+      "kind": "Procedure steps",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/procedure",
+      "summary": "The five steps of breast augmentation as set out by ASPS — anaesthesia, incision, implant placement, closing the incisions and the immediate result — with the incision and placement options and a caution about the transumbilical approach.",
+      "keyPoints": [
+        "Step 1: anesthesia with IV sedation or general anesthesia, selected for the patient.",
+        "Step 2: incisions placed in discreet locations — around the areola (peri-areolar), in the breast fold (inframammary) or in the armpit (axillary).",
+        "Step 3: the implant is placed either under the pectoral muscle (submuscular) or behind the breast tissue over the muscle (submammary).",
+        "Step 4: incisions are closed with layered sutures plus skin sutures, adhesive or tape; scar quality depends on genetics, nicotine use and infection.",
+        "Step 5: results are visible immediately after surgery.",
+        "The belly-button (transumbilical) incision approach is associated with a higher complication rate."
+      ]
+    },
+    {
+      "id": "recovery",
+      "title": "Breast Augmentation Recovery",
+      "category": "surgery-and-recovery",
+      "kind": "Recovery guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/recovery",
+      "summary": "What to expect straight after breast augmentation: dressings and support garments, monitoring and discharge timing, the instructions and medications you go home with, and the pain and activity timeline during healing.",
+      "keyPoints": [
+        "Breasts are wrapped in gauze with an elastic bandage or support bra to limit swelling.",
+        "Patients are monitored in recovery and typically discharged about an hour after surgery once stable.",
+        "You receive written post-operative instructions, a follow-up appointment and possibly pain medication and an antibiotic.",
+        "The support garment or bandeau should be worn around the clock as directed; incision-care instructions vary by surgeon.",
+        "Take it easy for the first several days because of bleeding risk around the implant pockets, and resume exercise only when cleared.",
+        "Acute pain usually subsides after one to five days, while soreness and swelling may persist for a few weeks."
+      ]
+    },
+    {
+      "id": "results",
+      "title": "Breast Augmentation Results",
+      "category": "surgery-and-recovery",
+      "kind": "Results guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/results",
+      "summary": "How breast augmentation results settle over time: shape finalising over the first weeks as swelling resolves, incision marks fading slowly, the follow-up cadence, and the fact that implants are not lifetime devices and results change with aging.",
+      "keyPoints": [
+        "Breasts are larger right away, but the final shape takes a few weeks as swelling subsides and the skin stretches.",
+        "Some patients, such as those with asymmetry or very small starting breasts, may need a bandeau to help shape the result.",
+        "Incision lines can take months — even a couple of years — to fade.",
+        "Optimal results depend on following post-operative instructions and attending follow-up visits.",
+        "Implants are not lifetime devices; annual exams evaluate breast health and implant integrity.",
+        "Aging, weight fluctuation, hormones and gravity change the result; some patients later choose a lift or implant exchange."
+      ]
+    },
+    {
+      "id": "surgeon",
+      "title": "Choosing a Plastic Surgeon",
+      "category": "cost-and-surgeon",
+      "kind": "Credential guidance",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/surgeon",
+      "summary": "The credentials ASPS says patients should look for: an ASPS member plastic surgeon board-certified by the American Board of Plastic Surgery (or the Royal College of Physicians and Surgeons of Canada), with the required training, exams, continuing education and accredited facility standards.",
+      "keyPoints": [
+        "Choose an ASPS member plastic surgeon board-certified by the American Board of Plastic Surgery or the Royal College of Physicians and Surgeons of Canada.",
+        "Certification requires at least six years of surgical training after medical school, including a minimum of three years of plastic surgery residency.",
+        "Surgeons must pass comprehensive oral and written exams and graduate from an accredited medical school.",
+        "Continuing medical education including patient safety must be completed every year.",
+        "Surgery must be performed in accredited, state-licensed or Medicare-certified facilities.",
+        "The ABPS is recognized by the ABMS, and no ABMS-recognized certifying board has \"cosmetic surgery\" in its name."
+      ]
+    },
+    {
+      "id": "fat-transfer",
+      "title": "Fat Transfer Breast Augmentation",
+      "category": "fat-transfer",
+      "kind": "Procedure overview",
+      "url": "https://www.plasticsurgery.org/cosmetic-procedures/fat-transfer-breast-augmentation",
+      "summary": "The ASPS page on fat transfer breast augmentation: liposuction is used to harvest fat from elsewhere in the body and reinject it into the breasts, offered as an option for people wanting a relatively small, natural-looking increase in size.",
+      "keyPoints": [
+        "Fat is taken by liposuction from other parts of the body and injected into the breasts to enhance them.",
+        "It is an option for people looking for a relatively small increase in breast size.",
+        "It is described as a choice for those who would prefer natural results.",
+        "ASPS cites research on pre-expansion for mega-volume transfer, fat transfer as an alternative to implants, and techniques that substantially increase breast size using the patient's own fat.",
+        "When fat transfer is used, the procedure is referred to as fat transfer breast augmentation rather than augmentation mammaplasty with implants."
+      ]
+    }
+  ],
+  "facts": [
+    { "topic": "Average cost with implants", "statement": "ASPS reports an average surgeon fee of $4,875 for breast augmentation with implants.", "source": "cost" },
+    { "topic": "Average cost with fat grafting", "statement": "ASPS reports an average surgeon fee of $5,719 for augmentation by fat grafting.", "source": "cost" },
+    { "topic": "What the average covers", "statement": "Quoted averages are surgeon fees only; anesthesia, facility fees, tests, garments and prescriptions are excluded.", "source": "cost" },
+    { "topic": "Insurance cover", "statement": "Most insurance plans do not cover cosmetic augmentation, its complications or revision surgery.", "source": "cost" },
+    { "topic": "Saline age approval", "statement": "The FDA approves saline implants for augmentation in women aged 18 or older.", "source": "implants" },
+    { "topic": "Silicone age approval", "statement": "The FDA approves silicone implants for augmentation in women aged 22 or older.", "source": "implants" },
+    { "topic": "Textured surface and BIA-ALCL", "statement": "Breast implant-associated anaplastic large cell lymphoma occurs most frequently with textured-surface implants.", "source": "safety" },
+    { "topic": "First silicone screening", "statement": "The FDA recommends MRI or ultrasound screening 5-6 years after silicone implant placement.", "source": "safety" },
+    { "topic": "Ongoing silicone screening", "statement": "After the first screen, the FDA recommends screening every 2-3 years.", "source": "safety" },
+    { "topic": "Silent rupture", "statement": "Some women with a ruptured implant have no symptoms, which is why routine screening is advised.", "source": "safety" },
+    { "topic": "Implant longevity", "statement": "Implants are not guaranteed for life and future replacement surgery may be needed.", "source": "safety" },
+    { "topic": "Facility standard", "statement": "Augmentation should be performed in an accredited outpatient or ambulatory surgical center or a hospital.", "source": "preparation" },
+    { "topic": "Substances and bleeding", "statement": "Smoking, aspirin, anti-inflammatory drugs and recreational drugs such as cocaine should be stopped before surgery because they increase bleeding.", "source": "preparation" },
+    { "topic": "Anesthesia", "statement": "The procedure is performed under IV sedation or general anesthesia.", "source": "procedure" },
+    { "topic": "Incision options", "statement": "Incisions may be peri-areolar, in the inframammary fold or in the armpit (axillary).", "source": "procedure" },
+    { "topic": "Placement options", "statement": "Implants are placed either under the pectoral muscle or behind the breast tissue over the muscle.", "source": "procedure" },
+    { "topic": "Transumbilical approach", "statement": "The belly-button incision approach is associated with a higher complication rate.", "source": "procedure" },
+    { "topic": "Discharge timing", "statement": "Patients typically go home about an hour after surgery once they are stable.", "source": "recovery" },
+    { "topic": "Acute pain", "statement": "Acute pain usually subsides after 1-5 days.", "source": "recovery" },
+    { "topic": "Soreness and swelling", "statement": "Soreness and swelling may persist for a few weeks after surgery.", "source": "recovery" },
+    { "topic": "Final result timeline", "statement": "Final results may take a few weeks to appear as swelling subsides and the skin stretches.", "source": "results" },
+    { "topic": "Scar maturation", "statement": "Incision lines can take several months, up to a couple of years, to fade.", "source": "results" },
+    { "topic": "Follow-up", "statement": "Annual examinations are suggested to assess breast health and implant integrity.", "source": "results" },
+    { "topic": "Surgeon training", "statement": "ASPS member surgeons complete at least six years of surgical training after medical school, including at least three years of plastic surgery residency.", "source": "surgeon" },
+    { "topic": "Board certification", "statement": "Patients are advised to verify certification by the American Board of Plastic Surgery, which is recognized by the ABMS.", "source": "surgeon" },
+    { "topic": "Facility credentials", "statement": "ASPS member surgeons operate in accredited, state-licensed or Medicare-certified surgical facilities.", "source": "surgeon" },
+    { "topic": "Fat transfer method", "statement": "Fat transfer augmentation uses liposuction to take fat from elsewhere in the body and inject it into the breasts.", "source": "fat-transfer" },
+    { "topic": "Fat transfer suitability", "statement": "Fat transfer is presented as an option for a relatively small increase in size for those wanting natural results.", "source": "fat-transfer" }
+  ]
+}

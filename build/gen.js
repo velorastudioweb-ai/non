@@ -9,6 +9,16 @@ const { consultation, legal } = require('./extra-pages');
 const { researchPage } = require('./research');
 const { fdaPage } = require('./fda');
 const { nhsPage } = require('./nhs');
+const { healthdirectPage } = require('./healthdirect');
+const { clevelandClinicPage } = require('./clevelandclinic');
+const { aspsPage } = require('./asps');
+const { baprasPage } = require('./bapras');
+const { statPearlsPage } = require('./statpearls');
+const { wikipediaPage } = require('./wikipedia');
+const { wikipediaAugmentationPage } = require('./wikipedia-augmentation');
+const { medlinePlusPage } = require('./medlineplus');
+const { baapsPage } = require('./baaps');
+const { cochranePage } = require('./cochrane');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -112,7 +122,7 @@ function build() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   ensureDir(DIST);
 
-  const all = [home].concat(pages, [consultation], legal, [blogIndex], [researchPage], [fdaPage], [nhsPage], articles.map(articleToPage));
+  const all = [home].concat(pages, [consultation], legal, [blogIndex], [researchPage], [fdaPage], [nhsPage], [clevelandClinicPage], [healthdirectPage], [medlinePlusPage], [baapsPage], [wikipediaPage], [wikipediaAugmentationPage], [statPearlsPage], [baprasPage], [aspsPage], [cochranePage], articles.map(articleToPage));
 
   const written = [];
   all.forEach((page) => {

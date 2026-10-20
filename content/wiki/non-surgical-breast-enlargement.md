@@ -35,7 +35,7 @@ references:
   - Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (India) and draft Amendment Bill, 2020.
   - MedicHorizon. Non Surgical Breast Enhancement in India: A Complete Guide for International Patients. https://medichorizon.com/treatment/non-surgical-breast-enhancement-india/
   - American Society of Plastic Surgeons (2026). Breast Augmentation and Fat Transfer Breast Augmentation; 2025 Plastic Surgery Statistics. https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation
-  - NHS. Breast enlargement (cosmetic). https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/
+  - NHS. Breast enlargement (implants). https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/cosmetic-surgery/breast-enlargement/
   - NHS. https://www.nhs.uk/
 ---
 

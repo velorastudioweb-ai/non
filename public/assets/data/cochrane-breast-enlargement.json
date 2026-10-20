@@ -1,0 +1,194 @@
+{
+  "generated": "20 October 2026",
+  "source": "Cochrane Library (Cochrane Database of Systematic Reviews)",
+  "sourceUrl": "https://www.cochranelibrary.com/",
+  "searchUrl": "https://www.cochranelibrary.com/search?searchBy=0&searchText=breast+augmentation",
+  "total": 7,
+  "reviews": 3,
+  "protocols": 4,
+  "categories": [
+    {
+      "id": "augmentation",
+      "name": "Augmentation and implant technique",
+      "description": "Cochrane records that address breast enlargement directly — wound drains after augmentation surgery and the implant insertion techniques used to prevent capsular contracture."
+    },
+    {
+      "id": "implant-types",
+      "name": "Implant types and materials",
+      "description": "Cochrane reviews comparing implant surfaces, fillers and shapes, and what the randomised evidence does and does not establish about choosing between them."
+    },
+    {
+      "id": "reconstruction",
+      "name": "Implant-based reconstruction",
+      "description": "Reviews and registered protocols on reconstruction after mastectomy: implants versus the patient's own tissue, and the meshes and dermal matrices used to support implants."
+    },
+    {
+      "id": "fat-grafting",
+      "name": "Fat transfer",
+      "description": "The Cochrane record on fat grafting — withdrawn before any review was completed — and the evidence gap it leaves."
+    }
+  ],
+  "documents": [
+    {
+      "id": "CD007258.pub3",
+      "title": "Wound drainage after plastic and reconstructive surgery of the breast",
+      "category": "augmentation",
+      "kind": "Cochrane Review",
+      "status": "Completed review",
+      "updated": "21 October 2015",
+      "doi": "10.1002/14651858.CD007258.pub3",
+      "pmid": "26487173",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007258.pub3/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD007258.pub3",
+      "summary": "Whether surgical wound drains should be placed after breast augmentation, reduction or reconstruction. Three randomised trials (306 women, 505 breasts) were found out of 190 screened studies — all of them in breast reduction — comparing drains with no drains after surgery.",
+      "keyPoints": [
+        "Across the three trials, drains produced no statistically significant improvement in infection, other wound complications, pain, bruising, seroma, haematoma or reoperation.",
+        "Women who were not drained left hospital a mean 0.77 days sooner (95% CI 0.40 to 1.14 days sooner; low-certainty evidence) — the only significant result.",
+        "No trials of drains after breast augmentation or breast reconstruction were identified, so the findings apply to breast reduction only.",
+        "Cochrane concludes that the limited evidence shows no significant benefit of routine post-operative drains, and that augmentation and reconstruction still require investigation."
+      ]
+    },
+    {
+      "id": "CD010895.pub2",
+      "title": "Different types of implants for reconstructive breast surgery",
+      "category": "implant-types",
+      "kind": "Cochrane Review",
+      "status": "Completed review",
+      "updated": "16 May 2016",
+      "doi": "10.1002/14651858.CD010895.pub2",
+      "pmid": "27182693",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010895.pub2/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD010895.pub2",
+      "summary": "Whether different breast implant types — textured or smooth, silicone or saline, anatomical or round, variable or fixed volume — change capsular contracture, complications, satisfaction and quality of life after reconstructive breast surgery. Five randomised trials with 202 participants were found.",
+      "keyPoints": [
+        "Every comparison was rated very low quality evidence: the trials were small, at unclear or high risk of bias, and too different from each other to pool.",
+        "In one trial of 60 women, saline implants had less severe capsular contracture and higher satisfaction than silicone implants, but reinterventions were significantly more frequent with saline.",
+        "No comparison reached statistical significance for textured versus smooth silicone implants (1 study, 20 women) or anatomical versus round implants (1 study, 36 women).",
+        "No trials compared fifth-generation silicone implants or different manufacturers; the review concludes that surgeons still cannot counsel women on implant choice on the basis of randomised evidence."
+      ]
+    },
+    {
+      "id": "CD013821.pub2",
+      "title": "Implants versus autologous tissue flaps for breast reconstruction following mastectomy",
+      "category": "reconstruction",
+      "kind": "Cochrane Review",
+      "status": "Completed review",
+      "updated": "31 October 2024",
+      "doi": "10.1002/14651858.CD013821.pub2",
+      "pmid": "39479986",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013821.pub2/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD013821.pub2",
+      "summary": "Implant-based versus own-tissue (flap) reconstruction after mastectomy — quality of life, satisfaction and short- and long-term complications. Thirty-five non-randomised studies with 57,555 participants met the criteria; no randomised trials were found.",
+      "keyPoints": [
+        "Implants may reduce psychosocial well-being (mean difference -4.26 on a 0–100 scale; low-certainty evidence) and sexual well-being (-6.63; low-certainty) versus autologous flaps on BREAST-Q measures.",
+        "Women may be less satisfied with the reconstruction with implants (-5.96; low-certainty) and with the breast itself (-8.17; very low-certainty).",
+        "Long-term complications may be more frequent with implants (risk ratio 1.56, 95% CI 1.09 to 2.22; very low-certainty), while implant surgery was about 125 minutes shorter (very low-certainty).",
+        "All evidence came from non-randomised studies (26 at serious overall risk of bias); the review found no superior technique for every woman and called for randomised trials."
+      ]
+    },
+    {
+      "id": "CD016344",
+      "title": "Breast implant insertion funnels for preventing capsular contracture",
+      "category": "augmentation",
+      "kind": "Cochrane Protocol",
+      "status": "Review in progress",
+      "updated": "30 March 2026",
+      "doi": "10.1002/14651858.CD016344",
+      "pmid": "41909996",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD016344/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD016344",
+      "summary": "Registered protocol for a review that will assess the effects of breast implant insertion funnels — devices used to guide the implant into place while minimising contact with skin — on capsular contracture rates in women having breast reconstruction or breast augmentation.",
+      "keyPoints": [
+        "This is a protocol, not a completed review: no results are available yet.",
+        "The primary outcome planned is capsular contracture, alongside other complications, with both randomised and non-randomised studies eligible.",
+        "The protocol anticipates few, if any, randomised trials of funnels, because capsular contracture often appears years after surgery and has many causes."
+      ]
+    },
+    {
+      "id": "CD015961",
+      "title": "Mesh for immediate implant-based prepectoral breast reconstruction following mastectomy",
+      "category": "reconstruction",
+      "kind": "Cochrane Protocol",
+      "status": "Review in progress",
+      "updated": "17 June 2025",
+      "doi": "10.1002/14651858.CD015961",
+      "pmid": "40525534",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015961/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD015961",
+      "summary": "Registered protocol for a review of biological or synthetic mesh used to support a prepectoral implant (placed above the muscle) in immediate breast reconstruction after mastectomy.",
+      "keyPoints": [
+        "This is a protocol, not a completed review: no results have been published.",
+        "It plans to compare mesh versus no mesh, and biological versus synthetic mesh, for complications, patient-reported outcomes and reoperation after prepectoral reconstruction.",
+        "Prepectoral placement is one of the placement options also discussed in breast augmentation, so the review will be relevant to implant positioning debate generally."
+      ]
+    },
+    {
+      "id": "CD011966",
+      "title": "Acellular dermal matrices for breast reconstruction surgery",
+      "category": "reconstruction",
+      "kind": "Cochrane Protocol",
+      "status": "Review in progress",
+      "updated": "2015",
+      "doi": "10.1002/14651858.CD011966",
+      "pmid": "",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011966/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD011966",
+      "summary": "Registered protocol for a review of acellular dermal matrices (biological meshes derived from human or animal skin) used around implants in immediate prosthetic breast reconstruction after cancer or risk-reducing surgery.",
+      "keyPoints": [
+        "This protocol was registered in 2015; no completed review has been published under this title.",
+        "It plans to compare reconstruction with versus without acellular dermal matrix for seroma, infection, skin flap necrosis, haematoma, reconstruction failure and implant removal.",
+        "The protocol notes that some studies suggest dermal matrix may raise complication rates, which the review is intended to test."
+      ]
+    },
+    {
+      "id": "CD010793.pub2",
+      "title": "Autologous fat grafting for breast reconstruction",
+      "category": "fat-grafting",
+      "kind": "Cochrane Protocol",
+      "status": "Withdrawn",
+      "updated": "29 June 2021",
+      "doi": "10.1002/14651858.CD010793.pub2",
+      "pmid": "",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD010793.pub2/full",
+      "doiUrl": "https://doi.org/10.1002/14651858.CD010793.pub2",
+      "summary": "Protocol for a review of autologous fat grafting — transferring the patient's own fat into the breast — for breast reconstruction after cancer surgery. Cochrane withdrew the protocol because the authors were no longer able to complete the review.",
+      "keyPoints": [
+        "Cochrane withdrew this protocol: \"the authors are no longer able to complete this review\", so no Cochrane systematic review of fat grafting exists under this title.",
+        "The protocol itself was published on 29 June 2021 and remains readable as a record of the intended methods.",
+        "No Cochrane review has examined fat transfer for cosmetic breast enlargement either."
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "Wound drains",
+      "statement": "Randomised evidence does not support routine drains after breast surgery: in three trials (306 women) drains did not reduce complications, and hospital stay was about 0.8 days shorter without them. Every trial was in breast reduction — none in augmentation.",
+      "source": "CD007258.pub3"
+    },
+    {
+      "topic": "Implant type",
+      "statement": "No randomised trial of usable quality establishes one implant type as better than another. All five trials (202 participants) were rated very low quality evidence, and neither textured-versus-smooth nor anatomical-versus-round comparisons reached significance.",
+      "source": "CD010895.pub2"
+    },
+    {
+      "topic": "Implants versus own tissue",
+      "statement": "Across 35 non-randomised studies (57,555 participants), implants may mean lower psychosocial and sexual well-being and less satisfaction than autologous flaps, but about 125 minutes shorter surgery — with low to very low certainty throughout.",
+      "source": "CD013821.pub2"
+    },
+    {
+      "topic": "Capsular contracture",
+      "statement": "Whether implant insertion funnels reduce capsular contracture is being assessed in a review registered in 2026. No results exist yet, and the protocol expects few randomised trials to be found.",
+      "source": "CD016344"
+    },
+    {
+      "topic": "Mesh and dermal matrix",
+      "statement": "Two registered protocols — mesh for prepectoral support and acellular dermal matrices — still have no completed review, leaving implant-support techniques without a Cochrane synthesis.",
+      "source": "CD015961"
+    },
+    {
+      "topic": "Fat transfer",
+      "statement": "Cochrane has never published a review of fat transfer for breast enlargement. The protocol on fat grafting for reconstruction was withdrawn in 2021 because the authors could not complete it.",
+      "source": "CD010793.pub2"
+    }
+  ]
+}

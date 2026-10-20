@@ -1,0 +1,392 @@
+{
+  "generated": "2026-10-20",
+  "source": "healthdirect (Australian Government)",
+  "sourceUrl": "https://www.healthdirect.gov.au/",
+  "about": "healthdirect patient information on breast augmentation (breast implants): what the procedure involves, benefits and considerations, preparation and choosing a surgeon, costs and Medicare, recovery, complications, warning signs, alternatives and Australian support resources.",
+  "reviewed": "November 2025",
+  "categories": [
+    {
+      "id": "overview",
+      "name": "What breast augmentation is",
+      "description": "How healthdirect describes the procedure itself, why people choose it, and the points it says to weigh up before deciding."
+    },
+    {
+      "id": "procedure",
+      "name": "The procedure and preparation",
+      "description": "Anaesthetic and implant placement, how to prepare for surgery, choosing a surgeon through AHPRA and RACS, what Medicare covers, and the questions healthdirect suggests asking before surgery."
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery and warning signs",
+      "description": "What to expect after surgery, the support typically needed while healing, and the symptoms that mean you should contact your surgeon or go to hospital."
+    },
+    {
+      "id": "risks",
+      "name": "Complications and risks",
+      "description": "The possible problems healthdirect lists after breast implant surgery, from bleeding and infection to rarer serious risks."
+    },
+    {
+      "id": "alternatives",
+      "name": "Alternatives and Australian resources",
+      "description": "Options other than implants, plus the Australian organisations, fact sheets and helplines healthdirect points readers to."
+    }
+  ],
+  "documents": [
+    {
+      "id": "what-is",
+      "title": "What is breast augmentation?",
+      "category": "overview",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#what-is",
+      "updated": "November 2025",
+      "summary": "healthdirect defines breast augmentation as a form of cosmetic surgery that enlarges the breasts, also called breast enlargement or breast reconstruction. Implants sit either under the breast or under the chest muscle and consist of a silicone shell filled with saline (salty water) or silicone gel. Some surgeons also offer fat grafting, moving fat from another part of the body into the breast. The page notes that reconstruction after mastectomy is a separate topic, and that a Therapeutic Goods Administration (TGA) review led to some breast implants being withdrawn from the Australian market or given conditions on their use.",
+      "keyPoints": [
+        "Breast augmentation is cosmetic surgery to make the breasts larger; it is also referred to as breast enlargement.",
+        "Implants are placed under the breast or beneath the chest muscle and are made of a silicone shell filled with saline or silicone gel.",
+        "Some cosmetic surgeons offer fat grafting, transferring fat from areas such as the buttocks into the breasts.",
+        "Reconstruction after a mastectomy uses implants or tissue for a different purpose; that is separate from cosmetic augmentation.",
+        "After a TGA review, some breast implant products have been removed from the Australian market or had conditions placed on them."
+      ]
+    },
+    {
+      "id": "benefits",
+      "title": "What are the benefits of breast augmentation?",
+      "category": "overview",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#benefits",
+      "updated": "November 2025",
+      "summary": "healthdirect states that people consider breast augmentation for many reasons, most commonly a desire to feel more physically attractive or more comfortable with themselves. The page frames the benefit in terms of how the person hopes to feel rather than promising any particular result.",
+      "keyPoints": [
+        "Reasons people give include wanting to feel more physically attractive or better about themselves.",
+        "healthdirect does not guarantee an outcome; expectations should be discussed with a surgeon."
+      ]
+    },
+    {
+      "id": "consider",
+      "title": "What should I consider before choosing to have breast augmentation?",
+      "category": "overview",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#consider",
+      "updated": "November 2025",
+      "summary": "healthdirect acknowledges social pressure around body shape and asks readers to weigh several points before deciding: implants are not lifelong and usually need replacing after 10 to 15 years; cancer has very rarely arisen in the fluid and scar tissue around an implant; some people are unhappy with how their breasts look afterwards; implants can make breast cancer harder to detect during screening; and breastfeeding may be affected.",
+      "keyPoints": [
+        "Implants do not last for life and usually need replacing after 10 to 15 years.",
+        "There have been rare cases of cancer developing in the fluid and scar tissue around an implant.",
+        "Some people find the result does not look the way they hoped.",
+        "Implants can make it harder to detect breast cancer during screening checks.",
+        "The ability to breastfeed may change after surgery.",
+        "Body image and social pressure are worth examining before deciding, and counselling is an option."
+      ]
+    },
+    {
+      "id": "involve",
+      "title": "What does a breast augmentation procedure involve?",
+      "category": "procedure",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#involve",
+      "updated": "November 2025",
+      "summary": "The procedure is normally done under general anaesthetic so the patient sleeps throughout. The surgeon cuts alongside the breast and positions the implant either between the breast tissue and the muscle, or behind the large chest muscle under the breast; the surgeon decides which method suits the patient. Different surgical techniques are available, and the method chosen can affect recovery time.",
+      "keyPoints": [
+        "General anaesthetic is usually required, so you are asleep during the operation.",
+        "The surgeon makes a cut alongside the breast.",
+        "The implant is placed either between the breast tissue and the muscle, or behind the chest muscle.",
+        "The surgeon chooses the method, and the technique used can affect how long recovery takes."
+      ]
+    },
+    {
+      "id": "prepare",
+      "title": "How can I prepare for a breast augmentation?",
+      "category": "procedure",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#prepare",
+      "updated": "November 2025",
+      "summary": "healthdirect advises gathering as much information as possible and preparing by getting physically fit, reaching a healthy weight, trying to stop smoking, asking about medication changes, disclosing health conditions and allergies, and confirming whether you will stay overnight. On choosing a surgeon, it says to pick someone you feel comfortable with who will be honest about benefits and risks, notes that a GP must refer cosmetic surgery patients to their surgeon, and points to the AHPRA register where you can confirm the surgeon is a Fellow of the Royal Australasian College of Surgeons (RACS) and check for serious disciplinary action. On cost, Medicare generally does not cover cosmetic surgery, private health insurance should be checked, and fees typically include the surgeon, anaesthetist, clinic or hospital, the implants, and medication, dressings and support garments. The page lists questions to ask about implant type, sensation, nipple position and appearance, bruising and pain, plus long-term questions about implant lifespan, breastfeeding, rupture, the likelihood of further operations and the cost of any repeat surgery.",
+      "keyPoints": [
+        "Prepare by getting physically fit, maintaining a healthy weight and trying to quit smoking.",
+        "Ask whether any medications need to change, tell the surgeon about health conditions and allergies, and confirm whether you will stay overnight or go home.",
+        "Choose a surgeon you feel comfortable with who will discuss benefits and risks honestly.",
+        "A GP needs to make the referral to the surgeon you choose for cosmetic surgery.",
+        "Check the AHPRA register to confirm your surgeon is a Fellow of the Royal Australasian College of Surgeons (RACS) and to see whether serious disciplinary action has been taken.",
+        "Medicare generally does not cover cosmetic surgery; check your private health policy for any cover.",
+        "Costs usually include surgeon and anaesthetist fees, clinic or hospital fees, the implants, and medication, dressings and support garments.",
+        "Ask what implant type is recommended and why, whether sensation will change, how the nipples will be affected, and what bruising, swelling and pain to expect.",
+        "Ask how long implants last, whether you will be able to breastfeed, how many of the surgeon's patients have had a ruptured or failed implant, how likely further operations are, and whether extra surgery would cost more."
+      ]
+    },
+    {
+      "id": "recover",
+      "title": "How soon will I recover?",
+      "category": "recovery",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#recover",
+      "updated": "November 2025",
+      "summary": "Recovery depends on your health before surgery and your surgeon's advice; you may be asked to take a week off work and avoid moderate exercise for around five weeks. Tubes draining fluid, dressings and a compression bandage are common, along with pain and discomfort from swelling and bruising. Pain relief, extra support garments, time off work, help at home and a follow-up visit are often needed. healthdirect says to contact your surgeon or go to a hospital emergency department if you develop fever, severe pain, nausea or vomiting during recovery.",
+      "keyPoints": [
+        "Recovery varies with your pre-surgery health and your surgeon's advice.",
+        "You may be asked to take about a week off work and avoid moderate exercise for around five weeks.",
+        "Drain tubes, dressings and a compression bandage may be used, and pain, swelling and bruising are normal early on.",
+        "You may need pain relief, support garments for a few weeks, time off work, help with daily tasks and a follow-up appointment.",
+        "Fever, severe pain, nausea or vomiting during recovery means you should contact your surgeon or go to a hospital emergency department."
+      ]
+    },
+    {
+      "id": "complications",
+      "title": "What complications can happen?",
+      "category": "risks",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#complications",
+      "updated": "November 2025",
+      "summary": "Like any operation, breast implant surgery carries risks that should be discussed in detail with a surgeon. healthdirect lists bleeding or a haematoma, infection, changed sensation or numbness in the breast skin or nipple, swelling or a fluid collection, injury to surrounding tissue and implant rupture. Rarer serious risks include an allergic reaction to the anaesthetic, blood clots in the legs that can travel to the lungs, and breast implant-associated cancer — implants previously linked with cancer are no longer available. Severe chest pain or trouble breathing means calling triple zero (000) for an ambulance.",
+      "keyPoints": [
+        "Possible problems include bleeding or a haematoma, infection, altered sensation or numbness, swelling or fluid collections, injury to nearby tissue and implant rupture.",
+        "Rarer serious risks include allergic reaction to the anaesthetic and blood clots in the legs that can travel to the lungs.",
+        "Breast implant-associated cancer is listed as a rare serious risk; implants linked with cancer in the past are no longer available.",
+        "Risks should be discussed in detail with your surgeon before you consent.",
+        "Trouble breathing or severe chest pain requires calling triple zero (000) for an ambulance."
+      ]
+    },
+    {
+      "id": "doctor",
+      "title": "When should I see my doctor?",
+      "category": "recovery",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#doctor",
+      "updated": "November 2025",
+      "summary": "healthdirect lists the symptoms that mean contacting your surgeon straight away after surgery: a temperature above 38°C or chills; nausea, vomiting, shortness of breath or diarrhoea; heavy bleeding from the wound; bleeding or fluid leakage that starts more than a day after surgery; redness around the implant that is worsening or spreading; and increasing pain or tenderness. In an emergency, go to hospital or call triple zero (000).",
+      "keyPoints": [
+        "Contact your surgeon straight away for a temperature over 38°C or chills.",
+        "Nausea, vomiting, shortness of breath or diarrhoea after surgery need urgent review.",
+        "Heavy bleeding from the wound, or bleeding or fluid leakage starting more than one day after surgery, needs urgent review.",
+        "Redness around the implant that worsens or spreads, and increasing pain or tenderness, should be reported.",
+        "Fever, vomiting or heavy bleeding also warrants going to your nearest hospital."
+      ]
+    },
+    {
+      "id": "alternatives",
+      "title": "Are there alternatives to breast augmentation?",
+      "category": "alternatives",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#alternatives",
+      "updated": "November 2025",
+      "summary": "healthdirect states that breast augmentation may not be right for everyone and lists counselling to help with accepting your body shape, wearing a padded bra, and other types of surgery that do not involve implants as alternatives.",
+      "keyPoints": [
+        "Counselling to help you accept your body shape is offered as an alternative.",
+        "Wearing a padded bra is a non-surgical alternative.",
+        "Other surgery that does not use implants may also be an option."
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Resources and support",
+      "category": "alternatives",
+      "kind": "Procedure page section",
+      "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-augmentation-breast-implants#resources",
+      "updated": "November 2025",
+      "summary": "healthdirect recommends discussing the decision with your doctor first and links to the Australian Society of Plastic Surgeons, the Agency for Clinical Innovation breast implant safety patient information sheet, an Australian Government fact sheet on cosmetic surgery, and the TGA guide to the five questions to ask before getting a medical implant (available in community languages). It also gives the healthdirect helpline on 1800 022 222 (NURSE-ON-CALL in Victoria), staffed by registered nurses 24 hours a day, seven days a week.",
+      "keyPoints": [
+        "Discuss the decision with your doctor before going further.",
+        "The Australian Society of Plastic Surgeons and the Agency for Clinical Innovation publish patient information on breast implants.",
+        "The Australian Government has a cosmetic surgery fact sheet, and the TGA publishes a guide to questions to ask before a medical implant.",
+        "The healthdirect helpline (1800 022 222, NURSE-ON-CALL in Victoria) is staffed by registered nurses 24/7."
+      ]
+    },
+    {
+      "id": "tga-status",
+      "title": "Current status of breast implant products in Australia",
+      "category": "overview",
+      "kind": "Regulator callout on the healthdirect page",
+      "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/current-status-breast-implant-products-australia",
+      "updated": "November 2025",
+      "summary": "The healthdirect page carries a callout about a Therapeutic Goods Administration (TGA) review after which some breast implants were removed from the Australian market or had conditions placed on them, and links to the TGA's current status page for the details.",
+      "keyPoints": [
+        "The TGA reviewed breast implant products and some were withdrawn from the Australian market or given conditions of use.",
+        "The TGA website publishes the current status of breast implant products in Australia.",
+        "The TGA also publishes information on breast implants and anaplastic large cell lymphoma (BIA-ALCL)."
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "topic": "What the procedure is",
+      "statement": "Breast augmentation is a form of cosmetic surgery that enlarges the breasts; it is also called breast enlargement, and uses implants placed under or behind the breast.",
+      "source": "what-is"
+    },
+    {
+      "topic": "Implant construction",
+      "statement": "Breast implants are a silicone shell filled with either saline (salty water) or silicone gel, positioned under the breast or beneath the chest muscle.",
+      "source": "what-is"
+    },
+    {
+      "topic": "Fat grafting",
+      "statement": "Some cosmetic surgeons also offer fat grafting, in which fat is taken from another part of the body, such as the buttocks, and transferred into the breasts.",
+      "source": "what-is"
+    },
+    {
+      "topic": "TGA market action",
+      "statement": "Following a Therapeutic Goods Administration review, some breast implants have been removed from the Australian market or had conditions placed on them; current status is published on the TGA website.",
+      "source": "tga-status"
+    },
+    {
+      "topic": "Reasons people choose it",
+      "statement": "People consider breast augmentation for many reasons, most often to feel more physically attractive or better about themselves.",
+      "source": "benefits"
+    },
+    {
+      "topic": "Implant longevity",
+      "statement": "Breast implants do not last for life and usually need to be replaced after 10 to 15 years.",
+      "source": "consider"
+    },
+    {
+      "topic": "Rare cancer risk",
+      "statement": "There have been rare cases of cancer growing in the fluid and scar tissue around a breast implant.",
+      "source": "consider"
+    },
+    {
+      "topic": "Screening",
+      "statement": "Breast implants can make breast cancer harder to detect during screening checks, so continuing screening remains important.",
+      "source": "consider"
+    },
+    {
+      "topic": "Breastfeeding",
+      "statement": "The ability to breastfeed may change after breast augmentation surgery.",
+      "source": "consider"
+    },
+    {
+      "topic": "Satisfaction",
+      "statement": "Some people find that after surgery their breasts do not look the way they hoped, which is a reason to discuss expectations carefully before consenting.",
+      "source": "consider"
+    },
+    {
+      "topic": "Anaesthetic",
+      "statement": "Breast augmentation normally requires a general anaesthetic, so the patient is asleep during the operation.",
+      "source": "involve"
+    },
+    {
+      "topic": "Implant placement",
+      "statement": "The implant is placed either between the breast tissue and the muscle or behind the large chest muscle under the breast, and the surgeon decides which method is right for you; the technique chosen can affect recovery time.",
+      "source": "involve"
+    },
+    {
+      "topic": "Preparation",
+      "statement": "Before surgery, healthdirect advises getting physically fit, having a healthy body weight, trying to quit smoking, asking about medication changes, disclosing health conditions and allergies, and confirming whether you will stay overnight.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Choosing a surgeon",
+      "statement": "healthdirect advises choosing a surgeon you feel comfortable with who will speak honestly about benefits and risks, and verifying credentials on the AHPRA register of medical practitioners.",
+      "source": "prepare"
+    },
+    {
+      "topic": "GP referral",
+      "statement": "Your general practitioner needs to make the referral to the surgeon you choose for cosmetic surgery, and your GP can help you decide.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Surgeon credentials",
+      "statement": "On the AHPRA register you can check that your surgeon is a Fellow of the Royal Australasian College of Surgeons (RACS) and see whether serious disciplinary action has been taken against them.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Medicare and insurance",
+      "statement": "Medicare generally does not cover the cost of cosmetic surgery; if you have private health insurance you should check your policy to see whether it covers the procedure.",
+      "source": "prepare"
+    },
+    {
+      "topic": "What the cost includes",
+      "statement": "The cost of a breast augmentation varies by patient and typically includes surgeon and anaesthetist fees, clinic or hospital fees, the implants, and medication, dressings and support garments, all of which should be discussed with your surgeon beforehand.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Questions to ask",
+      "statement": "healthdirect suggests asking which implant type is recommended and why, whether sensation will change, how the position and appearance of the nipples will be affected, and how much bruising, swelling and pain to expect.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Long-term questions",
+      "statement": "Long-term questions to ask include how long the implants last, whether you will be able to breastfeed, how many patients the surgeon has seen with a ruptured or failed implant, how likely further operations are, and whether further surgery would cost extra.",
+      "source": "prepare"
+    },
+    {
+      "topic": "Recovery time",
+      "statement": "Recovery depends on your health before surgery and your surgeon's advice; you may be asked to take about a week off work and avoid moderate exercise for five weeks.",
+      "source": "recover"
+    },
+    {
+      "topic": "After surgery",
+      "statement": "After the operation you might have drain tubes, dressings, a compression bandage and pain and discomfort from swelling and bruising, and may need pain relief, support garments, help with daily activities and a follow-up appointment.",
+      "source": "recover"
+    },
+    {
+      "topic": "Complications",
+      "statement": "Possible complications include bleeding or a haematoma, infection, changed sensation or numbness in the breast skin or nipple, swelling or fluid collection, injury to surrounding tissue and implant rupture.",
+      "source": "complications"
+    },
+    {
+      "topic": "Serious risks",
+      "statement": "Rarer serious risks include allergic reaction to the anaesthetic, blood clots in the legs that can travel to the lungs, and breast implant-associated cancer; implants previously linked with cancer are no longer available.",
+      "source": "complications"
+    },
+    {
+      "topic": "Emergency symptoms",
+      "statement": "Trouble breathing or severe chest pain after surgery means calling triple zero (000) and asking for an ambulance.",
+      "source": "complications"
+    },
+    {
+      "topic": "When to call your surgeon",
+      "statement": "Contact your surgeon straight away for a temperature over 38°C or chills, nausea, vomiting, shortness of breath or diarrhoea, heavy bleeding, bleeding or fluid leakage starting more than a day after surgery, worsening or spreading redness around the implant, or increasing pain or tenderness.",
+      "source": "doctor"
+    },
+    {
+      "topic": "Recovery emergencies",
+      "statement": "During recovery, fever, severe pain, nausea or vomiting mean you should contact your surgeon or go to a hospital emergency department.",
+      "source": "recover"
+    },
+    {
+      "topic": "Alternatives",
+      "statement": "Alternatives to breast augmentation listed by healthdirect are counselling to help you accept your body shape, wearing a padded bra, and other types of surgery that do not involve implants.",
+      "source": "alternatives"
+    },
+    {
+      "topic": "Australian resources",
+      "statement": "healthdirect points to the Australian Society of Plastic Surgeons, the Agency for Clinical Innovation breast implant safety sheet, an Australian Government cosmetic surgery fact sheet and the TGA's guide to questions to ask before a medical implant.",
+      "source": "resources"
+    },
+    {
+      "topic": "Helpline",
+      "statement": "The healthdirect helpline on 1800 022 222 (NURSE-ON-CALL in Victoria) connects you with a registered nurse 24 hours a day, seven days a week.",
+      "source": "resources"
+    },
+    {
+      "topic": "Clinical review",
+      "statement": "The healthdirect breast augmentation page was last reviewed in November 2025 and its content is developed and reviewed under healthdirect's published content process.",
+      "source": "what-is"
+    }
+  ],
+  "references": [
+    { "title": "Breast Implants — Australian Journal of General Practice", "url": "https://www1.racgp.org.au/ajgp/2021/july/breast-implants-a-guide-for-general-practice" },
+    { "title": "Breastfeeding After Breast Augmentation Surgery: A Scoping Review", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11059175/" },
+    { "title": "The Psychological Impact of Aesthetic Surgery: A Mini-Review", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9687813/" },
+    { "title": "Advantages and Disadvantages of Breast Augmentation (Cureus)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11492812/" },
+    { "title": "Social Media Influence on Body Image and Cosmetic Surgery Considerations (Cureus)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11350482/" },
+    { "title": "Complications of reconstructive and aesthetic breast surgery (UpToDate)", "url": "https://www.uptodate.com/contents/complications-of-reconstructive-and-aesthetic-breast-surgery" },
+    { "title": "Breast Implants: Common Questions and Answers (American Family Physician)", "url": "https://www.aafp.org/pubs/afp/issues/2021/1100/p500.html" },
+    { "title": "Breast implants and anaplastic large cell lymphoma (TGA)", "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/breast-implants-and-anaplastic-large-cell-lymphoma" },
+    { "title": "Current status of breast implant products in Australia (TGA)", "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/current-status-breast-implant-products-australia" },
+    { "title": "Five questions to ask your health professional before you get a medical implant (TGA)", "url": "https://www.tga.gov.au/products/medical-devices/specific-types-medical-devices/five-questions-ask-your-health-professional-you-get-medical-implant" },
+    { "title": "Breast implant safety patient information sheet (Agency for Clinical Innovation)", "url": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0007/935719/ACI-Breast-implant-safety-patient-information-sheet.pdf" },
+    { "title": "Patient information sheet: cosmetic surgery (Australian Government)", "url": "https://www.health.gov.au/resources/publications/patient-information-sheet-cosmetic-surgery" },
+    { "title": "Breast augmentation (Australian Society of Plastic Surgeons)", "url": "https://plasticsurgery.org.au/procedures/surgical-procedures/breast-augmentation-implants/" },
+    { "title": "AHPRA register of medical practitioners", "url": "https://www.ahpra.gov.au/registration/registers-of-practitioners.aspx" },
+    { "title": "FAQs — cosmetic surgery: requirement for GP referral (Medical Board of Australia)", "url": "https://www.medicalboard.gov.au/Codes-Guidelines-Policies/FAQ/FAQ-Cosmetic-surgery-Requirement-for-GP-referral.aspx" }
+  ],
+  "relatedPages": [
+    { "title": "Breast reduction", "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-reduction" },
+    { "title": "Breast uplift", "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-uplift" },
+    { "title": "Breast reconstruction with an implant or tissue expander", "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-reconstruction-with-an-implant-or-tissue-expander" },
+    { "title": "Breast reconstruction with abdominal tissue flap", "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-reconstruction-with-abdominal-tissue-flap" },
+    { "title": "Breast reconstruction with latissimus dorsi flap", "url": "https://www.healthdirect.gov.au/procedures/surgery/breast-reconstruction-with-latissimus-dorsi-flap" },
+    { "title": "Guide to cosmetic surgery", "url": "https://www.healthdirect.gov.au/procedures/surgery/guide-to-cosmetic-surgery" },
+    { "title": "Preparing for surgery", "url": "https://www.healthdirect.gov.au/procedures/surgery/preparing-for-surgery" },
+    { "title": "Mammography", "url": "https://www.healthdirect.gov.au/procedures/health-screenings/mammography" }
+  ]
+}
