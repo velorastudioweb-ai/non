@@ -1,6 +1,10 @@
 'use strict';
 
-/* Consultation page + legal/consent pages (drafts requiring review) */
+/* Contact page + legal/policy pages.
+   This website is an independent educational resource, not a clinic. The
+   contact form therefore collects only what is needed to reply to a general
+   question, and the legal pages are written for a website publisher rather
+   than for a treating clinic. */
 
 const { site } = require('./content');
 
@@ -13,69 +17,71 @@ function legalPage(o) {
     noindex: true,
     schema: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: o.h1, url: site.url + o.url }],
     blocks: [
-      { type: 'notice', blush: true, icon: 'evidence', title: 'Draft — requires legal review',
-        text: 'This policy is an editable starting template. It must be completed and reviewed by the clinic’s legal adviser to reflect the clinic’s actual data practices, jurisdiction and obligations before publication. It is marked noindex until then.' },
       { type: 'prose', html: o.html }
     ]
   };
 }
 
-const consultation = {
-  url: '/book-consultation/', slug: 'book-consultation',
-  h1: 'Request a Private Consultation',
-  seoTitle: 'Book a Consultation | QuantumHealth by Dr. Vikas Singh',
-  seoDescription: 'Request a confidential breast enhancement consultation. Share your preferred contact details and the type of information you would like to discuss.',
-  bannerEyebrow: 'Consultation',
-  bannerLead: 'Share your preferred contact details and the type of information you would like to discuss. The clinic team can then confirm availability and next steps.',
-  breadcrumb: [{ label: 'Book a consultation' }],
-    schema: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Request a Consultation', url: site.url + '/book-consultation/' }],
+const contact = {
+  url: '/contact/', slug: 'contact',
+  h1: 'Contact Us',
+  seoTitle: 'Contact Us | Breast Enlargement Guide',
+  seoDescription: 'How to contact the Breast Enlargement Guide — an independent educational website about breast enlargement options, evidence and safety.',
+  bannerEyebrow: 'Contact',
+  bannerLead: 'This website is an educational resource, not a clinic. Use this page for corrections, source suggestions or general questions about the content.',
+  breadcrumb: [{ label: 'Contact' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Contact', url: site.url + '/contact/' }],
   blocks: [
     {
+      type: 'prose',
+      html:
+        '<p class="lead">This website does not provide treatment, consultations or diagnoses, and no clinician is available through it. Please read the notes below before writing to us.</p>'
+    },
+    {
+      type: 'icon-grid',
+      eyebrow: 'What to contact us about',
+      heading: 'Appropriate and inappropriate enquiries',
+      cols: 2,
+      items: [
+        { icon: 'evidence', title: 'Content corrections & sources', text: 'Spotted an error, a broken link or a source we should include? We welcome evidence-based corrections and suggestions.' },
+        { icon: 'info', title: 'General questions about the content', text: 'Questions about how a page explains a concept, or where a cited source comes from, are welcome.' },
+        { icon: 'safety', title: 'Medical advice — not here', text: 'We cannot give personal medical advice, diagnose a condition or recommend a treatment. Please see a qualified, registered clinician.' },
+        { icon: 'safety', title: 'Urgent symptoms — seek care now', text: 'If you have fever, spreading redness, a new lump, chest pain or any urgent symptom after a procedure, contact a clinician or emergency services immediately.' }
+      ]
+    },
+    {
       type: 'form',
-      eyebrow: 'Enquiry form',
-      heading: 'Tell us how best to reach you',
-      lead: 'This form collects only the information needed to respond to your enquiry. Please do not include detailed medical history here — that is discussed in consultation.',
+      eyebrow: 'Message form',
+      heading: 'Send a general message',
+      lead: 'This form collects only what is needed to reply. Please do not send detailed medical history, symptoms, test results or images. We cannot respond to individual medical questions.',
       interests: [
-        'General breast enhancement consultation',
-        'Non-surgical treatment information',
-        'Breast implant surgery',
-        'Fat transfer surgery',
-        'Second opinion or treatment safety'
+        'Content correction',
+        'Source or reference suggestion',
+        'General question about the content',
+        'Other'
       ],
-      contactMethods: ['Phone', 'Email'],
+      contactMethods: ['Email'],
       points: [
-        'A member of the clinic team responds using your preferred contact method.',
-        'No treatment decision is made through this form — a consultation is required.',
-        'Your enquiry is handled confidentially.',
-        'This form does not provide medical advice or diagnosis.'
+        'We reply by email only.',
+        'We cannot provide medical advice or diagnosis.',
+        'Please do not include personal medical details.',
+        'Messages are handled confidentially.'
       ],
       slot: 'Consultation welcome imagery',
-      submitLabel: 'Prepare enquiry',
+      submitLabel: 'Send message',
       endpoint: site.contact.formEndpoint
     },
     {
       type: 'notice',
       icon: 'info',
-      title: 'Consultation, not a commitment',
-      text: 'Submitting an enquiry does not commit you to any treatment. Any treatment plan is discussed and agreed only during a consultation with an appropriately qualified clinician, after assessment of suitability, risks and alternatives.'
+      title: 'This is not a clinic',
+      text: 'No doctor, clinic, medical team or physical address is presented on this website because none has been verified. Submitting a message does not create a doctor–patient relationship and does not commit you to any treatment.'
     },
     {
       type: 'notice',
-      icon: 'phone',
-      title: 'Prefer to contact us directly?',
-      text: 'Call <a href="tel:+85244608658">+852 4460 8658</a> or email <a href="mailto:' + site.contact.email + '">' + site.contact.email + '</a>. Head office: ' + site.contact.address + '. Opening hours: ' + site.contact.hours + '.'
-    },
-    {
-      type: 'icon-grid',
-      alt: true,
-      eyebrow: 'What happens next',
-      heading: 'After you submit an enquiry',
-      cols: 3,
-      items: [
-        { icon: 'mail', title: 'We review your enquiry', text: 'The clinic team reads your enquiry and confirms the most suitable next step.' },
-        { icon: 'calendar', title: 'We confirm availability', text: 'You are contacted using your preferred method to arrange a consultation time.' },
-        { icon: 'personalised', title: 'You attend a consultation', text: 'Your goals, history, suitability, options and risks are discussed in person.' }
-      ]
+      icon: 'mail',
+      title: 'Prefer to email us directly?',
+      text: 'Write to <a href="mailto:' + site.contact.email + '">' + site.contact.email + '</a>. This is the only contact channel published on this website.'
     }
   ]
 };
@@ -83,19 +89,20 @@ const consultation = {
 const legal = [
   legalPage({
     url: '/privacy-policy/', slug: 'privacy-policy', label: 'Privacy policy',
-    h1: 'Privacy Policy', seoTitle: 'Privacy Policy | QuantumHealth',
-    seoDescription: 'How QuantumHealth handles personal information submitted through this website, including enquiries and consultation requests.',
+    h1: 'Privacy Policy', seoTitle: 'Privacy Policy | Breast Enlargement Guide',
+    seoDescription: 'How the Breast Enlargement Guide website handles personal information submitted through its contact form.',
     lead: 'How personal information submitted through this website is handled.',
     html:
-      '<h2 class="h3">Information we collect</h2><p>This website collects the information you choose to submit through the consultation enquiry form — such as your name, email address, telephone number and area of interest — together with any optional details you provide. Please do not submit detailed medical information through this form.</p>' +
-      '<h2 class="h3">How we use it</h2><p>Enquiry information is used to respond to your request and to arrange a consultation. [To be completed: retention periods, legal basis, third-party processors, and international transfer details as applicable to the clinic.]</p>' +
-      '<h2 class="h3">Your choices</h2><p>You may request access to, correction of, or deletion of the personal information you have submitted. [To be completed with the clinic’s actual contact point and jurisdiction-specific rights.]</p>' +
-      '<h2 class="h3">Cookies and analytics</h2><p>Where analytics, advertising pixels or embedded third-party media are used, they are activated only after the required consent is obtained. [To be completed once the clinic’s tooling is confirmed.]</p>'
+      '<h2 class="h3">Who we are</h2><p>This website is an independent, educational publication about breast enlargement. It is not a clinic and does not provide medical services. This policy explains how the limited personal information collected through this website is handled.</p>' +
+      '<h2 class="h3">Information we collect</h2><p>If you use the contact form, we collect the information you choose to provide — such as your name, email address and message. Please do not submit detailed medical information, symptoms, test results or images; the form is not designed to receive them and we cannot act on them.</p>' +
+      '<h2 class="h3">How we use it</h2><p>Contact information is used only to read and, where appropriate, reply to your message. It is not sold, and it is not used for marketing. [To be completed: retention periods, legal basis, and any third-party processors used to deliver the form, as applicable to the publisher.]</p>' +
+      '<h2 class="h3">Your choices</h2><p>You may request access to, correction of, or deletion of the personal information you have submitted. [To be completed with the publisher’s contact point and jurisdiction-specific rights.]</p>' +
+      '<h2 class="h3">Cookies and analytics</h2><p>Where analytics, advertising pixels or embedded third-party media are used, they are activated only after the required consent is obtained. [To be completed once the website’s tooling is confirmed.]</p>'
   }),
   legalPage({
     url: '/cookie-policy/', slug: 'cookie-policy', label: 'Cookie policy',
-    h1: 'Cookie Policy', seoTitle: 'Cookie Policy | QuantumHealth',
-    seoDescription: 'How QuantumHealth uses cookies and similar technologies, and how consent is managed.',
+    h1: 'Cookie Policy', seoTitle: 'Cookie Policy | Breast Enlargement Guide',
+    seoDescription: 'How the Breast Enlargement Guide website uses cookies and similar technologies, and how consent is managed.',
     lead: 'How cookies and similar technologies are used, and how you can manage consent.',
     html:
       '<h2 class="h3">What cookies are</h2><p>Cookies are small files stored by your browser. This website aims to use as few as possible and to load any non-essential cookies only after consent.</p>' +
@@ -104,34 +111,24 @@ const legal = [
   }),
   legalPage({
     url: '/terms-of-use/', slug: 'terms-of-use', label: 'Terms of use',
-    h1: 'Terms of Use', seoTitle: 'Terms of Use | QuantumHealth',
-    seoDescription: 'The terms governing use of the QuantumHealth website and its educational content.',
+    h1: 'Terms of Use', seoTitle: 'Terms of Use | Breast Enlargement Guide',
+    seoDescription: 'The terms governing use of the Breast Enlargement Guide website and its educational content.',
     lead: 'The terms governing use of this website and its educational content.',
     html:
       '<h2 class="h3">Educational purpose</h2><p>Content on this website is provided for general educational purposes. It is not a substitute for professional medical advice, diagnosis or treatment, and it does not create a doctor–patient relationship.</p>' +
-      '<h2 class="h3">No personalised advice</h2><p>Nothing on this website constitutes a personal recommendation for any specific individual. Treatment suitability, availability, risks and results vary and must be assessed in consultation.</p>' +
-      '<h2 class="h3">Accuracy and changes</h2><p>Content may be updated or corrected over time. [To be completed with the clinic’s governing law, contact details and liability terms.]</p>'
+      '<h2 class="h3">No personalised advice</h2><p>Nothing on this website constitutes a personal recommendation for any specific individual. Treatment suitability, availability, risks and results vary and must be assessed in consultation with a qualified clinician.</p>' +
+      '<h2 class="h3">External sources</h2><p>This website links to third-party sources so that readers can verify information. We do not control those sources and are not responsible for their content. [To be completed with the publisher’s governing law, contact details and liability terms.]</p>'
   }),
   legalPage({
     url: '/medical-disclaimer/', slug: 'medical-disclaimer', label: 'Medical disclaimer',
-    h1: 'Medical Disclaimer', seoTitle: 'Medical Disclaimer | QuantumHealth',
-    seoDescription: 'The medical disclaimer for content published on the QuantumHealth website.',
+    h1: 'Medical Disclaimer', seoTitle: 'Medical Disclaimer | Breast Enlargement Guide',
+    seoDescription: 'The medical disclaimer for content published on the Breast Enlargement Guide website.',
     lead: 'Important limitations on the medical information published on this website.',
     html:
-      '<p>Website content is provided for general educational purposes and is not a substitute for professional medical advice. Treatment availability, suitability, risks and results vary. All services are subject to applicable law and professional standards.</p>' +
-      '<p>Reference to any product, brand, technique or regulatory position does not confirm its approval, availability or suitability in your jurisdiction. Medical content is reviewed before publication, and pages awaiting review are marked accordingly.</p>' +
-      '<p>Always seek the advice of an appropriately qualified medical professional with any questions about a medical condition or treatment.</p>'
-  }),
-  legalPage({
-    url: '/patient-photography-consent/', slug: 'patient-photography-consent', label: 'Patient photography consent',
-    h1: 'Patient Photography Consent Policy', seoTitle: 'Patient Photography Consent Policy | QuantumHealth',
-    seoDescription: 'How QuantumHealth approaches patient photography, consent and the responsible presentation of clinical images.',
-    lead: 'How clinical photography is approached, consented and presented.',
-    html:
-      '<h2 class="h3">Consent first</h2><p>Clinical photography is used only with appropriate, documented patient consent. Images are never presented as a patient result unless they are genuine and consented.</p>' +
-      '<h2 class="h3">Responsible presentation</h2><p>Before-and-after images use consistent lighting, positioning and camera angles, identify the procedure and timeframe, and carry a clear statement that individual results vary. Images are never digitally altered to exaggerate treatment outcomes.</p>' +
-      '<h2 class="h3">Stock imagery</h2><p>Illustrative stock photography is clearly labelled and never presented as a patient result. [To be completed with the clinic’s specific consent processes and retention terms.]</p>'
+      '<p>Website content is provided for general educational purposes and is not a substitute for professional medical advice. This website is not a clinic and does not provide treatment, consultations or diagnoses.</p>' +
+      '<p>Treatment availability, suitability, risks and results vary. Reference to any product, brand, technique or regulatory position does not confirm its approval, availability or suitability in your jurisdiction. Regulatory and evidence positions change over time; always check the original source.</p>' +
+      '<p>Always seek the advice of an appropriately qualified medical professional with any questions about a medical condition or treatment. If you notice a new breast lump or any urgent symptom, seek medical care promptly.</p>'
   })
 ];
 
-module.exports = { consultation, legal };
+module.exports = { contact, legal };

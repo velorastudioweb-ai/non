@@ -64,12 +64,12 @@ BANNERS = [
     "banner-regenerative", "banner-sculptra-plla", "banner-biostimulators",
     "banner-surgical", "banner-breast-augmentation", "banner-breast-implants",
     "banner-fat-transfer", "banner-breast-lift", "banner-comparison",
-    "banner-anatomy", "banner-about", "banner-doctor", "banner-team",
-    "banner-locations", "banner-gallery", "banner-video", "banner-media",
-    "banner-faqs", "banner-technology", "banner-safety",
-    "banner-consultation", "banner-blogs", "banner-blog-surgical-vs-nonsurgical",
+    "banner-anatomy", "banner-about", "banner-understanding",
+    "banner-implant-safety", "banner-surgeon", "banner-safety", "banner-faqs",
+    "banner-blogs", "banner-blog-surgical-vs-nonsurgical",
     "banner-blog-implants", "banner-blog-prp", "banner-blog-consultation",
-    "banner-blog-safety", "banner-policy",
+    "banner-blog-safety", "banner-policy", "banner-glossary",
+    "banner-references", "banner-research", "banner-contact",
 ]
 
 
@@ -244,12 +244,12 @@ def social_cover():
     brand = font(["georgiab.ttf", "Georgia Bold.ttf", "DejaVuSerif-Bold.ttf"], 26)
     title = font(["georgia.ttf", "Georgia.ttf", "DejaVuSerif.ttf"], 58)
     tagline = font(["georgiai.ttf", "Georgia Italic.ttf", "DejaVuSerif-Italic.ttf"], 25)
-    draw.text((72, 122), "QUANTUMHEALTH", font=brand, fill=GOLD)
-    draw.line((72, 170, 170, 170), fill=ROSE, width=3)
+    draw.text((72, 122), "BREAST ENLARGEMENT GUIDE", font=brand, fill=GOLD)
+    draw.line((72, 170, 350, 170), fill=ROSE, width=3)
     draw.text((68, 225), "A More Informed", font=title, fill=IVORY)
     draw.text((68, 297), "Approach to", font=title, fill=IVORY)
     draw.text((68, 369), "Breast Enhancement", font=title, fill=PINK)
-    draw.text((72, 480), "Confidence begins with an informed consultation", font=tagline, fill=IVORY)
+    draw.text((72, 480), "Independent, evidence-based patient education", font=tagline, fill=IVORY)
     return img
 
 

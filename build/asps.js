@@ -70,7 +70,7 @@ const aspsPage = {
   url: '/research/asps-breast-enlargement/',
   slug: 'asps-research',
   h1: 'ASPS Breast Augmentation Information',
-  seoTitle: 'ASPS Breast Augmentation Information | Breast Implants, Costs & Safety | QuantumHealth',
+  seoTitle: 'ASPS Breast Augmentation Information | Breast Implants, Costs & Safety | Breast Enlargement Guide',
   seoDescription: 'A curated library of ' + n(docs.length) + ' ASPS patient-information pages and ' + n(facts.length) + ' extracted facts on breast augmentation, implant types, costs, preparation, recovery, risks and choosing a plastic surgeon, with links to plasticsurgery.org.',
   bannerEyebrow: 'Professional society library',
   bannerLead: 'Breast augmentation information published by the American Society of Plastic Surgeons \u2014 what the procedure is, candidates, consultation, costs, implant types, safety, preparation, recovery, results and choosing a surgeon, extracted and linked to the original plasticsurgery.org pages.',

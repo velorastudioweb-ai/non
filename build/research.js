@@ -41,7 +41,7 @@ const research = {
   url: '/research/breast-enlargement/',
   slug: 'pmc-research',
   h1: 'Breast Enlargement Research Library',
-  seoTitle: 'Breast Enlargement Research Library | PubMed Central | QuantumHealth',
+  seoTitle: 'Breast Enlargement Research Library | PubMed Central || Breast Enlargement Guide',
   seoDescription: 'Search and browse ' + n(s.total) + ' PubMed Central records on breast enlargement \u2014 citations, abstracts and direct links to the original PMC articles.',
   bannerEyebrow: 'Evidence library',
   bannerLead: 'The complete PubMed Central literature set for \u201cbreast enlargement\u201d \u2014 searchable, with citations, abstracts and links to the original articles.',

@@ -1,8 +1,8 @@
 {
-  "name": "quantumhealth-website",
+  "name": "breast-enlargement-guide",
   "version": "1.0.0",
   "private": true,
-  "description": "Static marketing website for QuantumHealth by Dr. Vikas Singh. Builds plain HTML/CSS/JS into dist/ with no runtime dependencies.",
+  "description": "Independent patient-education website about breast enlargement. Builds plain HTML/CSS/JS into dist/ with no runtime dependencies.",
   "scripts": {
     "build": "node build/gen.js",
     "qa": "node build/gen.js && node build/qa.js",

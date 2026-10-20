@@ -62,7 +62,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log('\n  QuantumHealth dev server');
+  console.log('\n  Breast Enlargement Guide dev server');
   console.log('  Serving dist/ at  http://localhost:' + PORT + '/\n');
   if (WATCH) {
     console.log('  Watching build/ and public/ for changes (Ctrl+C to stop)...\n');

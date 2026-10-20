@@ -70,7 +70,7 @@ const medlinePlusPage = {
   url: '/research/medlineplus-breast-enlargement/',
   slug: 'medlineplus-research',
   h1: 'MedlinePlus Breast Enlargement Information',
-  seoTitle: 'MedlinePlus Breast Enlargement Information | Breast Augmentation, Recovery & Risks | QuantumHealth',
+  seoTitle: 'MedlinePlus Breast Enlargement Information | Breast Augmentation, Recovery & Risks | Breast Enlargement Guide',
   seoDescription: 'A curated library of ' + n(docs.length) + ' MedlinePlus pages and ' + n(facts.length) + ' extracted facts on breast enlargement \u2014 breast augmentation surgery, incisions, risks, recovery, wound care and related procedures, with links to medlineplus.gov.',
   bannerEyebrow: 'Consumer health library',
   bannerLead: 'Breast enlargement information published by MedlinePlus, the U.S. National Library of Medicine \u2014 breast augmentation surgery, anaesthetic and incision options, risks, recovery and wound care, extracted and linked to the original medlineplus.gov pages.',

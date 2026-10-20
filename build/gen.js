@@ -5,7 +5,9 @@ const path = require('path');
 const { layout } = require('./templates');
 const { site, pages, home, stdCta } = require('./content');
 const { articles } = require('./blog');
-const { consultation, legal } = require('./extra-pages');
+const { contact, legal } = require('./extra-pages');
+const { libraryPages } = require('./library');
+const { writeStubs } = require('./redirects');
 const { researchPage } = require('./research');
 const { fdaPage } = require('./fda');
 const { nhsPage } = require('./nhs');
@@ -46,12 +48,12 @@ function copyDir(src, dest) {
 const blogIndex = {
   url: '/blogs/', slug: 'blogs',
   h1: 'Insights & Patient Resources',
-  seoTitle: 'Breast Enhancement Education & Patient Resources | QuantumHealth',
+  seoTitle: 'Breast Enlargement Education & Patient Resources | Breast Enlargement Guide',
   seoDescription: 'Evidence-led articles on breast enhancement options, safety, recovery and the questions patients should ask before treatment.',
   bannerEyebrow: 'Knowledge for more confident decisions',
   bannerLead: 'Clear, evidence-aware articles covering treatment options, safety, recovery and the questions worth asking before any decision.',
   breadcrumb: [{ label: 'Insights' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'QuantumHealth Insights', url: site.url + '/blogs/' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Breast Enlargement Guide Insights', url: site.url + '/blogs/' }],
   blocks: [
     {
       type: 'cards', cols: 3, eyebrow: 'Articles',
@@ -62,7 +64,7 @@ const blogIndex = {
         href: '/blogs/' + a.slug + '/', slot: a.category + ' imagery'
       }))
     },
-    stdCta({ heading: 'Prefer to talk it through? Arrange a consultation' })
+    stdCta({ heading: 'Prefer to see how the evidence fits together?' })
   ]
 };
 
@@ -106,7 +108,7 @@ function articleToPage(a) {
 /* ---------- 404 ---------- */
 const notFound = {
   url: '/404.html', slug: '404', h1: 'Page not found',
-  seoTitle: 'Page Not Found | QuantumHealth', seoDescription: 'The page you were looking for could not be found.',
+      seoTitle: 'Page Not Found | Breast Enlargement Guide', seoDescription: 'The page you were looking for could not be found.',
   noindex: true,
   bannerEyebrow: 'Error 404', showBanner: false,
   blocks: [
@@ -122,13 +124,15 @@ function build() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   ensureDir(DIST);
 
-  const all = [home].concat(pages, [consultation], legal, [blogIndex], [researchPage], [fdaPage], [nhsPage], [clevelandClinicPage], [healthdirectPage], [medlinePlusPage], [baapsPage], [wikipediaPage], [wikipediaAugmentationPage], [statPearlsPage], [baprasPage], [aspsPage], [cochranePage], articles.map(articleToPage));
+  const all = [home].concat(pages, libraryPages, [contact], legal, [blogIndex], [researchPage], [fdaPage], [nhsPage], [clevelandClinicPage], [healthdirectPage], [medlinePlusPage], [baapsPage], [wikipediaPage], [wikipediaAugmentationPage], [statPearlsPage], [baprasPage], [aspsPage], [cochranePage], articles.map(articleToPage));
 
   const written = [];
   all.forEach((page) => {
     writePage(page.url, layout(page, site));
     written.push(page.url);
   });
+  // redirect stubs for retired routes (written to dist, noindex, excluded from sitemap)
+  const redirectCount = writeStubs(writePage);
   // 404 written to dist/404.html (not a folder)
   fs.writeFileSync(path.join(DIST, '404.html'), layout(notFound, site), 'utf8');
 
@@ -156,9 +160,10 @@ function build() {
   fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '\n</urlset>\n', 'utf8');
 
-  return { written, total: written.length + 1, indexable: indexable.length };
+  return { written, total: written.length + 1, indexable: indexable.length, redirects: redirectCount };
 }
 
 const result = build();
 console.log('Generated ' + result.total + ' HTML pages (' + result.indexable + ' indexable) + robots.txt + sitemap.xml');
+console.log('Redirect stubs: ' + result.redirects);
 console.log('Pages:', result.written.join(' '));

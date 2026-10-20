@@ -8,7 +8,7 @@ const articles = [
   {
     slug: 'surgical-vs-non-surgical-breast-enhancement',
     title: 'Surgical vs Non-Surgical Breast Enhancement: Understanding the Differences',
-    seoTitle: 'Surgical vs Non-Surgical Breast Enhancement | QuantumHealth',
+    seoTitle: 'Surgical vs Non-Surgical Breast Enhancement || Breast Enlargement Guide',
     seoDescription: 'Compare the intended outcomes, limitations, recovery and risks of surgical and non-surgical breast enhancement without assuming every non-surgical treatment enlarges breast volume.',
     category: 'Treatment guides',
     date: '2026-01-15', reviewed: '',
@@ -27,7 +27,7 @@ const articles = [
   {
     slug: 'before-choosing-breast-implants',
     title: 'What Should You Know Before Choosing Breast Implants?',
-    seoTitle: 'What to Know Before Choosing Breast Implants | QuantumHealth',
+    seoTitle: 'What to Know Before Choosing Breast Implants || Breast Enlargement Guide',
     seoDescription: 'Implant selection, informed consent, recovery, long-term monitoring and the possibility of revision surgery — key considerations before choosing breast implants.',
     category: 'Surgical education',
     date: '2026-01-22', reviewed: '',
@@ -46,7 +46,7 @@ const articles = [
   {
     slug: 'prp-and-breast-enhancement-what-the-evidence-says',
     title: 'PRP and Breast Enhancement: What Does the Evidence Say?',
-    seoTitle: 'PRP and Breast Enhancement: Evidence Explained | QuantumHealth',
+    seoTitle: 'PRP and Breast Enhancement: Evidence Explained || Breast Enlargement Guide',
     seoDescription: 'The difference between researching a treatment and establishing its safety and effectiveness for a particular indication, explained through the example of PRP.',
     category: 'Evidence and research',
     date: '2026-02-03', reviewed: '',
@@ -63,7 +63,7 @@ const articles = [
   {
     slug: 'ten-questions-to-ask-at-a-breast-enhancement-consultation',
     title: 'Ten Questions to Ask at a Breast Enhancement Consultation',
-    seoTitle: 'Ten Questions to Ask at a Consultation | QuantumHealth',
+    seoTitle: 'Ten Questions to Ask at a Consultation || Breast Enlargement Guide',
     seoDescription: 'A practical checklist covering credentials, product information, suitability, risks, costs and aftercare to help you make an informed decision.',
     category: 'Patient resources',
     date: '2026-02-10', reviewed: '',
@@ -81,7 +81,7 @@ const articles = [
   {
     slug: 'breast-fillers-sculptra-and-biostimulators-safety-questions',
     title: 'Breast Fillers, Sculptra and Biostimulators: Important Safety Questions',
-    seoTitle: 'Breast Fillers, Sculptra & Biostimulators: Safety | QuantumHealth',
+    seoTitle: 'Breast Fillers, Sculptra & Biostimulators: Safety || Breast Enlargement Guide',
     seoDescription: 'Why a facial aesthetic treatment cannot automatically be considered suitable for breast injection, and the product-specific questions that matter.',
     category: 'Safety and evidence',
     date: '2026-02-18', reviewed: '',
@@ -98,7 +98,7 @@ const articles = [
   {
     slug: 'breast-enlargement-without-surgery-what-works',
     title: 'Breast Enlargement Without Surgery: An Evidence-Based Verdict',
-    seoTitle: 'Breast Enlargement Without Surgery: What Works | QuantumHealth',
+    seoTitle: 'Breast Enlargement Without Surgery: What Works || Breast Enlargement Guide',
     seoDescription: 'A method-by-method scorecard of non-surgical breast enlargement — which options change appearance, which add real volume, and which have no evidence or real danger behind them.',
     category: 'Evidence and research',
     date: '2026-10-19', reviewed: '',

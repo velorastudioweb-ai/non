@@ -82,14 +82,19 @@ files.forEach((f) => {
   // sanity: exactly one <h1> on indexable pages
   const h1s = (html.match(/<h1[\s>]/g) || []).length;
   const noindex = /name="robots" content="noindex/.test(html);
-  if (h1s === 0) warnings.push(rel + ': no <h1>');
-  if (h1s > 1 && !noindex) warnings.push(rel + ': ' + h1s + ' <h1> elements');
+  // redirect stubs are intentionally minimal (noindex + meta refresh); skip
+  // content-completeness checks for them.
+  const isRedirectStub = noindex && /http-equiv="refresh"/.test(html);
+  if (!isRedirectStub) {
+    if (h1s === 0) warnings.push(rel + ': no <h1>');
+    if (h1s > 1 && !noindex) warnings.push(rel + ': ' + h1s + ' <h1> elements');
 
-  // title / description presence
-  if (!/<title>[^<]+<\/title>/.test(html)) errors.push(rel + ': missing <title>');
-  if (!/name="description" content="[^"]+"/.test(html)) errors.push(rel + ': missing meta description');
-  if (!/rel="canonical"/.test(html)) warnings.push(rel + ': missing canonical');
-  if (!/lang="en(?:-[A-Za-z]+)?"/.test(html)) errors.push(rel + ': missing lang');
+    // title / description presence
+    if (!/<title>[^<]+<\/title>/.test(html)) errors.push(rel + ': missing <title>');
+    if (!/name="description" content="[^"]+"/.test(html)) errors.push(rel + ': missing meta description');
+    if (!/rel="canonical"/.test(html)) warnings.push(rel + ': missing canonical');
+    if (!/lang="en(?:-[A-Za-z]+)?"/.test(html)) errors.push(rel + ': missing lang');
+  }
 
   // unclosed section balance (rough)
   const openSection = (html.match(/<section[\s>]/g) || []).length;

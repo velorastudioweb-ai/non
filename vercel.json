@@ -8,29 +8,107 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Permissions-Policy", "value": "geolocation=(), microphone=(), camera=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        }
       ]
     },
     {
       "source": "/assets/img/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=15768000" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=15768000"
+        }
       ]
     },
     {
       "source": "/assets/css/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     },
     {
       "source": "/assets/js/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/about-dr-vikas-singh/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/media-and-press/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/technology-and-medical-standards/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/patient-photography-consent/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
+      "source": "/our-team/",
+      "destination": "/choosing-a-surgeon/",
+      "permanent": true
+    },
+    {
+      "source": "/before-after-gallery/",
+      "destination": "/understanding-breast-enlargement/",
+      "permanent": true
+    },
+    {
+      "source": "/video-gallery/",
+      "destination": "/blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/book-consultation/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/candidacy-and-safety/",
+      "destination": "/breast-enlargement-safety/",
+      "permanent": true
+    },
+    {
+      "source": "/surgical/silicone-breast-implants/",
+      "destination": "/breast-implants/",
+      "permanent": true
     }
   ]
 }

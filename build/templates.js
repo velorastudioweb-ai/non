@@ -33,10 +33,10 @@ function head(page, site) {
 <meta property="og:title" content="${esc(page.seoTitle)}">
 <meta property="og:description" content="${esc(page.seoDescription)}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${site.url}/assets/img/og-cover.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="QuantumHealth by Dr. Vikas Singh — A more informed approach to breast enhancement">
+  <meta property="og:image" content="${site.url}/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Breast Enlargement Guide — independent patient education">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(page.seoTitle)}">
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
@@ -68,15 +68,15 @@ return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-curren
 <a class="brand" href="${site.base}" aria-label="${esc(site.name)} home">
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
 <span class="brand__text">
-<span class="brand__name">QuantumHealth</span>
-<span class="brand__tag">By Dr. Vikas Singh</span>
+<span class="brand__name">${esc(site.name)}</span>
+<span class="brand__tag">Independent patient education</span>
 </span>
 </a>
 <nav class="nav" aria-label="Primary">
 ${links}
 </nav>
 <div class="header-cta">
-<a class="btn--header" href="${site.base}book-consultation/">Book a consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn--header" href="${site.base}contact/">Contact us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
 <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -90,7 +90,7 @@ ${links}
 ${mobileLinks}
 </ul>
 <div class="mobile-nav__cta">
-<a class="btn btn--primary btn--block" href="${site.base}book-consultation/">Book a Consultation</a>
+<a class="btn btn--primary btn--block" href="${site.base}contact/">Contact us</a>
 </div>
 <p class="mobile-nav__meta">${esc(site.tagline)}</p>
   </nav>
@@ -107,7 +107,7 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
 <div class="footer-brand">
 <a class="brand" href="${site.base}" aria-label="${esc(site.name)} home">
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
-<span class="brand__text"><span class="brand__name">QuantumHealth</span><span class="brand__tag">By Dr. Vikas Singh</span></span>
+<span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
 </a>
 <p>${esc(site.footerBlurb)}</p>
 <ul class="footer-contact-details">

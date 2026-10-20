@@ -70,7 +70,7 @@ const clevelandClinicPage = {
   url: '/research/cleveland-clinic-breast-enlargement/',
   slug: 'cleveland-clinic-research',
   h1: 'Cleveland Clinic Breast Enlargement Information',
-  seoTitle: 'Cleveland Clinic Breast Enlargement Information | Augmentation, Implants & Fat Transfer | QuantumHealth',
+  seoTitle: 'Cleveland Clinic Breast Enlargement Information | Augmentation, Implants & Fat Transfer | Breast Enlargement Guide',
   seoDescription: 'A curated library of ' + n(docs.length) + ' Cleveland Clinic Health Library pages and ' + n(facts.length) + ' extracted facts on breast augmentation, breast implants and fat transfer breast augmentation \u2014 types, surgery, recovery, risks and candidacy, with links to my.clevelandclinic.org.',
   bannerEyebrow: 'Clinical library',
   bannerLead: 'Breast enlargement information published by the Cleveland Clinic \u2014 breast augmentation, breast implant types, fat transfer, surgery, recovery and complications, extracted and linked to the original Health Library pages.',

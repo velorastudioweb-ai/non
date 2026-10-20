@@ -70,7 +70,7 @@ const baapsPage = {
   url: '/research/baaps-breast-enlargement/',
   slug: 'baaps-research',
   h1: 'BAAPS Breast Enlargement Information',
-  seoTitle: 'BAAPS Breast Enlargement Information | Augmentation Guide, Implant Safety & Consumer Advice | QuantumHealth',
+  seoTitle: 'BAAPS Breast Enlargement Information | Augmentation Guide, Implant Safety & Consumer Advice | Breast Enlargement Guide',
   seoDescription: 'A curated library of ' + n(docs.length) + ' ABS/BAAPS/BAPRAS sources and ' + n(facts.length) + ' extracted facts on breast enlargement — the joint patient booklet, implant safety (BII, BIA-ALCL, PIP) and consumer safety guidelines, with links to baaps.org.uk.',
   bannerEyebrow: 'Association library',
   bannerLead: 'Breast enlargement information published by the British Association of Aesthetic Plastic Surgeons \u2014 the joint ABS, BAAPS and BAPRAS patient booklet, breast implant safety and consumer safety guidance, extracted and linked to the original baaps.org.uk pages.',

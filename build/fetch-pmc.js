@@ -13,7 +13,7 @@ const fs = require('fs');
 const path = require('path');
 
 const EUTILS = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/';
-const TOOL = 'quantumhealth-website';
+const TOOL = 'breast-enlargement-guide';
 const EMAIL = 'enquiries@nonsurgicalbreastenlargement.in';
 const QUERY = '"breast enlargement"';
 const OUT = path.join(__dirname, '..', 'public', 'assets', 'data', 'pmc-breast-enlargement.json');

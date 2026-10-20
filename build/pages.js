@@ -39,16 +39,16 @@ function buildWikiIndex(wiki) {
     cats.map((c) => '<h2 id="' + c.toLowerCase().replace(/\s+/g, '-') + '">' + c + '</h2><ul>' +
       groups[c].sort((x, y) => x.data.title.localeCompare(y.data.title)).map((a) => '<li><a href="' + a.url + '">' + a.data.title + '</a>' + (a.data.summary ? ' — <span>' + a.data.summary + '</span>' : '') + '</li>').join('') +
       '</ul>').join('');
-  const schema = [medicalWebPage({ title: 'Breast Augmentation Wiki | QuantumHealth', description: 'Encyclopedia of breast augmentation: procedures, implants, recovery, risks and costs.', url: '/wiki/' }), breadcrumbList([{ label: 'Wiki' }])];
-  return { url: '/wiki/', title: 'Breast Augmentation Wiki | QuantumHealth', description: 'Encyclopedia of breast augmentation: procedures, implants, recovery, risks and costs.', schema, breadcrumbs: [{ label: 'Wiki' }], body, bodyClass: 'wiki-index' };
+  const schema = [medicalWebPage({ title: 'Breast Augmentation Wiki | Breast Enlargement Guide', description: 'Encyclopedia of breast augmentation: procedures, implants, recovery, risks and costs.', url: '/wiki/' }), breadcrumbList([{ label: 'Wiki' }])];
+  return { url: '/wiki/', title: 'Breast Augmentation Wiki | Breast Enlargement Guide', description: 'Encyclopedia of breast augmentation: procedures, implants, recovery, risks and costs.', schema, breadcrumbs: [{ label: 'Wiki' }], body, bodyClass: 'wiki-index' };
 }
 
 function buildGlossary() {
   const { terms } = require('./glossary');
   const body = '<h1>Glossary of Breast Augmentation Terms</h1><p class="lead">Definitions of common medical terms used throughout this site.</p><dl>' +
     terms.map((t) => '<div id="' + t.slug + '"><dt>' + t.term + '</dt><dd>' + t.def + '</dd></div>').join('') + '</dl>';
-  const schema = [medicalWebPage({ title: 'Glossary | QuantumHealth', description: 'Breast augmentation glossary of terms with plain-language definitions.', url: '/wiki/glossary/' }), breadcrumbList([{ label: 'Wiki', href: '/wiki/' }, { label: 'Glossary' }])];
-  return { url: '/wiki/glossary/', title: 'Breast Augmentation Glossary | QuantumHealth', description: 'Plain-language glossary of breast augmentation terms.', schema, breadcrumbs: [{ label: 'Wiki', href: '/wiki/' }, { label: 'Glossary' }], body };
+  const schema = [medicalWebPage({ title: 'Glossary | Breast Enlargement Guide', description: 'Breast augmentation glossary of terms with plain-language definitions.', url: '/wiki/glossary/' }), breadcrumbList([{ label: 'Wiki', href: '/wiki/' }, { label: 'Glossary' }])];
+  return { url: '/wiki/glossary/', title: 'Breast Augmentation Glossary | Breast Enlargement Guide', description: 'Plain-language glossary of breast augmentation terms.', schema, breadcrumbs: [{ label: 'Wiki', href: '/wiki/' }, { label: 'Glossary' }], body };
 }
 
 function buildHome() {

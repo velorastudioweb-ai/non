@@ -1,7 +1,7 @@
 'use strict';
 
 /* =============================================================================
-   Site content â€” Breast Enlargement Guide (nonsurgicalbreastenlargement.in)
+   Site content — Breast Enlargement Guide (nonsurgicalbreastenlargement.in)
    An independent, evidence-based educational resource about breast enlargement:
    non-surgical options, surgical options, the published evidence and safety.
    The site is NOT a clinic and does not provide treatment, consultations or
@@ -36,70 +36,66 @@ const site = {
     // custom URL to enable delivery.
     formEndpoint: ''
   },
-  footerBlurb: 'An independent educational website about breast enlargement â€” what works, what does not, the published evidence behind each option and the safety questions to ask. This is not a clinic, and no treatments are offered or sold here.',
+  footerBlurb: 'An independent educational website about breast enlargement — what works, what does not, the published evidence behind each option and the safety questions to ask. This is not a clinic, and no treatments are offered or sold here.',
   medicalDisclaimerShort: '',
   nav: [
     { label: 'Home', href: '/' },
+    { label: 'Understand', href: '/understanding-breast-enlargement/' },
     { label: 'Non-Surgical', href: '/non-surgical/' },
     { label: 'Surgical', href: '/surgical-breast-enhancement/' },
-    { label: 'Evidence guide', href: '/breast-enlargement-without-surgery/' },
-    { label: 'Research', href: '/breast-enlargement-research/' },
+    { label: 'Safety', href: '/breast-enlargement-safety/' },
+    { label: 'Research', href: '/research/' },
     { label: 'FAQs', href: '/faqs/' },
     { label: 'Insights', href: '/blogs/' },
     { label: 'About', href: '/about-us/' }
   ],
   navSecondary: [
+    { label: 'Evidence guide', href: '/breast-enlargement-without-surgery/' },
     { label: 'Treatment comparison', href: '/breast-enhancement-comparison/' },
-    { label: 'Candidacy & safety', href: '/candidacy-and-safety/' },
-    { label: 'PMC research library', href: '/research/breast-enlargement/' },
-    { label: 'Cochrane reviews', href: '/research/cochrane-breast-enlargement/' },
-    { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
-    { label: 'NHS information', href: '/research/nhs-breast-enlargement/' },
-    { label: 'Cleveland Clinic information', href: '/research/cleveland-clinic-breast-enlargement/' },
-    { label: 'healthdirect information', href: '/research/healthdirect-breast-enlargement/' },
-    { label: 'MedlinePlus information', href: '/research/medlineplus-breast-enlargement/' },
-    { label: 'Wikipedia information', href: '/research/wikipedia-breast-enlargement/' },
-    { label: 'Wikipedia breast augmentation', href: '/research/wikipedia-breast-augmentation/' },
-    { label: 'BAPRAS patient guide', href: '/research/bapras-breast-augmentation/' },
-    { label: 'ASPS information', href: '/research/asps-breast-enlargement/' },
-    { label: 'Contact us', href: '/book-consultation/' }
+    { label: 'Breast anatomy', href: '/breast-anatomy/' },
+    { label: 'Breast implants', href: '/breast-implants/' },
+    { label: 'Implant safety', href: '/breast-implant-safety/' },
+    { label: 'Choosing a surgeon', href: '/choosing-a-surgeon/' },
+    { label: 'PubMed research', href: '/breast-enlargement-research/' },
+    { label: 'Glossary', href: '/glossary/' },
+    { label: 'References', href: '/references/' },
+    { label: 'Contact us', href: '/contact/' }
   ],
   footerExplore: [
+    { label: 'Understanding breast enlargement', href: '/understanding-breast-enlargement/' },
     { label: 'Non-surgical options', href: '/non-surgical/' },
     { label: 'Surgical options', href: '/surgical-breast-enhancement/' },
-    { label: 'Breast augmentation', href: '/surgical/breast-augmentation/' },
+    { label: 'Breast implants', href: '/breast-implants/' },
     { label: 'Fat transfer', href: '/surgical/fat-transfer-breast-augmentation/' },
     { label: 'Treatment comparison', href: '/breast-enhancement-comparison/' },
-    { label: 'What works: evidence guide', href: '/breast-enlargement-without-surgery/' },
-    { label: 'Candidacy & safety', href: '/candidacy-and-safety/' }
+    { label: 'What works: evidence guide', href: '/breast-enlargement-without-surgery/' }
   ],
   footerPatient: [
     { label: 'About this website', href: '/about-us/' },
+    { label: 'Breast anatomy', href: '/breast-anatomy/' },
+    { label: 'Safety & candidacy', href: '/breast-enlargement-safety/' },
+    { label: 'Breast implant safety', href: '/breast-implant-safety/' },
+    { label: 'Choosing a surgeon', href: '/choosing-a-surgeon/' },
     { label: 'Insights & articles', href: '/blogs/' },
-    { label: 'Research (PubMed)', href: '/breast-enlargement-research/' },
+    { label: 'Research & sources', href: '/research/' },
+    { label: 'PubMed research', href: '/breast-enlargement-research/' },
     { label: 'PMC research library', href: '/research/breast-enlargement/' },
     { label: 'Cochrane reviews', href: '/research/cochrane-breast-enlargement/' },
     { label: 'FDA information', href: '/research/fda-breast-enlargement/' },
     { label: 'NHS information', href: '/research/nhs-breast-enlargement/' },
-    { label: 'Cleveland Clinic information', href: '/research/cleveland-clinic-breast-enlargement/' },
-    { label: 'healthdirect information', href: '/research/healthdirect-breast-enlargement/' },
-    { label: 'MedlinePlus information', href: '/research/medlineplus-breast-enlargement/' },
-    { label: 'Wikipedia information', href: '/research/wikipedia-breast-enlargement/' },
-    { label: 'Wikipedia breast augmentation', href: '/research/wikipedia-breast-augmentation/' },
-    { label: 'BAPRAS patient guide', href: '/research/bapras-breast-augmentation/' },
-    { label: 'ASPS information', href: '/research/asps-breast-enlargement/' },
+    { label: 'Glossary', href: '/glossary/' },
+    { label: 'References', href: '/references/' },
     { label: 'FAQs', href: '/faqs/' }
   ],
   footerContact: [
-    { label: 'Contact us', href: '/book-consultation/' },
-    { label: 'Enquiries by email', href: '/book-consultation/' }
+    { label: 'Contact us', href: '/contact/' },
+    { label: 'Enquiries by email', href: 'mailto:enquiries@nonsurgicalbreastenlargement.in' }
   ],
   footerLegal: [
     { label: 'Privacy policy', href: '/privacy-policy/' },
     { label: 'Cookie policy', href: '/cookie-policy/' },
     { label: 'Terms of use', href: '/terms-of-use/' },
-    { label: 'Medical disclaimer', href: '/medical-disclaimer/' },
-    { label: 'Patient photography consent', href: '/patient-photography-consent/' }
+    { label: 'Medical disclaimer', href: '/medical-disclaimer/' }
   ]
 };
 
@@ -108,17 +104,9 @@ const stdCta = (over) => Object.assign({
   type: 'cta',
   eyebrow: 'Your journey starts with information',
   heading: 'Keep exploring the evidence',
-  text: 'Use the guides, comparisons and research libraries on this website to prepare your questions â€” then discuss them with a qualified, registered healthcare professional who can assess you in person.',
-  button: { label: 'Contact us', href: '/book-consultation/' }
+  text: 'Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.',
+  button: { label: 'Contact us', href: '/contact/' }
 }, over || {});
-
-const reviewNotice = {
-  type: 'notice',
-  blush: true,
-  icon: 'evidence',
-  title: 'Clinical review required before publication',
-  text: 'This page is prepared as an editorial draft. Medical content, product claims and any references must be verified by a suitably qualified clinical reviewer and checked against the advertising rules of the relevant jurisdiction before this page is published.'
-};
 
 /* =============================================================================
    HOME
@@ -127,7 +115,7 @@ const home = {
   url: '/', slug: 'home', h1: '', showBanner: false,
   seoTitle: 'Breast Enlargement: Non-Surgical & Surgical Options Explained',
   seoDescription:
-    'Independent, evidence-based education about surgical and non-surgical breast enlargement â€” what works, what does not, the risks, and the questions to ask before any decision.',
+    'Independent, evidence-based education about surgical and non-surgical breast enlargement — what works, what does not, the risks, and the questions to ask before any decision.',
   schema: [
     {
       '@context': 'https://schema.org', '@type': 'WebSite',
@@ -140,7 +128,7 @@ const home = {
       eyebrow: 'Independent Patient Education',
       title: 'A More Informed Approach to <em class="accent-rose">Breast Enhancement</em>',
       uppercase: 'Confidence begins with clear, honest information.',
-      lead: 'Understand surgical and non-surgical breast enlargement options through clear explanations, published evidence and realistic limitations â€” before you speak to any clinic.',
+      lead: 'Understand surgical and non-surgical breast enlargement options through clear explanations, published evidence and realistic limitations — before you speak to any clinic.',
       actions: [
         { label: 'Read the evidence guide', href: '/breast-enlargement-without-surgery/', style: 'primary' },
         { label: 'Explore treatments', href: '#treatments', style: 'outline' }
@@ -162,7 +150,7 @@ const home = {
       eyebrow: 'Our approach',
       heading: 'Clear information. Honest limits. No promotion.',
       body: '<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p>' +
-        '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach â€” so you can make decisions grounded in accurate information rather than promotion.</p>' +
+        '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p>' +
         '<p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>',
       slot: 'Clinic / consultation environment',
       link: { label: 'Read about this website', href: '/about-us/' },
@@ -189,8 +177,8 @@ const home = {
       heading: 'Explore your options by category',
       lead: 'Two broad pathways, each with different intended outcomes, evidence and risks.',
       items: [
-        { title: 'Non-surgical options', kicker: 'Injectables Â· regenerative Â· skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', slot: 'Non-surgical treatment imagery' },
-        { title: 'Surgical options', kicker: 'Implants Â· autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', slot: 'Surgical consultation imagery' }
+        { title: 'Non-surgical options', kicker: 'Injectables · regenerative · skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', slot: 'Non-surgical treatment imagery' },
+        { title: 'Surgical options', kicker: 'Implants · autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', slot: 'Surgical consultation imagery' }
       ]
     },
     {
@@ -198,7 +186,7 @@ const home = {
       blush: false,
       icon: 'info',
       title: 'An important clinical distinction',
-      text: 'Injectable fillers, threads, PRP and biostimulators should not be presented as interchangeable alternatives to breast augmentation surgery. Their evidence, indications and ability to increase breast volume differ substantially, and a procedure being described as â€œnon-surgicalâ€ does not by itself make it safe.'
+      text: 'Injectable fillers, threads, PRP and biostimulators should not be presented as interchangeable alternatives to breast augmentation surgery. Their evidence, indications and ability to increase breast volume differ substantially, and a procedure being described as “non-surgical” does not by itself make it safe.'
     },
     {
       type: 'cards',
@@ -208,11 +196,11 @@ const home = {
       eyebrow: 'Treatments',
       heading: 'A closer look at individual options',
       items: [
-        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications â€” and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/' },
+        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/' },
         { title: 'PRP', text: 'How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.', href: '/non-surgical/prp/' },
         { title: 'Thread-based procedures', text: 'PDO and mono threads: intended mechanical effects, limitations and product-specific indications.', href: '/non-surgical/breast-threads/' },
-        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products â€” approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/' },
-        { title: 'Silicone gel implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/surgical/silicone-breast-implants/' },
+        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/' },
+        { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/' },
         { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/' },
         { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/' },
         { title: 'Compare all options', text: 'A side-by-side view of intended effect, primary consideration and important limitation.', href: '/breast-enhancement-comparison/' }
@@ -247,22 +235,19 @@ const home = {
     {
       type: 'cards',
       alt: true,
-      cols: 3,
-      eyebrow: 'Research libraries',
+      cols: 4,
+      eyebrow: 'Research & sources',
       heading: 'Go straight to the published sources',
-      lead: 'Eleven reference libraries index the primary sources behind this website â€” regulator guidance, public-health patient information, government health advice, professional-society patient information, consumer health information, academic patient education, open-encyclopedia captures and the complete PubMed Central record set and Cochrane systematic reviews.',
+      lead: 'This website is built from primary sources. Start at the research hub, or go directly to a topic library — every page links to the original regulator guidance, public-health information, systematic reviews or peer-reviewed record behind it.',
       items: [
-        { title: 'PMC research library', text: 'Every PubMed Central record for â€œbreast enlargementâ€ â€” searchable, with abstracts and links to the original articles.', href: '/research/breast-enlargement/', kicker: 'PubMed Central' },
+        { title: 'Research hub', text: 'An index of every research and reference library on this website, with a short explanation of what each one contains and how to read it.', href: '/research/', kicker: 'Start here' },
+        { title: 'PubMed research', text: 'Peer-reviewed breast enlargement studies indexed in PubMed — fat transfer, implants, external expansion, fillers and global trends, grouped by topic with a link to every record.', href: '/breast-enlargement-research/', kicker: 'PubMed' },
+        { title: 'PMC research library', text: 'Every PubMed Central record for “breast enlargement” — searchable, with abstracts and links to the original articles.', href: '/research/breast-enlargement/', kicker: 'PubMed Central' },
+        { title: 'Cochrane evidence library', text: 'Every Cochrane systematic review and registered protocol on breast implants, wound drains, implant types and reconstruction, with key findings and evidence gaps.', href: '/research/cochrane-breast-enlargement/', kicker: 'Cochrane Library' },
         { title: 'FDA information library', text: 'US regulator pages on breast implants, dermal fillers and injectable-silicone warnings, summarised and linked.', href: '/research/fda-breast-enlargement/', kicker: 'U.S. FDA' },
         { title: 'NHS information library', text: 'UK public-health patient information on breast enlargement, costs, complications and choosing a practitioner.', href: '/research/nhs-breast-enlargement/', kicker: 'NHS (UK)' },
-        { title: 'healthdirect library', text: 'Australian Government health advice on breast augmentation â€” preparation, costs, recovery, complications and alternatives.', href: '/research/healthdirect-breast-enlargement/', kicker: 'healthdirect (AU)' },
-        { title: 'Cleveland Clinic library', text: 'Academic patient education on breast augmentation, implant types, fat transfer, recovery and complications, summarised and linked.', href: '/research/cleveland-clinic-breast-enlargement/', kicker: 'Cleveland Clinic' },
-        { title: 'MedlinePlus library', text: 'U.S. National Library of Medicine consumer health information on breast augmentation surgery, risks, recovery and wound care, summarised and linked.', href: '/research/medlineplus-breast-enlargement/', kicker: 'MedlinePlus (NLM)' },
-        { title: 'Wikipedia library', text: 'The Wikipedia article on breast enlargement, captured at a fixed revision: definition, methods, extracted facts and its full reference list.', href: '/research/wikipedia-breast-enlargement/', kicker: 'Wikipedia' },
-        { title: 'Wikipedia breast augmentation', text: 'The long-form Wikipedia article on breast augmentation, captured at a fixed revision: implant types, incisions and placements, complication rates, fat-graft technique, extracted facts and key references.', href: '/research/wikipedia-breast-augmentation/', kicker: 'Wikipedia' },
-        { title: 'BAPRAS patient guide', text: 'The UK professional association patient guide to breast augmentation: consultation and cooling-off, implant techniques, complication rates, long-term consequences and the implant registry.', href: '/research/bapras-breast-augmentation/', kicker: 'BAPRAS (UK)' },
         { title: 'ASPS library', text: 'American Society of Plastic Surgeons patient information on breast augmentation: candidacy, cost, implant types, safety, recovery, results and choosing a surgeon.', href: '/research/asps-breast-enlargement/', kicker: 'ASPS (US)' },
-        { title: 'Cochrane evidence library', text: 'Every Cochrane systematic review and registered protocol on breast implants, wound drains, implant types and reconstruction, with key findings, evidence gaps and links to the original records.', href: '/research/cochrane-breast-enlargement/', kicker: 'Cochrane Library' }
+        { title: 'All references', text: 'A single consolidated bibliography of every source cited across this website, grouped by publisher and linked to the original.', href: '/references/', kicker: 'Bibliography' }
       ]
     },
     stdCta()
@@ -282,7 +267,7 @@ function treatmentPage(o) {
     bannerEyebrow: o.bannerEyebrow, bannerLead: o.bannerLead,
     breadcrumb: o.breadcrumb,
     schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: o.h1, url: site.url + o.url, isPartOf: { '@type': 'WebSite', name: site.name, url: site.url + '/' } }],
-    blocks: [].concat(o.blocks, [stdCta({ heading: o.ctaHeading || "Discuss whether this option may be appropriate for you" }), reviewNotice])
+    blocks: [].concat(o.blocks, [stdCta({ heading: o.ctaHeading || "Discuss whether this option may be appropriate for you" })])
   };
 }
 
@@ -293,14 +278,14 @@ pages.push({
   url: '/non-surgical/', slug: 'non-surgical',
   h1: 'Non-Surgical Breast Enhancement: Options, Evidence & Safety',
   seoTitle: 'Non-Surgical Breast Enhancement: Options & Safety | Breast Enlargement Guide',
-  seoDescription: 'Explore non-surgical breast enhancement options â€” dermal fillers, PRP, threads, Sculptra and biostimulators â€” with their evidence, limitations and safety considerations.',
+  seoDescription: 'Explore non-surgical breast enhancement options — dermal fillers, PRP, threads, Sculptra and biostimulators — with their evidence, limitations and safety considerations.',
   bannerEyebrow: NS,
   bannerLead: 'Non-surgical treatments differ widely in their intended effects, evidence and regulatory status. This section explains those differences clearly, without advertising claims.',
   breadcrumb: [{ label: 'Non-surgical' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Non-Surgical Breast Enhancement', url: site.url + '/non-surgical/' }],
   blocks: [
     { type: 'prose', html:
-      '<p>Treatments marketed as â€œnon-surgical breast enlargementâ€ are not a single category. They include injectable fillers, platelet-rich plasma (PRP), thread-based procedures and collagen-stimulating biostimulators. Each has a different intended effect, a different evidence base and a different regulatory position.</p>' +
+      '<p>Treatments marketed as “non-surgical breast enlargement” are not a single category. They include injectable fillers, platelet-rich plasma (PRP), thread-based procedures and collagen-stimulating biostimulators. Each has a different intended effect, a different evidence base and a different regulatory position.</p>' +
       '<p>Crucially, being non-surgical does not automatically mean a treatment is safe, and not every treatment marketed for this purpose has been demonstrated to reliably increase breast volume. This section is written to help you understand those distinctions before any clinical consultation.</p>' },
     { type: 'notice', icon: 'info', title: 'The most important point',
       text: 'Dermal fillers are not approved for breast enlargement, and the FDA advises against using fillers or other injectable fillers to increase breast size because of potentially serious complications. Regenerative and biostimulatory products require careful scrutiny of their evidence and regulatory status before any claim of benefit is accepted.' },
@@ -312,9 +297,9 @@ pages.push({
         { title: 'Mono threads', text: 'Ultra-fine threads that differ in design and intended mechanical effect from cog threads.', href: '/non-surgical/mono-threads/', slot: 'Mono thread imagery' },
         { title: 'Sculptra & PLLA', text: 'Poly-L-lactic acid injectables for certain specified aesthetic indications, subject to product labelling and local authorisation.', href: '/non-surgical/sculptra-plla/', slot: 'PLLA product imagery' },
         { title: 'Biostimulators', text: 'A broad category intended to stimulate a tissue response such as collagen production, for selected indications.', href: '/non-surgical/biostimulators/', slot: 'Biostimulator imagery' },
-        { title: 'Stem cells & regenerative medicine', text: 'The subject of ongoing research. â€œRegenerativeâ€ does not establish that a product is effective or approved.', href: '/non-surgical/regenerative-medicine/', slot: 'Regenerative research imagery' },
+        { title: 'Stem cells & regenerative medicine', text: 'The subject of ongoing research. “Regenerative” does not establish that a product is effective or approved.', href: '/non-surgical/regenerative-medicine/', slot: 'Regenerative research imagery' },
         { title: 'Home care & skin quality', text: 'Supportive skin-quality measures discussed at consultation where appropriate.', href: '/non-surgical/' },
-        { title: 'What works: the evidence verdict', text: 'A scorecard of more than 20 popular methods â€” bras and fat transfer to creams, cups and fillers â€” with the evidence, the risks and the red flags behind each.', href: '/breast-enlargement-without-surgery/', slot: 'Evidence guide imagery' }
+        { title: 'What works: the evidence verdict', text: 'A scorecard of more than 20 popular methods — bras and fat transfer to creams, cups and fillers — with the evidence, the risks and the red flags behind each.', href: '/breast-enlargement-without-surgery/', slot: 'Evidence guide imagery' }
       ]
     },
     { type: 'steps', eyebrow: 'Assessing any non-surgical claim', heading: 'Six questions worth asking',
@@ -341,8 +326,8 @@ pages.push({
     },
     { type: 'faq', id: 'ns', alt: true, eyebrow: 'Questions', heading: 'Non-surgical treatment FAQs',
       items: [
-        { q: 'What is the safest non-surgical way to make breasts look bigger?', a: '<p>A properly fitted bra, padding, clothing choices and posture change the look immediately and carry no medical risk â€” but they change appearance, not breast tissue. For a method-by-method verdict on every popular approach, read the <a href="/breast-enlargement-without-surgery/">evidence guide</a>.</p>' },
-        { q: 'Does â€œregenerativeâ€ mean a treatment is effective?', a: '<p>No. The term describes an area of ongoing research, not proof of effectiveness, approval or suitability for breast enhancement. Products and permitted uses vary by jurisdiction.</p>' },
+        { q: 'What is the safest non-surgical way to make breasts look bigger?', a: '<p>A properly fitted bra, padding, clothing choices and posture change the look immediately and carry no medical risk — but they change appearance, not breast tissue. For a method-by-method verdict on every popular approach, read the <a href="/breast-enlargement-without-surgery/">evidence guide</a>.</p>' },
+        { q: 'Does “regenerative” mean a treatment is effective?', a: '<p>No. The term describes an area of ongoing research, not proof of effectiveness, approval or suitability for breast enhancement. Products and permitted uses vary by jurisdiction.</p>' },
         { q: 'Where can I find answers about fillers, PRP, fat transfer and surgery?', a: '<p>Each treatment page on this website answers its own specific questions, and the most common cross-cutting questions are consolidated on the <a href="/faqs/">main FAQs page</a>, with links into the detailed guides.</p>' }
       ]
     },
@@ -356,7 +341,7 @@ pages.push(treatmentPage({
   h1: 'Breast Dermal Fillers: Safety, Evidence & Alternatives',
   seoTitle: 'Breast Fillers: Safety, Evidence & Alternatives | Breast Enlargement Guide',
   seoDescription: 'An evidence-aware overview of injectable dermal fillers and breast enhancement: approved uses, serious safety concerns, FDA advice and evidence-based alternatives.',
-  bannerEyebrow: 'Non-surgical Â· Injectable fillers',
+  bannerEyebrow: 'Non-surgical · Injectable fillers',
   bannerLead: 'Dermal fillers are injectable products used for certain approved aesthetic indications. Their use for breast enlargement is a different matter and is not established, approved or routine.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'Dermal fillers' }],
   blocks: [
@@ -389,13 +374,13 @@ pages.push(treatmentPage({
   h1: 'PRP and Breast Enhancement: What the Evidence Says',
   seoTitle: 'PRP and Breast Enhancement: Evidence Explained | Breast Enlargement Guide',
   seoDescription: 'How platelet-rich plasma (PRP) is prepared, what it is intended to do, and why evidence and regulatory requirements matter for any breast-enhancement claim.',
-  bannerEyebrow: 'Non-surgical Â· Regenerative',
+  bannerEyebrow: 'Non-surgical · Regenerative',
   bannerLead: 'Platelet-rich plasma is prepared from your own blood to concentrate platelets. Its effects depend entirely on the specific indication and the evidence available for it.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'PRP' }],
   blocks: [
     { type: 'prose', html:
       '<h2 class="h3">How PRP is prepared</h2>' +
-      '<p>PRP is prepared by taking a sample of the patientâ€™s own blood and processing it to concentrate the platelets. The resulting preparation is intended for specific purposes; those purposes are not interchangeable, and a preparation intended for one indication is not automatically appropriate for another.</p>' +
+      '<p>PRP is prepared by taking a sample of the patient’s own blood and processing it to concentrate the platelets. The resulting preparation is intended for specific purposes; those purposes are not interchangeable, and a preparation intended for one indication is not automatically appropriate for another.</p>' +
       '<h2 class="h3">PRP and breast enhancement</h2>' +
       '<p>Claims about PRP and breast enhancement should be assessed against appropriate clinical evidence for the precise procedure being offered. The evidence for a particular use should be established before that use is described as effective.</p>' },
     { type: 'icon-grid', eyebrow: 'What this page should explain', heading: 'Key points', cols: 3,
@@ -420,7 +405,7 @@ pages.push(treatmentPage({
   h1: 'Breast Thread Procedures: Uses & Limitations',
   seoTitle: 'Breast Thread Procedures: Uses & Limitations | Breast Enlargement Guide',
   seoDescription: 'PDO cog threads and thread-based aesthetic procedures: intended effects, product-specific indications, limitations and potential risks.',
-  bannerEyebrow: 'Non-surgical Â· PDO threads',
+  bannerEyebrow: 'Non-surgical · PDO threads',
   bannerLead: 'Thread procedures use medical sutures placed in tissue for specific intended effects. Different thread materials, designs and placement techniques have different indications and limitations.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'PDO threads' }],
   blocks: [
@@ -450,7 +435,7 @@ pages.push(treatmentPage({
   h1: 'Mono Threads: Design, Effect & Limitations',
   seoTitle: 'Mono Threads: Uses and Limitations | Breast Enlargement Guide',
   seoDescription: 'What mono threads are, how they differ from cog threads in design and intended mechanical effect, and why breast-enlargement claims require evidence.',
-  bannerEyebrow: 'Non-surgical Â· Mono threads',
+  bannerEyebrow: 'Non-surgical · Mono threads',
   bannerLead: 'Mono threads differ from cog threads in design and intended mechanical effect. These differences matter when assessing suitability and realistic outcomes.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'Mono threads' }],
   blocks: [
@@ -471,16 +456,16 @@ pages.push(treatmentPage({
   url: '/non-surgical/regenerative-medicine/', slug: 'regenerative-medicine',
   h1: 'Stem Cells & Regenerative Medicine: An Honest Overview',
   seoTitle: 'Stem Cells and Regenerative Medicine | Breast Enlargement Guide',
-  seoDescription: 'Stem cells and regenerative products are the subject of ongoing research. What â€œregenerativeâ€ does and does not establish, and why regulatory status matters.',
-  bannerEyebrow: 'Non-surgical Â· Regenerative',
-  bannerLead: 'Stem cells and other regenerative products are the subject of ongoing research. The term â€œregenerativeâ€ does not establish that a product is effective, approved or appropriate for breast enhancement.',
+  seoDescription: 'Stem cells and regenerative products are the subject of ongoing research. What “regenerative” does and does not establish, and why regulatory status matters.',
+  bannerEyebrow: 'Non-surgical · Regenerative',
+  bannerLead: 'Stem cells and other regenerative products are the subject of ongoing research. The term “regenerative” does not establish that a product is effective, approved or appropriate for breast enhancement.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'Regenerative medicine' }],
   blocks: [
     { type: 'notice', icon: 'safety', title: 'Research versus established care',
       text: 'Many marketed regenerative uses remain unapproved or investigational. Products marketed as regenerative can carry risks including infection and other serious complications, and permitted uses vary by jurisdiction.' },
     { type: 'icon-grid', eyebrow: 'Content sections', heading: 'What to understand', cols: 4,
       items: [
-        { icon: 'evidence', title: 'Meaning of â€œregenerativeâ€', text: 'What the term does and does not establish about a product.' },
+        { icon: 'evidence', title: 'Meaning of “regenerative”', text: 'What the term does and does not establish about a product.' },
         { icon: 'scale', title: 'Research vs. care', text: 'The difference between an investigational approach and established clinical practice.' },
         { icon: 'safety', title: 'Sourcing & regulation', text: 'Product sourcing, processing, regulatory status, uncertainties and informed consent.' },
         { icon: 'info', title: 'Alternatives & referral', text: 'Evidence-based alternatives and specialist referral where appropriate.' }
@@ -495,7 +480,7 @@ pages.push(treatmentPage({
   h1: 'Sculptra and PLLA: Uses, Safety & Evidence',
   seoTitle: 'Sculptra and PLLA: Uses, Safety & Evidence | Breast Enlargement Guide',
   seoDescription: 'Sculptra and poly-L-lactic acid injectables: intended approved uses, the difference between collagen-stimulation claims and breast augmentation, and key safety points.',
-  bannerEyebrow: 'Non-surgical Â· PLLA',
+  bannerEyebrow: 'Non-surgical · PLLA',
   bannerLead: 'Sculptra is a poly-L-lactic acid-based injectable used for certain specified aesthetic indications, subject to product labelling and local authorisation. It should not be described as a proven breast-enlargement product.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'Sculptra / PLLA' }],
   blocks: [
@@ -510,7 +495,7 @@ pages.push(treatmentPage({
       ]
     }
   ],
-  ctaHeading: 'Ask about Sculptraâ€™s approved uses'
+  ctaHeading: 'Ask about Sculptra’s approved uses'
 }));
 
 pages.push(treatmentPage({
@@ -518,7 +503,7 @@ pages.push(treatmentPage({
   h1: 'Biostimulators: Collagen-Stimulating Treatments Explained',
   seoTitle: 'Biostimulators: Collagen-Stimulating Treatments | Breast Enlargement Guide',
   seoDescription: 'Biostimulators are a broad category intended to stimulate a tissue response for selected indications. Their ingredients, authorised uses and safety profiles vary.',
-  bannerEyebrow: 'Non-surgical Â· Biostimulators',
+  bannerEyebrow: 'Non-surgical · Biostimulators',
   bannerLead: 'Biostimulators are a broad category of products intended to stimulate a tissue response, such as collagen production, for selected indications. Their ingredients, mechanisms, authorised uses and safety profiles vary considerably.',
   breadcrumb: [{ label: 'Non-surgical', href: '/non-surgical/' }, { label: 'Biostimulators' }],
   blocks: [
@@ -541,19 +526,19 @@ pages.push({
   url: '/surgical-breast-enhancement/', slug: 'surgical-breast-enhancement',
   h1: 'Surgical Breast Enhancement: Implants & Fat Transfer',
   seoTitle: 'Breast Augmentation: Implants & Fat Transfer | Breast Enlargement Guide',
-  seoDescription: 'An educational overview of surgical breast enhancement â€” breast augmentation, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.',
+  seoDescription: 'An educational overview of surgical breast enhancement — breast augmentation, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.',
   bannerEyebrow: SG,
   bannerLead: 'Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.',
   breadcrumb: [{ label: 'Surgical' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Surgical Breast Enhancement', url: site.url + '/surgical-breast-enhancement/' }],
   blocks: [
     { type: 'prose', html:
-      '<p>Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patientâ€™s own fat. It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change.</p>' +
-      '<p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individualâ€™s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>' },
+      '<p>Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat. It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change.</p>' +
+      '<p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individual’s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>' },
     { type: 'cards', alt: true, cols: 3, ratio: 'ratio-3-4', eyebrow: 'Options', heading: 'Surgical pathways',
       items: [
         { title: 'Breast augmentation', text: 'A personalised approach to increasing breast volume or altering shape using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', slot: 'Breast augmentation imagery' },
-        { title: 'Silicone gel-filled implants', text: 'Medical devices with an outer shell and a silicone gel filling â€” not the same as injectable silicone.', href: '/surgical/silicone-breast-implants/', slot: 'Implant imagery' },
+        { title: 'Breast implants', text: 'Medical devices with an outer shell and a silicone gel filling — not the same as injectable silicone.', href: '/breast-implants/', slot: 'Implant imagery' },
         { title: 'Fat transfer', text: 'Using your own fat, transferred from a donor area, for a modest and individualised increase in volume.', href: '/surgical/fat-transfer-breast-augmentation/', slot: 'Fat transfer imagery' }
       ]
     },
@@ -581,7 +566,7 @@ pages.push({
       items: [
         { title: 'Clarify your goals and expectations', text: 'What change are you hoping for, and how would you prioritise proportion, size and shape?' },
         { title: 'Share your full medical history', text: 'Including previous surgery, medications, allergies and relevant family history.' },
-        { title: 'Ask about credentials', text: 'Request the surgeonâ€™s qualifications, registration and specific breast-procedure experience.' },
+        { title: 'Ask about credentials', text: 'Request the surgeon’s qualifications, registration and specific breast-procedure experience.' },
         { title: 'Ask about the plan and its limits', text: 'Discuss technique, expected limitations, recovery, costs and potential revision.' },
         { title: 'Take time to decide', text: 'Proceed only when you understand the risks, alternatives and aftercare, and feel ready to consent.' }
       ],
@@ -599,12 +584,12 @@ pages.push(treatmentPage({
   h1: 'A Personalised Approach to Breast Augmentation',
   seoTitle: 'Breast Augmentation: Implants & Fat Transfer | Breast Enlargement Guide',
   seoDescription: 'Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.',
-  bannerEyebrow: 'Surgical Â· Breast augmentation',
-  bannerLead: 'Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patientâ€™s own fat.',
+  bannerEyebrow: 'Surgical · Breast augmentation',
+  bannerLead: 'Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast augmentation' }],
   blocks: [
     { type: 'prose', html:
-      '<p>It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change. Treatment planning should account for anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations and the individualâ€™s willingness to accept surgical risks and future follow-up.</p>' },
+      '<p>It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change. Treatment planning should account for anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations and the individual’s willingness to accept surgical risks and future follow-up.</p>' },
     { type: 'icon-grid', eyebrow: 'What patients should understand', heading: 'Before deciding', cols: 3,
       items: [
         { icon: 'scale', title: 'Implant vs. fat transfer', text: 'The difference between implant-based augmentation and fat transfer, and what each can achieve.' },
@@ -616,7 +601,7 @@ pages.push(treatmentPage({
     },
     { type: 'faq', alt: true, id: 'aug', eyebrow: 'Questions', heading: 'Breast augmentation FAQs',
       items: [
-        { q: 'How long does recovery take?', a: '<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinicianâ€™s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>' },
+        { q: 'How long does recovery take?', a: '<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>' },
         { q: 'Are the results permanent?', a: '<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>' },
         { q: 'How do I know which approach is right for me?', a: '<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. This should be determined through assessment by an appropriately qualified clinician.</p>' }
       ]
@@ -624,7 +609,7 @@ pages.push(treatmentPage({
     { type: 'prose', html:
       '<h2 class="h3">Breast augmentation: data from the American Society of Plastic Surgeons</h2>' +
       '<p>The figures and lists below summarise patient information published by the American Society of Plastic Surgeons (ASPS), the largest association of board-certified plastic surgeons in the United States. They are reproduced here for education and context. ASPS guidance reflects United States practice and regulation and does not replace assessment by a suitably qualified clinician in your own jurisdiction.</p>' },
-    { type: 'table', eyebrow: 'ASPS patient information', heading: 'What breast augmentation can â€” and cannot â€” do',
+    { type: 'table', eyebrow: 'ASPS patient information', heading: 'What breast augmentation can — and cannot — do',
       head: ['Goal', 'What ASPS patient information says'],
       rows: [
         ['Increase fullness and projection', 'Breast implants or fat transfer can increase the size and projection of the breasts.'],
@@ -648,7 +633,7 @@ pages.push(treatmentPage({
         ['Saline', 'Sterile salt water; collapses and is absorbed or expelled if the shell leaks; uniform shape and firmness; FDA-approved from age 18.'],
         ['Structured saline', 'Salt water with an internal structure for a more natural feel.'],
         ['Silicone gel', 'Gel feels more like natural breast tissue; does not collapse if it leaks; regular ultrasound or MRI screening is advised; FDA-approved from age 22.'],
-        ['Form-stable (â€œgummy bearâ€)', 'Keeps its shape even if the shell breaks; firmer and thicker; a shaped version gives more bottom projection but can look unusual if it rotates; requires a longer incision.'],
+        ['Form-stable (“gummy bear”)', 'Keeps its shape even if the shell breaks; firmer and thicker; a shaped version gives more bottom projection but can look unusual if it rotates; requires a longer incision.'],
         ['Round', 'Generally a fuller look; higher profiles add more projection; less concern about rotation.'],
         ['Smooth', 'Softest feel and natural movement, but rippling may be felt or seen.'],
         ['Textured', 'Tissue adheres to the surface so it is less likely to move and may reduce capsular contracture, but textured surfaces are where BIA-ALCL occurs most often.']
@@ -682,14 +667,14 @@ pages.push(treatmentPage({
         ['Breast augmentation with implants', '$4,875'],
         ['Breast augmentation with fat grafting', '$5,719']
       ],
-      note: 'ASPS averages cover the surgeonâ€™s fee only and exclude anaesthesia, operating-room facilities, medical tests, post-surgery garments and prescriptions. Most health insurance plans do not cover cosmetic breast augmentation or a later revision.' },
+      note: 'ASPS averages cover the surgeon’s fee only and exclude anaesthesia, operating-room facilities, medical tests, post-surgery garments and prescriptions. Most health insurance plans do not cover cosmetic breast augmentation or a later revision.' },
     { type: 'table', alt: true, eyebrow: 'ASPS 2025 statistics', heading: 'Breast augmentation at a glance',
       head: ['Measure', 'ASPS 2025 data'],
       rows: [
         ['Year-on-year change', 'Breast augmentation rose about 11% in 2025.'],
         ['Rank', 'Second most common cosmetic surgical procedure, behind liposuction.'],
         ['Among women', 'Narrowly the most popular cosmetic procedure, ahead of liposuction.'],
-        ['By age', 'Favourite procedure for ages 36â€“45; gains across ages 26â€“65; the 66+ group grew fastest overall (+24%).'],
+        ['By age', 'Favourite procedure for ages 36–45; gains across ages 26–65; the 66+ group grew fastest overall (+24%).'],
         ['Preference', 'A shift towards smaller, more proportionate implants was noted.'],
         ['Related trends', 'Breast lifts rose about 8% and breast reductions about 7%; 82% of member surgeons reported GLP-1-related consultation requests.']
       ],
@@ -714,65 +699,18 @@ pages.push(treatmentPage({
 }));
 
 pages.push(treatmentPage({
-  url: '/surgical/silicone-breast-implants/', slug: 'silicone-breast-implants',
-  h1: 'Silicone Breast Implants: A Patient Guide',
-  seoTitle: 'Silicone Breast Implants: Patient Guide | Breast Enlargement Guide',
-  seoDescription: 'Silicone gel-filled breast implants: what they are, how implant selection works, long-term monitoring, potential complications and the difference from injectable silicone.',
-  bannerEyebrow: 'Surgical Â· Breast implants',
-  bannerLead: 'Silicone gel-filled breast implants are medical devices with an outer shell and a silicone gel filling. They are different from injectable silicone, which must never be represented as an equivalent or safe substitute for an implant.',
-  breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Silicone implants' }],
-  blocks: [
-    { type: 'notice', icon: 'safety', title: 'Not the same as injectable silicone',
-      text: 'Injectable silicone is a different product and should not be used as a substitute for a breast implant. Injectable silicone used for breast enhancement can cause serious, potentially permanent harm.' },
-    { type: 'prose', html:
-      '<h2 class="h3">How implant selection works</h2>' +
-      '<p>Implant selection depends on individual anatomy, product characteristics, surgical assessment and the patientâ€™s preferences. Patients should receive the relevant product information and understand that breast implants are not lifetime devices.</p>' +
-      '<p>Additional operations may be needed, and complications can include rupture, capsular contracture, infection, changes in sensation and other implant-associated risks.</p>' },
-    { type: 'icon-grid', alt: true, eyebrow: 'Recommended page sections', heading: 'What this guide covers', cols: 4,
-      items: [
-        { icon: 'scale', title: 'Types of implant', text: 'Different implant types and their characteristics.' },
-        { icon: 'shape', title: 'Shape, size & profile', text: 'How shape, size and profile options differ.' },
-        { icon: 'personalised', title: 'Surgical planning', text: 'Planning and placement considerations.' },
-        { icon: 'evidence', title: 'Preoperative assessment', text: 'The assessment carried out before surgery.' },
-        { icon: 'downtime', title: 'Recovery & aftercare', text: 'Recovery and aftercare expectations.' },
-        { icon: 'clock', title: 'Long-term monitoring', text: 'Monitoring and potential revision over time.' },
-        { icon: 'info', title: 'FAQs', text: 'Common questions about implants.' }
-      ]
-    },
-    { type: 'notice', blush: true, icon: 'evidence', title: 'Verify before publishing',
-      text: 'Only implant brands, models and regulatory claims that the clinic can verify should be published. Specific brand names are intentionally omitted here until verified.' },
-    { type: 'notice', icon: 'evidence', title: 'Implant data from the American Society of Plastic Surgeons',
-      text: '<ul>' +
-        '<li>Silicone gel implants feel more like natural breast tissue and do not collapse if the shell leaks; saline implants contain sterile salt water and collapse and are absorbed or expelled if they leak.</li>' +
-        '<li>The FDA approves saline implants from age 18 and silicone implants from age 22.</li>' +
-        '<li>For silicone implants, the FDA recommends screening with MRI or ultrasound five to six years after placement and every two to three years thereafter.</li>' +
-        '<li>Breast implants are not guaranteed to last a lifetime; future surgery may be needed to replace one or both implants.</li>' +
-        '<li>ASPS lists BIA-ALCL and BIA-SCC among the very rare cancers that can occur in the capsule around an implant, and notes that textured implants are where BIA-ALCL occurs most often.</li>' +
-        '<li>Some patients report systemic symptoms (fatigue, â€œbrain fogâ€, muscle or joint pain and rash) that they attribute to implants and which are commonly referred to as breast implant illness (BII).</li>' +
-        '</ul><p><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants">ASPS: Types of breast implants</a> Â· <a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/safety">ASPS: Risks and safety</a></p>' },
-    { type: 'faq', id: 'sil', eyebrow: 'Questions', heading: 'Silicone implant FAQs',
-      items: [
-        { q: 'What is the difference between silicone implants and injectable silicone?', a: '<p>They are entirely different. Injectable silicone is a different product and should not be used as a substitute for a breast implant; it can cause serious, potentially permanent harm.</p>' },
-        { q: 'Do implants last a lifetime?', a: '<p>No. Breast implants are not lifetime devices. Additional operations may be needed and complications can occur, so long-term monitoring is important.</p>' }
-      ]
-    }
-  ],
-  ctaHeading: 'Discuss implant suitability and long-term monitoring'
-}));
-
-pages.push(treatmentPage({
   url: '/surgical/fat-transfer-breast-augmentation/', slug: 'fat-transfer',
   h1: 'Fat Transfer Breast Augmentation: What to Know',
   seoTitle: 'Fat Transfer Breast Augmentation: What to Know | Breast Enlargement Guide',
   seoDescription: 'Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.',
-  bannerEyebrow: 'Surgical Â· Autologous fat transfer',
+  bannerEyebrow: 'Surgical · Autologous fat transfer',
   bannerLead: 'Fat transfer breast augmentation removes fat from a donor area using liposuction, processes it, and transfers selected fat to the breasts. It may suit certain patients seeking a relatively modest increase in volume without implants.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Fat transfer' }],
   blocks: [
     { type: 'prose', html:
-      '<p>The amount of fat that can be transferred safely, and the proportion that remains over time, vary. Some transferred fat may not survive, and more than one procedure may be needed to approach a patientâ€™s goals.</p>' },
+      '<p>The amount of fat that can be transferred safely, and the proportion that remains over time, vary. Some transferred fat may not survive, and more than one procedure may be needed to approach a patient’s goals.</p>' },
     { type: 'notice', icon: 'evidence', title: 'Fat transfer data from the American Society of Plastic Surgeons',
-      text: '<p>ASPS describes fat transfer breast augmentation as using liposuction to remove fat from another part of the body and inject it into the breasts, and notes that it is best suited to patients who want a relatively small increase with a natural result. The ASPS average surgeon fee for breast augmentation with fat grafting is $5,719 (United States, surgeonâ€™s fee only). ASPS also refers to the technique as breast augmentation with fat grafting, and cites research into mega-volume fat transfer with pre-expansion and into techniques intended to double breast size using the patientâ€™s own fat.</p><p><a href="https://www.plasticsurgery.org/cosmetic-procedures/fat-transfer-breast-augmentation">ASPS: Fat transfer breast augmentation</a></p>' },
+      text: '<p>ASPS describes fat transfer breast augmentation as using liposuction to remove fat from another part of the body and inject it into the breasts, and notes that it is best suited to patients who want a relatively small increase with a natural result. The ASPS average surgeon fee for breast augmentation with fat grafting is $5,719 (United States, surgeon’s fee only). ASPS also refers to the technique as breast augmentation with fat grafting, and cites research into mega-volume fat transfer with pre-expansion and into techniques intended to double breast size using the patient’s own fat.</p><p><a href="https://www.plasticsurgery.org/cosmetic-procedures/fat-transfer-breast-augmentation">ASPS: Fat transfer breast augmentation</a></p>' },
     { type: 'icon-grid', eyebrow: 'Topics to cover', heading: 'What to discuss at consultation', cols: 3,
       items: [
         { icon: 'personalised', title: 'Candidacy', text: 'Who may be an appropriate candidate for fat transfer.' },
@@ -796,14 +734,14 @@ pages.push(treatmentPage({
   url: '/surgical/breast-revision/', slug: 'breast-revision',
   h1: 'Breast Revision Surgery: When Implants Need Attention',
   seoTitle: 'Breast Revision Surgery: Implant Exchange, Removal & Repair | Breast Enlargement Guide',
-  seoDescription: 'Breast revision surgery: why implants may need revision â€” capsular contracture, rupture, displacement, asymmetry or a change in preferences â€” and what revision planning involves.',
-  bannerEyebrow: 'Surgical Â· Revision',
-  bannerLead: 'Breast revision surgery is performed when a previous breast operation needs correction, adjustment or reversal â€” for example implant exchange, removal, or repair of capsule-related changes.',
+  seoDescription: 'Breast revision surgery: why implants may need revision — capsular contracture, rupture, displacement, asymmetry or a change in preferences — and what revision planning involves.',
+  bannerEyebrow: 'Surgical · Revision',
+  bannerLead: 'Breast revision surgery is performed when a previous breast operation needs correction, adjustment or reversal — for example implant exchange, removal, or repair of capsule-related changes.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast revision' }],
   blocks: [
     { type: 'prose', html:
       '<p>Breast implants are not lifetime devices. Over time, the capsule of scar tissue that naturally forms around an implant can tighten (capsular contracture), an implant can rupture or change position, or the breasts can change with pregnancy, weight change and ageing. Some people also simply wish to change size. Revision surgery addresses any of these situations.</p>' +
-      '<p>Revision is often more complex than a first operation: scar tissue, stretched skin, thinned breast tissue and previous implant position all shape what can safely be achieved. Planning should therefore be led by a suitably qualified surgeon who will examine you, review any previous operative records and imaging, and discuss realistic options â€” which may include implant exchange, removal with or without replacement, capsulectomy, or combining revision with a breast lift.</p>' },
+      '<p>Revision is often more complex than a first operation: scar tissue, stretched skin, thinned breast tissue and previous implant position all shape what can safely be achieved. Planning should therefore be led by a suitably qualified surgeon who will examine you, review any previous operative records and imaging, and discuss realistic options — which may include implant exchange, removal with or without replacement, capsulectomy, or combining revision with a breast lift.</p>' },
     { type: 'icon-grid', eyebrow: 'Common reasons', heading: 'Why revision surgery is considered', cols: 3,
       items: [
         { icon: 'safety', title: 'Capsular contracture', text: 'Scar tissue tightening around an implant, causing firmness, distortion or discomfort.' },
@@ -819,7 +757,7 @@ pages.push(treatmentPage({
     { type: 'faq', alt: true, id: 'rev', eyebrow: 'Questions', heading: 'Breast revision FAQs',
       items: [
         { q: 'How long do breast implants last?', a: '<p>There is no fixed lifespan. Implants may remain stable for many years, but additional operations are common over a lifetime of implant use. Regular review and prompt assessment of any new change are recommended.</p>' },
-        { q: 'Can implants be removed without replacement?', a: '<p>Yes â€” explantation without replacement is possible. The resulting shape depends on how much natural breast tissue remains and the degree of skin laxity; some people choose to combine removal with a lift.</p>' },
+        { q: 'Can implants be removed without replacement?', a: '<p>Yes — explantation without replacement is possible. The resulting shape depends on how much natural breast tissue remains and the degree of skin laxity; some people choose to combine removal with a lift.</p>' },
         { q: 'Is revision surgery more complex than first-time surgery?', a: '<p>Often, yes. Existing scar tissue, altered anatomy and thinner breast tissue can make revision longer and less predictable. A thorough consultation, including imaging where indicated, is essential before planning.</p>' }
       ]
     }
@@ -832,13 +770,13 @@ pages.push(treatmentPage({
   h1: 'Breast Reduction Surgery: Relief, Proportion and Recovery',
   seoTitle: 'Breast Reduction Surgery: Benefits, Techniques & Recovery | Breast Enlargement Guide',
   seoDescription: 'Breast reduction surgery: how reducing breast volume and weight can relieve physical symptoms, what the procedure involves, scarring, recovery and factors that shape the outcome.',
-  bannerEyebrow: 'Surgical Â· Reduction',
+  bannerEyebrow: 'Surgical · Reduction',
   bannerLead: 'Breast reduction removes skin, fat and glandular tissue to reduce breast size and weight, and repositions the breast into a more proportionate shape.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast reduction' }],
   blocks: [
     { type: 'prose', html:
       '<p>Very large or heavy breasts can cause persistent neck, shoulder and back pain, shoulder-groove marks from bra straps, skin irritation beneath the breasts, and difficulty with physical activity. Breast reduction addresses both the symptoms and the proportions, by removing excess tissue and reshaping the remaining breast.</p>' +
-      '<p>The operation is planned around your anatomy, the degree of reduction desired, blood supply to the nippleâ€“areola complex and your overall health. Scarring is an unavoidable part of the procedure; incisions are placed so that scars fall within the bra line or along the areola border where possible. Because breast reduction is performed to relieve documented physical symptoms, it may in some cases be approached through medical insurance â€” criteria vary and require documentation.</p>' },
+      '<p>The operation is planned around your anatomy, the degree of reduction desired, blood supply to the nipple–areola complex and your overall health. Scarring is an unavoidable part of the procedure; incisions are placed so that scars fall within the bra line or along the areola border where possible. Because breast reduction is performed to relieve documented physical symptoms, it may in some cases be approached through medical insurance — criteria vary and require documentation.</p>' },
     { type: 'icon-grid', alt: true, eyebrow: 'What patients should understand', heading: 'Key considerations', cols: 3,
       items: [
         { icon: 'scale', title: 'Symptom relief', text: 'Reduction commonly relieves back, neck and shoulder strain caused by breast weight.' },
@@ -864,20 +802,20 @@ pages.push(treatmentPage({
   url: '/surgical/breast-lift/', slug: 'breast-lift',
   h1: 'Breast Lift (Mastopexy): Restoring Shape',
   seoTitle: 'Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity | Breast Enlargement Guide',
-  seoDescription: 'Breast lift (mastopexy): what it changes â€” sagging skin, nipple position and breast shape â€” how it differs from augmentation, scarring, longevity and combination options.',
-  bannerEyebrow: 'Surgical Â· Mastopexy',
+  seoDescription: 'Breast lift (mastopexy): what it changes — sagging skin, nipple position and breast shape — how it differs from augmentation, scarring, longevity and combination options.',
+  bannerEyebrow: 'Surgical · Mastopexy',
   bannerLead: 'A breast lift raises and reshapes sagging breasts by removing excess skin and repositioning the breast tissue and nipple. It changes shape, not volume.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast lift' }],
   blocks: [
     { type: 'prose', html:
-      '<p>Sagging (ptosis) develops with ageing, pregnancy, breastfeeding, weight change and gravity. A breast lift addresses it by removing loose skin, reshaping the remaining breast tissue and repositioning the nippleâ€“areola complex higher on the chest. Unlike augmentation, a lift on its own does not add volume â€” the breast is reshaped using the tissue already present.</p>' +
+      '<p>Sagging (ptosis) develops with ageing, pregnancy, breastfeeding, weight change and gravity. A breast lift addresses it by removing loose skin, reshaping the remaining breast tissue and repositioning the nipple–areola complex higher on the chest. Unlike augmentation, a lift on its own does not add volume — the breast is reshaped using the tissue already present.</p>' +
       '<p>The degree of lift required determines the pattern of scars: around the areola alone for mild sagging, plus a vertical line for moderate sagging, or an additional line within the inframammary fold for more significant sagging. Where more fullness is also desired, a lift can be combined with an implant or fat transfer, with the trade-offs of each discussed at consultation.</p>' },
     { type: 'table', eyebrow: 'At a glance', heading: 'Lift compared with augmentation and reduction',
       head: ['Procedure', 'What it changes', 'Volume'],
       rows: [
-        ['<strong>Breast lift (mastopexy)</strong>', 'Shape and position â€” raises sagging tissue and repositions the nipple', 'Unchanged'],
-        ['<strong>Augmentation</strong>', 'Volume and fullness â€” implants or fat transfer', 'Increased'],
-        ['<strong>Reduction</strong>', 'Volume, weight and shape â€” removes tissue', 'Decreased']
+        ['<strong>Breast lift (mastopexy)</strong>', 'Shape and position — raises sagging tissue and repositions the nipple', 'Unchanged'],
+        ['<strong>Augmentation</strong>', 'Volume and fullness — implants or fat transfer', 'Increased'],
+        ['<strong>Reduction</strong>', 'Volume, weight and shape — removes tissue', 'Decreased']
       ]
     },
     { type: 'icon-grid', alt: true, eyebrow: 'Key points', heading: 'What to understand before deciding', cols: 3,
@@ -904,7 +842,7 @@ pages.push(treatmentPage({
   h1: 'Mastectomy and Chest Contouring Surgery',
   seoTitle: 'Mastectomy & Chest Contouring Surgery: Patient Information | Breast Enlargement Guide',
   seoDescription: 'Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.',
-  bannerEyebrow: 'Surgical Â· Chest surgery',
+  bannerEyebrow: 'Surgical · Chest surgery',
   bannerLead: 'Mastectomy removes breast tissue. When performed to create a flatter, more contoured chest, it is often called chest masculinisation or top surgery.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Mastectomy & chest surgery' }],
   blocks: [
@@ -914,7 +852,7 @@ pages.push(treatmentPage({
     { type: 'icon-grid', eyebrow: 'What to discuss', heading: 'Questions for your consultation', cols: 3,
       items: [
         { icon: 'personalised', title: 'Which technique suits you', text: 'The approach depends on tissue volume, skin elasticity and the contour you want.' },
-        { icon: 'shape', title: 'Scars and nipple position', text: 'Where incisions fall and how nippleâ€“areola position and sensation are planned.' },
+        { icon: 'shape', title: 'Scars and nipple position', text: 'Where incisions fall and how nipple–areola position and sensation are planned.' },
         { icon: 'safety', title: 'Risks', text: 'Bleeding, infection, contour irregularity, sensation changes and the possibility of revision.' },
         { icon: 'downtime', title: 'Recovery', text: 'Drain use, compression garments, activity restrictions and follow-up schedule.' },
         { icon: 'evidence', title: 'Eligibility assessment', text: 'Medical and psychological assessment where required, and any eligibility criteria that apply.' },
@@ -922,7 +860,7 @@ pages.push(treatmentPage({
       ]
     },
     { type: 'notice', icon: 'info', title: 'Assessment comes first',
-      text: 'Chest surgery is elective and requires assessment by an appropriately qualified surgeon, including a discussion of risks, alternatives, realistic outcomes and â€” where required â€” eligibility criteria. No outcome can be guaranteed.' },
+      text: 'Chest surgery is elective and requires assessment by an appropriately qualified surgeon, including a discussion of risks, alternatives, realistic outcomes and — where required — eligibility criteria. No outcome can be guaranteed.' },
     { type: 'faq', alt: true, id: 'mast', eyebrow: 'Questions', heading: 'Mastectomy & chest surgery FAQs',
       items: [
         { q: 'What is the difference between mastectomy and breast reduction?', a: '<p>Breast reduction removes a portion of tissue to make the breasts smaller while preserving a feminine breast shape. Mastectomy for chest contouring removes breast tissue to create a flatter, more masculine chest wall, with a different approach to nipple position and scars.</p>' },
@@ -939,7 +877,7 @@ pages.push(treatmentPage({
   h1: 'Breast Filler Removal: Addressing Injected Fillers and Silicone',
   seoTitle: 'Breast Filler Removal: Clearing Injected Fillers & Silicone | Breast Enlargement Guide',
   seoDescription: 'Breast filler removal: why injected fillers and liquid silicone cause complications, how removal is approached, and what to expect regarding imaging, scars and staged treatment.',
-  bannerEyebrow: 'Surgical Â· Corrective',
+  bannerEyebrow: 'Surgical · Corrective',
   bannerLead: 'Injectable fillers and liquid silicone are not approved for breast enlargement. When they cause pain, migration, lumps or infection, removal surgery may be required.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast filler removal' }],
   blocks: [
@@ -972,24 +910,24 @@ pages.push(treatmentPage({
 /* ---------- Evidence guide: breast enlargement without surgery ---------- */
 pages.push({
   url: '/breast-enlargement-without-surgery/', slug: 'evidence-guide',
-  h1: 'Breast Enlargement Without Surgery: What Works and What Doesnâ€™t',
+  h1: 'Breast Enlargement Without Surgery: What Works and What Doesn’t',
   seoTitle: 'Breast Enlargement Without Surgery: What Works | Evidence Guide',
-  seoDescription: 'An evidence-based scorecard of more than 20 popular breast enlargement methods â€” what adds real volume, what only changes appearance, and what to avoid.',
-  bannerEyebrow: 'Evidence guide Â· Scorecard',
-  bannerLead: 'What works, what doesnâ€™t â€” a verdict for every popular method, with the evidence, the risks and the red flags behind it.',
+  seoDescription: 'An evidence-based scorecard of more than 20 popular breast enlargement methods — what adds real volume, what only changes appearance, and what to avoid.',
+  bannerEyebrow: 'Evidence guide · Scorecard',
+  bannerLead: 'What works, what doesn’t — a verdict for every popular method, with the evidence, the risks and the red flags behind it.',
   breadcrumb: [{ label: 'Evidence guide' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enlargement Without Surgery: What Works and What Doesnâ€™t', url: site.url + '/breast-enlargement-without-surgery/' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enlargement Without Surgery: What Works and What Doesn’t', url: site.url + '/breast-enlargement-without-surgery/' }],
   blocks: [
     { type: 'prose', html:
-      '<p>This guide answers one question: which non-surgical ways of enlarging the breasts actually work, and which do not? Each method gets a verdict, the evidence behind it and the risks. It draws on regulator statements and published medical reviews, and it is general education â€” not a recommendation for any individual.</p>' +
-      '<p><strong>The short version:</strong> methods that change how the breasts look â€” a well-fitted bra, padding and styling â€” work immediately and safely. The only approaches shown to add real, lasting volume without an implant are fat-based: fat transfer, with or without an external device worn beforehand. Those give a modest gain and still involve a procedure. Nearly everything else sold to enlarge breasts, including creams, pills, massage and suction cups, has no reliable evidence behind it, and injectable fillers and silicone are actively dangerous.</p>' },
+      '<p>This guide answers one question: which non-surgical ways of enlarging the breasts actually work, and which do not? Each method gets a verdict, the evidence behind it and the risks. It draws on regulator statements and published medical reviews, and it is general education — not a recommendation for any individual.</p>' +
+      '<p><strong>The short version:</strong> methods that change how the breasts look — a well-fitted bra, padding and styling — work immediately and safely. The only approaches shown to add real, lasting volume without an implant are fat-based: fat transfer, with or without an external device worn beforehand. Those give a modest gain and still involve a procedure. Nearly everything else sold to enlarge breasts, including creams, pills, massage and suction cups, has no reliable evidence behind it, and injectable fillers and silicone are actively dangerous.</p>' },
     { type: 'table', eyebrow: 'How to read the verdicts', heading: 'What the five verdicts mean',
       head: ['Verdict', 'Meaning'],
       rows: [
-        ['<strong>WORKS</strong>', 'Delivers what it claims â€” either a visual change (bras, styling) or a measurable, lasting volume gain (fat transfer) â€” with risks that are understood.'],
+        ['<strong>WORKS</strong>', 'Delivers what it claims — either a visual change (bras, styling) or a measurable, lasting volume gain (fat transfer) — with risks that are understood.'],
         ['<strong>PARTLY</strong>', 'Delivers part of the promise, for example a firmer-looking chest or promising but demanding results, but not a simple route to a bigger breast.'],
         ['<strong>UNPROVEN</strong>', 'Plausible or widely used, but good evidence for breast enlargement is missing or mixed.'],
-        ['<strong>DOESNâ€™T WORK</strong>', 'No reliable evidence of lasting enlargement, or the effect is only temporary swelling.'],
+        ['<strong>DOESN’T WORK</strong>', 'No reliable evidence of lasting enlargement, or the effect is only temporary swelling.'],
         ['<strong>AVOID</strong>', 'Not approved for this use and linked to serious harm. The risks outweigh any possible benefit.']
       ]
     },
@@ -1006,42 +944,42 @@ pages.push({
         ['Fat transfer', '<strong>WORKS</strong> (modest)', 'Adds your own fat; a review averaged about 58% retained', 'Roughly one cup; it is a surgical procedure.'],
         ['External expansion plus fat transfer', '<strong>PARTLY</strong>', 'Stretches tissue first so more fat survives', 'Promising, but demanding and mostly developer-led data.'],
         ['PRP or stem-cell (SVF) add-ons', '<strong>UNPROVEN</strong>', 'Claimed to help fat survive', 'Debated; may cut usable volume.'],
-        ['Muscle stimulators (EMS)', '<strong>DOESNâ€™T WORK</strong>', 'Contracts the chest muscle beneath', 'Cannot enlarge breast tissue.'],
-        ['Radiofrequency, ultrasound, laser', '<strong>DOESNâ€™T WORK</strong>', 'Warms skin for tightening', 'Tightening, not volume.'],
-        ['Thread lifts', '<strong>DOESNâ€™T WORK</strong>', 'Repositions tissue', 'Lift, not size.'],
-        ['Creams and lotions', '<strong>DOESNâ€™T WORK</strong>', 'Moisturise the skin surface', 'Cannot grow glandular or fatty tissue.'],
-        ['Herbal pills and teas', '<strong>DOESNâ€™T WORK</strong>', 'Contain plant compounds with hormonal activity', 'No clinical trials; safety concerns.'],
-        ['Foods and diets (soy, flax, milk, papaya)', '<strong>DOESNâ€™T WORK</strong>', 'Nutrition only', 'No effect on breast volume.'],
-        ['Massage', '<strong>DOESNâ€™T WORK</strong>', 'Relaxes and warms the skin', 'No growth.'],
-        ['Suction and vacuum cups', '<strong>DOESNâ€™T WORK</strong>', 'Draws fluid into the tissue', 'Temporary swelling; bruising risk.'],
-        ['Hypnosis, subliminal audio, magnets, patches, acupuncture', '<strong>DOESNâ€™T WORK</strong>', 'No credible mechanism', 'No credible evidence.'],
+        ['Muscle stimulators (EMS)', '<strong>DOESN’T WORK</strong>', 'Contracts the chest muscle beneath', 'Cannot enlarge breast tissue.'],
+        ['Radiofrequency, ultrasound, laser', '<strong>DOESN’T WORK</strong>', 'Warms skin for tightening', 'Tightening, not volume.'],
+        ['Thread lifts', '<strong>DOESN’T WORK</strong>', 'Repositions tissue', 'Lift, not size.'],
+        ['Creams and lotions', '<strong>DOESN’T WORK</strong>', 'Moisturise the skin surface', 'Cannot grow glandular or fatty tissue.'],
+        ['Herbal pills and teas', '<strong>DOESN’T WORK</strong>', 'Contain plant compounds with hormonal activity', 'No clinical trials; safety concerns.'],
+        ['Foods and diets (soy, flax, milk, papaya)', '<strong>DOESN’T WORK</strong>', 'Nutrition only', 'No effect on breast volume.'],
+        ['Massage', '<strong>DOESN’T WORK</strong>', 'Relaxes and warms the skin', 'No growth.'],
+        ['Suction and vacuum cups', '<strong>DOESN’T WORK</strong>', 'Draws fluid into the tissue', 'Temporary swelling; bruising risk.'],
+        ['Hypnosis, subliminal audio, magnets, patches, acupuncture', '<strong>DOESN’T WORK</strong>', 'No credible mechanism', 'No credible evidence.'],
         ['Hyaluronic acid, CaHA or PLLA fillers in the breast', '<strong>AVOID</strong>', 'Inject gel into the breast area', 'FDA recommends against; imaging problems.'],
         ['Liquid silicone, oils and unknown materials', '<strong>AVOID</strong>', 'Inject permanent or unknown material', 'Linked to disfigurement and death.'],
         ['Self-injection and needle-free filler devices', '<strong>AVOID</strong>', 'Unregulated delivery', 'Not approved; serious harm reported.'],
         ['Hormone products without supervision', '<strong>AVOID</strong>', 'Alter hormone levels', 'Not a cosmetic route; real health risks.'],
         ['Implants (surgical, for comparison)', '<strong>WORKS</strong> (surgical)', 'Place a prosthesis through an incision', 'Reliable size, but outside the scope of this guide.']
       ],
-      note: '<strong>The pattern to remember:</strong> methods that work are either honest about being cosmetic â€” they change the look, not the breast â€” or honest about being a procedure â€” they move real tissue, with real risks. Methods that promise growth without either of these are the ones that fail.'
+      note: '<strong>The pattern to remember:</strong> methods that work are either honest about being cosmetic — they change the look, not the breast — or honest about being a procedure — they move real tissue, with real risks. Methods that promise growth without either of these are the ones that fail.'
     },
     { type: 'notice', icon: 'evidence', title: 'How we judged whether a method works',
-      text: 'Four questions were applied to every method: <strong>Does it add measurable volume?</strong> â€” not a feeling of fullness or a better-fitting bra, but more breast. <strong>Does it last?</strong> â€” weeks of swelling is not enlargement. <strong>Is it safe enough for the benefit?</strong> â€” a small gain is not worth a serious risk. <strong>Is the evidence independent and well designed?</strong> â€” who ran the study, who paid for it, and were the results compared with a fair control? Systematic reviews sit at the top of the evidence ladder; manufacturer surveys, patents and testimonials sit at the bottom.'
+      text: 'Four questions were applied to every method: <strong>Does it add measurable volume?</strong> — not a feeling of fullness or a better-fitting bra, but more breast. <strong>Does it last?</strong> — weeks of swelling is not enlargement. <strong>Is it safe enough for the benefit?</strong> — a small gain is not worth a serious risk. <strong>Is the evidence independent and well designed?</strong> — who ran the study, who paid for it, and were the results compared with a fair control? Systematic reviews sit at the top of the evidence ladder; manufacturer surveys, patents and testimonials sit at the bottom.'
     },
     { type: 'prose', alt: true, html:
       '<h2 class="h3">Why most methods fail: how breast tissue actually grows</h2>' +
-      '<p>The breastâ€™s duct system and the fat around it develop mainly in response to hormones, above all oestrogen, during puberty, with further changes in pregnancy and breastfeeding. In adult life, breast volume mostly follows body fat, the hormonal cycle, pregnancy and age. The signal that builds breast tissue is internal and hormonal, and nothing applied to the skin or worn over the chest sends that signal.</p>' +
-      '<p>Only three routes are known to add tissue: hormonal stimulation (which belongs under medical supervision for medical reasons only, not cosmetics), fat transfer (your own fat moved by a qualified surgeon â€” modest and surgical), and implants (surgery, outside this guide). Creams, pills, massage, cups and devices have no established mechanism for adding tissue at all.</p>' +
+      '<p>The breast’s duct system and the fat around it develop mainly in response to hormones, above all oestrogen, during puberty, with further changes in pregnancy and breastfeeding. In adult life, breast volume mostly follows body fat, the hormonal cycle, pregnancy and age. The signal that builds breast tissue is internal and hormonal, and nothing applied to the skin or worn over the chest sends that signal.</p>' +
+      '<p>Only three routes are known to add tissue: hormonal stimulation (which belongs under medical supervision for medical reasons only, not cosmetics), fat transfer (your own fat moved by a qualified surgeon — modest and surgical), and implants (surgery, outside this guide). Creams, pills, massage, cups and devices have no established mechanism for adding tissue at all.</p>' +
       '<h3 class="h4">Why creams and pills cannot do it</h3>' +
-      '<p>To grow breast tissue, a cream or pill would have to deliver a growth signal to deep tissue. The only substances known to do that are hormones, which are drugs with effects throughout the body. A product that truly worked in that way would not be a harmless cosmetic â€” it would be an unregulated hormone treatment. A product that is harmless is, almost by definition, one that does not do the job.</p>' +
+      '<p>To grow breast tissue, a cream or pill would have to deliver a growth signal to deep tissue. The only substances known to do that are hormones, which are drugs with effects throughout the body. A product that truly worked in that way would not be a harmless cosmetic — it would be an unregulated hormone treatment. A product that is harmless is, almost by definition, one that does not do the job.</p>' +
       '<h3 class="h4">A quick test: swelling or growth?</h3>' +
       '<ul>' +
       '<li>If fullness fades within hours or days, it was fluid, swelling or a hormonal cycle effect, not growth.</li>' +
       '<li>If it appears and disappears with your cycle, it is a normal cyclical change.</li>' +
-      '<li>If it follows weight gain, the fat changed â€” and that would happen without the product.</li>' +
+      '<li>If it follows weight gain, the fat changed — and that would happen without the product.</li>' +
       '<li>Real, lasting added volume appears only after procedures that place tissue or material in the breast, or after hormonal development.</li>' +
       '</ul>' },
     { type: 'prose', html:
       '<h2 class="h3">Works for appearance: bras, styling and posture</h2>' +
-      '<p>These options do not change the breast itself. They change how it looks and sits, and they do it immediately, cheaply and without medical risk. For many people who ask about enlargement, they are the most effective and least regrettable place to start. Fitting professionals often report that many people wear a band that is too loose and a cup that is too small â€” a bra that fits properly lifts and supports the breast, which projects the chest forward and changes the shape and apparent size more than any pill or cream.</p>' },
+      '<p>These options do not change the breast itself. They change how it looks and sits, and they do it immediately, cheaply and without medical risk. For many people who ask about enlargement, they are the most effective and least regrettable place to start. Fitting professionals often report that many people wear a band that is too loose and a cup that is too small — a bra that fits properly lifts and supports the breast, which projects the chest forward and changes the shape and apparent size more than any pill or cream.</p>' },
     { type: 'table', alt: true, eyebrow: 'Bra styles', heading: 'Styles and what they do',
       head: ['Style', 'Effect', 'Best for'],
       rows: [
@@ -1052,78 +990,78 @@ pages.push({
         ['Adhesive or stick-on', 'Lifts and shapes without straps or a band', 'Backless and strapless outfits; may irritate sensitive skin'],
         ['Silicone or foam inserts', 'Adds volume inside a bra or swimwear', 'Asymmetry or extra fullness; keep clean and dry']
       ],
-      note: 'Necklines such as boat, sweetheart and wrap styles draw the eye across the chest. Ruching, gathers, pleats, prints and layering add visual volume at the bust line. Rounded shoulders and a stooped upper back hide the chest â€” drawing the shoulders gently back and down gives an immediate difference in how the chest looks.'
+      note: 'Necklines such as boat, sweetheart and wrap styles draw the eye across the chest. Ruching, gathers, pleats, prints and layering add visual volume at the bust line. Rounded shoulders and a stooped upper back hide the chest — drawing the shoulders gently back and down gives an immediate difference in how the chest looks.'
     },
     { type: 'prose', html:
       '<h2 class="h3">Partly works: strength training and weight</h2>' +
       '<p>The breast is made of glandular tissue, fat and connective tissue, with skin around it. There is no muscle inside the breast. The pectoral muscles lie underneath, so chest exercises build the platform the breast sits on, not the breast. Training can firm and broaden the chest wall, improve posture and shoulder support, and make the breast sit slightly higher and fuller in clothes. It cannot enlarge glandular or fatty breast tissue, reverse sagging caused by stretched skin and ligaments, or target fat gain or loss in the breasts.</p>' +
-      '<p>Because breasts contain a lot of fat, gaining weight often increases size â€” but you cannot choose where weight is gained, and gaining weight purely for this goal carries its own health trade-offs, so it is not a sensible strategy. The reverse also holds: fat loss from heavy training or dieting can reduce breast size, and rapid weight change can leave skin looser.</p>' },
+      '<p>Because breasts contain a lot of fat, gaining weight often increases size — but you cannot choose where weight is gained, and gaining weight purely for this goal carries its own health trade-offs, so it is not a sensible strategy. The reverse also holds: fat loss from heavy training or dieting can reduce breast size, and rapid weight change can leave skin looser.</p>' },
     { type: 'table', alt: true, eyebrow: 'Chest routine', heading: 'Suggested exercises if you train',
       head: ['Exercise', 'Suggested volume', 'Notes'],
       rows: [
-        ['Incline push-ups (hands on a bench or table)', '3 sets of 8â€“12', 'Lower the incline as you get stronger.'],
-        ['Dumbbell chest press', '3 sets of 8â€“12', 'Choose a weight that makes the last two reps challenging.'],
-        ['Dumbbell chest fly', '2 sets of 10â€“12', 'Light weights, elbows slightly bent.'],
-        ['Seated or bent-over row', '3 sets of 10â€“12', 'Balances the chest work and supports posture.']
+        ['Incline push-ups (hands on a bench or table)', '3 sets of 8–12', 'Lower the incline as you get stronger.'],
+        ['Dumbbell chest press', '3 sets of 8–12', 'Choose a weight that makes the last two reps challenging.'],
+        ['Dumbbell chest fly', '2 sets of 10–12', 'Light weights, elbows slightly bent.'],
+        ['Seated or bent-over row', '3 sets of 10–12', 'Balances the chest work and supports posture.']
       ],
       note: 'Train two to three non-consecutive days a week and warm up first. If you have a shoulder, wrist or heart condition, or are new to exercise, ask a doctor or qualified trainer first.'
     },
     { type: 'prose', html:
       '<h2 class="h3">Works modestly: fat transfer</h2>' +
-      '<p>Fat transfer (also called lipofilling or autologous fat grafting) removes fat from another body area by liposuction, processes it, and injects it into the breast in small amounts. It leaves no implant. It is often marketed as non-surgical, but because it involves liposuction and, usually, sedation or anaesthesia, it is better described as minimally invasive surgery. It is the best-supported route to real, lasting volume without an implant â€” but the gain is modest and unpredictable, complications are not rare, and a surgeon who quotes a range rather than a guarantee is giving you honest information.</p>' },
+      '<p>Fat transfer (also called lipofilling or autologous fat grafting) removes fat from another body area by liposuction, processes it, and injects it into the breast in small amounts. It leaves no implant. It is often marketed as non-surgical, but because it involves liposuction and, usually, sedation or anaesthesia, it is better described as minimally invasive surgery. It is the best-supported route to real, lasting volume without an implant — but the gain is modest and unpredictable, complications are not rare, and a surgeon who quotes a range rather than a guarantee is giving you honest information.</p>' },
     { type: 'table', alt: true, eyebrow: 'What the evidence shows', heading: 'Fat transfer: the published figures',
       head: ['Measure', 'What reviews report'],
       rows: [
-        ['Average fat injected', 'About 300 mL per breast (range 134â€“610 mL) in a systematic review of 35 studies including 3,757 women'],
-        ['Average volume retained', 'About 58% (range 44â€“83%); another review reported 39% to 76%'],
+        ['Average fat injected', 'About 300 mL per breast (range 134–610 mL) in a systematic review of 35 studies including 3,757 women'],
+        ['Average volume retained', 'About 58% (range 44–83%); another review reported 39% to 76%'],
         ['Overall complication rate', '27.8% of cases; fat necrosis made up 43.7% of all complications'],
         ['Imaging changes', 'Fat necrosis in 9.4% and calcification in 1.2% of cases'],
         ['Patient satisfaction', 'Reported as high despite incomplete retention']
       ],
-      note: 'If about 300 mL is injected and about 58% survives, the gain is around 175 mL â€” by the common rule of thumb that one cup is roughly 150â€“200 mL, about one cup size. Results vary with blood supply, surgical technique, recipient tissue, smoking and weight change. Risks include fat necrosis and oil cysts, calcifications visible on mammograms, bruising, swelling, infection, asymmetry, donor-site dents or numbness, and anaesthesia risks.'
+      note: 'If about 300 mL is injected and about 58% survives, the gain is around 175 mL — by the common rule of thumb that one cup is roughly 150–200 mL, about one cup size. Results vary with blood supply, surgical technique, recipient tissue, smoking and weight change. Risks include fat necrosis and oil cysts, calcifications visible on mammograms, bruising, swelling, infection, asymmetry, donor-site dents or numbness, and anaesthesia risks.'
     },
     { type: 'prose', html:
       '<h2 class="h3">Promising but demanding: external expansion with fat transfer</h2>' +
-      '<p>Some clinics use a bra-like vacuum device worn for long periods each day for several weeks before fat grafting. The aim is to stretch the tissue gently and improve its blood supply, so that it accepts more fat and more of it survives. A developer-led study of 81 patients reported an average gain of 233 mL per breast at 12 months, compared with 134 mL in published series of fat transfer without expansion â€” though the comparison was against published series rather than a randomly assigned control group. A 2018 review of 13 studies reported graft survival between 53% and 82% at 6 to 12 months, with high satisfaction. A 2022 review concluded that external expansion improves fat survival but that complications and poor compliance are obvious, and that no standard parameters exist.</p>' +
-      '<p>The burden is heavy: many hours of device wear a day for weeks, skin problems such as swelling, bruising, blisters and dermatitis, and rare but reported serious complications including pneumothorax. The verdict is <strong>promising, not settled</strong> â€” the strongest numbers come from the group that developed the technique.</p>' },
-    { type: 'table', alt: true, eyebrow: 'Add-ons and devices', heading: 'Treatments that are real â€” but do not enlarge the breast',
+      '<p>Some clinics use a bra-like vacuum device worn for long periods each day for several weeks before fat grafting. The aim is to stretch the tissue gently and improve its blood supply, so that it accepts more fat and more of it survives. A developer-led study of 81 patients reported an average gain of 233 mL per breast at 12 months, compared with 134 mL in published series of fat transfer without expansion — though the comparison was against published series rather than a randomly assigned control group. A 2018 review of 13 studies reported graft survival between 53% and 82% at 6 to 12 months, with high satisfaction. A 2022 review concluded that external expansion improves fat survival but that complications and poor compliance are obvious, and that no standard parameters exist.</p>' +
+      '<p>The burden is heavy: many hours of device wear a day for weeks, skin problems such as swelling, bruising, blisters and dermatitis, and rare but reported serious complications including pneumothorax. The verdict is <strong>promising, not settled</strong> — the strongest numbers come from the group that developed the technique.</p>' },
+    { type: 'table', alt: true, eyebrow: 'Add-ons and devices', heading: 'Treatments that are real — but do not enlarge the breast',
       head: ['Treatment', 'What it can do', 'What it is sold as', 'Verdict'],
       rows: [
         ['PRP alone', 'May support tissue repair elsewhere in the body', 'Non-surgical breast enlargement or lift', '<strong>UNPROVEN</strong> for breast volume'],
         ['Stem-cell or SVF enrichment', 'Experimental add-on to fat grafts', 'Higher fat survival and bigger result', '<strong>UNPROVEN</strong>; may reduce usable volume'],
-        ['Muscle stimulators (EMS)', 'Contract the chest muscle', 'Breast lifting and growth', '<strong>DOESNâ€™T WORK</strong> for size'],
-        ['Radiofrequency, ultrasound, laser', 'Mild skin tightening', 'Firmer, bigger breasts', '<strong>DOESNâ€™T WORK</strong> for size'],
-        ['Thread lifts', 'Reposition tissue for a limited time', 'Instant enlargement', '<strong>DOESNâ€™T WORK</strong> for size']
+        ['Muscle stimulators (EMS)', 'Contract the chest muscle', 'Breast lifting and growth', '<strong>DOESN’T WORK</strong> for size'],
+        ['Radiofrequency, ultrasound, laser', 'Mild skin tightening', 'Firmer, bigger breasts', '<strong>DOESN’T WORK</strong> for size'],
+        ['Thread lifts', 'Reposition tissue for a limited time', 'Instant enlargement', '<strong>DOESN’T WORK</strong> for size']
       ]
     },
     { type: 'prose', html:
-      '<h2 class="h3">Methods that donâ€™t work: products you can buy</h2>' +
+      '<h2 class="h3">Methods that don’t work: products you can buy</h2>' +
       '<p><strong>Creams and lotions</strong> act on the skin surface. They can moisturise and make the skin feel smoother, and a smoother surface can look firmer for a while. There is no plausible way for a cream to grow glandular or fatty tissue underneath, and no well-designed clinical trial shows that any cream does so. Beware of creams that contain hormones that are not listed on the label.</p>' +
-      '<p><strong>Herbal pills, teas and capsules</strong> usually contain plant extracts promoted as â€œphytoestrogensâ€. A medical review of bust-enhancing herbal products published in <em>Obstetrics &amp; Gynecology</em> found that no clinical trials had been published, noted that several ingredients â€” including hops, saw palmetto, dong quai, chaste-tree berry, wild yam, fennel, black cohosh and fenugreek â€” are hormonally active, and concluded that their use should be discouraged because of lack of evidence of efficacy and long-term safety concerns. Hormone-active ingredients can cause temporary breast fullness and tenderness, which looks like growth â€” and can also disrupt periods and hormone levels.</p>' +
-      '<p><strong>Foods and diets</strong> (soy, flaxseed, milk, papaya and similar claims) target nothing: the amount of plant compounds in a normal diet does not enlarge the breast. <strong>Massage</strong> may relax and improve skin feel, but forceful massage can bruise and is not advisable. <strong>Suction and vacuum cups</strong> draw fluid and blood into the tissue, causing temporary swelling that fades in hours or days â€” the exact effect people mistake for growth â€” and misuse can cause bruising, broken blood vessels and skin damage. <strong>Hypnosis, subliminal audio, magnets, patches and acupuncture</strong> have no credible mechanism and no credible evidence; some patches even contain hormones or other active ingredients.</p>' +
+      '<p><strong>Herbal pills, teas and capsules</strong> usually contain plant extracts promoted as “phytoestrogens”. A medical review of bust-enhancing herbal products published in <em>Obstetrics &amp; Gynecology</em> found that no clinical trials had been published, noted that several ingredients — including hops, saw palmetto, dong quai, chaste-tree berry, wild yam, fennel, black cohosh and fenugreek — are hormonally active, and concluded that their use should be discouraged because of lack of evidence of efficacy and long-term safety concerns. Hormone-active ingredients can cause temporary breast fullness and tenderness, which looks like growth — and can also disrupt periods and hormone levels.</p>' +
+      '<p><strong>Foods and diets</strong> (soy, flaxseed, milk, papaya and similar claims) target nothing: the amount of plant compounds in a normal diet does not enlarge the breast. <strong>Massage</strong> may relax and improve skin feel, but forceful massage can bruise and is not advisable. <strong>Suction and vacuum cups</strong> draw fluid and blood into the tissue, causing temporary swelling that fades in hours or days — the exact effect people mistake for growth — and misuse can cause bruising, broken blood vessels and skin damage. <strong>Hypnosis, subliminal audio, magnets, patches and acupuncture</strong> have no credible mechanism and no credible evidence; some patches even contain hormones or other active ingredients.</p>' +
       '<p>People believe these methods work because of temporary swelling, cyclical changes across the menstrual cycle, small weight gains during weeks of use, better posture or a better bra, hope and the placebo effect, and the selective sharing of success stories.</p>' },
     { type: 'notice', icon: 'safety', title: 'Methods to avoid: fillers, silicone and unsupervised hormones',
-      text: 'The US FDA recommends against using dermal fillers or any injectable filler to increase breast size â€” these uses are not approved, and the risks of unapproved uses are not known. In a 2017 safety communication, the FDA warned that injectable silicone and products falsely marketed as approved fillers have caused serious injuries and disfigurement when used to enlarge the breasts; large-scale injections can block blood vessels in the lungs, heart or brain, causing stroke or death, and problems can appear years later. At an August 2025 advisory meeting, the FDA raised concerns that filler can migrate, form nodules or granulomas, interfere with mammograms and breast examination, and potentially affect breastfeeding â€” and news coverage reported that no approved method exists for removing dermal fillers. Needle-free devices are not approved for injecting fillers, no filler is approved for over-the-counter use, and people should never inject themselves. Hormone products bought online are not a cosmetic route to larger breasts and carry real risks including blood clots.'
+      text: 'The US FDA recommends against using dermal fillers or any injectable filler to increase breast size — these uses are not approved, and the risks of unapproved uses are not known. In a 2017 safety communication, the FDA warned that injectable silicone and products falsely marketed as approved fillers have caused serious injuries and disfigurement when used to enlarge the breasts; large-scale injections can block blood vessels in the lungs, heart or brain, causing stroke or death, and problems can appear years later. At an August 2025 advisory meeting, the FDA raised concerns that filler can migrate, form nodules or granulomas, interfere with mammograms and breast examination, and potentially affect breastfeeding — and news coverage reported that no approved method exists for removing dermal fillers. Needle-free devices are not approved for injecting fillers, no filler is approved for over-the-counter use, and people should never inject themselves. Hormone products bought online are not a cosmetic route to larger breasts and carry real risks including blood clots.'
     },
     { type: 'table', alt: true, eyebrow: 'Spotting false claims', heading: 'Red flags before you spend money',
       head: ['Claim you will see', 'Why it is a problem', 'A better question'],
       rows: [
-        ['â€œClinically provenâ€', 'Often means an in-house survey or a study on something else', 'Where is the independent, published trial, and what did it measure?'],
-        ['â€œ100% naturalâ€', 'Natural ingredients can still be hormone-active or contaminated', 'What are the ingredients, and has anyone tested their effect on breast size?'],
-        ['â€œDoctor recommendedâ€', 'Which doctor, and were they paid?', 'Can I speak to a registered specialist independent of the seller?'],
-        ['â€œResults in 30 daysâ€', 'Fast changes are usually swelling or weight change', 'How was the result measured, and how long did it last?'],
-        ['â€œFDA registeredâ€', 'In the US, registration of a facility is not the same as approval of a product for a use', 'Is this product approved or cleared for this specific use?'],
-        ['â€œPermanent, no riskâ€', 'No breast procedure is risk-free, and few results are permanent', 'What are the complication rates, and what happens if I am unhappy?'],
+        ['“Clinically proven”', 'Often means an in-house survey or a study on something else', 'Where is the independent, published trial, and what did it measure?'],
+        ['“100% natural”', 'Natural ingredients can still be hormone-active or contaminated', 'What are the ingredients, and has anyone tested their effect on breast size?'],
+        ['“Doctor recommended”', 'Which doctor, and were they paid?', 'Can I speak to a registered specialist independent of the seller?'],
+        ['“Results in 30 days”', 'Fast changes are usually swelling or weight change', 'How was the result measured, and how long did it last?'],
+        ['“FDA registered”', 'In the US, registration of a facility is not the same as approval of a product for a use', 'Is this product approved or cleared for this specific use?'],
+        ['“Permanent, no risk”', 'No breast procedure is risk-free, and few results are permanent', 'What are the complication rates, and what happens if I am unhappy?'],
         ['Before-and-after photos', 'Lighting, posture, timing and bras change the picture', 'Are they standardised, unretouched and from real patients like me?'],
-        ['â€œLimited-time offerâ€', 'Pressure removes time to think', 'Can I take the written plan home and decide later?']
+        ['“Limited-time offer”', 'Pressure removes time to think', 'Can I take the written plan home and decide later?']
       ],
-      note: 'Before you buy: search the product name with â€œwarningâ€, â€œrecallâ€ or â€œadverse eventsâ€; check the regulator in your country for approval status; look for a published, independent study; read the full ingredient list; and ask a pharmacist or doctor about interactions with your medicines or conditions.'
+      note: 'Before you buy: search the product name with “warning”, “recall” or “adverse events”; check the regulator in your country for approval status; look for a published, independent study; read the full ingredient list; and ask a pharmacist or doctor about interactions with your medicines or conditions.'
     },
     { type: 'table', alt: true, eyebrow: 'Compared side by side', heading: 'Effort, risk and reversibility',
       head: ['Method', 'Effort and time', 'Invasiveness', 'Time to a visible change', 'Reversible?', 'Risk level'],
       rows: [
         ['Bras, padding, styling', 'Minutes; ongoing', 'None', 'Immediate', 'Yes', 'None'],
-        ['Strength training', '2â€“3 sessions a week', 'None', 'Weeks to months', 'Yes', 'Low'],
+        ['Strength training', '2–3 sessions a week', 'None', 'Weeks to months', 'Yes', 'Low'],
         ['Fat transfer', 'One or two procedures, then recovery', 'Minimally invasive surgery', 'Swelling first; final result after several months', 'Not fully; lost fat cannot be replaced without repeating', 'Moderate'],
         ['External expansion plus fat transfer', 'Weeks of daily device wear plus a procedure', 'Device plus surgery', 'Months', 'Partly', 'Moderate'],
         ['Creams, massage', 'Daily', 'None', 'No lasting change', 'Yes', 'Low'],
@@ -1139,24 +1077,24 @@ pages.push({
       items: [
         { title: 'Look fuller in clothes', text: 'Start with a professional bra fitting, padded or push-up styles, necklines and posture. Rarely needs a specialist.' },
         { title: 'Get a firmer chest', text: 'Strength training and posture work for 8 to 12 weeks. Consider a specialist if loose skin or marked sagging remains.' },
-        { title: 'A modest, lasting increase', text: 'Learn about fat transfer and ask for retention and complication data â€” if you have stable weight, enough donor fat and realistic goals.' },
+        { title: 'A modest, lasting increase', text: 'Learn about fat transfer and ask for retention and complication data — if you have stable weight, enough donor fat and realistic goals.' },
         { title: 'A large, predictable increase', text: 'Learn about surgical options, and see a qualified plastic surgeon. Compare more than one opinion, in writing, with the full cost and a revision policy.' },
         { title: 'Different-sized breasts', text: 'A padded insert on the smaller side; have any recent change checked. Discuss fat transfer or surgery if the difference bothers you.' },
-        { title: 'Under 18', text: 'Talk with a doctor and a trusted adult â€” breasts keep developing for years. No product, device or procedure is appropriate.' }
+        { title: 'Under 18', text: 'Talk with a doctor and a trusted adult — breasts keep developing for years. No product, device or procedure is appropriate.' }
       ]
     },
     { type: 'table', alt: true, eyebrow: 'Real-life scenarios', heading: 'Common situations, sensible paths',
       head: ['Situation', 'A sensible path', 'What to avoid'],
       rows: [
-        ['â€œI have an event in three months and want to look fuller.â€', 'Get a professional bra fitting; choose a tailored outfit and neckline; consider padded or adhesive options; work on posture.', 'Pills and quick injections: they are too slow, unproven or unsafe.'],
-        ['â€œIâ€™m slim and want a modest, natural increase.â€', 'Ask a qualified surgeon whether you have enough donor fat for fat transfer, and compare it with surgical options.', 'Gaining weight at random, or any filler.'],
-        ['â€œMy breasts changed after pregnancy or weight loss.â€', 'Get re-measured for bras; train the chest and back; ask a surgeon about lift or augmentation if it bothers you.', 'Creams promising to â€œrestoreâ€ volume.'],
-        ['â€œAn ad promises two cup sizes in 30 days.â€', 'Do not buy. Check ingredients and look for independent, published trials.', 'Any product with hormone-like or undeclared ingredients.'],
-        ['â€œA clinic has offered me filler in my breasts.â€', 'Decline, and ask for the product name, its regulatory approval for breast use and what happens if you need removal; get a second opinion from a qualified surgeon.', 'Agreeing the same day, or paying a deposit under pressure.'],
-        ['â€œOne breast is clearly smaller.â€', 'Use a padded insert on the smaller side; have any recent change examined; discuss fat transfer or surgery if it bothers you.', 'Treating one side with creams, cups or devices.']
+        ['“I have an event in three months and want to look fuller.”', 'Get a professional bra fitting; choose a tailored outfit and neckline; consider padded or adhesive options; work on posture.', 'Pills and quick injections: they are too slow, unproven or unsafe.'],
+        ['“I’m slim and want a modest, natural increase.”', 'Ask a qualified surgeon whether you have enough donor fat for fat transfer, and compare it with surgical options.', 'Gaining weight at random, or any filler.'],
+        ['“My breasts changed after pregnancy or weight loss.”', 'Get re-measured for bras; train the chest and back; ask a surgeon about lift or augmentation if it bothers you.', 'Creams promising to “restore” volume.'],
+        ['“An ad promises two cup sizes in 30 days.”', 'Do not buy. Check ingredients and look for independent, published trials.', 'Any product with hormone-like or undeclared ingredients.'],
+        ['“A clinic has offered me filler in my breasts.”', 'Decline, and ask for the product name, its regulatory approval for breast use and what happens if you need removal; get a second opinion from a qualified surgeon.', 'Agreeing the same day, or paying a deposit under pressure.'],
+        ['“One breast is clearly smaller.”', 'Use a padded insert on the smaller side; have any recent change examined; discuss fat transfer or surgery if it bothers you.', 'Treating one side with creams, cups or devices.']
       ]
     },
-    { type: 'table', alt: true, eyebrow: 'Safety', heading: 'Warning signs â€” and what to do',
+    { type: 'table', alt: true, eyebrow: 'Safety', heading: 'Warning signs — and what to do',
       head: ['Sign', 'Why it matters', 'What to do'],
       rows: [
         ['Fever, spreading redness, pus or worsening pain after a treatment', 'Possible infection', 'Contact your clinician the same day.'],
@@ -1184,18 +1122,18 @@ pages.push({
     },
     { type: 'notice', icon: 'evidence', title: 'Sources and further reading',
       text: '<ul>' +
-        '<li>U.S. Food and Drug Administration â€” Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable silicone for body contouring.</li>' +
-        '<li>U.S. Food and Drug Administration â€” Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).</li>' +
-        '<li>Seth I, et al. â€” Autologous fat grafting in breast augmentation: a systematic review highlighting the need for clinical caution (35 studies, 3,757 women).</li>' +
-        '<li>Adipose-derived stem cell enrichment is counter-productive for the majority of women seeking primary aesthetic breast augmentation by autologous fat transfer: a systematic review. <em>J Plast Reconstr Aesthet Surg</em>, 2020;73(11):2025â€“2032.</li>' +
-        '<li>Khouri RK, et al. â€” Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li>' +
+        '<li>U.S. Food and Drug Administration — Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable silicone for body contouring.</li>' +
+        '<li>U.S. Food and Drug Administration — Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).</li>' +
+        '<li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review highlighting the need for clinical caution (35 studies, 3,757 women).</li>' +
+        '<li>Adipose-derived stem cell enrichment is counter-productive for the majority of women seeking primary aesthetic breast augmentation by autologous fat transfer: a systematic review. <em>J Plast Reconstr Aesthet Surg</em>, 2020;73(11):2025–2032.</li>' +
+        '<li>Khouri RK, et al. — Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li>' +
         '<li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li>' +
-        '<li>â€œBust enhancingâ€ herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345â€“9; ConsumerLab.com breast enhancement supplements review (2002).</li>' +
-        '<li>American Society of Plastic Surgeons â€” breast augmentation patient information and the 2025 plastic surgery statistics. <a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation">plasticsurgery.org</a> Â· <a href="https://www.plasticsurgery.org/news/plastic-surgery-statistics">2025 statistics</a></li>' +
+        '<li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li>' +
+        '<li>American Society of Plastic Surgeons — breast augmentation patient information and the 2025 plastic surgery statistics. <a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation">plasticsurgery.org</a> · <a href="https://www.plasticsurgery.org/news/plastic-surgery-statistics">2025 statistics</a></li>' +
         '</ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting.' },
     { type: 'notice', icon: 'evidence', title: 'Browse the complete published literature',
-      text: 'This guide cites selected sources. The <a href="/research/breast-enlargement/">PMC research library</a> indexes every PubMed Central record for the phrase â€œbreast enlargementâ€ â€” with abstracts, citations and direct links to the original articles.' },
-    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only â€” not medical advice',
+      text: 'This guide cites selected sources. The <a href="/research/breast-enlargement/">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles.' },
+    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
       text: 'This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly.' },
     stdCta({ heading: 'Talk through the options with a qualified clinician' })
   ]
@@ -1206,9 +1144,9 @@ pages.push({
   url: '/breast-enhancement-comparison/', slug: 'comparison',
   h1: 'Breast Enhancement Comparison: Intended Effect vs. Claims',
   seoTitle: 'Breast Enhancement Options Compared | Breast Enlargement Guide',
-  seoDescription: 'A side-by-side comparison of breast enhancement options â€” dermal fillers, PRP, threads, Sculptra, stem cells, implants and fat transfer â€” and their key limitations.',
+  seoDescription: 'A side-by-side comparison of breast enhancement options — dermal fillers, PRP, threads, Sculptra, stem cells, implants and fat transfer — and their key limitations.',
   bannerEyebrow: 'Decision guide',
-  bannerLead: 'This comparison helps distinguish a procedureâ€™s intended effect from claims made in advertising. It does not suggest that a non-surgical procedure is automatically safer than surgery.',
+  bannerLead: 'This comparison helps distinguish a procedure’s intended effect from claims made in advertising. It does not suggest that a non-surgical procedure is automatically safer than surgery.',
   breadcrumb: [{ label: 'Treatment comparison' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enhancement Comparison', url: site.url + '/breast-enhancement-comparison/' }],
   blocks: [
@@ -1221,323 +1159,39 @@ pages.push({
         ['Sculptra / biostimulators', 'Product-specific authorised uses', 'Do not assume suitability for breast-volume enhancement'],
         ['Stem-cell approaches', 'Evidence and regulatory status of the exact product', 'Many marketed regenerative uses remain unapproved or investigational'],
         ['Silicone breast implants', 'Surgical increase in breast volume', 'Surgery, implant-related risks and potential future procedures'],
-        ['Fat transfer', 'Uses the patientâ€™s own fat for augmentation', 'Variable fat retention and a limited, individualised result']
+        ['Fat transfer', 'Uses the patient’s own fat for augmentation', 'Variable fat retention and a limited, individualised result']
       ]
     },
     { type: 'prose', alt: true, html:
-      '<p>Choosing between options is not a matter of finding the â€œsafestâ€ label. It requires understanding your goals, your anatomy and health, the evidence for each intended effect, and the risks you are prepared to accept. A consultation with an appropriately qualified clinician is the appropriate way to reach an individualised view.</p>' },
+      '<p>Choosing between options is not a matter of finding the “safest” label. It requires understanding your goals, your anatomy and health, the evidence for each intended effect, and the risks you are prepared to accept. A consultation with an appropriately qualified clinician is the appropriate way to reach an individualised view.</p>' },
     stdCta({ heading: 'Not sure which option to consider?' })
   ]
 });
 
 /* ---------- About ---------- */
 pages.push({
-  url: '/about-us/', slug: 'about',
-  h1: 'About QuantumHealth: Our Philosophy',
-  seoTitle: 'About QuantumHealth by Dr. Vikas Singh',
-  seoDescription: 'QuantumHealth is positioned around informed aesthetic decision-making, personalised treatment planning and clear communication, built on four principles.',
-  bannerEyebrow: 'Our approach',
-  bannerLead: 'A thoughtful, individualised approach to aesthetic medicine â€” grounded in transparency, evidence and respect.',
-  breadcrumb: [{ label: 'About' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About QuantumHealth', url: site.url + '/about-us/' }],
+  url: '/about-us/', slug: 'about-us',
+  h1: 'About this website',
+  seoTitle: 'About this website | Breast Enlargement Guide',
+  seoDescription: 'Independent, evidence-based education about breast enlargement — non-surgical and surgical options, risks, limitations, and sources.',
+  bannerEyebrow: 'Independent education',
+  bannerLead: 'Clear, balanced information about breast enlargement options — what works, what does not, and what to ask.',
+  breadcrumb: [{ label: 'Home', href: '/' }, { label: 'About' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About this website', url: site.url + '/about-us/' }],
   blocks: [
     { type: 'prose', html:
-      '<p>QuantumHealth by Dr. Vikas Singh is positioned around informed aesthetic decision-making, personalised treatment planning and clear communication.</p>' +
-      '<p>We believe patients deserve straightforward answers about the treatments they are considering â€” including what a procedure may achieve, what it cannot achieve, what evidence supports its use, and what risks must be considered.</p>' },
-    { type: 'icon-grid', alt: true, eyebrow: 'Our approach', heading: 'Built on four principles', cols: 4,
-      items: [
-        { icon: 'personalised', title: 'Individuality', text: 'Every consultation starts with the patientâ€™s needs and circumstances.' },
-        { icon: 'evidence', title: 'Transparency', text: 'Treatment limitations, risks and alternatives are discussed openly.' },
-        { icon: 'safety', title: 'Competence', text: 'Discussion stays within the treating clinicianâ€™s qualifications and permitted scope.' },
-        { icon: 'discretion', title: 'Continuity of care', text: 'Pre-treatment assessment, aftercare and follow-up are integral to the patient experience.' }
-      ]
-    },
-    { type: 'split', eyebrow: 'Our aim', heading: 'Well-informed decisions, not promises',
-      body: '<p>Our goal is not to promise a particular appearance. It is to help patients make well-informed decisions about their care â€” understanding the evidence, the limitations and the alternatives before committing to anything.</p>',
-      slot: 'Clinic environment', script: 'Informed, always' },
-    reviewNotice,
-    stdCta({ heading: 'Speak with us about your goals' })
+      '<p>This website is an independent educational resource about breast enlargement. It aims to explain surgical and non-surgical options clearly, describe what the published evidence does — and does not — show, and set realistic expectations about benefits, limitations and risks.</p>' +
+      '<p>There is no clinic, medical practice, doctor, team or physical address promoted here. Content is written to help readers prepare informed questions for a qualified, registered healthcare professional who can assess them in person.</p>' +
+      '<p>Where possible, explanations are grounded in published research, peer-reviewed literature and guidance from recognised regulators and public-health bodies. Marketing claims are not accepted uncritically: terms like "regenerative", "natural" or "permanent" are explained by what evidence supports them.</p>' +
+      '<p>This site does not sell treatments, products or procedures. Links to external sources are provided for verification. For decisions about your health, speak to an appropriately qualified clinician.</p>' },
+    { type: 'cta',
+      eyebrow: 'Learn and compare',
+      heading: 'Start with the evidence',
+      text: 'Use the treatment guides, comparison page and research libraries to prepare questions before any consultation.',
+      button: { label: 'View treatment comparison', href: '/breast-enhancement-comparison/' }
+    }
   ]
 });
-
-pages.push({
-  url: '/about-dr-vikas-singh/', slug: 'dr-vikas-singh',
-  h1: 'Dr. Vikas Singh: Professional Profile',
-  seoTitle: 'Dr. Vikas Singh | Cosmetic Dermatologist & Regenerative Medicine | Breast Enlargement Guide',
-  seoDescription: 'Dr. Vikas Singh â€” cosmetic dermatologist, hair transplant surgeon and longevity & regenerative medicine expert with 20+ years across aesthetics, dermatology and hair restoration.',
-  bannerEyebrow: 'Physician-led aesthetic care',
-  bannerLead: 'Cosmetic dermatology Â· hair transplantation Â· longevity & regenerative medicine',
-  breadcrumb: [{ label: 'About', href: '/about-us/' }, { label: 'Dr. Vikas Singh' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'Physician', name: 'Dr. Vikas Singh', url: site.url + '/about-dr-vikas-singh/', worksFor: { '@type': 'MedicalBusiness', name: site.name } }],
-  blocks: [
-    { type: 'split', eyebrow: 'A global perspective', heading: 'A career built on innovation',
-      body: '<p>Dr. Vikas Singh is a cosmetic dermatologist, hair transplant surgeon and longevity &amp; regenerative medicine expert.</p>' +
-        '<p>For more than 20 years he has worked across the evolving fields of cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine. His stated philosophy moves beyond conventional cosmetic treatment toward a broader idea of <strong>healthspan</strong> â€” bringing <strong>appearance</strong>, <strong>regeneration</strong> and <strong>longevity</strong> into a single conversation about how a patient looks and how they age.</p>',
-      slot: 'Portrait â€” Dr. Vikas Singh',
-      script: 'Understanding first' },
-    { type: 'icon-grid', alt: true, eyebrow: 'At a glance', heading: 'A career built on innovation', cols: 4,
-      items: [
-        { icon: 'clock', title: '20+ years', text: 'Across cosmetology, dermatology, hair transplantation, anti-ageing and regenerative medicine.' },
-        { icon: 'pin', title: 'International presence', text: 'Consulting presence across multiple countries, with patients from around the world.' },
-        { icon: 'sparkle', title: 'Innovation', text: 'Recognised for innovation in aesthetics and regenerative medicine.' },
-        { icon: 'evidence', title: 'Healthspan focus', text: 'Appearance, regeneration and longevity considered together, not separately.' }
-      ]
-    },
-    { type: 'cards', cols: 3, eyebrow: 'Clinical work', heading: 'Areas of practice',
-      lead: 'The thirteen clinical areas listed in Dr. Singhâ€™s professional profile.',
-      items: [
-        { title: 'Advanced cosmetic dermatology', text: 'Skin assessment and advanced cosmetic dermatology treatments.' },
-        { title: 'Clinical & aesthetic dermatology', text: 'Medical and aesthetic dermatology for skin health and appearance.' },
-        { title: 'Hair transplantation & restoration', text: 'Hair transplant surgery and restoration planning.' },
-        { title: 'Micro-Bio FUE & advanced FUE', text: 'Advanced follicular unit extraction techniques.' },
-        { title: 'Regenerative hair therapies', text: 'Regenerative approaches applied to hair and scalp care.' },
-        { title: 'Hair & scalp microbiome', text: 'Microbiome-informed approaches to hair and scalp health.' },
-        { title: 'Anti-ageing & longevity', text: 'Anti-ageing medicine and longevity-focused programmes.' },
-        { title: 'Stem-cell & regenerative medicine', text: 'Regenerative medicine, subject to product evidence and regulation.' },
-        { title: 'Advanced facial rejuvenation', text: 'Facial rejuvenation planning tailored to the individual.' },
-        { title: 'Body contouring & aesthetics', text: 'Non-surgical body contouring and body aesthetics.' },
-        { title: 'Non-surgical breast aesthetics', text: 'Non-surgical breast aesthetic procedures, discussed with clear limits.' },
-        { title: 'Advanced skin rejuvenation', text: 'Skin-quality and rejuvenation treatments.' },
-        { title: 'Longevity & wellness programmes', text: 'Personalised longevity and wellness programmes.' }
-      ]
-    },
-    { type: 'split', reverse: true, eyebrow: 'Recognition', heading: 'Awards, appointments and memberships',
-      body: '<p>The following recognitions and memberships are listed by the clinic. Dates, issuing bodies and documentary evidence are being confirmed, and details may be updated following verification.</p>' +
-        '<p><strong>Awards &amp; recognition:</strong></p><ul>' +
-        '<li>The Times â€” Times Magazine featured doctor</li>' +
-        '<li>Zee Business Best Doctor Award (2019)</li>' +
-        '<li>Aarogya Jyoti Award</li>' +
-        '<li>Arab Health â€” global recognition for innovation in aesthetics</li>' +
-        '<li>Cosmo Prof</li>' +
-        '<li>IMCAS</li></ul>' +
-        '<p><strong>Memberships &amp; training:</strong></p><ul>' +
-        '<li>American Academy of Aesthetic Medicine (USA)</li>' +
-        '<li>International Society of Hair Restoration Surgery</li>' +
-        '<li>American Board of Hair Restoration Surgery</li>' +
-        '<li>Cardiff University dermatology training (Wales, UK)</li></ul>',
-      slot: 'Award & conference photography' },
-    { type: 'notice', blush: true, icon: 'info', title: 'Listed by the clinic, pending verification',
-      text: 'Awards, memberships, fellowship details and registration status above are reproduced as supplied by the clinic and remain subject to documentary verification. Registration status and specific procedure credentials should be confirmed with the relevant professional body before reliance.' },
-    stdCta({ heading: 'Request a consultation with Dr. Singh' })
-  ]
-});
-
-/* ---------- Our doctors panel ---------- */
-pages.push({
-  url: '/our-team/', slug: 'our-team',
-  h1: 'Our Doctors Panel',
-  seoTitle: 'Our Doctors & Specialists | Breast Enlargement Guide',
-  seoDescription: 'The QuantumHealth medical panel â€” plastic surgeons, cosmetic surgeons, cardiologists, maxillofacial surgeons and aesthetic practitioners and their listed credentials.',
-  bannerEyebrow: 'Our team',
-  bannerLead: 'A multi-specialty medical panel â€” plastic and cosmetic surgery, dermatology, cardiology, maxillofacial surgery and aesthetic practice â€” working together around the patient.',
-  breadcrumb: [{ label: 'Our team' }],
-  schema: [{
-    '@context': 'https://schema.org', '@type': 'ItemList', name: 'QuantumHealth Doctors Panel',
-    url: site.url + '/our-team/',
-    itemListElement: [
-      { '@type': 'Person', name: 'Dr. Vikas Singh', jobTitle: 'Founder & CEO' },
-      { '@type': 'Person', name: 'Dr. Surindher D.S.A', jobTitle: 'Plastic Surgeon' },
-      { '@type': 'Person', name: 'Dr. Amod Rao', jobTitle: 'Consultant, Cosmetic Surgery' },
-      { '@type': 'Person', name: 'Dr. Arivazhagan', jobTitle: 'Cardiologist, Cardiothoracic & Vascular Surgeon' },
-      { '@type': 'Person', name: 'Dr. Subramini', jobTitle: 'Consultant Cosmetic, Plastic & Craniofacial Reconstructive Surgeon' },
-      { '@type': 'Person', name: 'Dr. D R Sekhar', jobTitle: 'Senior Consultant, Plastic, Aesthetic & Reconstructive Surgery' },
-      { '@type': 'Person', name: 'Dr. Nandita', jobTitle: 'Oral & Maxillofacial Surgeon' },
-      { '@type': 'Person', name: 'Dr. Alisha Khan', jobTitle: 'Aesthetic Healer & Cosmetologist' }
-    ].map((m, i) => ({ '@type': 'ListItem', position: i + 1, item: m }))
-  }],
-  blocks: [
-    { type: 'prose', html:
-      '<p>Our panel brings together specialists from plastic surgery, cosmetic surgery, dermatology, cardiology, oral and maxillofacial surgery and aesthetic practice. Their combined perspective supports assessment that considers the whole patient, not a single procedure.</p>' +
-      '<blockquote><p>â€œA team of experts, united by a shared vision â€” to help you look better, feel healthier and live more confidently.â€</p></blockquote>' },
-    { type: 'table', eyebrow: 'Medical panel', heading: 'Doctors and listed credentials',
-      head: ['Doctor', 'Role', 'Credentials'],
-      rows: [
-        ['Dr. Vikas Singh', 'Founder &amp; CEO', 'MBBS, MD (Dermatology); fellowships in aesthetic medicine â€” AAAM (USA), ISHRS'],
-        ['Dr. Surindher D.S.A', 'Plastic Surgeon', 'MBBS, MS (General Surgery), MCh (Plastic Surgery)'],
-        ['Dr. Amod Rao', 'Consultant, Cosmetic Surgery', 'MBBS, MS (General Surgery), fellowship in aesthetic surgery (Brazil)'],
-        ['Dr. Arivazhagan', 'Cardiologist, Cardiothoracic &amp; Vascular Surgeon', 'MBBS, MCh (Cardio Thoracic &amp; Vascular Surgery), MS (General Surgery); 38 yearsâ€™ experience'],
-        ['Dr. Subramini', 'Consultant Cosmetic, Plastic &amp; Craniofacial Reconstructive Surgeon', 'MS, MCh, F.I.C.S., F.A.I.S., Ph.D.; ALIMS (Bangalore Medical College &amp; Research Centre)'],
-        ['Dr. D R Sekhar', 'Senior Consultant, Plastic, Aesthetic &amp; Reconstructive Surgery', 'MBBS, MS (General Surgery), MCh (Plastic Surgery)'],
-        ['Dr. Nandita', 'Oral &amp; Maxillofacial Surgeon', 'MDS (OMFS)'],
-        ['Dr. Alisha Khan', 'Aesthetic Healer &amp; Cosmetologist', 'Aesthetic treatments, cosmetology, skin, hair, laser, wellness, training &amp; education']
-      ],
-      note: 'Credentials are reproduced as supplied by the clinic and remain subject to documentary verification with the relevant awarding institutions and professional bodies.'
-    },
-    { type: 'icon-grid', alt: true, eyebrow: 'Shared vision', heading: 'One standard of care', cols: 3,
-      items: [
-        { icon: 'personalised', title: 'Assessment first', text: 'Every treatment decision follows individual clinical assessment.' },
-        { icon: 'evidence', title: 'Within scope', text: 'Discussion and treatment stay within each clinicianâ€™s qualifications.' },
-        { icon: 'discretion', title: 'Continuity', text: 'Pre-treatment planning, aftercare and follow-up are part of the same pathway.' }
-      ]
-    },
-    { type: 'icon-grid', eyebrow: 'What we value', heading: 'Science. Artistry. Care.', cols: 3,
-      items: [
-        { icon: 'scale', title: 'Multidisciplinary expertise', text: 'Specialists from several disciplines contributing to one plan.' },
-        { icon: 'personalised', title: 'Personalised treatments', text: 'Options matched to the individual, not a template.' },
-        { icon: 'sparkle', title: 'Advanced technology', text: 'Technology selected for the clinical need.' },
-        { icon: 'natural', title: 'Natural beauty', text: 'Aims that respect individual proportion and character.' },
-        { icon: 'evidence', title: 'Long-term wellness', text: 'Care that considers healthspan, not only appearance.' }
-      ]
-    },
-    stdCta({ heading: 'Meet the team at a consultation' })
-  ]
-});
-
-/* ---------- Locations ---------- */
-pages.push({
-  url: '/locations/', slug: 'locations',
-  h1: 'Clinic Locations & Consultation Information',
-  seoTitle: 'Clinic Locations & Consultation Information | Breast Enlargement Guide',
-  seoDescription: 'QuantumHealth head office in Hong Kong, plus clinic presence across Dubai, Bahrain, Toronto, Bangkok, Bangalore, Hyderabad, Mumbai and Chennai.',
-  bannerEyebrow: 'Visit us',
-  bannerLead: 'Our head office is in Hong Kong, with clinic presence across Asia, the Middle East, Canada and India. Consultation availability is confirmed directly with each location.',
-  breadcrumb: [{ label: 'Locations' }],
-  schema: [{
-    '@context': 'https://schema.org', '@type': 'MedicalClinic', name: 'QuantumHealth Head Office',
-    url: site.url + '/locations/', telephone: site.contact.phone,
-    address: { '@type': 'PostalAddress', streetAddress: 'Sun Tuen Mun Center, 55â€“56 Lung Mun Road', addressLocality: 'New Hong Kong Territories', addressCountry: 'HK' }
-  }],
-  blocks: [
-    { type: 'split', eyebrow: 'Head office', heading: 'Hong Kong',
-      body: '<p><strong>Sun Tuen Mun Center, 55â€“56 Lung Mun Road, New Hong Kong Territories, Hong Kong</strong></p>' +
-        '<p>Telephone: <a href="tel:' + site.contact.phone.replace(/\s/g, '') + '">' + site.contact.phone + '</a></p>' +
-        '<p>The head office houses consultation and treatment rooms, a VIP lounge and a skin and wellness boutique, offering advanced aesthetic dermatology, hair restoration, regenerative medicine, anti-ageing and longevity programmes.</p>',
-      slot: 'Hong Kong head office', script: 'Where beauty, science and longevity meet' },
-    { type: 'icon-grid', eyebrow: 'At our head office', heading: 'Services', cols: 4,
-      items: [
-        { icon: 'evidence', title: 'Aesthetic dermatology', text: 'Advanced aesthetic dermatology.' },
-        { icon: 'personalised', title: 'Hair restoration', text: 'Hair transplant and hair restoration.' },
-        { icon: 'shape', title: 'Body contouring', text: 'Body contouring and non-surgical solutions.' },
-        { icon: 'safety', title: 'Regenerative medicine', text: 'Regenerative medicine and stem-cell therapy, subject to evidence and regulation.' },
-        { icon: 'clock', title: 'Anti-ageing & longevity', text: 'Anti-ageing and longevity programmes.' },
-        { icon: 'sparkle', title: 'Skin & beauty lounge', text: 'A premium skin and beauty lounge.' },
-        { icon: 'natural', title: 'Wellness programmes', text: 'Personalised wellness programmes.' }
-      ]
-    },
-    { type: 'cards', alt: true, cols: 4, eyebrow: 'Inside the clinic', heading: 'Spaces designed around privacy and care',
-      items: [
-        { title: 'Consultation room', text: 'Private, personalised, premium.', slot: 'Consultation room' },
-        { title: 'Treatment room', text: 'Advanced technology, considered care.', slot: 'Treatment room' },
-        { title: 'VIP lounge', text: 'Luxury, comfort and discretion.', slot: 'VIP lounge' },
-        { title: 'Skin & wellness boutique', text: 'Curated brands with expert guidance.', slot: 'Wellness boutique' }
-      ]
-    },
-    { type: 'notice', icon: 'pin', title: 'Confirm details before travelling',
-      text: 'The head office address and telephone number above are as supplied by the clinic. Street addresses, opening hours and directions for international locations are published once confirmed by each location. Call ahead to confirm availability.' },
-    { type: 'icon-grid', alt: true, eyebrow: 'International presence', heading: 'Clinic locations', cols: 4,
-      lead: 'Eight listed locations, each with its own service focus.',
-      items: [
-        { icon: 'pin', title: 'Dubai, UAE', text: 'Aesthetics Â· Regenerative Medicine Â· Wellness Â· Longevity' },
-        { icon: 'pin', title: 'Bahrain', text: 'Aesthetics Â· Skin & Hair Â· Wellness Â· Anti-Ageing' },
-        { icon: 'pin', title: 'Toronto, Canada', text: 'Aesthetics Â· Cosmetic Surgery Â· Regenerative Medicine Â· Wellness' },
-        { icon: 'pin', title: 'Bangkok, Thailand', text: 'Aesthetics Â· Body Contouring Â· Wellness Â· Anti-Ageing' },
-        { icon: 'pin', title: 'Bangalore, India', text: 'Aesthetics Â· Hair Transplant Â· Skin & Laser Â· Regenerative Medicine' },
-        { icon: 'pin', title: 'Hyderabad, India', text: 'Aesthetics Â· Cosmetology Â· Wellness Â· Anti-Ageing' },
-        { icon: 'pin', title: 'Mumbai, India', text: 'Aesthetics Â· Plastic Surgery Â· Skin & Hair Â· Wellness' },
-        { icon: 'pin', title: 'Chennai, India', text: 'Aesthetics Â· Dermatology Â· Body Contouring Â· Wellness' }
-      ]
-    },
-    { type: 'icon-grid', eyebrow: 'Planning your visit', heading: 'What each location will include', cols: 4,
-      items: [
-        { icon: 'pin', title: 'Full address', text: 'Accurate, verified clinic address.' },
-        { icon: 'clock', title: 'Opening hours', text: 'Confirmed consultation hours.' },
-        { icon: 'phone', title: 'Contact details', text: 'Verified phone and enquiry options.' },
-        { icon: 'arrow', title: 'Directions', text: 'A directions link for verified locations.' }
-      ]
-    },
-    stdCta({ heading: 'Request a consultation and confirm availability' })
-  ]
-});
-
-/* ---------- Gallery ---------- */
-pages.push({
-  url: '/before-after-gallery/', slug: 'gallery',
-  h1: 'Gallery: Real Cases, Clear Context',
-  seoTitle: 'Breast Augmentation Results | Clinical Case Gallery | Breast Enlargement Guide',
-  seoDescription: 'A responsible gallery approach: consented clinical cases shown with clinical context and a clear statement that individual results vary. No fabricated or altered imagery.',
-  bannerEyebrow: 'Results',
-  bannerLead: 'Our gallery is designed to help patients understand the range of outcomes associated with different procedures. Each case is presented with appropriate consent, clinical context and a clear explanation of individual variability.',
-  breadcrumb: [{ label: 'Gallery' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Gallery', url: site.url + '/before-after-gallery/' }],
-  blocks: [
-    { type: 'notice', icon: 'safety', title: 'Our imagery commitment',
-      text: 'Only genuine, consented clinical images are used. Illustrative stock photography is clearly labelled and never presented as a patient result. Images are never digitally altered to exaggerate treatment outcomes, and before-and-after images use consistent lighting, positioning and camera angles.' },
-    { type: 'gallery', eyebrow: 'Consented cases', heading: 'Clinical gallery',
-      lead: 'Each case study includes the procedure performed, the timeframe, the patientâ€™s treatment goals (described with consent), relevant follow-up information and a clear statement that individual results vary.',
-      items: [
-        { caption: 'Breast augmentation â€” consented case', slot: 'Consented case 01' },
-        { caption: 'Breast augmentation â€” consented case', slot: 'Consented case 02' },
-        { caption: 'Silicone gel implants â€” consented case', slot: 'Consented case 03' },
-        { caption: 'Fat transfer â€” consented case', slot: 'Consented case 04' },
-        { caption: 'Fat transfer â€” consented case', slot: 'Consented case 05' },
-        { caption: 'Other procedure â€” consented case', slot: 'Consented case 06' }
-      ]
-    },
-    { type: 'icon-grid', alt: true, eyebrow: 'Responsible presentation', heading: 'What every case includes', cols: 4,
-      items: [
-        { icon: 'calendar', title: 'Procedure & timeframe', text: 'The procedure performed and the relevant date or timeframe.' },
-        { icon: 'personalised', title: 'Goals, with consent', text: 'The patientâ€™s treatment goals, described with consent.' },
-        { icon: 'evidence', title: 'Clinical context', text: 'Relevant pre-treatment and follow-up information.' },
-        { icon: 'info', title: 'Individual variability', text: 'A clear statement that individual results vary.' }
-      ]
-    },
-    stdCta({ heading: 'Understand what results realistically look like' })
-  ]
-});
-
-/* ---------- Video gallery ---------- */
-pages.push({
-  url: '/video-gallery/', slug: 'video-gallery',
-  h1: 'Watch. Learn. Make Informed Decisions.',
-  seoTitle: 'Video Gallery | Breast Enlargement Guide',
-  seoDescription: 'Educational video content to help you understand treatment choices without exaggerated promotional claims â€” introductions, explainers and expert discussions.',
-  bannerEyebrow: 'Video gallery',
-  bannerLead: 'The video gallery is designed to establish a professional voice and help visitors understand treatment choices without relying on exaggerated promotional claims.',
-  breadcrumb: [{ label: 'Video gallery' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Video Gallery', url: site.url + '/video-gallery/' }],
-  blocks: [
-    { type: 'cards', cols: 2, eyebrow: 'Video library', heading: 'Educational video content',
-      lead: 'Videos are published only once recorded and verified. The cards below outline the planned structure of the library.',
-      items: [
-        { title: 'Meet Dr. Vikas Singh', text: 'A professional introduction, clinical philosophy and approach to patient consultations.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' },
-        { title: 'Understanding breast augmentation', text: 'An educational overview of implants, fat transfer, suitability and recovery.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' },
-        { title: 'What to know before a non-surgical treatment', text: 'How to assess evidence, understand product claims and ask about risks.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' },
-        { title: 'Doctor interviews & expert discussions', text: 'Verified media appearances, expert commentary and patient education.', slot: 'Video thumbnail', slotNote: 'Video not yet recorded' }
-      ]
-    },
-    { type: 'notice', icon: 'play', title: 'No autoplay, no tracking before consent',
-      text: 'Videos will not autoplay, and no third-party video tracking will be loaded before the required consent has been obtained. Each video will be embedded only when its content has been verified.' },
-    stdCta({ heading: 'Prefer a personalised conversation?' })
-  ]
-});
-
-/* ---------- Media & press ---------- */
-pages.push({
-  url: '/media-and-press/', slug: 'media-and-press',
-  h1: 'Media Interviews & Press',
-  seoTitle: 'Media and Press | Breast Enlargement Guide',
-  seoDescription: 'Verified interviews, published articles, expert contributions and media appearances relevant to aesthetic medicine and Dr. Vikas Singhâ€™s professional work.',
-  bannerEyebrow: 'Media library',
-  bannerLead: 'This section showcases verified interviews, published articles, expert contributions and media appearances.',
-  breadcrumb: [{ label: 'Media & press' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Media and Press', url: site.url + '/media-and-press/' }],
-  blocks: [
-    { type: 'prose', html:
-      '<p>Dr. Vikas Singhâ€™s professional journey has included involvement in aesthetic medicine and hair restoration. This media library brings together documented interviews and published features relevant to his professional work and the wider field of aesthetic care.</p>' },
-    { type: 'icon-grid', alt: true, eyebrow: 'Content categories', heading: 'What you will find here', cols: 4,
-      items: [
-        { icon: 'play', title: 'Broadcast interviews', text: 'Television and broadcast interviews.' },
-        { icon: 'evidence', title: 'Print features', text: 'Newspaper and magazine features.' },
-        { icon: 'quote', title: 'Expert commentary', text: 'Expert commentary and educational contributions.' },
-        { icon: 'personalised', title: 'Conference appearances', text: 'Professional presentations and appearances.' }
-      ]
-    },
-    { type: 'notice', blush: true, icon: 'info', title: 'Verification required',
-      text: 'Media and recognition are listed only where substantiated with the correct title, date, publication and link. Appearing in a publication does not imply endorsement by that publication. No media logos or awards are displayed until verified.' },
-    stdCta({ heading: 'For media and speaking enquiries' })
-  ]
-});
-
 /* ---------- FAQ page ---------- */
 pages.push({
   url: '/faqs/', slug: 'faqs',
@@ -1555,7 +1209,7 @@ pages.push({
       ['Is PRP a proven breast enlargement treatment?', 'PRP should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.'],
       ['What is the difference between silicone implants and injectable silicone?', 'They are entirely different. Injectable silicone should not be used as a substitute for a breast implant and can cause serious, potentially permanent harm.'],
       ['Does fat transfer produce permanent results?', 'Some transferred fat can survive long term, but a proportion may be reabsorbed, so the final result varies and additional procedures may be considered.'],
-      ['How long does breast augmentation recovery take?', 'Recovery varies according to the procedure, technique, individual healing and the clinicianâ€™s advice.'],
+      ['How long does breast augmentation recovery take?', 'Recovery varies according to the procedure, technique, individual healing and the clinician’s advice.'],
       ['How do I know which procedure is right for me?', 'The appropriate option depends on your health, anatomy, expectations and risk tolerance, and should follow assessment by an appropriately qualified clinician.']
     ].map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }))
   }],
@@ -1564,10 +1218,10 @@ pages.push({
       items: [
         { q: 'Can breast size be increased without surgery?', a: '<p>Some treatments are marketed for this purpose, but the evidence and regulatory status vary. Many non-surgical approaches have not been shown to reliably increase breast volume. A professional assessment is the appropriate way to establish what is realistic and which options, if any, are appropriate.</p>' },
         { q: 'Are dermal fillers safe for breast enlargement?', a: '<p>Dermal fillers are not approved for breast enlargement, and regulators advise against using them for this purpose because of potentially serious complications. A filler approved for facial use should not be assumed suitable for injection into the breasts.</p>' },
-        { q: 'Is PRP a proven breast enlargement treatment?', a: '<p>PRPâ€™s effects depend on the specific indication and the evidence available. It should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.</p>' },
+        { q: 'Is PRP a proven breast enlargement treatment?', a: '<p>PRP’s effects depend on the specific indication and the evidence available. It should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.</p>' },
         { q: 'What is the difference between silicone implants and injectable silicone?', a: '<p>They are entirely different. Injectable silicone is a different product and should not be used as a substitute for a breast implant. Injectable silicone used for breast enhancement can cause serious, potentially permanent harm.</p>' },
         { q: 'Does fat transfer produce permanent results?', a: '<p>Some transferred fat can survive long term, but a proportion may be reabsorbed. The final result varies between individuals, and additional procedures may be considered.</p>' },
-        { q: 'How long does breast augmentation recovery take?', a: '<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinicianâ€™s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>' },
+        { q: 'How long does breast augmentation recovery take?', a: '<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>' },
         { q: 'How do I know which procedure is right for me?', a: '<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. The decision should follow an assessment by an appropriately qualified clinician.</p>' }
       ]
     },
@@ -1581,44 +1235,44 @@ pages.push({
   url: '/breast-enlargement-research/', slug: 'breast-enlargement-research',
   h1: 'Breast Enlargement Research: What the Published Evidence Shows',
   seoTitle: 'Breast Enlargement Research & PubMed Evidence | Breast Enlargement Guide',
-  seoDescription: 'Peer-reviewed breast enlargement research indexed in PubMed â€” fat transfer, implants, external expansion, fillers and global trends, with links to every study.',
-  bannerEyebrow: 'Research library Â· PubMed',
-  bannerLead: 'Breast enlargement studies indexed in PubMed â€” surgical and non-surgical â€” summarised by topic, with a link to every original record.',
+  seoDescription: 'Peer-reviewed breast enlargement research indexed in PubMed — fat transfer, implants, external expansion, fillers and global trends, with links to every study.',
+  bannerEyebrow: 'Research library · PubMed',
+  bannerLead: 'Breast enlargement studies indexed in PubMed — surgical and non-surgical — summarised by topic, with a link to every original record.',
   breadcrumb: [{ label: 'Research' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Enlargement Research (PubMed)', url: site.url + '/breast-enlargement-research/' }],
   blocks: [
     { type: 'prose', html:
-      '<p>This page collects peer-reviewed research on breast enlargement â€” surgical and non-surgical â€” indexed in PubMed, the US National Library of Medicineâ€™s database of biomedical literature. In October 2026 we searched PubMed using title and abstract terms covering breast augmentation, breast enlargement, fat transfer and autologous fat grafting, non-surgical enlargement, breast implants and breast fillers. Of 77 unique records retrieved, the most relevant are summarised here, grouped by topic, with a link to each original PubMed record.</p>' +
+      '<p>This page collects peer-reviewed research on breast enlargement — surgical and non-surgical — indexed in PubMed, the US National Library of Medicine’s database of biomedical literature. In October 2026 we searched PubMed using title and abstract terms covering breast augmentation, breast enlargement, fat transfer and autologous fat grafting, non-surgical enlargement, breast implants and breast fillers. Of 77 unique records retrieved, the most relevant are summarised here, grouped by topic, with a link to each original PubMed record.</p>' +
       '<p><strong>What the literature shows in brief:</strong> breast augmentation with implants remains one of the most frequently performed aesthetic operations worldwide, with predictable volume but real complication and revision rates. Autologous fat grafting is the best-supported route to lasting volume without an implant, but the gain is modest and complications occur in roughly a quarter of cases in the largest systematic review. External vacuum expansion has produced true tissue growth in small studies, but demands weeks of daily device wear. Injectable fillers are not approved for breast enlargement, and published case series document serious complications. Creams, pills and most devices have no credible supporting trials.</p>' },
     { type: 'notice', icon: 'evidence', title: 'How this page was compiled',
-      text: 'Searches were run on PubMed (National Library of Medicine, USA) in October 2026 using title/abstract terms: â€œbreast augmentationâ€, â€œbreast enlargementâ€, (â€œfat transferâ€ OR â€œautologous fat graftingâ€ OR â€œfat graftingâ€) AND breast augmentation, (â€œnon-surgicalâ€ OR filler OR PRP OR â€œplatelet-rich plasmaâ€) AND breast enlargement, and breast implants AND (augmentation OR enlargement). 77 unique records were retrieved; the studies most relevant to breast enlargement are summarised below. Summaries use abstract-level data â€” consult the full article and current guidelines before drawing clinical conclusions. Inclusion here is not an endorsement of any study or treatment.' },
+      text: 'Searches were run on PubMed (National Library of Medicine, USA) in October 2026 using title/abstract terms: “breast augmentation”, “breast enlargement”, (“fat transfer” OR “autologous fat grafting” OR “fat grafting”) AND breast augmentation, (“non-surgical” OR filler OR PRP OR “platelet-rich plasma”) AND breast enlargement, and breast implants AND (augmentation OR enlargement). 77 unique records were retrieved; the studies most relevant to breast enlargement are summarised below. Summaries use abstract-level data — consult the full article and current guidelines before drawing clinical conclusions. Inclusion here is not an endorsement of any study or treatment.' },
     { type: 'table', alt: true, eyebrow: 'Evidence at a glance', heading: 'The headline findings, by question',
       lead: 'Each row links to the PubMed record behind the finding.',
       head: ['Question', 'What the published evidence shows', 'Key studies'],
       rows: [
-        ['Does fat transfer enlarge breasts?', 'Yes â€” modestly. The largest systematic review (35 studies, 3,757 women) reported an average 58% fat retention from about 300 mL injected per breast â€” roughly one cup â€” with a 27.8% overall complication rate and 92% average patient satisfaction.', 'Seth 2024 (' + pubmed('37166041') + ')'],
-        ['Is fat transfer better than implants?', 'The only randomised trial identified found implants gave more evident and durable augmentation (87.5% vs 70% â€œexcellentâ€ aesthetic outcomes), while fat grafting produced more natural-looking results and better correction of chest-wall deformity.', 'Gentile 2026 (' + pubmed('40908320') + ')'],
-        ['Can a vacuum device enlarge breasts without surgery?', 'A 2000 study reported a stable 55% average size increase after 10 weeks of daily external expansion (10â€“12 h/day); MRI confirmed growth of fat and fibroglandular tissue. Evidence remains limited and largely developer-led.', 'Khouri 2000 (' + pubmed('10845308') + '); Kardorff 2004 (' + pubmed('16285326') + ')'],
-        ['Do breast fillers work â€” and are they safe?', 'Hyaluronic acid gel was briefly authorised for breast use in Europe (2008), then withdrawn worldwide after side effects. A 31-patient complication series found 88.9% of conservatively treated aquafilling cases needed reoperation. Regulators advise against fillers for breast enlargement.', 'Siebert 2014 (' + pubmed('24507861') + '); Gierej 2023 (' + pubmed('37721627') + '); Jeyaratnam 2021 (' + pubmed('34849315') + ')'],
+        ['Does fat transfer enlarge breasts?', 'Yes — modestly. The largest systematic review (35 studies, 3,757 women) reported an average 58% fat retention from about 300 mL injected per breast — roughly one cup — with a 27.8% overall complication rate and 92% average patient satisfaction.', 'Seth 2024 (' + pubmed('37166041') + ')'],
+        ['Is fat transfer better than implants?', 'The only randomised trial identified found implants gave more evident and durable augmentation (87.5% vs 70% “excellent” aesthetic outcomes), while fat grafting produced more natural-looking results and better correction of chest-wall deformity.', 'Gentile 2026 (' + pubmed('40908320') + ')'],
+        ['Can a vacuum device enlarge breasts without surgery?', 'A 2000 study reported a stable 55% average size increase after 10 weeks of daily external expansion (10–12 h/day); MRI confirmed growth of fat and fibroglandular tissue. Evidence remains limited and largely developer-led.', 'Khouri 2000 (' + pubmed('10845308') + '); Kardorff 2004 (' + pubmed('16285326') + ')'],
+        ['Do breast fillers work — and are they safe?', 'Hyaluronic acid gel was briefly authorised for breast use in Europe (2008), then withdrawn worldwide after side effects. A 31-patient complication series found 88.9% of conservatively treated aquafilling cases needed reoperation. Regulators advise against fillers for breast enlargement.', 'Siebert 2014 (' + pubmed('24507861') + '); Gierej 2023 (' + pubmed('37721627') + '); Jeyaratnam 2021 (' + pubmed('34849315') + ')'],
         ['How often do implants need revision?', 'Reported revision rates after primary augmentation are as high as 36%, most commonly for capsular contracture, implant malposition and ptosis of the ageing breast.', 'Denney 2021 (' + pubmed('34121945') + ')'],
-        ['Is â€œbreast implant illnessâ€ established?', 'Systemic symptoms attributed to implants are widely reported, but a 2024 Danish review notes the correlation with implants is not established, evidence is limited, and it is not a recognised diagnosis.', 'Borhani-Khomani 2024 (' + pubmed('38808767') + ')'],
+        ['Is “breast implant illness” established?', 'Systemic symptoms attributed to implants are widely reported, but a 2024 Danish review notes the correlation with implants is not established, evidence is limited, and it is not a recognised diagnosis.', 'Borhani-Khomani 2024 (' + pubmed('38808767') + ')'],
         ['How common is augmentation worldwide?', 'ISAPS 14-year global data show breast augmentation consistently among the top five surgical aesthetic procedures. Implant removal has been the fastest-growing procedure since 2015 (+46.3% over five years).', 'Triana 2024 (' + pubmed('39103642') + ')']
       ],
-      note: 'Study figures describe the groups studied and may not apply to any individual. Evidence and regulatory positions change â€” check the linked records and current regulator guidance before acting.' },
+      note: 'Study figures describe the groups studied and may not apply to any individual. Evidence and regulatory positions change — check the linked records and current regulator guidance before acting.' },
     { type: 'prose', html:
       '<h2 class="h3">Fat transfer (autologous fat grafting)</h2>' +
-      '<p>Fat transfer removes fat by liposuction from another body area and injects it into the breast. It is the best-documented route to real, lasting volume without an implant â€” but the gain is modest, and the evidence base, while growing, is still dominated by retrospective series rather than controlled trials.</p>' },
+      '<p>Fat transfer removes fat by liposuction from another body area and injects it into the breast. It is the best-documented route to real, lasting volume without an implant — but the gain is modest, and the evidence base, while growing, is still dominated by retrospective series rather than controlled trials.</p>' },
     { type: 'table', eyebrow: 'Fat transfer studies', heading: 'What fat-grafting research reports',
       head: ['Study', 'Design', 'What it found'],
       rows: [
-        ['Seth I, et al. 2024 â€” <em>Plast Reconstr Surg</em> (' + pubmed('37166041') + ')', 'Systematic review: 35 studies, 3,757 women', 'Average 300 mL injected per breast; 58% volume retention (range 44â€“83%); 27.8% overall complication rate, fat necrosis the most common (43.7% of complications); radiologic fat necrosis 9.4%, calcification 1.2%; 92% average satisfaction at one year.'],
-        ['Gentile P. 2026 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('40908320') + ')', 'Randomised open-label trial: 95 implants vs 90 lipofilling', '87.5% of implant patients vs 70% of lipofilling patients had excellent aesthetic outcomes at 12 months. Implant results were significantly more durable; lipofilling results were judged more natural and improved pectus excavatum. Both were safe and effective.'],
-        ['Voglimacci M, et al. 2015 â€” <em>Aesthetic Surg J</em> (' + pubmed('25908697') + ')', 'Systematic review: 42 articles', 'Evidence mostly low level (one level-2 study). Two cancers among 2,023 patients (0.09%) with insufficient follow-up for long-term conclusions. Concludes registries with proper follow-up are needed.'],
-        ['Leopardi D, et al. 2014 â€” <em>ANZ J Surg</em> (' + pubmed('23656507') + ')', 'Systematic review vs implant comparators', 'No comparative studies were found. Fat necrosis, cysts and lumps were the most common complications; reabsorption occurs mainly in the first 12 months; efficacy could not be determined from the available evidence.'],
-        ['Hivernaud V, et al. 2015 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('26085223') + ')', 'Technique review', 'High resorption remains the central problem of large-volume grafting; refinements in harvesting and graft preparation aim to improve fat viability and long-term success.'],
-        ['Coleman SR, Saboeiro AP. 2015 â€” <em>Clin Plast Surg</em> (' + pubmed('26116935') + ')', 'Technique review', 'The 2009 ASPS Fat Graft Task Force concluded fat grafting may be considered for breast augmentation, with results dependent on technique and surgeon expertise.'],
-        ['Finzi E. 2003 â€” <em>Dermatol Surg</em> (' + pubmed('12930335') + ')', 'Retrospective record review', 'Breast enlargement occurred in 43% of patients after tumescent liposuction of other body areas; 30% gained one cup size or more â€” an incidental, redistribution-based effect.'],
-        ['Seth I, et al. 2023 â€” <em>Gland Surg</em> (' + pubmed('36761486') + ')', 'Method paper: hybrid augmentation', 'Proposes a preoperative formula to estimate fat-graft volume when combining implants with lipofilling (hybrid breast augmentation).']
+        ['Seth I, et al. 2024 — <em>Plast Reconstr Surg</em> (' + pubmed('37166041') + ')', 'Systematic review: 35 studies, 3,757 women', 'Average 300 mL injected per breast; 58% volume retention (range 44–83%); 27.8% overall complication rate, fat necrosis the most common (43.7% of complications); radiologic fat necrosis 9.4%, calcification 1.2%; 92% average satisfaction at one year.'],
+        ['Gentile P. 2026 — <em>Aesthetic Plast Surg</em> (' + pubmed('40908320') + ')', 'Randomised open-label trial: 95 implants vs 90 lipofilling', '87.5% of implant patients vs 70% of lipofilling patients had excellent aesthetic outcomes at 12 months. Implant results were significantly more durable; lipofilling results were judged more natural and improved pectus excavatum. Both were safe and effective.'],
+        ['Voglimacci M, et al. 2015 — <em>Aesthetic Surg J</em> (' + pubmed('25908697') + ')', 'Systematic review: 42 articles', 'Evidence mostly low level (one level-2 study). Two cancers among 2,023 patients (0.09%) with insufficient follow-up for long-term conclusions. Concludes registries with proper follow-up are needed.'],
+        ['Leopardi D, et al. 2014 — <em>ANZ J Surg</em> (' + pubmed('23656507') + ')', 'Systematic review vs implant comparators', 'No comparative studies were found. Fat necrosis, cysts and lumps were the most common complications; reabsorption occurs mainly in the first 12 months; efficacy could not be determined from the available evidence.'],
+        ['Hivernaud V, et al. 2015 — <em>Aesthetic Plast Surg</em> (' + pubmed('26085223') + ')', 'Technique review', 'High resorption remains the central problem of large-volume grafting; refinements in harvesting and graft preparation aim to improve fat viability and long-term success.'],
+        ['Coleman SR, Saboeiro AP. 2015 — <em>Clin Plast Surg</em> (' + pubmed('26116935') + ')', 'Technique review', 'The 2009 ASPS Fat Graft Task Force concluded fat grafting may be considered for breast augmentation, with results dependent on technique and surgeon expertise.'],
+        ['Finzi E. 2003 — <em>Dermatol Surg</em> (' + pubmed('12930335') + ')', 'Retrospective record review', 'Breast enlargement occurred in 43% of patients after tumescent liposuction of other body areas; 30% gained one cup size or more — an incidental, redistribution-based effect.'],
+        ['Seth I, et al. 2023 — <em>Gland Surg</em> (' + pubmed('36761486') + ')', 'Method paper: hybrid augmentation', 'Proposes a preoperative formula to estimate fat-graft volume when combining implants with lipofilling (hybrid breast augmentation).']
       ] },
     { type: 'prose', alt: true, html:
       '<h2 class="h3">Non-surgical enlargement: external expansion</h2>' +
@@ -1626,11 +1280,11 @@ pages.push({
     { type: 'table', alt: true, eyebrow: 'Expansion studies', heading: 'External expansion: the published record',
       head: ['Study', 'Design', 'What it found'],
       rows: [
-        ['Khouri RK, et al. 2000 â€” <em>Plast Reconstr Surg</em> (' + pubmed('10845308') + ')', 'Single-group study: 17 women (12 completed)', 'A brassiere-like system applying 20 mmHg per breast, 10â€“12 h/day for 10 weeks: peak increase 98%; after recoil, a stable long-term increase of 55% (range 15â€“115%). MRI confirmed proportionate growth of adipose and fibroglandular tissue. No adverse events recorded.'],
-        ['Kardorff B, et al. 2004 â€” <em>JDDG</em> (' + pubmed('16285326') + ')', 'German case report using the same protocol', 'Chest circumference at the nipple level remained 4 cm above baseline at three months after oedema resolved. Side effects were limited to transient irritant contact dermatitis and folliculitis.'],
-        ['He Y, et al. 2017 â€” <em>Plast Reconstr Surg</em> (' + pubmed('28350663') + ')', 'Preclinical/technique study', 'Combining minimally invasive tissue dissection with external volume expansion generated far more adipose tissue than expansion alone, mediated by release of cell-contact inhibition.'],
-        ['Tebbetts JB. 2001 â€” <em>Plast Reconstr Surg</em> (' + pubmed('11379562') + ')', 'Critical review', 'Argued that claimed non-surgical enlargement largely reflects measurement variability and soft-tissue change rather than reliable true tissue growth â€” a caution against overstating the early expansion data.'],
-        ['Uyulmaz S, et al. 2020 â€” <em>Praxis</em> (' + pubmed('33109001') + ')', 'Clinical review', 'Reviews implant-free cosmetic augmentation: mastopexy for optical lift and lipofilling for volume; large-volume or high-goal augmentation with fat alone remains limited.']
+        ['Khouri RK, et al. 2000 — <em>Plast Reconstr Surg</em> (' + pubmed('10845308') + ')', 'Single-group study: 17 women (12 completed)', 'A brassiere-like system applying 20 mmHg per breast, 10–12 h/day for 10 weeks: peak increase 98%; after recoil, a stable long-term increase of 55% (range 15–115%). MRI confirmed proportionate growth of adipose and fibroglandular tissue. No adverse events recorded.'],
+        ['Kardorff B, et al. 2004 — <em>JDDG</em> (' + pubmed('16285326') + ')', 'German case report using the same protocol', 'Chest circumference at the nipple level remained 4 cm above baseline at three months after oedema resolved. Side effects were limited to transient irritant contact dermatitis and folliculitis.'],
+        ['He Y, et al. 2017 — <em>Plast Reconstr Surg</em> (' + pubmed('28350663') + ')', 'Preclinical/technique study', 'Combining minimally invasive tissue dissection with external volume expansion generated far more adipose tissue than expansion alone, mediated by release of cell-contact inhibition.'],
+        ['Tebbetts JB. 2001 — <em>Plast Reconstr Surg</em> (' + pubmed('11379562') + ')', 'Critical review', 'Argued that claimed non-surgical enlargement largely reflects measurement variability and soft-tissue change rather than reliable true tissue growth — a caution against overstating the early expansion data.'],
+        ['Uyulmaz S, et al. 2020 — <em>Praxis</em> (' + pubmed('33109001') + ')', 'Clinical review', 'Reviews implant-free cosmetic augmentation: mastopexy for optical lift and lipofilling for volume; large-volume or high-goal augmentation with fat alone remains limited.']
       ] },
     { type: 'prose', html:
       '<h2 class="h3">Fillers and injectable products</h2>' +
@@ -1638,9 +1292,9 @@ pages.push({
     { type: 'table', eyebrow: 'Filler safety evidence', heading: 'What the filler studies report',
       head: ['Study', 'Design', 'What it found'],
       rows: [
-        ['Siebert T, et al. 2014 â€” <em>Ann Chir Plast Esthet</em> (' + pubmed('24507861') + ')', 'Literature review (Macrolane)', 'Hyaluronic acid gel (Macrolane) received European authorisation for breast augmentation in 2008, then was withdrawn from the worldwide breast-augmentation market after numerous side-effect controversies.'],
-        ['Gierej P, et al. 2023 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('37721627') + ')', 'Observational cohort: 31 women with aquafilling-gel complications', '88.9% of patients treated conservatively required reoperation, vs 22.7% after radical surgery. Needle aspiration was ineffective and associated with infection (75% positive cultures). More filler injected correlated with more symptoms.'],
-        ['Jeyaratnam S, Joethy J. 2021 â€” <em>PRS Global Open</em> (' + pubmed('34849315') + ')', 'Case-based review', 'Documents the dangers of filler breast augmentation, consistent with regulator advice against the practice.']
+        ['Siebert T, et al. 2014 — <em>Ann Chir Plast Esthet</em> (' + pubmed('24507861') + ')', 'Literature review (Macrolane)', 'Hyaluronic acid gel (Macrolane) received European authorisation for breast augmentation in 2008, then was withdrawn from the worldwide breast-augmentation market after numerous side-effect controversies.'],
+        ['Gierej P, et al. 2023 — <em>Aesthetic Plast Surg</em> (' + pubmed('37721627') + ')', 'Observational cohort: 31 women with aquafilling-gel complications', '88.9% of patients treated conservatively required reoperation, vs 22.7% after radical surgery. Needle aspiration was ineffective and associated with infection (75% positive cultures). More filler injected correlated with more symptoms.'],
+        ['Jeyaratnam S, Joethy J. 2021 — <em>PRS Global Open</em> (' + pubmed('34849315') + ')', 'Case-based review', 'Documents the dangers of filler breast augmentation, consistent with regulator advice against the practice.']
       ] },
     { type: 'prose', alt: true, html:
       '<h2 class="h3">Implant augmentation: outcomes, complications and revision</h2>' +
@@ -1648,19 +1302,19 @@ pages.push({
     { type: 'table', alt: true, eyebrow: 'Implant studies', heading: 'Implant augmentation: the study data',
       head: ['Study', 'Design', 'What it found'],
       rows: [
-        ['Denney BD, et al. 2021 â€” <em>Semin Plast Surg</em> (' + pubmed('34121945') + ')', 'Review', 'Revision rates after primary augmentation remain as high as 36%; the commonest causes are capsular contracture, implant malposition and ptosis of the ageing breast.'],
-        ['Nava MB, et al. 2017 â€” <em>Gland Surg</em> (' + pubmed('28497025') + ')', 'Evidence review', 'No high-level evidence identifies a single best technique or implant; complication reduction follows established surgical principles rather than device fashion.'],
-        ['Nahabedian MY. 2019 â€” <em>Plast Reconstr Surg</em> (' + pubmed('31246764') + ')', 'Review of form-stable implants', 'Reviews diagnosis and management of complications with modern cohesive-gel implants; no implant lasts forever, though devices remain safe and effective per clinical and epidemiologic studies.'],
-        ['Kaoutzanis C, et al. 2019 â€” <em>Semin Plast Surg</em> (' + pubmed('31632203') + ')', 'Historical review', 'Traces implant evolution since 1962, including the silicone-gel controversies, and how successive generations improved safety and aesthetics.'],
-        ['Correia-SÃ¡ I, et al. 2013 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('23943050') + ')', 'Case report with histology', 'PIP implants showed increased rupture and leakage risk; documents clinical, histologic and microbiologic findings after rupture, including siliconoma and lymph-node involvement.'],
-        ['Monstrey S, et al. 2004 â€” <em>Plast Reconstr Surg</em> (' + pubmed('15108875') + ')', 'Case series: 13 patients', 'Trilucent (soybean-oil-filled) implants failed because of lipid-oxidation metabolites; UK and Belgian authorities advised removal â€” a documented device-withdrawal precedent.'],
-        ['SimÃ¡do TS. 2021 â€” <em>Plast Reconstr Surg</em> (' + pubmed('33885442') + ')', 'Clinical algorithm', 'Galactorrhea and galactocele after breast augmentation: a diagnosis and treatment algorithm.'],
-        ['Green LA, et al. 2018 â€” <em>Clin Imaging</em> (' + pubmed('28918365') + ')', 'Imaging review', 'Breast-cancer screening must continue after augmentation; radiologists need familiarity with surgical techniques, implant appearances and MRI findings.'],
-        ['Faguy K. 2018 â€” <em>Radiol Technol</em> (' + pubmed('29793920') + ')', 'Imaging review', 'Catalogues adverse effects and imaging appearances of breast implants for technologists and radiologists.'],
-        ['Borhani-Khomani K, et al. 2024 â€” <em>Ugeskr LÃ¦ger</em> (' + pubmed('38808767') + ')', 'Danish review', 'Self-reported systemic symptoms attributed to implants (â€œbreast implant illnessâ€): the correlation is not established, evidence is limited, and the condition is not currently a recognised diagnosis.'],
-        ['Luan J. 2023 â€” <em>Clin Plast Surg</em> (' + pubmed('36396254') + ')', 'Technique review', 'Endoscopic-assisted transaxillary augmentation: the axillary approach remains preferred by many patients in Asia; endoscopy improves control and stability of the result.'],
-        ['Bekeny JC, et al. 2020 â€” <em>Gland Surg</em> (' + pubmed('32775269') + ')', 'Review (transfeminine augmentation)', 'Augmentation for transfeminine patients is technically similar to that for cisgender peers, with equivalent complication rates and documented quality-of-life benefits.'],
-        ['Holst-Albrechtsen S, et al. 2018 â€” <em>Ugeskr LÃ¦ger</em> (' + pubmed('29886889') + ')', 'Clinical study', 'Post-operative infections after cosmetic surgery abroad (â€œcosmetic tourismâ€) â€” treatment abroad carries identifiable infection risk.']
+        ['Denney BD, et al. 2021 — <em>Semin Plast Surg</em> (' + pubmed('34121945') + ')', 'Review', 'Revision rates after primary augmentation remain as high as 36%; the commonest causes are capsular contracture, implant malposition and ptosis of the ageing breast.'],
+        ['Nava MB, et al. 2017 — <em>Gland Surg</em> (' + pubmed('28497025') + ')', 'Evidence review', 'No high-level evidence identifies a single best technique or implant; complication reduction follows established surgical principles rather than device fashion.'],
+        ['Nahabedian MY. 2019 — <em>Plast Reconstr Surg</em> (' + pubmed('31246764') + ')', 'Review of form-stable implants', 'Reviews diagnosis and management of complications with modern cohesive-gel implants; no implant lasts forever, though devices remain safe and effective per clinical and epidemiologic studies.'],
+        ['Kaoutzanis C, et al. 2019 — <em>Semin Plast Surg</em> (' + pubmed('31632203') + ')', 'Historical review', 'Traces implant evolution since 1962, including the silicone-gel controversies, and how successive generations improved safety and aesthetics.'],
+        ['Correia-Sá I, et al. 2013 — <em>Aesthetic Plast Surg</em> (' + pubmed('23943050') + ')', 'Case report with histology', 'PIP implants showed increased rupture and leakage risk; documents clinical, histologic and microbiologic findings after rupture, including siliconoma and lymph-node involvement.'],
+        ['Monstrey S, et al. 2004 — <em>Plast Reconstr Surg</em> (' + pubmed('15108875') + ')', 'Case series: 13 patients', 'Trilucent (soybean-oil-filled) implants failed because of lipid-oxidation metabolites; UK and Belgian authorities advised removal — a documented device-withdrawal precedent.'],
+        ['Simádo TS. 2021 — <em>Plast Reconstr Surg</em> (' + pubmed('33885442') + ')', 'Clinical algorithm', 'Galactorrhea and galactocele after breast augmentation: a diagnosis and treatment algorithm.'],
+        ['Green LA, et al. 2018 — <em>Clin Imaging</em> (' + pubmed('28918365') + ')', 'Imaging review', 'Breast-cancer screening must continue after augmentation; radiologists need familiarity with surgical techniques, implant appearances and MRI findings.'],
+        ['Faguy K. 2018 — <em>Radiol Technol</em> (' + pubmed('29793920') + ')', 'Imaging review', 'Catalogues adverse effects and imaging appearances of breast implants for technologists and radiologists.'],
+        ['Borhani-Khomani K, et al. 2024 — <em>Ugeskr Læger</em> (' + pubmed('38808767') + ')', 'Danish review', 'Self-reported systemic symptoms attributed to implants (“breast implant illness”): the correlation is not established, evidence is limited, and the condition is not currently a recognised diagnosis.'],
+        ['Luan J. 2023 — <em>Clin Plast Surg</em> (' + pubmed('36396254') + ')', 'Technique review', 'Endoscopic-assisted transaxillary augmentation: the axillary approach remains preferred by many patients in Asia; endoscopy improves control and stability of the result.'],
+        ['Bekeny JC, et al. 2020 — <em>Gland Surg</em> (' + pubmed('32775269') + ')', 'Review (transfeminine augmentation)', 'Augmentation for transfeminine patients is technically similar to that for cisgender peers, with equivalent complication rates and documented quality-of-life benefits.'],
+        ['Holst-Albrechtsen S, et al. 2018 — <em>Ugeskr Læger</em> (' + pubmed('29886889') + ')', 'Clinical study', 'Post-operative infections after cosmetic surgery abroad (“cosmetic tourism”) — treatment abroad carries identifiable infection risk.']
       ] },
     { type: 'prose', html:
       '<h2 class="h3">Global trends and contemporary benchmarks</h2>' +
@@ -1668,48 +1322,24 @@ pages.push({
     { type: 'table', eyebrow: 'Trends', heading: 'What the registry and benchmark studies report',
       head: ['Study', 'Design', 'What it found'],
       rows: [
-        ['Triana L, et al. 2024 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('39103642') + ')', 'ISAPS global statistics, 2010â€“2023', '34.9 million aesthetic procedures worldwide in 2023. Breast augmentation has remained consistently in the top five surgical procedures for 14 years, with a first decline in the most recent year; implant removal is the fastest-growing procedure since 2015 (+46.3% over five years).'],
-        ['Glicksman CA. 2026 â€” <em>Clin Plast Surg</em> (' + pubmed('41826039') + ')', 'Benchmarks review', 'Contemporary benchmarks in breast augmentation surgery â€” current reference points for planning and outcomes.'],
-        ['Lhuaire M, et al. 2019 â€” <em>Plast Reconstr Surg</em> (' + pubmed('31764702') + ')', 'Technique paper', 'Minimally invasive inframammary breast augmentation â€” approaches aimed at smaller, hidden incisions.'],
-        ['Lin Y, et al. 2022 â€” <em>Aesthetic Plast Surg</em> (' + pubmed('33403418') + ')', 'Anthropometric study', 'Body and breast measurements in augmentation planning â€” objective sizing data supporting implant selection.']
+        ['Triana L, et al. 2024 — <em>Aesthetic Plast Surg</em> (' + pubmed('39103642') + ')', 'ISAPS global statistics, 2010–2023', '34.9 million aesthetic procedures worldwide in 2023. Breast augmentation has remained consistently in the top five surgical procedures for 14 years, with a first decline in the most recent year; implant removal is the fastest-growing procedure since 2015 (+46.3% over five years).'],
+        ['Glicksman CA. 2026 — <em>Clin Plast Surg</em> (' + pubmed('41826039') + ')', 'Benchmarks review', 'Contemporary benchmarks in breast augmentation surgery — current reference points for planning and outcomes.'],
+        ['Lhuaire M, et al. 2019 — <em>Plast Reconstr Surg</em> (' + pubmed('31764702') + ')', 'Technique paper', 'Minimally invasive inframammary breast augmentation — approaches aimed at smaller, hidden incisions.'],
+        ['Lin Y, et al. 2022 — <em>Aesthetic Plast Surg</em> (' + pubmed('33403418') + ')', 'Anthropometric study', 'Body and breast measurements in augmentation planning — objective sizing data supporting implant selection.']
       ] },
     { type: 'faq', id: 'res', eyebrow: 'Questions', heading: 'About this research page',
       items: [
-        { q: 'What is PubMed, and why use it?', a: '<p>PubMed is the US National Library of Medicineâ€™s free index of biomedical literature, covering thousands of peer-reviewed journals. Searching it gives a structured, reproducible view of what has actually been studied â€” rather than what is advertised.</p>' },
-        { q: 'Does listing a study mean we recommend its findings?', a: '<p>No. Listing means the study is part of the published evidence base. Individual studies vary in quality â€” a small case report carries far less weight than a systematic review or randomised trial. Nothing on this page is a recommendation for any individual.</p>' },
+        { q: 'What is PubMed, and why use it?', a: '<p>PubMed is the US National Library of Medicine’s free index of biomedical literature, covering thousands of peer-reviewed journals. Searching it gives a structured, reproducible view of what has actually been studied — rather than what is advertised.</p>' },
+        { q: 'Does listing a study mean we recommend its findings?', a: '<p>No. Listing means the study is part of the published evidence base. Individual studies vary in quality — a small case report carries far less weight than a systematic review or randomised trial. Nothing on this page is a recommendation for any individual.</p>' },
         { q: 'Why do study findings sometimes disagree?', a: '<p>Different designs, patient groups, surgical techniques, measurement methods and eras produce different results. Systematic reviews that pool many studies sit at the top of the evidence ladder; single-centre case series sit lower.</p>' },
-        { q: 'How current is this page?', a: '<p>The PubMed search was run in October 2026. New studies are indexed continuously â€” check PubMed for the latest work, and look for updated systematic reviews and regulator statements.</p>' },
-        { q: 'Where can I read the full articles?', a: '<p>Each link opens the studyâ€™s PubMed record with its abstract. Many full texts sit behind journal subscriptions; ask a librarian, university library or your clinician for access, and treat any claim you cannot verify with caution.</p>' }
+        { q: 'How current is this page?', a: '<p>The PubMed search was run in October 2026. New studies are indexed continuously — check PubMed for the latest work, and look for updated systematic reviews and regulator statements.</p>' },
+        { q: 'Where can I read the full articles?', a: '<p>Each link opens the study’s PubMed record with its abstract. Many full texts sit behind journal subscriptions; ask a librarian, university library or your clinician for access, and treat any claim you cannot verify with caution.</p>' }
       ]
     },
-    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only â€” not medical advice',
+    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
       text: 'This page summarises published research for general education. It cannot account for your health, anatomy or circumstances, and it does not recommend any treatment. Study figures may not transfer to individuals. Decisions about breast enlargement should be made with a qualified, registered clinician after proper assessment. If you notice a new breast lump or any urgent symptom, seek medical care promptly.' },
     stdCta({ heading: 'Want to discuss what the evidence means for you?' })
   ]
 });
 
-module.exports = { site, pages, home, stdCta, reviewNotice, treatmentPage };
-
-pages.push({
-  url: '/technology-and-medical-standards/', slug: 'technology-and-medical-standards',
-  h1: 'Technology and Medical Standards',
-  seoTitle: 'Technology & Medical Standards | Breast Enlargement Guide',
-  seoDescription: 'Our approach to assessment, clinical protocols, technology and safety in breast enhancement care.',
-  bannerEyebrow: 'Clinical standards',
-  bannerLead: 'Assessment, consultation, clinical protocols, technology and safety are fundamental to an informed, responsible approach.',
-  breadcrumb: [{ label: 'Technology and Medical Standards' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Technology and Medical Standards', url: site.url + '/technology-and-medical-standards/' }],
-  blocks: [reviewNotice]
-});
-
-pages.push({
-  url: '/candidacy-and-safety/', slug: 'candidacy-and-safety',
-  h1: 'Candidacy and Safety',
-  seoTitle: 'Candidacy and Safety | Breast Enlargement Guide',
-  seoDescription: 'Understand candidacy, suitability screening, contraindications, alternatives, risks and how safety guides decision-making.',
-  bannerEyebrow: 'Patient information',
-  bannerLead: 'Candidacy and safety are central to responsible care â€” decisions follow assessment, not promotion.',
-  breadcrumb: [{ label: 'Candidacy and Safety' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Candidacy and Safety', url: site.url + '/candidacy-and-safety/' }],
-  blocks: [reviewNotice]
-});
+module.exports = { site, pages, home, stdCta, treatmentPage };
