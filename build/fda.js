@@ -70,7 +70,7 @@ const fdaPage = {
   url: '/research/fda-breast-enlargement/',
   slug: 'fda-research',
   h1: 'FDA Breast Enlargement Information',
-  seoTitle: 'FDA Breast Enlargement Information | Breast Implants, Fillers & Safety || Breast Enlargement Guide',
+  seoTitle: 'FDA Breast Enlargement Information | Breast Implants, Fillers & Safety || Quantum Health',
   seoDescription: 'A curated library of ' + n(docs.length) + ' FDA documents and ' + n(facts.length) + ' extracted facts on breast enlargement, breast implants, BIA-ALCL, dermal fillers and injectable silicone, with links to fda.gov.',
   bannerEyebrow: 'Regulator library',
   bannerLead: 'Breast enlargement information published by the U.S. Food and Drug Administration \u2014 breast implants, BIA-ALCL, dermal fillers and injectable silicone, extracted and linked to the original fda.gov pages.',

@@ -213,20 +213,22 @@
   gap: var(--sp-2);
   min-height: var(--header-h);
 }
-.brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; }
+.brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; flex-shrink: 0; max-width: 280px; text-decoration: none; }
 .brand__ico { color: var(--gold); display: inline-flex; flex: none; }
 .brand__ico svg { width: 32px; height: 32px; }
-.brand__text { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
+.brand__text { display: flex; flex-direction: column; line-height: 1.05; min-width: 0; overflow: hidden; }
 .brand__name {
   font-family: var(--font-heading);
-  font-size: clamp(1.24rem, 1.2rem + .15vw, 1.32rem);
+  font-size: clamp(1.1rem, 1.05rem + .2vw, 1.25rem);
   font-weight: var(--w-head-strong);
-  letter-spacing: .06em;
+  letter-spacing: .04em;
   color: var(--ivory);
   text-transform: uppercase;
-  /* one-word brand token: break only when user font scaling forces it */
-  overflow-wrap: anywhere;
-}
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
 .brand__tag {
   font-size: var(--fs-micro);
   letter-spacing: .24em;
@@ -1511,9 +1513,9 @@ button.gallery-item .gallery-item__cap {
 @media (min-width: 1024px) {
   .nav {
     display: flex; align-items: center;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     justify-content: flex-end;
-    gap: clamp(.5rem, 1vw, .65rem);
+    gap: clamp(.3rem, .65vw, .55rem);
   }
   .nav__link {
     display: inline-flex; align-items: center;
@@ -1521,9 +1523,9 @@ button.gallery-item .gallery-item__cap {
     min-height: var(--tap);
     padding: .55em .05em;
     white-space: nowrap;
-    font-size: .82rem;
-    font-weight: var(--w-body-mid);
-    letter-spacing: .08em;
+     font-size: clamp(.68rem, .74vw, .78rem);
+     font-weight: var(--w-body-mid);
+     letter-spacing: .045em;
     text-transform: uppercase;
     color: var(--ivory-soft);
     transition: color var(--dur-fast) var(--ease);

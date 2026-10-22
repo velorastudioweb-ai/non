@@ -48,12 +48,12 @@ function copyDir(src, dest) {
 const blogIndex = {
   url: '/blogs/', slug: 'blogs',
   h1: 'Insights & Patient Resources',
-  seoTitle: 'Breast Enlargement Education & Patient Resources | Breast Enlargement Guide',
+  seoTitle: 'Breast Enlargement Education & Patient Resources | Quantum Health',
   seoDescription: 'Evidence-led articles on breast enhancement options, safety, recovery and the questions patients should ask before treatment.',
   bannerEyebrow: 'Knowledge for more confident decisions',
   bannerLead: 'Clear, evidence-aware articles covering treatment options, safety, recovery and the questions worth asking before any decision.',
   breadcrumb: [{ label: 'Insights' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Breast Enlargement Guide Insights', url: site.url + '/blogs/' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Quantum Health Insights', url: site.url + '/blogs/' }],
   blocks: [
     {
       type: 'cards', cols: 3, eyebrow: 'Articles',
@@ -108,7 +108,7 @@ function articleToPage(a) {
 /* ---------- 404 ---------- */
 const notFound = {
   url: '/404.html', slug: '404', h1: 'Page not found',
-      seoTitle: 'Page Not Found | Breast Enlargement Guide', seoDescription: 'The page you were looking for could not be found.',
+      seoTitle: 'Page Not Found | Quantum Health', seoDescription: 'The page you were looking for could not be found.',
   noindex: true,
   bannerEyebrow: 'Error 404', showBanner: false,
   blocks: [

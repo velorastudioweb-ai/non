@@ -25,8 +25,8 @@ function legalPage(o) {
 const contact = {
   url: '/contact/', slug: 'contact',
   h1: 'Contact Us',
-  seoTitle: 'Contact Us | Breast Enlargement Guide',
-  seoDescription: 'How to contact the Breast Enlargement Guide — an independent educational website about breast enlargement options, evidence and safety.',
+  seoTitle: 'Contact Us | Quantum Health',
+  seoDescription: 'How to contact the Quantum Health — an independent educational website about breast enlargement options, evidence and safety.',
   bannerEyebrow: 'Contact',
   bannerLead: 'This website is an educational resource, not a clinic. Use this page for corrections, source suggestions or general questions about the content.',
   breadcrumb: [{ label: 'Contact' }],
@@ -89,8 +89,8 @@ const contact = {
 const legal = [
   legalPage({
     url: '/privacy-policy/', slug: 'privacy-policy', label: 'Privacy policy',
-    h1: 'Privacy Policy', seoTitle: 'Privacy Policy | Breast Enlargement Guide',
-    seoDescription: 'How the Breast Enlargement Guide website handles personal information submitted through its contact form.',
+    h1: 'Privacy Policy', seoTitle: 'Privacy Policy | Quantum Health',
+    seoDescription: 'How the Quantum Health website handles personal information submitted through its contact form.',
     lead: 'How personal information submitted through this website is handled.',
     html:
       '<h2 class="h3">Who we are</h2><p>This website is an independent, educational publication about breast enlargement. It is not a clinic and does not provide medical services. This policy explains how the limited personal information collected through this website is handled.</p>' +
@@ -101,8 +101,8 @@ const legal = [
   }),
   legalPage({
     url: '/cookie-policy/', slug: 'cookie-policy', label: 'Cookie policy',
-    h1: 'Cookie Policy', seoTitle: 'Cookie Policy | Breast Enlargement Guide',
-    seoDescription: 'How the Breast Enlargement Guide website uses cookies and similar technologies, and how consent is managed.',
+    h1: 'Cookie Policy', seoTitle: 'Cookie Policy | Quantum Health',
+    seoDescription: 'How the Quantum Health website uses cookies and similar technologies, and how consent is managed.',
     lead: 'How cookies and similar technologies are used, and how you can manage consent.',
     html:
       '<h2 class="h3">What cookies are</h2><p>Cookies are small files stored by your browser. This website aims to use as few as possible and to load any non-essential cookies only after consent.</p>' +
@@ -111,8 +111,8 @@ const legal = [
   }),
   legalPage({
     url: '/terms-of-use/', slug: 'terms-of-use', label: 'Terms of use',
-    h1: 'Terms of Use', seoTitle: 'Terms of Use | Breast Enlargement Guide',
-    seoDescription: 'The terms governing use of the Breast Enlargement Guide website and its educational content.',
+    h1: 'Terms of Use', seoTitle: 'Terms of Use | Quantum Health',
+    seoDescription: 'The terms governing use of the Quantum Health website and its educational content.',
     lead: 'The terms governing use of this website and its educational content.',
     html:
       '<h2 class="h3">Educational purpose</h2><p>Content on this website is provided for general educational purposes. It is not a substitute for professional medical advice, diagnosis or treatment, and it does not create a doctor–patient relationship.</p>' +
@@ -121,8 +121,8 @@ const legal = [
   }),
   legalPage({
     url: '/medical-disclaimer/', slug: 'medical-disclaimer', label: 'Medical disclaimer',
-    h1: 'Medical Disclaimer', seoTitle: 'Medical Disclaimer | Breast Enlargement Guide',
-    seoDescription: 'The medical disclaimer for content published on the Breast Enlargement Guide website.',
+    h1: 'Medical Disclaimer', seoTitle: 'Medical Disclaimer | Quantum Health',
+    seoDescription: 'The medical disclaimer for content published on the Quantum Health website.',
     lead: 'Important limitations on the medical information published on this website.',
     html:
       '<p>Website content is provided for general educational purposes and is not a substitute for professional medical advice. This website is not a clinic and does not provide treatment, consultations or diagnoses.</p>' +

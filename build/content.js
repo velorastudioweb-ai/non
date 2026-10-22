@@ -15,8 +15,8 @@
 const SITE_URL = (process.env.SITE_URL || 'https://nonsurgicalbreastenlargement.in').replace(/\/+$/, '');
 
 const site = {
-  name: 'Breast Enlargement Guide',
-  shortName: 'Breast Enlargement Guide',
+  name: 'Quantum Health',
+  shortName: 'Quantum Health',
   tagline: 'Independent, evidence-based education on non-surgical and surgical breast enlargement.',
   domain: SITE_URL.replace(/^https?:\/\//, ''),
   url: SITE_URL,
@@ -40,26 +40,29 @@ const site = {
   medicalDisclaimerShort: '',
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'Understand', href: '/understanding-breast-enlargement/' },
-    { label: 'Non-Surgical', href: '/non-surgical/' },
+    { label: 'Anatomy', href: '/breast-anatomy/' },
+    { label: 'Non-surgical', href: '/non-surgical/' },
     { label: 'Surgical', href: '/surgical-breast-enhancement/' },
     { label: 'Safety', href: '/breast-enlargement-safety/' },
+    { label: 'Articles', href: '/blogs/' },
     { label: 'Research', href: '/research/' },
-    { label: 'FAQs', href: '/faqs/' },
-    { label: 'Insights', href: '/blogs/' },
-    { label: 'About', href: '/about-us/' }
+    { label: 'Glossary', href: '/glossary/' }
   ],
   navSecondary: [
-    { label: 'Evidence guide', href: '/breast-enlargement-without-surgery/' },
-    { label: 'Treatment comparison', href: '/breast-enhancement-comparison/' },
-    { label: 'Breast anatomy', href: '/breast-anatomy/' },
-    { label: 'Breast implants', href: '/breast-implants/' },
-    { label: 'Implant safety', href: '/breast-implant-safety/' },
-    { label: 'Choosing a surgeon', href: '/choosing-a-surgeon/' },
-    { label: 'PubMed research', href: '/breast-enlargement-research/' },
-    { label: 'Glossary', href: '/glossary/' },
-    { label: 'References', href: '/references/' },
-    { label: 'Contact us', href: '/contact/' }
+    { label: 'Breast Anatomy', href: '/breast-anatomy/' },
+    { label: 'Safety & Candidacy', href: '/breast-enlargement-safety/' },
+    { label: 'Breast Implant Safety', href: '/breast-implant-safety/' },
+    { label: 'Choosing a Surgeon', href: '/choosing-a-surgeon/' },
+    { label: 'Non-Surgical Breast Enlargement', href: '/non-surgical/' },
+    { label: 'Surgical Breast Enlargement', href: '/surgical-breast-enhancement/' },
+    { label: 'Insights & Articles', href: '/blogs/' },
+    { label: 'Research & Sources', href: '/research/' },
+    { label: 'PubMed Research', href: '/breast-enlargement-research/' },
+    { label: 'PMC Research Library', href: '/research/breast-enlargement/' },
+    { label: 'Cochrane Reviews', href: '/research/cochrane-breast-enlargement/' },
+    { label: 'FDA Information', href: '/research/fda-breast-enlargement/' },
+    { label: 'NHS Information', href: '/research/nhs-breast-enlargement/' },
+    { label: 'Glossary', href: '/glossary/' }
   ],
   footerExplore: [
     { label: 'Understanding breast enlargement', href: '/understanding-breast-enlargement/' },

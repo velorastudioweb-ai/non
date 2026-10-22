@@ -70,7 +70,7 @@ const nhsPage = {
   url: '/research/nhs-breast-enlargement/',
   slug: 'nhs-research',
   h1: 'NHS Breast Enlargement Information',
-  seoTitle: 'NHS Breast Enlargement Information | Breast Implants, Costs & Safety || Breast Enlargement Guide',
+  seoTitle: 'NHS Breast Enlargement Information | Breast Implants, Costs & Safety || Quantum Health',
   seoDescription: 'A curated library of ' + n(docs.length) + ' NHS patient-information pages and ' + n(facts.length) + ' extracted facts on breast enlargement, implants, costs, recovery, complications and choosing a surgeon, with links to nhs.uk.',
   bannerEyebrow: 'Regulator library',
   bannerLead: 'Breast enlargement information published by the National Health Service \u2014 the operation, costs, implant choices, recovery, complications, BIA-ALCL, PIP implants and choosing a surgeon, extracted and linked to the original nhs.uk pages.',

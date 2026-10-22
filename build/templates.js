@@ -36,7 +36,7 @@ function head(page, site) {
   <meta property="og:image" content="${site.url}/assets/img/og-cover.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Breast Enlargement Guide — independent patient education">
+  <meta property="og:image:alt" content="Quantum Health — independent patient education">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(page.seoTitle)}">
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
@@ -58,7 +58,7 @@ function navLink(item, activeUrl) {
 }
 function header(page, site) {
   const links = site.nav.map((i) => navLink(i, page.url)).join('\n        ');
-  const mobileLinks = site.nav.concat(site.navSecondary || []).map((i) => {
+  const mobileLinks = Array.from(new Map(site.nav.concat(site.navSecondary || []).map((i) => [i.href, i])).values()).map((i) => {
 const active = page.url === i.href || (i.href !== '/' && page.url.indexOf(i.href) === 0);
 return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-current="page"' : ''}>${esc(i.label)}</a></li>`;
   }).join('\n        ');
@@ -69,7 +69,7 @@ return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-curren
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
 <span class="brand__text">
 <span class="brand__name">${esc(site.name)}</span>
-<span class="brand__tag">Independent patient education</span>
+<span class="brand__tag">Quantum Health</span>
 </span>
 </a>
 <nav class="nav" aria-label="Primary">
@@ -107,7 +107,7 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
 <div class="footer-brand">
 <a class="brand" href="${site.base}" aria-label="${esc(site.name)} home">
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
-<span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
+<span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Quantum Health</span></span>
 </a>
 <p>${esc(site.footerBlurb)}</p>
 <ul class="footer-contact-details">
