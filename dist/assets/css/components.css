@@ -213,22 +213,19 @@
   gap: var(--sp-2);
   min-height: var(--header-h);
 }
-.brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; flex-shrink: 0; max-width: 280px; text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; text-decoration: none; }
 .brand__ico { color: var(--gold); display: inline-flex; flex: none; }
 .brand__ico svg { width: 32px; height: 32px; }
-.brand__text { display: flex; flex-direction: column; line-height: 1.05; min-width: 0; overflow: hidden; }
+.brand__text { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
 .brand__name {
   font-family: var(--font-heading);
-  font-size: clamp(1.1rem, 1.05rem + .2vw, 1.25rem);
+  font-size: clamp(1.24rem, 1.2rem + .15vw, 1.32rem);
   font-weight: var(--w-head-strong);
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   color: var(--ivory);
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  display: inline-block;
+  overflow-wrap: anywhere;
+}
 .brand__tag {
   font-size: var(--fs-micro);
   letter-spacing: .24em;
@@ -237,6 +234,20 @@
   margin-top: 4px;
   white-space: nowrap;
 }
+
+/* Header-only brand fitting (do not constrain the footer brand) */
+.site-header .brand { flex-shrink: 0; max-width: 280px; }
+.site-header .brand__text { line-height: 1.05; overflow: hidden; }
+.site-header .brand__name {
+  font-size: clamp(1.1rem, 1.05rem + .2vw, 1.25rem);
+  letter-spacing: .04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+}
+.site-header .brand__tag { margin-top: 4px; }
 
 .nav { display: none; }
 .header-cta { display: none; }

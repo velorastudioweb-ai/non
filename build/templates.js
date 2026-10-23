@@ -69,7 +69,7 @@ return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-curren
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
 <span class="brand__text">
 <span class="brand__name">${esc(site.name)}</span>
-<span class="brand__tag">Quantum Health</span>
+<span class="brand__tag">Independent patient education</span>
 </span>
 </a>
 <nav class="nav" aria-label="Primary">
@@ -107,7 +107,7 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
 <div class="footer-brand">
 <a class="brand" href="${site.base}" aria-label="${esc(site.name)} home">
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
-<span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Quantum Health</span></span>
+<span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
 </a>
 <p>${esc(site.footerBlurb)}</p>
 <ul class="footer-contact-details">
