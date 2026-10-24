@@ -29,6 +29,33 @@ See `docs/website-restructure.md` for the retained routes and consolidation repo
 The complete PDF extraction and pre-deletion ZIP backup are kept locally in
 `docs/restructure-audit/`; large audit artifacts are excluded from Git.
 
+## Image library and visual audit
+
+`build/visual-plan.js` explicitly maps topic routes and visual placements.
+Original educational illustrations live in `public/assets/img/qh-*`, with
+responsive WebP sources and SVG fallbacks. These are authored illustrations,
+not photographs or clinical results. The existing homepage abstract artwork
+remains clearly labelled; photorealistic lifestyle/consultation/recovery images
+require an available generation tool or suitable supplied photographs.
+
+The complete 36-page image inventory, prompts, asset paths, placements and
+outstanding photographic requirements are documented in
+`docs/image-audit/completion-report.md`. Rebuild illustration sources with
+`node build/generate-editorial-visuals.js`, then encode their responsive WebP
+variants with `node build/rasterize-editorial-visuals.js` (local Chromium,
+`playwright-core` and Python Pillow). Run `npm run build` afterwards.
+
+Image verification commands:
+
+```text
+python build/verify-image-content.py
+python build/image-asset-qa.py
+node build/image-browser-qa.js
+```
+
+These check original written content preservation, generated asset dimensions
+and uniqueness, and every route's image loading at mobile/tablet/desktop widths.
+
 ## Design theme — luxury burgundy, champagne gold, rose-pink
 
 The whole site is styled from three stylesheets in `public/assets/css/`:

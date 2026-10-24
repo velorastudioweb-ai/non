@@ -9,6 +9,7 @@
    Gallery "consented case" and video slots stay intentionally unpublished
    (pendingFrame) — no generated artwork stands in for a real case.
    ============================================================================= */
+const visualPlan = require('./visual-plan');
 
 /* name -> { widths:[w,h]..., alt }  (heights are the real exported dimensions) */
 const IMAGES = {
@@ -70,6 +71,9 @@ BANNER_KEYS.forEach((key) => {
     alt: 'Bold abstract breast-medical banner artwork with rose anatomy contours and champagne-gold highlights'
   };
 });
+Object.values(visualPlan.routes).forEach((art) => {
+  IMAGES[art.key] = { dims: [[480, 330], [960, 660], [1600, 1100]], alt: art.alt, editorial: true };
+});
 
 /* Every banner-enabled route has a dedicated campaign-art key. */
 const BANNERS = {
@@ -119,6 +123,8 @@ const BANNERS = {
 };
 
 function bannerFor(page) {
+  if (page && visualPlan.routes[page.url]) return visualPlan.routes[page.url].key;
+  if (page && /\/(privacy-policy|cookie-policy|terms-of-use|medical-disclaimer)\//.test(page.url)) return null;
   return (page && BANNERS[page.url]) || 'banner-breast-enhancement';
 }
 
@@ -212,6 +218,8 @@ function hash(str) {
 /* Resolve a content slot label (and optional route) to an image key.
    Returns null when the content is deliberately unpublished. */
 function keyFor(item) {
+  const planned = visualPlan.forItem(item);
+  if (planned) return planned;
   const slot = item && item.slot;
   if (slot) {
     if (Object.prototype.hasOwnProperty.call(SLOTS, slot)) return SLOTS[slot];
@@ -233,6 +241,17 @@ function picture(key, opts) {
   const o = opts || {};
   const meta = IMAGES[key];
   if (!meta) return '';
+  if (meta.editorial) {
+    const variant = o.variant || 'card';
+    const dims = variant === 'banner' ? [[640, 256], [960, 384], [1600, 640]] : variant === 'portrait' ? [[480, 600], [960, 1200]] : meta.dims;
+    const largest = dims[dims.length - 1];
+    const prefix = BASE + key + '-' + variant;
+    const srcset = dims.map(([w]) => prefix + '-' + w + '.webp ' + w + 'w').join(', ');
+    const sizes = o.sizes || '100vw';
+    return '<picture class="editorial-picture"><source type="image/webp" srcset="' + srcset + '" sizes="' + esc(sizes) + '">' +
+      '<img class="editorial-image' + (o.className ? ' ' + esc(o.className) : '') + '" src="' + prefix + '.svg" width="' + largest[0] + '" height="' + largest[1] + '" alt="' + esc(o.alt != null ? o.alt : meta.alt) + '"' +
+      (o.eager ? ' loading="eager" fetchpriority="high"' : ' loading="lazy" decoding="async"') + '></picture>';
+  }
   const dims = meta.dims;
   const largest = dims[dims.length - 1];
   const src = BASE + key + '-' + largest[0] + '.jpg';
@@ -240,9 +259,13 @@ function picture(key, opts) {
   const eager = o.eager ? ' loading="eager" fetchpriority="high"' : ' loading="lazy" decoding="async"';
   const cls = o.className ? ' class="' + esc(o.className) + '"' : '';
   const sizes = o.sizes ? ' sizes="' + esc(o.sizes) + '"' : '';
-  return '<img' + cls + ' src="' + src + '" srcset="' + srcset + '"' + sizes +
+  const image = '<img' + cls + ' src="' + src + '" srcset="' + srcset + '"' + sizes +
     ' width="' + largest[0] + '" height="' + largest[1] + '"' +
-    ' alt="' + esc(o.alt || meta.alt) + '"' + eager + '>';
+    ' alt="' + esc(o.alt != null ? o.alt : meta.alt) + '"' + eager + '>';
+  if (key === 'homepage-hero-luxury-editorial') {
+    return '<picture><source type="image/webp" srcset="' + srcset.replace(/\.jpg/g, '.webp') + '"' + sizes + '>' + image + '</picture>';
+  }
+  return image;
 }
 
 /* Image for a content item (slot/route aware). Empty string if unpublished. */

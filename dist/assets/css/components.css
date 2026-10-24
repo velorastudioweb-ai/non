@@ -1835,6 +1835,15 @@ button.gallery-item .gallery-item__cap {
 .source-group .prose li { min-width: 0; overflow-wrap: anywhere; }
 .source-group .prose ul, .source-group .prose ol { min-width: 0; max-width: 100%; }
 .source-index { line-height: 2; overflow-wrap: anywhere; }
+.editorial-picture { display: block; width: 100%; height: 100%; }
+.editorial-image { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; background: #4A0D24; }
+.card__media:has(.editorial-picture), .media-frame:has(.editorial-picture) { background: #4A0D24; }
+.educational-visual { max-width: 800px; margin-inline: auto; border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; background: #4A0D24; }
+.educational-visual .editorial-picture { height: auto; aspect-ratio: 16 / 11; }
+.educational-visual img { aspect-ratio: 16 / 11; }
+.educational-visual figcaption { padding: 1rem 1.25rem; color: var(--ivory-soft); font-size: var(--fs-sm); line-height: 1.6; }
+.hero__figure > picture { display: block; width: 100%; height: 100%; }
+.hero__credit[data-image-caption] { max-width: calc(100% - 28px); white-space: normal; line-height: 1.5; }
 @media (min-width: 1024px) {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
   .header-cta { display: none; }

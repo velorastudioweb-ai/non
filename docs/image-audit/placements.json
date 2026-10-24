@@ -1,0 +1,1667 @@
+[
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "Clear information. Honest limits. No promotion.",
+    "key": "qh-independent-patient-education",
+    "variant": "portrait",
+    "originalContent": "<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p><p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p><p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>",
+    "source": "/assets/img/qh-independent-patient-education-portrait.svg",
+    "files": [
+      "/assets/img/qh-independent-patient-education-portrait-480.webp",
+      "/assets/img/qh-independent-patient-education-portrait-960.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "Find your starting point / Surgical Breast Enlargement",
+    "key": "qh-surgical-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Surgical Breast Enlargement",
+      "href": "/surgical-breast-enlargement/",
+      "text": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.",
+      "slot": "Surgical Breast Enlargement"
+    },
+    "source": "/assets/img/qh-surgical-options-card.svg",
+    "files": [
+      "/assets/img/qh-surgical-options-card-480.webp",
+      "/assets/img/qh-surgical-options-card-960.webp",
+      "/assets/img/qh-surgical-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "Find your starting point / Non-Surgical Breast Enlargement",
+    "key": "qh-non-surgical-evidence",
+    "variant": "card",
+    "originalContent": {
+      "title": "Non-Surgical Breast Enlargement",
+      "href": "/non-surgical-breast-enlargement/",
+      "text": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.",
+      "slot": "Non-Surgical Breast Enlargement"
+    },
+    "source": "/assets/img/qh-non-surgical-evidence-card.svg",
+    "files": [
+      "/assets/img/qh-non-surgical-evidence-card-480.webp",
+      "/assets/img/qh-non-surgical-evidence-card-960.webp",
+      "/assets/img/qh-non-surgical-evidence-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "Find your starting point / Education & Research",
+    "key": "qh-education-research",
+    "variant": "card",
+    "originalContent": {
+      "title": "Education & Research",
+      "href": "/education-research/",
+      "text": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.",
+      "slot": "Education & Research"
+    },
+    "source": "/assets/img/qh-education-research-card.svg",
+    "files": [
+      "/assets/img/qh-education-research-card-480.webp",
+      "/assets/img/qh-education-research-card-960.webp",
+      "/assets/img/qh-education-research-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Breast dermal fillers",
+    "key": "qh-filler-product-caution",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast dermal fillers",
+      "text": "Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.",
+      "href": "/non-surgical/dermal-fillers/"
+    },
+    "source": "/assets/img/qh-filler-product-caution-card.svg",
+    "files": [
+      "/assets/img/qh-filler-product-caution-card-480.webp",
+      "/assets/img/qh-filler-product-caution-card-960.webp",
+      "/assets/img/qh-filler-product-caution-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / PRP",
+    "key": "qh-prp-preparation-tube",
+    "variant": "card",
+    "originalContent": {
+      "title": "PRP",
+      "text": "How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.",
+      "href": "/non-surgical/prp/"
+    },
+    "source": "/assets/img/qh-prp-preparation-tube-card.svg",
+    "files": [
+      "/assets/img/qh-prp-preparation-tube-card-480.webp",
+      "/assets/img/qh-prp-preparation-tube-card-960.webp",
+      "/assets/img/qh-prp-preparation-tube-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Thread-based procedures",
+    "key": "qh-cog-suture-material",
+    "variant": "card",
+    "originalContent": {
+      "title": "Thread-based procedures",
+      "text": "PDO and mono threads: intended mechanical effects, limitations and product-specific indications.",
+      "href": "/non-surgical/breast-threads/"
+    },
+    "source": "/assets/img/qh-cog-suture-material-card.svg",
+    "files": [
+      "/assets/img/qh-cog-suture-material-card-480.webp",
+      "/assets/img/qh-cog-suture-material-card-960.webp",
+      "/assets/img/qh-cog-suture-material-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Sculptra & biostimulators",
+    "key": "qh-plla-material-concept",
+    "variant": "card",
+    "originalContent": {
+      "title": "Sculptra & biostimulators",
+      "text": "Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.",
+      "href": "/non-surgical/sculptra-plla/"
+    },
+    "source": "/assets/img/qh-plla-material-concept-card.svg",
+    "files": [
+      "/assets/img/qh-plla-material-concept-card-480.webp",
+      "/assets/img/qh-plla-material-concept-card-960.webp",
+      "/assets/img/qh-plla-material-concept-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Breast implants",
+    "key": "qh-implant-shell-profiles",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast implants",
+      "text": "Medical devices with an outer shell and gel filling, and their long-term monitoring needs.",
+      "href": "/breast-implants/"
+    },
+    "source": "/assets/img/qh-implant-shell-profiles-card.svg",
+    "files": [
+      "/assets/img/qh-implant-shell-profiles-card-480.webp",
+      "/assets/img/qh-implant-shell-profiles-card-960.webp",
+      "/assets/img/qh-implant-shell-profiles-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Fat transfer",
+    "key": "qh-fat-transfer-tissue",
+    "variant": "card",
+    "originalContent": {
+      "title": "Fat transfer",
+      "text": "Using your own fat for a modest, individualised increase in volume, and its retention variability.",
+      "href": "/surgical/fat-transfer-breast-augmentation/"
+    },
+    "source": "/assets/img/qh-fat-transfer-tissue-card.svg",
+    "files": [
+      "/assets/img/qh-fat-transfer-tissue-card-480.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-960.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Breast augmentation",
+    "key": "qh-augmentation-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast augmentation",
+      "text": "Surgical increase of breast volume using implants or, in selected cases, your own fat.",
+      "href": "/surgical/breast-augmentation/"
+    },
+    "source": "/assets/img/qh-augmentation-planning-card.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-card-480.webp",
+      "/assets/img/qh-augmentation-planning-card-960.webp",
+      "/assets/img/qh-augmentation-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A closer look at individual options / Compare all options",
+    "key": "qh-comparing-treatment-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Compare all options",
+      "text": "A side-by-side view of intended effect, primary consideration and important limitation.",
+      "href": "/breast-enhancement-comparison/"
+    },
+    "source": "/assets/img/qh-comparing-treatment-options-card.svg",
+    "files": [
+      "/assets/img/qh-comparing-treatment-options-card-480.webp",
+      "/assets/img/qh-comparing-treatment-options-card-960.webp",
+      "/assets/img/qh-comparing-treatment-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A clear, five-step pathway to an informed decision",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": [
+      {
+        "title": "Learn what each option is",
+        "text": "Start with the non-surgical and surgical sections to understand intended effects, mechanisms and limitations."
+      },
+      {
+        "title": "Check what the evidence shows",
+        "text": "Read the evidence guide and the research libraries to see what is proven, what is unproven and what to avoid."
+      },
+      {
+        "title": "Understand the risks",
+        "text": "Review candidacy, contraindications, possible complications and the warning signs that need medical attention."
+      },
+      {
+        "title": "Compare fairly",
+        "text": "Use the side-by-side comparison to weigh intended effect, evidence quality, recovery and reversibility."
+      },
+      {
+        "title": "Talk to a qualified professional",
+        "text": "Take your written questions to a registered, appropriately qualified clinician and compare more than one opinion before deciding."
+      }
+    ],
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A clear foundation for your decision / Understanding Breast Enlargement: An Evidence-Aware Overview",
+    "key": "qh-understanding-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Understanding Breast Enlargement: An Evidence-Aware Overview",
+      "href": "/understanding-breast-enlargement/",
+      "text": "What breast enlargement means, the difference between real tissue growth and temporary appearance change, the main routes to more volume, and how to read the evidence behind any claim.",
+      "slot": "Understanding Breast Enlargement: An Evidence-Aware Overview"
+    },
+    "source": "/assets/img/qh-understanding-options-card.svg",
+    "files": [
+      "/assets/img/qh-understanding-options-card-480.webp",
+      "/assets/img/qh-understanding-options-card-960.webp",
+      "/assets/img/qh-understanding-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A clear foundation for your decision / Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+    "key": "qh-breast-tissue-schematic",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+      "href": "/breast-anatomy/",
+      "text": "A clear guide to breast anatomy — glandular and fatty tissue, Cooper’s ligaments, skin envelope, blood supply, nerves and lymph drainage — and why each structure matters for enlargement.",
+      "slot": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply"
+    },
+    "source": "/assets/img/qh-breast-tissue-schematic-card.svg",
+    "files": [
+      "/assets/img/qh-breast-tissue-schematic-card-480.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-960.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A clear foundation for your decision / Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+    "key": "qh-comparing-treatment-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+      "href": "/breast-enhancement-comparison/",
+      "text": "A side-by-side comparison of breast enhancement options — dermal fillers, PRP, threads, Sculptra, stem cells, implants and fat transfer — and their key limitations.",
+      "slot": "Breast Enhancement Options Compared: Surgical vs Non-Surgical"
+    },
+    "source": "/assets/img/qh-comparing-treatment-options-card.svg",
+    "files": [
+      "/assets/img/qh-comparing-treatment-options-card-480.webp",
+      "/assets/img/qh-comparing-treatment-options-card-960.webp",
+      "/assets/img/qh-comparing-treatment-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/",
+    "page": "Home",
+    "section": "A clear foundation for your decision / Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+      "href": "/breast-enlargement-safety/",
+      "text": "A safety overview across every breast enlargement route — candidacy and contraindications, the risks common to each option, when to seek urgent care, and the questions that reveal a safe clinic.",
+      "slot": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs"
+    },
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Page banner",
+    "key": "qh-surgical-options",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Surgical Breast Enlargement",
+      "introduction": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures."
+    },
+    "source": "/assets/img/qh-surgical-options-banner.svg",
+    "files": [
+      "/assets/img/qh-surgical-options-banner-640.webp",
+      "/assets/img/qh-surgical-options-banner-960.webp",
+      "/assets/img/qh-surgical-options-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Preparing for a surgical consultation",
+    "key": "qh-augmentation-planning",
+    "variant": "card",
+    "originalContent": [
+      {
+        "title": "Clarify your goals and expectations",
+        "text": "What change are you hoping for, and how would you prioritise proportion, size and shape?"
+      },
+      {
+        "title": "Share your full medical history",
+        "text": "Including previous surgery, medications, allergies and relevant family history."
+      },
+      {
+        "title": "Ask about credentials",
+        "text": "Request the surgeon’s qualifications, registration and specific breast-procedure experience."
+      },
+      {
+        "title": "Ask about the plan and its limits",
+        "text": "Discuss technique, expected limitations, recovery, costs and potential revision."
+      },
+      {
+        "title": "Take time to decide",
+        "text": "Proceed only when you understand the risks, alternatives and aftercare, and feel ready to consent."
+      }
+    ],
+    "source": "/assets/img/qh-augmentation-planning-card.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-card-480.webp",
+      "/assets/img/qh-augmentation-planning-card-960.webp",
+      "/assets/img/qh-augmentation-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Breast enlargement: implants and fat transfer / Breast Augmentation: Implants & Fat Transfer",
+    "key": "qh-augmentation-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Augmentation: Implants & Fat Transfer",
+      "href": "/surgical/breast-augmentation/",
+      "text": "Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.",
+      "slot": "Breast Augmentation: Implants & Fat Transfer"
+    },
+    "source": "/assets/img/qh-augmentation-planning-card.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-card-480.webp",
+      "/assets/img/qh-augmentation-planning-card-960.webp",
+      "/assets/img/qh-augmentation-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Breast enlargement: implants and fat transfer / Breast Implants: Types, Placement & Long-Term Reality",
+    "key": "qh-implant-shell-profiles",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Implants: Types, Placement & Long-Term Reality",
+      "href": "/breast-implants/",
+      "text": "An evidence-aware guide to breast implants — saline and silicone, smooth and textured, shape and profile, placement and incisions, longevity, monitoring and the difference from injectable silicone.",
+      "slot": "Breast Implants: Types, Placement & Long-Term Reality"
+    },
+    "source": "/assets/img/qh-implant-shell-profiles-card.svg",
+    "files": [
+      "/assets/img/qh-implant-shell-profiles-card-480.webp",
+      "/assets/img/qh-implant-shell-profiles-card-960.webp",
+      "/assets/img/qh-implant-shell-profiles-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Breast enlargement: implants and fat transfer / Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+    "key": "qh-implant-monitoring",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+      "href": "/breast-implant-safety/",
+      "text": "What is actually known about breast implant safety — rupture and silent rupture, capsular contracture, BIA-ALCL, systemic symptoms, screening and the regulator guidance behind monitoring.",
+      "slot": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring"
+    },
+    "source": "/assets/img/qh-implant-monitoring-card.svg",
+    "files": [
+      "/assets/img/qh-implant-monitoring-card-480.webp",
+      "/assets/img/qh-implant-monitoring-card-960.webp",
+      "/assets/img/qh-implant-monitoring-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Breast enlargement: implants and fat transfer / Fat Transfer Breast Augmentation: What to Know",
+    "key": "qh-fat-transfer-tissue",
+    "variant": "card",
+    "originalContent": {
+      "title": "Fat Transfer Breast Augmentation: What to Know",
+      "href": "/surgical/fat-transfer-breast-augmentation/",
+      "text": "Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.",
+      "slot": "Fat Transfer Breast Augmentation: What to Know"
+    },
+    "source": "/assets/img/qh-fat-transfer-tissue-card.svg",
+    "files": [
+      "/assets/img/qh-fat-transfer-tissue-card-480.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-960.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+    "key": "qh-mastopexy-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+      "href": "/surgical/breast-lift/",
+      "text": "Breast lift (mastopexy): what it changes — sagging skin, nipple position and breast shape — how it differs from augmentation, scarring, longevity and combination options.",
+      "slot": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity"
+    },
+    "source": "/assets/img/qh-mastopexy-planning-card.svg",
+    "files": [
+      "/assets/img/qh-mastopexy-planning-card-480.webp",
+      "/assets/img/qh-mastopexy-planning-card-960.webp",
+      "/assets/img/qh-mastopexy-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Revision Surgery: Implant Exchange, Removal & Repair",
+    "key": "qh-implant-revision",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
+      "href": "/surgical/breast-revision/",
+      "text": "Breast revision surgery: why implants may need revision — capsular contracture, rupture, displacement, asymmetry or a change in preferences — and what revision planning involves.",
+      "slot": "Breast Revision Surgery: Implant Exchange, Removal & Repair"
+    },
+    "source": "/assets/img/qh-implant-revision-card.svg",
+    "files": [
+      "/assets/img/qh-implant-revision-card-480.webp",
+      "/assets/img/qh-implant-revision-card-960.webp",
+      "/assets/img/qh-implant-revision-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Filler Removal: Clearing Injected Fillers & Silicone",
+    "key": "qh-filler-removal-assessment",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
+      "href": "/surgical/breast-filler-removal/",
+      "text": "Breast filler removal: why injected fillers and liquid silicone cause complications, how removal is approached, and what to expect regarding imaging, scars and staged treatment.",
+      "slot": "Breast Filler Removal: Clearing Injected Fillers & Silicone"
+    },
+    "source": "/assets/img/qh-filler-removal-assessment-card.svg",
+    "files": [
+      "/assets/img/qh-filler-removal-assessment-card-480.webp",
+      "/assets/img/qh-filler-removal-assessment-card-960.webp",
+      "/assets/img/qh-filler-removal-assessment-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Reduction Surgery: Benefits, Techniques & Recovery",
+    "key": "qh-reduction-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
+      "href": "/surgical/breast-reduction/",
+      "text": "Breast reduction surgery: how reducing breast volume and weight can relieve physical symptoms, what the procedure involves, scarring, recovery and factors that shape the outcome.",
+      "slot": "Breast Reduction Surgery: Benefits, Techniques & Recovery"
+    },
+    "source": "/assets/img/qh-reduction-planning-card.svg",
+    "files": [
+      "/assets/img/qh-reduction-planning-card-480.webp",
+      "/assets/img/qh-reduction-planning-card-960.webp",
+      "/assets/img/qh-reduction-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "page": "Surgical Breast Enlargement",
+    "section": "Related surgery: shape, correction, reduction and chest contouring / Mastectomy & Chest Contouring Surgery: Patient Information",
+    "key": "qh-chest-contouring-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
+      "href": "/surgical/mastectomy-chest-surgery/",
+      "text": "Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.",
+      "slot": "Mastectomy & Chest Contouring Surgery: Patient Information"
+    },
+    "source": "/assets/img/qh-chest-contouring-planning-card.svg",
+    "files": [
+      "/assets/img/qh-chest-contouring-planning-card-480.webp",
+      "/assets/img/qh-chest-contouring-planning-card-960.webp",
+      "/assets/img/qh-chest-contouring-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Page banner",
+    "key": "qh-non-surgical-evidence",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Non-Surgical Breast Enlargement",
+      "introduction": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe."
+    },
+    "source": "/assets/img/qh-non-surgical-evidence-banner.svg",
+    "files": [
+      "/assets/img/qh-non-surgical-evidence-banner-640.webp",
+      "/assets/img/qh-non-surgical-evidence-banner-960.webp",
+      "/assets/img/qh-non-surgical-evidence-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Breast Enlargement Without Surgery: What Works — Evidence Guide",
+    "key": "qh-without-surgery-evidence",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
+      "href": "/breast-enlargement-without-surgery/",
+      "text": "An evidence-based scorecard of more than 20 popular breast enlargement methods — what adds real volume, what only changes appearance, and what to avoid.",
+      "slot": "Breast Enlargement Without Surgery: What Works — Evidence Guide"
+    },
+    "source": "/assets/img/qh-without-surgery-evidence-card.svg",
+    "files": [
+      "/assets/img/qh-without-surgery-evidence-card-480.webp",
+      "/assets/img/qh-without-surgery-evidence-card-960.webp",
+      "/assets/img/qh-without-surgery-evidence-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Non-Surgical Breast Enhancement: Options & Safety",
+    "key": "qh-non-surgical-safety-review",
+    "variant": "card",
+    "originalContent": {
+      "title": "Non-Surgical Breast Enhancement: Options & Safety",
+      "href": "/non-surgical/",
+      "text": "Explore non-surgical breast enhancement options — dermal fillers, PRP, threads, Sculptra and biostimulators — with their evidence, limitations and safety considerations.",
+      "slot": "Non-Surgical Breast Enhancement: Options & Safety"
+    },
+    "source": "/assets/img/qh-non-surgical-safety-review-card.svg",
+    "files": [
+      "/assets/img/qh-non-surgical-safety-review-card-480.webp",
+      "/assets/img/qh-non-surgical-safety-review-card-960.webp",
+      "/assets/img/qh-non-surgical-safety-review-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Breast Fillers: Safety, Evidence & Alternatives",
+    "key": "qh-filler-product-caution",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Fillers: Safety, Evidence & Alternatives",
+      "href": "/non-surgical/dermal-fillers/",
+      "text": "An evidence-aware overview of injectable dermal fillers and breast enhancement: approved uses, serious safety concerns, FDA advice and evidence-based alternatives.",
+      "slot": "Breast Fillers: Safety, Evidence & Alternatives"
+    },
+    "source": "/assets/img/qh-filler-product-caution-card.svg",
+    "files": [
+      "/assets/img/qh-filler-product-caution-card-480.webp",
+      "/assets/img/qh-filler-product-caution-card-960.webp",
+      "/assets/img/qh-filler-product-caution-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Breast Thread Procedures: Uses & Limitations",
+    "key": "qh-cog-suture-material",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Thread Procedures: Uses & Limitations",
+      "href": "/non-surgical/breast-threads/",
+      "text": "PDO cog threads and thread-based aesthetic procedures: intended effects, product-specific indications, limitations and potential risks.",
+      "slot": "Breast Thread Procedures: Uses & Limitations"
+    },
+    "source": "/assets/img/qh-cog-suture-material-card.svg",
+    "files": [
+      "/assets/img/qh-cog-suture-material-card-480.webp",
+      "/assets/img/qh-cog-suture-material-card-960.webp",
+      "/assets/img/qh-cog-suture-material-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Mono Threads: Uses and Limitations",
+    "key": "qh-smooth-suture-material",
+    "variant": "card",
+    "originalContent": {
+      "title": "Mono Threads: Uses and Limitations",
+      "href": "/non-surgical/mono-threads/",
+      "text": "What mono threads are, how they differ from cog threads in design and intended mechanical effect, and why breast-enlargement claims require evidence.",
+      "slot": "Mono Threads: Uses and Limitations"
+    },
+    "source": "/assets/img/qh-smooth-suture-material-card.svg",
+    "files": [
+      "/assets/img/qh-smooth-suture-material-card-480.webp",
+      "/assets/img/qh-smooth-suture-material-card-960.webp",
+      "/assets/img/qh-smooth-suture-material-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / PRP and Breast Enhancement: Evidence Explained",
+    "key": "qh-prp-preparation-tube",
+    "variant": "card",
+    "originalContent": {
+      "title": "PRP and Breast Enhancement: Evidence Explained",
+      "href": "/non-surgical/prp/",
+      "text": "How platelet-rich plasma (PRP) is prepared, what it is intended to do, and why evidence and regulatory requirements matter for any breast-enhancement claim.",
+      "slot": "PRP and Breast Enhancement: Evidence Explained"
+    },
+    "source": "/assets/img/qh-prp-preparation-tube-card.svg",
+    "files": [
+      "/assets/img/qh-prp-preparation-tube-card-480.webp",
+      "/assets/img/qh-prp-preparation-tube-card-960.webp",
+      "/assets/img/qh-prp-preparation-tube-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Biostimulators: Collagen-Stimulating Treatments",
+    "key": "qh-biostimulator-research",
+    "variant": "card",
+    "originalContent": {
+      "title": "Biostimulators: Collagen-Stimulating Treatments",
+      "href": "/non-surgical/biostimulators/",
+      "text": "Biostimulators are a broad category intended to stimulate a tissue response for selected indications. Their ingredients, authorised uses and safety profiles vary.",
+      "slot": "Biostimulators: Collagen-Stimulating Treatments"
+    },
+    "source": "/assets/img/qh-biostimulator-research-card.svg",
+    "files": [
+      "/assets/img/qh-biostimulator-research-card-480.webp",
+      "/assets/img/qh-biostimulator-research-card-960.webp",
+      "/assets/img/qh-biostimulator-research-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Sculptra and PLLA: Uses, Safety & Evidence",
+    "key": "qh-plla-material-concept",
+    "variant": "card",
+    "originalContent": {
+      "title": "Sculptra and PLLA: Uses, Safety & Evidence",
+      "href": "/non-surgical/sculptra-plla/",
+      "text": "Sculptra and poly-L-lactic acid injectables: intended approved uses, the difference between collagen-stimulation claims and breast augmentation, and key safety points.",
+      "slot": "Sculptra and PLLA: Uses, Safety & Evidence"
+    },
+    "source": "/assets/img/qh-plla-material-concept-card.svg",
+    "files": [
+      "/assets/img/qh-plla-material-concept-card-480.webp",
+      "/assets/img/qh-plla-material-concept-card-960.webp",
+      "/assets/img/qh-plla-material-concept-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "page": "Non-Surgical Breast Enlargement",
+    "section": "Non-surgical options: evidence, limitations and safety / Stem Cells and Regenerative Medicine",
+    "key": "qh-regenerative-laboratory-research",
+    "variant": "card",
+    "originalContent": {
+      "title": "Stem Cells and Regenerative Medicine",
+      "href": "/non-surgical/regenerative-medicine/",
+      "text": "Stem cells and regenerative products are the subject of ongoing research. What “regenerative” does and does not establish, and why regulatory status matters.",
+      "slot": "Stem Cells and Regenerative Medicine"
+    },
+    "source": "/assets/img/qh-regenerative-laboratory-research-card.svg",
+    "files": [
+      "/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+      "/assets/img/qh-regenerative-laboratory-research-card-960.webp",
+      "/assets/img/qh-regenerative-laboratory-research-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Page banner",
+    "key": "qh-education-research",
+    "variant": "banner",
+    "originalContent": {
+      "title": "General Education & Research",
+      "introduction": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options."
+    },
+    "source": "/assets/img/qh-education-research-banner.svg",
+    "files": [
+      "/assets/img/qh-education-research-banner-640.webp",
+      "/assets/img/qh-education-research-banner-960.webp",
+      "/assets/img/qh-education-research-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Understanding Breast Enlargement: An Evidence-Aware Overview",
+    "key": "qh-understanding-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Understanding Breast Enlargement: An Evidence-Aware Overview",
+      "href": "/understanding-breast-enlargement/",
+      "text": "What breast enlargement means, the difference between real tissue growth and temporary appearance change, the main routes to more volume, and how to read the evidence behind any claim.",
+      "slot": "Understanding Breast Enlargement: An Evidence-Aware Overview"
+    },
+    "source": "/assets/img/qh-understanding-options-card.svg",
+    "files": [
+      "/assets/img/qh-understanding-options-card-480.webp",
+      "/assets/img/qh-understanding-options-card-960.webp",
+      "/assets/img/qh-understanding-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+    "key": "qh-breast-tissue-schematic",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+      "href": "/breast-anatomy/",
+      "text": "A clear guide to breast anatomy — glandular and fatty tissue, Cooper’s ligaments, skin envelope, blood supply, nerves and lymph drainage — and why each structure matters for enlargement.",
+      "slot": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply"
+    },
+    "source": "/assets/img/qh-breast-tissue-schematic-card.svg",
+    "files": [
+      "/assets/img/qh-breast-tissue-schematic-card-480.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-960.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+    "key": "qh-comparing-treatment-options",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+      "href": "/breast-enhancement-comparison/",
+      "text": "A side-by-side comparison of breast enhancement options — dermal fillers, PRP, threads, Sculptra, stem cells, implants and fat transfer — and their key limitations.",
+      "slot": "Breast Enhancement Options Compared: Surgical vs Non-Surgical"
+    },
+    "source": "/assets/img/qh-comparing-treatment-options-card.svg",
+    "files": [
+      "/assets/img/qh-comparing-treatment-options-card-480.webp",
+      "/assets/img/qh-comparing-treatment-options-card-960.webp",
+      "/assets/img/qh-comparing-treatment-options-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+      "href": "/breast-enlargement-safety/",
+      "text": "A safety overview across every breast enlargement route — candidacy and contraindications, the risks common to each option, when to seek urgent care, and the questions that reveal a safe clinic.",
+      "slot": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs"
+    },
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Breast Enlargement Research Library",
+    "key": "qh-external-research-library",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast Enlargement Research Library",
+      "href": "/research/",
+      "text": "Published breast enlargement studies, systematic reviews, regulator guidance and searchable PMC citations, with external source attribution and evidence limitations.",
+      "slot": "Breast Enlargement Research Library"
+    },
+    "source": "/assets/img/qh-external-research-library-card.svg",
+    "files": [
+      "/assets/img/qh-external-research-library-card-480.webp",
+      "/assets/img/qh-external-research-library-card-960.webp",
+      "/assets/img/qh-external-research-library-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Clinical Studies, Reviews and Research References",
+    "key": "qh-scientific-source-references",
+    "variant": "card",
+    "originalContent": {
+      "title": "Clinical Studies, Reviews and Research References",
+      "href": "/references/",
+      "text": "A consolidated bibliography of every source indexed by this website — FDA, NHS, Cochrane, ASPS, BAPRAS, BAAPS, StatPearls, plus the complete PubMed Central record set.",
+      "slot": "Clinical Studies, Reviews and Research References"
+    },
+    "source": "/assets/img/qh-scientific-source-references-card.svg",
+    "files": [
+      "/assets/img/qh-scientific-source-references-card-480.webp",
+      "/assets/img/qh-scientific-source-references-card-960.webp",
+      "/assets/img/qh-scientific-source-references-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Glossary of Medical Terms",
+    "key": "qh-medical-terms-reference",
+    "variant": "card",
+    "originalContent": {
+      "title": "Glossary of Medical Terms",
+      "href": "/glossary/",
+      "text": "Plain-language definitions of the terms used across this site — implant types, capsular contracture, BIA-ALCL, fat transfer, mastopexy, revision surgery and more.",
+      "slot": "Glossary of Medical Terms"
+    },
+    "source": "/assets/img/qh-medical-terms-reference-card.svg",
+    "files": [
+      "/assets/img/qh-medical-terms-reference-card-480.webp",
+      "/assets/img/qh-medical-terms-reference-card-960.webp",
+      "/assets/img/qh-medical-terms-reference-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/education-research/",
+    "page": "General Education & Research",
+    "section": "Learn, compare and read the evidence / Frequently Asked Questions",
+    "key": "qh-shared-questions",
+    "variant": "card",
+    "originalContent": {
+      "title": "Frequently Asked Questions",
+      "href": "/faqs/",
+      "text": "Answers to common questions about non-surgical and surgical breast enhancement, evidence, safety, recovery and how to choose which option may be appropriate.",
+      "slot": "Frequently Asked Questions"
+    },
+    "source": "/assets/img/qh-shared-questions-card.svg",
+    "files": [
+      "/assets/img/qh-shared-questions-card-480.webp",
+      "/assets/img/qh-shared-questions-card-960.webp",
+      "/assets/img/qh-shared-questions-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/breast-augmentation/",
+    "page": "Breast Augmentation: Implants & Fat Transfer",
+    "section": "Page banner",
+    "key": "qh-augmentation-planning",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Augmentation: Implants & Fat Transfer",
+      "introduction": "Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat."
+    },
+    "source": "/assets/img/qh-augmentation-planning-banner.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-banner-640.webp",
+      "/assets/img/qh-augmentation-planning-banner-960.webp",
+      "/assets/img/qh-augmentation-planning-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implants/",
+    "page": "Breast Implants: Types, Placement & Long-Term Reality",
+    "section": "Page banner",
+    "key": "qh-implant-shell-profiles",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Implants: Types, Placement & Long-Term Reality",
+      "introduction": "Breast implants are medical devices placed surgically to increase breast volume. They are the most studied enlargement method — with real complication and revision rates that every patient should understand before deciding."
+    },
+    "source": "/assets/img/qh-implant-shell-profiles-banner.svg",
+    "files": [
+      "/assets/img/qh-implant-shell-profiles-banner-640.webp",
+      "/assets/img/qh-implant-shell-profiles-banner-960.webp",
+      "/assets/img/qh-implant-shell-profiles-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implants/",
+    "page": "Breast Implants: Types, Placement & Long-Term Reality",
+    "section": "prose / educational figure",
+    "key": "qh-implant-shell-profiles",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<p class=\"lead\">An implant is a device — a shell filled with saline (sterile salt water) or silicone gel — placed behind the breast tissue or behind the pectoral muscle. Implant surgery is the best-documented route to a larger, predictable breast size, but it is surgery: it carries risks, it is not permanent, and follow-up over the years is part of the decision.</p>"
+    },
+    "source": "/assets/img/qh-implant-shell-profiles-card.svg",
+    "files": [
+      "/assets/img/qh-implant-shell-profiles-card-480.webp",
+      "/assets/img/qh-implant-shell-profiles-card-960.webp",
+      "/assets/img/qh-implant-shell-profiles-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implants/",
+    "page": "Breast Implants: Types, Placement & Long-Term Reality",
+    "section": "Go deeper / Breast implant safety",
+    "key": "qh-implant-monitoring",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast implant safety",
+      "text": "Rupture, capsular contracture, ALCL, screening and what the regulators say about monitoring.",
+      "href": "/breast-implant-safety/"
+    },
+    "source": "/assets/img/qh-implant-monitoring-card.svg",
+    "files": [
+      "/assets/img/qh-implant-monitoring-card-480.webp",
+      "/assets/img/qh-implant-monitoring-card-960.webp",
+      "/assets/img/qh-implant-monitoring-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implants/",
+    "page": "Breast Implants: Types, Placement & Long-Term Reality",
+    "section": "Go deeper / Breast augmentation",
+    "key": "qh-augmentation-planning",
+    "variant": "card",
+    "originalContent": {
+      "title": "Breast augmentation",
+      "text": "How the operation is planned and performed, recovery, and what it can and cannot achieve.",
+      "href": "/surgical/breast-augmentation/"
+    },
+    "source": "/assets/img/qh-augmentation-planning-card.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-card-480.webp",
+      "/assets/img/qh-augmentation-planning-card-960.webp",
+      "/assets/img/qh-augmentation-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implants/",
+    "page": "Breast Implants: Types, Placement & Long-Term Reality",
+    "section": "Go deeper / Choosing a surgeon",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": {
+      "title": "Choosing a surgeon",
+      "text": "How to check credentials, registrations and the questions worth asking before committing.",
+      "href": "/breast-enlargement-safety/#choosing-a-surgeon"
+    },
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-implant-safety/",
+    "page": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+    "section": "Page banner",
+    "key": "qh-implant-monitoring",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+      "introduction": "Most people who have implants are satisfied, but implants have documented risks that do not disappear with time. This page sets out what the evidence and regulators actually say."
+    },
+    "source": "/assets/img/qh-implant-monitoring-banner.svg",
+    "files": [
+      "/assets/img/qh-implant-monitoring-banner-640.webp",
+      "/assets/img/qh-implant-monitoring-banner-960.webp",
+      "/assets/img/qh-implant-monitoring-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/fat-transfer-breast-augmentation/",
+    "page": "Fat Transfer Breast Augmentation: What to Know",
+    "section": "Page banner",
+    "key": "qh-fat-transfer-tissue",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Fat Transfer Breast Augmentation: What to Know",
+      "introduction": "Fat transfer breast augmentation removes fat from a donor area using liposuction, processes it, and transfers selected fat to the breasts. It may suit certain patients seeking a relatively modest increase in volume without implants."
+    },
+    "source": "/assets/img/qh-fat-transfer-tissue-banner.svg",
+    "files": [
+      "/assets/img/qh-fat-transfer-tissue-banner-640.webp",
+      "/assets/img/qh-fat-transfer-tissue-banner-960.webp",
+      "/assets/img/qh-fat-transfer-tissue-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/fat-transfer-breast-augmentation/",
+    "page": "Fat Transfer Breast Augmentation: What to Know",
+    "section": "prose / educational figure",
+    "key": "qh-fat-transfer-tissue",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<p>The amount of fat that can be transferred safely, and the proportion that remains over time, vary. Some transferred fat may not survive, and more than one procedure may be needed to approach a patient’s goals.</p>"
+    },
+    "source": "/assets/img/qh-fat-transfer-tissue-card.svg",
+    "files": [
+      "/assets/img/qh-fat-transfer-tissue-card-480.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-960.webp",
+      "/assets/img/qh-fat-transfer-tissue-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/breast-lift/",
+    "page": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+    "section": "Page banner",
+    "key": "qh-mastopexy-planning",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+      "introduction": "A breast lift raises and reshapes sagging breasts by removing excess skin and repositioning the breast tissue and nipple. It changes shape, not volume."
+    },
+    "source": "/assets/img/qh-mastopexy-planning-banner.svg",
+    "files": [
+      "/assets/img/qh-mastopexy-planning-banner-640.webp",
+      "/assets/img/qh-mastopexy-planning-banner-960.webp",
+      "/assets/img/qh-mastopexy-planning-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/breast-revision/",
+    "page": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
+    "section": "Page banner",
+    "key": "qh-implant-revision",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
+      "introduction": "Breast revision surgery is performed when a previous breast operation needs correction, adjustment or reversal — for example implant exchange, removal, or repair of capsule-related changes."
+    },
+    "source": "/assets/img/qh-implant-revision-banner.svg",
+    "files": [
+      "/assets/img/qh-implant-revision-banner-640.webp",
+      "/assets/img/qh-implant-revision-banner-960.webp",
+      "/assets/img/qh-implant-revision-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/breast-filler-removal/",
+    "page": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
+    "section": "Page banner",
+    "key": "qh-filler-removal-assessment",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
+      "introduction": "Injectable fillers and liquid silicone are not approved for breast enlargement. When they cause pain, migration, lumps or infection, removal surgery may be required."
+    },
+    "source": "/assets/img/qh-filler-removal-assessment-banner.svg",
+    "files": [
+      "/assets/img/qh-filler-removal-assessment-banner-640.webp",
+      "/assets/img/qh-filler-removal-assessment-banner-960.webp",
+      "/assets/img/qh-filler-removal-assessment-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/breast-reduction/",
+    "page": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
+    "section": "Page banner",
+    "key": "qh-reduction-planning",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
+      "introduction": "Breast reduction removes skin, fat and glandular tissue to reduce breast size and weight, and repositions the breast into a more proportionate shape."
+    },
+    "source": "/assets/img/qh-reduction-planning-banner.svg",
+    "files": [
+      "/assets/img/qh-reduction-planning-banner-640.webp",
+      "/assets/img/qh-reduction-planning-banner-960.webp",
+      "/assets/img/qh-reduction-planning-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/surgical/mastectomy-chest-surgery/",
+    "page": "Mastectomy & Chest Contouring Surgery: Patient Information",
+    "section": "Page banner",
+    "key": "qh-chest-contouring-planning",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
+      "introduction": "Mastectomy removes breast tissue. When performed to create a flatter, more contoured chest, it is often called chest masculinisation or top surgery."
+    },
+    "source": "/assets/img/qh-chest-contouring-planning-banner.svg",
+    "files": [
+      "/assets/img/qh-chest-contouring-planning-banner-640.webp",
+      "/assets/img/qh-chest-contouring-planning-banner-960.webp",
+      "/assets/img/qh-chest-contouring-planning-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-enlargement-without-surgery/",
+    "page": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
+    "section": "Page banner",
+    "key": "qh-without-surgery-evidence",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
+      "introduction": "What works, what doesn’t — a verdict for every popular method, with the evidence, the risks and the red flags behind it."
+    },
+    "source": "/assets/img/qh-without-surgery-evidence-banner.svg",
+    "files": [
+      "/assets/img/qh-without-surgery-evidence-banner-640.webp",
+      "/assets/img/qh-without-surgery-evidence-banner-960.webp",
+      "/assets/img/qh-without-surgery-evidence-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/",
+    "page": "Non-Surgical Breast Enhancement: Options & Safety",
+    "section": "Page banner",
+    "key": "qh-non-surgical-safety-review",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Non-Surgical Breast Enhancement: Options & Safety",
+      "introduction": "Non-surgical treatments differ widely in their intended effects, evidence and regulatory status. This section explains those differences clearly, without advertising claims."
+    },
+    "source": "/assets/img/qh-non-surgical-safety-review-banner.svg",
+    "files": [
+      "/assets/img/qh-non-surgical-safety-review-banner-640.webp",
+      "/assets/img/qh-non-surgical-safety-review-banner-960.webp",
+      "/assets/img/qh-non-surgical-safety-review-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/",
+    "page": "Non-Surgical Breast Enhancement: Options & Safety",
+    "section": "Six questions worth asking",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": [
+      {
+        "title": "What is the exact product and intended use?",
+        "text": "Ask for the precise product name, its approved indications and whether breast use is authorised in your jurisdiction."
+      },
+      {
+        "title": "Is it approved for this purpose?",
+        "text": "Facial approval does not imply approval for injection into the breasts. Products and permitted uses vary by country."
+      },
+      {
+        "title": "What does the evidence actually show?",
+        "text": "Distinguish marketing claims from peer-reviewed evidence for the specific procedure being offered."
+      },
+      {
+        "title": "Who is performing it, and with what competence?",
+        "text": "Suitability depends on the precise product, intended use, clinician competence and applicable regulation."
+      },
+      {
+        "title": "What are the risks and possible complications?",
+        "text": "Ask about infection, pain, tissue damage, nodules, asymmetry and how complications would be managed."
+      },
+      {
+        "title": "What are the alternatives?",
+        "text": "Consider evidence-based alternatives for increasing breast volume, including surgical options where relevant."
+      }
+    ],
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/dermal-fillers/",
+    "page": "Breast Fillers: Safety, Evidence & Alternatives",
+    "section": "Page banner",
+    "key": "qh-filler-product-caution",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Fillers: Safety, Evidence & Alternatives",
+      "introduction": "Dermal fillers are injectable products used for certain approved aesthetic indications. Their use for breast enlargement is a different matter and is not established, approved or routine."
+    },
+    "source": "/assets/img/qh-filler-product-caution-banner.svg",
+    "files": [
+      "/assets/img/qh-filler-product-caution-banner-640.webp",
+      "/assets/img/qh-filler-product-caution-banner-960.webp",
+      "/assets/img/qh-filler-product-caution-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/breast-threads/",
+    "page": "Breast Thread Procedures: Uses & Limitations",
+    "section": "Page banner",
+    "key": "qh-cog-suture-material",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Thread Procedures: Uses & Limitations",
+      "introduction": "Thread procedures use medical sutures placed in tissue for specific intended effects. Different thread materials, designs and placement techniques have different indications and limitations."
+    },
+    "source": "/assets/img/qh-cog-suture-material-banner.svg",
+    "files": [
+      "/assets/img/qh-cog-suture-material-banner-640.webp",
+      "/assets/img/qh-cog-suture-material-banner-960.webp",
+      "/assets/img/qh-cog-suture-material-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/breast-threads/",
+    "page": "Breast Thread Procedures: Uses & Limitations",
+    "section": "prose / educational figure",
+    "key": "qh-cog-suture-material",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<h2 class=\"h3\">Understanding thread-based procedures</h2><p>Thread-based procedures are not, on current evidence, a predictable alternative to breast surgery. Threads should not be presented as established substitutes for breast augmentation.</p><p>Potential risks include infection, discomfort, visible or palpable threads, asymmetry, thread migration or extrusion, and the need for corrective treatment. Suitability depends on the precise product, intended use, clinician competence and applicable regulations.</p>"
+    },
+    "source": "/assets/img/qh-cog-suture-material-card.svg",
+    "files": [
+      "/assets/img/qh-cog-suture-material-card-480.webp",
+      "/assets/img/qh-cog-suture-material-card-960.webp",
+      "/assets/img/qh-cog-suture-material-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/mono-threads/",
+    "page": "Mono Threads: Uses and Limitations",
+    "section": "Page banner",
+    "key": "qh-smooth-suture-material",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Mono Threads: Uses and Limitations",
+      "introduction": "Mono threads differ from cog threads in design and intended mechanical effect. These differences matter when assessing suitability and realistic outcomes."
+    },
+    "source": "/assets/img/qh-smooth-suture-material-banner.svg",
+    "files": [
+      "/assets/img/qh-smooth-suture-material-banner-640.webp",
+      "/assets/img/qh-smooth-suture-material-banner-960.webp",
+      "/assets/img/qh-smooth-suture-material-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/mono-threads/",
+    "page": "Mono Threads: Uses and Limitations",
+    "section": "prose / educational figure",
+    "key": "qh-smooth-suture-material",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<p>Mono threads are fine threads used in aesthetics for particular intended effects. They should not be claimed to reliably enlarge the breast without suitable evidence. As with all thread procedures, the intended effect is defined by the specific product and technique.</p>"
+    },
+    "source": "/assets/img/qh-smooth-suture-material-card.svg",
+    "files": [
+      "/assets/img/qh-smooth-suture-material-card-480.webp",
+      "/assets/img/qh-smooth-suture-material-card-960.webp",
+      "/assets/img/qh-smooth-suture-material-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/prp/",
+    "page": "PRP and Breast Enhancement: Evidence Explained",
+    "section": "Page banner",
+    "key": "qh-prp-preparation-tube",
+    "variant": "banner",
+    "originalContent": {
+      "title": "PRP and Breast Enhancement: Evidence Explained",
+      "introduction": "Platelet-rich plasma is prepared from your own blood to concentrate platelets. Its effects depend entirely on the specific indication and the evidence available for it."
+    },
+    "source": "/assets/img/qh-prp-preparation-tube-banner.svg",
+    "files": [
+      "/assets/img/qh-prp-preparation-tube-banner-640.webp",
+      "/assets/img/qh-prp-preparation-tube-banner-960.webp",
+      "/assets/img/qh-prp-preparation-tube-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/prp/",
+    "page": "PRP and Breast Enhancement: Evidence Explained",
+    "section": "prose / educational figure",
+    "key": "qh-prp-preparation-tube",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<h2 class=\"h3\">How PRP is prepared</h2><p>PRP is prepared by taking a sample of the patient’s own blood and processing it to concentrate the platelets. The resulting preparation is intended for specific purposes; those purposes are not interchangeable, and a preparation intended for one indication is not automatically appropriate for another.</p><h2 class=\"h3\">PRP and breast enhancement</h2><p>Claims about PRP and breast enhancement should be assessed against appropriate clinical evidence for the precise procedure being offered. The evidence for a particular use should be established before that use is described as effective.</p>"
+    },
+    "source": "/assets/img/qh-prp-preparation-tube-card.svg",
+    "files": [
+      "/assets/img/qh-prp-preparation-tube-card-480.webp",
+      "/assets/img/qh-prp-preparation-tube-card-960.webp",
+      "/assets/img/qh-prp-preparation-tube-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/biostimulators/",
+    "page": "Biostimulators: Collagen-Stimulating Treatments",
+    "section": "Page banner",
+    "key": "qh-biostimulator-research",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Biostimulators: Collagen-Stimulating Treatments",
+      "introduction": "Biostimulators are a broad category of products intended to stimulate a tissue response, such as collagen production, for selected indications. Their ingredients, mechanisms, authorised uses and safety profiles vary considerably."
+    },
+    "source": "/assets/img/qh-biostimulator-research-banner.svg",
+    "files": [
+      "/assets/img/qh-biostimulator-research-banner-640.webp",
+      "/assets/img/qh-biostimulator-research-banner-960.webp",
+      "/assets/img/qh-biostimulator-research-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/sculptra-plla/",
+    "page": "Sculptra and PLLA: Uses, Safety & Evidence",
+    "section": "Page banner",
+    "key": "qh-plla-material-concept",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Sculptra and PLLA: Uses, Safety & Evidence",
+      "introduction": "Sculptra is a poly-L-lactic acid-based injectable used for certain specified aesthetic indications, subject to product labelling and local authorisation. It should not be described as a proven breast-enlargement product."
+    },
+    "source": "/assets/img/qh-plla-material-concept-banner.svg",
+    "files": [
+      "/assets/img/qh-plla-material-concept-banner-640.webp",
+      "/assets/img/qh-plla-material-concept-banner-960.webp",
+      "/assets/img/qh-plla-material-concept-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/regenerative-medicine/",
+    "page": "Stem Cells and Regenerative Medicine",
+    "section": "Page banner",
+    "key": "qh-regenerative-laboratory-research",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Stem Cells and Regenerative Medicine",
+      "introduction": "Stem cells and other regenerative products are the subject of ongoing research. The term “regenerative” does not establish that a product is effective, approved or appropriate for breast enhancement."
+    },
+    "source": "/assets/img/qh-regenerative-laboratory-research-banner.svg",
+    "files": [
+      "/assets/img/qh-regenerative-laboratory-research-banner-640.webp",
+      "/assets/img/qh-regenerative-laboratory-research-banner-960.webp",
+      "/assets/img/qh-regenerative-laboratory-research-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/non-surgical/regenerative-medicine/",
+    "page": "Stem Cells and Regenerative Medicine",
+    "section": "Research versus established care / educational figure",
+    "key": "qh-regenerative-laboratory-research",
+    "variant": "card",
+    "originalContent": {
+      "type": "notice",
+      "icon": "safety",
+      "title": "Research versus established care",
+      "text": "Many marketed regenerative uses remain unapproved or investigational. Products marketed as regenerative can carry risks including infection and other serious complications, and permitted uses vary by jurisdiction."
+    },
+    "source": "/assets/img/qh-regenerative-laboratory-research-card.svg",
+    "files": [
+      "/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+      "/assets/img/qh-regenerative-laboratory-research-card-960.webp",
+      "/assets/img/qh-regenerative-laboratory-research-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/understanding-breast-enlargement/",
+    "page": "Understanding Breast Enlargement: An Evidence-Aware Overview",
+    "section": "Page banner",
+    "key": "qh-understanding-options",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Understanding Breast Enlargement: An Evidence-Aware Overview",
+      "introduction": "Before comparing treatments, it helps to understand what breast enlargement actually involves — and the difference between changing how the breasts look and changing the breast itself."
+    },
+    "source": "/assets/img/qh-understanding-options-banner.svg",
+    "files": [
+      "/assets/img/qh-understanding-options-banner-640.webp",
+      "/assets/img/qh-understanding-options-banner-960.webp",
+      "/assets/img/qh-understanding-options-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/understanding-breast-enlargement/",
+    "page": "Understanding Breast Enlargement: An Evidence-Aware Overview",
+    "section": "A clear path from curiosity to an informed decision",
+    "key": "qh-safety-informed-choice",
+    "variant": "card",
+    "originalContent": [
+      {
+        "title": "Understand the biology",
+        "text": "Read this page and the breast anatomy guide so that you can tell appearance changes from tissue changes."
+      },
+      {
+        "title": "Learn each option",
+        "text": "Work through the non-surgical and surgical sections to understand intended effects, mechanisms and limitations."
+      },
+      {
+        "title": "Check the evidence",
+        "text": "Use the evidence guide and research libraries to see what is proven, what is unproven and what to avoid."
+      },
+      {
+        "title": "Understand the risks",
+        "text": "Review candidacy, contraindications, complications and the warning signs that need medical attention."
+      },
+      {
+        "title": "Prepare for a clinician",
+        "text": "Take written questions to a registered, appropriately qualified professional and compare more than one opinion."
+      }
+    ],
+    "source": "/assets/img/qh-safety-informed-choice-card.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "/assets/img/qh-safety-informed-choice-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-anatomy/",
+    "page": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+    "section": "Page banner",
+    "key": "qh-breast-tissue-schematic",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+      "introduction": "Understanding the structures of the breast explains why some treatments can add volume, why sagging happens, and why injecting or operating carries the risks it does."
+    },
+    "source": "/assets/img/qh-breast-tissue-schematic-banner.svg",
+    "files": [
+      "/assets/img/qh-breast-tissue-schematic-banner-640.webp",
+      "/assets/img/qh-breast-tissue-schematic-banner-960.webp",
+      "/assets/img/qh-breast-tissue-schematic-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-anatomy/",
+    "page": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
+    "section": "prose / educational figure",
+    "key": "qh-breast-tissue-schematic",
+    "variant": "card",
+    "originalContent": {
+      "type": "prose",
+      "html": "<p class=\"lead\">The breast is not a simple sac of tissue. It is a layered structure whose behaviour — how it changes with weight and hormones, how it sags, and how it responds to surgery or injection — follows from what it is made of and how it is supplied with blood and nerve.</p>"
+    },
+    "source": "/assets/img/qh-breast-tissue-schematic-card.svg",
+    "files": [
+      "/assets/img/qh-breast-tissue-schematic-card-480.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-960.webp",
+      "/assets/img/qh-breast-tissue-schematic-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-enhancement-comparison/",
+    "page": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+    "section": "Page banner",
+    "key": "qh-comparing-treatment-options",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
+      "introduction": "This comparison helps distinguish a procedure’s intended effect from claims made in advertising. It does not suggest that a non-surgical procedure is automatically safer than surgery."
+    },
+    "source": "/assets/img/qh-comparing-treatment-options-banner.svg",
+    "files": [
+      "/assets/img/qh-comparing-treatment-options-banner-640.webp",
+      "/assets/img/qh-comparing-treatment-options-banner-960.webp",
+      "/assets/img/qh-comparing-treatment-options-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-enlargement-safety/",
+    "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+    "section": "Page banner",
+    "key": "qh-safety-informed-choice",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+      "introduction": "Safety is not a property of a treatment label; it is the balance of benefit, risk and suitability for one person. This page brings the safety points from every option into one place."
+    },
+    "source": "/assets/img/qh-safety-informed-choice-banner.svg",
+    "files": [
+      "/assets/img/qh-safety-informed-choice-banner-640.webp",
+      "/assets/img/qh-safety-informed-choice-banner-960.webp",
+      "/assets/img/qh-safety-informed-choice-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/breast-enlargement-safety/",
+    "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+    "section": "How to check a surgeon before you commit",
+    "key": "qh-augmentation-planning",
+    "variant": "card",
+    "originalContent": [
+      {
+        "title": "Confirm registration",
+        "text": "Find the surgeon on your national medical council or regulator and confirm the registration is current and unrestricted."
+      },
+      {
+        "title": "Confirm surgical training",
+        "text": "A surgeon performing breast surgery should hold recognised training in plastic or reconstructive surgery, not merely a short cosmetic course."
+      },
+      {
+        "title": "Check scope of practice",
+        "text": "The clinician should operate within their qualifications; ask directly who will perform each part of the procedure."
+      },
+      {
+        "title": "Check the operating setting",
+        "text": "Ask where the procedure is performed, who provides anaesthesia, and what arrangements exist for emergencies."
+      },
+      {
+        "title": "Ask for the plan in writing",
+        "text": "A reputable surgeon provides a written plan covering technique, risks, costs and revision policy — so you can think it over."
+      }
+    ],
+    "source": "/assets/img/qh-augmentation-planning-card.svg",
+    "files": [
+      "/assets/img/qh-augmentation-planning-card-480.webp",
+      "/assets/img/qh-augmentation-planning-card-960.webp",
+      "/assets/img/qh-augmentation-planning-card-1600.webp"
+    ]
+  },
+  {
+    "route": "/references/",
+    "page": "Clinical Studies, Reviews and Research References",
+    "section": "Page banner",
+    "key": "qh-scientific-source-references",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Clinical Studies, Reviews and Research References",
+      "introduction": "Every source this website draws on, grouped by publisher and linked to the original."
+    },
+    "source": "/assets/img/qh-scientific-source-references-banner.svg",
+    "files": [
+      "/assets/img/qh-scientific-source-references-banner-640.webp",
+      "/assets/img/qh-scientific-source-references-banner-960.webp",
+      "/assets/img/qh-scientific-source-references-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/glossary/",
+    "page": "Glossary of Medical Terms",
+    "section": "Page banner",
+    "key": "qh-medical-terms-reference",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Glossary of Medical Terms",
+      "introduction": "Plain-language definitions of the terms you will meet on this site and in a consultation."
+    },
+    "source": "/assets/img/qh-medical-terms-reference-banner.svg",
+    "files": [
+      "/assets/img/qh-medical-terms-reference-banner-640.webp",
+      "/assets/img/qh-medical-terms-reference-banner-960.webp",
+      "/assets/img/qh-medical-terms-reference-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/faqs/",
+    "page": "Frequently Asked Questions",
+    "section": "Page banner",
+    "key": "qh-shared-questions",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Frequently Asked Questions",
+      "introduction": "Straightforward answers to the questions patients most often ask. Every individual situation still requires assessment by an appropriately qualified clinician."
+    },
+    "source": "/assets/img/qh-shared-questions-banner.svg",
+    "files": [
+      "/assets/img/qh-shared-questions-banner-640.webp",
+      "/assets/img/qh-shared-questions-banner-960.webp",
+      "/assets/img/qh-shared-questions-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/research/",
+    "page": "Breast Enlargement Research Library",
+    "section": "Page banner",
+    "key": "qh-external-research-library",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Breast Enlargement Research Library",
+      "introduction": "An independent reading guide to external research and patient information. These studies and source publications are not Quantum Health research."
+    },
+    "source": "/assets/img/qh-external-research-library-banner.svg",
+    "files": [
+      "/assets/img/qh-external-research-library-banner-640.webp",
+      "/assets/img/qh-external-research-library-banner-960.webp",
+      "/assets/img/qh-external-research-library-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/about-us/",
+    "page": "About this website",
+    "section": "Page banner",
+    "key": "qh-independent-patient-education",
+    "variant": "banner",
+    "originalContent": {
+      "title": "About this website",
+      "introduction": "Clear, balanced information about breast enlargement options — what works, what does not, and what to ask."
+    },
+    "source": "/assets/img/qh-independent-patient-education-banner.svg",
+    "files": [
+      "/assets/img/qh-independent-patient-education-banner-640.webp",
+      "/assets/img/qh-independent-patient-education-banner-960.webp",
+      "/assets/img/qh-independent-patient-education-banner-1600.webp"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "page": "Contact Us",
+    "section": "Page banner",
+    "key": "qh-website-enquiries",
+    "variant": "banner",
+    "originalContent": {
+      "title": "Contact Us",
+      "introduction": "This website is an educational resource, not a clinic. Use this page for corrections, source suggestions or general questions about the content."
+    },
+    "source": "/assets/img/qh-website-enquiries-banner.svg",
+    "files": [
+      "/assets/img/qh-website-enquiries-banner-640.webp",
+      "/assets/img/qh-website-enquiries-banner-960.webp",
+      "/assets/img/qh-website-enquiries-banner-1600.webp"
+    ]
+  }
+]

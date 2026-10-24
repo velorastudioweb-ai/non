@@ -1,0 +1,13 @@
+{
+  "before": {
+    "uniqueFiles": 46,
+    "uniqueBytes": 2554241,
+    "imageReferences": 178
+  },
+  "after": {
+    "uniqueFiles": 78,
+    "uniqueBytes": 980648,
+    "imageReferences": 105
+  },
+  "scope": "Unique image resources actually selected across all 36 desktop routes at DPR 1; excludes unchanged CSS/background assets and browser caching between routes."
+}

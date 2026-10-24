@@ -1,0 +1,1343 @@
+{
+  "files": 243,
+  "svg_compositions": 61,
+  "failures": [],
+  "assets": [
+    {
+      "path": "/assets/img/qh-surgical-options-card.svg",
+      "bytes": 4095
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5942
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14018
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 26166
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-banner.svg",
+      "bytes": 4127
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4682
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8046
+    },
+    {
+      "path": "/assets/img/qh-surgical-options-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14948
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-card.svg",
+      "bytes": 3472
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6380
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 15470
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 28964
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-banner.svg",
+      "bytes": 3504
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4964
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8610
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-evidence-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 16440
+    },
+    {
+      "path": "/assets/img/qh-education-research-card.svg",
+      "bytes": 3113
+    },
+    {
+      "path": "/assets/img/qh-education-research-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4394
+    },
+    {
+      "path": "/assets/img/qh-education-research-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 9980
+    },
+    {
+      "path": "/assets/img/qh-education-research-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 18720
+    },
+    {
+      "path": "/assets/img/qh-education-research-banner.svg",
+      "bytes": 3145
+    },
+    {
+      "path": "/assets/img/qh-education-research-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3550
+    },
+    {
+      "path": "/assets/img/qh-education-research-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6092
+    },
+    {
+      "path": "/assets/img/qh-education-research-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 11318
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-card.svg",
+      "bytes": 4094
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5940
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14028
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 25916
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-banner.svg",
+      "bytes": 4126
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4744
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7984
+    },
+    {
+      "path": "/assets/img/qh-augmentation-planning-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14864
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-card.svg",
+      "bytes": 2681
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4676
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 11490
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 21532
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-banner.svg",
+      "bytes": 2713
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3622
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6242
+    },
+    {
+      "path": "/assets/img/qh-implant-shell-profiles-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 12030
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-card.svg",
+      "bytes": 3261
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6202
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14566
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 27080
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-banner.svg",
+      "bytes": 3293
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4618
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8140
+    },
+    {
+      "path": "/assets/img/qh-implant-monitoring-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15104
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-card.svg",
+      "bytes": 3211
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5044
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 11480
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 20416
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-banner.svg",
+      "bytes": 3243
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4002
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6602
+    },
+    {
+      "path": "/assets/img/qh-fat-transfer-tissue-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 11852
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-card.svg",
+      "bytes": 2891
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5702
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14010
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 25172
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-banner.svg",
+      "bytes": 2923
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4306
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7498
+    },
+    {
+      "path": "/assets/img/qh-mastopexy-planning-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14494
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-card.svg",
+      "bytes": 2730
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5814
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14294
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 26400
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-banner.svg",
+      "bytes": 2762
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4508
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7868
+    },
+    {
+      "path": "/assets/img/qh-implant-revision-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15270
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-card.svg",
+      "bytes": 3218
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6270
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14610
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 27066
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-banner.svg",
+      "bytes": 3250
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4642
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8150
+    },
+    {
+      "path": "/assets/img/qh-filler-removal-assessment-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15134
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-card.svg",
+      "bytes": 2746
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5234
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 12582
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 23404
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-banner.svg",
+      "bytes": 2778
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4128
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7038
+    },
+    {
+      "path": "/assets/img/qh-reduction-planning-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 13560
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-card.svg",
+      "bytes": 3586
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4438
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 10942
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 19790
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-banner.svg",
+      "bytes": 3618
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3606
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6120
+    },
+    {
+      "path": "/assets/img/qh-chest-contouring-planning-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 11538
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-card.svg",
+      "bytes": 2906
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5810
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 13654
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 25588
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-banner.svg",
+      "bytes": 2938
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4498
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7798
+    },
+    {
+      "path": "/assets/img/qh-without-surgery-evidence-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14542
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-card.svg",
+      "bytes": 3390
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6092
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 15258
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 27784
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-banner.svg",
+      "bytes": 3422
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4686
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8360
+    },
+    {
+      "path": "/assets/img/qh-non-surgical-safety-review-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15556
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-card.svg",
+      "bytes": 2709
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4576
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 10790
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 19602
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-banner.svg",
+      "bytes": 2741
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3594
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6090
+    },
+    {
+      "path": "/assets/img/qh-filler-product-caution-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 10908
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-card.svg",
+      "bytes": 5169
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6058
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 15224
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 28250
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-banner.svg",
+      "bytes": 5201
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4768
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8300
+    },
+    {
+      "path": "/assets/img/qh-cog-suture-material-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15788
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-card.svg",
+      "bytes": 2469
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4710
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 11940
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 22170
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-banner.svg",
+      "bytes": 2501
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3724
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6608
+    },
+    {
+      "path": "/assets/img/qh-smooth-suture-material-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 12854
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-card.svg",
+      "bytes": 2604
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4030
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 10084
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 18334
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-banner.svg",
+      "bytes": 2636
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3264
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 5802
+    },
+    {
+      "path": "/assets/img/qh-prp-preparation-tube-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 11216
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-card.svg",
+      "bytes": 4111
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6572
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 15414
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 27946
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-banner.svg",
+      "bytes": 4143
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4880
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8546
+    },
+    {
+      "path": "/assets/img/qh-biostimulator-research-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15442
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-card.svg",
+      "bytes": 2838
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4874
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 11320
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 20094
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-banner.svg",
+      "bytes": 2870
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3874
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6570
+    },
+    {
+      "path": "/assets/img/qh-plla-material-concept-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 11854
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-card.svg",
+      "bytes": 3202
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5318
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 12288
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 22248
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-banner.svg",
+      "bytes": 3234
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4342
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7008
+    },
+    {
+      "path": "/assets/img/qh-regenerative-laboratory-research-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 13090
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-card.svg",
+      "bytes": 2970
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 3524
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 8398
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 15448
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-banner.svg",
+      "bytes": 3002
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 2964
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 4984
+    },
+    {
+      "path": "/assets/img/qh-understanding-options-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 9726
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-card.svg",
+      "bytes": 2860
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5674
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 13102
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 24778
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-banner.svg",
+      "bytes": 2892
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4494
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7796
+    },
+    {
+      "path": "/assets/img/qh-breast-tissue-schematic-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14440
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-card.svg",
+      "bytes": 2461
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 3976
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 9430
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 18066
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-banner.svg",
+      "bytes": 2493
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3196
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 5564
+    },
+    {
+      "path": "/assets/img/qh-comparing-treatment-options-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 10564
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-card.svg",
+      "bytes": 2946
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5268
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 12418
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 23076
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-banner.svg",
+      "bytes": 2978
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4238
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7074
+    },
+    {
+      "path": "/assets/img/qh-safety-informed-choice-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 13522
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-card.svg",
+      "bytes": 3736
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 6456
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 14536
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 26146
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-banner.svg",
+      "bytes": 3768
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 5026
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 8490
+    },
+    {
+      "path": "/assets/img/qh-external-research-library-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 15768
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-card.svg",
+      "bytes": 2699
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 4716
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 11594
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 21802
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-banner.svg",
+      "bytes": 2731
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3804
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 6466
+    },
+    {
+      "path": "/assets/img/qh-scientific-source-references-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 12846
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-card.svg",
+      "bytes": 3472
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 5820
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 13438
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 24792
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-banner.svg",
+      "bytes": 3504
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4582
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7622
+    },
+    {
+      "path": "/assets/img/qh-medical-terms-reference-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 14400
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-card.svg",
+      "bytes": 2790
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-card-480.webp",
+      "width": 480,
+      "height": 330,
+      "bytes": 3530
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-card-960.webp",
+      "width": 960,
+      "height": 660,
+      "bytes": 8626
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-card-1600.webp",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 15824
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-banner.svg",
+      "bytes": 2822
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 2974
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 5000
+    },
+    {
+      "path": "/assets/img/qh-shared-questions-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 9932
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-portrait.svg",
+      "bytes": 3457
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-portrait-480.webp",
+      "width": 480,
+      "height": 600,
+      "bytes": 6672
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-portrait-960.webp",
+      "width": 960,
+      "height": 1200,
+      "bytes": 15012
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-banner.svg",
+      "bytes": 3447
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 4242
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 7086
+    },
+    {
+      "path": "/assets/img/qh-independent-patient-education-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 13066
+    },
+    {
+      "path": "/assets/img/qh-website-enquiries-banner.svg",
+      "bytes": 2385
+    },
+    {
+      "path": "/assets/img/qh-website-enquiries-banner-640.webp",
+      "width": 640,
+      "height": 256,
+      "bytes": 3142
+    },
+    {
+      "path": "/assets/img/qh-website-enquiries-banner-960.webp",
+      "width": 960,
+      "height": 384,
+      "bytes": 5440
+    },
+    {
+      "path": "/assets/img/qh-website-enquiries-banner-1600.webp",
+      "width": 1600,
+      "height": 640,
+      "bytes": 10664
+    }
+  ]
+}

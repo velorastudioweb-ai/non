@@ -1,6 +1,7 @@
 ﻿'use strict';
 const { icons, figure, flourish, divider } = require('./icons');
 const { keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = require('./images');
+const visualPlan = require('./visual-plan');
 /* ---------- tiny helpers ---------- */
 const raw = (s) => s; // trusted authored HTML fragments
 /* Photograph for a content item — or a designed "not published" frame when the
@@ -138,13 +139,15 @@ function pageBanner(page, site) {
   const bannerImage = picture(bannerFor(page), {
     className: 'page-banner__image',
     sizes: '100vw',
+    variant: 'banner',
+    alt: '',
     eager: true
   });
   const crumbs = [`<a href="${site.base}">Home</a>`]
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
   return `<section class="page-banner petals">
-  <div class="page-banner__art" aria-hidden="true">${bannerImage}</div>
+  ${bannerImage ? `<div class="page-banner__art" aria-hidden="true">${bannerImage}</div>` : ''}
   <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}
@@ -160,7 +163,7 @@ function renderProse(b) {
 }
 function renderSplit(b) {
   const mediaHtml = b.slot
-? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw' })
+? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw', variant: 'portrait' })
 : (b.media || '');
   return `<div class="container">
   <div class="split ${b.reverse ? 'split--reverse' : ''}">
@@ -183,7 +186,7 @@ function renderCards(b) {
   const sizes = '(max-width: 900px) 100vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-<div class="card__media ${esc(cardRatio)}">${media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>
+${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>
@@ -421,7 +424,7 @@ function renderHero(b, site) {
   const figureBlock = b.slot
 ? `<figure class="hero__figure">${media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt },
   { eager: true, sizes: '(max-width: 900px) 100vw, 50vw' })}
-<figcaption class="hero__credit">Illustrative editorial photography</figcaption>
+<figcaption class="hero__credit" data-image-caption>Abstract editorial illustration — not a patient photograph</figcaption>
 </figure>`
 : '';
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
@@ -476,7 +479,8 @@ default: return '';
 /* ---------- FULL LAYOUT ---------- */
 function layout(page, site) {
   const isHome = page.url === '/';
-  const body = page.blocks.map((b) => renderBlock(b, page, site)).join('\n');
+  const body = page.blocks.map((b) => renderBlock(b, page, site) + (visualPlan.inlineFor(page, b) ?
+    `<section class="section section--tight" data-image-addition><div class="container"><figure class="educational-visual">${picture(visualPlan.routes[page.url].key, { sizes: '(max-width: 900px) 100vw, 800px' })}<figcaption data-image-caption>${esc(visualPlan.routes[page.url].caption)}</figcaption></figure></div></section>` : '')).join('\n');
   const banner = (page.h1 && !isHome && page.showBanner !== false) ? pageBanner(page, site) : '';
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">

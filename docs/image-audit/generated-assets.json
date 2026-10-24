@@ -1,0 +1,490 @@
+[
+  {
+    "route": "/surgical-breast-enlargement/",
+    "filename": "qh-surgical-options-card.svg",
+    "kind": "options",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: surgical options and informed planning"
+  },
+  {
+    "route": "/surgical-breast-enlargement/",
+    "filename": "qh-surgical-options-banner.svg",
+    "kind": "options",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: surgical options and informed planning"
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "filename": "qh-non-surgical-evidence-card.svg",
+    "kind": "evidence",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: assessing non-surgical evidence"
+  },
+  {
+    "route": "/non-surgical-breast-enlargement/",
+    "filename": "qh-non-surgical-evidence-banner.svg",
+    "kind": "evidence",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: assessing non-surgical evidence"
+  },
+  {
+    "route": "/education-research/",
+    "filename": "qh-education-research-card.svg",
+    "kind": "learning",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: shared education and external research"
+  },
+  {
+    "route": "/education-research/",
+    "filename": "qh-education-research-banner.svg",
+    "kind": "learning",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: shared education and external research"
+  },
+  {
+    "route": "/surgical/breast-augmentation/",
+    "filename": "qh-augmentation-planning-card.svg",
+    "kind": "options",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implants and fat-transfer planning"
+  },
+  {
+    "route": "/surgical/breast-augmentation/",
+    "filename": "qh-augmentation-planning-banner.svg",
+    "kind": "options",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implants and fat-transfer planning"
+  },
+  {
+    "route": "/breast-implants/",
+    "filename": "qh-implant-shell-profiles-card.svg",
+    "kind": "implant",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant-device shapes and outer shells"
+  },
+  {
+    "route": "/breast-implants/",
+    "filename": "qh-implant-shell-profiles-banner.svg",
+    "kind": "implant",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant-device shapes and outer shells"
+  },
+  {
+    "route": "/breast-implant-safety/",
+    "filename": "qh-implant-monitoring-card.svg",
+    "kind": "monitoring",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant monitoring and safety"
+  },
+  {
+    "route": "/breast-implant-safety/",
+    "filename": "qh-implant-monitoring-banner.svg",
+    "kind": "monitoring",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant monitoring and safety"
+  },
+  {
+    "route": "/surgical/fat-transfer-breast-augmentation/",
+    "filename": "qh-fat-transfer-tissue-card.svg",
+    "kind": "fat",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: fat-tissue and cannula concepts"
+  },
+  {
+    "route": "/surgical/fat-transfer-breast-augmentation/",
+    "filename": "qh-fat-transfer-tissue-banner.svg",
+    "kind": "fat",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: fat-tissue and cannula concepts"
+  },
+  {
+    "route": "/surgical/breast-lift/",
+    "filename": "qh-mastopexy-planning-card.svg",
+    "kind": "scars",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: schematic areolar, vertical and fold incision-pattern concepts"
+  },
+  {
+    "route": "/surgical/breast-lift/",
+    "filename": "qh-mastopexy-planning-banner.svg",
+    "kind": "scars",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: schematic areolar, vertical and fold incision-pattern concepts"
+  },
+  {
+    "route": "/surgical/breast-revision/",
+    "filename": "qh-implant-revision-card.svg",
+    "kind": "revision",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant review and revision planning"
+  },
+  {
+    "route": "/surgical/breast-revision/",
+    "filename": "qh-implant-revision-banner.svg",
+    "kind": "revision",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: implant review and revision planning"
+  },
+  {
+    "route": "/surgical/breast-filler-removal/",
+    "filename": "qh-filler-removal-assessment-card.svg",
+    "kind": "material",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: assessment of previously injected materials"
+  },
+  {
+    "route": "/surgical/breast-filler-removal/",
+    "filename": "qh-filler-removal-assessment-banner.svg",
+    "kind": "material",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: assessment of previously injected materials"
+  },
+  {
+    "route": "/surgical/breast-reduction/",
+    "filename": "qh-reduction-planning-card.svg",
+    "kind": "shoulders",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: back and shoulder symptoms to discuss before breast reduction"
+  },
+  {
+    "route": "/surgical/breast-reduction/",
+    "filename": "qh-reduction-planning-banner.svg",
+    "kind": "shoulders",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: back and shoulder symptoms to discuss before breast reduction"
+  },
+  {
+    "route": "/surgical/mastectomy-chest-surgery/",
+    "filename": "qh-chest-contouring-planning-card.svg",
+    "kind": "garment",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: chest-surgery garment and follow-up concepts"
+  },
+  {
+    "route": "/surgical/mastectomy-chest-surgery/",
+    "filename": "qh-chest-contouring-planning-banner.svg",
+    "kind": "garment",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: chest-surgery garment and follow-up concepts"
+  },
+  {
+    "route": "/breast-enlargement-without-surgery/",
+    "filename": "qh-without-surgery-evidence-card.svg",
+    "kind": "claims",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: reading the evidence behind enlargement claims"
+  },
+  {
+    "route": "/breast-enlargement-without-surgery/",
+    "filename": "qh-without-surgery-evidence-banner.svg",
+    "kind": "claims",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: reading the evidence behind enlargement claims"
+  },
+  {
+    "route": "/non-surgical/",
+    "filename": "qh-non-surgical-safety-review-card.svg",
+    "kind": "assessment",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: reviewing non-surgical claims and safety"
+  },
+  {
+    "route": "/non-surgical/",
+    "filename": "qh-non-surgical-safety-review-banner.svg",
+    "kind": "assessment",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: reviewing non-surgical claims and safety"
+  },
+  {
+    "route": "/non-surgical/dermal-fillers/",
+    "filename": "qh-filler-product-caution-card.svg",
+    "kind": "filler",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: injectable-product safety questions"
+  },
+  {
+    "route": "/non-surgical/dermal-fillers/",
+    "filename": "qh-filler-product-caution-banner.svg",
+    "kind": "filler",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: injectable-product safety questions"
+  },
+  {
+    "route": "/non-surgical/breast-threads/",
+    "filename": "qh-cog-suture-material-card.svg",
+    "kind": "cog",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: cog-suture material, not a placement guide"
+  },
+  {
+    "route": "/non-surgical/breast-threads/",
+    "filename": "qh-cog-suture-material-banner.svg",
+    "kind": "cog",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: cog-suture material, not a placement guide"
+  },
+  {
+    "route": "/non-surgical/mono-threads/",
+    "filename": "qh-smooth-suture-material-card.svg",
+    "kind": "mono",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: smooth monofilament-suture material"
+  },
+  {
+    "route": "/non-surgical/mono-threads/",
+    "filename": "qh-smooth-suture-material-banner.svg",
+    "kind": "mono",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: smooth monofilament-suture material"
+  },
+  {
+    "route": "/non-surgical/prp/",
+    "filename": "qh-prp-preparation-tube-card.svg",
+    "kind": "prp",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: blood-preparation laboratory concept"
+  },
+  {
+    "route": "/non-surgical/prp/",
+    "filename": "qh-prp-preparation-tube-banner.svg",
+    "kind": "prp",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: blood-preparation laboratory concept"
+  },
+  {
+    "route": "/non-surgical/biostimulators/",
+    "filename": "qh-biostimulator-research-card.svg",
+    "kind": "scaffold",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: biostimulator material research concept"
+  },
+  {
+    "route": "/non-surgical/biostimulators/",
+    "filename": "qh-biostimulator-research-banner.svg",
+    "kind": "scaffold",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: biostimulator material research concept"
+  },
+  {
+    "route": "/non-surgical/sculptra-plla/",
+    "filename": "qh-plla-material-concept-card.svg",
+    "kind": "polymer",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: plla material concept"
+  },
+  {
+    "route": "/non-surgical/sculptra-plla/",
+    "filename": "qh-plla-material-concept-banner.svg",
+    "kind": "polymer",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: plla material concept"
+  },
+  {
+    "route": "/non-surgical/regenerative-medicine/",
+    "filename": "qh-regenerative-laboratory-research-card.svg",
+    "kind": "cells",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: regenerative laboratory research"
+  },
+  {
+    "route": "/non-surgical/regenerative-medicine/",
+    "filename": "qh-regenerative-laboratory-research-banner.svg",
+    "kind": "cells",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: regenerative laboratory research"
+  },
+  {
+    "route": "/understanding-breast-enlargement/",
+    "filename": "qh-understanding-options-card.svg",
+    "kind": "choice",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: understanding options before deciding"
+  },
+  {
+    "route": "/understanding-breast-enlargement/",
+    "filename": "qh-understanding-options-banner.svg",
+    "kind": "choice",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: understanding options before deciding"
+  },
+  {
+    "route": "/breast-anatomy/",
+    "filename": "qh-breast-tissue-schematic-card.svg",
+    "kind": "anatomy",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: simplified breast-tissue schematic"
+  },
+  {
+    "route": "/breast-anatomy/",
+    "filename": "qh-breast-tissue-schematic-banner.svg",
+    "kind": "anatomy",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: simplified breast-tissue schematic"
+  },
+  {
+    "route": "/breast-enhancement-comparison/",
+    "filename": "qh-comparing-treatment-options-card.svg",
+    "kind": "comparison",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: comparing options without outcome guarantees"
+  },
+  {
+    "route": "/breast-enhancement-comparison/",
+    "filename": "qh-comparing-treatment-options-banner.svg",
+    "kind": "comparison",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: comparing options without outcome guarantees"
+  },
+  {
+    "route": "/breast-enlargement-safety/",
+    "filename": "qh-safety-informed-choice-card.svg",
+    "kind": "safety",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: safety and informed choice"
+  },
+  {
+    "route": "/breast-enlargement-safety/",
+    "filename": "qh-safety-informed-choice-banner.svg",
+    "kind": "safety",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: safety and informed choice"
+  },
+  {
+    "route": "/research/",
+    "filename": "qh-external-research-library-card.svg",
+    "kind": "library",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: external research and scientific reading"
+  },
+  {
+    "route": "/research/",
+    "filename": "qh-external-research-library-banner.svg",
+    "kind": "library",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: external research and scientific reading"
+  },
+  {
+    "route": "/references/",
+    "filename": "qh-scientific-source-references-card.svg",
+    "kind": "references",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: external scientific references"
+  },
+  {
+    "route": "/references/",
+    "filename": "qh-scientific-source-references-banner.svg",
+    "kind": "references",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: external scientific references"
+  },
+  {
+    "route": "/glossary/",
+    "filename": "qh-medical-terms-reference-card.svg",
+    "kind": "glossary",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: plain-language medical terminology"
+  },
+  {
+    "route": "/glossary/",
+    "filename": "qh-medical-terms-reference-banner.svg",
+    "kind": "glossary",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: plain-language medical terminology"
+  },
+  {
+    "route": "/faqs/",
+    "filename": "qh-shared-questions-card.svg",
+    "kind": "questions",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: questions and informed discussion"
+  },
+  {
+    "route": "/faqs/",
+    "filename": "qh-shared-questions-banner.svg",
+    "kind": "questions",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: questions and informed discussion"
+  },
+  {
+    "route": "/about-us/",
+    "filename": "qh-independent-patient-education-portrait.svg",
+    "kind": "reading",
+    "variant": "portrait",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: independent patient education"
+  },
+  {
+    "route": "/about-us/",
+    "filename": "qh-independent-patient-education-banner.svg",
+    "kind": "reading",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: independent patient education"
+  },
+  {
+    "route": "/contact/",
+    "filename": "qh-website-enquiries-banner.svg",
+    "kind": "contact",
+    "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: website correspondence"
+  }
+]
