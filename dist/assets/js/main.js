@@ -9,6 +9,23 @@
  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  var $ = function (s,c){ return (c || document).querySelector(s); };
  var $$ = function (s,c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+ // Incoming source-library links reveal their collapsed collection.
+ function revealSourceHash(){
+  var id;
+  try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+  if (!id) return;
+  var target = document.getElementById(id);
+  if (!target) return;
+  var parent = target.closest('details');
+  if (parent) parent.open = true;
+  if (target.classList.contains('source-group')) {
+   var details = target.querySelector('details');
+   if (details) details.open = true;
+  }
+  target.scrollIntoView();
+ }
+ revealSourceHash();
+ window.addEventListener('hashchange', revealSourceHash);
  /* ---------------- Header scroll state ---------------- */
  var header = $('.site-header');
  if (header){

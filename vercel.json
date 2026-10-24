@@ -56,6 +56,121 @@
   ],
   "redirects": [
     {
+      "source": "/surgical-breast-enhancement/",
+      "destination": "/surgical-breast-enlargement/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/",
+      "destination": "/education-research/",
+      "permanent": true
+    },
+    {
+      "source": "/choosing-a-surgeon/",
+      "destination": "/breast-enlargement-safety/#choosing-a-surgeon",
+      "permanent": true
+    },
+    {
+      "source": "/breast-enlargement-research/",
+      "destination": "/research/#pubmed",
+      "permanent": true
+    },
+    {
+      "source": "/research/breast-enlargement/",
+      "destination": "/research/#pmc",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/surgical-vs-non-surgical-breast-enhancement/",
+      "destination": "/breast-enhancement-comparison/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/before-choosing-breast-implants/",
+      "destination": "/breast-implants/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/prp-and-breast-enhancement-what-the-evidence-says/",
+      "destination": "/non-surgical/prp/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/ten-questions-to-ask-at-a-breast-enhancement-consultation/",
+      "destination": "/breast-enlargement-safety/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/breast-fillers-sculptra-and-biostimulators-safety-questions/",
+      "destination": "/non-surgical/dermal-fillers/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs/breast-enlargement-without-surgery-what-works/",
+      "destination": "/breast-enlargement-without-surgery/",
+      "permanent": true
+    },
+    {
+      "source": "/research/cochrane-breast-enlargement/",
+      "destination": "/research/#cochrane",
+      "permanent": true
+    },
+    {
+      "source": "/research/fda-breast-enlargement/",
+      "destination": "/research/#fda",
+      "permanent": true
+    },
+    {
+      "source": "/research/nhs-breast-enlargement/",
+      "destination": "/research/#nhs",
+      "permanent": true
+    },
+    {
+      "source": "/research/healthdirect-breast-enlargement/",
+      "destination": "/research/#healthdirect",
+      "permanent": true
+    },
+    {
+      "source": "/research/cleveland-clinic-breast-enlargement/",
+      "destination": "/research/#clevelandclinic",
+      "permanent": true
+    },
+    {
+      "source": "/research/asps-breast-enlargement/",
+      "destination": "/research/#asps",
+      "permanent": true
+    },
+    {
+      "source": "/research/bapras-breast-augmentation/",
+      "destination": "/research/#bapras",
+      "permanent": true
+    },
+    {
+      "source": "/research/baaps-breast-enlargement/",
+      "destination": "/research/#baaps",
+      "permanent": true
+    },
+    {
+      "source": "/research/statpearls-breast-augmentation/",
+      "destination": "/research/#statpearls",
+      "permanent": true
+    },
+    {
+      "source": "/research/medlineplus-breast-enlargement/",
+      "destination": "/research/#medlineplus",
+      "permanent": true
+    },
+    {
+      "source": "/research/wikipedia-breast-enlargement/",
+      "destination": "/research/#wikipedia",
+      "permanent": true
+    },
+    {
+      "source": "/research/wikipedia-breast-augmentation/",
+      "destination": "/research/#wikipediaaug",
+      "permanent": true
+    },
+    {
       "source": "/about-dr-vikas-singh/",
       "destination": "/about-us/",
       "permanent": true
@@ -82,7 +197,7 @@
     },
     {
       "source": "/our-team/",
-      "destination": "/choosing-a-surgeon/",
+      "destination": "/breast-enlargement-safety/#choosing-a-surgeon",
       "permanent": true
     },
     {
@@ -92,7 +207,7 @@
     },
     {
       "source": "/video-gallery/",
-      "destination": "/blogs/",
+      "destination": "/education-research/",
       "permanent": true
     },
     {
@@ -108,6 +223,16 @@
     {
       "source": "/surgical/silicone-breast-implants/",
       "destination": "/breast-implants/",
+      "permanent": true
+    },
+    {
+      "source": "/wiki/breast-augmentation-scars/",
+      "destination": "/surgical/breast-augmentation/#scars",
+      "permanent": true
+    },
+    {
+      "source": "/wiki/non-surgical-breast-enlargement/",
+      "destination": "/breast-enlargement-without-surgery/",
       "permanent": true
     }
   ]

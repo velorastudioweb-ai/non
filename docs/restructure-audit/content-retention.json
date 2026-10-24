@@ -1,0 +1,187 @@
+{
+  "checked": 332,
+  "results": [
+    {
+      "source": "/non-surgical/",
+      "target": "/non-surgical/",
+      "fragments": 13,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/dermal-fillers/",
+      "target": "/non-surgical/dermal-fillers/",
+      "fragments": 7,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/prp/",
+      "target": "/non-surgical/prp/",
+      "fragments": 4,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/breast-threads/",
+      "target": "/non-surgical/breast-threads/",
+      "fragments": 3,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/mono-threads/",
+      "target": "/non-surgical/mono-threads/",
+      "fragments": 2,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/regenerative-medicine/",
+      "target": "/non-surgical/regenerative-medicine/",
+      "fragments": 3,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/sculptra-plla/",
+      "target": "/non-surgical/sculptra-plla/",
+      "fragments": 2,
+      "missing": []
+    },
+    {
+      "source": "/non-surgical/biostimulators/",
+      "target": "/non-surgical/biostimulators/",
+      "fragments": 1,
+      "missing": []
+    },
+    {
+      "source": "/surgical-breast-enhancement/",
+      "target": "/surgical-breast-enlargement/",
+      "fragments": 6,
+      "missing": []
+    },
+    {
+      "source": "/surgical/breast-augmentation/",
+      "target": "/surgical/breast-augmentation/",
+      "fragments": 27,
+      "missing": [
+        "<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. This should be determined through assessment by an appropriately qualified clinician.</p>"
+      ]
+    },
+    {
+      "source": "/surgical/fat-transfer-breast-augmentation/",
+      "target": "/surgical/fat-transfer-breast-augmentation/",
+      "fragments": 5,
+      "missing": []
+    },
+    {
+      "source": "/surgical/breast-revision/",
+      "target": "/surgical/breast-revision/",
+      "fragments": 6,
+      "missing": []
+    },
+    {
+      "source": "/surgical/breast-reduction/",
+      "target": "/surgical/breast-reduction/",
+      "fragments": 6,
+      "missing": []
+    },
+    {
+      "source": "/surgical/breast-lift/",
+      "target": "/surgical/breast-lift/",
+      "fragments": 6,
+      "missing": []
+    },
+    {
+      "source": "/surgical/mastectomy-chest-surgery/",
+      "target": "/surgical/mastectomy-chest-surgery/",
+      "fragments": 7,
+      "missing": []
+    },
+    {
+      "source": "/surgical/breast-filler-removal/",
+      "target": "/surgical/breast-filler-removal/",
+      "fragments": 9,
+      "missing": []
+    },
+    {
+      "source": "/breast-enlargement-without-surgery/",
+      "target": "/breast-enlargement-without-surgery/",
+      "fragments": 48,
+      "missing": []
+    },
+    {
+      "source": "/breast-enhancement-comparison/",
+      "target": "/breast-enhancement-comparison/",
+      "fragments": 1,
+      "missing": []
+    },
+    {
+      "source": "/about-us/",
+      "target": "/about-us/",
+      "fragments": 1,
+      "missing": []
+    },
+    {
+      "source": "/faqs/",
+      "target": "/faqs/",
+      "fragments": 7,
+      "missing": [
+        "<p>Dermal fillers are not approved for breast enlargement, and regulators advise against using them for this purpose because of potentially serious complications. A filler approved for facial use should not be assumed suitable for injection into the breasts.</p>",
+        "<p>PRP’s effects depend on the specific indication and the evidence available. It should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.</p>",
+        "<p>Some transferred fat can survive long term, but a proportion may be reabsorbed. The final result varies between individuals, and additional procedures may be considered.</p>",
+        "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
+      ]
+    },
+    {
+      "source": "/breast-enlargement-research/",
+      "target": "/research/",
+      "fragments": 94,
+      "missing": []
+    },
+    {
+      "source": "/understanding-breast-enlargement/",
+      "target": "/understanding-breast-enlargement/",
+      "fragments": 13,
+      "missing": []
+    },
+    {
+      "source": "/breast-anatomy/",
+      "target": "/breast-anatomy/",
+      "fragments": 9,
+      "missing": []
+    },
+    {
+      "source": "/breast-implants/",
+      "target": "/breast-implants/",
+      "fragments": 9,
+      "missing": []
+    },
+    {
+      "source": "/breast-implant-safety/",
+      "target": "/breast-implant-safety/",
+      "fragments": 10,
+      "missing": []
+    },
+    {
+      "source": "/choosing-a-surgeon/",
+      "target": "/breast-enlargement-safety/",
+      "fragments": 11,
+      "missing": []
+    },
+    {
+      "source": "/breast-enlargement-safety/",
+      "target": "/breast-enlargement-safety/",
+      "fragments": 18,
+      "missing": []
+    },
+    {
+      "source": "/glossary/",
+      "target": "/glossary/",
+      "fragments": 2,
+      "missing": []
+    },
+    {
+      "source": "/references/",
+      "target": "/references/",
+      "fragments": 2,
+      "missing": []
+    }
+  ],
+  "intentionalConsolidations": "Four treatment-specific shared FAQ answers now link to their canonical guides. The generic augmentation suitability answer is owned by shared FAQs. Topic grids and repeated CTAs are navigation, not medical content."
+}

@@ -12,6 +12,7 @@ const { execFileSync } = require('child_process');
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const WATCH = process.argv.includes('--watch');
+const redirects = new Map(require('./structure').redirects.map((r) => [r.from, r.to]));
 
 const portArg = process.argv.indexOf('--port');
 const PORT = portArg > -1 ? Number(process.argv[portArg + 1]) : 8099;
@@ -53,6 +54,8 @@ function send(res, file, status) {
 }
 
 const server = http.createServer((req, res) => {
+  const target = redirects.get(req.url.split('?')[0]);
+  if (target) { res.writeHead(301, { Location: target }); return res.end(); }
   const file = resolveFile(req.url);
   if (file) return send(res, file);
   const notFound = path.join(DIST, '404.html');

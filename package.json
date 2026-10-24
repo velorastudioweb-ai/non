@@ -5,7 +5,7 @@
   "description": "Independent patient-education website about breast enlargement. Builds plain HTML/CSS/JS into dist/ with no runtime dependencies.",
   "scripts": {
     "build": "node build/gen.js",
-    "qa": "node build/gen.js && node build/qa.js",
+    "qa": "node build/gen.js && node build/qa.js && node build/restructure-qa.js",
     "serve": "node build/serve.js",
     "dev": "node build/gen.js && node build/serve.js --watch",
     "deploy": "vercel --prod --yes"

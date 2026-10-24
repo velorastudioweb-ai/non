@@ -3,24 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 const { layout } = require('./templates');
-const { site, pages, home, stdCta } = require('./content');
-const { articles } = require('./blog');
-const { contact, legal } = require('./extra-pages');
-const { libraryPages } = require('./library');
+const { site, allPages } = require('./structure');
 const { writeStubs } = require('./redirects');
-const { researchPage } = require('./research');
-const { fdaPage } = require('./fda');
-const { nhsPage } = require('./nhs');
-const { healthdirectPage } = require('./healthdirect');
-const { clevelandClinicPage } = require('./clevelandclinic');
-const { aspsPage } = require('./asps');
-const { baprasPage } = require('./bapras');
-const { statPearlsPage } = require('./statpearls');
-const { wikipediaPage } = require('./wikipedia');
-const { wikipediaAugmentationPage } = require('./wikipedia-augmentation');
-const { medlinePlusPage } = require('./medlineplus');
-const { baapsPage } = require('./baaps');
-const { cochranePage } = require('./cochrane');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -32,7 +16,7 @@ function ensureDir(p) { fs.mkdirSync(p, { recursive: true }); }
 function writePage(url, html) {
   const dir = url === '/' ? DIST : path.join(DIST, url.replace(/^\//, '').replace(/\/$/, ''));
   ensureDir(dir);
-  fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
+  fs.writeFileSync(path.join(dir, 'index.html'), html.replace(/[\t ]+$/gm, ''), 'utf8');
 }
 
 function copyDir(src, dest) {
@@ -42,67 +26,6 @@ function copyDir(src, dest) {
     if (entry.isDirectory()) copyDir(s, d);
     else fs.copyFileSync(s, d);
   }
-}
-
-/* ---------- build blog index + article pages ---------- */
-const blogIndex = {
-  url: '/blogs/', slug: 'blogs',
-  h1: 'Insights & Patient Resources',
-  seoTitle: 'Breast Enlargement Education & Patient Resources | Quantum Health',
-  seoDescription: 'Evidence-led articles on breast enhancement options, safety, recovery and the questions patients should ask before treatment.',
-  bannerEyebrow: 'Knowledge for more confident decisions',
-  bannerLead: 'Clear, evidence-aware articles covering treatment options, safety, recovery and the questions worth asking before any decision.',
-  breadcrumb: [{ label: 'Insights' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Quantum Health Insights', url: site.url + '/blogs/' }],
-  blocks: [
-    {
-      type: 'cards', cols: 3, eyebrow: 'Articles',
-      heading: 'Educational articles',
-      lead: 'Every article is an editorial draft pending clinical review; author and reviewer details are published only once verified.',
-      items: articles.map((a) => ({
-        title: a.title, text: a.excerpt, kicker: a.category,
-        href: '/blogs/' + a.slug + '/', slot: a.category + ' imagery'
-      }))
-    },
-    stdCta({ heading: 'Prefer to see how the evidence fits together?' })
-  ]
-};
-
-function articleToPage(a) {
-  const bodyHtml = '<p class="lead">' + a.intro + '</p>' +
-    a.body.map(([h, p]) => '<h2 class="h3">' + h + '</h2>' + p).join('');
-  const refs = a.references && a.references.length
-    ? { type: 'notice', blush: true, icon: 'evidence', title: 'Primary references consulted',
-        text: '<ul>' + a.references.map((r) => '<li>' + r + '</li>').join('') + '</ul>' }
-    : null;
-  const related = articles.filter((x) => a.related.indexOf(x.slug) > -1);
-  return {
-    url: '/blogs/' + a.slug + '/', slug: a.slug,
-    h1: a.title, seoTitle: a.seoTitle, seoDescription: a.seoDescription,
-    bannerEyebrow: a.category,
-    bannerLead: a.excerpt,
-    breadcrumb: [{ label: 'Insights', href: '/blogs/' }, { label: a.title }],
-    ogType: 'article',
-    schema: [{
-      '@context': 'https://schema.org', '@type': 'MedicalScholarlyArticle',
-      headline: a.title, description: a.seoDescription,
-      datePublished: a.date || undefined,
-      url: site.url + '/blogs/' + a.slug + '/'
-    }],
-    blocks: [
-      { type: 'prose', html: bodyHtml },
-      {
-        type: 'notice', icon: 'info', title: 'Editorial disclaimer',
-        text: 'This article is educational and does not provide a personal diagnosis or treatment recommendation. It is an editorial draft: an author and a suitably qualified clinical reviewer will be credited only once the article has actually been authored and reviewed.'
-      },
-      refs,
-      related.length ? {
-        type: 'cards', alt: true, cols: related.length >= 3 ? 3 : related.length, eyebrow: 'Read next', heading: 'Related articles',
-        items: related.map((r) => ({ title: r.title, text: r.excerpt, kicker: r.category, href: '/blogs/' + r.slug + '/' }))
-      } : null,
-      stdCta()
-    ].filter(Boolean)
-  };
 }
 
 /* ---------- 404 ---------- */
@@ -124,7 +47,12 @@ function build() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   ensureDir(DIST);
 
-  const all = [home].concat(pages, libraryPages, [contact], legal, [blogIndex], [researchPage], [fdaPage], [nhsPage], [clevelandClinicPage], [healthdirectPage], [medlinePlusPage], [baapsPage], [wikipediaPage], [wikipediaAugmentationPage], [statPearlsPage], [baprasPage], [aspsPage], [cochranePage], articles.map(articleToPage));
+  const all = allPages;
+  const routes = new Set();
+  all.forEach((p) => {
+    if (routes.has(p.url)) throw new Error('Duplicate canonical route: ' + p.url);
+    routes.add(p.url);
+  });
 
   const written = [];
   all.forEach((page) => {

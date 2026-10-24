@@ -40,10 +40,10 @@ const site = {
   medicalDisclaimerShort: '',
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'Non-surgical', href: '/non-surgical/' },
-    { label: 'Surgical', href: '/surgical-breast-enhancement/' },
-    { label: 'Glossary', href: '/glossary/' },
-    { label: 'Contact us', href: '/contact/' }
+    { label: 'Surgical Breast Enlargement', href: '/surgical-breast-enlargement/' },
+    { label: 'Non-Surgical Breast Enlargement', href: '/non-surgical-breast-enlargement/' },
+    { label: 'Education & Research', href: '/education-research/' },
+    { label: 'About', href: '/about-us/' }
   ],
   navSecondary: [],
   footerExplore: [

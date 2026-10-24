@@ -14,26 +14,11 @@
    `to` must be an existing page in the built site.
    ============================================================================= */
 
-const REDIRECTS = [
-  // Retired clinic / practice pages
-  { from: '/about-dr-vikas-singh/', to: '/about-us/' },
-  { from: '/locations/', to: '/about-us/' },
-  { from: '/media-and-press/', to: '/about-us/' },
-  { from: '/technology-and-medical-standards/', to: '/about-us/' },
-  { from: '/patient-photography-consent/', to: '/about-us/' },
-  { from: '/our-team/', to: '/choosing-a-surgeon/' },
-  { from: '/before-after-gallery/', to: '/understanding-breast-enlargement/' },
-  { from: '/video-gallery/', to: '/blogs/' },
-  { from: '/book-consultation/', to: '/contact/' },
-  // Renamed content
-  { from: '/candidacy-and-safety/', to: '/breast-enlargement-safety/' },
-  { from: '/surgical/silicone-breast-implants/', to: '/breast-implants/' }
-];
+const { redirects: REDIRECTS, site } = require('./structure');
 
-const { site } = require('./content');
 
 function stubHtml(from, to) {
-  const target = site.url + to;
+  const target = site.url + to.split('#')[0];
   return '<!DOCTYPE html>\n' +
     '<html lang="en-IN">\n<head>\n' +
     '<meta charset="utf-8">\n' +

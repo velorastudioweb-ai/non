@@ -1,1 +1,0 @@
-function faqSection(faqs){ if(!faqs||!faqs.length) return ''; return '<section class="faq"><h2>FAQs</h2>'+faqs.map(function(f){return '<details><summary>'+f.q+'</summary><p>'+f.a+'</p></details>'}).join('')+'</section>'; }

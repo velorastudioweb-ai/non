@@ -3,3 +3,5 @@ node_modules/
 
 build/_qa-snapshot/
 build/_diag*.js
+docs/restructure-audit/before.zip
+docs/restructure-audit/complete-pdf.txt

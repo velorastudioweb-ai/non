@@ -471,12 +471,14 @@ async function runInteractions(browser, PORT) {
 async function main() {
   const args = process.argv.slice(2);
   const QUICK = args.includes('--quick');
+  const canonical = args.includes('--canonical');
+  const viewports = args.includes('--standard') ? VIEWPORTS.filter((v) => [320, 768, 1024, 1440].includes(v.width)) : VIEWPORTS;
   const INTERACTIONS = args.includes('--interactions');
   const jsonArg = args.indexOf('--json');
   const portArg = args.indexOf('--port');
   const PORT = portArg > -1 ? Number(args[portArg + 1]) : 8123;
 
-  const pages = QUICK ? KEY_PAGES : listPages();
+  const pages = canonical ? require('./structure').allPages.map((p) => p.url) : QUICK ? KEY_PAGES : listPages();
   const chrome = findChrome();
   if (!chrome) { console.error('No Chrome/Edge found. Set CHROME_PATH.'); process.exit(2); }
 
@@ -494,7 +496,7 @@ async function main() {
   /* freeze dist/ so a concurrent rebuild cannot break this run */
   const SERVE_ROOT = snapshotDist(path.join(ROOT, 'build', '_qa-snapshot'));
 
-  console.log('Responsive QA — ' + pages.length + ' pages x ' + VIEWPORTS.length + ' viewports');
+  console.log('Responsive QA — ' + pages.length + ' pages x ' + viewports.length + ' viewports');
   console.log('Browser: ' + chrome);
   console.log('Serving snapshot: build/_qa-snapshot\n');
 
@@ -520,7 +522,7 @@ async function main() {
   const consoleNoise = [];
 
   try {
-    for (const vp of VIEWPORTS) {
+    for (const vp of viewports) {
       const context = await browser.newContext({
         viewport: { width: vp.width, height: vp.height },
         deviceScaleFactor: 1, hasTouch: vp.width < 1024, isMobile: vp.width < 768

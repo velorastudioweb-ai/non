@@ -237,7 +237,7 @@
 
 /* Header-only brand fitting (do not constrain the footer brand) */
 .site-header .brand { flex-shrink: 0; max-width: 280px; }
-.site-header .brand__text { line-height: 1.05; overflow: hidden; }
+.site-header .brand__text { line-height: 1.15; }
 .site-header .brand__name {
   font-size: clamp(1.1rem, 1.05rem + .2vw, 1.25rem);
   letter-spacing: .04em;
@@ -247,7 +247,7 @@
   max-width: 100%;
   display: inline-block;
 }
-.site-header .brand__tag { margin-top: 4px; }
+.site-header .brand__tag { margin-top: 4px; white-space: normal; letter-spacing: .12em; }
 
 .nav { display: none; }
 .header-cta { display: none; }
@@ -1824,4 +1824,18 @@ button.gallery-item .gallery-item__cap {
 @media (max-width: 760px) {
   .research__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .research__toolbar { grid-template-columns: 1fr; }
+}
+/* Canonical section navigation and source collections. Long category labels
+   wrap rather than being truncated; tables retain their existing scroll wraps. */
+.source-group { max-width: 1200px; margin: 1rem auto; padding: 0 1rem; scroll-margin-top: 7rem; }
+.source-group > details { border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.source-group > details > summary { padding: 1.25rem; cursor: pointer; font-size: 1.1rem; font-weight: 500; min-height: 48px; overflow-wrap: anywhere; }
+.source-group .section { padding-top: 2rem; padding-bottom: 2rem; }
+.source-group .container { width: 100%; max-width: 100%; }
+.source-group .prose li { min-width: 0; overflow-wrap: anywhere; }
+.source-group .prose ul, .source-group .prose ol { min-width: 0; max-width: 100%; }
+.source-index { line-height: 2; overflow-wrap: anywhere; }
+@media (min-width: 1024px) {
+  .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
+  .header-cta { display: none; }
 }

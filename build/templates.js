@@ -57,9 +57,9 @@ function navLink(item, activeUrl) {
   return `<a class="nav__link" href="${item.href}"${active ? ' aria-current="page"' : ''}>${esc(item.label)}</a>`;
 }
 function header(page, site) {
-  const links = site.nav.map((i) => navLink(i, page.url)).join('\n        ');
+  const links = site.nav.map((i) => navLink(i, page.sectionUrl || page.url)).join('\n        ');
   const mobileLinks = Array.from(new Map(site.nav.concat(site.navSecondary || []).map((i) => [i.href, i])).values()).map((i) => {
-const active = page.url === i.href || (i.href !== '/' && page.url.indexOf(i.href) === 0);
+const active = (page.sectionUrl || page.url) === i.href;
 return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-current="page"' : ''}>${esc(i.label)}</a></li>`;
   }).join('\n        ');
   return `<a class="skip-link" href="#main">Skip to content</a>
@@ -457,6 +457,7 @@ function renderHero(b, site) {
 function renderBlock(b, page, site) {
   const sid = b.id ? ` id="${b.id}"` : '';
   switch (b.type) {
+case 'group': return `<section${sid} class="source-group"><details${b.open ? ' open' : ''}><summary>${esc(b.heading)}</summary>${b.blocks.map((child) => renderBlock(child, page, site)).join('\n')}</details></section>`;
 case 'hero': return renderHero(b, site);
 case 'prose': return `<section${sid} class="section${b.tight ? ' section--tight' : ''}">${renderProse(b)}</section>`;
 case 'split': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderSplit(b)}</section>`;

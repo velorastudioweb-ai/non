@@ -73,6 +73,9 @@ BANNER_KEYS.forEach((key) => {
 
 /* Every banner-enabled route has a dedicated campaign-art key. */
 const BANNERS = {
+  '/surgical-breast-enlargement/': 'banner-surgical',
+  '/non-surgical-breast-enlargement/': 'banner-nonsurgical',
+  '/education-research/': 'banner-research',
   '/': 'banner-breast-enhancement',
   '/understanding-breast-enlargement/': 'banner-understanding',
   '/breast-anatomy/': 'banner-anatomy',
