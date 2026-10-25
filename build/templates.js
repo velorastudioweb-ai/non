@@ -53,15 +53,22 @@ ${schema}
 </head>`;
 }
 /* ---------- HEADER ---------- */
-function navLink(item, activeUrl) {
-  const active = activeUrl === item.href || (item.href !== '/' && activeUrl.indexOf(item.href) === 0);
-  return `<a class="nav__link" href="${item.href}"${active ? ' aria-current="page"' : ''}>${esc(item.label)}</a>`;
+function navLink(item, activeUrl, currentUrl) {
+  const active = activeUrl === item.href;
+  const menuId = 'topics-' + item.href.replace(/[^a-z0-9]+/gi, '-');
+  return `<li class="nav__item${item.children ? ' nav__item--has-menu' : ''}">
+    <div class="nav__parent">
+      <a class="nav__link" href="${item.href}"${active ? ' aria-current="page"' : ''}${item.shortLabel ? ` title="${esc(item.label)}" aria-label="${esc(item.label)}"` : ''}>${esc(item.shortLabel || item.label)}</a>
+      ${item.children ? `<button class="nav__dropdown-toggle" type="button" aria-expanded="false" aria-controls="${menuId}" aria-label="Browse ${esc(item.label)} topics"><svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>` : ''}
+    </div>
+    ${item.children ? `<div class="nav__menu" id="${menuId}"><p class="nav__menu-title">${esc(item.label)}</p><a class="nav__overview" href="${item.href}">Section overview</a><ul>${item.children.map((child) => `<li><a href="${child.href}"${currentUrl === child.href ? ' aria-current="page"' : ''}>${esc(child.label)}</a></li>`).join('')}</ul></div>` : ''}
+  </li>`;
 }
 function header(page, site) {
-  const links = site.nav.map((i) => navLink(i, page.sectionUrl || page.url)).join('\n        ');
+  const links = site.nav.map((i) => navLink(i, page.sectionUrl || page.url, page.url)).join('\n        ');
   const mobileLinks = Array.from(new Map(site.nav.concat(site.navSecondary || []).map((i) => [i.href, i])).values()).map((i) => {
 const active = (page.sectionUrl || page.url) === i.href;
-return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-current="page"' : ''}>${esc(i.label)}</a></li>`;
+return `<li class="mobile-nav__item"><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-current="page"' : ''}>${esc(i.label)}</a>${i.children ? `<details class="mobile-nav__topics"${active ? ' open' : ''}><summary>Explore topics</summary><ul>${i.children.map((child) => `<li><a class="mobile-nav__topic-link" href="${child.href}"${page.url === child.href ? ' aria-current="page"' : ''}>${esc(child.label)}</a></li>`).join('')}</ul></details>` : ''}</li>`;
   }).join('\n        ');
   return `<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -73,9 +80,9 @@ return `<li><a class="mobile-nav__link" href="${i.href}"${active ? ' aria-curren
 <span class="brand__tag">Independent patient education</span>
 </span>
 </a>
-<nav class="nav" aria-label="Primary">
+<nav class="nav" aria-label="Primary"><ul class="nav__list">
 ${links}
-</nav>
+</ul></nav>
 <div class="header-cta">
 <a class="btn--header" href="${site.base}contact/">Contact us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
@@ -174,7 +181,7 @@ ${b.body ? `<div class="prose" style="margin-top:var(--sp-3)">${raw(b.body)}</di
 ${b.link ? `<p style="margin-top:var(--sp-4)"><a class="link-arrow" href="${b.link.href}">${esc(b.link.label)} ${icon('arrow')}</a></p>` : ''}
 </div>
 <div class="split__media reveal" data-delay="1">
-<div class="media-frame ${b.mediaRatio || 'ratio-4-5'}">${mediaHtml}</div>
+<div class="media-frame ${b.mediaRatio || 'ratio-4-3'}">${mediaHtml}</div>
 ${b.script ? `<p class="script">${esc(b.script)}</p><span class="ornament ornament--split" aria-hidden="true">${flourish}</span>` : ''}
 </div>
   </div>
@@ -421,12 +428,9 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const figureBlock = b.slot
-? `<figure class="hero__figure">${media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt },
-  { eager: true, sizes: '(max-width: 900px) 100vw, 50vw' })}
-<figcaption class="hero__credit" data-image-caption>Abstract editorial illustration — not a patient photograph</figcaption>
-</figure>`
-: '';
+  const figureBlock = `<figure class="hero__figure"><img src="/hero-banner.jpeg" alt="Hero banner" width="1599" height="893" loading="eager" fetchpriority="high">
+<figcaption class="hero__credit" data-image-caption>Hero banner image</figcaption>
+</figure>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
