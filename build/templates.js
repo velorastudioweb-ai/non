@@ -193,7 +193,7 @@ function renderCards(b) {
   const sizes = '(max-width: 900px) 100vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
+${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${it.media ? it.media : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>

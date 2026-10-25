@@ -221,7 +221,7 @@ topicPages.forEach((p) => {
 
 const finalHome = clone(home);
 const pathways = finalHome.blocks.find((b) => b.id === 'treatments');
-Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, slot: s.label })) });
+Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, media: i === 0 ? '<img src="/surgical.jpeg" alt="Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 1 ? '<img src="/non surgical.jpeg" alt="Non-Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : undefined, slot: i === 2 ? s.label : undefined })) });
 // Replace duplicate article and publisher archives on the home page with the
 // canonical shared-education links; detailed topic content stays on its page.
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
