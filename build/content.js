@@ -196,7 +196,7 @@ const home = {
         { title: 'Compare fairly', text: 'Use the side-by-side comparison to weigh intended effect, evidence quality, recovery and reversibility.' },
         { title: 'Talk to a qualified professional', text: 'Take your written questions to a registered, appropriately qualified clinician and compare more than one opinion before deciding.' }
       ],
-      slot: 'Consultation room detail'
+      media: '<img src="/Five-Step Beauty Consultation Journey.png" alt="How to use this website" width="1536" height="1024" loading="lazy" decoding="async">'
     },
     {
       type: 'cards',

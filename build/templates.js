@@ -240,7 +240,7 @@ ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead" style="margin-top:var(--sp-3)">${esc(b.lead)}</p>` : ''}
 <hr class="rule">
-${b.slot ? `<div class="media-frame ratio-4-3">${media(b, { sizes: '(max-width: 900px) 100vw, 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
+${b.slot || b.media ? `<div class="media-frame ratio-4-3">${b.media ? b.media : media(b, { sizes: '(max-width: 900px) 100vw, 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
 </div>
 <div class="steps reveal" data-delay="1">${items}</div>
   </div>
