@@ -83,6 +83,7 @@ function inspect(page, blocks) {
     if (b.type === 'cards' && showCardImages(b)) b.items.forEach((it) => need(forItem(it), 'card'));
     if (b.type === 'split') need(forItem(b), 'portrait');
     if (b.type === 'steps' && b.slot) need(forItem(b), 'card');
+    if (b.type === 'form' && b.slot) need(forItem(b), 'card');
     if (inlineFor(page, b)) need(routes[page.url].key, 'card');
     if (b.blocks) inspect(page, b.blocks);
   });

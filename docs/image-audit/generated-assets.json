@@ -465,14 +465,6 @@
   },
   {
     "route": "/about-us/",
-    "filename": "qh-independent-patient-education-portrait.svg",
-    "kind": "reading",
-    "variant": "portrait",
-    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
-    "alt": "Educational illustration: independent patient education"
-  },
-  {
-    "route": "/about-us/",
     "filename": "qh-independent-patient-education-banner.svg",
     "kind": "reading",
     "variant": "banner",
@@ -484,6 +476,14 @@
     "filename": "qh-website-enquiries-banner.svg",
     "kind": "contact",
     "variant": "banner",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: website correspondence"
+  },
+  {
+    "route": "/contact/",
+    "filename": "qh-website-enquiries-card.svg",
+    "kind": "contact",
+    "variant": "card",
     "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
     "alt": "Educational illustration: website correspondence"
   }

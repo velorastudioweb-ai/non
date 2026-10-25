@@ -134,9 +134,9 @@ const SLOTS = {
   'Hero portrait': 'homepage-hero-luxury-editorial',
   'Clinic / consultation environment': 'clinic',
   'Clinic environment': 'clinic',
-  'Consultation imagery': 'care-hands',
-  'Consultation room detail': 'chair',
-  'Consultation welcome imagery': 'care-hands',
+  'Consultation imagery': 'qh-website-enquiries',
+  'Consultation room detail': 'qh-safety-informed-choice',
+  'Consultation welcome imagery': 'qh-website-enquiries',
   'Consultation room': 'chair',
   'Treatment room': 'clinic',
   'Wellness boutique': 'stilllife',
@@ -206,7 +206,7 @@ const ROUTES = {
 };
 
 /* Editorial fallbacks, cycled for any slot/route we have not mapped. */
-const FALLBACK = ['orchid', 'shadows', 'marble-dark', 'curtain', 'leaf', 'concrete'];
+const FALLBACK = ['qh-external-research-library', 'qh-scientific-source-references', 'qh-medical-terms-reference', 'qh-shared-questions', 'qh-safety-informed-choice', 'qh-understanding-options'];
 const BASE = '/assets/img/';
 
 function hash(str) {

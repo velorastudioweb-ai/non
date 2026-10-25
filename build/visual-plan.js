@@ -41,6 +41,7 @@ const slots = {
   'Clinic / consultation environment': 'qh-independent-patient-education',
   'Consultation room detail': 'qh-safety-informed-choice',
   'Consultation imagery': 'qh-safety-informed-choice',
+  'Consultation welcome imagery': 'qh-website-enquiries',
   'Surgical consultation imagery': 'qh-augmentation-planning'
 };
 function forItem(item) {

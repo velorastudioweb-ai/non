@@ -48,7 +48,7 @@ function head(page, site) {
 <link rel="stylesheet" href="${site.base}assets/css/base.css">
 <link rel="stylesheet" href="${site.base}assets/css/components.css">
 <link rel="stylesheet" href="${site.base}assets/css/banners.css">
-<link rel="icon" href="${site.base}assets/img/favicon.svg" type="image/svg+xml">
+
 ${schema}
 </head>`;
 }
@@ -170,7 +170,7 @@ function renderProse(b) {
 }
 function renderSplit(b) {
   const mediaHtml = b.slot
-? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw', variant: 'portrait' })
+? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw', variant: 'card' })
 : (b.media || '');
   return `<div class="container">
   <div class="split ${b.reverse ? 'split--reverse' : ''}">
