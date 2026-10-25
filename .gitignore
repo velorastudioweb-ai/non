@@ -6,3 +6,6 @@ build/_qa-snapshot/
 build/_diag*.js
 docs/restructure-audit/before.zip
 docs/restructure-audit/complete-pdf.txt
+docs/performance-audit/**/*.png
+docs/performance-audit/*.report.html
+docs/performance-audit/*.report.json

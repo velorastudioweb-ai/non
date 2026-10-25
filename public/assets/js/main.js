@@ -1,12 +1,11 @@
 /* ==========================================================================
  QuantumHealth — main.js
- Nav,mobile menu,reveal-on-scroll,FAQ accordion,gallery lightbox,
+ Nav,mobile menu,FAQ accordion,gallery lightbox,
  consultation form validation & submission states.
  Vanilla JS,no dependencies. Progressive enhancement only.
  ========================================================================== */
 (function (){
  'use strict';
- var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  var $ = function (s,c){ return (c || document).querySelector(s); };
  var $$ = function (s,c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
  // Incoming source-library links reveal their collapsed collection.
@@ -60,9 +59,12 @@
  /* ---------------- Header scroll state ---------------- */
  var header = $('.site-header');
  if (header){
- var onScroll = function (){
-  if (window.scrollY > 40) header.classList.add('is-scrolled');
- else header.classList.remove('is-scrolled');
+  var wasScrolled;
+  var onScroll = function (){
+   var scrolled = window.scrollY > 40;
+   if (scrolled === wasScrolled) return;
+   wasScrolled = scrolled;
+   header.classList.toggle('is-scrolled', scrolled);
  };
  onScroll();
  window.addEventListener('scroll',onScroll,{ passive: true });
@@ -136,32 +138,6 @@
   if (desktop.matches && drawer.classList.contains('is-open')) closeNav(false);
   });
   }
-/* ---------------- Reveal on scroll ---------------- */
-var revealEls = $$('.reveal');
-if (revealEls.length){
-  var showInView = function (){
-    var vh = window.innerHeight || document.documentElement.clientHeight;
-    revealEls.forEach(function (el){
-      if (el.classList.contains('is-in')) return;
-      var r = el.getBoundingClientRect();
-      if (r.top < vh * 0.96 && r.bottom > -50) el.classList.add('is-in');
-    });
-  };
-  if (prefersReduced || !('IntersectionObserver' in window)){
-    revealEls.forEach(function (el){ el.classList.add('is-in'); });
-  }else{
-    var io = new IntersectionObserver(function (entries){
-      entries.forEach(function (en){
-        if (en.isIntersecting){ en.target.classList.add('is-in'); io.unobserve(en.target); }
-      });
-    },{ rootMargin: '0px 0px -8% 0px',threshold: 0.12 });
-    revealEls.forEach(function (el){ io.observe(el); });
-    /* failsafe: nothing above the fold may stay hidden */
-    showInView();
-    window.addEventListener('load', showInView);
-    setTimeout(showInView, 2500);
-  }
-}
  /* ---------------- FAQ accordion ---------------- */
  $$('.faq__item').forEach(function (item){
  var btn = $('.faq__q',item);

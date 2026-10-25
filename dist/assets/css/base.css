@@ -97,7 +97,8 @@ body::after {
   z-index: var(--z-grain);
   pointer-events: none;
   opacity: var(--grain-opacity);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image: url("../img/grain-v1.webp");
+  background-size: 320px 320px;
   mix-blend-mode: overlay;
 }
 /* gentle vignette */
@@ -258,11 +259,6 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   -webkit-mask-image: var(--petals-mask);
   mask-image: var(--petals-mask);
   pointer-events: none;
-  animation: petals-drift var(--petals-duration) var(--ease) infinite alternate;
-}
-@keyframes petals-drift {
-  from { background-position: 0% 100%; }
-  to   { background-position: 3% 94%; }
 }
 
 /* ============================ error / 404 ============================== */
@@ -279,18 +275,8 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
 }
 .err-page .display + h2 { margin-top: var(--sp-3); }
 
-/* ============================ reveal-on-scroll ========================== */
-.js .reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity var(--dur-slow) var(--ease),
-    transform var(--dur-slow) var(--ease);
-}
-.js .reveal.is-in { opacity: 1; transform: none; }
-.reveal[data-delay="1"] { transition-delay: .1s; }
-.reveal[data-delay="2"] { transition-delay: .2s; }
-.reveal[data-delay="3"] { transition-delay: .3s; }
+/* Content paints immediately, including when scripts are delayed or disabled. */
+.reveal { opacity: 1; transform: none; }
 
 /* ============================ responsive ================================ */
 @media (max-width: 767px) {
@@ -299,10 +285,6 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
     background-image: var(--petals-image-mobile);
     animation: none;
   }
-  .js .reveal { transform: translateY(16px); transition-duration: .55s; }
-  .reveal[data-delay="1"],
-  .reveal[data-delay="2"],
-  .reveal[data-delay="3"] { transition-delay: 0s; }
 }
 
 @media (min-width: 480px) {

@@ -10,7 +10,7 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 9);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'About', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'About', 'Our Doctors', 'Leadership', 'Contact us']);
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');
@@ -22,7 +22,9 @@ for (const p of allPages) {
   const doc = html(p.url);
   const main = doc.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
   assert(main.replace(/<[^>]+>/g, '').trim().length > 150, 'Empty page: ' + p.url);
-  assert(!/MedicHorizon|Dr\.\s*Vikas|\bour clinic\b|editorial draft/i.test(main), 'Unrelated branding or placeholder: ' + p.url);
+  if (!p.url.startsWith('/doctors/') && !p.url.startsWith('/leadership/')) {
+    assert(!/MedicHorizon|Dr\.\s*Vikas|\bour clinic\b|editorial draft/i.test(main), 'Unrelated branding or placeholder: ' + p.url);
+  }
   const ids = [...doc.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
   assert.equal(ids.length, new Set(ids).size, 'Duplicate HTML id: ' + p.url);
   for (const m of doc.matchAll(/href="(\/[^"?]*)"/g)) {

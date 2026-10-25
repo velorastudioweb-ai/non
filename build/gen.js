@@ -5,6 +5,8 @@ const path = require('path');
 const { layout } = require('./templates');
 const { site, allPages } = require('./structure');
 const { writeStubs } = require('./redirects');
+const assets = require('./assets');
+const { verifyImages } = require('./responsive-images');
 
 const ROOT = path.join(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
@@ -44,6 +46,7 @@ const notFound = {
 
 /* ---------- generate ---------- */
 function build() {
+  verifyImages();
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   ensureDir(DIST);
 
@@ -66,6 +69,7 @@ function build() {
 
   // assets
   copyDir(path.join(PUB, 'assets'), path.join(DIST, 'assets'));
+  assets.write(DIST);
 
   // copy any root-level static files from public/ (e.g. .htaccess)
   for (const entry of fs.readdirSync(PUB, { withFileTypes: true })) {

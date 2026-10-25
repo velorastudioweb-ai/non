@@ -4,3 +4,10 @@ node_modules
 docs
 *.pdf
 assets-src
+dist
+tmpdist
+build/_qa-snapshot
+build/_*.png
+build/_*.log
+build/_*.err
+extracted*.txt

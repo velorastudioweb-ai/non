@@ -507,8 +507,8 @@ pages.push({
   bannerEyebrow: SG,
   bannerLead: 'Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.',
   bannerImage: '/Breast Augmentation Consultation Illustration.webp',
-  bannerWidth: 2048,
-  bannerHeight: 768,
+  bannerWidth: 1600,
+  bannerHeight: 600,
   breadcrumb: [{ label: 'Surgical' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Surgical Breast Enhancement', url: site.url + '/surgical-breast-enhancement/' }],
   blocks: [

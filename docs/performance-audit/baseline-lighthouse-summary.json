@@ -1,0 +1,1131 @@
+{
+  "url": "http://localhost:8100/",
+  "lighthouseVersion": "13.0.3",
+  "time": "2026-10-25T10:37:47.793Z",
+  "mode": "mobile",
+  "scores": {
+    "performance": 70,
+    "accessibility": 100,
+    "best-practices": 96,
+    "seo": 92
+  },
+  "lcp": 4143.781800000001,
+  "cls": 0.1908606624257128,
+  "tbt": 0,
+  "fcp": 3393.7817999999997,
+  "bytes": 691301,
+  "findings": [
+    {
+      "id": "first-contentful-paint",
+      "score": 0.37,
+      "title": "First Contentful Paint",
+      "value": "3.4 s"
+    },
+    {
+      "id": "largest-contentful-paint",
+      "score": 0.46,
+      "title": "Largest Contentful Paint",
+      "value": "4.1 s"
+    },
+    {
+      "id": "speed-index",
+      "score": 0.89,
+      "title": "Speed Index",
+      "value": "3.4 s"
+    },
+    {
+      "id": "cumulative-layout-shift",
+      "score": 0.64,
+      "title": "Cumulative Layout Shift",
+      "value": "0.191",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "cumulativeLayoutShiftMainFrame": 0.1908606624257128,
+            "newEngineResult": {
+              "cumulativeLayoutShift": 0.1908606624257128,
+              "cumulativeLayoutShiftMainFrame": 0.1908606624257128
+            },
+            "newEngineResultDiffered": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "errors-in-console",
+      "score": 0,
+      "title": "Browser errors were logged to the console",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "sourceLocation",
+            "valueType": "source-location",
+            "label": "Source"
+          },
+          {
+            "key": "description",
+            "valueType": "code",
+            "label": "Description"
+          }
+        ],
+        "items": [
+          {
+            "source": "network",
+            "description": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "sourceLocation": {
+              "type": "source-location",
+              "url": "http://localhost:8100/favicon.ico",
+              "urlProvider": "network",
+              "line": 0,
+              "column": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "interactive",
+      "score": 0.85,
+      "title": "Time to Interactive",
+      "value": "4.2 s"
+    },
+    {
+      "id": "mainthread-work-breakdown",
+      "score": 0.5,
+      "title": "Minimize main-thread work",
+      "value": "2.9 s",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "groupLabel",
+            "valueType": "text",
+            "label": "Category"
+          },
+          {
+            "key": "duration",
+            "valueType": "ms",
+            "granularity": 1,
+            "label": "Time Spent"
+          }
+        ],
+        "items": [
+          {
+            "group": "styleLayout",
+            "groupLabel": "Style & Layout",
+            "duration": 2053.628
+          },
+          {
+            "group": "other",
+            "groupLabel": "Other",
+            "duration": 623.0599999999981
+          },
+          {
+            "group": "scriptEvaluation",
+            "groupLabel": "Script Evaluation",
+            "duration": 127.608
+          },
+          {
+            "group": "paintCompositeRender",
+            "groupLabel": "Rendering",
+            "duration": 86.248
+          },
+          {
+            "group": "parseHTML",
+            "groupLabel": "Parse HTML & CSS",
+            "duration": 50.20399999999999
+          },
+          {
+            "group": "scriptParseCompile",
+            "groupLabel": "Script Parsing & Compilation",
+            "duration": 6.195999999999999
+          }
+        ],
+        "sortedBy": [
+          "duration"
+        ]
+      }
+    },
+    {
+      "id": "layout-shifts",
+      "score": 0,
+      "title": "Avoid large layout shifts",
+      "value": "1 layout shift found",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "extra"
+            },
+            "label": "Element"
+          },
+          {
+            "key": "score",
+            "valueType": "numeric",
+            "subItemsHeading": {
+              "key": "cause",
+              "valueType": "text"
+            },
+            "granularity": 0.001,
+            "label": "Layout shift score"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-A",
+              "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,4,DIV,0,DIV,0,DIV,4,DIV,0,A",
+              "selector": "div.hero__body > div.hero__copy > div.hero__actions > a.btn",
+              "boundingRect": {
+                "top": 648,
+                "bottom": 696,
+                "left": 24,
+                "right": 388,
+                "width": 364,
+                "height": 48
+              },
+              "snippet": "<a class=\"btn btn--primary\" href=\"/breast-enlargement-without-surgery/\">",
+              "nodeLabel": "READ THE EVIDENCE GUIDE"
+            },
+            "score": 0.1908606624257128,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "extra": {
+                    "type": "url",
+                    "value": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2"
+                  },
+                  "cause": "Web font loaded"
+                },
+                {
+                  "extra": {
+                    "type": "url",
+                    "value": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+                  },
+                  "cause": "Web font loaded"
+                },
+                {
+                  "extra": {
+                    "type": "url",
+                    "value": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D.woff2"
+                  },
+                  "cause": "Web font loaded"
+                },
+                {
+                  "extra": {
+                    "type": "url",
+                    "value": "https://fonts.gstatic.com/s/pinyonscript/v24/6xKpdSJbL9-e9LuoeQiDRQR8WOXaOqTimDc.woff2"
+                  },
+                  "cause": "Web font loaded"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "score": 0,
+      "title": "Elements with visible text labels do not have matching accessible names.",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-A",
+              "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+              "selector": "body.page-home > header.site-header > div.container > a.brand",
+              "boundingRect": {
+                "top": 10,
+                "bottom": 61,
+                "left": 24,
+                "right": 304,
+                "width": 280,
+                "height": 51
+              },
+              "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+              "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-1-A",
+              "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+              "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+              "boundingRect": {
+                "top": 14386,
+                "bottom": 14421,
+                "left": 24,
+                "right": 362,
+                "width": 338,
+                "height": 35
+              },
+              "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+              "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ]
+        }
+      }
+    },
+    {
+      "id": "unminified-css",
+      "score": 0.5,
+      "title": "Minify CSS",
+      "value": "Est savings of 23 KiB",
+      "details": {
+        "type": "opportunity",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Est Savings"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://localhost:8100/assets/css/components.css",
+            "totalBytes": 64621,
+            "wastedBytes": 14241,
+            "wastedPercent": 22.037189504916654
+          },
+          {
+            "url": "http://localhost:8100/assets/css/tokens.css",
+            "totalBytes": 12051,
+            "wastedBytes": 6101,
+            "wastedPercent": 50.630554380025394
+          },
+          {
+            "url": "http://localhost:8100/assets/css/base.css",
+            "totalBytes": 11376,
+            "wastedBytes": 3398,
+            "wastedPercent": 29.86733596271065
+          }
+        ],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 23740,
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "unminified-javascript",
+      "score": 0.5,
+      "title": "Minify JavaScript",
+      "value": "Est savings of 3 KiB",
+      "details": {
+        "type": "opportunity",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Est Savings"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://localhost:8100/assets/js/main.js",
+            "totalBytes": 14736,
+            "wastedBytes": 2890,
+            "wastedPercent": 19.61010732237468
+          }
+        ],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 2890,
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "unused-css-rules",
+      "score": 0.5,
+      "title": "Reduce unused CSS",
+      "value": "Est savings of 46 KiB",
+      "details": {
+        "type": "opportunity",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Est Savings"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://localhost:8100/assets/css/components.css",
+            "wastedBytes": 46768,
+            "wastedPercent": 72.60652758143942,
+            "totalBytes": 64413
+          }
+        ],
+        "overallSavingsMs": 0,
+        "overallSavingsBytes": 46768,
+        "sortedBy": [
+          "wastedBytes"
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "link-text",
+      "score": 0,
+      "title": "Links do not have descriptive text",
+      "value": "15 links found",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "href",
+            "valueType": "url",
+            "label": "Link destination"
+          },
+          {
+            "key": "text",
+            "valueType": "text",
+            "label": "Link Text"
+          }
+        ],
+        "items": [
+          {
+            "href": "http://localhost:8100/surgical-breast-enlargement/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/non-surgical-breast-enlargement/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/education-research/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/non-surgical/dermal-fillers/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/non-surgical/prp/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/non-surgical/breast-threads/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/non-surgical/sculptra-plla/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/breast-implants/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/surgical/fat-transfer-breast-augmentation/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/surgical/breast-augmentation/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/breast-enhancement-comparison/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/understanding-breast-enlargement/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/breast-anatomy/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/breast-enhancement-comparison/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          },
+          {
+            "href": "http://localhost:8100/breast-enlargement-safety/",
+            "text": "LEARN MORE",
+            "textLang": "en-IN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cls-culprits-insight",
+      "score": 0,
+      "title": "Layout shift culprits",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "extra"
+                },
+                "label": "Element"
+              },
+              {
+                "key": "score",
+                "valueType": "numeric",
+                "subItemsHeading": {
+                  "key": "cause",
+                  "valueType": "text"
+                },
+                "granularity": 0.001,
+                "label": "Layout shift score"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "text",
+                  "value": "Total"
+                },
+                "score": 0.1908606624257128
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-A",
+                  "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,4,DIV,0,DIV,0,DIV,4,DIV,0,A",
+                  "selector": "div.hero__body > div.hero__copy > div.hero__actions > a.btn",
+                  "boundingRect": {
+                    "top": 648,
+                    "bottom": 696,
+                    "left": 24,
+                    "right": 388,
+                    "width": 364,
+                    "height": 48
+                  },
+                  "snippet": "<a class=\"btn btn--primary\" href=\"/breast-enlargement-without-surgery/\">",
+                  "nodeLabel": "READ THE EVIDENCE GUIDE"
+                },
+                "score": 0.1908606624257128,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "extra": {
+                        "type": "url",
+                        "value": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2"
+                      },
+                      "cause": "Web font"
+                    },
+                    {
+                      "extra": {
+                        "type": "url",
+                        "value": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+                      },
+                      "cause": "Web font"
+                    },
+                    {
+                      "extra": {
+                        "type": "url",
+                        "value": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D.woff2"
+                      },
+                      "cause": "Web font"
+                    },
+                    {
+                      "extra": {
+                        "type": "url",
+                        "value": "https://fonts.gstatic.com/s/pinyonscript/v24/6xKpdSJbL9-e9LuoeQiDRQR8WOXaOqTimDc.woff2"
+                      },
+                      "cause": "Web font"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "document-latency-insight",
+      "score": 0.5,
+      "title": "Document request latency",
+      "value": "Est savings of 26 KiB",
+      "details": {
+        "type": "checklist",
+        "items": {
+          "noRedirects": {
+            "label": "Avoids redirects",
+            "value": true
+          },
+          "serverResponseIsFast": {
+            "label": "Server responds quickly (observed 54 ms)",
+            "value": true
+          },
+          "usesCompression": {
+            "label": "No compression applied",
+            "value": false
+          }
+        },
+        "debugData": {
+          "type": "debugdata",
+          "redirectDuration": 0,
+          "serverResponseTime": 54,
+          "uncompressedResponseBytes": 26461,
+          "wastedBytes": 26461
+        }
+      }
+    },
+    {
+      "id": "forced-reflow-insight",
+      "score": 0,
+      "title": "Forced reflow",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Top function call"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": [
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://localhost:8100/assets/js/main.js",
+                  "urlProvider": "network",
+                  "line": 142,
+                  "column": 29
+                },
+                "reflowTime": 100.068
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "reflowTime",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Total reflow time"
+              }
+            ],
+            "items": [
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://localhost:8100/assets/js/main.js",
+                  "urlProvider": "network",
+                  "line": 63,
+                  "column": 13
+                },
+                "reflowTime": 0.176
+              },
+              {
+                "source": {
+                  "type": "source-location",
+                  "url": "http://localhost:8100/assets/js/main.js",
+                  "urlProvider": "network",
+                  "line": 142,
+                  "column": 20
+                },
+                "reflowTime": 107.624
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-delivery-insight",
+      "score": 0.5,
+      "title": "Improve image delivery",
+      "value": "Est savings of 278 KiB",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "label": ""
+          },
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL",
+            "subItemsHeading": {
+              "key": "reason",
+              "valueType": "text"
+            }
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Resource Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Est Savings",
+            "subItemsHeading": {
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-7-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,2,ARTICLE,0,DIV,0,IMG",
+              "selector": "div.grid > article.card > div.card__media > img",
+              "boundingRect": {
+                "top": 2284,
+                "bottom": 2533,
+                "left": 25,
+                "right": 387,
+                "width": 362,
+                "height": 249
+              },
+              "snippet": "<img src=\"/prp.webp\" alt=\"Education and Research\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">",
+              "nodeLabel": "Education and Research"
+            },
+            "url": "http://localhost:8100/prp.webp",
+            "totalBytes": 143372,
+            "wastedBytes": 126002,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (1254x863) for its displayed dimensions (362x362). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 126002
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-8-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,1,ARTICLE,0,DIV,0,IMG",
+              "selector": "div.grid > article.card > div.card__media > img",
+              "boundingRect": {
+                "top": 1724,
+                "bottom": 1973,
+                "left": 25,
+                "right": 387,
+                "width": 362,
+                "height": 249
+              },
+              "snippet": "<img src=\"/non surgical.webp\" alt=\"Non-Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">",
+              "nodeLabel": "Non-Surgical Breast Enlargement"
+            },
+            "url": "http://localhost:8100/non%20surgical.webp",
+            "totalBytes": 106566,
+            "wastedBytes": 93655,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (1254x863) for its displayed dimensions (362x362). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 93655
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-9-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,IMG",
+              "selector": "div.grid > article.card > div.card__media > img",
+              "boundingRect": {
+                "top": 1195,
+                "bottom": 1444,
+                "left": 25,
+                "right": 387,
+                "width": 362,
+                "height": 249
+              },
+              "snippet": "<img src=\"/surgical.webp\" alt=\"Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">",
+              "nodeLabel": "Surgical Breast Enlargement"
+            },
+            "url": "http://localhost:8100/surgical.webp",
+            "totalBytes": 42698,
+            "wastedBytes": 37525,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (1254x863) for its displayed dimensions (362x362). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 37525
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-10-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,2,SECTION,0,DIV,0,DIV,1,DIV,0,DIV,0,IMG",
+              "selector": "div.split > div.split__media > div.media-frame > img",
+              "boundingRect": {
+                "top": 3610,
+                "bottom": 3881,
+                "left": 25,
+                "right": 387,
+                "width": 362,
+                "height": 271
+              },
+              "snippet": "<img src=\"/Our approach.webp\" alt=\"Our approach\" width=\"1536\" height=\"1024\" loading=\"lazy\" decoding=\"async\">",
+              "nodeLabel": "Our approach"
+            },
+            "url": "http://localhost:8100/Our%20approach.webp",
+            "totalBytes": 23210,
+            "wastedBytes": 21387,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "This image file is larger than it needs to be (1370x1024) for its displayed dimensions (407x271). Use responsive images to reduce the image download size.",
+                  "wastedBytes": 21387
+                }
+              ]
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,3,DIV,0,IMG",
+              "selector": "main#main > section.hero > div.hero__bg > img",
+              "boundingRect": {
+                "top": 71,
+                "bottom": 922,
+                "left": 0,
+                "right": 412,
+                "width": 412,
+                "height": 851
+              },
+              "snippet": "<img src=\"/hero-banner.webp\" alt=\"\" width=\"1599\" height=\"893\" loading=\"eager\" fetchpriority=\"high\">",
+              "nodeLabel": "main#main > section.hero > div.hero__bg > img"
+            },
+            "url": "http://localhost:8100/hero-banner.webp",
+            "totalBytes": 70094,
+            "wastedBytes": 5757,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "reason": "Increasing the image compression factor could improve this image's download size.",
+                  "wastedBytes": 5757
+                }
+              ]
+            }
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "wastedBytes": 284326
+        }
+      }
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "score": 0,
+      "title": "Network dependency tree",
+      "details": {
+        "type": "list",
+        "items": [
+          {
+            "type": "list-section",
+            "value": {
+              "type": "network-tree",
+              "chains": {
+                "1E21CFEAC45BF5798F44C685B0491CF7": {
+                  "url": "http://localhost:8100/",
+                  "navStartToEndTime": 135,
+                  "transferSize": 39703,
+                  "isLongest": true,
+                  "children": {
+                    "10516.6": {
+                      "url": "http://localhost:8100/assets/css/banners.css",
+                      "navStartToEndTime": 223,
+                      "transferSize": 2306,
+                      "isLongest": true,
+                      "children": {}
+                    },
+                    "10516.5": {
+                      "url": "http://localhost:8100/assets/css/components.css",
+                      "navStartToEndTime": 209,
+                      "transferSize": 64621,
+                      "children": {}
+                    },
+                    "10516.4": {
+                      "url": "http://localhost:8100/assets/css/base.css",
+                      "navStartToEndTime": 183,
+                      "transferSize": 11376,
+                      "children": {}
+                    },
+                    "10516.3": {
+                      "url": "http://localhost:8100/assets/css/tokens.css",
+                      "navStartToEndTime": 179,
+                      "transferSize": 12051,
+                      "children": {}
+                    }
+                  }
+                }
+              },
+              "longestChain": {
+                "duration": 223
+              }
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnected origins",
+            "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+            "value": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "origin",
+                  "valueType": "text",
+                  "subItemsHeading": {
+                    "key": "warning"
+                  },
+                  "label": "Origin"
+                },
+                {
+                  "key": "source",
+                  "valueType": "node",
+                  "label": "Source"
+                }
+              ],
+              "items": [
+                {
+                  "origin": "https://fonts.googleapis.com/",
+                  "source": {
+                    "type": "node",
+                    "lhId": "page-5-LINK",
+                    "path": "1,HTML,0,HEAD,19,LINK",
+                    "selector": "head > link",
+                    "boundingRect": {
+                      "top": 0,
+                      "bottom": 0,
+                      "left": 0,
+                      "right": 0,
+                      "width": 0,
+                      "height": 0
+                    },
+                    "snippet": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+                    "nodeLabel": "head > link"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": []
+                  }
+                },
+                {
+                  "origin": "https://fonts.gstatic.com/",
+                  "source": {
+                    "type": "node",
+                    "lhId": "page-6-LINK",
+                    "path": "1,HTML,0,HEAD,20,LINK",
+                    "selector": "head > link",
+                    "boundingRect": {
+                      "top": 0,
+                      "bottom": 0,
+                      "left": 0,
+                      "right": 0,
+                      "width": 0,
+                      "height": 0
+                    },
+                    "snippet": "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">",
+                    "nodeLabel": "head > link"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "list-section",
+            "title": "Preconnect candidates",
+            "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+            "value": {
+              "type": "text",
+              "value": "No additional origins are good candidates for preconnecting"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "render-blocking-insight",
+      "score": 0.5,
+      "title": "Render blocking requests",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Transfer Size"
+          },
+          {
+            "key": "wastedMs",
+            "valueType": "timespanMs",
+            "label": "Duration"
+          }
+        ],
+        "items": [
+          {
+            "url": "http://localhost:8100/assets/css/banners.css",
+            "totalBytes": 2306,
+            "wastedMs": 335
+          },
+          {
+            "url": "http://localhost:8100/assets/css/components.css",
+            "totalBytes": 64621,
+            "wastedMs": 1239
+          },
+          {
+            "url": "http://localhost:8100/assets/css/base.css",
+            "totalBytes": 11376,
+            "wastedMs": 486
+          },
+          {
+            "url": "http://localhost:8100/assets/css/tokens.css",
+            "totalBytes": 12051,
+            "wastedMs": 486
+          }
+        ]
+      }
+    }
+  ]
+}

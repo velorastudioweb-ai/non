@@ -1,0 +1,823 @@
+[
+  {
+    "url": "http://localhost:8100/research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T10:59:29.748Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 70,
+      "accessibility": 99,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 4820.5296,
+    "cls": 0,
+    "tbt": 140.99999999999955,
+    "fcp": 4063.6864000000005,
+    "bytes": 726799,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.22,
+        "title": "First Contentful Paint",
+        "value": "4.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.3,
+        "title": "Largest Contentful Paint",
+        "value": "4.8 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.65,
+        "title": "Speed Index",
+        "value": "4.9 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.95,
+        "title": "Total Blocking Time",
+        "value": "140 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.7,
+        "title": "Max Potential First Input Delay",
+        "value": "190 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.79,
+        "title": "Time to Interactive",
+        "value": "4.8 s"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 698,
+                  "bottom": 750,
+                  "left": 82,
+                  "right": 363,
+                  "width": 281,
+                  "height": 52
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "External research, clearly attributed",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 19517,
+                  "bottom": 19552,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "title": "Reduce unused CSS",
+        "value": "Est savings of 34 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+              "wastedBytes": 35013,
+              "wastedPercent": 58.445590665531576,
+              "totalBytes": 59907
+            }
+          ],
+          "overallSavingsMs": 300,
+          "overallSavingsBytes": 35013,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 170,
+              "LCP": 300
+            }
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "2 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "http://localhost:8100/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "http://localhost:8100/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "title": "Document request latency",
+        "value": "Est savings of 357 KiB",
+        "details": {
+          "type": "checklist",
+          "items": {
+            "noRedirects": {
+              "label": "Avoids redirects",
+              "value": true
+            },
+            "serverResponseIsFast": {
+              "label": "Server responds quickly (observed 4 ms)",
+              "value": true
+            },
+            "usesCompression": {
+              "label": "No compression applied",
+              "value": false
+            }
+          },
+          "debugData": {
+            "type": "debugdata",
+            "redirectDuration": 0,
+            "serverResponseTime": 4,
+            "uncompressedResponseBytes": 365781,
+            "wastedBytes": 365781
+          }
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "http://localhost:8100/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 90.085
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "58A6B57A4334CE4D429A92607EE9712B": {
+                    "url": "http://localhost:8100/research/",
+                    "navStartToEndTime": 55,
+                    "transferSize": 546223,
+                    "isLongest": true,
+                    "children": {
+                      "5180.5": {
+                        "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+                        "navStartToEndTime": 76,
+                        "transferSize": 60115,
+                        "isLongest": true,
+                        "children": {}
+                      },
+                      "5180.4": {
+                        "url": "http://localhost:8100/assets/built/research-0682c9fdb427.css",
+                        "navStartToEndTime": 75,
+                        "transferSize": 4200,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 76
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 320 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+              "totalBytes": 60115,
+              "wastedMs": 757
+            },
+            {
+              "url": "http://localhost:8100/assets/built/research-0682c9fdb427.css",
+              "totalBytes": 4200,
+              "wastedMs": 157
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8100/research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T10:59:41.966Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 99,
+      "accessibility": 99,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 937.08845,
+    "cls": 0,
+    "tbt": 9,
+    "fcp": 771.3923,
+    "bytes": 734077,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.96,
+        "title": "First Contentful Paint",
+        "value": "0.8 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.96,
+        "title": "Largest Contentful Paint",
+        "value": "0.9 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "title": "Speed Index",
+        "value": "0.8 s"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 748,
+                  "bottom": 774,
+                  "left": 128,
+                  "right": 1245,
+                  "width": 1117,
+                  "height": 26
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "External research, clearly attributed",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 13795,
+                  "bottom": 13832,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "unused-css-rules",
+        "score": 0,
+        "title": "Reduce unused CSS",
+        "value": "Est savings of 33 KiB",
+        "details": {
+          "type": "opportunity",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+              "wastedBytes": 34250,
+              "wastedPercent": 57.171949855609526,
+              "totalBytes": 59907
+            }
+          ],
+          "overallSavingsMs": 40,
+          "overallSavingsBytes": 34250,
+          "sortedBy": [
+            "wastedBytes"
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "metricSavings": {
+              "FCP": 0,
+              "LCP": 40
+            }
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "2 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "http://localhost:8100/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "http://localhost:8100/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "document-latency-insight",
+        "score": 0.5,
+        "title": "Document request latency",
+        "value": "Est savings of 357 KiB",
+        "details": {
+          "type": "checklist",
+          "items": {
+            "noRedirects": {
+              "label": "Avoids redirects",
+              "value": true
+            },
+            "serverResponseIsFast": {
+              "label": "Server responds quickly (observed 4 ms)",
+              "value": true
+            },
+            "usesCompression": {
+              "label": "No compression applied",
+              "value": false
+            }
+          },
+          "debugData": {
+            "type": "debugdata",
+            "redirectDuration": 0,
+            "serverResponseTime": 4,
+            "uncompressedResponseBytes": 365781,
+            "wastedBytes": 365781
+          }
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "http://localhost:8100/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 111.942
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "EE34D916E966DE5F5BB2D6B82108BAA6": {
+                    "url": "http://localhost:8100/research/",
+                    "navStartToEndTime": 49,
+                    "transferSize": 546223,
+                    "isLongest": true,
+                    "children": {
+                      "22512.4": {
+                        "url": "http://localhost:8100/assets/built/research-0682c9fdb427.css",
+                        "navStartToEndTime": 64,
+                        "transferSize": 4200,
+                        "isLongest": true,
+                        "children": {}
+                      },
+                      "22512.5": {
+                        "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+                        "navStartToEndTime": 63,
+                        "transferSize": 60115,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 64
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 40 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "http://localhost:8100/assets/built/research-0682c9fdb427.css",
+              "totalBytes": 4200
+            },
+            {
+              "url": "http://localhost:8100/assets/built/site-37acacdf68b6.css",
+              "totalBytes": 60115,
+              "wastedMs": 166
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

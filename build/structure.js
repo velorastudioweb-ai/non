@@ -201,8 +201,8 @@ const landings = [
   ], 'education-research')
 ];
 landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.webp';
-landings[0].bannerWidth = 2048;
-landings[0].bannerHeight = 768;
+landings[0].bannerWidth = 1600;
+landings[0].bannerHeight = 600;
 const topicMembership = new Map();
 [surgical, nonsurgical, education].forEach((entries, i) => entries.forEach(([url]) => topicMembership.set(url, i)));
 topicPages.forEach((p) => {
@@ -246,8 +246,10 @@ const homeOrder = [
   (b) => b.type === 'cta'
 ];
 finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
+const quantumHealth = require('./quantum-health');
+finalHome.blocks.push({ type: 'prose', html: '<style>.qh-home{background:#080608;color:#FFF8F8;padding:clamp(2rem,6vw,5rem);border-top:1px solid #C98B91}.qh-home h2,.qh-home h3{font-family:Georgia,serif}.qh-home h2{font-size:clamp(2rem,4vw,3rem)}.qh-home a{color:#FFF8F8}.qh-home .qh-home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem}.qh-home article{padding:1.2rem;border:1px solid #C98B9170;background:linear-gradient(140deg,#4A071F,#10090d)}.qh-home .qh-pink{color:#F36A99}.qh-home .qh-home-cta{display:inline-block;background:#FF4D91;color:#080608;padding:.8rem 1.1rem;text-decoration:none;font-weight:bold}</style><section class="qh-home"><p class="qh-pink">AESTHETICS | REGENERATIVE | WELLNESS</p><h2>Beauty. Science. Longevity.</h2><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><h3>LOOK BETTER · FEEL HEALTHIER · LIVE LONGER</h3><p>A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p><p><a class="qh-home-cta" href="/doctors/">OUR DOCTORS PANEL</a>　<a href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a></p><div class="qh-home-grid"><article><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team</a></article><article><h3>Nutrition & Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership</a></article><article><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise</a></article><article><h3>Regenerative & Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team</a></article><article><h3>Training & Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training & Academy</a></article><article><h3>Core Values</h3><p>SCIENCE DRIVEN · COMPREHENSIVE CARE · NATURAL RESULTS · EXPERT TEAM · LONG-TERM WELLNESS</p></article></div><p><a href="/contact/">BOOK CONSULTATION</a></p></section>' });
 finalHome.schema[0].name = site.name;
-const allPages = [finalHome, ...landings, ...topicPages, get('/about-us/'), clone(contact), ...clone(legal)];
+const allPages = [finalHome, ...landings, ...topicPages, get('/about-us/'), clone(contact), ...clone(legal), ...quantumHealth.pages];
 const finalSite = clone(site);
 const menuLabel = (title) => title.split(':')[0];
 finalSite.nav = [
@@ -258,6 +260,8 @@ finalSite.nav = [
     children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
   { label: 'About', href: '/about-us/' },
+  { label: 'Our Doctors', href: '/doctors/' },
+  { label: 'Leadership', href: '/leadership/dr-sunitha-devaraj/' },
   { label: 'Contact us', href: '/contact/' }
 ];
 finalSite.footerExplore = sections;

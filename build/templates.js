@@ -2,6 +2,8 @@
 const { icons, figure, flourish, divider } = require('./icons');
 const { keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = require('./images');
 const visualPlan = require('./visual-plan');
+const assets = require('./assets');
+const { imageInfo, responsiveMarkup } = require('./responsive-images');
 /* ---------- tiny helpers ---------- */
 const raw = (s) => s; // trusted authored HTML fragments
 /* Photograph for a content item — or a designed "not published" frame when the
@@ -17,7 +19,13 @@ function head(page, site) {
   const url = site.url + page.url;
   const og = page.og || site.defaultOg;
   const noindex = page.noindex ? '\n<meta name="robots" content="noindex, nofollow">' : '';
-  const fontsHref = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap';
+  const hero = page.url === '/' ? imageInfo('/hero-banner.webp') : null;
+  const types = new Set();
+  const collect = blocks => blocks.forEach(b => { types.add(b.type); if (b.blocks) collect(b.blocks); });
+  collect(page.blocks || []);
+  const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : [])]
+    .filter(name => name === 'research' || types.has(name))
+    .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
   const schema = (page.schema || []).map((s) =>
 `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n  ');
   return `<!DOCTYPE html>
@@ -42,15 +50,11 @@ function head(page, site) {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(page.seoTitle)}">
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="${fontsHref}">
-<link rel="stylesheet" href="${fontsHref}" media="print" onload="this.media='all';this.onload=null">
-<noscript><link rel="stylesheet" href="${fontsHref}"></noscript>
-<link rel="stylesheet" href="${site.base}assets/css/tokens.css">
-<link rel="stylesheet" href="${site.base}assets/css/base.css">
-<link rel="stylesheet" href="${site.base}assets/css/components.css">
-<link rel="stylesheet" href="${site.base}assets/css/banners.css">
+<link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/montserrat-v31-normal-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/cormorant-garamond-v21-normal-latin.woff2" crossorigin>
+${hero ? `<link rel="preload" as="image" href="/hero-banner.webp" imagesrcset="${esc(hero.srcset)}" imagesizes="(max-width: 1023px) min(100vw, 720px), 100vw" fetchpriority="high">` : ''}
+${componentStyles}
+<link rel="stylesheet" href="${assets.href('site.css')}">
 
 ${schema}
 </head>`;
@@ -147,10 +151,10 @@ ${site.footerLegal.map((i) => `<a href="${i.href}">${esc(i.label)}</a>`).join('\
 /* ---------- PAGE BANNER ---------- */
 function pageBanner(page, site) {
   const bannerImage = page.bannerImage
-    ? `<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`
+    ? responsiveMarkup(`<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`, '(max-width: 1023px) min(100vw, 720px), 100vw')
     : picture(bannerFor(page), {
         className: 'page-banner__image',
-        sizes: '100vw',
+        sizes: '(max-width: 1023px) min(100vw, 720px), 100vw',
         variant: 'banner',
         alt: '',
         eager: true
@@ -176,7 +180,7 @@ function renderProse(b) {
 function renderSplit(b) {
   const mediaHtml = b.slot
 ? media({ slot: b.slot, slotNote: b.slotNote, alt: b.imgAlt }, { sizes: '(max-width: 900px) 100vw, 46vw', variant: 'card' })
-: (b.media || '');
+: responsiveMarkup(b.media || '', '(max-width: 767px) calc(100vw - 40px), (max-width: 1300px) 46vw, 580px');
   return `<div class="container">
   <div class="split ${b.reverse ? 'split--reverse' : ''}">
 <div class="split__copy reveal">
@@ -195,10 +199,10 @@ ${b.script ? `<p class="script">${esc(b.script)}</p><span class="ornament orname
 function renderCards(b) {
   const cols = b.cols || 3;
   const cardRatio = b.ratio || 'ratio-16-11';
-  const sizes = '(max-width: 900px) 100vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
+  const sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${it.media ? it.media : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
+${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${it.media ? responsiveMarkup(it.media, sizes) : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>
@@ -245,7 +249,7 @@ ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead" style="margin-top:var(--sp-3)">${esc(b.lead)}</p>` : ''}
 <hr class="rule">
-${b.slot || b.media ? `<div class="media-frame ratio-4-3">${b.media ? b.media : media(b, { sizes: '(max-width: 900px) 100vw, 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
+${b.slot || b.media ? `<div class="media-frame ratio-4-3">${b.media ? responsiveMarkup(b.media, '(max-width: 767px) calc(100vw - 40px), (max-width: 1300px) 46vw, 580px') : media(b, { sizes: '(max-width: 767px) calc(100vw - 40px), 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
 </div>
 <div class="steps reveal" data-delay="1">${items}</div>
   </div>
@@ -433,7 +437,7 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true"><img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high"></div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high">', '(max-width: 1023px) min(100vw, 720px), 100vw')}</div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
@@ -487,7 +491,7 @@ default: return '';
 function layout(page, site) {
   const isHome = page.url === '/';
   const body = page.blocks.map((b) => renderBlock(b, page, site) + (visualPlan.inlineFor(page, b) ?
-    `<section class="section section--tight" data-image-addition><div class="container"><figure class="educational-visual">${picture(visualPlan.routes[page.url].key, { sizes: '(max-width: 900px) 100vw, 800px' })}<figcaption data-image-caption>${esc(visualPlan.routes[page.url].caption)}</figcaption></figure></div></section>` : '')).join('\n');
+    `<section class="section section--tight" data-image-addition><div class="container"><figure class="educational-visual">${picture(visualPlan.routes[page.url].key, { sizes: '(max-width: 900px) 100vw, 800px' })}<figcaption data-image-caption>${esc(visualPlan.routes[page.url].caption)}</figcaption></figure></div></section>` : '')).join('\n').replace('src="/assets/js/research.js"', `src="${assets.href('research.js')}"`);
   const banner = (page.h1 && !isHome && page.showBanner !== false) ? pageBanner(page, site) : '';
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">
@@ -497,7 +501,7 @@ ${banner}
 ${body}
 </main>
 ${footer(page, site)}
-<script src="${site.base}assets/js/main.js" defer></script>
+<script src="${assets.href('main.js')}" defer></script>
 </body>
 </html>`;
 }

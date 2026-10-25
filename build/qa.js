@@ -45,6 +45,7 @@ function resolve(href) {
   // allow file targets like /robots.txt /sitemap.xml /assets/*
   const onDisk = path.join(DIST, p.replace(/^\//, ''));
   if (fs.existsSync(onDisk) && !p.endsWith('/')) return true;
+  if (fs.existsSync(path.join(DIST, decodeURIComponent(p).replace(/^\//, ''))) && !p.endsWith('/')) return true;
   if (fs.existsSync(path.join(onDisk, 'index.html'))) return true;
   return false;
 }
@@ -78,6 +79,13 @@ files.forEach((f) => {
     const p = m[1];
     if (!fs.existsSync(path.join(DIST, p.replace(/^\//, '')))) errors.push(rel + ': missing asset -> ' + p);
   }
+  // Validate every responsive source, not only the <img> fallback.
+  for (const match of html.matchAll(/\s(?:srcset|imagesrcset)="([^"]+)"/g)) {
+    for (const candidate of match[1].split(',')) {
+      const url = candidate.trim().split(/\s+/)[0];
+      if (!resolve(url)) errors.push(rel + ': missing responsive asset -> ' + url);
+    }
+  }
 
   // sanity: exactly one <h1> on indexable pages
   const h1s = (html.match(/<h1[\s>]/g) || []).length;
@@ -106,7 +114,7 @@ files.forEach((f) => {
 });
 
 /* ---------- JS assets must parse (guards against blank-page regressions) ---------- */
-const jsAssets = path.join(DIST, 'assets', 'js');
+const jsAssets = path.join(DIST, 'assets');
 let jsCount = 0;
 if (fs.existsSync(jsAssets)) {
   walkExt(jsAssets, '.js').forEach((f) => {
@@ -121,13 +129,20 @@ if (fs.existsSync(jsAssets)) {
 }
 
 /* ---------- CSS assets must be non-empty ---------- */
-const cssAssets = path.join(DIST, 'assets', 'css');
+const cssAssets = path.join(DIST, 'assets');
 let cssCount = 0;
 if (fs.existsSync(cssAssets)) {
   walkExt(cssAssets, '.css').forEach((f) => {
     cssCount++;
-    if (!fs.readFileSync(f, 'utf8').trim()) {
+    const css = fs.readFileSync(f, 'utf8');
+    if (!css.trim()) {
       errors.push(path.relative(DIST, f).replace(/\\/g, '/') + ': CSS file is empty');
+    }
+    for (const match of css.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
+      const url = match[1];
+      if (/^(?:data:|https?:|#)/.test(url)) continue;
+      const target = url.startsWith('/') ? path.join(DIST, url) : path.resolve(path.dirname(f), decodeURIComponent(url));
+      if (!fs.existsSync(target)) errors.push(path.relative(DIST, f) + ': missing CSS resource -> ' + url);
     }
   });
 }

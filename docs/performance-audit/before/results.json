@@ -1,0 +1,312 @@
+{
+  "base": "http://127.0.0.1:8099",
+  "label": "before",
+  "checks": 8,
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/hero-banner.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 97.5625,
+            "right": 390,
+            "bottom": 948.53125,
+            "width": 390,
+            "height": 850.96875
+          },
+          "text": {
+            "left": 24,
+            "top": 97.5625,
+            "right": 366,
+            "bottom": 948.53125,
+            "width": 342,
+            "height": 850.96875
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 395.828125,
+            "right": 390,
+            "bottom": 579.125,
+            "width": 390,
+            "height": 183.296875
+          },
+          "text": {
+            "left": 24,
+            "top": 97.5625,
+            "right": 366,
+            "bottom": 579.125,
+            "width": 342,
+            "height": 481.5625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "0.88",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/implants.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 531.921875,
+            "right": 390,
+            "bottom": 715.21875,
+            "width": 390,
+            "height": 183.296875
+          },
+          "text": {
+            "left": 24,
+            "top": 97.5625,
+            "right": 366,
+            "bottom": 715.21875,
+            "width": 342,
+            "height": 617.65625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "0.88",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-non-surgical-evidence-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 392,
+            "right": 390,
+            "bottom": 575.296875,
+            "width": 390,
+            "height": 183.296875
+          },
+          "text": {
+            "left": 24,
+            "top": 97.5625,
+            "right": 366,
+            "bottom": 575.296875,
+            "width": 342,
+            "height": 477.734375
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "0.88",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/hero-banner.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 1067.84375,
+            "width": 1440,
+            "height": 985.25
+          },
+          "text": {
+            "left": 120,
+            "top": 82.59375,
+            "right": 1320,
+            "bottom": 1067.84375,
+            "width": 1200,
+            "height": 985.25
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 690.78125,
+            "width": 1440,
+            "height": 608.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 690.78125,
+            "width": 715.890625,
+            "height": 608.1875
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/implants.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 824.546875,
+            "width": 1440,
+            "height": 741.953125
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 824.546875,
+            "width": 715.890625,
+            "height": 741.953125
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-non-surgical-evidence-banner-1600.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 662.78125,
+            "width": 1440,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    }
+  ]
+}

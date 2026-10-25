@@ -1,0 +1,1279 @@
+{
+  "base": "http://127.0.0.1:8099",
+  "label": "retina",
+  "checks": 37,
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/responsive/hero-banner-7879e6996dde-1280.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 390,
+            "bottom": 289.234375,
+            "width": 390,
+            "height": 217.84375
+          },
+          "text": {
+            "left": 24,
+            "top": 289.234375,
+            "right": 366,
+            "bottom": 948.203125,
+            "width": 342,
+            "height": 658.96875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-1280.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 480.953125,
+            "right": 390,
+            "bottom": 627.203125,
+            "width": 390,
+            "height": 146.25
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 480.953125,
+            "width": 342,
+            "height": 409.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-non-surgical-evidence-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 477.125,
+            "right": 390,
+            "bottom": 633.125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 477.125,
+            "width": 342,
+            "height": 405.734375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/education-research/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-education-research-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 452.953125,
+            "right": 390,
+            "bottom": 608.953125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 452.953125,
+            "width": 342,
+            "height": 381.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 9
+    },
+    {
+      "route": "/surgical/breast-augmentation/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-augmentation-planning-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 561.046875,
+            "right": 390,
+            "bottom": 717.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 561.046875,
+            "width": 342,
+            "height": 489.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/implants.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 617.046875,
+            "right": 390,
+            "bottom": 1007.046875,
+            "width": 390,
+            "height": 390
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 617.046875,
+            "width": 342,
+            "height": 545.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/breast-implant-safety/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/implants.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 596.828125,
+            "right": 390,
+            "bottom": 986.828125,
+            "width": 390,
+            "height": 390
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 596.828125,
+            "width": 342,
+            "height": 525.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/surgical/fat-transfer-breast-augmentation/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-fat-transfer-tissue-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 589.046875,
+            "right": 390,
+            "bottom": 745.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 589.046875,
+            "width": 342,
+            "height": 517.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/surgical/breast-lift/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-mastopexy-planning-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 533.046875,
+            "right": 390,
+            "bottom": 689.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 533.046875,
+            "width": 342,
+            "height": 461.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/surgical/breast-revision/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-implant-revision-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 596.828125,
+            "right": 390,
+            "bottom": 752.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 596.828125,
+            "width": 342,
+            "height": 525.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/surgical/breast-filler-removal/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-filler-removal-assessment-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 561.046875,
+            "right": 390,
+            "bottom": 717.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 561.046875,
+            "width": 342,
+            "height": 489.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/surgical/breast-reduction/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-reduction-planning-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 568.828125,
+            "right": 390,
+            "bottom": 724.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 568.828125,
+            "width": 342,
+            "height": 497.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/surgical/mastectomy-chest-surgery/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-chest-contouring-planning-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 533.046875,
+            "right": 390,
+            "bottom": 689.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 533.046875,
+            "width": 342,
+            "height": 461.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/breast-enlargement-without-surgery/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-without-surgery-evidence-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 609,
+            "right": 390,
+            "bottom": 765,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 609,
+            "width": 342,
+            "height": 537.609375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/non-surgical/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-non-surgical-safety-review-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 609.078125,
+            "right": 390,
+            "bottom": 765.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 609.078125,
+            "width": 342,
+            "height": 537.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/non-surgical/dermal-fillers/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-filler-product-caution-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 609.078125,
+            "right": 390,
+            "bottom": 765.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 609.078125,
+            "width": 342,
+            "height": 537.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/non-surgical/breast-threads/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-cog-suture-material-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 609.078125,
+            "right": 390,
+            "bottom": 765.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 609.078125,
+            "width": 342,
+            "height": 537.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/non-surgical/mono-threads/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-smooth-suture-material-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 525.15625,
+            "right": 390,
+            "bottom": 681.15625,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 525.15625,
+            "width": 342,
+            "height": 453.765625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/non-surgical/prp/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-prp-preparation-tube-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 581.078125,
+            "right": 390,
+            "bottom": 737.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 581.078125,
+            "width": 342,
+            "height": 509.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/non-surgical/biostimulators/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-biostimulator-research-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 637.078125,
+            "right": 390,
+            "bottom": 793.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 637.078125,
+            "width": 342,
+            "height": 565.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/non-surgical/sculptra-plla/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-plla-material-concept-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 637.078125,
+            "right": 390,
+            "bottom": 793.078125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 637.078125,
+            "width": 342,
+            "height": 565.6875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/non-surgical/regenerative-medicine/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-regenerative-laboratory-research-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 616.9375,
+            "right": 390,
+            "bottom": 772.9375,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 616.9375,
+            "width": 342,
+            "height": 545.546875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/understanding-breast-enlargement/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-understanding-options-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 583.828125,
+            "right": 390,
+            "bottom": 739.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 583.828125,
+            "width": 342,
+            "height": 512.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/breast-anatomy/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-breast-tissue-schematic-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 583.828125,
+            "right": 390,
+            "bottom": 739.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 583.828125,
+            "width": 342,
+            "height": 512.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/breast-enhancement-comparison/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-comparing-treatment-options-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 583.828125,
+            "right": 390,
+            "bottom": 739.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 583.828125,
+            "width": 342,
+            "height": 512.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/breast-enlargement-safety/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-safety-informed-choice-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 583.828125,
+            "right": 390,
+            "bottom": 739.828125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 583.828125,
+            "width": 342,
+            "height": 512.4375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/references/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-scientific-source-references-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 492.046875,
+            "right": 390,
+            "bottom": 648.046875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 492.046875,
+            "width": 342,
+            "height": 420.65625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/glossary/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-medical-terms-reference-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 436.125,
+            "right": 390,
+            "bottom": 592.125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 436.125,
+            "width": 342,
+            "height": 364.734375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/faqs/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-shared-questions-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 464.125,
+            "right": 390,
+            "bottom": 620.125,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 464.125,
+            "width": 342,
+            "height": 392.734375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/research/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-external-research-library-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 484.265625,
+            "right": 390,
+            "bottom": 640.265625,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 484.265625,
+            "width": 342,
+            "height": 412.875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/about-us/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-independent-patient-education-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 376.171875,
+            "right": 390,
+            "bottom": 532.171875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 376.171875,
+            "width": 342,
+            "height": 304.78125
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/contact/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:8099/assets/img/qh-website-enquiries-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 404.171875,
+            "right": 390,
+            "bottom": 560.171875,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 404.171875,
+            "width": 342,
+            "height": 332.78125
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/privacy-policy/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/cookie-policy/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/terms-of-use/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/medical-disclaimer/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 390,
+      "status": 404,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    }
+  ]
+}

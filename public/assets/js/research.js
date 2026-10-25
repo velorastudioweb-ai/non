@@ -18,6 +18,10 @@
   var state = { q: '', year: '', sort: 'year-desc', page: 1 };
   var number = new Intl.NumberFormat('en-US');
   var debounceTimer = null;
+  var started = false;
+  var loaded = false;
+  var searchText = new WeakMap();
+  var libraryObserver;
 
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
@@ -30,11 +34,15 @@
   }
 
   function textOf(article) {
-    return (article.title + ' ' + (article.abstract || '') + ' ' +
+    if (searchText.has(article)) return searchText.get(article);
+    var text = (article.title + ' ' + (article.abstract || '') + ' ' +
       (article.authors || []).join(' ') + ' ' + (article.journal || '')).toLowerCase();
+    searchText.set(article, text);
+    return text;
   }
 
   function applyFilters() {
+    if (!loaded) return;
     var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
     filtered = all.filter(function (article) {
       if (state.year && yearOf(article) !== state.year) return false;
@@ -177,11 +185,11 @@
 
   function fillYears(articles) {
     var years = {};
-    articles.forEach(function (a) { if (a.year) years[a.year] = true; });
+    articles.forEach(function (a) { if (a.year) years[a.year] = (years[a.year] || 0) + 1; });
     var sorted = Object.keys(years).map(Number).sort(function (a, b) { return b - a; });
     yearEl.innerHTML = '<option value="">All years (' + number.format(articles.length) + ')</option>' +
       sorted.map(function (y) {
-        var count = articles.filter(function (a) { return a.year === y; }).length;
+        var count = years[y];
         return '<option value="' + y + '">' + y + ' (' + number.format(count) + ')</option>';
       }).join('');
   }
@@ -209,13 +217,19 @@
     if (button) goToPage(Number(button.getAttribute('data-page')));
   });
 
-  fetch(src, { credentials: 'same-origin' })
+  function loadLibrary() {
+    if (started) return;
+    started = true;
+    if (libraryObserver) libraryObserver.disconnect();
+    fetch(src, { credentials: 'same-origin', priority: 'low' })
     .then(function (response) {
       if (!response.ok) throw new Error('HTTP ' + response.status);
       return response.json();
     })
     .then(function (data) {
       all = data.articles || [];
+      loaded = true;
+      state.q = qEl.value.trim();
       fillYears(all);
       applyFilters();
     })
@@ -224,4 +238,20 @@
       listEl.innerHTML = '<p class="research__empty">Please try again later, or open the ' +
         '<a href="/assets/data/pmc-breast-enlargement.json">complete dataset (JSON)</a> directly.</p>';
     });
+  }
+  // The archive is far below the banner. Start before it enters view instead of
+  // downloading/parsing every abstract during initial paint. Hash navigation,
+  // keyboard focus and scrolling all trigger the same complete library.
+  function scheduleLibrary() {
+    if (started) return;
+    if ('IntersectionObserver' in window) {
+      libraryObserver = new IntersectionObserver(function (entries) {
+        if (entries.some(function (entry) { return entry.isIntersecting; })) loadLibrary();
+      }, { rootMargin: '800px' });
+      libraryObserver.observe(root);
+    } else loadLibrary();
+  }
+  root.addEventListener('focusin', loadLibrary, { once: true });
+  if (document.readyState === 'complete') scheduleLibrary();
+  else window.addEventListener('load', scheduleLibrary, { once: true });
 })();

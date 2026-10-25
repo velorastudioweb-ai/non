@@ -281,7 +281,7 @@
 }
 
 /* Header-only brand fitting (do not constrain the footer brand) */
-.site-header .brand { flex-shrink: 0; max-width: 280px; }
+.site-header .brand { flex-shrink: 1; max-width: 280px; }
 .site-header .brand__text { line-height: 1.15; }
 .site-header .brand__name {
   font-size: clamp(1.1rem, 1.05rem + .2vw, 1.25rem);
@@ -299,6 +299,8 @@
 
 .nav-toggle {
   display: inline-flex; align-items: center; gap: .6rem;
+  flex: none;
+  white-space: nowrap;
   min-height: var(--tap); min-width: var(--tap);
   justify-content: flex-end;
   color: var(--ivory);
@@ -1687,6 +1689,7 @@ button.gallery-item .gallery-item__cap {
 @media (max-width: 380px) {
   .brand__tag { display: none; }
   .brand__ico svg { width: 28px; height: 28px; }
+  .site-header .brand__name { font-size: 1rem; letter-spacing: .02em; white-space: normal; overflow: visible; text-overflow: clip; }
 }
 @media (max-width: 479px) {
   /* keep uppercase h1 words intact on narrow columns */
