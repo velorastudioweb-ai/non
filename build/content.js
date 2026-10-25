@@ -179,7 +179,7 @@ const home = {
         { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/', media: '<img src="/sculptra.jpeg" alt="Sculptra and biostimulators" width="1254" height="1254" loading="lazy" decoding="async">' },
         { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/', media: '<img src="/implants.jpeg" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' },
         { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/', media: '<img src="/threads.jpeg" alt="Fat transfer" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/' },
+        { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', media: '<img src="/Breast Augmentation Medical Collage.png" alt="Breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">' },
         { title: 'Compare all options', text: 'A side-by-side view of intended effect, primary consideration and important limitation.', href: '/breast-enhancement-comparison/' }
       ]
     },
