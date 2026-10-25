@@ -143,13 +143,15 @@ ${site.footerLegal.map((i) => `<a href="${i.href}">${esc(i.label)}</a>`).join('\
 }
 /* ---------- PAGE BANNER ---------- */
 function pageBanner(page, site) {
-  const bannerImage = picture(bannerFor(page), {
-    className: 'page-banner__image',
-    sizes: '100vw',
-    variant: 'banner',
-    alt: '',
-    eager: true
-  });
+  const bannerImage = page.bannerImage
+    ? `<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`
+    : picture(bannerFor(page), {
+        className: 'page-banner__image',
+        sizes: '100vw',
+        variant: 'banner',
+        alt: '',
+        eager: true
+      });
   const crumbs = [`<a href="${site.base}">Home</a>`]
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');

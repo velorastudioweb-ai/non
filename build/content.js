@@ -563,6 +563,9 @@ pages.push(treatmentPage({
   seoDescription: 'Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.',
   bannerEyebrow: 'Surgical · Breast augmentation',
   bannerLead: 'Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat.',
+  bannerImage: '/Breast Augmentation Medical Collage.png',
+  bannerWidth: 1536,
+  bannerHeight: 1024,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast augmentation' }],
   blocks: [
     { type: 'prose', html:
