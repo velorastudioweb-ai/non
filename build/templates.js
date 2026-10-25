@@ -428,14 +428,13 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const figureBlock = `<figure class="hero__figure"><img src="/hero-banner.jpeg" alt="Hero banner" width="1599" height="893" loading="eager" fetchpriority="high">
-<figcaption class="hero__credit" data-image-caption>Hero banner image</figcaption>
-</figure>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true"><img src="/hero-banner.jpeg" alt="" width="1599" height="893" loading="eager" fetchpriority="high"></div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
   <span class="hero__rose hero__rose--bl" aria-hidden="true"></span>
   <span class="hero__rose hero__rose--tr" aria-hidden="true"></span>
+  ${bgBlock}
   <div class="hero__inner">
     <div class="hero__body">
       <div class="hero__copy">
@@ -448,7 +447,6 @@ function renderHero(b, site) {
         </div>
         ${b.note ? `<p class="hero__note">${icon('info')}<span>${esc(b.note)}</span></p>` : ''}
       </div>
-      ${figureBlock}
     </div>
   </div>
   <div class="hero__curve" aria-hidden="true">
