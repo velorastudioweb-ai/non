@@ -227,6 +227,7 @@ Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', headin
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
 const foundationCards = cards(education.slice(0, 4), 'A clear foundation for your decision');
 foundationCards.items[0].media = '<img src="/Breast Enhancement Medical Infographic.png" alt="Understanding Breast Enlargement" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[1].media = '<img src="/Breast Anatomy and Augmentation Illustration.png" alt="Breast Anatomy Explained" width="1536" height="1024" loading="lazy" decoding="async">';
 finalHome.blocks.push(foundationCards);
 const homeOrder = [
   (b) => b.type === 'hero',
