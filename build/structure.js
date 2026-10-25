@@ -225,7 +225,9 @@ Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', headin
 // Replace duplicate article and publisher archives on the home page with the
 // canonical shared-education links; detailed topic content stays on its page.
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
-finalHome.blocks.push(cards(education.slice(0, 4), 'A clear foundation for your decision'));
+const foundationCards = cards(education.slice(0, 4), 'A clear foundation for your decision');
+foundationCards.items[0].media = '<img src="/Breast Enhancement Medical Infographic.png" alt="Understanding Breast Enlargement" width="1536" height="1024" loading="lazy" decoding="async">';
+finalHome.blocks.push(foundationCards);
 const homeOrder = [
   (b) => b.type === 'hero',
   (b) => b.id === 'treatments',
