@@ -248,8 +248,40 @@ const homeOrder = [
 finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
 const quantumHealth = require('./quantum-health');
 finalHome.blocks.push({ type: 'prose', html: '<style>.qh-home{background:#080608;color:#FFF8F8;padding:clamp(2rem,6vw,5rem);border-top:1px solid #C98B91}.qh-home h2,.qh-home h3{font-family:Georgia,serif}.qh-home h2{font-size:clamp(2rem,4vw,3rem)}.qh-home a{color:#FFF8F8}.qh-home .qh-home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem}.qh-home article{padding:1.2rem;border:1px solid #C98B9170;background:linear-gradient(140deg,#4A071F,#10090d)}.qh-home .qh-pink{color:#F36A99}.qh-home .qh-home-cta{display:inline-block;background:#FF4D91;color:#080608;padding:.8rem 1.1rem;text-decoration:none;font-weight:bold}</style><section class="qh-home"><p class="qh-pink">AESTHETICS | REGENERATIVE | WELLNESS</p><h2>Beauty. Science. Longevity.</h2><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><h3>LOOK BETTER · FEEL HEALTHIER · LIVE LONGER</h3><p>A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p><p><a class="qh-home-cta" href="/doctors/">OUR DOCTORS PANEL</a>　<a href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a></p><div class="qh-home-grid"><article><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team</a></article><article><h3>Nutrition & Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership</a></article><article><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise</a></article><article><h3>Regenerative & Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team</a></article><article><h3>Training & Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training & Academy</a></article><article><h3>Core Values</h3><p>SCIENCE DRIVEN · COMPREHENSIVE CARE · NATURAL RESULTS · EXPERT TEAM · LONG-TERM WELLNESS</p></article></div><p><a href="/contact/">BOOK CONSULTATION</a></p></section>' });
+const homeTeam = finalHome.blocks.find((b) => b.html && b.html.includes('<section class="qh-home">'));
+Object.assign(homeTeam, { bleed: true, wide: true });
+function extractQuantumBody(page) {
+  const html = page.blocks[0].html;
+  const styleEnd = html.indexOf('</style>');
+  const wrapper = '<main class="qh"><div class="qh-wrap">';
+  const note = '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p>';
+  if (styleEnd < 0 || !html.includes(wrapper) || !html.endsWith('</div></main>')) {
+    throw new Error('Unexpected Quantum Health page structure: ' + page.url);
+  }
+  return {
+    style: html.slice(0, styleEnd + '</style>'.length),
+    body: html.slice(styleEnd + '</style>'.length)
+      .replace(wrapper, '')
+      .replace(note, '')
+      .replace(/<\/div><\/main>$/, '')
+      .replace(/<h1>/g, '<h2>').replace(/<\/h1>/g, '</h2>')
+  };
+}
+const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/doctors/'));
+const leadershipProfile = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/leadership/dr-sunitha-devaraj/'));
+doctorDirectory.body = doctorDirectory.body.replace('<header class="qh-hero">', '<header id="our-doctors" class="qh-hero">');
+leadershipProfile.body = leadershipProfile.body.replace('<header class="qh-hero">', '<header id="leadership" class="qh-hero">');
+const about = get('/about-us/');
+about.h1 = 'About Quantum Health';
+about.seoTitle = 'About Quantum Health | Our Doctors and Leadership';
+about.seoDescription = 'Meet the Quantum Health doctors and executive leadership team, explore their areas of expertise, and learn about the organisation.';
+about.bannerEyebrow = 'Aesthetics | Regenerative | Wellness';
+about.bannerLead = 'Meet our doctors and leadership team and learn more about Quantum Health.';
+about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
+about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh"><div class="qh-wrap">' + doctorDirectory.body + leadershipProfile.body + '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p></div></div>' }];
+const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
 finalHome.schema[0].name = site.name;
-const allPages = [finalHome, ...landings, ...topicPages, get('/about-us/'), clone(contact), ...clone(legal), ...quantumHealth.pages];
+const allPages = [finalHome, ...landings, ...topicPages, about, clone(contact), ...clone(legal), ...doctorProfiles];
 const finalSite = clone(site);
 const menuLabel = (title) => title.split(':')[0];
 finalSite.nav = [
@@ -260,8 +292,6 @@ finalSite.nav = [
     children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
   { label: 'About', href: '/about-us/' },
-  { label: 'Our Doctors', href: '/doctors/' },
-  { label: 'Leadership', href: '/leadership/dr-sunitha-devaraj/' },
   { label: 'Contact us', href: '/contact/' }
 ];
 finalSite.footerExplore = sections;
@@ -272,6 +302,10 @@ finalSite.medicalDisclaimerShort = '';
 // HTML). The registry is shared by redirects and the generator, avoiding drift.
 const retired = require('./retired-routes');
 redirects.push(...retired);
+redirects.push(
+  { from: '/doctors/', to: '/about-us/#our-doctors' },
+  { from: '/leadership/dr-sunitha-devaraj/', to: '/about-us/#leadership' }
+);
 redirects.push(
   { from: '/wiki/breast-augmentation-scars/', to: '/surgical/breast-augmentation/#scars' },
   { from: '/wiki/non-surgical-breast-enlargement/', to: '/breast-enlargement-without-surgery/' }

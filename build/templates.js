@@ -175,7 +175,8 @@ ${page.bannerLead ? `<p>${esc(page.bannerLead)}</p>` : ''}
 }
 /* ---------- BLOCK RENDERERS ---------- */
 function renderProse(b) {
-  return `<div class="container"><div class="prose${b.wide ? ' prose--wide' : ''} reveal">${raw(b.html)}</div></div>`;
+  const prose = `<div class="prose${b.wide ? ' prose--wide' : ''} reveal">${raw(b.html)}</div>`;
+  return b.bleed ? prose : `<div class="container">${prose}</div>`;
 }
 function renderSplit(b) {
   const mediaHtml = b.slot

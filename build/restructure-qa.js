@@ -10,7 +10,13 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 9);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'About', 'Our Doctors', 'Leadership', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'About', 'Contact us']);
+assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory and leadership must be consolidated into About');
+assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/about-us/#our-doctors'));
+assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
+const aboutHtml = html('/about-us/');
+assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
+assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership profile');
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');
@@ -22,7 +28,7 @@ for (const p of allPages) {
   const doc = html(p.url);
   const main = doc.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
   assert(main.replace(/<[^>]+>/g, '').trim().length > 150, 'Empty page: ' + p.url);
-  if (!p.url.startsWith('/doctors/') && !p.url.startsWith('/leadership/')) {
+  if (p.url !== '/about-us/' && !p.url.startsWith('/doctors/')) {
     assert(!/MedicHorizon|Dr\.\s*Vikas|\bour clinic\b|editorial draft/i.test(main), 'Unrelated branding or placeholder: ' + p.url);
   }
   const ids = [...doc.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);

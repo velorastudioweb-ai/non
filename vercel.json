@@ -251,6 +251,16 @@
       "permanent": true
     },
     {
+      "source": "/doctors/",
+      "destination": "/about-us/#our-doctors",
+      "permanent": true
+    },
+    {
+      "source": "/leadership/dr-sunitha-devaraj/",
+      "destination": "/about-us/#leadership",
+      "permanent": true
+    },
+    {
       "source": "/wiki/breast-augmentation-scars/",
       "destination": "/surgical/breast-augmentation/#scars",
       "permanent": true
