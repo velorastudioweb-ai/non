@@ -25,8 +25,11 @@ async function main() {
       if (result.status !== 0) throw new Error(result.stderr.toString());
     }
   } finally { await browser.close(); }
-  const hero = spawnSync('python', ['-c', 'from PIL import Image; import sys; from pathlib import Path; p=Path(sys.argv[1]); [(Image.open(p/("homepage-hero-luxury-editorial-"+str(w)+".jpg")).save(p/("homepage-hero-luxury-editorial-"+str(w)+".webp"),"WEBP",quality=83,method=6)) for w in [1920,2560]]', directory]);
-  if (hero.status !== 0) throw new Error(hero.stderr.toString());
+  const heroJpg = path.join(directory, 'homepage-hero-luxury-editorial-1920.jpg');
+  if (fs.existsSync(heroJpg)) {
+    const hero = spawnSync('python', ['-c', 'from PIL import Image; import sys; from pathlib import Path; p=Path(sys.argv[1]); [(Image.open(p/("homepage-hero-luxury-editorial-"+str(w)+".jpg")).save(p/("homepage-hero-luxury-editorial-"+str(w)+".webp"),"WEBP",quality=83,method=6)) for w in [1920,2560]]', directory]);
+    if (hero.status !== 0) throw new Error(hero.stderr.toString());
+  }
   console.log('Rasterized ' + assets.length + ' SVG compositions into responsive WebP files; optimized two retained homepage hero sizes.');
 }
 main().catch((e) => { console.error(e); process.exitCode = 1; });

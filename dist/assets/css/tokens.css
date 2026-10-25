@@ -15,11 +15,11 @@
 
   /* ----------------------------------------------------------------- palette
      Canonical QuantumHealth colour system (ruby / orchid / champagne gold). */
-  --qh-bg:            #180009;   /* primary page background                       */
-  --qh-bg-deep:       #24000E;   /* deep ruby background                          */
-  --qh-burgundy:      #320014;   /* secondary burgundy                            */
-  --qh-panel:         #3B001B;   /* elevated panel surface                        */
-  --qh-card:          #21000D;   /* dark card background                          */
+  --qh-bg:            #4A0F24;   /* requested primary page background              */
+  --qh-bg-deep:       #641B35;   /* requested secondary background                 */
+  --qh-burgundy:      #641B35;   /* requested secondary background                 */
+  --qh-panel:         #56152D;   /* elevated panel surface                        */
+  --qh-card:          #300A19;   /* requested dark section background              */
 
   --qh-ruby:          #C9004B;   /* rich ruby                                     */
   --qh-crimson:       #F21B59;   /* vibrant crimson                               */
@@ -48,19 +48,19 @@
   --rose-deep:       var(--qh-ruby);       /* rich ruby — hover / active     */
 
   /* Gold family (chrome — rules, icons, divider lines) */
-  --gold:            var(--qh-gold);
-  --gold-light:      #FFE7AE;              /* lighter champagne for hover    */
-  --gold-dark:       var(--qh-gold-metal);
+  --gold:            #D8B58A;              /* requested accent                  */
+  --gold-light:      #EAD7DD;             /* secondary text accent              */
+  --gold-dark:       #B89267;             /* deeper accent                      */
 
   /* Ivory family (typography) */
-  --ivory:           var(--qh-heading);    /* main headings / body text      */
-  --ivory-soft:      rgba(255, 240, 232, 0.86);
-  --ivory-faint:     rgba(225, 201, 212, 0.78);
-  --ivory-ghost:     rgba(197, 168, 183, 0.42);
+  --ivory:           #FFF8F3;              /* requested primary text             */
+  --ivory-soft:      rgba(255, 248, 243, 0.88);
+  --ivory-faint:     rgba(234, 215, 221, 0.76);
+  --ivory-ghost:     rgba(218, 190, 200, 0.42);
 
   /* Neutral muted (secondary / supporting text) */
-  --muted:           var(--qh-text);
-  --muted-2:         var(--qh-text-muted);
+  --muted:           #EAD7DD;             /* requested secondary text           */
+  --muted-2:         rgba(234, 215, 221, 0.72);
 
   /* Dark ink used for text on bright ruby/orchid surfaces */
   --btn-ink:         #1F0307;

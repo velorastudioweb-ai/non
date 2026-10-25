@@ -73,6 +73,10 @@ function svg(art, variant) {
 }
 const manifest = [];
 const required = new Map();
+// The home "Our approach" split uses this portrait even though the About page
+// itself has no split block.
+if (!required.has('qh-independent-patient-education')) required.set('qh-independent-patient-education', new Set());
+required.get('qh-independent-patient-education').add('portrait');
 function need(key, variant) {
   if (!key) return;
   if (!required.has(key)) required.set(key, new Set());

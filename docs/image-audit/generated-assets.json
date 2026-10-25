@@ -465,6 +465,14 @@
   },
   {
     "route": "/about-us/",
+    "filename": "qh-independent-patient-education-portrait.svg",
+    "kind": "reading",
+    "variant": "portrait",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: independent patient education"
+  },
+  {
+    "route": "/about-us/",
     "filename": "qh-independent-patient-education-banner.svg",
     "kind": "reading",
     "variant": "banner",

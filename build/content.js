@@ -129,7 +129,7 @@ const home = {
       body: '<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p>' +
         '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p>' +
         '<p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>',
-      media: '<img src="/Our approach.jpeg" alt="Our approach" width="1536" height="1024" loading="lazy" decoding="async">',
+      media: '<picture><source type="image/webp" srcset="/assets/img/qh-independent-patient-education-portrait-480.webp 480w, /assets/img/qh-independent-patient-education-portrait-960.webp 960w" sizes="(max-width: 900px) 100vw, 46vw"><img src="/assets/img/qh-independent-patient-education-portrait-960.webp" alt="Independent patient education" width="960" height="1200" loading="lazy" decoding="async"></picture>',
       link: { label: 'Read about this website', href: '/about-us/' },
       script: 'Clarity before any decision'
     },

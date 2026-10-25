@@ -2,28 +2,28 @@
 
 Prepared before generating assets. The JSON companion contains the full existing content, placement, dimensions, concepts and generation prompts for every section.
 
-Pages: 36; audited page-banner/content sections: 380.
+Pages: 36; audited page-banner/content sections: 379.
 
 | Route | Section | Image needed | Planned asset |
 | --- | --- | --- | --- |
 | `/` | Page banner | No | Text / existing subtle icon |
 | `/` | A More Informed Approach to <em class="accent-rose">Breast Enhancement</em> | Yes | Text / existing subtle icon |
+| `/` | Find your starting point | Yes | Text / existing subtle icon |
 | `/` | Clear information. Honest limits. No promotion. | Yes | Text / existing subtle icon |
 | `/` | Four commitments behind every page | No | Text / existing subtle icon |
-| `/` | Find your starting point | Yes | Text / existing subtle icon |
 | `/` | An important clinical distinction | No | Text / existing subtle icon |
 | `/` | A closer look at individual options | Yes | Text / existing subtle icon |
 | `/` | A clear, five-step pathway to an informed decision | Yes | Text / existing subtle icon |
-| `/` | Keep exploring the evidence | No | Text / existing subtle icon |
 | `/` | A clear foundation for your decision | Yes | Text / existing subtle icon |
+| `/` | Keep exploring the evidence | No | Text / existing subtle icon |
 | `/surgical-breast-enlargement/` | Page banner | Yes | qh-surgical-options-banner-1600.webp |
 | `/surgical-breast-enlargement/` | prose 1 | No | Text / existing subtle icon |
-| `/surgical-breast-enlargement/` | Key considerations before surgery | No | Text / existing subtle icon |
-| `/surgical-breast-enlargement/` | Preparing for a surgical consultation | Yes | qh-surgical-options-card-960.webp |
-| `/surgical-breast-enlargement/` | No guarantees | No | Text / existing subtle icon |
 | `/surgical-breast-enlargement/` | Breast enlargement: implants and fat transfer | Yes | qh-surgical-options-card-960.webp |
 | `/surgical-breast-enlargement/` | Related surgical procedures | No | Text / existing subtle icon |
 | `/surgical-breast-enlargement/` | Related surgery: shape, correction, reduction and chest contouring | Yes | qh-surgical-options-card-960.webp |
+| `/surgical-breast-enlargement/` | Key considerations before surgery | No | Text / existing subtle icon |
+| `/surgical-breast-enlargement/` | Preparing for a surgical consultation | Yes | qh-surgical-options-card-960.webp |
+| `/surgical-breast-enlargement/` | No guarantees | No | Text / existing subtle icon |
 | `/non-surgical-breast-enlargement/` | Page banner | Yes | qh-non-surgical-evidence-banner-1600.webp |
 | `/non-surgical-breast-enlargement/` | Non-surgical does not mean proven or safe | No | Text / existing subtle icon |
 | `/non-surgical-breast-enlargement/` | Non-surgical options: evidence, limitations and safety | Yes | qh-non-surgical-evidence-card-960.webp |
@@ -33,8 +33,7 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/surgical/breast-augmentation/` | Page banner | Yes | qh-augmentation-planning-banner-1600.webp |
 | `/surgical/breast-augmentation/` | prose 1 | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | Before deciding | No | Text / existing subtle icon |
-| `/surgical/breast-augmentation/` | Breast augmentation FAQs | No | Text / existing subtle icon |
-| `/surgical/breast-augmentation/` | prose 4 | No | Text / existing subtle icon |
+| `/surgical/breast-augmentation/` | prose 3 | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | What breast augmentation can — and cannot — do | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | How the procedure is usually performed | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | Types of breast implants | No | Text / existing subtle icon |
@@ -48,6 +47,7 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/surgical/breast-augmentation/` | Incision sites, scar healing and aftercare / prose 1 | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | Incision sites, scar healing and aftercare / Scar-care questions | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | Incision sites, scar healing and aftercare / Scar-care source references | No | Text / existing subtle icon |
+| `/surgical/breast-augmentation/` | Breast augmentation FAQs | No | Text / existing subtle icon |
 | `/surgical/breast-augmentation/` | Related education | No | Text / existing subtle icon |
 | `/breast-implants/` | Page banner | Yes | qh-implant-shell-profiles-banner-1600.webp |
 | `/breast-implants/` | Not the same as injectable silicone | No | Text / existing subtle icon |
@@ -124,11 +124,11 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/breast-enlargement-without-surgery/` | A sensible order of steps | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Common situations, sensible paths | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Warning signs — and what to do | No | Text / existing subtle icon |
-| `/breast-enlargement-without-surgery/` | Frequently asked questions | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Sources and further reading | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Browse the complete published literature | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Educational information only — not medical advice | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Further reading from the consolidated article | No | Text / existing subtle icon |
+| `/breast-enlargement-without-surgery/` | Frequently asked questions | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Related education | No | Text / existing subtle icon |
 | `/non-surgical/` | Page banner | Yes | qh-non-surgical-safety-review-banner-1600.webp |
 | `/non-surgical/` | prose 1 | No | Text / existing subtle icon |
@@ -142,9 +142,9 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/non-surgical/dermal-fillers/` | Regulatory position | No | Text / existing subtle icon |
 | `/non-surgical/dermal-fillers/` | prose 2 | No | Text / existing subtle icon |
 | `/non-surgical/dermal-fillers/` | Safety and decision points | No | Text / existing subtle icon |
-| `/non-surgical/dermal-fillers/` | Dermal filler FAQs | No | Text / existing subtle icon |
-| `/non-surgical/dermal-fillers/` | prose 5 | No | Text / existing subtle icon |
+| `/non-surgical/dermal-fillers/` | prose 4 | No | Text / existing subtle icon |
 | `/non-surgical/dermal-fillers/` | Further reading from the consolidated article | No | Text / existing subtle icon |
+| `/non-surgical/dermal-fillers/` | Dermal filler FAQs | No | Text / existing subtle icon |
 | `/non-surgical/dermal-fillers/` | Related education | No | Text / existing subtle icon |
 | `/non-surgical/breast-threads/` | Page banner | Yes | qh-cog-suture-material-banner-1600.webp |
 | `/non-surgical/breast-threads/` | prose 1 | Yes | qh-cog-suture-material-card-960.webp |
@@ -158,9 +158,9 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/non-surgical/prp/` | Page banner | Yes | qh-prp-preparation-tube-banner-1600.webp |
 | `/non-surgical/prp/` | prose 1 | Yes | qh-prp-preparation-tube-card-960.webp |
 | `/non-surgical/prp/` | Key points | No | Text / existing subtle icon |
-| `/non-surgical/prp/` | PRP FAQs | No | Text / existing subtle icon |
-| `/non-surgical/prp/` | prose 4 | No | Text / existing subtle icon |
+| `/non-surgical/prp/` | prose 3 | No | Text / existing subtle icon |
 | `/non-surgical/prp/` | Further reading from the consolidated article | No | Text / existing subtle icon |
+| `/non-surgical/prp/` | PRP FAQs | No | Text / existing subtle icon |
 | `/non-surgical/prp/` | Related education | No | Text / existing subtle icon |
 | `/non-surgical/biostimulators/` | Page banner | Yes | qh-biostimulator-research-banner-1600.webp |
 | `/non-surgical/biostimulators/` | Points to clarify | No | Text / existing subtle icon |
@@ -201,18 +201,17 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/breast-enlargement-safety/` | Factors that shape whether a procedure is appropriate | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | What can go wrong, by option | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Warning signs — seek help promptly | No | Text / existing subtle icon |
-| `/breast-enlargement-safety/` | Safety FAQs | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Regulator sources | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Educational information only | No | Text / existing subtle icon |
-| `/breast-enlargement-safety/` | prose 8 | No | Text / existing subtle icon |
+| `/breast-enlargement-safety/` | prose 7 | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Further reading from the consolidated article | No | Text / existing subtle icon |
-| `/breast-enlargement-safety/` | prose 10 | No | Text / existing subtle icon |
-| `/breast-enlargement-safety/` | prose 11 | No | Text / existing subtle icon |
+| `/breast-enlargement-safety/` | prose 9 | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | How to check a surgeon before you commit | Yes | qh-safety-informed-choice-card-960.webp |
 | `/breast-enlargement-safety/` | What to ask at the consultation | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Red flags that should end a consultation | No | Text / existing subtle icon |
-| `/breast-enlargement-safety/` | prose 15 | No | Text / existing subtle icon |
+| `/breast-enlargement-safety/` | prose 13 | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Professional-society guidance | No | Text / existing subtle icon |
+| `/breast-enlargement-safety/` | Safety FAQs | No | Text / existing subtle icon |
 | `/breast-enlargement-safety/` | Related education | No | Text / existing subtle icon |
 | `/references/` | Page banner | Yes | qh-scientific-source-references-banner-1600.webp |
 | `/references/` | prose 1 | No | Text / existing subtle icon |
@@ -223,8 +222,8 @@ Pages: 36; audited page-banner/content sections: 380.
 | `/glossary/` | A note on terminology | No | Text / existing subtle icon |
 | `/glossary/` | Related education | No | Text / existing subtle icon |
 | `/faqs/` | Page banner | Yes | qh-shared-questions-banner-1600.webp |
+| `/faqs/` | prose 1 | No | Text / existing subtle icon |
 | `/faqs/` | Breast enhancement FAQs | No | Text / existing subtle icon |
-| `/faqs/` | prose 2 | No | Text / existing subtle icon |
 | `/faqs/` | Related education | No | Text / existing subtle icon |
 | `/research/` | Page banner | Yes | qh-external-research-library-banner-1600.webp |
 | `/research/` | External research, clearly attributed | No | Text / existing subtle icon |

@@ -1,150 +1,222 @@
 {
-  "baseline_commit": "000aa86",
+  "baseline_commit": "73dc8a3",
   "excluded": "Image captions, SVG markup and scripts only; all written educational content is compared.",
   "pages": [
     {
       "route": "/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 43,
+      "after_sentences": 43
     },
     {
       "route": "/surgical-breast-enlargement/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 33,
+      "after_sentences": 33
     },
     {
       "route": "/non-surgical-breast-enlargement/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 17,
+      "after_sentences": 17
     },
     {
       "route": "/education-research/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 12,
+      "after_sentences": 12
     },
     {
       "route": "/surgical/breast-augmentation/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 175,
+      "after_sentences": 175
     },
     {
       "route": "/breast-implants/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 37,
+      "after_sentences": 37
     },
     {
       "route": "/breast-implant-safety/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 34,
+      "after_sentences": 34
     },
     {
       "route": "/surgical/fat-transfer-breast-augmentation/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 21,
+      "after_sentences": 21
     },
     {
       "route": "/surgical/breast-lift/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/surgical/breast-revision/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 30,
+      "after_sentences": 30
     },
     {
       "route": "/surgical/breast-filler-removal/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 29,
+      "after_sentences": 29
     },
     {
       "route": "/surgical/breast-reduction/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/surgical/mastectomy-chest-surgery/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 29,
+      "after_sentences": 29
     },
     {
       "route": "/breast-enlargement-without-surgery/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 222,
+      "after_sentences": 222
     },
     {
       "route": "/non-surgical/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 40,
+      "after_sentences": 40
     },
     {
       "route": "/non-surgical/dermal-fillers/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/non-surgical/breast-threads/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 18,
+      "after_sentences": 18
     },
     {
       "route": "/non-surgical/mono-threads/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 12,
+      "after_sentences": 12
     },
     {
       "route": "/non-surgical/prp/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/non-surgical/biostimulators/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 12,
+      "after_sentences": 12
     },
     {
       "route": "/non-surgical/sculptra-plla/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 12,
+      "after_sentences": 12
     },
     {
       "route": "/non-surgical/regenerative-medicine/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 13,
+      "after_sentences": 13
     },
     {
       "route": "/understanding-breast-enlargement/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 44,
+      "after_sentences": 44
     },
     {
       "route": "/breast-anatomy/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 26,
+      "after_sentences": 26
     },
     {
       "route": "/breast-enhancement-comparison/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/breast-enlargement-safety/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 82,
+      "after_sentences": 82
     },
     {
       "route": "/references/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/glossary/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 48,
+      "after_sentences": 48
     },
     {
       "route": "/faqs/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 18,
+      "after_sentences": 18
     },
     {
       "route": "/research/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 2007,
+      "after_sentences": 2007
     },
     {
       "route": "/about-us/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 12,
+      "after_sentences": 12
     },
     {
       "route": "/contact/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 25,
+      "after_sentences": 25
     },
     {
       "route": "/privacy-policy/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 11,
+      "after_sentences": 11
     },
     {
       "route": "/cookie-policy/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 7,
+      "after_sentences": 7
     },
     {
       "route": "/terms-of-use/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 8,
+      "after_sentences": 8
     },
     {
       "route": "/medical-disclaimer/",
-      "written_content_identical": true
+      "written_content_identical": true,
+      "before_sentences": 8,
+      "after_sentences": 8
     }
   ]
 }

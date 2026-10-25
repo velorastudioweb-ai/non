@@ -150,7 +150,7 @@ research.seoDescription = 'Published breast enlargement studies, systematic revi
 research.bannerLead = 'An independent reading guide to external research and patient information. These studies and source publications are not Quantum Health research.';
 research.blocks = [
   { type: 'notice', icon: 'evidence', title: 'External research, clearly attributed', text: 'Quantum Health provides educational summaries, not original clinical research. Publication does not prove effectiveness. Read each source in context, check its date and jurisdiction, and distinguish a registered protocol from a completed review.' },
-  { type: 'prose', html: '<nav class="source-index" aria-label="Research collections"><a href="#pubmed">PubMed study summaries</a><a href="#pmc">Search PMC records</a>' + publishers.map(([, , id, title]) => '<a href="#' + id + '">' + title + '</a>').join('') + '</nav>' },
+  { type: 'prose', html: '<nav class="source-index" aria-label="Research collections"><a href="#pubmed">PubMed study summaries</a> · <a href="#pmc">Search PMC records</a> · ' + publishers.map(([, , id, title]) => '<a href="#' + id + '">' + title + '</a>').join(' · ') + '</nav>' },
   { type: 'group', id: 'pubmed', heading: 'PubMed: topic-grouped study findings', open: true, blocks: contentBlocks(research) },
   { type: 'group', id: 'pmc', heading: 'PubMed Central: searchable citation archive', open: true, blocks: contentBlocks(clone(require('./research').researchPage)) }
 ];

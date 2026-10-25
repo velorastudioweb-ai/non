@@ -1,5 +1,5 @@
 {
-  "sha256": "cd8203328b3998e13113c49b7728e0b761cec37b93d967b60176343d0525e26d",
+  "sha256": "82997cab3763068e31c0fd38f9271cc676edd43cc9b25311676a0f0de87d1182",
   "pages": [
     {
       "url": "/",
@@ -36,31 +36,34 @@
             }
           ],
           "note": "This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.",
-          "slot": "Hero portrait",
-          "featureStrip": [
+          "slot": "Hero portrait"
+        },
+        {
+          "type": "cards",
+          "id": "treatments",
+          "alt": false,
+          "cols": 3,
+          "eyebrow": "Three educational sections",
+          "heading": "Find your starting point",
+          "lead": "Explore the options, then compare the evidence and safety considerations.",
+          "items": [
             {
-              "icon": "evidence",
-              "label": "Evidence-based"
+              "title": "Surgical Breast Enlargement",
+              "href": "/surgical-breast-enlargement/",
+              "text": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.",
+              "media": "<img src=\"/surgical.jpeg\" alt=\"Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
-              "icon": "scale",
-              "label": "Options compared fairly"
+              "title": "Non-Surgical Breast Enlargement",
+              "href": "/non-surgical-breast-enlargement/",
+              "text": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.",
+              "media": "<img src=\"/non surgical.jpeg\" alt=\"Non-Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
-              "icon": "safety",
-              "label": "Risks explained"
-            },
-            {
-              "icon": "info",
-              "label": "No sales pressure"
-            },
-            {
-              "icon": "personalised",
-              "label": "Realistic expectations"
-            },
-            {
-              "icon": "natural",
-              "label": "Independent & educational"
+              "title": "Education & Research",
+              "href": "/education-research/",
+              "text": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.",
+              "media": "<img src=\"/prp.jpeg\" alt=\"Education and Research\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             }
           ]
         },
@@ -70,7 +73,7 @@
           "eyebrow": "Our approach",
           "heading": "Clear information. Honest limits. No promotion.",
           "body": "<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p><p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p><p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>",
-          "slot": "Clinic / consultation environment",
+          "media": "<picture><source type=\"image/webp\" srcset=\"/assets/img/qh-independent-patient-education-portrait-480.webp 480w, /assets/img/qh-independent-patient-education-portrait-960.webp 960w\" sizes=\"(max-width: 900px) 100vw, 46vw\"><img src=\"/assets/img/qh-independent-patient-education-portrait-960.webp\" alt=\"Independent patient education\" width=\"960\" height=\"1200\" loading=\"lazy\" decoding=\"async\"></picture>",
           "link": {
             "label": "Read about this website",
             "href": "/about-us/"
@@ -106,35 +109,6 @@
           ]
         },
         {
-          "type": "cards",
-          "id": "treatments",
-          "alt": false,
-          "cols": 3,
-          "eyebrow": "Three educational sections",
-          "heading": "Find your starting point",
-          "lead": "Explore the options, then compare the evidence and safety considerations.",
-          "items": [
-            {
-              "title": "Surgical Breast Enlargement",
-              "href": "/surgical-breast-enlargement/",
-              "text": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.",
-              "slot": "Surgical Breast Enlargement"
-            },
-            {
-              "title": "Non-Surgical Breast Enlargement",
-              "href": "/non-surgical-breast-enlargement/",
-              "text": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.",
-              "slot": "Non-Surgical Breast Enlargement"
-            },
-            {
-              "title": "Education & Research",
-              "href": "/education-research/",
-              "text": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.",
-              "slot": "Education & Research"
-            }
-          ]
-        },
-        {
           "type": "notice",
           "blush": false,
           "icon": "info",
@@ -152,32 +126,38 @@
             {
               "title": "Breast dermal fillers",
               "text": "Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.",
-              "href": "/non-surgical/dermal-fillers/"
+              "href": "/non-surgical/dermal-fillers/",
+              "media": "<img src=\"/dermal-fillers.jpeg\" alt=\"Breast dermal fillers\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "PRP",
               "text": "How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.",
-              "href": "/non-surgical/prp/"
+              "href": "/non-surgical/prp/",
+              "media": "<img src=\"/education-research.jpeg\" alt=\"PRP\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "Thread-based procedures",
               "text": "PDO and mono threads: intended mechanical effects, limitations and product-specific indications.",
-              "href": "/non-surgical/breast-threads/"
+              "href": "/non-surgical/breast-threads/",
+              "media": "<img src=\"/fat-transfer.jpeg\" alt=\"Thread-based procedures\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "Sculptra & biostimulators",
               "text": "Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.",
-              "href": "/non-surgical/sculptra-plla/"
+              "href": "/non-surgical/sculptra-plla/",
+              "media": "<img src=\"/sculptra.jpeg\" alt=\"Sculptra and biostimulators\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "Breast implants",
               "text": "Medical devices with an outer shell and gel filling, and their long-term monitoring needs.",
-              "href": "/breast-implants/"
+              "href": "/breast-implants/",
+              "media": "<img src=\"/implants.jpeg\" alt=\"Breast implants\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "Fat transfer",
               "text": "Using your own fat for a modest, individualised increase in volume, and its retention variability.",
-              "href": "/surgical/fat-transfer-breast-augmentation/"
+              "href": "/surgical/fat-transfer-breast-augmentation/",
+              "media": "<img src=\"/threads.jpeg\" alt=\"Fat transfer\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
             },
             {
               "title": "Breast augmentation",
@@ -222,16 +202,6 @@
           "slot": "Consultation room detail"
         },
         {
-          "type": "cta",
-          "eyebrow": "Your journey starts with information",
-          "heading": "Keep exploring the evidence",
-          "text": "Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.",
-          "button": {
-            "label": "Contact us",
-            "href": "/contact/"
-          }
-        },
-        {
           "type": "cards",
           "cols": 3,
           "heading": "A clear foundation for your decision",
@@ -261,6 +231,16 @@
               "slot": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs"
             }
           ]
+        },
+        {
+          "type": "cta",
+          "eyebrow": "Your journey starts with information",
+          "heading": "Keep exploring the evidence",
+          "text": "Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.",
+          "button": {
+            "label": "Contact us",
+            "href": "/contact/"
+          }
         }
       ]
     },
@@ -281,80 +261,6 @@
         {
           "type": "prose",
           "html": "<p>Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat. It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change.</p><p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individual’s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>"
-        },
-        {
-          "type": "icon-grid",
-          "eyebrow": "What patients should understand",
-          "heading": "Key considerations before surgery",
-          "cols": 3,
-          "items": [
-            {
-              "icon": "scale",
-              "title": "Implant vs. fat transfer",
-              "text": "The difference between implant-based augmentation and autologous fat transfer."
-            },
-            {
-              "icon": "personalised",
-              "title": "Qualified surgeon",
-              "text": "The importance of a qualified and appropriately credentialed plastic surgeon."
-            },
-            {
-              "icon": "evidence",
-              "title": "Preoperative assessment",
-              "text": "The need for preoperative assessment and informed consent."
-            },
-            {
-              "icon": "downtime",
-              "title": "Recovery & scarring",
-              "text": "Recovery requirements, scar management and follow-up."
-            },
-            {
-              "icon": "safety",
-              "title": "Complications & revision",
-              "text": "Potential complications and the possibility of revision surgery."
-            },
-            {
-              "icon": "info",
-              "title": "No guarantees",
-              "text": "Surgery cannot promise permanent outcomes, guaranteed symmetry or zero scarring."
-            }
-          ]
-        },
-        {
-          "type": "steps",
-          "alt": true,
-          "eyebrow": "Preparation",
-          "heading": "Preparing for a surgical consultation",
-          "lead": "Come prepared to discuss your goals, health and the questions that matter most to you.",
-          "items": [
-            {
-              "title": "Clarify your goals and expectations",
-              "text": "What change are you hoping for, and how would you prioritise proportion, size and shape?"
-            },
-            {
-              "title": "Share your full medical history",
-              "text": "Including previous surgery, medications, allergies and relevant family history."
-            },
-            {
-              "title": "Ask about credentials",
-              "text": "Request the surgeon’s qualifications, registration and specific breast-procedure experience."
-            },
-            {
-              "title": "Ask about the plan and its limits",
-              "text": "Discuss technique, expected limitations, recovery, costs and potential revision."
-            },
-            {
-              "title": "Take time to decide",
-              "text": "Proceed only when you understand the risks, alternatives and aftercare, and feel ready to consent."
-            }
-          ],
-          "slot": "Surgical consultation imagery"
-        },
-        {
-          "type": "notice",
-          "icon": "info",
-          "title": "No guarantees",
-          "text": "Surgery is not appropriate for everyone and cannot promise permanent outcomes, guaranteed symmetry, zero scarring or a risk-free result. Individual suitability, risks and outcomes vary and require assessment by an appropriately qualified clinician."
         },
         {
           "type": "cards",
@@ -429,6 +335,80 @@
               "slot": "Mastectomy & Chest Contouring Surgery: Patient Information"
             }
           ]
+        },
+        {
+          "type": "icon-grid",
+          "eyebrow": "What patients should understand",
+          "heading": "Key considerations before surgery",
+          "cols": 3,
+          "items": [
+            {
+              "icon": "scale",
+              "title": "Implant vs. fat transfer",
+              "text": "The difference between implant-based augmentation and autologous fat transfer."
+            },
+            {
+              "icon": "personalised",
+              "title": "Qualified surgeon",
+              "text": "The importance of a qualified and appropriately credentialed plastic surgeon."
+            },
+            {
+              "icon": "evidence",
+              "title": "Preoperative assessment",
+              "text": "The need for preoperative assessment and informed consent."
+            },
+            {
+              "icon": "downtime",
+              "title": "Recovery & scarring",
+              "text": "Recovery requirements, scar management and follow-up."
+            },
+            {
+              "icon": "safety",
+              "title": "Complications & revision",
+              "text": "Potential complications and the possibility of revision surgery."
+            },
+            {
+              "icon": "info",
+              "title": "No guarantees",
+              "text": "Surgery cannot promise permanent outcomes, guaranteed symmetry or zero scarring."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "alt": true,
+          "eyebrow": "Preparation",
+          "heading": "Preparing for a surgical consultation",
+          "lead": "Come prepared to discuss your goals, health and the questions that matter most to you.",
+          "items": [
+            {
+              "title": "Clarify your goals and expectations",
+              "text": "What change are you hoping for, and how would you prioritise proportion, size and shape?"
+            },
+            {
+              "title": "Share your full medical history",
+              "text": "Including previous surgery, medications, allergies and relevant family history."
+            },
+            {
+              "title": "Ask about credentials",
+              "text": "Request the surgeon’s qualifications, registration and specific breast-procedure experience."
+            },
+            {
+              "title": "Ask about the plan and its limits",
+              "text": "Discuss technique, expected limitations, recovery, costs and potential revision."
+            },
+            {
+              "title": "Take time to decide",
+              "text": "Proceed only when you understand the risks, alternatives and aftercare, and feel ready to consent."
+            }
+          ],
+          "slot": "Surgical consultation imagery"
+        },
+        {
+          "type": "notice",
+          "icon": "info",
+          "title": "No guarantees",
+          "text": "Surgery is not appropriate for everyone and cannot promise permanent outcomes, guaranteed symmetry, zero scarring or a risk-free result. Individual suitability, risks and outcomes vary and require assessment by an appropriately qualified clinician."
         }
       ],
       "schema": [
@@ -684,23 +664,6 @@
           ]
         },
         {
-          "type": "faq",
-          "alt": true,
-          "id": "aug",
-          "eyebrow": "Questions",
-          "heading": "Breast augmentation FAQs",
-          "items": [
-            {
-              "q": "How long does recovery take?",
-              "a": "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
-            },
-            {
-              "q": "Are the results permanent?",
-              "a": "<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>"
-            }
-          ]
-        },
-        {
           "type": "prose",
           "html": "<h2 class=\"h3\">Breast augmentation: data from the American Society of Plastic Surgeons</h2><p>The figures and lists below summarise patient information published by the American Society of Plastic Surgeons (ASPS), the largest association of board-certified plastic surgeons in the United States. They are reproduced here for education and context. ASPS guidance reflects United States practice and regulation and does not replace assessment by a suitably qualified clinician in your own jurisdiction.</p>"
         },
@@ -923,6 +886,23 @@
               "title": "Scar-care source references",
               "icon": "evidence",
               "text": "<ul><li>U.S. Food and Drug Administration (2024). Breast Implants. https://www.fda.gov/medical-devices/breast-implants</li><li>U.S. Food and Drug Administration (2024). Breast Implant Safety. https://www.fda.gov/medical-devices/breast-implants/breast-implant-safety</li><li>NHS (2023). Breast enlargement (implants). https://www.nhs.uk/tests-and-treatments/cosmetic-procedures/cosmetic-surgery/breast-enlargement/</li><li>NHS (2023). https://www.nhs.uk/</li><li>American Society of Plastic Surgeons (2024). Breast Augmentation. https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation</li><li>British Association of Plastic, Reconstructive and Aesthetic Surgeons. Patient information. https://www.bapras.org.uk/</li><li>General Medical Council (2024). Cosmetic procedures guidance. https://www.gmc-uk.org/</li></ul>"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "alt": true,
+          "id": "aug",
+          "eyebrow": "Questions",
+          "heading": "Breast augmentation FAQs",
+          "items": [
+            {
+              "q": "How long does recovery take?",
+              "a": "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
+            },
+            {
+              "q": "Are the results permanent?",
+              "a": "<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>"
             }
           ]
         },
@@ -2659,6 +2639,31 @@
           "note": "Whatever you choose, keep up regular breast awareness and follow your national screening advice. Tell any radiographer about fat grafting, injections or implants, and keep a record of what was done, when and by whom."
         },
         {
+          "type": "notice",
+          "icon": "evidence",
+          "title": "Sources and further reading",
+          "text": "<ul><li>U.S. Food and Drug Administration — Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable silicone for body contouring.</li><li>U.S. Food and Drug Administration — Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).</li><li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review highlighting the need for clinical caution (35 studies, 3,757 women).</li><li>Adipose-derived stem cell enrichment is counter-productive for the majority of women seeking primary aesthetic breast augmentation by autologous fat transfer: a systematic review. <em>J Plast Reconstr Aesthet Surg</em>, 2020;73(11):2025–2032.</li><li>Khouri RK, et al. — Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li><li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li><li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li><li>American Society of Plastic Surgeons — breast augmentation patient information and the 2025 plastic surgery statistics. <a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation\">plasticsurgery.org</a> · <a href=\"https://www.plasticsurgery.org/news/plastic-surgery-statistics\">2025 statistics</a></li></ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting."
+        },
+        {
+          "type": "notice",
+          "icon": "evidence",
+          "title": "Browse the complete published literature",
+          "text": "This guide cites selected sources. The <a href=\"/research/#pmc\">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles."
+        },
+        {
+          "type": "notice",
+          "blush": true,
+          "icon": "info",
+          "title": "Educational information only — not medical advice",
+          "text": "This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly."
+        },
+        {
+          "type": "notice",
+          "icon": "evidence",
+          "title": "Further reading from the consolidated article",
+          "text": "<ul><li>U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory meeting executive summary</li><li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review (35 studies, 3,757 women)</li><li>Adipose-derived stem cell enrichment is counter-productive for primary aesthetic breast augmentation by autologous fat transfer: a systematic review. J Plast Reconstr Aesthet Surg, 2020</li><li>“Bust enhancing” herbal products. Obstet Gynecol, 2003;101(6):1345–9</li><li>American Society of Plastic Surgeons — 2025 plastic surgery statistics; breast augmentation patient information (https://www.plasticsurgery.org/news/plastic-surgery-statistics)</li></ul>"
+        },
+        {
           "type": "faq",
           "id": "eg",
           "eyebrow": "Questions",
@@ -2705,31 +2710,6 @@
               "a": "<p>A professional bra fitting. It costs little, carries no risk, and often changes the look more than people expect.</p>"
             }
           ]
-        },
-        {
-          "type": "notice",
-          "icon": "evidence",
-          "title": "Sources and further reading",
-          "text": "<ul><li>U.S. Food and Drug Administration — Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable silicone for body contouring.</li><li>U.S. Food and Drug Administration — Executive Summary: Meeting on Dermal Fillers (advisory panel, August 2025).</li><li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review highlighting the need for clinical caution (35 studies, 3,757 women).</li><li>Adipose-derived stem cell enrichment is counter-productive for the majority of women seeking primary aesthetic breast augmentation by autologous fat transfer: a systematic review. <em>J Plast Reconstr Aesthet Surg</em>, 2020;73(11):2025–2032.</li><li>Khouri RK, et al. — Brava and Autologous Fat Transfer Is a Safe and Effective Breast Augmentation Alternative: Results of a 6-Year, 81-Patient, Prospective Multicenter Study. <em>Plast Reconstr Surg</em>, 2012.</li><li>The Impact of Recipient Site External Expansion in Fat Grafting Surgical Outcomes. <em>Plast Reconstr Surg Glob Open</em>, 2018; and Research progress of external volume expansion assisted autologous fat grafting for breast reconstruction, 2022.</li><li>“Bust enhancing” herbal products. <em>Obstet Gynecol</em>, 2003;101(6):1345–9; ConsumerLab.com breast enhancement supplements review (2002).</li><li>American Society of Plastic Surgeons — breast augmentation patient information and the 2025 plastic surgery statistics. <a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation\">plasticsurgery.org</a> · <a href=\"https://www.plasticsurgery.org/news/plastic-surgery-statistics\">2025 statistics</a></li></ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting."
-        },
-        {
-          "type": "notice",
-          "icon": "evidence",
-          "title": "Browse the complete published literature",
-          "text": "This guide cites selected sources. The <a href=\"/research/#pmc\">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles."
-        },
-        {
-          "type": "notice",
-          "blush": true,
-          "icon": "info",
-          "title": "Educational information only — not medical advice",
-          "text": "This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly."
-        },
-        {
-          "type": "notice",
-          "icon": "evidence",
-          "title": "Further reading from the consolidated article",
-          "text": "<ul><li>U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory meeting executive summary</li><li>Seth I, et al. — Autologous fat grafting in breast augmentation: a systematic review (35 studies, 3,757 women)</li><li>Adipose-derived stem cell enrichment is counter-productive for primary aesthetic breast augmentation by autologous fat transfer: a systematic review. J Plast Reconstr Aesthet Surg, 2020</li><li>“Bust enhancing” herbal products. Obstet Gynecol, 2003;101(6):1345–9</li><li>American Society of Plastic Surgeons — 2025 plastic surgery statistics; breast augmentation patient information (https://www.plasticsurgery.org/news/plastic-surgery-statistics)</li></ul>"
         },
         {
           "type": "cards",
@@ -2983,6 +2963,16 @@
           ]
         },
         {
+          "type": "prose",
+          "html": "<h2 class=\"h3\">Product-specific questions</h2><p>Ask for the exact product, its approved indications, whether breast use is authorised in your jurisdiction, and how complications would be managed.</p>"
+        },
+        {
+          "type": "notice",
+          "icon": "evidence",
+          "title": "Further reading from the consolidated article",
+          "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
+        },
+        {
           "type": "faq",
           "alt": true,
           "id": "df",
@@ -2998,16 +2988,6 @@
               "a": "<p>Alternatives with clearer evidence for increasing breast volume include surgical options such as implants or, in selected cases, autologous fat transfer. Suitability depends on individual factors and should be assessed by an appropriately qualified clinician.</p>"
             }
           ]
-        },
-        {
-          "type": "prose",
-          "html": "<h2 class=\"h3\">Product-specific questions</h2><p>Ask for the exact product, its approved indications, whether breast use is authorised in your jurisdiction, and how complications would be managed.</p>"
-        },
-        {
-          "type": "notice",
-          "icon": "evidence",
-          "title": "Further reading from the consolidated article",
-          "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
         },
         {
           "type": "cards",
@@ -3276,6 +3256,16 @@
           ]
         },
         {
+          "type": "prose",
+          "html": "<h2 class=\"h3\">Research vs. established use</h2><p>There is an important difference between studying a treatment and establishing that it is safe and effective for a particular purpose. Claims of breast enhancement should be assessed against appropriate clinical evidence for the precise procedure offered.</p><h2 class=\"h3\">What to ask</h2><p>Ask what evidence supports the specific use, what the known risks are, and what regulatory requirements apply to that intended use in your jurisdiction.</p>"
+        },
+        {
+          "type": "notice",
+          "icon": "evidence",
+          "title": "Further reading from the consolidated article",
+          "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
+        },
+        {
           "type": "faq",
           "alt": true,
           "id": "prp",
@@ -3291,16 +3281,6 @@
               "a": "<p>Using your own blood reduces some risks but does not remove them. Any procedure carries procedure-related risks such as pain, bruising, bleeding or infection, and suitability still requires clinical review.</p>"
             }
           ]
-        },
-        {
-          "type": "prose",
-          "html": "<h2 class=\"h3\">Research vs. established use</h2><p>There is an important difference between studying a treatment and establishing that it is safe and effective for a particular purpose. Claims of breast enhancement should be assessed against appropriate clinical evidence for the precise procedure offered.</p><h2 class=\"h3\">What to ask</h2><p>Ask what evidence supports the specific use, what the known risks are, and what regulatory requirements apply to that intended use in your jurisdiction.</p>"
-        },
-        {
-          "type": "notice",
-          "icon": "evidence",
-          "title": "Further reading from the consolidated article",
-          "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
         },
         {
           "type": "cards",
@@ -4138,27 +4118,6 @@
           "text": "<ul><li>Fever, spreading redness, pus or worsening pain after any procedure — possible infection; contact your clinician the same day.</li><li>Pale, bluish, dusky or dark skin, or blisters — may mean reduced blood supply; seek urgent care.</li><li>Chest pain, breathlessness or collapse — possible blood clot; call emergency services.</li><li>Sudden vision change, severe headache or weakness after an injection — possible blocked vessel; call emergency services.</li><li>A new lump, hardness or skin change — have it examined and imaged.</li></ul>"
         },
         {
-          "type": "faq",
-          "alt": true,
-          "id": "safety",
-          "eyebrow": "Questions",
-          "heading": "Safety FAQs",
-          "items": [
-            {
-              "q": "Is non-surgical always safer than surgery?",
-              "a": "<p>No. A cream is low-risk but ineffective; unapproved breast filler is “non-surgical” yet linked to serious harm; surgery carries real but better-understood risks. Safety depends on the specific product, the indication and who performs it.</p>"
-            },
-            {
-              "q": "How do I know if a clinic is safe?",
-              "a": "<p>Check registration and credentials, insist on a written plan and revision policy, ask who performs the procedure and where, and treat pressure or guarantees as red flags. See <a href=\"/breast-enlargement-safety/#choosing-a-surgeon\">choosing a surgeon</a>.</p>"
-            },
-            {
-              "q": "Are there signs I should not have a procedure at all?",
-              "a": "<p>Yes. Active infection, pregnancy or breastfeeding, some uncontrolled medical conditions, and unrealistic expectations are typical reasons to postpone or decline. A good clinician will say so.</p>"
-            }
-          ]
-        },
-        {
           "type": "notice",
           "blush": true,
           "icon": "evidence",
@@ -4183,12 +4142,8 @@
         },
         {
           "type": "prose",
-          "id": "choosing-a-surgeon",
-          "html": "<h2>Choosing a qualified surgeon</h2>"
-        },
-        {
-          "type": "prose",
-          "html": "<p class=\"lead\">Advertising is not a credential. Anyone can describe themselves as a “cosmetic surgeon”, and clinics may use the word “expert” freely. What can be verified is registration with a professional regulator, recognised surgical training, and membership of a relevant professional body.</p>"
+          "html": "<h2>Choosing a qualified surgeon</h2><p class=\"lead\">Advertising is not a credential. Anyone can describe themselves as a “cosmetic surgeon”, and clinics may use the word “expert” freely. What can be verified is registration with a professional regulator, recognised surgical training, and membership of a relevant professional body.</p>",
+          "id": "choosing-a-surgeon"
         },
         {
           "type": "steps",
@@ -4272,6 +4227,27 @@
           "icon": "evidence",
           "title": "Professional-society guidance",
           "text": "<p><strong>bapras</strong></p><p><strong>American Society of Plastic Surgeons (ASPS)</strong> — <a href=\"https://www.plasticsurgery.org/\" rel=\"noopener\">www.plasticsurgery.org/</a></p><ul><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation\" rel=\"noopener\">Breast Augmentation (Augmentation Mammaplasty)</a> <span class=\"muted\">(Procedure overview)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/candidates\" rel=\"noopener\">Breast Augmentation Candidates</a> <span class=\"muted\">(Patient guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/consultation\" rel=\"noopener\">Breast Augmentation Consultation</a> <span class=\"muted\">(Patient guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/questions\" rel=\"noopener\">Questions to Ask Your Plastic Surgeon</a> <span class=\"muted\">(Question checklist)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/cost\" rel=\"noopener\">Breast Augmentation Cost</a> <span class=\"muted\">(Cost guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants\" rel=\"noopener\">Types of Breast Implants</a> <span class=\"muted\">(Device overview)</span></li><li>…and 7 more in the full library.</li></ul>"
+        },
+        {
+          "type": "faq",
+          "alt": true,
+          "id": "safety",
+          "eyebrow": "Questions",
+          "heading": "Safety FAQs",
+          "items": [
+            {
+              "q": "Is non-surgical always safer than surgery?",
+              "a": "<p>No. A cream is low-risk but ineffective; unapproved breast filler is “non-surgical” yet linked to serious harm; surgery carries real but better-understood risks. Safety depends on the specific product, the indication and who performs it.</p>"
+            },
+            {
+              "q": "How do I know if a clinic is safe?",
+              "a": "<p>Check registration and credentials, insist on a written plan and revision policy, ask who performs the procedure and where, and treat pressure or guarantees as red flags. See <a href=\"/breast-enlargement-safety/#choosing-a-surgeon\">choosing a surgeon</a>.</p>"
+            },
+            {
+              "q": "Are there signs I should not have a procedure at all?",
+              "a": "<p>Yes. Active infection, pregnancy or breastfeeding, some uncontrolled medical conditions, and unrealistic expectations are typical reasons to postpone or decline. A good clinician will say so.</p>"
+            }
+          ]
         },
         {
           "type": "cards",
@@ -4459,6 +4435,10 @@
       ],
       "blocks": [
         {
+          "type": "prose",
+          "html": "<h2>Questions about an individual option</h2><p>Read the dedicated FAQs for <a href=\"/non-surgical/dermal-fillers/\">fillers</a>, <a href=\"/non-surgical/prp/\">PRP</a>, <a href=\"/surgical/fat-transfer-breast-augmentation/\">fat transfer</a> and <a href=\"/surgical/breast-augmentation/\">augmentation and recovery</a>.</p>"
+        },
+        {
           "type": "faq",
           "id": "shared-faq",
           "eyebrow": "Common questions",
@@ -4477,10 +4457,6 @@
               "a": "<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. The decision should follow an assessment by an appropriately qualified clinician.</p>"
             }
           ]
-        },
-        {
-          "type": "prose",
-          "html": "<h2>Questions about an individual option</h2><p>Read the dedicated FAQs for <a href=\"/non-surgical/dermal-fillers/\">fillers</a>, <a href=\"/non-surgical/prp/\">PRP</a>, <a href=\"/surgical/fat-transfer-breast-augmentation/\">fat transfer</a> and <a href=\"/surgical/breast-augmentation/\">augmentation and recovery</a>.</p>"
         },
         {
           "type": "cards",

@@ -132,9 +132,9 @@ function startServer(port, root) {
 /* ------------------------------ expectations ------------------------------ */
 /* Computed-style palette assertions — proves the redesign is really live. */
 const PALETTE = [
-  { sel: 'body', prop: 'color', expect: ['rgb(255, 240, 232)'], label: 'ivory body text' },
-  { sel: '.eyebrow', prop: 'color', expect: ['rgb(255, 215, 130)', 'rgb(255, 231, 174)'], label: 'champagne-gold eyebrow' },
-  { sel: '.hero__title em', prop: 'color', expect: ['rgb(255, 77, 166)'], label: 'orchid hero accent', home: true },
+{ sel: 'body', prop: 'color', expect: ['rgb(255, 248, 243)'], label: 'ivory body text' },
+{ sel: '.eyebrow', prop: 'color', expect: ['rgb(216, 181, 138)', 'rgb(234, 215, 221)'], label: 'champagne-gold eyebrow' },
+{ sel: '.hero__title em', prop: 'color', expect: ['rgb(255, 77, 166)'], label: 'orchid hero accent', home: true },
   { sel: '.btn--primary', prop: 'color', expect: ['rgb(31, 3, 7)'], label: 'dark ink on ruby CTA' },
   { sel: '.card', prop: 'borderTopColor', expect: ['rgba(255, 77, 166, 0.3)'], label: 'orchid card border' }
 ];

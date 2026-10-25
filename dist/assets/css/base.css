@@ -211,8 +211,8 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   width: min(100% - (var(--gutter) * 2), var(--container-narrow));
   margin-inline: auto;
 }
-.section { padding-block: clamp(3rem, 7vw, 6rem); position: relative; }
-.section--tight { padding-block: clamp(2.75rem, 5.5vw, 4.75rem); }
+.section { padding-block: clamp(3.25rem, 6vw, 5.5rem); position: relative; }
+.section--tight { padding-block: clamp(2.5rem, 4.5vw, 3.75rem); }
 /* Alternate and wine bands are never flat: each carries a restrained
    ruby / orchid radial sheen so consecutive sections read as distinct. */
 .section--alt {

@@ -1,6 +1,6 @@
 {
   "pages": 36,
-  "sections": 380,
+  "sections": 379,
   "inventory": [
     {
       "page": "Home",
@@ -44,33 +44,7 @@
           }
         ],
         "note": "This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.",
-        "slot": "Hero portrait",
-        "featureStrip": [
-          {
-            "icon": "evidence",
-            "label": "Evidence-based"
-          },
-          {
-            "icon": "scale",
-            "label": "Options compared fairly"
-          },
-          {
-            "icon": "safety",
-            "label": "Risks explained"
-          },
-          {
-            "icon": "info",
-            "label": "No sales pressure"
-          },
-          {
-            "icon": "personalised",
-            "label": "Realistic expectations"
-          },
-          {
-            "icon": "natural",
-            "label": "Independent & educational"
-          }
-        ]
+        "slot": "Hero portrait"
       },
       "imageNeeded": true,
       "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
@@ -86,6 +60,68 @@
     {
       "page": "Home",
       "route": "/",
+      "section": "Find your starting point",
+      "type": "cards",
+      "existingContent": {
+        "type": "cards",
+        "id": "treatments",
+        "alt": false,
+        "cols": 3,
+        "eyebrow": "Three educational sections",
+        "heading": "Find your starting point",
+        "lead": "Explore the options, then compare the evidence and safety considerations.",
+        "items": [
+          {
+            "title": "Surgical Breast Enlargement",
+            "href": "/surgical-breast-enlargement/",
+            "text": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.",
+            "media": "<img src=\"/surgical.jpeg\" alt=\"Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
+          },
+          {
+            "title": "Non-Surgical Breast Enlargement",
+            "href": "/non-surgical-breast-enlargement/",
+            "text": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.",
+            "media": "<img src=\"/non surgical.jpeg\" alt=\"Non-Surgical Breast Enlargement\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
+          },
+          {
+            "title": "Education & Research",
+            "href": "/education-research/",
+            "text": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.",
+            "media": "<img src=\"/prp.jpeg\" alt=\"Education and Research\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
+          }
+        ]
+      },
+      "imageNeeded": true,
+      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
+      "concept": "Use only the corresponding explicitly mapped card/topic asset.",
+      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
+      "placement": "Inside the existing media region; do not replace or overlay written data.",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": [
+        {
+          "title": "Surgical Breast Enlargement",
+          "href": "/surgical-breast-enlargement/",
+          "key": "qh-surgical-options",
+          "plannedKey": "qh-surgical-options"
+        },
+        {
+          "title": "Non-Surgical Breast Enlargement",
+          "href": "/non-surgical-breast-enlargement/",
+          "key": "qh-non-surgical-evidence",
+          "plannedKey": "qh-non-surgical-evidence"
+        },
+        {
+          "title": "Education & Research",
+          "href": "/education-research/",
+          "key": "qh-education-research",
+          "plannedKey": "qh-education-research"
+        }
+      ]
+    },
+    {
+      "page": "Home",
+      "route": "/",
       "section": "Clear information. Honest limits. No promotion.",
       "type": "split",
       "existingContent": {
@@ -94,7 +130,7 @@
         "eyebrow": "Our approach",
         "heading": "Clear information. Honest limits. No promotion.",
         "body": "<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p><p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p><p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>",
-        "slot": "Clinic / consultation environment",
+        "media": "<picture><source type=\"image/webp\" srcset=\"/assets/img/qh-independent-patient-education-portrait-480.webp 480w, /assets/img/qh-independent-patient-education-portrait-960.webp 960w\" sizes=\"(max-width: 900px) 100vw, 46vw\"><img src=\"/assets/img/qh-independent-patient-education-portrait-960.webp\" alt=\"Independent patient education\" width=\"960\" height=\"1200\" loading=\"lazy\" decoding=\"async\"></picture>",
         "link": {
           "label": "Read about this website",
           "href": "/about-us/"
@@ -108,9 +144,7 @@
       "placement": "Inside the existing media region; do not replace or overlay written data.",
       "generationPrompt": null,
       "filename": null,
-      "existingImageKeys": [
-        "clinic"
-      ]
+      "existingImageKeys": []
     },
     {
       "page": "Home",
@@ -157,68 +191,6 @@
     {
       "page": "Home",
       "route": "/",
-      "section": "Find your starting point",
-      "type": "cards",
-      "existingContent": {
-        "type": "cards",
-        "id": "treatments",
-        "alt": false,
-        "cols": 3,
-        "eyebrow": "Three educational sections",
-        "heading": "Find your starting point",
-        "lead": "Explore the options, then compare the evidence and safety considerations.",
-        "items": [
-          {
-            "title": "Surgical Breast Enlargement",
-            "href": "/surgical-breast-enlargement/",
-            "text": "Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.",
-            "slot": "Surgical Breast Enlargement"
-          },
-          {
-            "title": "Non-Surgical Breast Enlargement",
-            "href": "/non-surgical-breast-enlargement/",
-            "text": "Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.",
-            "slot": "Non-Surgical Breast Enlargement"
-          },
-          {
-            "title": "Education & Research",
-            "href": "/education-research/",
-            "text": "Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.",
-            "slot": "Education & Research"
-          }
-        ]
-      },
-      "imageNeeded": true,
-      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
-      "concept": "Use only the corresponding explicitly mapped card/topic asset.",
-      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
-      "placement": "Inside the existing media region; do not replace or overlay written data.",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": [
-        {
-          "title": "Surgical Breast Enlargement",
-          "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
-          "plannedKey": "qh-surgical-options"
-        },
-        {
-          "title": "Non-Surgical Breast Enlargement",
-          "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
-          "plannedKey": "qh-non-surgical-evidence"
-        },
-        {
-          "title": "Education & Research",
-          "href": "/education-research/",
-          "key": "curtain",
-          "plannedKey": "qh-education-research"
-        }
-      ]
-    },
-    {
-      "page": "Home",
-      "route": "/",
       "section": "An important clinical distinction",
       "type": "notice",
       "existingContent": {
@@ -253,32 +225,38 @@
           {
             "title": "Breast dermal fillers",
             "text": "Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.",
-            "href": "/non-surgical/dermal-fillers/"
+            "href": "/non-surgical/dermal-fillers/",
+            "media": "<img src=\"/dermal-fillers.jpeg\" alt=\"Breast dermal fillers\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "PRP",
             "text": "How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.",
-            "href": "/non-surgical/prp/"
+            "href": "/non-surgical/prp/",
+            "media": "<img src=\"/education-research.jpeg\" alt=\"PRP\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "Thread-based procedures",
             "text": "PDO and mono threads: intended mechanical effects, limitations and product-specific indications.",
-            "href": "/non-surgical/breast-threads/"
+            "href": "/non-surgical/breast-threads/",
+            "media": "<img src=\"/fat-transfer.jpeg\" alt=\"Thread-based procedures\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "Sculptra & biostimulators",
             "text": "Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.",
-            "href": "/non-surgical/sculptra-plla/"
+            "href": "/non-surgical/sculptra-plla/",
+            "media": "<img src=\"/sculptra.jpeg\" alt=\"Sculptra and biostimulators\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "Breast implants",
             "text": "Medical devices with an outer shell and gel filling, and their long-term monitoring needs.",
-            "href": "/breast-implants/"
+            "href": "/breast-implants/",
+            "media": "<img src=\"/implants.jpeg\" alt=\"Breast implants\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "Fat transfer",
             "text": "Using your own fat for a modest, individualised increase in volume, and its retention variability.",
-            "href": "/surgical/fat-transfer-breast-augmentation/"
+            "href": "/surgical/fat-transfer-breast-augmentation/",
+            "media": "<img src=\"/threads.jpeg\" alt=\"Fat transfer\" width=\"1254\" height=\"1254\" loading=\"lazy\" decoding=\"async\">"
           },
           {
             "title": "Breast augmentation",
@@ -303,49 +281,49 @@
         {
           "title": "Breast dermal fillers",
           "href": "/non-surgical/dermal-fillers/",
-          "key": "treatment-dermal-fillers",
+          "key": "qh-filler-product-caution",
           "plannedKey": "qh-filler-product-caution"
         },
         {
           "title": "PRP",
           "href": "/non-surgical/prp/",
-          "key": "treatment-prp-visualization",
+          "key": "qh-prp-preparation-tube",
           "plannedKey": "qh-prp-preparation-tube"
         },
         {
           "title": "Thread-based procedures",
           "href": "/non-surgical/breast-threads/",
-          "key": "treatment-pdo-threads",
+          "key": "qh-cog-suture-material",
           "plannedKey": "qh-cog-suture-material"
         },
         {
           "title": "Sculptra & biostimulators",
           "href": "/non-surgical/sculptra-plla/",
-          "key": "treatment-sculptra-plla",
+          "key": "qh-plla-material-concept",
           "plannedKey": "qh-plla-material-concept"
         },
         {
           "title": "Breast implants",
           "href": "/breast-implants/",
-          "key": "treatment-breast-implants",
+          "key": "qh-implant-shell-profiles",
           "plannedKey": "qh-implant-shell-profiles"
         },
         {
           "title": "Fat transfer",
           "href": "/surgical/fat-transfer-breast-augmentation/",
-          "key": "treatment-fat-transfer",
+          "key": "qh-fat-transfer-tissue",
           "plannedKey": "qh-fat-transfer-tissue"
         },
         {
           "title": "Breast augmentation",
           "href": "/surgical/breast-augmentation/",
-          "key": "portrait-studio",
+          "key": "qh-augmentation-planning",
           "plannedKey": "qh-augmentation-planning"
         },
         {
           "title": "Compare all options",
           "href": "/breast-enhancement-comparison/",
-          "key": "concrete",
+          "key": "qh-comparing-treatment-options",
           "plannedKey": "qh-comparing-treatment-options"
         }
       ]
@@ -393,32 +371,8 @@
       "generationPrompt": null,
       "filename": null,
       "existingImageKeys": [
-        "chair"
+        "qh-safety-informed-choice"
       ]
-    },
-    {
-      "page": "Home",
-      "route": "/",
-      "section": "Keep exploring the evidence",
-      "type": "cta",
-      "existingContent": {
-        "type": "cta",
-        "eyebrow": "Your journey starts with information",
-        "heading": "Keep exploring the evidence",
-        "text": "Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.",
-        "button": {
-          "label": "Contact us",
-          "href": "/contact/"
-        }
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
     },
     {
       "page": "Home",
@@ -467,28 +421,52 @@
         {
           "title": "Understanding Breast Enlargement: An Evidence-Aware Overview",
           "href": "/understanding-breast-enlargement/",
-          "key": "shadows",
+          "key": "qh-understanding-options",
           "plannedKey": "qh-understanding-options"
         },
         {
           "title": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
           "href": "/breast-anatomy/",
-          "key": "curtain",
+          "key": "qh-breast-tissue-schematic",
           "plannedKey": "qh-breast-tissue-schematic"
         },
         {
           "title": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
           "href": "/breast-enhancement-comparison/",
-          "key": "concrete",
+          "key": "qh-comparing-treatment-options",
           "plannedKey": "qh-comparing-treatment-options"
         },
         {
           "title": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
           "href": "/breast-enlargement-safety/",
-          "key": "marble-dark",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         }
       ]
+    },
+    {
+      "page": "Home",
+      "route": "/",
+      "section": "Keep exploring the evidence",
+      "type": "cta",
+      "existingContent": {
+        "type": "cta",
+        "eyebrow": "Your journey starts with information",
+        "heading": "Keep exploring the evidence",
+        "text": "Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.",
+        "button": {
+          "label": "Contact us",
+          "href": "/contact/"
+        }
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
     },
     {
       "page": "Surgical Breast Enlargement",
@@ -501,7 +479,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-surgical"
+        "qh-surgical-options"
       ],
       "concept": "Implant device, adipose-tissue motif and an open planning notebook",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -526,6 +504,178 @@
       "generationPrompt": null,
       "filename": null,
       "existingImageKeys": []
+    },
+    {
+      "page": "Surgical Breast Enlargement",
+      "route": "/surgical-breast-enlargement/",
+      "section": "Breast enlargement: implants and fat transfer",
+      "type": "cards",
+      "existingContent": {
+        "type": "cards",
+        "cols": 3,
+        "heading": "Breast enlargement: implants and fat transfer",
+        "items": [
+          {
+            "title": "Breast Augmentation: Implants & Fat Transfer",
+            "href": "/surgical/breast-augmentation/",
+            "text": "Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.",
+            "slot": "Breast Augmentation: Implants & Fat Transfer"
+          },
+          {
+            "title": "Breast Implants: Types, Placement & Long-Term Reality",
+            "href": "/breast-implants/",
+            "text": "An evidence-aware guide to breast implants — saline and silicone, smooth and textured, shape and profile, placement and incisions, longevity, monitoring and the difference from injectable silicone.",
+            "slot": "Breast Implants: Types, Placement & Long-Term Reality"
+          },
+          {
+            "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+            "href": "/breast-implant-safety/",
+            "text": "What is actually known about breast implant safety — rupture and silent rupture, capsular contracture, BIA-ALCL, systemic symptoms, screening and the regulator guidance behind monitoring.",
+            "slot": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring"
+          },
+          {
+            "title": "Fat Transfer Breast Augmentation: What to Know",
+            "href": "/surgical/fat-transfer-breast-augmentation/",
+            "text": "Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.",
+            "slot": "Fat Transfer Breast Augmentation: What to Know"
+          }
+        ]
+      },
+      "imageNeeded": true,
+      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
+      "concept": "Implant device, adipose-tissue motif and an open planning notebook",
+      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
+      "placement": "Inside the existing media region; do not replace or overlay written data.",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Implant device, adipose-tissue motif and an open planning notebook",
+      "filename": "qh-surgical-options-card-960.webp",
+      "existingImageKeys": [
+        {
+          "title": "Breast Augmentation: Implants & Fat Transfer",
+          "href": "/surgical/breast-augmentation/",
+          "key": "qh-augmentation-planning",
+          "plannedKey": "qh-augmentation-planning"
+        },
+        {
+          "title": "Breast Implants: Types, Placement & Long-Term Reality",
+          "href": "/breast-implants/",
+          "key": "qh-implant-shell-profiles",
+          "plannedKey": "qh-implant-shell-profiles"
+        },
+        {
+          "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
+          "href": "/breast-implant-safety/",
+          "key": "qh-implant-monitoring",
+          "plannedKey": "qh-implant-monitoring"
+        },
+        {
+          "title": "Fat Transfer Breast Augmentation: What to Know",
+          "href": "/surgical/fat-transfer-breast-augmentation/",
+          "key": "qh-fat-transfer-tissue",
+          "plannedKey": "qh-fat-transfer-tissue"
+        }
+      ]
+    },
+    {
+      "page": "Surgical Breast Enlargement",
+      "route": "/surgical-breast-enlargement/",
+      "section": "Related surgical procedures",
+      "type": "notice",
+      "existingContent": {
+        "type": "notice",
+        "icon": "info",
+        "title": "Related surgical procedures",
+        "text": "A lift changes shape and position; reduction removes tissue; mastectomy removes breast tissue for specific clinical or chest-contouring goals. These are not breast enlargement procedures. Revision and filler-removal surgery address previous procedures and their complications."
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "Surgical Breast Enlargement",
+      "route": "/surgical-breast-enlargement/",
+      "section": "Related surgery: shape, correction, reduction and chest contouring",
+      "type": "cards",
+      "existingContent": {
+        "type": "cards",
+        "cols": 3,
+        "heading": "Related surgery: shape, correction, reduction and chest contouring",
+        "items": [
+          {
+            "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+            "href": "/surgical/breast-lift/",
+            "text": "Breast lift (mastopexy): what it changes — sagging skin, nipple position and breast shape — how it differs from augmentation, scarring, longevity and combination options.",
+            "slot": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity"
+          },
+          {
+            "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
+            "href": "/surgical/breast-revision/",
+            "text": "Breast revision surgery: why implants may need revision — capsular contracture, rupture, displacement, asymmetry or a change in preferences — and what revision planning involves.",
+            "slot": "Breast Revision Surgery: Implant Exchange, Removal & Repair"
+          },
+          {
+            "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
+            "href": "/surgical/breast-filler-removal/",
+            "text": "Breast filler removal: why injected fillers and liquid silicone cause complications, how removal is approached, and what to expect regarding imaging, scars and staged treatment.",
+            "slot": "Breast Filler Removal: Clearing Injected Fillers & Silicone"
+          },
+          {
+            "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
+            "href": "/surgical/breast-reduction/",
+            "text": "Breast reduction surgery: how reducing breast volume and weight can relieve physical symptoms, what the procedure involves, scarring, recovery and factors that shape the outcome.",
+            "slot": "Breast Reduction Surgery: Benefits, Techniques & Recovery"
+          },
+          {
+            "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
+            "href": "/surgical/mastectomy-chest-surgery/",
+            "text": "Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.",
+            "slot": "Mastectomy & Chest Contouring Surgery: Patient Information"
+          }
+        ]
+      },
+      "imageNeeded": true,
+      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
+      "concept": "Implant device, adipose-tissue motif and an open planning notebook",
+      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
+      "placement": "Inside the existing media region; do not replace or overlay written data.",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Implant device, adipose-tissue motif and an open planning notebook",
+      "filename": "qh-surgical-options-card-960.webp",
+      "existingImageKeys": [
+        {
+          "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
+          "href": "/surgical/breast-lift/",
+          "key": "qh-mastopexy-planning",
+          "plannedKey": "qh-mastopexy-planning"
+        },
+        {
+          "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
+          "href": "/surgical/breast-revision/",
+          "key": "qh-implant-revision",
+          "plannedKey": "qh-implant-revision"
+        },
+        {
+          "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
+          "href": "/surgical/breast-filler-removal/",
+          "key": "qh-filler-removal-assessment",
+          "plannedKey": "qh-filler-removal-assessment"
+        },
+        {
+          "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
+          "href": "/surgical/breast-reduction/",
+          "key": "qh-reduction-planning",
+          "plannedKey": "qh-reduction-planning"
+        },
+        {
+          "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
+          "href": "/surgical/mastectomy-chest-surgery/",
+          "key": "qh-chest-contouring-planning",
+          "plannedKey": "qh-chest-contouring-planning"
+        }
+      ]
     },
     {
       "page": "Surgical Breast Enlargement",
@@ -622,7 +772,7 @@
       "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Implant device, adipose-tissue motif and an open planning notebook",
       "filename": "qh-surgical-options-card-960.webp",
       "existingImageKeys": [
-        "portrait-shadow"
+        "qh-augmentation-planning"
       ]
     },
     {
@@ -646,178 +796,6 @@
       "existingImageKeys": []
     },
     {
-      "page": "Surgical Breast Enlargement",
-      "route": "/surgical-breast-enlargement/",
-      "section": "Breast enlargement: implants and fat transfer",
-      "type": "cards",
-      "existingContent": {
-        "type": "cards",
-        "cols": 3,
-        "heading": "Breast enlargement: implants and fat transfer",
-        "items": [
-          {
-            "title": "Breast Augmentation: Implants & Fat Transfer",
-            "href": "/surgical/breast-augmentation/",
-            "text": "Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.",
-            "slot": "Breast Augmentation: Implants & Fat Transfer"
-          },
-          {
-            "title": "Breast Implants: Types, Placement & Long-Term Reality",
-            "href": "/breast-implants/",
-            "text": "An evidence-aware guide to breast implants — saline and silicone, smooth and textured, shape and profile, placement and incisions, longevity, monitoring and the difference from injectable silicone.",
-            "slot": "Breast Implants: Types, Placement & Long-Term Reality"
-          },
-          {
-            "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
-            "href": "/breast-implant-safety/",
-            "text": "What is actually known about breast implant safety — rupture and silent rupture, capsular contracture, BIA-ALCL, systemic symptoms, screening and the regulator guidance behind monitoring.",
-            "slot": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring"
-          },
-          {
-            "title": "Fat Transfer Breast Augmentation: What to Know",
-            "href": "/surgical/fat-transfer-breast-augmentation/",
-            "text": "Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.",
-            "slot": "Fat Transfer Breast Augmentation: What to Know"
-          }
-        ]
-      },
-      "imageNeeded": true,
-      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
-      "concept": "Implant device, adipose-tissue motif and an open planning notebook",
-      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
-      "placement": "Inside the existing media region; do not replace or overlay written data.",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Implant device, adipose-tissue motif and an open planning notebook",
-      "filename": "qh-surgical-options-card-960.webp",
-      "existingImageKeys": [
-        {
-          "title": "Breast Augmentation: Implants & Fat Transfer",
-          "href": "/surgical/breast-augmentation/",
-          "key": "concrete",
-          "plannedKey": "qh-augmentation-planning"
-        },
-        {
-          "title": "Breast Implants: Types, Placement & Long-Term Reality",
-          "href": "/breast-implants/",
-          "key": "leaf",
-          "plannedKey": "qh-implant-shell-profiles"
-        },
-        {
-          "title": "Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
-          "href": "/breast-implant-safety/",
-          "key": "concrete",
-          "plannedKey": "qh-implant-monitoring"
-        },
-        {
-          "title": "Fat Transfer Breast Augmentation: What to Know",
-          "href": "/surgical/fat-transfer-breast-augmentation/",
-          "key": "concrete",
-          "plannedKey": "qh-fat-transfer-tissue"
-        }
-      ]
-    },
-    {
-      "page": "Surgical Breast Enlargement",
-      "route": "/surgical-breast-enlargement/",
-      "section": "Related surgical procedures",
-      "type": "notice",
-      "existingContent": {
-        "type": "notice",
-        "icon": "info",
-        "title": "Related surgical procedures",
-        "text": "A lift changes shape and position; reduction removes tissue; mastectomy removes breast tissue for specific clinical or chest-contouring goals. These are not breast enlargement procedures. Revision and filler-removal surgery address previous procedures and their complications."
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Surgical Breast Enlargement",
-      "route": "/surgical-breast-enlargement/",
-      "section": "Related surgery: shape, correction, reduction and chest contouring",
-      "type": "cards",
-      "existingContent": {
-        "type": "cards",
-        "cols": 3,
-        "heading": "Related surgery: shape, correction, reduction and chest contouring",
-        "items": [
-          {
-            "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
-            "href": "/surgical/breast-lift/",
-            "text": "Breast lift (mastopexy): what it changes — sagging skin, nipple position and breast shape — how it differs from augmentation, scarring, longevity and combination options.",
-            "slot": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity"
-          },
-          {
-            "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
-            "href": "/surgical/breast-revision/",
-            "text": "Breast revision surgery: why implants may need revision — capsular contracture, rupture, displacement, asymmetry or a change in preferences — and what revision planning involves.",
-            "slot": "Breast Revision Surgery: Implant Exchange, Removal & Repair"
-          },
-          {
-            "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
-            "href": "/surgical/breast-filler-removal/",
-            "text": "Breast filler removal: why injected fillers and liquid silicone cause complications, how removal is approached, and what to expect regarding imaging, scars and staged treatment.",
-            "slot": "Breast Filler Removal: Clearing Injected Fillers & Silicone"
-          },
-          {
-            "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
-            "href": "/surgical/breast-reduction/",
-            "text": "Breast reduction surgery: how reducing breast volume and weight can relieve physical symptoms, what the procedure involves, scarring, recovery and factors that shape the outcome.",
-            "slot": "Breast Reduction Surgery: Benefits, Techniques & Recovery"
-          },
-          {
-            "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
-            "href": "/surgical/mastectomy-chest-surgery/",
-            "text": "Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.",
-            "slot": "Mastectomy & Chest Contouring Surgery: Patient Information"
-          }
-        ]
-      },
-      "imageNeeded": true,
-      "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
-      "concept": "Implant device, adipose-tissue motif and an open planning notebook",
-      "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
-      "placement": "Inside the existing media region; do not replace or overlay written data.",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Implant device, adipose-tissue motif and an open planning notebook",
-      "filename": "qh-surgical-options-card-960.webp",
-      "existingImageKeys": [
-        {
-          "title": "Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
-          "href": "/surgical/breast-lift/",
-          "key": "marble-dark",
-          "plannedKey": "qh-mastopexy-planning"
-        },
-        {
-          "title": "Breast Revision Surgery: Implant Exchange, Removal & Repair",
-          "href": "/surgical/breast-revision/",
-          "key": "orchid",
-          "plannedKey": "qh-implant-revision"
-        },
-        {
-          "title": "Breast Filler Removal: Clearing Injected Fillers & Silicone",
-          "href": "/surgical/breast-filler-removal/",
-          "key": "curtain",
-          "plannedKey": "qh-filler-removal-assessment"
-        },
-        {
-          "title": "Breast Reduction Surgery: Benefits, Techniques & Recovery",
-          "href": "/surgical/breast-reduction/",
-          "key": "concrete",
-          "plannedKey": "qh-reduction-planning"
-        },
-        {
-          "title": "Mastectomy & Chest Contouring Surgery: Patient Information",
-          "href": "/surgical/mastectomy-chest-surgery/",
-          "key": "shadows",
-          "plannedKey": "qh-chest-contouring-planning"
-        }
-      ]
-    },
-    {
       "page": "Non-Surgical Breast Enlargement",
       "route": "/non-surgical-breast-enlargement/",
       "section": "Page banner",
@@ -828,7 +806,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-nonsurgical"
+        "qh-non-surgical-evidence"
       ],
       "concept": "Magnifying lens over a reading card beside an unmarked evidence checklist",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -933,55 +911,55 @@
         {
           "title": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
           "href": "/breast-enlargement-without-surgery/",
-          "key": "curtain",
+          "key": "qh-without-surgery-evidence",
           "plannedKey": "qh-without-surgery-evidence"
         },
         {
           "title": "Non-Surgical Breast Enhancement: Options & Safety",
           "href": "/non-surgical/",
-          "key": "curtain",
+          "key": "qh-non-surgical-safety-review",
           "plannedKey": "qh-non-surgical-safety-review"
         },
         {
           "title": "Breast Fillers: Safety, Evidence & Alternatives",
           "href": "/non-surgical/dermal-fillers/",
-          "key": "concrete",
+          "key": "qh-filler-product-caution",
           "plannedKey": "qh-filler-product-caution"
         },
         {
           "title": "Breast Thread Procedures: Uses & Limitations",
           "href": "/non-surgical/breast-threads/",
-          "key": "marble-dark",
+          "key": "qh-cog-suture-material",
           "plannedKey": "qh-cog-suture-material"
         },
         {
           "title": "Mono Threads: Uses and Limitations",
           "href": "/non-surgical/mono-threads/",
-          "key": "leaf",
+          "key": "qh-smooth-suture-material",
           "plannedKey": "qh-smooth-suture-material"
         },
         {
           "title": "PRP and Breast Enhancement: Evidence Explained",
           "href": "/non-surgical/prp/",
-          "key": "curtain",
+          "key": "qh-prp-preparation-tube",
           "plannedKey": "qh-prp-preparation-tube"
         },
         {
           "title": "Biostimulators: Collagen-Stimulating Treatments",
           "href": "/non-surgical/biostimulators/",
-          "key": "curtain",
+          "key": "qh-biostimulator-research",
           "plannedKey": "qh-biostimulator-research"
         },
         {
           "title": "Sculptra and PLLA: Uses, Safety & Evidence",
           "href": "/non-surgical/sculptra-plla/",
-          "key": "concrete",
+          "key": "qh-plla-material-concept",
           "plannedKey": "qh-plla-material-concept"
         },
         {
           "title": "Stem Cells and Regenerative Medicine",
           "href": "/non-surgical/regenerative-medicine/",
-          "key": "orchid",
+          "key": "qh-regenerative-laboratory-research",
           "plannedKey": "qh-regenerative-laboratory-research"
         }
       ]
@@ -997,12 +975,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-research"
+        "qh-education-research"
       ],
-      "concept": "Open reference books, a reading lens and layered document sheets",
+      "concept": "Open reference book with three distinct unmarked subject tabs",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Open reference books, a reading lens and layered document sheets",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Open reference book with three distinct unmarked subject tabs",
       "filename": "qh-education-research-banner-1600.webp"
     },
     {
@@ -1087,58 +1065,58 @@
       },
       "imageNeeded": true,
       "rationale": "Existing visual component: replace arbitrary imagery with a topic-specific asset where available.",
-      "concept": "Open reference books, a reading lens and layered document sheets",
+      "concept": "Open reference book with three distinct unmarked subject tabs",
       "dimensions": "480×330 and 960×660; 16:11; contain within portrait/step frames where needed",
       "placement": "Inside the existing media region; do not replace or overlay written data.",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Open reference books, a reading lens and layered document sheets",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Open reference book with three distinct unmarked subject tabs",
       "filename": "qh-education-research-card-960.webp",
       "existingImageKeys": [
         {
           "title": "Understanding Breast Enlargement: An Evidence-Aware Overview",
           "href": "/understanding-breast-enlargement/",
-          "key": "shadows",
+          "key": "qh-understanding-options",
           "plannedKey": "qh-understanding-options"
         },
         {
           "title": "Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
           "href": "/breast-anatomy/",
-          "key": "curtain",
+          "key": "qh-breast-tissue-schematic",
           "plannedKey": "qh-breast-tissue-schematic"
         },
         {
           "title": "Breast Enhancement Options Compared: Surgical vs Non-Surgical",
           "href": "/breast-enhancement-comparison/",
-          "key": "concrete",
+          "key": "qh-comparing-treatment-options",
           "plannedKey": "qh-comparing-treatment-options"
         },
         {
           "title": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
           "href": "/breast-enlargement-safety/",
-          "key": "marble-dark",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "Breast Enlargement Research Library",
           "href": "/research/",
-          "key": "shadows",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         },
         {
           "title": "Clinical Studies, Reviews and Research References",
           "href": "/references/",
-          "key": "curtain",
+          "key": "qh-scientific-source-references",
           "plannedKey": "qh-scientific-source-references"
         },
         {
           "title": "Glossary of Medical Terms",
           "href": "/glossary/",
-          "key": "shadows",
+          "key": "qh-medical-terms-reference",
           "plannedKey": "qh-medical-terms-reference"
         },
         {
           "title": "Frequently Asked Questions",
           "href": "/faqs/",
-          "key": "marble-dark",
+          "key": "qh-shared-questions",
           "plannedKey": "qh-shared-questions"
         }
       ]
@@ -1154,7 +1132,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-breast-augmentation"
+        "qh-augmentation-planning"
       ],
       "concept": "A closed implant device and adipose-cell motifs beside a planning sheet",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -1230,38 +1208,7 @@
     {
       "page": "Breast Augmentation: Implants & Fat Transfer",
       "route": "/surgical/breast-augmentation/",
-      "section": "Breast augmentation FAQs",
-      "type": "faq",
-      "existingContent": {
-        "type": "faq",
-        "alt": true,
-        "id": "aug",
-        "eyebrow": "Questions",
-        "heading": "Breast augmentation FAQs",
-        "items": [
-          {
-            "q": "How long does recovery take?",
-            "a": "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
-          },
-          {
-            "q": "Are the results permanent?",
-            "a": "<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>"
-          }
-        ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Breast Augmentation: Implants & Fat Transfer",
-      "route": "/surgical/breast-augmentation/",
-      "section": "prose 4",
+      "section": "prose 3",
       "type": "prose",
       "existingContent": {
         "type": "prose",
@@ -1716,6 +1663,37 @@
     {
       "page": "Breast Augmentation: Implants & Fat Transfer",
       "route": "/surgical/breast-augmentation/",
+      "section": "Breast augmentation FAQs",
+      "type": "faq",
+      "existingContent": {
+        "type": "faq",
+        "alt": true,
+        "id": "aug",
+        "eyebrow": "Questions",
+        "heading": "Breast augmentation FAQs",
+        "items": [
+          {
+            "q": "How long does recovery take?",
+            "a": "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
+          },
+          {
+            "q": "Are the results permanent?",
+            "a": "<p>No procedure can promise permanent results. Breast implants are not lifetime devices: additional operations may be needed and complications can occur. Fat transfer results depend on how much transferred fat survives.</p>"
+          }
+        ]
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "Breast Augmentation: Implants & Fat Transfer",
+      "route": "/surgical/breast-augmentation/",
       "section": "Related education",
       "type": "cards",
       "existingContent": {
@@ -1752,19 +1730,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -1780,7 +1758,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-breast-implants"
+        "qh-implant-shell-profiles"
       ],
       "concept": "Two isolated implant-device profiles with a clearly visible outer shell",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -1932,19 +1910,19 @@
         {
           "title": "Breast implant safety",
           "href": "/breast-implant-safety/",
-          "key": "concrete",
+          "key": "qh-implant-monitoring",
           "plannedKey": "qh-implant-monitoring"
         },
         {
           "title": "Breast augmentation",
           "href": "/surgical/breast-augmentation/",
-          "key": "portrait-studio",
+          "key": "qh-augmentation-planning",
           "plannedKey": "qh-augmentation-planning"
         },
         {
           "title": "Choosing a surgeon",
           "href": "/breast-enlargement-safety/#choosing-a-surgeon",
-          "key": "marble-dark",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         }
       ]
@@ -2067,19 +2045,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -2095,7 +2073,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-implant-safety"
+        "qh-implant-monitoring"
       ],
       "concept": "A sealed implant-device illustration beside a monitoring lens and shield",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -2306,19 +2284,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -2334,7 +2312,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-fat-transfer"
+        "qh-fat-transfer-tissue"
       ],
       "concept": "A stylised cluster of adipose cells beside an isolated blunt cannula",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -2497,19 +2475,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -2525,12 +2503,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-breast-lift"
+        "qh-mastopexy-planning"
       ],
-      "concept": "Neutral torso outline on an unmarked surgical-planning sheet, without incision or result claims",
+      "concept": "Three non-graphic incision-pattern motifs from the page: areolar, vertical and inframammary-fold patterns; no postoperative body or result",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Neutral torso outline on an unmarked surgical-planning sheet, without incision or result claims",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Three non-graphic incision-pattern motifs from the page: areolar, vertical and inframammary-fold patterns; no postoperative body or result",
       "filename": "qh-mastopexy-planning-banner-1600.webp"
     },
     {
@@ -2708,19 +2686,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -2736,7 +2714,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-surgical"
+        "qh-implant-revision"
       ],
       "concept": "An isolated implant device with circular review arrows and a planning record",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -2908,19 +2886,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -2936,12 +2914,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-surgical"
+        "qh-filler-removal-assessment"
       ],
-      "concept": "A magnifying lens examining separated material shapes beside a warning outline",
+      "concept": "Separated material shapes in a laboratory assessment tray beside a warning outline; no complete-removal claim",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: A magnifying lens examining separated material shapes beside a warning outline",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Separated material shapes in a laboratory assessment tray beside a warning outline; no complete-removal claim",
       "filename": "qh-filler-removal-assessment-banner-1600.webp"
     },
     {
@@ -3108,19 +3086,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -3136,12 +3114,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-surgical"
+        "qh-reduction-planning"
       ],
-      "concept": "Neutral torso outline and surgical-planning pencil, with a distinct side composition",
+      "concept": "Neutral back-and-shoulder outline beside an assessment record, relating to the neck and shoulder symptoms discussed on the page",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Neutral torso outline and surgical-planning pencil, with a distinct side composition",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Neutral back-and-shoulder outline beside an assessment record, relating to the neck and shoulder symptoms discussed on the page",
       "filename": "qh-reduction-planning-banner-1600.webp"
     },
     {
@@ -3288,19 +3266,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -3316,12 +3294,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-surgical"
+        "qh-chest-contouring-planning"
       ],
-      "concept": "Unmarked chest-contouring planning sheet and a neutral torso outline; no outcome comparison",
+      "concept": "An isolated postoperative compression-garment concept and follow-up notebook, based on the aftercare discussed on the page; no person or result",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Unmarked chest-contouring planning sheet and a neutral torso outline; no outcome comparison",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: An isolated postoperative compression-garment concept and follow-up notebook, based on the aftercare discussed on the page; no person or result",
       "filename": "qh-chest-contouring-planning-banner-1600.webp"
     },
     {
@@ -3488,19 +3466,19 @@
         {
           "title": "Surgical Breast Enlargement",
           "href": "/surgical-breast-enlargement/",
-          "key": "concrete",
+          "key": "qh-surgical-options",
           "plannedKey": "qh-surgical-options"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -3516,12 +3494,12 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-breast-enhancement"
+        "qh-without-surgery-evidence"
       ],
-      "concept": "Reading lens and open evidence notebook with open-ended, non-numerical marks",
+      "concept": "Three unmarked claim cards under a reading lens, with no ratings or efficacy symbols",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
-      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Reading lens and open evidence notebook with open-ended, non-numerical marks",
+      "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Three unmarked claim cards under a reading lens, with no ratings or efficacy symbols",
       "filename": "qh-without-surgery-evidence-banner-1600.webp"
     },
     {
@@ -4450,68 +4428,6 @@
     {
       "page": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
       "route": "/breast-enlargement-without-surgery/",
-      "section": "Frequently asked questions",
-      "type": "faq",
-      "existingContent": {
-        "type": "faq",
-        "id": "eg",
-        "eyebrow": "Questions",
-        "heading": "Frequently asked questions",
-        "items": [
-          {
-            "q": "Is there any non-surgical method that makes breasts bigger permanently?",
-            "a": "<p>Fat transfer is the best-supported option for lasting volume, but it involves liposuction and delivers modest, variable gains. External expansion before grafting may increase them.</p>"
-          },
-          {
-            "q": "Do breast enlargement pills work?",
-            "a": "<p>A medical review found no published clinical trials of bust-enhancing herbal products and discouraged their use. There is no controlled trial showing that any pill enlarges the breasts.</p>"
-          },
-          {
-            "q": "Do creams and massage work?",
-            "a": "<p>No reliable evidence shows that they enlarge breasts. They can improve how the skin feels.</p>"
-          },
-          {
-            "q": "Do chest exercises make breasts bigger?",
-            "a": "<p>They build the muscle beneath the breast and can improve firmness and posture, but they do not increase breast tissue.</p>"
-          },
-          {
-            "q": "Is filler a safe shortcut?",
-            "a": "<p>The FDA recommends against filler for breast enlargement and has not approved any for this use. Risks include nodules, migration, imaging problems and difficulty removing the material.</p>"
-          },
-          {
-            "q": "Is fat transfer safe?",
-            "a": "<p>It is widely used, but one review reported an overall complication rate of 27.8%, with fat necrosis the most common. Discuss the risks with a qualified surgeon.</p>"
-          },
-          {
-            "q": "How many cup sizes can I realistically gain without surgery?",
-            "a": "<p>Bras and padding add about a cup visually. Fat transfer is typically around one cup per session. More usually needs implants.</p>"
-          },
-          {
-            "q": "Will it affect mammograms?",
-            "a": "<p>Fat grafting and fillers can both cause imaging changes. Always tell your radiographer.</p>"
-          },
-          {
-            "q": "Why do so many people say supplements worked for them?",
-            "a": "<p>Temporary swelling, cycle changes, small weight gains and better bras can look like growth, and success stories are shared more than failures.</p>"
-          },
-          {
-            "q": "What is the single best first step?",
-            "a": "<p>A professional bra fitting. It costs little, carries no risk, and often changes the look more than people expect.</p>"
-          }
-        ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
-      "route": "/breast-enlargement-without-surgery/",
       "section": "Sources and further reading",
       "type": "notice",
       "existingContent": {
@@ -4593,6 +4509,68 @@
     {
       "page": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
       "route": "/breast-enlargement-without-surgery/",
+      "section": "Frequently asked questions",
+      "type": "faq",
+      "existingContent": {
+        "type": "faq",
+        "id": "eg",
+        "eyebrow": "Questions",
+        "heading": "Frequently asked questions",
+        "items": [
+          {
+            "q": "Is there any non-surgical method that makes breasts bigger permanently?",
+            "a": "<p>Fat transfer is the best-supported option for lasting volume, but it involves liposuction and delivers modest, variable gains. External expansion before grafting may increase them.</p>"
+          },
+          {
+            "q": "Do breast enlargement pills work?",
+            "a": "<p>A medical review found no published clinical trials of bust-enhancing herbal products and discouraged their use. There is no controlled trial showing that any pill enlarges the breasts.</p>"
+          },
+          {
+            "q": "Do creams and massage work?",
+            "a": "<p>No reliable evidence shows that they enlarge breasts. They can improve how the skin feels.</p>"
+          },
+          {
+            "q": "Do chest exercises make breasts bigger?",
+            "a": "<p>They build the muscle beneath the breast and can improve firmness and posture, but they do not increase breast tissue.</p>"
+          },
+          {
+            "q": "Is filler a safe shortcut?",
+            "a": "<p>The FDA recommends against filler for breast enlargement and has not approved any for this use. Risks include nodules, migration, imaging problems and difficulty removing the material.</p>"
+          },
+          {
+            "q": "Is fat transfer safe?",
+            "a": "<p>It is widely used, but one review reported an overall complication rate of 27.8%, with fat necrosis the most common. Discuss the risks with a qualified surgeon.</p>"
+          },
+          {
+            "q": "How many cup sizes can I realistically gain without surgery?",
+            "a": "<p>Bras and padding add about a cup visually. Fat transfer is typically around one cup per session. More usually needs implants.</p>"
+          },
+          {
+            "q": "Will it affect mammograms?",
+            "a": "<p>Fat grafting and fillers can both cause imaging changes. Always tell your radiographer.</p>"
+          },
+          {
+            "q": "Why do so many people say supplements worked for them?",
+            "a": "<p>Temporary swelling, cycle changes, small weight gains and better bras can look like growth, and success stories are shared more than failures.</p>"
+          },
+          {
+            "q": "What is the single best first step?",
+            "a": "<p>A professional bra fitting. It costs little, carries no risk, and often changes the look more than people expect.</p>"
+          }
+        ]
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "Breast Enlargement Without Surgery: What Works — Evidence Guide",
+      "route": "/breast-enlargement-without-surgery/",
       "section": "Related education",
       "type": "cards",
       "existingContent": {
@@ -4629,19 +4607,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -4657,7 +4635,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-nonsurgical"
+        "qh-non-surgical-safety-review"
       ],
       "concept": "Unmarked assessment sheet, magnifying lens and safety outline",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -4767,7 +4745,7 @@
       "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Unmarked assessment sheet, magnifying lens and safety outline",
       "filename": "qh-non-surgical-safety-review-card-960.webp",
       "existingImageKeys": [
-        "care-hands"
+        "qh-safety-informed-choice"
       ]
     },
     {
@@ -4896,19 +4874,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -4924,7 +4902,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-dermal-fillers"
+        "qh-filler-product-caution"
       ],
       "concept": "An isolated sealed generic syringe and safety shield; no injection into a person",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5010,38 +4988,7 @@
     {
       "page": "Breast Fillers: Safety, Evidence & Alternatives",
       "route": "/non-surgical/dermal-fillers/",
-      "section": "Dermal filler FAQs",
-      "type": "faq",
-      "existingContent": {
-        "type": "faq",
-        "alt": true,
-        "id": "df",
-        "eyebrow": "Questions",
-        "heading": "Dermal filler FAQs",
-        "items": [
-          {
-            "q": "Are breast fillers approved?",
-            "a": "<p>Dermal fillers are not approved for breast enlargement. Regulators advise against using them for this purpose because of potentially serious complications.</p>"
-          },
-          {
-            "q": "What alternatives exist for added volume?",
-            "a": "<p>Alternatives with clearer evidence for increasing breast volume include surgical options such as implants or, in selected cases, autologous fat transfer. Suitability depends on individual factors and should be assessed by an appropriately qualified clinician.</p>"
-          }
-        ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Breast Fillers: Safety, Evidence & Alternatives",
-      "route": "/non-surgical/dermal-fillers/",
-      "section": "prose 5",
+      "section": "prose 4",
       "type": "prose",
       "existingContent": {
         "type": "prose",
@@ -5066,6 +5013,37 @@
         "icon": "evidence",
         "title": "Further reading from the consolidated article",
         "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "Breast Fillers: Safety, Evidence & Alternatives",
+      "route": "/non-surgical/dermal-fillers/",
+      "section": "Dermal filler FAQs",
+      "type": "faq",
+      "existingContent": {
+        "type": "faq",
+        "alt": true,
+        "id": "df",
+        "eyebrow": "Questions",
+        "heading": "Dermal filler FAQs",
+        "items": [
+          {
+            "q": "Are breast fillers approved?",
+            "a": "<p>Dermal fillers are not approved for breast enlargement. Regulators advise against using them for this purpose because of potentially serious complications.</p>"
+          },
+          {
+            "q": "What alternatives exist for added volume?",
+            "a": "<p>Alternatives with clearer evidence for increasing breast volume include surgical options such as implants or, in selected cases, autologous fat transfer. Suitability depends on individual factors and should be assessed by an appropriately qualified clinician.</p>"
+          }
+        ]
       },
       "imageNeeded": false,
       "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
@@ -5115,19 +5093,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5143,7 +5121,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-breast-threads"
+        "qh-cog-suture-material"
       ],
       "concept": "Isolated barbed-suture material in a macro-style scientific illustration; no tissue placement",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5276,19 +5254,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5304,7 +5282,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-mono-threads"
+        "qh-smooth-suture-material"
       ],
       "concept": "Isolated smooth monofilament sutures with fine looping strands; no tissue placement",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5406,19 +5384,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5434,7 +5412,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-prp"
+        "qh-prp-preparation-tube"
       ],
       "concept": "Unmarked capped laboratory tube with separated blood-component colours on a laboratory stand",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5500,38 +5478,7 @@
     {
       "page": "PRP and Breast Enhancement: Evidence Explained",
       "route": "/non-surgical/prp/",
-      "section": "PRP FAQs",
-      "type": "faq",
-      "existingContent": {
-        "type": "faq",
-        "alt": true,
-        "id": "prp",
-        "eyebrow": "Questions",
-        "heading": "PRP FAQs",
-        "items": [
-          {
-            "q": "Is PRP proven for breast enlargement?",
-            "a": "<p>PRP should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use. Effects depend on the specific indication and the available evidence.</p>"
-          },
-          {
-            "q": "Is PRP safe because it uses my own blood?",
-            "a": "<p>Using your own blood reduces some risks but does not remove them. Any procedure carries procedure-related risks such as pain, bruising, bleeding or infection, and suitability still requires clinical review.</p>"
-          }
-        ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "PRP and Breast Enhancement: Evidence Explained",
-      "route": "/non-surgical/prp/",
-      "section": "prose 4",
+      "section": "prose 3",
       "type": "prose",
       "existingContent": {
         "type": "prose",
@@ -5556,6 +5503,37 @@
         "icon": "evidence",
         "title": "Further reading from the consolidated article",
         "text": "<ul><li>U.S. FDA — Dermal fillers and their approved uses</li><li>U.S. FDA — Regenerative medicine and stem cell safety</li></ul>"
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "PRP and Breast Enhancement: Evidence Explained",
+      "route": "/non-surgical/prp/",
+      "section": "PRP FAQs",
+      "type": "faq",
+      "existingContent": {
+        "type": "faq",
+        "alt": true,
+        "id": "prp",
+        "eyebrow": "Questions",
+        "heading": "PRP FAQs",
+        "items": [
+          {
+            "q": "Is PRP proven for breast enlargement?",
+            "a": "<p>PRP should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use. Effects depend on the specific indication and the available evidence.</p>"
+          },
+          {
+            "q": "Is PRP safe because it uses my own blood?",
+            "a": "<p>Using your own blood reduces some risks but does not remove them. Any procedure carries procedure-related risks such as pain, bruising, bleeding or infection, and suitability still requires clinical review.</p>"
+          }
+        ]
       },
       "imageNeeded": false,
       "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
@@ -5605,19 +5583,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5633,7 +5611,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-biostimulators"
+        "qh-biostimulator-research"
       ],
       "concept": "Abstract material scaffold under a magnifying lens; no claim of breast-tissue growth",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5741,19 +5719,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5769,7 +5747,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-sculptra-plla"
+        "qh-plla-material-concept"
       ],
       "concept": "Stylised polymer beads and an unbranded sealed vial; not a molecular structural formula",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -5876,19 +5854,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -5904,7 +5882,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-regenerative"
+        "qh-regenerative-laboratory-research"
       ],
       "concept": "Petri dish with stylised cells and a microscope silhouette; no treatment or efficacy claim",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -6013,19 +5991,19 @@
         {
           "title": "Non-Surgical Breast Enlargement",
           "href": "/non-surgical-breast-enlargement/",
-          "key": "curtain",
+          "key": "qh-non-surgical-evidence",
           "plannedKey": "qh-non-surgical-evidence"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -6041,7 +6019,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-understanding"
+        "qh-understanding-options"
       ],
       "concept": "An open decision notebook with three distinct unmarked option cards",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -6233,7 +6211,7 @@
       "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: An open decision notebook with three distinct unmarked option cards",
       "filename": "qh-understanding-options-card-960.webp",
       "existingImageKeys": [
-        "chair"
+        "qh-safety-informed-choice"
       ]
     },
     {
@@ -6295,19 +6273,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -6323,7 +6301,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-anatomy"
+        "qh-breast-tissue-schematic"
       ],
       "concept": "Simplified breast cross-section with an outer skin contour, fat lobules and branching ducts; no operative details",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -6514,19 +6492,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -6542,7 +6520,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-comparison"
+        "qh-comparing-treatment-options"
       ],
       "concept": "Balanced comparison cards and a simple balance beam, without ratings or outcome charts",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -6707,19 +6685,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -6735,7 +6713,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-safety"
+        "qh-safety-informed-choice"
       ],
       "concept": "Safety shield, open consent notebook and an unmarked checklist",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -6903,41 +6881,6 @@
     {
       "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
       "route": "/breast-enlargement-safety/",
-      "section": "Safety FAQs",
-      "type": "faq",
-      "existingContent": {
-        "type": "faq",
-        "alt": true,
-        "id": "safety",
-        "eyebrow": "Questions",
-        "heading": "Safety FAQs",
-        "items": [
-          {
-            "q": "Is non-surgical always safer than surgery?",
-            "a": "<p>No. A cream is low-risk but ineffective; unapproved breast filler is “non-surgical” yet linked to serious harm; surgery carries real but better-understood risks. Safety depends on the specific product, the indication and who performs it.</p>"
-          },
-          {
-            "q": "How do I know if a clinic is safe?",
-            "a": "<p>Check registration and credentials, insist on a written plan and revision policy, ask who performs the procedure and where, and treat pressure or guarantees as red flags. See <a href=\"/breast-enlargement-safety/#choosing-a-surgeon\">choosing a surgeon</a>.</p>"
-          },
-          {
-            "q": "Are there signs I should not have a procedure at all?",
-            "a": "<p>Yes. Active infection, pregnancy or breastfeeding, some uncontrolled medical conditions, and unrealistic expectations are typical reasons to postpone or decline. A good clinician will say so.</p>"
-          }
-        ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
-      "route": "/breast-enlargement-safety/",
       "section": "Regulator sources",
       "type": "notice",
       "existingContent": {
@@ -6979,7 +6922,7 @@
     {
       "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
       "route": "/breast-enlargement-safety/",
-      "section": "prose 8",
+      "section": "prose 7",
       "type": "prose",
       "existingContent": {
         "type": "prose",
@@ -7017,30 +6960,12 @@
     {
       "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
       "route": "/breast-enlargement-safety/",
-      "section": "prose 10",
+      "section": "prose 9",
       "type": "prose",
       "existingContent": {
         "type": "prose",
-        "id": "choosing-a-surgeon",
-        "html": "<h2>Choosing a qualified surgeon</h2>"
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
-      "route": "/breast-enlargement-safety/",
-      "section": "prose 11",
-      "type": "prose",
-      "existingContent": {
-        "type": "prose",
-        "html": "<p class=\"lead\">Advertising is not a credential. Anyone can describe themselves as a “cosmetic surgeon”, and clinics may use the word “expert” freely. What can be verified is registration with a professional regulator, recognised surgical training, and membership of a relevant professional body.</p>"
+        "html": "<h2>Choosing a qualified surgeon</h2><p class=\"lead\">Advertising is not a credential. Anyone can describe themselves as a “cosmetic surgeon”, and clinics may use the word “expert” freely. What can be verified is registration with a professional regulator, recognised surgical training, and membership of a relevant professional body.</p>",
+        "id": "choosing-a-surgeon"
       },
       "imageNeeded": false,
       "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
@@ -7093,7 +7018,7 @@
       "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Subject: Safety shield, open consent notebook and an unmarked checklist",
       "filename": "qh-safety-informed-choice-card-960.webp",
       "existingImageKeys": [
-        "portrait-shadow"
+        "qh-augmentation-planning"
       ]
     },
     {
@@ -7169,7 +7094,7 @@
     {
       "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
       "route": "/breast-enlargement-safety/",
-      "section": "prose 15",
+      "section": "prose 13",
       "type": "prose",
       "existingContent": {
         "type": "prose",
@@ -7196,6 +7121,41 @@
         "icon": "evidence",
         "title": "Professional-society guidance",
         "text": "<p><strong>bapras</strong></p><p><strong>American Society of Plastic Surgeons (ASPS)</strong> — <a href=\"https://www.plasticsurgery.org/\" rel=\"noopener\">www.plasticsurgery.org/</a></p><ul><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation\" rel=\"noopener\">Breast Augmentation (Augmentation Mammaplasty)</a> <span class=\"muted\">(Procedure overview)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/candidates\" rel=\"noopener\">Breast Augmentation Candidates</a> <span class=\"muted\">(Patient guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/consultation\" rel=\"noopener\">Breast Augmentation Consultation</a> <span class=\"muted\">(Patient guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/questions\" rel=\"noopener\">Questions to Ask Your Plastic Surgeon</a> <span class=\"muted\">(Question checklist)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/cost\" rel=\"noopener\">Breast Augmentation Cost</a> <span class=\"muted\">(Cost guidance)</span></li><li><a href=\"https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation/implants\" rel=\"noopener\">Types of Breast Implants</a> <span class=\"muted\">(Device overview)</span></li><li>…and 7 more in the full library.</li></ul>"
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
+    },
+    {
+      "page": "Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
+      "route": "/breast-enlargement-safety/",
+      "section": "Safety FAQs",
+      "type": "faq",
+      "existingContent": {
+        "type": "faq",
+        "alt": true,
+        "id": "safety",
+        "eyebrow": "Questions",
+        "heading": "Safety FAQs",
+        "items": [
+          {
+            "q": "Is non-surgical always safer than surgery?",
+            "a": "<p>No. A cream is low-risk but ineffective; unapproved breast filler is “non-surgical” yet linked to serious harm; surgery carries real but better-understood risks. Safety depends on the specific product, the indication and who performs it.</p>"
+          },
+          {
+            "q": "How do I know if a clinic is safe?",
+            "a": "<p>Check registration and credentials, insist on a written plan and revision policy, ask who performs the procedure and where, and treat pressure or guarantees as red flags. See <a href=\"/breast-enlargement-safety/#choosing-a-surgeon\">choosing a surgeon</a>.</p>"
+          },
+          {
+            "q": "Are there signs I should not have a procedure at all?",
+            "a": "<p>Yes. Active infection, pregnancy or breastfeeding, some uncontrolled medical conditions, and unrealistic expectations are typical reasons to postpone or decline. A good clinician will say so.</p>"
+          }
+        ]
       },
       "imageNeeded": false,
       "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
@@ -7240,13 +7200,13 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -7262,7 +7222,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-references"
+        "qh-scientific-source-references"
       ],
       "concept": "Layered citation documents with a bookmark and reference-book spine",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -7348,19 +7308,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -7376,7 +7336,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-glossary"
+        "qh-medical-terms-reference"
       ],
       "concept": "Open dictionary with blank index tabs and a reading lens; no embedded lettering",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -7462,19 +7422,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -7490,13 +7450,31 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-faqs"
+        "qh-shared-questions"
       ],
       "concept": "Unmarked speech cards and an open notebook, without embedded text",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
       "placement": "Existing decorative banner background",
       "generationPrompt": "Premium original educational illustration, deep maroon #4A0D24 and #651B36, champagne gold #D6B77A, warm ivory, blush and beige. Sophisticated editorial lighting, spacious composition, precise clean forms. No text, labels, logos, watermark, statistics, treatment outcomes, incisions or efficacy claims. Clearly an illustration, not clinical evidence. Wide banner. Subject at right: Unmarked speech cards and an open notebook, without embedded text",
       "filename": "qh-shared-questions-banner-1600.webp"
+    },
+    {
+      "page": "Frequently Asked Questions",
+      "route": "/faqs/",
+      "section": "prose 1",
+      "type": "prose",
+      "existingContent": {
+        "type": "prose",
+        "html": "<h2>Questions about an individual option</h2><p>Read the dedicated FAQs for <a href=\"/non-surgical/dermal-fillers/\">fillers</a>, <a href=\"/non-surgical/prp/\">PRP</a>, <a href=\"/surgical/fat-transfer-breast-augmentation/\">fat transfer</a> and <a href=\"/surgical/breast-augmentation/\">augmentation and recovery</a>.</p>"
+      },
+      "imageNeeded": false,
+      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
+      "concept": null,
+      "dimensions": null,
+      "placement": "No additional media",
+      "generationPrompt": null,
+      "filename": null,
+      "existingImageKeys": []
     },
     {
       "page": "Frequently Asked Questions",
@@ -7522,24 +7500,6 @@
             "a": "<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. The decision should follow an assessment by an appropriately qualified clinician.</p>"
           }
         ]
-      },
-      "imageNeeded": false,
-      "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
-      "concept": null,
-      "dimensions": null,
-      "placement": "No additional media",
-      "generationPrompt": null,
-      "filename": null,
-      "existingImageKeys": []
-    },
-    {
-      "page": "Frequently Asked Questions",
-      "route": "/faqs/",
-      "section": "prose 2",
-      "type": "prose",
-      "existingContent": {
-        "type": "prose",
-        "html": "<h2>Questions about an individual option</h2><p>Read the dedicated FAQs for <a href=\"/non-surgical/dermal-fillers/\">fillers</a>, <a href=\"/non-surgical/prp/\">PRP</a>, <a href=\"/surgical/fat-transfer-breast-augmentation/\">fat transfer</a> and <a href=\"/surgical/breast-augmentation/\">augmentation and recovery</a>.</p>"
       },
       "imageNeeded": false,
       "rationale": "Preserve reading flow: prose, evidence tables, warnings, FAQs and source details do not need decorative photographs.",
@@ -7589,19 +7549,19 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         },
         {
           "title": "External research and sources",
           "href": "/research/",
-          "key": "glass-bottles",
+          "key": "qh-external-research-library",
           "plannedKey": "qh-external-research-library"
         }
       ]
@@ -7617,7 +7577,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-research"
+        "qh-external-research-library"
       ],
       "concept": "Stacked peer-reviewed reading material, open book and magnifying lens; no fabricated charts",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -10797,91 +10757,91 @@
         {
           "title": "Breast Implants — Australian Journal of General Practice",
           "href": "https://www1.racgp.org.au/ajgp/2021/july/breast-implants-a-guide-for-general-practice",
-          "key": "curtain",
+          "key": "qh-shared-questions",
           "plannedKey": null
         },
         {
           "title": "Breastfeeding After Breast Augmentation Surgery: A Scoping Review",
           "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11059175/",
-          "key": "leaf",
+          "key": "qh-safety-informed-choice",
           "plannedKey": null
         },
         {
           "title": "The Psychological Impact of Aesthetic Surgery: A Mini-Review",
           "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9687813/",
-          "key": "concrete",
+          "key": "qh-understanding-options",
           "plannedKey": null
         },
         {
           "title": "Advantages and Disadvantages of Breast Augmentation (Cureus)",
           "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11492812/",
-          "key": "concrete",
+          "key": "qh-understanding-options",
           "plannedKey": null
         },
         {
           "title": "Social Media Influence on Body Image and Cosmetic Surgery Considerations (Cureus)",
           "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11350482/",
-          "key": "concrete",
+          "key": "qh-understanding-options",
           "plannedKey": null
         },
         {
           "title": "Complications of reconstructive and aesthetic breast surgery (UpToDate)",
           "href": "https://www.uptodate.com/contents/complications-of-reconstructive-and-aesthetic-breast-surgery",
-          "key": "leaf",
+          "key": "qh-safety-informed-choice",
           "plannedKey": null
         },
         {
           "title": "Breast Implants: Common Questions and Answers (American Family Physician)",
           "href": "https://www.aafp.org/pubs/afp/issues/2021/1100/p500.html",
-          "key": "orchid",
+          "key": "qh-external-research-library",
           "plannedKey": null
         },
         {
           "title": "Breast implants and anaplastic large cell lymphoma (TGA)",
           "href": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/breast-implants-and-anaplastic-large-cell-lymphoma",
-          "key": "orchid",
+          "key": "qh-external-research-library",
           "plannedKey": null
         },
         {
           "title": "Current status of breast implant products in Australia (TGA)",
           "href": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/current-status-breast-implant-products-australia",
-          "key": "orchid",
+          "key": "qh-external-research-library",
           "plannedKey": null
         },
         {
           "title": "Five questions to ask your health professional before you get a medical implant (TGA)",
           "href": "https://www.tga.gov.au/products/medical-devices/specific-types-medical-devices/five-questions-ask-your-health-professional-you-get-medical-implant",
-          "key": "curtain",
+          "key": "qh-shared-questions",
           "plannedKey": null
         },
         {
           "title": "Breast implant safety patient information sheet (Agency for Clinical Innovation)",
           "href": "https://aci.health.nsw.gov.au/__data/assets/pdf_file/0007/935719/ACI-Breast-implant-safety-patient-information-sheet.pdf",
-          "key": "marble-dark",
+          "key": "qh-medical-terms-reference",
           "plannedKey": null
         },
         {
           "title": "Patient information sheet: cosmetic surgery (Australian Government)",
           "href": "https://www.health.gov.au/resources/publications/patient-information-sheet-cosmetic-surgery",
-          "key": "curtain",
+          "key": "qh-shared-questions",
           "plannedKey": null
         },
         {
           "title": "Breast augmentation (Australian Society of Plastic Surgeons)",
           "href": "https://plasticsurgery.org.au/procedures/surgical-procedures/breast-augmentation-implants/",
-          "key": "orchid",
+          "key": "qh-external-research-library",
           "plannedKey": null
         },
         {
           "title": "AHPRA register of medical practitioners",
           "href": "https://www.ahpra.gov.au/registration/registers-of-practitioners.aspx",
-          "key": "concrete",
+          "key": "qh-understanding-options",
           "plannedKey": null
         },
         {
           "title": "FAQs — cosmetic surgery: requirement for GP referral (Medical Board of Australia)",
           "href": "https://www.medicalboard.gov.au/Codes-Guidelines-Policies/FAQ/FAQ-Cosmetic-surgery-Requirement-for-GP-referral.aspx",
-          "key": "shadows",
+          "key": "qh-scientific-source-references",
           "plannedKey": null
         }
       ]
@@ -16268,13 +16228,13 @@
         {
           "title": "Education & Research",
           "href": "/education-research/",
-          "key": "marble-dark",
+          "key": "qh-education-research",
           "plannedKey": "qh-education-research"
         },
         {
           "title": "Safety and warning signs",
           "href": "/breast-enlargement-safety/",
-          "key": "care-hands",
+          "key": "qh-safety-informed-choice",
           "plannedKey": "qh-safety-informed-choice"
         }
       ]
@@ -16290,7 +16250,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-about"
+        "qh-independent-patient-education"
       ],
       "concept": "An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -16351,7 +16311,7 @@
       },
       "imageNeeded": true,
       "existingImageKeys": [
-        "banner-contact"
+        "qh-website-enquiries"
       ],
       "concept": "Envelope and unmarked correspondence card on a quiet maroon desk",
       "dimensions": "960×384 and 1600×640; 5:2; subject at right with quiet left text region",
@@ -16456,7 +16416,7 @@
       "generationPrompt": null,
       "filename": null,
       "existingImageKeys": [
-        "care-hands"
+        "qh-website-enquiries"
       ]
     },
     {
@@ -16510,7 +16470,7 @@
       },
       "imageNeeded": false,
       "existingImageKeys": [
-        "banner-policy"
+        null
       ],
       "concept": null,
       "dimensions": null,
@@ -16547,7 +16507,7 @@
       },
       "imageNeeded": false,
       "existingImageKeys": [
-        "banner-policy"
+        null
       ],
       "concept": null,
       "dimensions": null,
@@ -16584,7 +16544,7 @@
       },
       "imageNeeded": false,
       "existingImageKeys": [
-        "banner-policy"
+        null
       ],
       "concept": null,
       "dimensions": null,
@@ -16621,7 +16581,7 @@
       },
       "imageNeeded": false,
       "existingImageKeys": [
-        "banner-policy"
+        null
       ],
       "concept": null,
       "dimensions": null,
@@ -16672,727 +16632,6 @@
       "dimensions": "1600×1200; 4:3",
       "status": "Requires supplied/licensed photography or generation capability; do not invent a patient or recovery result.",
       "prompt": "Photorealistic respectful lifestyle image of a fully clothed adult woman resting comfortably in a supportive armchair, loose ivory clothing, quiet deep-maroon and beige room, soft daylight, natural anatomy and hands, no surgical wounds, bandages, clocks, calendars, guaranteed recovery or before-after implication. Clearly illustrative, not an actual patient."
-    }
-  ],
-  "finalImageRecommendations": [
-    {
-      "route": "/surgical-breast-enlargement/",
-      "concept": "Implant device, adipose-tissue motif and an open planning notebook",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Implant device, adipose-tissue motif and an open planning notebook",
-      "alt": "Educational illustration: surgical options and informed planning",
-      "filenameStem": "qh-surgical-options",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "Find your starting point / Surgical Breast Enlargement",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical-breast-enlargement/",
-      "concept": "Magnifying lens over a reading card beside an unmarked evidence checklist",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Magnifying lens over a reading card beside an unmarked evidence checklist",
-      "alt": "Educational illustration: assessing non-surgical evidence",
-      "filenameStem": "qh-non-surgical-evidence",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "Find your starting point / Non-Surgical Breast Enlargement",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/education-research/",
-      "concept": "Open reference book with three distinct unmarked subject tabs",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Open reference book with three distinct unmarked subject tabs",
-      "alt": "Educational illustration: shared education and external research",
-      "filenameStem": "qh-education-research",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "Find your starting point / Education & Research",
-          "variant": "card"
-        },
-        {
-          "route": "/education-research/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/breast-augmentation/",
-      "concept": "A closed implant device and adipose-cell motifs beside a planning sheet",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: A closed implant device and adipose-cell motifs beside a planning sheet",
-      "alt": "Educational illustration: implants and fat-transfer planning",
-      "filenameStem": "qh-augmentation-planning",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Breast augmentation",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Preparing for a surgical consultation",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Breast enlargement: implants and fat transfer / Breast Augmentation: Implants & Fat Transfer",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/breast-augmentation/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/breast-implants/",
-          "section": "Go deeper / Breast augmentation",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-enlargement-safety/",
-          "section": "How to check a surgeon before you commit",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/breast-implants/",
-      "concept": "Two isolated implant-device profiles with a clearly visible outer shell",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Two isolated implant-device profiles with a clearly visible outer shell",
-      "alt": "Educational illustration: implant-device shapes and outer shells",
-      "filenameStem": "qh-implant-shell-profiles",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Breast implants",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Breast enlargement: implants and fat transfer / Breast Implants: Types, Placement & Long-Term Reality",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-implants/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/breast-implants/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/breast-implant-safety/",
-      "concept": "A sealed implant-device illustration beside a monitoring lens and shield",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: A sealed implant-device illustration beside a monitoring lens and shield",
-      "alt": "Educational illustration: implant monitoring and safety",
-      "filenameStem": "qh-implant-monitoring",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Breast enlargement: implants and fat transfer / Breast Implant Safety: Rupture, ALCL, Contracture & Monitoring",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-implants/",
-          "section": "Go deeper / Breast implant safety",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-implant-safety/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/fat-transfer-breast-augmentation/",
-      "concept": "A stylised cluster of adipose cells beside an isolated blunt cannula",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: A stylised cluster of adipose cells beside an isolated blunt cannula",
-      "alt": "Educational illustration: fat-tissue and cannula concepts",
-      "filenameStem": "qh-fat-transfer-tissue",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Fat transfer",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Breast enlargement: implants and fat transfer / Fat Transfer Breast Augmentation: What to Know",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/fat-transfer-breast-augmentation/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/surgical/fat-transfer-breast-augmentation/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/breast-lift/",
-      "concept": "Three non-graphic incision-pattern motifs from the page: areolar, vertical and inframammary-fold patterns; no postoperative body or result",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Three non-graphic incision-pattern motifs from the page: areolar, vertical and inframammary-fold patterns; no postoperative body or result",
-      "alt": "Educational illustration: schematic areolar, vertical and fold incision-pattern concepts",
-      "filenameStem": "qh-mastopexy-planning",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Lift Surgery (Mastopexy): Shape, Scars & Longevity",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/breast-lift/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/breast-revision/",
-      "concept": "An isolated implant device with circular review arrows and a planning record",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: An isolated implant device with circular review arrows and a planning record",
-      "alt": "Educational illustration: implant review and revision planning",
-      "filenameStem": "qh-implant-revision",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Revision Surgery: Implant Exchange, Removal & Repair",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/breast-revision/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/breast-filler-removal/",
-      "concept": "Separated material shapes in a laboratory assessment tray beside a warning outline; no complete-removal claim",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Separated material shapes in a laboratory assessment tray beside a warning outline; no complete-removal claim",
-      "alt": "Educational illustration: assessment of previously injected materials",
-      "filenameStem": "qh-filler-removal-assessment",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Filler Removal: Clearing Injected Fillers & Silicone",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/breast-filler-removal/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/breast-reduction/",
-      "concept": "Neutral back-and-shoulder outline beside an assessment record, relating to the neck and shoulder symptoms discussed on the page",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Neutral back-and-shoulder outline beside an assessment record, relating to the neck and shoulder symptoms discussed on the page",
-      "alt": "Educational illustration: back and shoulder symptoms to discuss before breast reduction",
-      "filenameStem": "qh-reduction-planning",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Related surgery: shape, correction, reduction and chest contouring / Breast Reduction Surgery: Benefits, Techniques & Recovery",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/breast-reduction/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/surgical/mastectomy-chest-surgery/",
-      "concept": "An isolated postoperative compression-garment concept and follow-up notebook, based on the aftercare discussed on the page; no person or result",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: An isolated postoperative compression-garment concept and follow-up notebook, based on the aftercare discussed on the page; no person or result",
-      "alt": "Educational illustration: chest-surgery garment and follow-up concepts",
-      "filenameStem": "qh-chest-contouring-planning",
-      "actualPlacements": [
-        {
-          "route": "/surgical-breast-enlargement/",
-          "section": "Related surgery: shape, correction, reduction and chest contouring / Mastectomy & Chest Contouring Surgery: Patient Information",
-          "variant": "card"
-        },
-        {
-          "route": "/surgical/mastectomy-chest-surgery/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/breast-enlargement-without-surgery/",
-      "concept": "Three unmarked claim cards under a reading lens, with no ratings or efficacy symbols",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Three unmarked claim cards under a reading lens, with no ratings or efficacy symbols",
-      "alt": "Educational illustration: reading the evidence behind enlargement claims",
-      "filenameStem": "qh-without-surgery-evidence",
-      "actualPlacements": [
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Breast Enlargement Without Surgery: What Works — Evidence Guide",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-enlargement-without-surgery/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/",
-      "concept": "Unmarked assessment sheet, magnifying lens and safety outline",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Unmarked assessment sheet, magnifying lens and safety outline",
-      "alt": "Educational illustration: reviewing non-surgical claims and safety",
-      "filenameStem": "qh-non-surgical-safety-review",
-      "actualPlacements": [
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Non-Surgical Breast Enhancement: Options & Safety",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/dermal-fillers/",
-      "concept": "An isolated sealed generic syringe and safety shield; no injection into a person",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: An isolated sealed generic syringe and safety shield; no injection into a person",
-      "alt": "Educational illustration: injectable-product safety questions",
-      "filenameStem": "qh-filler-product-caution",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Breast dermal fillers",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Breast Fillers: Safety, Evidence & Alternatives",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/dermal-fillers/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/breast-threads/",
-      "concept": "Isolated barbed-suture material in a macro-style scientific illustration; no tissue placement",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Isolated barbed-suture material in a macro-style scientific illustration; no tissue placement",
-      "alt": "Educational illustration: cog-suture material, not a placement guide",
-      "filenameStem": "qh-cog-suture-material",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Thread-based procedures",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Breast Thread Procedures: Uses & Limitations",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/breast-threads/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/non-surgical/breast-threads/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/mono-threads/",
-      "concept": "Isolated smooth monofilament sutures with fine looping strands; no tissue placement",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Isolated smooth monofilament sutures with fine looping strands; no tissue placement",
-      "alt": "Educational illustration: smooth monofilament-suture material",
-      "filenameStem": "qh-smooth-suture-material",
-      "actualPlacements": [
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Mono Threads: Uses and Limitations",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/mono-threads/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/non-surgical/mono-threads/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/prp/",
-      "concept": "Unmarked capped laboratory tube with separated blood-component colours on a laboratory stand",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Unmarked capped laboratory tube with separated blood-component colours on a laboratory stand",
-      "alt": "Educational illustration: blood-preparation laboratory concept",
-      "filenameStem": "qh-prp-preparation-tube",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / PRP",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / PRP and Breast Enhancement: Evidence Explained",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/prp/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/non-surgical/prp/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/biostimulators/",
-      "concept": "Abstract material scaffold under a magnifying lens; no claim of breast-tissue growth",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Abstract material scaffold under a magnifying lens; no claim of breast-tissue growth",
-      "alt": "Educational illustration: biostimulator material research concept",
-      "filenameStem": "qh-biostimulator-research",
-      "actualPlacements": [
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Biostimulators: Collagen-Stimulating Treatments",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/biostimulators/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/sculptra-plla/",
-      "concept": "Stylised polymer beads and an unbranded sealed vial; not a molecular structural formula",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Stylised polymer beads and an unbranded sealed vial; not a molecular structural formula",
-      "alt": "Educational illustration: plla material concept",
-      "filenameStem": "qh-plla-material-concept",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Sculptra & biostimulators",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Sculptra and PLLA: Uses, Safety & Evidence",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/sculptra-plla/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/non-surgical/regenerative-medicine/",
-      "concept": "Petri dish with stylised cells and a microscope silhouette; no treatment or efficacy claim",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Petri dish with stylised cells and a microscope silhouette; no treatment or efficacy claim",
-      "alt": "Educational illustration: regenerative laboratory research",
-      "filenameStem": "qh-regenerative-laboratory-research",
-      "actualPlacements": [
-        {
-          "route": "/non-surgical-breast-enlargement/",
-          "section": "Non-surgical options: evidence, limitations and safety / Stem Cells and Regenerative Medicine",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/regenerative-medicine/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/non-surgical/regenerative-medicine/",
-          "section": "Research versus established care / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/understanding-breast-enlargement/",
-      "concept": "An open decision notebook with three distinct unmarked option cards",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: An open decision notebook with three distinct unmarked option cards",
-      "alt": "Educational illustration: understanding options before deciding",
-      "filenameStem": "qh-understanding-options",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A clear foundation for your decision / Understanding Breast Enlargement: An Evidence-Aware Overview",
-          "variant": "card"
-        },
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Understanding Breast Enlargement: An Evidence-Aware Overview",
-          "variant": "card"
-        },
-        {
-          "route": "/understanding-breast-enlargement/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/breast-anatomy/",
-      "concept": "Simplified breast cross-section with an outer skin contour, fat lobules and branching ducts; no operative details",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Simplified breast cross-section with an outer skin contour, fat lobules and branching ducts; no operative details",
-      "alt": "Educational illustration: simplified breast-tissue schematic",
-      "filenameStem": "qh-breast-tissue-schematic",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A clear foundation for your decision / Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
-          "variant": "card"
-        },
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Breast Anatomy Explained: Tissue, Ligaments and Blood Supply",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-anatomy/",
-          "section": "Page banner",
-          "variant": "banner"
-        },
-        {
-          "route": "/breast-anatomy/",
-          "section": "prose / educational figure",
-          "variant": "card"
-        }
-      ]
-    },
-    {
-      "route": "/breast-enhancement-comparison/",
-      "concept": "Balanced comparison cards and a simple balance beam, without ratings or outcome charts",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Balanced comparison cards and a simple balance beam, without ratings or outcome charts",
-      "alt": "Educational illustration: comparing options without outcome guarantees",
-      "filenameStem": "qh-comparing-treatment-options",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A closer look at individual options / Compare all options",
-          "variant": "card"
-        },
-        {
-          "route": "/",
-          "section": "A clear foundation for your decision / Breast Enhancement Options Compared: Surgical vs Non-Surgical",
-          "variant": "card"
-        },
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Breast Enhancement Options Compared: Surgical vs Non-Surgical",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-enhancement-comparison/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/breast-enlargement-safety/",
-      "concept": "Safety shield, open consent notebook and an unmarked checklist",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Safety shield, open consent notebook and an unmarked checklist",
-      "alt": "Educational illustration: safety and informed choice",
-      "filenameStem": "qh-safety-informed-choice",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "A clear, five-step pathway to an informed decision",
-          "variant": "card"
-        },
-        {
-          "route": "/",
-          "section": "A clear foundation for your decision / Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
-          "variant": "card"
-        },
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Breast Enlargement Safety: Candidacy, Risks and Warning Signs",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-implants/",
-          "section": "Go deeper / Choosing a surgeon",
-          "variant": "card"
-        },
-        {
-          "route": "/non-surgical/",
-          "section": "Six questions worth asking",
-          "variant": "card"
-        },
-        {
-          "route": "/understanding-breast-enlargement/",
-          "section": "A clear path from curiosity to an informed decision",
-          "variant": "card"
-        },
-        {
-          "route": "/breast-enlargement-safety/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/research/",
-      "concept": "Stacked peer-reviewed reading material, open book and magnifying lens; no fabricated charts",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Stacked peer-reviewed reading material, open book and magnifying lens; no fabricated charts",
-      "alt": "Educational illustration: external research and scientific reading",
-      "filenameStem": "qh-external-research-library",
-      "actualPlacements": [
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Breast Enlargement Research Library",
-          "variant": "card"
-        },
-        {
-          "route": "/research/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/references/",
-      "concept": "Layered citation documents with a bookmark and reference-book spine",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Layered citation documents with a bookmark and reference-book spine",
-      "alt": "Educational illustration: external scientific references",
-      "filenameStem": "qh-scientific-source-references",
-      "actualPlacements": [
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Clinical Studies, Reviews and Research References",
-          "variant": "card"
-        },
-        {
-          "route": "/references/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/glossary/",
-      "concept": "Open dictionary with blank index tabs and a reading lens; no embedded lettering",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Open dictionary with blank index tabs and a reading lens; no embedded lettering",
-      "alt": "Educational illustration: plain-language medical terminology",
-      "filenameStem": "qh-medical-terms-reference",
-      "actualPlacements": [
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Glossary of Medical Terms",
-          "variant": "card"
-        },
-        {
-          "route": "/glossary/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/faqs/",
-      "concept": "Unmarked speech cards and an open notebook, without embedded text",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Unmarked speech cards and an open notebook, without embedded text",
-      "alt": "Educational illustration: questions and informed discussion",
-      "filenameStem": "qh-shared-questions",
-      "actualPlacements": [
-        {
-          "route": "/education-research/",
-          "section": "Learn, compare and read the evidence / Frequently Asked Questions",
-          "variant": "card"
-        },
-        {
-          "route": "/faqs/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/about-us/",
-      "concept": "An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait",
-      "alt": "Educational illustration: independent patient education",
-      "filenameStem": "qh-independent-patient-education",
-      "actualPlacements": [
-        {
-          "route": "/",
-          "section": "Clear information. Honest limits. No promotion.",
-          "variant": "portrait"
-        },
-        {
-          "route": "/about-us/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
-    },
-    {
-      "route": "/contact/",
-      "concept": "Envelope and unmarked correspondence card on a quiet maroon desk",
-      "generationPrompt": "Original non-photographic educational illustration in deep maroon #4A0D24, secondary #651B36, champagne #D6B77A, ivory and blush. Soft editorial lighting, spacious composition, no text, logos, clinical outcomes, invented charts or evidence claims. Subject: Envelope and unmarked correspondence card on a quiet maroon desk",
-      "alt": "Educational illustration: website correspondence",
-      "filenameStem": "qh-website-enquiries",
-      "actualPlacements": [
-        {
-          "route": "/contact/",
-          "section": "Page banner",
-          "variant": "banner"
-        }
-      ]
     }
   ]
 }
