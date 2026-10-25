@@ -200,6 +200,9 @@ const landings = [
     cards(education, 'Learn, compare and read the evidence')
   ], 'education-research')
 ];
+landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.png';
+landings[0].bannerWidth = 2048;
+landings[0].bannerHeight = 768;
 const topicMembership = new Map();
 [surgical, nonsurgical, education].forEach((entries, i) => entries.forEach(([url]) => topicMembership.set(url, i)));
 topicPages.forEach((p) => {
