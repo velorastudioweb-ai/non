@@ -688,6 +688,9 @@ pages.push(treatmentPage({
   seoDescription: 'Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.',
   bannerEyebrow: 'Surgical · Autologous fat transfer',
   bannerLead: 'Fat transfer breast augmentation removes fat from a donor area using liposuction, processes it, and transfers selected fat to the breasts. It may suit certain patients seeking a relatively modest increase in volume without implants.',
+  bannerImage: '/threads.jpeg',
+  bannerWidth: 1254,
+  bannerHeight: 1254,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Fat transfer' }],
   blocks: [
     { type: 'prose', html:
