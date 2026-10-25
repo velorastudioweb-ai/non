@@ -200,7 +200,7 @@ const landings = [
     cards(education, 'Learn, compare and read the evidence')
   ], 'education-research')
 ];
-landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.png';
+landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.webp';
 landings[0].bannerWidth = 2048;
 landings[0].bannerHeight = 768;
 const topicMembership = new Map();
@@ -224,15 +224,15 @@ topicPages.forEach((p) => {
 
 const finalHome = clone(home);
 const pathways = finalHome.blocks.find((b) => b.id === 'treatments');
-Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, media: i === 0 ? '<img src="/surgical.jpeg" alt="Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 1 ? '<img src="/non surgical.jpeg" alt="Non-Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 2 ? '<img src="/prp.jpeg" alt="Education and Research" width="1254" height="1254" loading="lazy" decoding="async">' : undefined, slot: undefined })) });
+Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, media: i === 0 ? '<img src="/surgical.webp" alt="Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 1 ? '<img src="/non surgical.webp" alt="Non-Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 2 ? '<img src="/prp.webp" alt="Education and Research" width="1254" height="1254" loading="lazy" decoding="async">' : undefined, slot: undefined })) });
 // Replace duplicate article and publisher archives on the home page with the
 // canonical shared-education links; detailed topic content stays on its page.
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
 const foundationCards = cards(education.slice(0, 4), 'A clear foundation for your decision');
-foundationCards.items[0].media = '<img src="/Breast Enhancement Medical Infographic.png" alt="Understanding Breast Enlargement" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[1].media = '<img src="/Breast Anatomy and Augmentation Illustration.png" alt="Breast Anatomy Explained" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[2].media = '<img src="/Breast Enhancement Options Infographic.png" alt="Breast Enhancement Options Compared" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[3].media = '<img src="/Breast Augmentation Safety Consultation Infographic.png" alt="Breast Enlargement Safety" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[0].media = '<img src="/Breast Enhancement Medical Infographic.webp" alt="Understanding Breast Enlargement" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[1].media = '<img src="/Breast Anatomy and Augmentation Illustration.webp" alt="Breast Anatomy Explained" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[2].media = '<img src="/Breast Enhancement Options Infographic.webp" alt="Breast Enhancement Options Compared" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[3].media = '<img src="/Breast Augmentation Safety Consultation Infographic.webp" alt="Breast Enlargement Safety" width="1536" height="1024" loading="lazy" decoding="async">';
 finalHome.blocks.push(foundationCards);
 const homeOrder = [
   (b) => b.type === 'hero',

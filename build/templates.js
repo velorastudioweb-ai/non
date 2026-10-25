@@ -17,6 +17,7 @@ function head(page, site) {
   const url = site.url + page.url;
   const og = page.og || site.defaultOg;
   const noindex = page.noindex ? '\n<meta name="robots" content="noindex, nofollow">' : '';
+  const fontsHref = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap';
   const schema = (page.schema || []).map((s) =>
 `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n  ');
   return `<!DOCTYPE html>
@@ -43,7 +44,9 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="${fontsHref}">
+<link rel="stylesheet" href="${fontsHref}" media="print" onload="this.media='all';this.onload=null">
+<noscript><link rel="stylesheet" href="${fontsHref}"></noscript>
 <link rel="stylesheet" href="${site.base}assets/css/tokens.css">
 <link rel="stylesheet" href="${site.base}assets/css/base.css">
 <link rel="stylesheet" href="${site.base}assets/css/components.css">
@@ -430,7 +433,7 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true"><img src="/hero-banner.jpeg" alt="" width="1599" height="893" loading="eager" fetchpriority="high"></div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true"><img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high"></div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>

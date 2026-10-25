@@ -261,7 +261,7 @@ const implants = {
   bannerEyebrow: 'Surgical pathway',
   bannerLead:
     'Breast implants are medical devices placed surgically to increase breast volume. They are the most studied enlargement method — with real complication and revision rates that every patient should understand before deciding.',
-  bannerImage: '/implants.jpeg',
+  bannerImage: '/implants.webp',
   bannerWidth: 1254,
   bannerHeight: 1254,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast implants' }],
@@ -342,7 +342,7 @@ const implantSafety = {
   bannerEyebrow: 'Safety',
   bannerLead:
     'Most people who have implants are satisfied, but implants have documented risks that do not disappear with time. This page sets out what the evidence and regulators actually say.',
-  bannerImage: '/implants.jpeg',
+  bannerImage: '/implants.webp',
   bannerWidth: 1254,
   bannerHeight: 1254,
   breadcrumb: [{ label: 'Safety', href: '/breast-enlargement-safety/' }, { label: 'Breast implant safety' }],

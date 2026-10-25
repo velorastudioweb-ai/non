@@ -1,0 +1,10 @@
+{
+  "findings": [],
+  "consoleNoise": [
+    {
+      "vp": "320x568 (small mobile)",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "checks": 144
+}

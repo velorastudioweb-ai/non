@@ -8,6 +8,8 @@
   inset: 0;
   z-index: 0;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .page-banner__art img {
   display: block;
@@ -47,5 +49,26 @@
   .page-banner__figure {
     opacity: .20;
     z-index: 1;
+  }
+}
+
+/* Wide banner artwork has a separate mobile treatment. Containing the
+   illustration in a shorter strip preserves the full subject instead of
+   allowing a portrait viewport to crop away most of the wide composition. */
+@media (max-width: 767px) {
+  .page-banner__art {
+    inset: auto 0 0;
+    height: clamp(10rem, 47vw, 15rem);
+    opacity: .88;
+  }
+  .page-banner__art img,
+  .page-banner__art .editorial-image {
+    object-fit: contain;
+    object-position: right bottom;
+  }
+  .page-banner__art::after {
+    background:
+      linear-gradient(180deg, rgba(24, 0, 9, .90) 0%, rgba(36, 0, 14, .52) 55%, rgba(18, 0, 7, .16) 100%),
+      radial-gradient(75% 100% at 88% 50%, rgba(255, 22, 138, .18), transparent 72%);
   }
 }

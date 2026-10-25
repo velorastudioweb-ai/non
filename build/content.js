@@ -129,7 +129,7 @@ const home = {
       body: '<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p>' +
         '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p>' +
         '<p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>',
-      media: '<img src="/Our approach.jpeg" alt="Our approach" width="1536" height="1024" loading="lazy" decoding="async">',
+      media: '<img src="/Our approach.webp" alt="Our approach" width="1536" height="1024" loading="lazy" decoding="async">',
       link: { label: 'Read about this website', href: '/about-us/' },
       script: 'Clarity before any decision'
     },
@@ -154,8 +154,8 @@ const home = {
       heading: 'Explore your options by category',
       lead: 'Two broad pathways, each with different intended outcomes, evidence and risks.',
       items: [
-        { title: 'Non-surgical options', kicker: 'Injectables · regenerative · skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', media: '<img src="/non surgical.jpeg" alt="Non-surgical options" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Surgical options', kicker: 'Implants · autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', media: '<img src="/surgical.jpeg" alt="Surgical options" width="1254" height="1254" loading="lazy" decoding="async">' }
+        { title: 'Non-surgical options', kicker: 'Injectables · regenerative · skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', media: '<img src="/non surgical.webp" alt="Non-surgical options" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Surgical options', kicker: 'Implants · autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', media: '<img src="/surgical.webp" alt="Surgical options" width="1254" height="1254" loading="lazy" decoding="async">' }
       ]
     },
     {
@@ -173,14 +173,14 @@ const home = {
       eyebrow: 'Treatments',
       heading: 'A closer look at individual options',
       items: [
-        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/', media: '<img src="/dermal-fillers.jpeg" alt="Breast dermal fillers" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'PRP', text: 'How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.', href: '/non-surgical/prp/', media: '<img src="/education-research.jpeg" alt="PRP" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Thread-based procedures', text: 'PDO and mono threads: intended mechanical effects, limitations and product-specific indications.', href: '/non-surgical/breast-threads/', media: '<img src="/fat-transfer.jpeg" alt="Thread-based procedures" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/', media: '<img src="/sculptra.jpeg" alt="Sculptra and biostimulators" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/', media: '<img src="/implants.jpeg" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/', media: '<img src="/threads.jpeg" alt="Fat transfer" width="1254" height="1254" loading="lazy" decoding="async">' },
-        { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', media: '<img src="/Breast Augmentation Medical Collage.png" alt="Breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">' },
-        { title: 'Compare all options', text: 'A side-by-side view of intended effect, primary consideration and important limitation.', href: '/breast-enhancement-comparison/', media: '<img src="/Breast Enhancement Options Infographic.png" alt="Compare all options" width="1536" height="1024" loading="lazy" decoding="async">' },
+        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/', media: '<img src="/dermal-fillers.webp" alt="Breast dermal fillers" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'PRP', text: 'How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.', href: '/non-surgical/prp/', media: '<img src="/education-research.webp" alt="PRP" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Thread-based procedures', text: 'PDO and mono threads: intended mechanical effects, limitations and product-specific indications.', href: '/non-surgical/breast-threads/', media: '<img src="/fat-transfer.webp" alt="Thread-based procedures" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/', media: '<img src="/sculptra.webp" alt="Sculptra and biostimulators" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/', media: '<img src="/implants.webp" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/', media: '<img src="/threads.webp" alt="Fat transfer" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', media: '<img src="/Breast Augmentation Medical Collage.webp" alt="Breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">' },
+        { title: 'Compare all options', text: 'A side-by-side view of intended effect, primary consideration and important limitation.', href: '/breast-enhancement-comparison/', media: '<img src="/Breast Enhancement Options Infographic.webp" alt="Compare all options" width="1536" height="1024" loading="lazy" decoding="async">' },
       ]
     },
     {
@@ -196,7 +196,7 @@ const home = {
         { title: 'Compare fairly', text: 'Use the side-by-side comparison to weigh intended effect, evidence quality, recovery and reversibility.' },
         { title: 'Talk to a qualified professional', text: 'Take your written questions to a registered, appropriately qualified clinician and compare more than one opinion before deciding.' }
       ],
-      media: '<img src="/Five-Step Beauty Consultation Journey.png" alt="How to use this website" width="1536" height="1024" loading="lazy" decoding="async">'
+      media: '<img src="/Five-Step Beauty Consultation Journey.webp" alt="How to use this website" width="1536" height="1024" loading="lazy" decoding="async">'
     },
     {
       type: 'cards',
@@ -506,7 +506,7 @@ pages.push({
   seoDescription: 'An educational overview of surgical breast enhancement — breast augmentation, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.',
   bannerEyebrow: SG,
   bannerLead: 'Surgical options can increase breast volume or alter breast shape. Like all surgery, they carry risks, require informed consent and may involve future procedures.',
-  bannerImage: '/Breast Augmentation Consultation Illustration.png',
+  bannerImage: '/Breast Augmentation Consultation Illustration.webp',
   bannerWidth: 2048,
   bannerHeight: 768,
   breadcrumb: [{ label: 'Surgical' }],
@@ -566,7 +566,7 @@ pages.push(treatmentPage({
   seoDescription: 'Breast augmentation using implants or autologous fat transfer: treatment planning, preoperative assessment, recovery, risks and the possibility of revision surgery.',
   bannerEyebrow: 'Surgical · Breast augmentation',
   bannerLead: 'Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat.',
-  bannerImage: '/Breast Augmentation Medical Collage.png',
+  bannerImage: '/Breast Augmentation Medical Collage.webp',
   bannerWidth: 1536,
   bannerHeight: 1024,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast augmentation' }],
@@ -688,7 +688,7 @@ pages.push(treatmentPage({
   seoDescription: 'Fat transfer breast augmentation: how the procedure works, donor-site and liposuction considerations, variable fat retention, recovery and potential complications.',
   bannerEyebrow: 'Surgical · Autologous fat transfer',
   bannerLead: 'Fat transfer breast augmentation removes fat from a donor area using liposuction, processes it, and transfers selected fat to the breasts. It may suit certain patients seeking a relatively modest increase in volume without implants.',
-  bannerImage: '/threads.jpeg',
+  bannerImage: '/threads.webp',
   bannerWidth: 1254,
   bannerHeight: 1254,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Fat transfer' }],

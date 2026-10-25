@@ -37,6 +37,7 @@ body {
   body { overflow-x: hidden; }
 }
 
+picture { display: block; max-width: 100%; }
 img, svg, video { display: block; max-width: 100%; height: auto; }
 video, iframe { border: 0; max-width: 100%; }
 figure { margin: 0; }

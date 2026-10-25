@@ -1,6 +1,7 @@
 node_modules/
 .vercel
 
+assets-src/
 build/_qa-snapshot/
 build/_diag*.js
 docs/restructure-audit/before.zip

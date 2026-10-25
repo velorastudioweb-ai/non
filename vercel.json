@@ -36,6 +36,15 @@
       ]
     },
     {
+      "source": "/(.*).(webp)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=15768000"
+        }
+      ]
+    },
+    {
       "source": "/assets/css/(.*)",
       "headers": [
         {
