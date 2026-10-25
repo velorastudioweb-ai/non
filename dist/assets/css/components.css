@@ -476,13 +476,7 @@ body.nav-open { overflow: hidden; }
   object-fit: cover; object-position: 50% 28%;
   filter: var(--img-tint-hero);
 }
-.hero__figure::after {
-  content: "";
-  position: absolute; inset: 14px;
-  border: var(--hairline) solid var(--gold-line-solid);
-  pointer-events: none;
-  z-index: 2;
-}
+
 .hero__credit {
   position: absolute; left: 14px; bottom: 14px; z-index: 3;
   padding: .55rem .9rem;
@@ -612,12 +606,7 @@ body.nav-open { overflow: hidden; }
   object-fit: cover;
   filter: var(--img-tint);
 }
-.media-frame::after {
-  content: "";
-  position: absolute; inset: 12px;
-  border: var(--hairline) solid var(--gold-line-solid);
-  pointer-events: none;
-}
+
 .ratio-4-5 { aspect-ratio: 4 / 5; } .ratio-3-4 { aspect-ratio: 3 / 4; }
 .ratio-1-1 { aspect-ratio: 1 / 1; } .ratio-16-9 { aspect-ratio: 16 / 9; }
 .ratio-4-3 { aspect-ratio: 4 / 3; } .ratio-16-11 { aspect-ratio: 16 / 11; }
@@ -684,13 +673,7 @@ body.nav-open { overflow: hidden; }
   transition: transform 1.1s var(--ease);
   filter: var(--img-tint-soft);
 }
-.card__media::after {
-  content: "";
-  position: absolute; inset: 12px;
-  border: var(--hairline) solid var(--gold-line-solid);
-  pointer-events: none;
-  z-index: 1;
-}
+
 .card__body {
   padding: var(--sp-4);
   display: flex; flex-direction: column; gap: .7rem;
@@ -1536,9 +1519,9 @@ button.gallery-item .gallery-item__cap {
 @media (min-width: 1024px) {
   .nav {
     display: flex; align-items: center;
-    flex: 0 1 auto;
-    justify-content: flex-end;
-    gap: clamp(.3rem, .65vw, .55rem);
+    flex: 1 1 auto;
+    justify-content: center;
+    gap: clamp(.75rem, 1.2vw, 1.25rem);
   }
   .nav__list {
     display: flex; align-items: center;

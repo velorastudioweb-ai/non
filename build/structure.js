@@ -249,7 +249,8 @@ finalSite.nav = [
     shortLabel: ['Surgical', 'Non-surgical', 'Education & Research'][i],
     children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
-  { label: 'About', href: '/about-us/' }
+  { label: 'About', href: '/about-us/' },
+  { label: 'Contact us', href: '/contact/' }
 ];
 finalSite.footerExplore = sections;
 finalSite.footerPatient = education.filter(([u]) => ['/breast-enlargement-safety/', '/research/', '/references/', '/glossary/', '/faqs/'].includes(u)).map(([href, label]) => ({ href, label }));
