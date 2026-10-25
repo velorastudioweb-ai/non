@@ -154,8 +154,8 @@ const home = {
       heading: 'Explore your options by category',
       lead: 'Two broad pathways, each with different intended outcomes, evidence and risks.',
       items: [
-        { title: 'Non-surgical options', kicker: 'Injectables · regenerative · skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', slot: 'Non-surgical treatment imagery' },
-        { title: 'Surgical options', kicker: 'Implants · autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', slot: 'Surgical consultation imagery' }
+        { title: 'Non-surgical options', kicker: 'Injectables · regenerative · skin quality', text: 'Selected injectable, regenerative and skin-quality approaches, considered with attention to evidence, suitability and approved indications. Not every non-surgical treatment is shown to increase breast volume.', href: '/non-surgical/', media: '<img src="/non surgical.jpeg" alt="Non-surgical options" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Surgical options', kicker: 'Implants · autologous fat transfer', text: 'Understand breast implants, silicone gel-filled implants and autologous fat transfer, including recovery and long-term considerations.', href: '/surgical-breast-enhancement/', media: '<img src="/surgical.jpeg" alt="Surgical options" width="1254" height="1254" loading="lazy" decoding="async">' }
       ]
     },
     {
@@ -173,12 +173,12 @@ const home = {
       eyebrow: 'Treatments',
       heading: 'A closer look at individual options',
       items: [
-        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/' },
-        { title: 'PRP', text: 'How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.', href: '/non-surgical/prp/' },
-        { title: 'Thread-based procedures', text: 'PDO and mono threads: intended mechanical effects, limitations and product-specific indications.', href: '/non-surgical/breast-threads/' },
-        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/' },
-        { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/' },
-        { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/' },
+        { title: 'Breast dermal fillers', text: 'Injectable products for specific approved aesthetic indications — and why breast use raises safety questions.', href: '/non-surgical/dermal-fillers/', media: '<img src="/dermal-fillers.jpeg" alt="Breast dermal fillers" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'PRP', text: 'How platelet-rich plasma is prepared, what it is intended to do, and how the evidence is assessed.', href: '/non-surgical/prp/', media: '<img src="/prp.jpeg" alt="PRP" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Thread-based procedures', text: 'PDO and mono threads: intended mechanical effects, limitations and product-specific indications.', href: '/non-surgical/breast-threads/', media: '<img src="/threads.jpeg" alt="Thread-based procedures" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Sculptra & biostimulators', text: 'Poly-L-lactic acid and collagen-stimulating products — approved uses versus breast-use claims.', href: '/non-surgical/sculptra-plla/', media: '<img src="/sculptra.jpeg" alt="Sculptra and biostimulators" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Breast implants', text: 'Medical devices with an outer shell and gel filling, and their long-term monitoring needs.', href: '/breast-implants/', media: '<img src="/implants.jpeg" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' },
+        { title: 'Fat transfer', text: 'Using your own fat for a modest, individualised increase in volume, and its retention variability.', href: '/surgical/fat-transfer-breast-augmentation/', media: '<img src="/fat-transfer.jpeg" alt="Fat transfer" width="1254" height="1254" loading="lazy" decoding="async">' },
         { title: 'Breast augmentation', text: 'Surgical increase of breast volume using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/' },
         { title: 'Compare all options', text: 'A side-by-side view of intended effect, primary consideration and important limitation.', href: '/breast-enhancement-comparison/' }
       ]
