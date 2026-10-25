@@ -102,8 +102,14 @@ articles.forEach((a, i) => {
     text: '<ul>' + a.references.map((r) => '<li>' + r + '</li>').join('') + '</ul>' });
 });
 const safety = byUrl.get('/breast-enlargement-safety/');
-safety.blocks.push({ type: 'prose', id: 'choosing-a-surgeon', html: '<h2>Choosing a qualified surgeon</h2>' });
-safety.blocks.push(...contentBlocks(get('/choosing-a-surgeon/')));
+const surgeonGuide = contentBlocks(get('/choosing-a-surgeon/'));
+if (surgeonGuide[0] && surgeonGuide[0].type === 'prose') {
+  surgeonGuide[0].id = 'choosing-a-surgeon';
+  surgeonGuide[0].html = '<h2>Choosing a qualified surgeon</h2>' + surgeonGuide[0].html;
+} else {
+  surgeonGuide.unshift({ type: 'prose', id: 'choosing-a-surgeon', html: '<h2>Choosing a qualified surgeon</h2>' });
+}
+safety.blocks.push(...surgeonGuide);
 // The shared FAQ answers cross-category questions. Treatment-specific answers
 // already live in their guides and are linked here instead of repeated.
 const sharedFaq = byUrl.get('/faqs/');
@@ -144,7 +150,7 @@ research.seoDescription = 'Published breast enlargement studies, systematic revi
 research.bannerLead = 'An independent reading guide to external research and patient information. These studies and source publications are not Quantum Health research.';
 research.blocks = [
   { type: 'notice', icon: 'evidence', title: 'External research, clearly attributed', text: 'Quantum Health provides educational summaries, not original clinical research. Publication does not prove effectiveness. Read each source in context, check its date and jurisdiction, and distinguish a registered protocol from a completed review.' },
-  { type: 'prose', html: '<nav class="source-index" aria-label="Research collections"><a href="#pubmed">PubMed study summaries</a> · <a href="#pmc">Search PMC records</a> · ' + publishers.map(([, , id, title]) => '<a href="#' + id + '">' + title + '</a>').join(' · ') + '</nav>' },
+  { type: 'prose', html: '<nav class="source-index" aria-label="Research collections"><a href="#pubmed">PubMed study summaries</a><a href="#pmc">Search PMC records</a>' + publishers.map(([, , id, title]) => '<a href="#' + id + '">' + title + '</a>').join('') + '</nav>' },
   { type: 'group', id: 'pubmed', heading: 'PubMed: topic-grouped study findings', open: true, blocks: contentBlocks(research) },
   { type: 'group', id: 'pmc', heading: 'PubMed Central: searchable citation archive', open: true, blocks: contentBlocks(clone(require('./research').researchPage)) }
 ];
@@ -175,12 +181,15 @@ function landing(section, title, lead, blocks, slug) {
     schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, url: site.url + section.href }] };
 }
 const oldSurgical = get('/surgical-breast-enhancement/');
+const surgicalIntro = contentBlocks(oldSurgical).filter((b) => b.type === 'prose');
+const surgicalGuidance = contentBlocks(oldSurgical).filter((b) => b.type !== 'cards' && b.type !== 'prose');
 const landings = [
   landing(sections[0], sections[0].label, oldSurgical.bannerLead, [
-    ...contentBlocks(oldSurgical).filter((b) => b.type !== 'cards'),
+    ...surgicalIntro,
     cards(surgical.slice(0, 4), 'Breast enlargement: implants and fat transfer'),
     { type: 'notice', icon: 'info', title: 'Related surgical procedures', text: 'A lift changes shape and position; reduction removes tissue; mastectomy removes breast tissue for specific clinical or chest-contouring goals. These are not breast enlargement procedures. Revision and filler-removal surgery address previous procedures and their complications.' },
-    cards(surgical.slice(4), 'Related surgery: shape, correction, reduction and chest contouring')
+    cards(surgical.slice(4), 'Related surgery: shape, correction, reduction and chest contouring'),
+    ...surgicalGuidance
   ], 'surgical-breast-enhancement'),
   landing(sections[1], sections[1].label, 'Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.', [
     { type: 'notice', icon: 'safety', title: 'Non-surgical does not mean proven or safe', text: 'Fillers are not FDA-approved for breast enlargement. Facial approval does not establish breast-use approval. Threads, PRP, biostimulators and regenerative products should not be presented as proven substitutes for augmentation. Fat transfer is surgery, even though it does not use an implant.' },
@@ -198,8 +207,10 @@ topicPages.forEach((p) => {
   p.sectionUrl = section.href;
   p.bannerEyebrow = section.label;
   p.breadcrumb = [{ label: section.label, href: section.href }, { label: p.h1 }];
-  // A single shared continuation replaces repeated consultation-style CTAs.
-  p.blocks = contentBlocks(p);
+  // Detailed guidance comes before FAQs; shared related links remain last.
+  const topicBlocks = contentBlocks(p);
+  const faqBlocks = topicBlocks.filter((b) => b.type === 'faq');
+  p.blocks = topicBlocks.filter((b) => b.type !== 'faq').concat(faqBlocks);
   p.blocks.push({ type: 'cards', cols: 3, eyebrow: 'Continue reading', heading: 'Related education', items: [
     { title: section.label, href: section.href, text: 'Return to the full category guide.' },
     { title: 'Safety and warning signs', href: '/breast-enlargement-safety/', text: 'Candidacy, risks and when to seek medical help.' },
@@ -215,13 +226,34 @@ Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', headin
 // canonical shared-education links; detailed topic content stays on its page.
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
 finalHome.blocks.push(cards(education.slice(0, 4), 'A clear foundation for your decision'));
+const homeOrder = [
+  (b) => b.type === 'hero',
+  (b) => b.id === 'treatments',
+  (b) => b.eyebrow === 'Our approach',
+  (b) => b.eyebrow === 'Our principles',
+  (b) => b.title === 'An important clinical distinction',
+  (b) => b.eyebrow === 'Treatments',
+  (b) => b.eyebrow === 'How to use this website',
+  (b) => b.heading === 'A clear foundation for your decision',
+  (b) => b.type === 'cta'
+];
+finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
 finalHome.schema[0].name = site.name;
 const allPages = [finalHome, ...landings, ...topicPages, get('/about-us/'), clone(contact), ...clone(legal)];
 const finalSite = clone(site);
-finalSite.nav = [{ label: 'Home', href: '/' }, ...sections, { label: 'About', href: '/about-us/' }];
+const menuLabel = (title) => title.split(':')[0];
+finalSite.nav = [
+  { label: 'Home', href: '/' },
+  ...sections.map((s, i) => ({
+    ...s,
+    shortLabel: ['Surgical', 'Non-surgical', 'Education & Research'][i],
+    children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
+  })),
+  { label: 'About', href: '/about-us/' }
+];
 finalSite.footerExplore = sections;
 finalSite.footerPatient = education.filter(([u]) => ['/breast-enlargement-safety/', '/research/', '/references/', '/glossary/', '/faqs/'].includes(u)).map(([href, label]) => ({ href, label }));
-finalSite.medicalDisclaimerShort = 'General education only — not individual medical advice. Quantum Health is an independent educational website and does not offer medical treatment.';
+finalSite.medicalDisclaimerShort = '';
 
 // Apply canonical replacements to every nested content field (including authored
 // HTML). The registry is shared by redirects and the generator, avoiding drift.

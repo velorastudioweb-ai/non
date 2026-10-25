@@ -1390,8 +1390,8 @@ button.gallery-item .gallery-item__cap {
 .footer-top {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--sp-5);
-  padding-block: clamp(2.75rem, 6vw, var(--sp-6)) clamp(2rem, 4.5vw, var(--sp-5));
+  gap: var(--sp-4);
+  padding-block: clamp(2.06rem, 4.5vw, var(--sp-5)) clamp(1.5rem, 3.4vw, var(--sp-4));
 }
 .footer-top > * { min-width: 0; }
 .footer-brand p {
@@ -1430,7 +1430,7 @@ button.gallery-item .gallery-item__cap {
 }
 .footer-bottom {
   border-top: var(--hairline) solid var(--border-soft);
-  padding-block: var(--sp-3);
+  padding-block: var(--sp-2);
   display: flex; flex-direction: column; gap: var(--sp-2);
   font-size: var(--fs-micro);
 }
@@ -1540,6 +1540,13 @@ button.gallery-item .gallery-item__cap {
     justify-content: flex-end;
     gap: clamp(.3rem, .65vw, .55rem);
   }
+  .nav__list {
+    display: flex; align-items: center;
+    gap: clamp(.3rem, .65vw, .55rem);
+    list-style: none; margin: 0; padding: 0;
+  }
+  .nav__item { position: relative; }
+  .nav__parent { display: inline-flex; align-items: center; gap: .15rem; }
   .nav__link {
     display: inline-flex; align-items: center;
     position: relative;
