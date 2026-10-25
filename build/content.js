@@ -119,15 +119,7 @@ const home = {
         { label: 'Explore treatments', href: '#treatments', style: 'outline' }
       ],
       note: 'This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.',
-      slot: 'Hero portrait',
-      featureStrip: [
-        { icon: 'evidence', label: 'Evidence-based' },
-        { icon: 'scale', label: 'Options compared fairly' },
-        { icon: 'safety', label: 'Risks explained' },
-        { icon: 'info', label: 'No sales pressure' },
-        { icon: 'personalised', label: 'Realistic expectations' },
-        { icon: 'natural', label: 'Independent & educational' }
-      ]
+      slot: 'Hero portrait'
     },
     {
       type: 'split',
@@ -137,7 +129,7 @@ const home = {
       body: '<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p>' +
         '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p>' +
         '<p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>',
-      slot: 'Clinic / consultation environment',
+      media: '<img src="/Our approach.jpeg" alt="Our approach" width="1536" height="1024" loading="lazy" decoding="async">',
       link: { label: 'Read about this website', href: '/about-us/' },
       script: 'Clarity before any decision'
     },
