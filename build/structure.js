@@ -250,6 +250,85 @@ const quantumHealth = require('./quantum-health');
 finalHome.blocks.push({ type: 'prose', html: '<style>.qh-home{background:#080608;color:#FFF8F8;padding:clamp(2rem,6vw,5rem);border-top:1px solid #C98B91}.qh-home h2,.qh-home h3{font-family:Georgia,serif}.qh-home h2{font-size:clamp(2rem,4vw,3rem)}.qh-home a{color:#FFF8F8}.qh-home .qh-home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem}.qh-home article{padding:1.2rem;border:1px solid #C98B9170;background:linear-gradient(140deg,#4A071F,#10090d)}.qh-home .qh-pink{color:#F36A99}.qh-home .qh-home-cta{display:inline-block;background:#FF4D91;color:#080608;padding:.8rem 1.1rem;text-decoration:none;font-weight:bold}</style><section class="qh-home"><p class="qh-pink">AESTHETICS | REGENERATIVE | WELLNESS</p><h2>Beauty. Science. Longevity.</h2><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><h3>LOOK BETTER · FEEL HEALTHIER · LIVE LONGER</h3><p>A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p><p><a class="qh-home-cta" href="/doctors/">OUR DOCTORS PANEL</a>　<a href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a></p><div class="qh-home-grid"><article><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team</a></article><article><h3>Nutrition & Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership</a></article><article><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise</a></article><article><h3>Regenerative & Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team</a></article><article><h3>Training & Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training & Academy</a></article><article><h3>Core Values</h3><p>SCIENCE DRIVEN · COMPREHENSIVE CARE · NATURAL RESULTS · EXPERT TEAM · LONG-TERM WELLNESS</p></article></div><p><a href="/contact/">BOOK CONSULTATION</a></p></section>' });
 const homeTeam = finalHome.blocks.find((b) => b.html && b.html.includes('<section class="qh-home">'));
 Object.assign(homeTeam, { bleed: true, wide: true });
+const quantumHomeStyles = `<style>
+.qh-home{--qh-ink:#10070b;--qh-rose:#f36a99;--qh-cream:#fff8f5;position:relative;isolation:isolate;display:flex;align-items:center;width:100%;min-height:100vh;min-height:100svh;margin-block:clamp(-5.5rem,-6vw,-3.25rem);overflow:hidden;padding:clamp(3rem,7vw,6.5rem) clamp(1.25rem,6vw,6rem);border-block:1px solid #c98b9166;background:radial-gradient(ellipse at 50% 0%,#650b2d 0%,#260d18 42%,var(--qh-ink) 78%);color:var(--qh-cream);font-family:Arial,sans-serif;line-height:1.6}
+.qh-home *{box-sizing:border-box}
+.qh-home::before,.qh-home::after{position:absolute;z-index:-1;pointer-events:none;content:"";border:1px solid #c98b9128;border-radius:50%;aspect-ratio:1}
+.qh-home::before{width:min(70vw,900px);top:-30%;left:-22%}
+.qh-home::after{width:min(55vw,700px);right:-23%;bottom:-36%;border-color:#f36a9926}
+.qh-home__inner{position:relative;width:min(100%,1500px);margin-inline:auto}
+.qh-home__hero{max-width:1120px;margin:0 auto clamp(3.5rem,7vw,6.5rem);text-align:center}
+.qh-home__eyebrow,.qh-home__section-label{color:var(--qh-rose);font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.qh-home p.qh-home__eyebrow,.qh-home p.qh-home__subtitle,.qh-home p.qh-home__promise,.qh-home p.qh-home__manifesto,.qh-home p.qh-home__number,.qh-home p.qh-home__values-title{color:inherit}
+.qh-home p.qh-home__eyebrow,.qh-home p.qh-home__values-title{color:var(--qh-rose)}
+.qh-home p.qh-home__subtitle{color:#f3dfe4}
+.qh-home p.qh-home__promise{color:#ffdce6}
+.qh-home p.qh-home__manifesto{color:#d9c4ca}
+.qh-home p.qh-home__number{color:var(--qh-rose)}
+.qh-home__eyebrow{display:flex;justify-content:center;align-items:center;gap:.8rem}
+.qh-home__eyebrow::before,.qh-home__eyebrow::after{width:clamp(1.5rem,5vw,4rem);height:1px;background:#f36a9980;content:""}
+.qh-home__hero h2{margin:1.2rem 0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.3rem,8vw,8rem);font-weight:400;letter-spacing:-.065em;line-height:.96;color:var(--qh-cream)}
+.qh-home__hero h2 span{color:#e5b6ba}
+.qh-home__hero h2 em{color:var(--qh-rose);font-weight:400}
+.qh-home__subtitle{max-width:54ch;margin:1.5rem auto 0;color:#f3dfe4;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.15rem,2vw,1.55rem);line-height:1.45}
+.qh-home__promise{display:flex;justify-content:center;flex-wrap:wrap;gap:.65rem 1rem;margin:1.5rem 0 0;color:#ffdce6;font-size:.74rem;font-weight:700;letter-spacing:.14em}
+.qh-home__promise span+span::before{margin-right:1rem;color:var(--qh-rose);content:"·"}
+.qh-home__manifesto{max-width:72ch;margin:1.4rem auto 0;color:#d9c4ca;font-size:.95rem}
+.qh-home__actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.85rem 1.5rem;margin-top:2rem}
+.qh-home .qh-home__button{display:inline-flex;justify-content:center;align-items:center;gap:.8rem;min-height:3.25rem;padding:.8rem 1.3rem;border:1px solid var(--qh-rose);background:var(--qh-rose);color:#190910!important;font-size:.76rem;font-weight:800;letter-spacing:.09em;text-decoration:none;text-transform:uppercase;transition:background .2s ease,color .2s ease,transform .2s ease}
+.qh-home .qh-home__button:hover{transform:translateY(-2px);background:transparent;color:var(--qh-cream)!important}
+.qh-home__leadership{color:var(--qh-cream)!important;font-size:.9rem;font-weight:600;text-decoration-color:#f36a9980;text-underline-offset:.3em}
+.qh-home .qh-home__leadership{color:var(--qh-cream)!important}
+.qh-home__section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:1rem;padding-bottom:.85rem;border-bottom:1px solid #c98b9155}
+.qh-home__section-head p{margin:0;color:#cbb6bd;font-size:.78rem}
+.qh-home__section-label{margin:0!important;color:var(--qh-rose)!important}
+.qh-home__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
+.qh-home__card{position:relative;display:flex;min-height:220px;flex-direction:column;align-items:flex-start;padding:1.25rem;border:1px solid #c98b914c;background:linear-gradient(145deg,#ffffff0b,#ffffff03);transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.qh-home__card:hover{transform:translateY(-4px);border-color:#f36a99a3;background:linear-gradient(145deg,#650b2d73,#ffffff08)}
+.qh-home__number{margin:0 0 1.6rem!important;color:var(--qh-rose)!important;font-size:.7rem;font-weight:700;letter-spacing:.15em}
+.qh-home__card h3{margin:0;color:var(--qh-cream)!important;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.18rem,1.5vw,1.55rem);font-weight:400;line-height:1.18}
+.qh-home__card>p:not(.qh-home__number){margin:.65rem 0 1.2rem;color:#d9c4ca;font-size:.82rem;line-height:1.55}
+.qh-home__card a{display:inline-flex;align-items:center;gap:.55rem;margin-top:auto;color:#ffdce6!important;font-size:.73rem;font-weight:700;text-decoration:none}
+.qh-home__card a span{color:var(--qh-rose);font-size:1rem;transition:transform .2s ease}
+.qh-home__card a:hover span{transform:translateX(4px)}
+.qh-home .qh-home__button::after,.qh-home .qh-home__leadership::after,.qh-home .qh-home__card a::after{display:none}
+.qh-home__bottom{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;margin-top:clamp(2.5rem,5vw,4rem);padding-top:1.35rem;border-top:1px solid #c98b9155}
+.qh-home__values-title{margin:0 0 .7rem;color:var(--qh-rose);font-size:.69rem;font-weight:700;letter-spacing:.17em}
+.qh-home__values{display:flex;flex-wrap:wrap;gap:.5rem}
+.qh-home__values span{padding:.38rem .65rem;border:1px solid #c98b9155;color:#f3dfe4;font-size:.68rem;letter-spacing:.06em}
+.qh-home__consult{white-space:nowrap}
+.qh-home a:focus-visible{outline:2px solid var(--qh-cream);outline-offset:4px}
+@media(max-width:1050px){.qh-home__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.qh-home__card{min-height:200px}}
+@media(max-width:680px){.qh-home{padding:3rem 1.15rem}.qh-home__hero{margin-bottom:3rem}.qh-home__hero h2{font-size:clamp(3rem,13vw,5.4rem)}.qh-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.qh-home__card{min-height:205px;padding:1rem}.qh-home__section-head{align-items:flex-start;flex-direction:column;gap:.25rem}.qh-home__bottom{grid-template-columns:1fr;gap:1.5rem}.qh-home__consult{justify-self:start}}
+@media(max-width:430px){.qh-home__grid{grid-template-columns:1fr}.qh-home__card{min-height:170px}.qh-home__number{margin-bottom:.9rem!important}.qh-home__promise{gap:.5rem;font-size:.65rem}.qh-home__promise span+span::before{margin-right:.5rem}}
+@media(prefers-reduced-motion:reduce){.qh-home *,.qh-home *::before,.qh-home *::after{scroll-behavior:auto!important;transition:none!important}}
+</style>`;
+homeTeam.html = `${quantumHomeStyles}
+<section class="qh-home" aria-labelledby="qh-home-title"><div class="qh-home__inner">
+  <header class="qh-home__hero">
+    <p class="qh-home__eyebrow">Aesthetics · Regenerative · Wellness</p>
+    <h2 id="qh-home-title">Beauty. <span>Science.</span> <em>Longevity.</em></h2>
+    <p class="qh-home__subtitle">Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p>
+    <p class="qh-home__promise"><span>LOOK BETTER</span><span>FEEL HEALTHIER</span><span>LIVE LONGER</span></p>
+    <p class="qh-home__manifesto">A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p>
+    <nav class="qh-home__actions" aria-label="Explore Quantum Health">
+      <a class="qh-home__button" href="/doctors/">OUR DOCTORS PANEL <span aria-hidden="true">↗</span></a>
+      <a class="qh-home__leadership" href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a>
+    </nav>
+  </header>
+  <div class="qh-home__section-head"><p class="qh-home__section-label">A considered approach to wellbeing</p><p>Expertise. Experience. Exceptional Care.</p></div>
+  <div class="qh-home__grid">
+    <article class="qh-home__card"><p class="qh-home__number">01 / PEOPLE</p><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team <span aria-hidden="true">→</span></a></article>
+    <article class="qh-home__card"><p class="qh-home__number">02 / LONGEVITY</p><h3>Nutrition &amp; Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership <span aria-hidden="true">→</span></a></article>
+    <article class="qh-home__card"><p class="qh-home__number">03 / AESTHETICS</p><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise <span aria-hidden="true">→</span></a></article>
+    <article class="qh-home__card"><p class="qh-home__number">04 / WELLNESS</p><h3>Regenerative &amp; Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team <span aria-hidden="true">→</span></a></article>
+    <article class="qh-home__card"><p class="qh-home__number">05 / LEARNING</p><h3>Training &amp; Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training &amp; Academy <span aria-hidden="true">→</span></a></article>
+  </div>
+  <div class="qh-home__bottom">
+    <div><p class="qh-home__values-title">CORE VALUES</p><div class="qh-home__values"><span>SCIENCE DRIVEN</span><span>COMPREHENSIVE CARE</span><span>NATURAL RESULTS</span><span>EXPERT TEAM</span><span>LONG-TERM WELLNESS</span></div></div>
+    <a class="qh-home__button qh-home__consult" href="/contact/">BOOK CONSULTATION <span aria-hidden="true">↗</span></a>
+  </div>
+</div></section>`;
 function extractQuantumBody(page) {
   const html = page.blocks[0].html;
   const styleEnd = html.indexOf('</style>');

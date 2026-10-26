@@ -14,7 +14,7 @@
 .page-banner__art img {
   display: block;
   width: 100%; height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: right center;
 }
 .page-banner__art .editorial-picture { width: 100%; height: 100%; }
@@ -72,7 +72,7 @@
   .page-banner__art img,
   .page-banner__art .editorial-image {
     width: 100%;
-    max-width: 720px;
+    max-width: none;
     height: auto;
     margin-inline: auto;
     object-fit: contain;
@@ -91,7 +91,7 @@
   }
   .hero__bg img {
     width: 100%;
-    max-width: 720px;
+    max-width: none;
     height: auto;
     margin-inline: auto;
     object-fit: contain;
@@ -104,13 +104,15 @@
   .hero__curve { z-index: 0; }
 }
 @media (min-width: 1024px) {
-  .hero__bg img { object-fit: contain; object-position: right center; }
+  .hero__bg img { object-fit: cover; object-position: center; }
   .hero__inner { padding-block: clamp(3rem, 5vw, 5rem); }
   .hero__copy > * { margin-top: 0; }
 }
 
 /* Keep educational diagrams and supplied artwork intact inside existing cards. */
 .card__media img, .media-frame img { object-fit: contain; }
+/* The three home-page pathway tiles use square artwork in landscape frames. */
+#treatments .card__media img { object-fit: cover; }
 @media (hover: hover) and (pointer: fine) {
   .card:hover .card__media img { transform: none; }
 }

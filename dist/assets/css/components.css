@@ -1936,6 +1936,85 @@ button.gallery-item .gallery-item__cap {
 .educational-visual figcaption { padding: 1rem 1.25rem; color: var(--ivory-soft); font-size: var(--fs-sm); line-height: 1.6; }
 .hero__figure > picture { display: block; width: 100%; height: 100%; }
 .hero__credit[data-image-caption] { max-width: calc(100% - 28px); white-space: normal; line-height: 1.5; }
+
+/* About page — editorial introduction and clear section navigation. */
+.page-about-us .qh-about .qh-about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, .85fr);
+  align-items: end;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  border: 1px solid #C98B9170;
+  background:
+    radial-gradient(ellipse at 88% 8%, #650B2D88, transparent 52%),
+    linear-gradient(145deg, #1d0911, #10090d);
+}
+.page-about-us .qh-about-crumb {
+  display: flex;
+  gap: .65rem;
+  align-items: center;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  color: #e9b8c3;
+  font-size: .9rem;
+}
+.page-about-us .qh-about-crumb a { color: #FFF8F8; }
+.page-about-us .qh-about-hero h1 {
+  max-width: 12ch;
+  margin: .75rem 0 1rem;
+  font-size: clamp(2.35rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+.page-about-us .qh-about-hero p:last-child {
+  max-width: 55ch;
+  color: #e9cbd3;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+}
+.page-about-us .qh-about-links { display: grid; gap: .75rem; }
+.page-about-us .qh-about-links a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  min-height: 68px;
+  padding: .9rem 1.1rem;
+  border: 1px solid #C98B9170;
+  background: #ffffff08;
+  color: #FFF8F8;
+  text-decoration: none;
+  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+}
+.page-about-us .qh-about-links a::after { display: none; }
+.page-about-us .qh-about-links a span:first-child {
+  color: #D8B58A;
+  font-size: .8rem;
+  letter-spacing: .14em;
+}
+.page-about-us .qh-about-links a span:last-child { color: #F36A99; font-size: 1.35rem; }
+.page-about-us .qh-about-links strong { font: 1.25rem/1.2 Georgia, 'Times New Roman', serif; }
+.page-about-us .qh-about-links a:hover {
+  transform: translateX(3px);
+  border-color: #F36A99;
+  background: #650B2D66;
+}
+.page-about-us .qh-about #our-doctors,
+.page-about-us .qh-about #leadership { scroll-margin-top: 6rem; }
+.page-about-us .qh-about > .qh-wrap > #our-doctors,
+.page-about-us .qh-about > .qh-wrap > #our-doctors + section {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+.page-about-us .qh-about .qh-about-leadership {
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #C98B9170;
+  border-left: 3px solid #D8B58A;
+  background: linear-gradient(120deg, #4A071F99, #10090d);
+}
+.page-about-us .qh-about .qh-about-leadership h2 { margin: .65rem 0; }
+@media (max-width: 760px) {
+  .page-about-us .qh-about .qh-about-hero { grid-template-columns: 1fr; align-items: start; }
+  .page-about-us .qh-about-hero h1 { max-width: 15ch; }
+}
 @media (min-width: 1024px) {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
   .header-cta { display: none; }
