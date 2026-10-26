@@ -2057,6 +2057,51 @@ button.gallery-item .gallery-item__cap {
   line-height: 1.25;
   overflow-wrap: anywhere;
 }
+.page-about-us .qh-about .qh-doctor-card__details {
+  display: grid;
+  gap: 1rem;
+  flex: 1;
+  margin-top: .5rem;
+}
+.page-about-us .qh-about .qh-doctor-card__details h4 {
+  margin: 0 0 .35rem;
+  color: #D8B58A;
+  font-family: Arial, sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1.4;
+}
+.page-about-us .qh-about .qh-doctor-card__details ul {
+  display: grid;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+}
+.page-about-us .qh-about .qh-doctor-card__details li {
+  position: relative;
+  padding-left: 1rem;
+  color: #E9CBD3;
+  font-size: .9rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.page-about-us .qh-about .qh-doctor-card__details li::before {
+  content: "";
+  position: absolute;
+  top: .62em;
+  left: .12rem;
+  width: .32rem;
+  height: .32rem;
+  border-radius: 50%;
+  background: #D6B875;
+}
+.page-about-us .qh-about .qh-doctor-card__empty {
+  margin: 0;
+  color: #E9CBD3;
+  font-size: .9rem;
+  line-height: 1.5;
+}
 .page-about-us .qh-about .qh-actions {
   margin-top: auto;
   padding-top: 1rem;

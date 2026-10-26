@@ -152,7 +152,8 @@ const TEXT_CHECKS = [
   '.footer-contact-details a', '.site-footer .footer-brand p', '.footer-disclaimer',
   '.tag', '.stat__value', '.stat__label', '.page-banner h1', '.page-banner p',
   '.media-frame + .script', '.script', '.qh-about .qh-about-note',
-  '.qh-about .qh-doctor-card h3', '.qh-about .qh-btn'
+  '.qh-about .qh-doctor-card h3', '.qh-about .qh-doctor-card__details h4',
+  '.qh-about .qh-doctor-card__details li', '.qh-about .qh-btn'
 ];
 
 /* -------------------------------------------------------------------------- */

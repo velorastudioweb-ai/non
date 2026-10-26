@@ -19,20 +19,29 @@ assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors d
 assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership reference');
 assert(aboutHtml.includes('id="contact"') && aboutHtml.includes('href="/contact/">Contact us</a>'), 'About must end with a website-contact CTA');
 assert.equal((aboutHtml.match(/class="qh-card qh-doctor-card"/g) || []).length, 8, 'About must retain all eight doctor cards');
+assert.equal((aboutHtml.match(/<h4>Profile-listed expertise<\/h4>/g) || []).length, 8, 'Each doctor card must label supplied expertise');
+assert.equal((aboutHtml.match(/<h4>Profile-listed qualifications<\/h4>/g) || []).length, 8, 'Each doctor card must label supplied qualifications');
 const { doctors } = require('./quantum-health');
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 for (const doctor of doctors) {
   assert(aboutHtml.includes(doctor.name), 'Doctor name missing from About: ' + doctor.name);
   assert(aboutHtml.includes('href="' + doctor.profileUrl + '"'), 'Doctor profile link missing from About: ' + doctor.profileUrl);
+  const expertise = (doctor.specialisations && doctor.specialisations.length ? doctor.specialisations : [doctor.designation])
+    .flatMap((item) => String(item || '').split('|')).map((item) => item.trim()).filter((item) => item && !/\bexpert\b/i.test(item));
+  expertise.forEach((item) => assert(aboutHtml.includes(escapeHtml(item)), 'Profile-listed expertise missing from About: ' + item));
+  const qualifications = doctor.qualifications.length ? doctor.qualifications : (doctor.suppliedQualifications || []);
+  qualifications.forEach((item) => assert(aboutHtml.includes(escapeHtml(item)), 'Profile-listed qualification missing from About: ' + item));
 }
 for (const phrase of [
   'OUR DOCTORS PANEL', 'EXPERTISE. EXPERIENCE. EXCEPTIONAL CARE.', 'LOOK BETTER',
   'FEEL SEXIER', 'BE MORE CONFIDENT', 'A GLOBAL TEAM FOR A BEAUTIFUL, HEALTHIER YOU',
-  'Founder &amp; CEO', 'Executive Director, Quantum Health', 'Qualifications',
-  '38 Years Experience', 'Over 10 Years', 'BOOK CONSULTATION', 'Aesthetic Treatments',
+  'Founder &amp; CEO', 'Executive Director, Quantum Health',
+  '38 Years Experience', 'Over 10 Years', 'BOOK CONSULTATION',
   'QUANTUM HEALTH STEMCELL RESORT', 'Approved professional portrait pending',
   'verification pending'
 ]) assert(!aboutHtml.includes(phrase), 'Unapproved About-page material remains: ' + phrase);
 assert(aboutHtml.includes('does not provide treatment or medical consultations'), 'About must align with the educational-site purpose');
+assert(aboutHtml.includes('not been independently verified'), 'Profile-listed details must not be presented as verified facts');
 assert(aboutHtml.includes('does not represent or endorse the clinicians listed'), 'Doctor links must be framed as non-endorsing references');
 assert(!html('/').includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
 const titles = new Set();

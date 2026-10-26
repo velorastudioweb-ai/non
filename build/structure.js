@@ -355,11 +355,20 @@ const escapeAboutText = (value) => String(value).replace(/[&<>"']/g, (char) => (
 const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h1>About this website</h1><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
 const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
   const initials = doctor.name.replace(/^Dr\.\s*/i, '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
-  return `<article class="qh-card qh-doctor-card"><div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div><h3>${escapeAboutText(doctor.name)}</h3><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
+  const expertise = (doctor.specialisations && doctor.specialisations.length ? doctor.specialisations : [doctor.designation])
+    .flatMap((item) => String(item || '').split('|'))
+    .map((item) => item.trim())
+    .filter((item) => item && !/\bexpert\b/i.test(item));
+  const qualifications = doctor.qualifications.length ? doctor.qualifications : (doctor.suppliedQualifications || []);
+  const expertiseList = `<ul>${expertise.map((item) => `<li>${escapeAboutText(item)}</li>`).join('')}</ul>`;
+  const qualificationList = qualifications.length
+    ? `<ul>${qualifications.map((item) => `<li>${escapeAboutText(item)}</li>`).join('')}</ul>`
+    : '<p class="qh-doctor-card__empty">No qualifications are listed in the supplied profile.</p>';
+  return `<article class="qh-card qh-doctor-card"><div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div><h3>${escapeAboutText(doctor.name)}</h3><div class="qh-doctor-card__details"><div><h4>Profile-listed expertise</h4>${expertiseList}</div><div><h4>Profile-listed qualifications</h4>${qualificationList}</div></div><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
 }).join('');
 const aboutBody = `${aboutHero}
   <section id="our-doctors" aria-labelledby="our-doctors-heading">
-    <div class="qh-about-section-head"><div><p class="eyebrow">Reference profiles</p><h2 id="our-doctors-heading">Our Doctors</h2></div><p class="qh-about-note">These profile links are included for reference only. This website does not represent or endorse the clinicians listed, verify profile details, provide treatment, or arrange appointments. Check credentials and affiliations with the relevant professional registers.</p></div>
+    <div class="qh-about-section-head"><div><p class="eyebrow">Reference profiles</p><h2 id="our-doctors-heading">Our Doctors</h2></div><p class="qh-about-note">Names, profile-listed expertise, and qualifications are transcribed from supplied profiles for reference only. They have not been independently verified. This website does not represent or endorse the clinicians listed, provide treatment, or arrange appointments. Check credentials and affiliations with the relevant professional registers.</p></div>
     <div class="qh-grid">${aboutDoctorCards}</div>
   </section>
   <section id="leadership" class="qh-about-leadership" aria-labelledby="leadership-heading">
