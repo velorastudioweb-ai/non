@@ -151,7 +151,8 @@ const TEXT_CHECKS = [
   '.breadcrumbs a', '.footer-col h3', '.footer-col a', '.footer-legal a',
   '.footer-contact-details a', '.site-footer .footer-brand p', '.footer-disclaimer',
   '.tag', '.stat__value', '.stat__label', '.page-banner h1', '.page-banner p',
-  '.media-frame + .script', '.script'
+  '.media-frame + .script', '.script', '.qh-about .qh-about-note',
+  '.qh-about .qh-doctor-card h3', '.qh-about .qh-btn'
 ];
 
 /* -------------------------------------------------------------------------- */

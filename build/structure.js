@@ -329,6 +329,10 @@ homeTeam.html = `${quantumHomeStyles}
     <a class="qh-home__button qh-home__consult" href="/contact/">BOOK CONSULTATION <span aria-hidden="true">↗</span></a>
   </div>
 </div></section>`;
+// Keep the public site aligned with its independent-education purpose. The
+// imported promotional homepage panel is retained as source material but not
+// rendered alongside the footer's no-clinic statement.
+finalHome.blocks = finalHome.blocks.filter((block) => block !== homeTeam);
 function extractQuantumBody(page) {
   const html = page.blocks[0].html;
   const styleEnd = html.indexOf('</style>');
@@ -347,24 +351,32 @@ function extractQuantumBody(page) {
   };
 }
 const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/doctors/'));
-const leadershipProfile = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/leadership/dr-sunitha-devaraj/'));
-const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">About Quantum Health</p><h1>Meet the people behind Quantum Health</h1><p>Explore our doctors, their areas of expertise, and the leadership guiding Quantum Health.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
-doctorDirectory.body = doctorDirectory.body
-  .replace(/<header class="qh-hero">[\s\S]*?<\/header>/, aboutHero)
-  .replace('<section><h2>Doctors</h2>', '<section id="our-doctors"><h2>Our Doctors</h2>')
-  .replace(/<section><h2>Executive Leadership<\/h2>[\s\S]*?<\/section>/, '')
-  .replace(/<section><h2>Closing Statement<\/h2>[\s\S]*?<\/section>/, '');
-leadershipProfile.body = leadershipProfile.body.replace(/<header class="qh-hero">[\s\S]*?<\/header>/,
-  '<header id="leadership" class="qh-about-leadership"><p class="eyebrow">Executive Leadership</p><h2>Dr. Sunitha Devaraj</h2><p>Executive Director, Quantum Health</p></header>');
+const escapeAboutText = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h1>About this website</h1><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
+const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
+  const initials = doctor.name.replace(/^Dr\.\s*/i, '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
+  return `<article class="qh-card qh-doctor-card"><div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div><h3>${escapeAboutText(doctor.name)}</h3><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
+}).join('');
+const aboutBody = `${aboutHero}
+  <section id="our-doctors" aria-labelledby="our-doctors-heading">
+    <div class="qh-about-section-head"><div><p class="eyebrow">Reference profiles</p><h2 id="our-doctors-heading">Our Doctors</h2></div><p class="qh-about-note">These profile links are included for reference only. This website does not represent or endorse the clinicians listed, verify profile details, provide treatment, or arrange appointments. Check credentials and affiliations with the relevant professional registers.</p></div>
+    <div class="qh-grid">${aboutDoctorCards}</div>
+  </section>
+  <section id="leadership" class="qh-about-leadership" aria-labelledby="leadership-heading">
+    <p class="eyebrow">Leadership reference</p><div class="qh-portrait" aria-hidden="true"><span>SD</span></div><div><h2 id="leadership-heading">Dr. Sunitha Devaraj</h2><p class="qh-about-note">The supplied material includes a leadership profile under this name. This educational website does not verify a current role, professional affiliation, or credentials.</p></div>
+  </section>
+  <section id="contact" class="qh-about-contact" aria-labelledby="about-contact-heading">
+    <div><p class="eyebrow">Stay in touch</p><h2 id="about-contact-heading">Questions or corrections?</h2><p class="qh-about-note">Contact us about website content, sources, or accessibility.</p></div><a class="qh-btn" href="/contact/">Contact us</a>
+  </section>`;
 const about = get('/about-us/');
-about.h1 = 'About Quantum Health';
-about.seoTitle = 'About Quantum Health | Our Doctors and Leadership';
-about.seoDescription = 'Meet the Quantum Health doctors and executive leadership team, explore their areas of expertise, and learn about the organisation.';
-about.bannerEyebrow = 'About Quantum Health';
-about.bannerLead = 'Meet our doctors and leadership team and learn more about Quantum Health.';
+about.h1 = 'About this website';
+about.seoTitle = 'About this website | Breast Enlargement Guide';
+about.seoDescription = 'Learn about this independent educational website on breast-enlargement options, evidence, limitations, and safety.';
+about.bannerEyebrow = 'Independent education';
+about.bannerLead = 'An evidence-aware guide to breast-enlargement options, limitations, and safety.';
 about.showBanner = false;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
-about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh qh-about"><div class="qh-wrap">' + doctorDirectory.body + leadershipProfile.body + '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p></div></div>' }];
+about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
 finalHome.schema[0].name = site.name;
 const allPages = [finalHome, ...landings, ...topicPages, about, clone(contact), ...clone(legal), ...doctorProfiles];

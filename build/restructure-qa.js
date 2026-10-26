@@ -16,13 +16,25 @@ assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/about-us/#our-
 assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
 const aboutHtml = html('/about-us/');
 assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
-assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership profile');
+assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership reference');
+assert(aboutHtml.includes('id="contact"') && aboutHtml.includes('href="/contact/">Contact us</a>'), 'About must end with a website-contact CTA');
+assert.equal((aboutHtml.match(/class="qh-card qh-doctor-card"/g) || []).length, 8, 'About must retain all eight doctor cards');
+const { doctors } = require('./quantum-health');
+for (const doctor of doctors) {
+  assert(aboutHtml.includes(doctor.name), 'Doctor name missing from About: ' + doctor.name);
+  assert(aboutHtml.includes('href="' + doctor.profileUrl + '"'), 'Doctor profile link missing from About: ' + doctor.profileUrl);
+}
 for (const phrase of [
-  'AESTHETICS | REGENERATIVE | WELLNESS', 'OUR DOCTORS PANEL',
-  'EXPERTISE. EXPERIENCE. EXCEPTIONAL CARE.', 'LOOK BETTER', 'FEEL SEXIER',
-  'BE MORE CONFIDENT', 'A GLOBAL TEAM FOR A BEAUTIFUL, HEALTHIER YOU',
-  'Beauty • Science • Longevity', 'SCIENCE • ARTISTRY • CARE'
-]) assert(!aboutHtml.includes(phrase), 'Removed About-page campaign copy remains: ' + phrase);
+  'OUR DOCTORS PANEL', 'EXPERTISE. EXPERIENCE. EXCEPTIONAL CARE.', 'LOOK BETTER',
+  'FEEL SEXIER', 'BE MORE CONFIDENT', 'A GLOBAL TEAM FOR A BEAUTIFUL, HEALTHIER YOU',
+  'Founder &amp; CEO', 'Executive Director, Quantum Health', 'Qualifications',
+  '38 Years Experience', 'Over 10 Years', 'BOOK CONSULTATION', 'Aesthetic Treatments',
+  'QUANTUM HEALTH STEMCELL RESORT', 'Approved professional portrait pending',
+  'verification pending'
+]) assert(!aboutHtml.includes(phrase), 'Unapproved About-page material remains: ' + phrase);
+assert(aboutHtml.includes('does not provide treatment or medical consultations'), 'About must align with the educational-site purpose');
+assert(aboutHtml.includes('does not represent or endorse the clinicians listed'), 'Doctor links must be framed as non-endorsing references');
+assert(!html('/').includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');
