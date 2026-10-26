@@ -3,14 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert/strict');
 const { chromium } = require('playwright-core');
+const { startAuditServer } = require('./audit-server');
 const args = process.argv.slice(2);
 const arg = name => args.includes(name) ? args[args.indexOf(name) + 1] : null;
-const base = arg('--base') || 'http://localhost:8100';
+let base = arg('--base');
 const label = arg('--label') || 'local';
 const data = require('../public/assets/data/pmc-breast-enlargement.json');
 const ROOT = path.resolve(__dirname, '..');
 
 (async () => {
+  const server = await startAuditServer(base);
+  base = server.base;
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   const results = [];
   try {
@@ -27,6 +30,16 @@ const ROOT = path.resolve(__dirname, '..');
       page.on('pageerror', e => errors.push(String(e)));
       await page.goto(base, { waitUntil: 'load' });
       await page.evaluate(() => document.fonts.ready);
+      await page.evaluate(() => window.scrollTo({ top: 100, behavior: 'instant' }));
+      await page.waitForFunction(() => document.querySelector('.site-header').classList.contains('is-scrolled'));
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+      await page.waitForFunction(() => !document.querySelector('.site-header').classList.contains('is-scrolled'));
+      await page.locator('.hero__actions a[href="#treatments"]').click();
+      await page.waitForFunction(() => {
+        const box = document.querySelector('#treatments').getBoundingClientRect();
+        return box.top >= -1 && box.top < innerHeight;
+      });
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
       if (width < 1024) {
         await page.locator('.nav-toggle').click();
         await page.locator('.mobile-nav.is-open').waitFor({ state: 'visible' });
@@ -78,6 +91,10 @@ const ROOT = path.resolve(__dirname, '..');
 
       await page.goto(base + '/research/#fda', { waitUntil: 'load' });
       assert.equal(await page.locator('#fda > details').evaluate(el => el.open), true);
+      await page.waitForFunction(() => {
+        const box = document.querySelector('#fda').getBoundingClientRect();
+        return box.top >= -1 && box.top < innerHeight;
+      });
       await page.locator('#pmc-q').fill('implant');
       await page.waitForFunction(() => document.querySelector('#pmc-meta').textContent.includes('matching'));
       const expected = data.articles.filter(a => (a.title + ' ' + (a.abstract || '') + ' ' + (a.authors || []).join(' ') + ' ' + (a.journal || '')).toLowerCase().includes('implant'));
@@ -115,5 +132,5 @@ const ROOT = path.resolve(__dirname, '..');
     fs.mkdirSync(out, { recursive: true });
     fs.writeFileSync(path.join(out, label + '-interactions.json'), JSON.stringify({ base, note: 'Lab Event Timing observations, not field INP.', results }, null, 2));
     console.log('PASS: navigation, FAQ, contact validation, research search/year/sort/pagination/abstracts, hashes and no-JS rendering.');
-  } finally { await browser.close(); }
+  } finally { await browser.close(); await server.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

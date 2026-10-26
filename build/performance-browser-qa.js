@@ -18,7 +18,7 @@ const label = arg('--label') || (baseline ? 'before' : 'after');
 const out = path.join(ROOT, 'docs/performance-audit', label);
 const widths = arg('--widths') ? arg('--widths').split(',').map(Number) : baseline ? [390, 1440] : [320, 375, 390, 430, 768, 1024, 1440, 1920];
 const heights = { 320: 568, 375: 812, 390: 844, 430: 932, 768: 1024, 1024: 768, 1440: 900, 1920: 1080 };
-const routes = args.includes('--quick') || baseline
+const routes = arg('--routes') ? arg('--routes').split(',') : args.includes('--quick') || baseline
   ? ['/', '/surgical-breast-enlargement/', '/breast-implants/', '/non-surgical-breast-enlargement/', '/doctors/dr-vikas-singh/']
   : [...allPages.map(p => p.url), '/404.html'];
 

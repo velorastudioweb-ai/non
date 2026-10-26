@@ -1,0 +1,8 @@
+{
+  "base": "https://quantumhealth-website.vercel.app",
+  "snapshot": "docs/performance-audit/release-content.json",
+  "expectedSiteUrl": "https://quantumhealth-website.vercel.app",
+  "checkedAt": "2026-10-26T01:09:58.340Z",
+  "pages": 45,
+  "result": "pass"
+}

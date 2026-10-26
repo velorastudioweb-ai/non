@@ -51,8 +51,8 @@ node build/lighthouse-audit.mjs --base https://quantumhealth-website.vercel.app 
 node build/deployment-qa.js https://quantumhealth-website.vercel.app --site-url https://quantumhealth-website.vercel.app
 ```
 
-Interaction checks default to `http://localhost:8100`; start
-`node build/serve.js --port 8100` or pass `--base` with a deployed URL.
+Local interaction checks also use a private snapshot server; pass `--base` with
+a deployed URL to test production instead.
 Responsive checks cover every registered page at 320, 375, 390, 430, 768, 1024,
 1440 and 1920 pixels, including native lazy image loading and real banner geometry.
 Local responsive runs serve a private frozen snapshot so concurrent rebuilds
@@ -70,6 +70,7 @@ snapshot, kept separately from that historical baseline:
 ```text
 node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json --baseline
 node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json
+node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json --base https://quantumhealth-website.vercel.app --site-url https://quantumhealth-website.vercel.app
 ```
 
 Snapshots cannot be silently overwritten. The deployment checker permits only an
@@ -78,6 +79,11 @@ normalizes line endings; every other HTML difference is checked. Image/font/data
 assets are compared byte-for-byte, and immutable-cache headers and redirects are
 verified. Performance reports are lab measurements; TBT and observed event timings
 are not field INP.
+
+See [the production completion report](docs/performance-audit/completion-report.md)
+for the measured scores, viewport coverage and verified deployment. The header
+uses asynchronous scroll-state observation, and long offscreen homepage sections
+use browser-native rendering containment to avoid blocking initial interaction.
 
 ## Image library and visual audit
 
