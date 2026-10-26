@@ -126,11 +126,12 @@ const home = {
       alt: true,
       eyebrow: 'Our approach',
       heading: 'Clear information. Honest limits. No promotion.',
-      body: '<p>Every person considering breast enhancement has different anatomy, breast tissue, aesthetic preferences and expectations. This website exists to explain the options before you discuss them with any clinic or surgeon.</p>' +
-        '<p>We aim to make complex treatment choices easier to understand by presenting the potential benefits, limitations, recovery considerations and risks of each approach — so you can make decisions grounded in accurate information rather than promotion.</p>' +
-        '<p>Whether you are exploring breast augmentation surgery, fat transfer or a non-surgical treatment, our focus is on transparent, evidence-based information and realistic expectations.</p>',
+      body: '<p>Every person considering breast enhancement has different anatomy, health needs, preferences and expectations. This website is an educational resource, not a clinic, and it cannot recommend a treatment for any individual. Its purpose is to help you understand the choices before discussing them with a qualified clinician.</p>' +
+        '<p>We explain what each option is intended to do and distinguish procedures designed to change breast volume from those that may affect appearance in other ways. A treatment being described as “non-surgical” does not necessarily mean it is effective, risk-free or suitable for breast enlargement.</p>' +
+        '<p>Our guides draw on published research and guidance from health authorities and professional organisations. Where possible, we link to original sources and explain the strength and limitations of the evidence. When evidence is uncertain, limited or does not support a claim, we aim to say so clearly.</p>' +
+        '<p>For each approach, we consider potential benefits alongside limitations, recovery, alternatives and safety questions. The goal is to support realistic expectations and better-prepared conversations with a qualified healthcare professional—not to rush or promote a decision.</p>',
       media: '<img src="/Our approach.webp" alt="Our approach" width="1536" height="1024" loading="lazy" decoding="async">',
-      link: { label: 'Read about this website', href: '/about-us/' },
+      link: { label: 'Explore the sources and evidence', href: '/education-research/' },
       script: 'Clarity before any decision'
     },
     {
@@ -188,13 +189,13 @@ const home = {
       alt: true,
       eyebrow: 'How to use this website',
       heading: 'A clear, five-step pathway to an informed decision',
-      lead: 'Work through the information at your own pace. No decision about your body should ever be rushed by advertising.',
+      lead: 'Use these steps to move from exploring options to preparing informed questions. Take your time; a decision about your body should never be rushed by advertising.',
       items: [
-        { title: 'Learn what each option is', text: 'Start with the non-surgical and surgical sections to understand intended effects, mechanisms and limitations.' },
-        { title: 'Check what the evidence shows', text: 'Read the evidence guide and the research libraries to see what is proven, what is unproven and what to avoid.' },
-        { title: 'Understand the risks', text: 'Review candidacy, contraindications, possible complications and the warning signs that need medical attention.' },
-        { title: 'Compare fairly', text: 'Use the side-by-side comparison to weigh intended effect, evidence quality, recovery and reversibility.' },
-        { title: 'Talk to a qualified professional', text: 'Take your written questions to a registered, appropriately qualified clinician and compare more than one opinion before deciding.' }
+        { title: 'Learn what each option is', text: 'Start with the surgical and non-surgical guides. Check what a treatment is intended to do, how it is performed and what it cannot reliably achieve.' },
+        { title: 'Check what the evidence shows', text: 'Use the evidence guide and linked research sources to distinguish established findings from limited, emerging or unsupported claims. Look at the source and its limitations, not just a headline or advertisement.' },
+        { title: 'Understand suitability and safety', text: 'Review candidacy, contraindications, possible complications, recovery and warning signs. Suitability depends on your health and circumstances and needs an individual clinical assessment.' },
+        { title: 'Compare options fairly', text: 'Compare the intended effect, evidence, likely limitations, recovery, risks, alternatives and potential need for future care. Consider whether an option matches your goals—not only its advertised benefits.' },
+        { title: 'Prepare questions for a clinician', text: 'Write down what matters to you and discuss it with a registered, appropriately qualified healthcare professional. Ask about their credentials, the exact product or technique, realistic outcomes, alternatives, costs, aftercare and how complications are managed. Take time to consider the answers and seek another opinion if you need one.' }
       ],
       media: '<img src="/Five-Step Beauty Consultation Journey.webp" alt="How to use this website" width="1536" height="1024" loading="lazy" decoding="async">'
     },
