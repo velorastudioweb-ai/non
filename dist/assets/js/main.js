@@ -21,7 +21,9 @@
    var details = target.querySelector('details');
    if (details) details.open = true;
   }
-  target.scrollIntoView();
+  // Jump directly to an opened source collection. Smooth traversal across the
+  // research archive can trigger intermediate lazy content and miss its target.
+  target.scrollIntoView({ behavior: 'instant', block: 'start' });
  }
  revealSourceHash();
  window.addEventListener('hashchange', revealSourceHash);
@@ -59,15 +61,27 @@
  /* ---------------- Header scroll state ---------------- */
  var header = $('.site-header');
  if (header){
-  var wasScrolled;
-  var onScroll = function (){
-   var scrolled = window.scrollY > 40;
+  var wasScrolled = false;
+  var setHeaderScrolled = function (scrolled){
    if (scrolled === wasScrolled) return;
    wasScrolled = scrolled;
    header.classList.toggle('is-scrolled', scrolled);
- };
- onScroll();
- window.addEventListener('scroll',onScroll,{ passive: true });
+  };
+  if ('IntersectionObserver' in window){
+   var marker = document.createElement('span');
+   marker.setAttribute('aria-hidden','true');
+   marker.style.cssText = 'position:absolute;top:40px;left:0;width:1px;height:1px;pointer-events:none';
+   document.body.appendChild(marker);
+   var headerObserver = new IntersectionObserver(function (entries){
+    var entry = entries[0];
+    setHeaderScrolled(!entry.isIntersecting && entry.boundingClientRect.top < 0);
+   });
+   headerObserver.observe(marker);
+  }else{
+   var onScroll = function (){ setHeaderScrolled(window.scrollY > 40); };
+   window.addEventListener('scroll',onScroll,{ passive: true });
+   window.addEventListener('pageshow',onScroll);
+  }
  }
  /* ---------------- Mobile navigation ---------------- */
  var toggle = $('.nav-toggle');

@@ -215,6 +215,15 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
 }
 .section { padding-block: clamp(3.25rem, 6vw, 5.5rem); position: relative; }
 .section--tight { padding-block: clamp(2.5rem, 4.5vw, 3.75rem); }
+/* Long authored sections stay in the document/search/accessibility tree while
+   the browser skips offscreen layout/paint. Intrinsic sizes are remembered as
+   sections render; native anchor navigation still exposes their full content. */
+@supports (content-visibility: auto) {
+  .page-home #main > .section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 800px;
+  }
+}
 /* Alternate and wine bands are never flat: each carries a restrained
    ruby / orchid radial sheen so consecutive sections read as distinct. */
 .section--alt {

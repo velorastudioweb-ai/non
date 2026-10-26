@@ -1328,6 +1328,8 @@ button.gallery-item .gallery-item__cap {
 
 /* ================================= prose ================================= */
 .prose { max-width: 70ch; }
+/* Available to every page; this utility must not live in the optional research bundle. */
+.prose--wide { max-width: none; }
 .prose > * + * { margin-top: var(--sp-3); }
 .prose h2 { margin-top: var(--sp-5); color: var(--ivory); }
 .prose h3 { margin-top: var(--sp-4); color: var(--ivory); }
@@ -1744,8 +1746,6 @@ button.gallery-item .gallery-item__cap {
 }
 
 /* ---------- PMC research library ---------- */
-.prose--wide { max-width: none; }
-
 .research__stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1941,7 +1941,7 @@ button.gallery-item .gallery-item__cap {
 .page-about-us .qh-about .qh-about-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(240px, .85fr);
-  align-items: end;
+  align-items: center;
   gap: clamp(1.5rem, 5vw, 4rem);
   padding: clamp(1.5rem, 5vw, 4.5rem);
   border: 1px solid #C98B9170;
@@ -1957,9 +1957,11 @@ button.gallery-item .gallery-item__cap {
   color: #e9b8c3;
   font-size: .9rem;
 }
+.page-about-us .qh-about .eyebrow { color: #D8B58A; }
+.page-about-us .qh-about .eyebrow::before { background: #D8B58A; }
 .page-about-us .qh-about-crumb a { color: #FFF8F8; }
 .page-about-us .qh-about-hero h1 {
-  max-width: 12ch;
+  max-width: 24ch;
   margin: .75rem 0 1rem;
   font-size: clamp(2.35rem, 5vw, 4.5rem);
   line-height: 1.04;
@@ -1990,7 +1992,7 @@ button.gallery-item .gallery-item__cap {
   font-size: .8rem;
   letter-spacing: .14em;
 }
-.page-about-us .qh-about-links a span:last-child { color: #F36A99; font-size: 1.35rem; }
+.page-about-us .qh-about-links a span:last-child { color: #D8B58A; font-size: 1.35rem; }
 .page-about-us .qh-about-links strong { font: 1.25rem/1.2 Georgia, 'Times New Roman', serif; }
 .page-about-us .qh-about-links a:hover {
   transform: translateX(3px);
@@ -2011,9 +2013,171 @@ button.gallery-item .gallery-item__cap {
   background: linear-gradient(120deg, #4A071F99, #10090d);
 }
 .page-about-us .qh-about .qh-about-leadership h2 { margin: .65rem 0; }
+.page-about-us .qh-about .qh-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+.page-about-us .qh-about .qh-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+.page-about-us .qh-about .qh-portrait {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-color: #D6B87570;
+  background:
+    radial-gradient(circle at 50% 42%, #650B2D 0, #3A1020 42%, transparent 72%),
+    linear-gradient(135deg, #24141b, #120d10);
+}
+.page-about-us .qh-about .qh-portrait::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1;
+  border: 1px solid #D6B87580;
+  border-radius: 50%;
+}
+.page-about-us .qh-about .qh-portrait span {
+  position: relative;
+  color: #EBD79E;
+  font: 500 clamp(1.3rem, 2vw, 1.8rem)/1 Georgia, "Times New Roman", serif;
+  letter-spacing: .12em;
+}
+.page-about-us .qh-about .qh-doctor-card h3 {
+  min-height: 2.5em;
+  margin: 1rem 0 .25rem;
+  color: #FFF8F8;
+  font-size: clamp(1.15rem, 1.55vw, 1.45rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.page-about-us .qh-about .qh-doctor-card__details {
+  display: grid;
+  gap: 1rem;
+  flex: 1;
+  margin-top: .5rem;
+}
+.page-about-us .qh-about .qh-doctor-card__details h4 {
+  margin: 0 0 .35rem;
+  color: #D8B58A;
+  font-family: Arial, sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1.4;
+}
+.page-about-us .qh-about .qh-doctor-card__details ul {
+  display: grid;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+}
+.page-about-us .qh-about .qh-doctor-card__details li {
+  position: relative;
+  padding-left: 1rem;
+  color: #E9CBD3;
+  font-size: .9rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.page-about-us .qh-about .qh-doctor-card__details li::before {
+  content: "";
+  position: absolute;
+  top: .62em;
+  left: .12rem;
+  width: .32rem;
+  height: .32rem;
+  border-radius: 50%;
+  background: #D6B875;
+}
+.page-about-us .qh-about .qh-doctor-card__empty {
+  margin: 0;
+  color: #E9CBD3;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.page-about-us .qh-about .qh-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.page-about-us .qh-about .qh-btn {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-color: #EBD79E;
+  background: #D6B875;
+  color: #1F0307 !important;
+  text-align: center;
+  text-decoration: none;
+}
+.page-about-us .qh-about .qh-btn::after { display: none; }
+.page-about-us .qh-about .qh-btn:hover {
+  border-color: #EBD79E;
+  background: #EBD79E;
+  color: #1F0307 !important;
+}
+.page-about-us .qh-about .qh-about-note {
+  max-width: 75ch;
+  color: #E9CBD3;
+  font-size: .95rem;
+  line-height: 1.7;
+}
+.page-about-us .qh-about .qh-about-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
+  align-items: end;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  margin-bottom: 1.5rem;
+}
+.page-about-us .qh-about .qh-about-section-head h2 { margin-top: .5rem; }
+.page-about-us .qh-about .qh-about-leadership {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 1.25rem clamp(1rem, 3vw, 2.5rem);
+}
+.page-about-us .qh-about .qh-about-leadership > .eyebrow { grid-column: 1 / -1; }
+.page-about-us .qh-about .qh-about-leadership .qh-portrait {
+  width: clamp(6rem, 12vw, 9rem);
+  min-height: 6rem;
+  aspect-ratio: 1;
+}
+.page-about-us .qh-about .qh-about-leadership h2 { margin: 0 0 .5rem; }
+.page-about-us .qh-about .qh-about-leadership .qh-about-note { margin: 0; }
+.page-about-us .qh-about .qh-about-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #C98B9170;
+  background: linear-gradient(120deg, #4A071F99, #10090d);
+}
+.page-about-us .qh-about .qh-about-contact h2 { margin: .5rem 0; }
 @media (max-width: 760px) {
   .page-about-us .qh-about .qh-about-hero { grid-template-columns: 1fr; align-items: start; }
-  .page-about-us .qh-about-hero h1 { max-width: 15ch; }
+  .page-about-us .qh-about-hero h1 { max-width: 24ch; }
+  .page-about-us .qh-about .qh-about-section-head { grid-template-columns: 1fr; align-items: start; }
+  .page-about-us .qh-about .qh-about-contact { grid-template-columns: 1fr; }
+  .page-about-us .qh-about .qh-about-contact .qh-btn { justify-self: start; min-width: 12rem; }
+}
+@media (max-width: 1100px) {
+  .page-about-us .qh-about .qh-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .page-about-us .qh-about .qh-grid { grid-template-columns: 1fr; }
+  .page-about-us .qh-about .qh-portrait { aspect-ratio: 16 / 6; }
+  .page-about-us .qh-about .qh-about-leadership { grid-template-columns: 1fr; }
+  .page-about-us .qh-about .qh-about-leadership > .eyebrow { grid-column: auto; }
+  .page-about-us .qh-about .qh-about-leadership .qh-portrait { width: 6rem; }
 }
 @media (min-width: 1024px) {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }

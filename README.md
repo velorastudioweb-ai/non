@@ -63,9 +63,10 @@ The current desktop design uses cover-style photographic backgrounds. The explic
 `--allow-desktop-cover` option records those crops while keeping mobile/tablet
 full-image checks strict; omit it to require uncropped images on desktop too.
 
-`npm run qa:preserve` compares against the original 37-page pre-optimization
-snapshot. Later intentional content/navigation additions need their own named
-snapshot, kept separately from that historical baseline:
+`npm run qa:preserve` compares against the named 45-page About-profile release
+snapshot. The original 37-page pre-optimization snapshot remains preserved as
+`content-baseline.json`. For later intentional content/navigation additions,
+create another named snapshot instead of overwriting either baseline:
 
 ```text
 node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json --baseline
