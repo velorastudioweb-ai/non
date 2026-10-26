@@ -52,7 +52,7 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/montserrat-v31-normal-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/cormorant-garamond-v21-normal-latin.woff2" crossorigin>
-${hero ? `<link rel="preload" as="image" href="/hero-banner.webp" imagesrcset="${esc(hero.srcset)}" imagesizes="(max-width: 1023px) min(100vw, 720px), 100vw" fetchpriority="high">` : ''}
+${hero ? `<link rel="preload" as="image" href="/hero-banner.webp" imagesrcset="${esc(hero.srcset)}" imagesizes="100vw" fetchpriority="high">` : ''}
 ${componentStyles}
 <link rel="stylesheet" href="${assets.href('site.css')}">
 
@@ -151,10 +151,10 @@ ${site.footerLegal.map((i) => `<a href="${i.href}">${esc(i.label)}</a>`).join('\
 /* ---------- PAGE BANNER ---------- */
 function pageBanner(page, site) {
   const bannerImage = page.bannerImage
-    ? responsiveMarkup(`<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`, '(max-width: 1023px) min(100vw, 720px), 100vw')
+    ? responsiveMarkup(`<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`, '100vw')
     : picture(bannerFor(page), {
         className: 'page-banner__image',
-        sizes: '(max-width: 1023px) min(100vw, 720px), 100vw',
+        sizes: '100vw',
         variant: 'banner',
         alt: '',
         eager: true
@@ -438,7 +438,7 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high">', '(max-width: 1023px) min(100vw, 720px), 100vw')}</div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high">', '100vw')}</div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>

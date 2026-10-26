@@ -29,6 +29,56 @@ See `docs/website-restructure.md` for the retained routes and consolidation repo
 The complete PDF extraction and pre-deletion ZIP backup are kept locally in
 `docs/restructure-audit/`; large audit artifacts are excluded from Git.
 
+## Performance build and responsive verification
+
+Install build/QA tools with `npm ci`. The production site remains static HTML,
+CSS and JavaScript with no client framework or runtime dependencies. The build
+minifies and content-hashes CSS/JS, loads optional component styles only where
+needed, and serves the existing font families locally with WOFF2 and font-display
+swap. Edit the readable files under `public/assets/`; rebuild `dist/` afterwards.
+
+Root artwork stays intact. Run `python build/responsive-images.py` (Pillow) after
+replacing a source WebP to regenerate uncropped responsive variants and their
+source-hash manifest. Normal production builds validate that manifest without
+requiring Python. Font preparation is reproducible with `node build/vendor-fonts.mjs`;
+normal builds do not contact Google Fonts.
+
+```text
+npm run qa
+npm run qa:responsive -- --allow-desktop-cover
+npm run qa:interactions
+node build/lighthouse-audit.mjs --base https://quantumhealth-website.vercel.app --label live
+node build/deployment-qa.js https://quantumhealth-website.vercel.app --site-url https://quantumhealth-website.vercel.app
+```
+
+Interaction checks default to `http://localhost:8100`; start
+`node build/serve.js --port 8100` or pass `--base` with a deployed URL.
+Responsive checks cover every registered page at 320, 375, 390, 430, 768, 1024,
+1440 and 1920 pixels, including native lazy image loading and real banner geometry.
+Local responsive runs serve a private frozen snapshot so concurrent rebuilds
+cannot cause false missing-asset errors. Screenshots and JSON results go under
+`docs/performance-audit/`.
+
+The current desktop design uses cover-style photographic backgrounds. The explicit
+`--allow-desktop-cover` option records those crops while keeping mobile/tablet
+full-image checks strict; omit it to require uncropped images on desktop too.
+
+`npm run qa:preserve` compares against the original 37-page pre-optimization
+snapshot. Later intentional content/navigation additions need their own named
+snapshot, kept separately from that historical baseline:
+
+```text
+node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json --baseline
+node build/performance-retention-qa.js --snapshot docs/performance-audit/release-content.json
+```
+
+Snapshots cannot be silently overwritten. The deployment checker permits only an
+explicit `--site-url` substitution matching Vercel's configured `SITE_URL` and
+normalizes line endings; every other HTML difference is checked. Image/font/data
+assets are compared byte-for-byte, and immutable-cache headers and redirects are
+verified. Performance reports are lab measurements; TBT and observed event timings
+are not field INP.
+
 ## Image library and visual audit
 
 `build/visual-plan.js` explicitly maps topic routes and visual placements.

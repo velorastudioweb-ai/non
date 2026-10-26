@@ -3,35 +3,36 @@
 // its loaded image, uncropped geometry, text separation and horizontal bounds.
 const fs = require('fs');
 const path = require('path');
-const { spawn } = require('child_process');
+const { startAuditServer } = require('./audit-server');
 const { chromium } = require('playwright-core');
 const { allPages } = require('./structure');
 const ROOT = path.resolve(__dirname, '..');
 const args = process.argv.slice(2);
 const baseline = args.includes('--baseline');
+// The current desktop design deliberately uses cover on photographic banners.
+// Opt in to that treatment explicitly; mobile/tablet must always remain uncropped.
+const allowDesktopCover = args.includes('--allow-desktop-cover');
 const arg = name => args.includes(name) ? args[args.indexOf(name) + 1] : null;
-const base = arg('--base') || 'http://127.0.0.1:8099';
+let base = arg('--base');
 const label = arg('--label') || (baseline ? 'before' : 'after');
 const out = path.join(ROOT, 'docs/performance-audit', label);
 const widths = arg('--widths') ? arg('--widths').split(',').map(Number) : baseline ? [390, 1440] : [320, 375, 390, 430, 768, 1024, 1440, 1920];
 const heights = { 320: 568, 375: 812, 390: 844, 430: 932, 768: 1024, 1024: 768, 1440: 900, 1920: 1080 };
 const routes = args.includes('--quick') || baseline
-  ? ['/', '/surgical-breast-enlargement/', '/breast-implants/', '/non-surgical-breast-enlargement/']
+  ? ['/', '/surgical-breast-enlargement/', '/breast-implants/', '/non-surgical-breast-enlargement/', '/doctors/dr-vikas-singh/']
   : [...allPages.map(p => p.url), '/404.html'];
 
 async function main() {
   fs.mkdirSync(out, { recursive: true });
-  let server;
-  try { await fetch(base); } catch {
-    if (arg('--base')) throw new Error('Cannot reach ' + base);
-    server = spawn(process.execPath, ['build/serve.js', '--port', '8099'], { cwd: ROOT, stdio: 'ignore' });
-    for (let i = 0; i < 50; i++) {
-      await new Promise(r => setTimeout(r, 100));
-      try { await fetch(base); break; } catch { if (i === 49) throw new Error('Server did not start'); }
-    }
-  }
+  const server = await startAuditServer(base);
+  base = server.base;
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   const results = [], problems = [];
+  const writeReport = () => {
+    const desktopCrops = results.filter(r => r.width >= 1024 && r.banners.some(b => !b.uncropped)).map(r => ({ route: r.route, width: r.width }));
+    fs.writeFileSync(path.join(out, 'results.json'), JSON.stringify({ base, label, allowDesktopCover, checks: results.length, desktopCrops, problems, results }, null, 2));
+    return desktopCrops;
+  };
   try {
     for (const width of widths) {
       const context = await browser.newContext({ viewport: { width, height: heights[width] }, deviceScaleFactor: Number(arg('--dpr') || 1), isMobile: width < 768, hasTouch: width < 1024 });
@@ -92,19 +93,21 @@ async function main() {
         const entry = { route, width, status, errors: [...errors], ...metrics };
         results.push(entry);
         if (!baseline && (errors.length || metrics.overflow > 1 || metrics.broken.length || metrics.outside.length ||
-          metrics.banners.some(b => !b.loaded || !b.uncropped || (width < 1024 && !b.separate) || b.loading === 'lazy') ||
+          metrics.banners.some(b => !b.loaded || (!b.uncropped && (!allowDesktopCover || width < 1024)) || (width < 1024 && !b.separate) || b.loading === 'lazy') ||
           status !== (route === '/404.html' ? 404 : 200))) problems.push(entry);
       }
       await context.close();
+      writeReport();
       console.log(`Checked ${routes.length} pages at ${width}px`);
     }
-    fs.writeFileSync(path.join(out, 'results.json'), JSON.stringify({ base, label, checks: results.length, problems, results }, null, 2));
+    const desktopCrops = writeReport();
+    if (allowDesktopCover) console.log('Desktop cover crops recorded: ' + desktopCrops.length + '; mobile/tablet full-image checks remain strict.');
     console.log(`${baseline ? 'Baseline captured' : problems.length ? 'FAIL' : 'PASS'}: ${results.length} page/viewport renders; ${problems.length} failing renders.`);
     if (problems.length) console.log(problems.map(p => ({ route: p.route, width: p.width, outside: p.outside, errors: p.errors, broken: p.broken, banners: p.banners })).slice(0, 10));
     if (problems.length) process.exitCode = 1;
   } finally {
     await browser.close();
-    if (server) server.kill();
+    await server.close();
   }
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

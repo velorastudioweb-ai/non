@@ -8,7 +8,10 @@ const { chromium } = require('playwright-core');
 const { allPages } = require('./structure');
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'docs/performance-audit');
-const file = path.join(OUT, 'content-baseline.json');
+// Keep the original optimization baseline. For intentionally authored content
+// changes, select a separate snapshot explicitly instead of overwriting history.
+const snapshotArg = process.argv.indexOf('--snapshot');
+const file = snapshotArg < 0 ? path.join(OUT, 'content-baseline.json') : path.resolve(ROOT, process.argv[snapshotArg + 1]);
 
 (async () => {
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
@@ -34,7 +37,7 @@ const file = path.join(OUT, 'content-baseline.json');
     } else {
       const baseline = JSON.parse(fs.readFileSync(file, 'utf8'));
       assert.deepEqual(result, baseline);
-      console.log('PASS: all 37 pages retain their text, links, images, titles, metadata and structured data.');
+      console.log('PASS: all ' + Object.keys(result).length + ' pages retain their text, links, images, titles, metadata and structured data.');
     }
   } finally { await browser.close(); }
 })().catch(err => { console.error(err); process.exitCode = 1; });
