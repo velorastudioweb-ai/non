@@ -171,9 +171,9 @@
 <div class="reveal">
 <p class="eyebrow">Message form</p>
 <h2 class="h2">Send a general message</h2>
-<p class="lead" style="margin-top:var(--sp-3)">This form collects only what is needed to reply. Please do not send detailed medical history, symptoms, test results or images. We cannot respond to individual medical questions.</p>
+<p class="lead" style="margin-top:var(--sp-3)">A mobile number is required for this form. Choose Phone or Email as your preferred reply method; if you choose Phone, we may call about your website enquiry. Please do not send detailed medical history, symptoms, test results or images; we cannot respond to individual medical questions.</p>
 <hr class="rule">
-<ul class="stack"><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>We reply by email only.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>We cannot provide medical advice or diagnosis.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>Please do not include personal medical details.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>Messages are handled confidentially.</span></li></ul>
+<ul class="stack"><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>We may call or email about your website enquiry, using your selected contact method.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>We cannot provide medical advice or diagnosis.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>Please do not include personal medical details.</span></li><li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><path d="m5 12.5 4.5 4.5L19 7"/></svg></span><span>Messages are handled confidentially.</span></li></ul>
 <div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)"><picture class="editorial-picture"><source type="image/webp" srcset="/assets/img/qh-website-enquiries-card-480.webp 480w, /assets/img/qh-website-enquiries-card-960.webp 960w, /assets/img/qh-website-enquiries-card-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 46vw"><img class="editorial-image" src="/assets/img/qh-website-enquiries-card.svg" width="1600" height="1100" alt="Educational illustration: website correspondence" loading="lazy" decoding="async"></picture></div>
 </div>
 <div class="reveal" data-delay="1">
@@ -192,36 +192,61 @@
 </div>
 <div class="form-row">
 <div class="field">
-<label for="cf-phone">Phone number <span class="field__hint">(optional)</span></label>
-<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Include your country code" aria-describedby="cf-phone-err">
+<label for="cf-country-code">Country code <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-country-code" name="country_code" autocomplete="tel-country-code" required aria-describedby="cf-country-code-err">
+<option value="+91" selected>India (+91)</option>
+          <option value="+1">United States / Canada (+1)</option>
+          <option value="+44">United Kingdom (+44)</option>
+          <option value="+971">United Arab Emirates (+971)</option>
+          <option value="+61">Australia (+61)</option>
+          <option value="+65">Singapore (+65)</option>
+          <option value="+64">New Zealand (+64)</option>
+          <option value="+27">South Africa (+27)</option>
+          <option value="+353">Ireland (+353)</option>
+          <option value="+49">Germany (+49)</option>
+          <option value="+33">France (+33)</option>
+          <option value="+31">Netherlands (+31)</option>
+          <option value="+966">Saudi Arabia (+966)</option>
+          <option value="+974">Qatar (+974)</option>
+          <option value="+973">Bahrain (+973)</option>
+          <option value="+968">Oman (+968)</option>
+          <option value="+965">Kuwait (+965)</option>
+          <option value="+880">Bangladesh (+880)</option>
+          <option value="+92">Pakistan (+92)</option>
+          <option value="+94">Sri Lanka (+94)</option>
+</select>
+<span class="field__error" id="cf-country-code-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-phone">Mobile number <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="Enter number without country code" aria-describedby="cf-phone-hint cf-phone-err">
+<span class="field__hint" id="cf-phone-hint">Required for this form. Choose Phone above if you want a call about your enquiry.</span>
 <span class="field__error" id="cf-phone-err" role="alert"></span>
 </div>
+</div>
+<div class="form-row">
 <div class="field">
 <label for="cf-interest">Area of interest <span class="req" aria-hidden="true">*</span></label>
 <select id="cf-interest" name="interest" required aria-describedby="cf-interest-err">
 <option value="">Please choose…</option>
-<option value="Content correction">Content correction</option>
+<option value="General breast-enlargement information">General breast-enlargement information</option>
+          <option value="Surgical options">Surgical options</option>
+          <option value="Non-surgical options">Non-surgical options</option>
+          <option value="Evidence and research">Evidence and research</option>
+          <option value="Safety and risks">Safety and risks</option>
+          <option value="Content correction">Content correction</option>
           <option value="Source or reference suggestion">Source or reference suggestion</option>
-          <option value="General question about the content">General question about the content</option>
+          <option value="General question about this website">General question about this website</option>
           <option value="Other">Other</option>
 </select>
 <span class="field__error" id="cf-interest-err" role="alert"></span>
 </div>
 </div>
-<div class="form-row">
-<div class="field">
-<label for="cf-location">Preferred consultation location</label>
-<input id="cf-location" name="location" type="text" placeholder="To be confirmed by the clinic">
-</div>
-<div class="field">
-<label for="cf-time">Preferred contact time <span class="field__hint">(optional)</span></label>
-<input id="cf-time" name="preferred_time" type="text" placeholder="e.g. weekday mornings">
-</div>
-</div>
 <div class="field">
 <label id="cf-contact-label">Preferred contact method</label>
 <div class="radio-group" role="radiogroup" aria-labelledby="cf-contact-label">
-<label><input type="radio" name="contact_method" value="Email" checked> Email</label>
+<label><input type="radio" name="contact_method" value="Phone" checked> Phone</label>
+        <label><input type="radio" name="contact_method" value="Email"> Email</label>
 </div>
 </div>
 <div class="field">
@@ -234,7 +259,7 @@
 </div>
 <div class="checkbox">
 <input id="cf-consent" name="consent" type="checkbox" required aria-describedby="cf-consent-err">
-<label for="cf-consent">I agree to be contacted about this enquiry and I have read the <a href="/privacy-policy/" style="text-decoration:underline">privacy notice</a>. <span class="req" aria-hidden="true">*</span>
+<label for="cf-consent">I agree to be contacted about this enquiry using my selected contact method and I have read the <a href="/privacy-policy/" style="text-decoration:underline">privacy notice</a>. <span class="req" aria-hidden="true">*</span>
 <span class="field__error" id="cf-consent-err" role="alert"></span>
 </label>
 </div>
@@ -249,11 +274,11 @@
 </div></section>
 <section class="section section--tight"><div class="container"><div class="notice  reveal">
 <span class="notice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.6h.01"/></svg></span>
-<div><h3>This is not a clinic</h3><p>No doctor, clinic, medical team or physical address is presented on this website because none has been verified. Submitting a message does not create a doctor–patient relationship and does not commit you to any treatment.</p></div>
+<div><h3>This is not a clinic</h3><p>No doctor, clinic, medical team or physical address is presented on this website because none has been verified. Phone follow-up is only about your website enquiry. Submitting a message does not create a doctor–patient relationship and does not commit you to any treatment.</p></div>
   </div></div></section>
 <section class="section section--tight"><div class="container"><div class="notice  reveal">
 <span class="notice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" ><rect x="3.5" y="6" width="17" height="12" rx="1.5"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg></span>
-<div><h3>Prefer to email us directly?</h3><p>Write to <a href="mailto:enquiries@nonsurgicalbreastenlargement.in">enquiries@nonsurgicalbreastenlargement.in</a>. This is the only contact channel published on this website.</p></div>
+<div><h3>Prefer to email us directly?</h3><p>To contact us without using the form, write to <a href="mailto:enquiries@nonsurgicalbreastenlargement.in">enquiries@nonsurgicalbreastenlargement.in</a>.</p></div>
   </div></div></section>
 </main>
 <footer class="site-footer">
@@ -308,6 +333,6 @@
 </div>
   </div>
 </footer>
-<script src="/assets/built/main-0d86c50ce4a4.js" defer></script>
+<script src="/assets/built/main-9db7009baaea.js" defer></script>
 </body>
 </html>

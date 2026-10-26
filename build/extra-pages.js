@@ -53,16 +53,21 @@ const contact = {
       type: 'form',
       eyebrow: 'Message form',
       heading: 'Send a general message',
-      lead: 'This form collects only what is needed to reply. Please do not send detailed medical history, symptoms, test results or images. We cannot respond to individual medical questions.',
+      lead: 'A mobile number is required for this form. Choose Phone or Email as your preferred reply method; if you choose Phone, we may call about your website enquiry. Please do not send detailed medical history, symptoms, test results or images; we cannot respond to individual medical questions.',
       interests: [
+        'General breast-enlargement information',
+        'Surgical options',
+        'Non-surgical options',
+        'Evidence and research',
+        'Safety and risks',
         'Content correction',
         'Source or reference suggestion',
-        'General question about the content',
+        'General question about this website',
         'Other'
       ],
-      contactMethods: ['Email'],
+      contactMethods: ['Phone', 'Email'],
       points: [
-        'We reply by email only.',
+        'We may call or email about your website enquiry, using your selected contact method.',
         'We cannot provide medical advice or diagnosis.',
         'Please do not include personal medical details.',
         'Messages are handled confidentially.'
@@ -75,13 +80,13 @@ const contact = {
       type: 'notice',
       icon: 'info',
       title: 'This is not a clinic',
-      text: 'No doctor, clinic, medical team or physical address is presented on this website because none has been verified. Submitting a message does not create a doctor–patient relationship and does not commit you to any treatment.'
+      text: 'No doctor, clinic, medical team or physical address is presented on this website because none has been verified. Phone follow-up is only about your website enquiry. Submitting a message does not create a doctor–patient relationship and does not commit you to any treatment.'
     },
     {
       type: 'notice',
       icon: 'mail',
       title: 'Prefer to email us directly?',
-      text: 'Write to <a href="mailto:' + site.contact.email + '">' + site.contact.email + '</a>. This is the only contact channel published on this website.'
+      text: 'To contact us without using the form, write to <a href="mailto:' + site.contact.email + '">' + site.contact.email + '</a>.'
     }
   ]
 };
@@ -94,8 +99,8 @@ const legal = [
     lead: 'How personal information submitted through this website is handled.',
     html:
       '<h2 class="h3">Who we are</h2><p>This website is an independent, educational publication about breast enlargement. It is not a clinic and does not provide medical services. This policy explains how the limited personal information collected through this website is handled.</p>' +
-      '<h2 class="h3">Information we collect</h2><p>If you use the contact form, we collect the information you choose to provide — such as your name, email address and message. Please do not submit detailed medical information, symptoms, test results or images; the form is not designed to receive them and we cannot act on them.</p>' +
-      '<h2 class="h3">How we use it</h2><p>Contact information is used only to read and, where appropriate, reply to your message. It is not sold, and it is not used for marketing. [To be completed: retention periods, legal basis, and any third-party processors used to deliver the form, as applicable to the publisher.]</p>' +
+      '<h2 class="h3">Information we collect</h2><p>If you use the contact form, we collect your name, email address, required mobile number and country calling code, area of interest, preferred contact method, and message. Please do not submit detailed medical information, symptoms, test results or images; the form is not designed to receive them and we cannot act on them.</p>' +
+      '<h2 class="h3">How we use it</h2><p>Contact information is used only to read and reply to your website enquiry using your selected contact method. If you select Phone, we may call the mobile number you provided about that enquiry; if you select Email, we will reply by email. It is not sold or used for marketing. [To be completed: retention periods, legal basis, and any third-party processors used to deliver the form, as applicable to the publisher.]</p>' +
       '<h2 class="h3">Your choices</h2><p>You may request access to, correction of, or deletion of the personal information you have submitted. [To be completed with the publisher’s contact point and jurisdiction-specific rights.]</p>' +
       '<h2 class="h3">Cookies and analytics</h2><p>Where analytics, advertising pixels or embedded third-party media are used, they are activated only after the required consent is obtained. [To be completed once the website’s tooling is confirmed.]</p>'
   }),

@@ -341,6 +341,15 @@ ${b.text ? `<p>${esc(b.text)}</p>` : ''}
 function renderForm(b, site) {
   const interests = (b.interests || []).map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
   const contacts = (b.contactMethods || ['Phone', 'Email']).map((m, i) => `<label><input type="radio" name="contact_method" value="${esc(m)}"${i === 0 ? ' checked' : ''}> ${esc(m)}</label>`).join('\n        ');
+  const countryCodes = [
+    ['+91', 'India (+91)'], ['+1', 'United States / Canada (+1)'], ['+44', 'United Kingdom (+44)'],
+    ['+971', 'United Arab Emirates (+971)'], ['+61', 'Australia (+61)'], ['+65', 'Singapore (+65)'],
+    ['+64', 'New Zealand (+64)'], ['+27', 'South Africa (+27)'], ['+353', 'Ireland (+353)'],
+    ['+49', 'Germany (+49)'], ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'],
+    ['+966', 'Saudi Arabia (+966)'], ['+974', 'Qatar (+974)'], ['+973', 'Bahrain (+973)'],
+    ['+968', 'Oman (+968)'], ['+965', 'Kuwait (+965)'], ['+880', 'Bangladesh (+880)'],
+    ['+92', 'Pakistan (+92)'], ['+94', 'Sri Lanka (+94)']
+  ].map(([code, label]) => `<option value="${esc(code)}"${code === '+91' ? ' selected' : ''}>${esc(label)}</option>`).join('\n          ');
   const sidebar = b.points ? `<ul class="stack">${b.points.map((p) => `<li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none">${icon('check')}</span><span>${esc(p)}</span></li>`).join('')}</ul>` : '';
   return `<div class="container">
   <div class="split" style="align-items:start">
@@ -368,10 +377,20 @@ ${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${
 </div>
 <div class="form-row">
 <div class="field">
-<label for="cf-phone">Phone number <span class="field__hint">(optional)</span></label>
-<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Include your country code" aria-describedby="cf-phone-err">
+<label for="cf-country-code">Country code <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-country-code" name="country_code" autocomplete="tel-country-code" required aria-describedby="cf-country-code-err">
+${countryCodes}
+</select>
+<span class="field__error" id="cf-country-code-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-phone">Mobile number <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="Enter number without country code" aria-describedby="cf-phone-hint cf-phone-err">
+<span class="field__hint" id="cf-phone-hint">Required for this form. Choose Phone above if you want a call about your enquiry.</span>
 <span class="field__error" id="cf-phone-err" role="alert"></span>
 </div>
+</div>
+<div class="form-row">
 <div class="field">
 <label for="cf-interest">Area of interest <span class="req" aria-hidden="true">*</span></label>
 <select id="cf-interest" name="interest" required aria-describedby="cf-interest-err">
@@ -379,16 +398,6 @@ ${b.slot ? `<div class="media-frame ratio-4-3" style="margin-top:var(--sp-4)">${
 ${interests}
 </select>
 <span class="field__error" id="cf-interest-err" role="alert"></span>
-</div>
-</div>
-<div class="form-row">
-<div class="field">
-<label for="cf-location">Preferred consultation location</label>
-<input id="cf-location" name="location" type="text" placeholder="To be confirmed by the clinic">
-</div>
-<div class="field">
-<label for="cf-time">Preferred contact time <span class="field__hint">(optional)</span></label>
-<input id="cf-time" name="preferred_time" type="text" placeholder="e.g. weekday mornings">
 </div>
 </div>
 <div class="field">
@@ -407,7 +416,7 @@ ${contacts}
 </div>
 <div class="checkbox">
 <input id="cf-consent" name="consent" type="checkbox" required aria-describedby="cf-consent-err">
-<label for="cf-consent">I agree to be contacted about this enquiry and I have read the <a href="${site.base}privacy-policy/" style="text-decoration:underline">privacy notice</a>. <span class="req" aria-hidden="true">*</span>
+<label for="cf-consent">I agree to be contacted about this enquiry using my selected contact method and I have read the <a href="${site.base}privacy-policy/" style="text-decoration:underline">privacy notice</a>. <span class="req" aria-hidden="true">*</span>
 <span class="field__error" id="cf-consent-err" role="alert"></span>
 </label>
 </div>

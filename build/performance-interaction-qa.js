@@ -78,12 +78,18 @@ const ROOT = path.resolve(__dirname, '..');
       const form = page.locator('[data-consult-form]');
       // Exercise the existing unconfigured-endpoint feedback, never send a lead.
       assert.equal(await form.getAttribute('data-endpoint'), '');
+      assert.notEqual(await page.locator('#cf-country-code').getAttribute('required'), null);
+      assert.notEqual(await page.locator('#cf-phone').getAttribute('required'), null);
       await form.locator('[type="submit"]').click();
       assert(await page.locator('.field--error').count() > 0);
+      assert.equal(await page.locator('#cf-phone').getAttribute('aria-invalid'), 'true');
       await page.locator('#cf-name').fill('Layout QA');
       await page.locator('#cf-email').fill('layout-qa@example.com');
+      await page.locator('#cf-country-code').selectOption('+91');
+      await page.locator('#cf-phone').fill('9876543210');
       await page.locator('#cf-interest').selectOption({ index: 1 });
       await page.locator('#cf-consent').check();
+      assert.equal(await page.locator('.field--error').count(), 0);
       await form.locator('[type="submit"]').click();
       const feedback = await page.locator('[data-status]').innerText();
       assert(/not.*sent|not.*connected|not.*configured/i.test(feedback), feedback);

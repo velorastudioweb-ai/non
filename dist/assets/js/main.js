@@ -252,7 +252,13 @@
  var validators = {
  name: function (v){ return v.trim().length >= 2 || 'Please enter your full name.'; },
  email: function (v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) || 'Please enter a valid email address.'; },
- phone: function (v){ return v.trim() === '' || v.replace(/[^\d]/g,'').length >= 7 || 'Please enter a valid phone number.'; },
+  country_code: function (v){ return v !== '' || 'Please choose your country calling code.'; },
+  phone: function (v){
+   var digits = v.replace(/[^\d]/g,'').length;
+   var code = $('[name="country_code"]',form);
+   var fullDigits = ((code ? code.value : '') + v).replace(/[^\d]/g,'').length;
+   return (digits >= 7 && digits <= 15 && fullDigits <= 15) || 'Please enter a valid mobile number for the selected country code.';
+  },
  interest: function (v){ return v !== '' || 'Please choose an area of interest.'; },
  consent: function (v){ return v === true || v === 'on' || 'Please confirm you agree to be contacted.'; }
  };
@@ -300,9 +306,9 @@
  if (hp && hp.value.trim() !== ''){ setStatus('ok','Thank you — your enquiry has been received.'); form.reset(); return; }
   if (!endpoint){
   // No delivery service configured — do NOT fake success.
-  setStatus('err',
-  'Thank you. This enquiry form is still being finalised,so your message has not been sent yet. ' +
-  'Please contact the clinic directly by phone or email and the team will assist you.');
+   setStatus('err',
+   'This message form is not connected yet, so your enquiry has not been sent. ' +
+   'Please email enquiries@nonsurgicalbreastenlargement.in instead.');
   return;
   }
  var data = new FormData(form);
@@ -312,11 +318,12 @@
  fetch(endpoint,{ method: 'POST',body: data,headers: { Accept: 'application/json' } })
  .then(function (r){ return r.ok ? r : Promise.reject(r.status); })
  .then(function (){
- setStatus('ok','Thank you — your consultation request has been received. The clinic team will respond using your preferred contact method.');
+  var preferredContact = $('[name="contact_method"]:checked',form);
+  setStatus('ok','Thank you — your website enquiry has been received. We will follow up by ' + (preferredContact ? preferredContact.value.toLowerCase() : 'your selected contact method') + '.');
  form.reset();
  })
  .catch(function (){
- setStatus('err','We could not send your request right now. Please try again,or contact the clinic directly by phone or email.');
+  setStatus('err','We could not send your enquiry right now. Please try again or email enquiries@nonsurgicalbreastenlargement.in.');
  })
  .then(function (){
  submitBtn.classList.remove('is-loading');

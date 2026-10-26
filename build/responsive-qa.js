@@ -411,10 +411,12 @@ async function runInteractions(browser, PORT) {
       for (const inp of inputs) {
         const tag = await inp.evaluate((el) => el.tagName.toLowerCase() + ':' + (el.type || ''));
         if (tag.startsWith('input:text') || tag === 'input:tel' || tag === 'input:email') {
-          const v = tag === 'input:email' ? 'qa@example.com' : (tag === 'input:tel' ? '+91 90000 00000' : 'Responsive QA Test');
+          const v = tag === 'input:email' ? 'qa@example.com' : (tag === 'input:tel' ? '9000000000' : 'Responsive QA Test');
           await inp.fill(v).catch(() => {});
         }
       }
+      await form.locator('#cf-country-code').selectOption('+91').catch(() => {});
+      await form.locator('#cf-interest').selectOption({ index: 1 }).catch(() => {});
       const consent = form.locator('input[type="checkbox"]');
       if (await consent.count()) await consent.first().check().catch(() => {});
       await form.locator('[type="submit"]').click();

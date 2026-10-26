@@ -118,7 +118,6 @@ const home = {
         { label: 'Read the evidence guide', href: '/breast-enlargement-without-surgery/', style: 'primary' },
         { label: 'Explore treatments', href: '#treatments', style: 'outline' }
       ],
-      note: 'This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.',
       slot: 'Hero portrait'
     },
     {

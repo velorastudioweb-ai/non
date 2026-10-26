@@ -43,7 +43,17 @@ for (const phrase of [
 assert(aboutHtml.includes('does not provide treatment or medical consultations'), 'About must align with the educational-site purpose');
 assert(aboutHtml.includes('not been independently verified'), 'Profile-listed details must not be presented as verified facts');
 assert(aboutHtml.includes('does not represent or endorse the clinicians listed'), 'Doctor links must be framed as non-endorsing references');
-assert(!html('/').includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
+const homeHtml = html('/');
+assert(!homeHtml.includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
+assert(!homeHtml.includes('This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.'), 'Removed hero note remains on the homepage');
+const contactHtml = html('/contact/');
+assert(contactHtml.includes('id="cf-country-code" name="country_code" autocomplete="tel-country-code" required'), 'Contact form must require a country calling code');
+assert(contactHtml.includes('id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required'), 'Contact form must require a mobile number');
+for (const interest of ['General breast-enlargement information', 'Surgical options', 'Non-surgical options', 'Evidence and research', 'Safety and risks', 'Content correction', 'Source or reference suggestion', 'General question about this website', 'Other']) {
+  assert(contactHtml.includes('>' + interest + '</option>'), 'Contact interest option missing: ' + interest);
+}
+assert(contactHtml.includes('Phone follow-up is only about your website enquiry'), 'Contact page must limit phone follow-up to website enquiries');
+assert(!contactHtml.includes('Preferred consultation location') && !contactHtml.includes('To be confirmed by the clinic'), 'Clinic-specific location fields must not appear on the education-site contact form');
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');
