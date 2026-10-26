@@ -269,16 +269,23 @@ function extractQuantumBody(page) {
 }
 const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/doctors/'));
 const leadershipProfile = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/leadership/dr-sunitha-devaraj/'));
-doctorDirectory.body = doctorDirectory.body.replace('<header class="qh-hero">', '<header id="our-doctors" class="qh-hero">');
-leadershipProfile.body = leadershipProfile.body.replace('<header class="qh-hero">', '<header id="leadership" class="qh-hero">');
+const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">About Quantum Health</p><h1>Meet the people behind Quantum Health</h1><p>Explore our doctors, their areas of expertise, and the leadership guiding Quantum Health.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
+doctorDirectory.body = doctorDirectory.body
+  .replace(/<header class="qh-hero">[\s\S]*?<\/header>/, aboutHero)
+  .replace('<section><h2>Doctors</h2>', '<section id="our-doctors"><h2>Our Doctors</h2>')
+  .replace(/<section><h2>Executive Leadership<\/h2>[\s\S]*?<\/section>/, '')
+  .replace(/<section><h2>Closing Statement<\/h2>[\s\S]*?<\/section>/, '');
+leadershipProfile.body = leadershipProfile.body.replace(/<header class="qh-hero">[\s\S]*?<\/header>/,
+  '<header id="leadership" class="qh-about-leadership"><p class="eyebrow">Executive Leadership</p><h2>Dr. Sunitha Devaraj</h2><p>Executive Director, Quantum Health</p></header>');
 const about = get('/about-us/');
 about.h1 = 'About Quantum Health';
 about.seoTitle = 'About Quantum Health | Our Doctors and Leadership';
 about.seoDescription = 'Meet the Quantum Health doctors and executive leadership team, explore their areas of expertise, and learn about the organisation.';
-about.bannerEyebrow = 'Aesthetics | Regenerative | Wellness';
+about.bannerEyebrow = 'About Quantum Health';
 about.bannerLead = 'Meet our doctors and leadership team and learn more about Quantum Health.';
+about.showBanner = false;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
-about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh"><div class="qh-wrap">' + doctorDirectory.body + leadershipProfile.body + '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p></div></div>' }];
+about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh qh-about"><div class="qh-wrap">' + doctorDirectory.body + leadershipProfile.body + '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p></div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
 finalHome.schema[0].name = site.name;
 const allPages = [finalHome, ...landings, ...topicPages, about, clone(contact), ...clone(legal), ...doctorProfiles];

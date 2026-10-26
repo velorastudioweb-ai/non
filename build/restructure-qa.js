@@ -17,6 +17,12 @@ assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.t
 const aboutHtml = html('/about-us/');
 assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
 assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership profile');
+for (const phrase of [
+  'AESTHETICS | REGENERATIVE | WELLNESS', 'OUR DOCTORS PANEL',
+  'EXPERTISE. EXPERIENCE. EXCEPTIONAL CARE.', 'LOOK BETTER', 'FEEL SEXIER',
+  'BE MORE CONFIDENT', 'A GLOBAL TEAM FOR A BEAUTIFUL, HEALTHIER YOU',
+  'Beauty • Science • Longevity', 'SCIENCE • ARTISTRY • CARE'
+]) assert(!aboutHtml.includes(phrase), 'Removed About-page campaign copy remains: ' + phrase);
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');

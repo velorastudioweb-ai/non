@@ -111,6 +111,8 @@
 
 /* Keep educational diagrams and supplied artwork intact inside existing cards. */
 .card__media img, .media-frame img { object-fit: contain; }
+/* The three home-page pathway tiles use square artwork in landscape frames. */
+#treatments .card__media img { object-fit: cover; }
 @media (hover: hover) and (pointer: fine) {
   .card:hover .card__media img { transform: none; }
 }
