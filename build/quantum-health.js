@@ -11,7 +11,7 @@ const doctors = [
   { id:'sekhar', name:'Dr. D R Sekhar', designation:'Senior Consultant — Plastic, Aesthetic & Reconstructive Surgery', qualifications:['MBBS','MS (General Surgery)','MCh (Plastic Surgery)'], slug:'dr-dr-sekhar' },
   { id:'nandita', name:'Dr. Nandita', designation:'Oral & Maxillofacial Surgeon', qualifications:['MDS (OMFS)'], slug:'dr-nandita' },
   { id:'alisha', name:'Dr. Alisha Khan', designation:'Aesthetic Healer & Cosmetologist', specialisations:['Aesthetic Treatments | Cosmetology | Skin | Hair | Laser | Wellness | Training & Education'], experience:'Over 10 Years', qualifications:[], slug:'dr-alisha-khan', profile:true }
-].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : null}));
+].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'vikas' ? '/dr-vikas-singh.png' : d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : null}));
 
 const sunitha = {
   name:'DR. SUNITHA DEVARAJ', designation:'EXECUTIVE DIRECTOR — QUANTUM HEALTH',
@@ -117,5 +117,21 @@ const alishaPage = profilePages.find(p => p.url === '/doctors/dr-alisha-khan/');
 if (alishaPage) alishaPage.blocks[0].html = alishaPage.blocks[0].html.replace('<header class="qh-hero">', `<header class="qh-hero">${portrait(doctors.find(d => d.id === 'alisha'), true)}`);
 const surindherPage = profilePages.find(p => p.url === '/doctors/dr-surindher-dsa/');
 if (surindherPage) surindherPage.blocks[0].html = surindherPage.blocks[0].html.replace('<header class="qh-hero">', `<header class="qh-hero">${portrait(doctors.find(d => d.id === 'surindher'), true)}`);
+const vikasPage = profilePages.find(p => p.url === '/doctors/dr-vikas-singh/');
+const vikas = doctors.find(d => d.id === 'vikas');
+const vikasCredentials = section('Degrees & Qualifications', `${list(vikas.qualifications)}<p class="qh-note">The degree list was supplied for this profile and has not been independently verified.</p>`);
+const vikasMemberships = section('Professional Memberships', '<p>Specific professional memberships and current standing have not been supplied for verification. They will be listed here once official membership records are confirmed.</p>');
+const vikasCertifications = section('Certifications', '<p>Specific certification titles, issuing organisations and dates have not been supplied for verification. They will be listed here once original records are confirmed.</p>');
+const vikasAwards = section('Awards & Achievements', '<p>Public profile material describes recognition in cosmetic medicine, aesthetic practice, clinical excellence and leadership. Exact award titles, issuing bodies and dates will be published only after verification.</p>');
+const vikasMedia = section('Media', '<p><a href="https://drvikassingh.co.in/our-gallery/" target="_blank" rel="noopener noreferrer">View the published media gallery</a></p>');
+const vikasBlogs = section('Blogs', '<p><a href="https://drvikassingh.co.in/blog/" target="_blank" rel="noopener noreferrer">Read published blog articles</a></p>');
+const vikasSocial = section('Social Profiles', '<p><a href="https://www.instagram.com/drvikassingh/" target="_blank" rel="noopener noreferrer">Instagram</a></p><p>Facebook and YouTube profile links will be added when verified official URLs are provided.</p>');
+if (vikasPage) {
+  vikasPage.blocks[0].html = vikasPage.blocks[0].html
+    .replace('<div class="qh-portrait" role="img" aria-label="Approved professional portrait of Dr. Vikas Singh pending">Approved professional portrait pending — provide an authentic, approved image</div>', `<img src="${esc(vikas.portrait)}" alt="Portrait of Dr. Vikas Singh" style="display:block;width:100%;min-height:340px;aspect-ratio:4/5;object-fit:cover;object-position:center;border:1px solid #C98B9170">`)
+    .replace(/<section><h2>Previously Supplied Professional Specialisations<\/h2>[\s\S]*?<\/section><section><h2>Previously Supplied Qualifications<\/h2>[\s\S]*?<\/section>(?=<section><h2>Professional Profile at a Glance)/, `${vikasCredentials}${vikasMemberships}${vikasCertifications}`)
+    .replace(/<section><h2>Awards, Achievements and Professional Affiliations<\/h2>[\s\S]*?<\/section>(?=<section><h2>Professional Philosophy)/, vikasAwards)
+    .replace('<section><h2>Professional Philosophy</h2>', `${vikasMedia}${vikasBlogs}${vikasSocial}<section><h2>Professional Philosophy</h2>`);
+}
 const pages=[page('/doctors/','OUR DOCTORS PANEL','Meet the Quantum Health doctors and executive leadership team.',directoryBody),...profilePages,page('/leadership/dr-sunitha-devaraj/','Dr. Sunitha Devaraj — Executive Director','Executive Director of Quantum Health: nutrition, aesthetics, regenerative medicine and longevity.',sunithaBody)];
 module.exports={doctors,sunitha,alisha,vikasProfile,pages};
