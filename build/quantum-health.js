@@ -11,7 +11,7 @@ const doctors = [
   { id:'sekhar', name:'Dr. D R Sekhar', designation:'Senior Consultant — Plastic, Aesthetic & Reconstructive Surgery', qualifications:['MBBS','MS (General Surgery)','MCh (Plastic Surgery)'], slug:'dr-dr-sekhar' },
   { id:'nandita', name:'Dr. Nandita', designation:'Oral & Maxillofacial Surgeon', qualifications:['MDS (OMFS)'], slug:'dr-nandita' },
   { id:'alisha', name:'Dr. Alisha Khan', designation:'Aesthetic Healer & Cosmetologist', specialisations:['Aesthetic Treatments | Cosmetology | Skin | Hair | Laser | Wellness | Training & Education'], experience:'Over 10 Years', qualifications:[], slug:'dr-alisha-khan', profile:true }
-].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'vikas' ? '/dr-vikas-singh.png' : d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : null}));
+].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'vikas' ? '/dr-vikas-singh.png' : d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : d.id === 'amod' ? '/dr-amod-rao.png' : null}));
 
 const sunitha = {
   name:'DR. SUNITHA DEVARAJ', designation:'EXECUTIVE DIRECTOR — QUANTUM HEALTH',
@@ -116,7 +116,9 @@ const profilePages=doctors.map(d=>{let body=d.id==='vikas'?vikasBody():d.profile
 const alishaPage = profilePages.find(p => p.url === '/doctors/dr-alisha-khan/');
 if (alishaPage) alishaPage.blocks[0].html = alishaPage.blocks[0].html.replace('<header class="qh-hero">', `<header class="qh-hero">${portrait(doctors.find(d => d.id === 'alisha'), true)}`);
 const surindherPage = profilePages.find(p => p.url === '/doctors/dr-surindher-dsa/');
-if (surindherPage) surindherPage.blocks[0].html = surindherPage.blocks[0].html.replace('<header class="qh-hero">', `<header class="qh-hero">${portrait(doctors.find(d => d.id === 'surindher'), true)}`);
+if (surindherPage) surindherPage.blocks[0].html = surindherPage.blocks[0].html.replace('<div class="qh-portrait" role="img" aria-label="Professional portrait pending for Dr. Surindher D.S.A">Approved professional portrait pending</div>', portrait(doctors.find(d => d.id === 'surindher'), true));
+const amodPage = profilePages.find(p => p.url === '/doctors/dr-amod-rao/');
+if (amodPage) amodPage.blocks[0].html = amodPage.blocks[0].html.replace('<div class="qh-portrait" role="img" aria-label="Professional portrait pending for Dr. Amod Rao">Approved professional portrait pending</div>', portrait(doctors.find(d => d.id === 'amod'), true));
 const vikasPage = profilePages.find(p => p.url === '/doctors/dr-vikas-singh/');
 const vikas = doctors.find(d => d.id === 'vikas');
 const vikasCredentials = section('Degrees & Qualifications', `${list(vikas.qualifications)}<p class="qh-note">The degree list was supplied for this profile and has not been independently verified.</p>`);
