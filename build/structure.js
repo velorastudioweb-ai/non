@@ -171,8 +171,12 @@ byUrl.set(research.url, research);
 function cards(entries, heading, lead) {
   return { type: 'cards', cols: 3, heading, lead, items: entries.map(([href, title]) => {
     const p = byUrl.get(href);
-    return { title, href, text: p.seoDescription, slot: title,
-      media: href === '/breast-implants/' ? '<img src="/breast-implants-banner.png" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' : undefined };
+    const media = href === '/breast-implants/'
+      ? '<img src="/breast-implants-banner.png" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">'
+      : href === '/surgical/fat-transfer-breast-augmentation/'
+        ? '<img src="/Breast Fat Transfer Medical Infographic.png" alt="Fat transfer breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">'
+        : undefined;
+    return { title, href, text: p.seoDescription, slot: title, media };
   }) };
 }
 function landing(section, title, lead, blocks, slug) {
