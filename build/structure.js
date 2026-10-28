@@ -5,6 +5,7 @@
 const { site, home, pages } = require('./content');
 const { libraryPages } = require('./library');
 const { articles } = require('./blog');
+const publishedBlogs = require('./published-blogs');
 const { contact, legal } = require('./extra-pages');
 const clone = (value) => JSON.parse(JSON.stringify(value));
 const source = new Map(pages.concat(libraryPages).map((p) => [p.url, p]));
@@ -51,7 +52,6 @@ const education = [
 ];
 const redirects = [
   { from: '/surgical-breast-enhancement/', to: sections[0].href },
-  { from: '/blogs/', to: sections[2].href },
   { from: '/choosing-a-surgeon/', to: '/breast-enlargement-safety/#choosing-a-surgeon' },
   { from: '/breast-enlargement-research/', to: '/research/#pubmed' },
   { from: '/research/breast-enlargement/', to: '/research/#pmc' }
@@ -387,8 +387,10 @@ about.showBanner = false;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
 about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
+const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="" loading="lazy"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · 8 min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
+const blogsIndex = {url:'/blogs/',slug:'blogs',h1:'Breast Enlargement Blogs',showBanner:false,seoTitle:'Breast Enlargement Blogs | Quantum Health',seoDescription:'Evidence-aware breast enlargement education and illustrative patient-perspective articles.',breadcrumb:[{label:'Blogs'}],schema:[{'@context':'https://schema.org','@type':'CollectionPage',name:'Breast Enlargement Blogs',url:site.url+'/blogs/'}],blocks:[{type:'prose',wide:true,html:`<div class="blog-hub"><p class="eyebrow">Independent patient education</p><h1>Breast Enlargement Blogs</h1><p class="lead">Clear, evidence-aware articles about options, safety, recovery and decision-making. Patient-perspective pieces are fictional educational scenarios, never testimonials.</p><div class="blog-tools"><label>Search articles <input id="blog-search" type="search" placeholder="Search by topic or category"></label><div class="blog-tabs" role="tablist"><button type="button" data-blog-filter="All Articles" aria-pressed="true">All Articles</button><button type="button" data-blog-filter="Breast Enlargement Education" aria-pressed="false">Breast Enlargement Education</button><button type="button" data-blog-filter="Patient Perspectives" aria-pressed="false">Patient Perspectives</button></div></div><p id="blog-results" class="blog-meta">${publishedBlogs.articles.length} articles</p><div class="blog-grid" id="blog-grid">${blogCards}</div></div><style>.blog-hub{max-width:1180px;margin:auto}.blog-tools{display:grid;gap:1rem;padding:1.2rem;margin:2rem 0;background:#fff7f8;border:1px solid #e8cdd1}.blog-tools input{width:100%;padding:.8rem;margin-top:.4rem;border:1px solid #8b5260}.blog-tabs{display:flex;gap:.5rem;flex-wrap:wrap}.blog-tabs button{padding:.65rem .9rem;border:1px solid #751e35;background:#fff;color:#4a071f;cursor:pointer}.blog-tabs button[aria-pressed="true"]{background:#751e35;color:#fff}.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}.blog-card{border:1px solid #e8cdd1;background:#fff;overflow:hidden}.blog-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.blog-card>div{padding:1.2rem}.blog-card h2{font-size:1.45rem}.blog-card h2 a{color:#4a071f}.blog-meta{font-size:.9rem;color:#6d5360}@media(max-width:800px){.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.blog-grid{grid-template-columns:1fr}}</style><script>(function(){var q=document.getElementById('blog-search'),cards=[].slice.call(document.querySelectorAll('.blog-card')),buttons=[].slice.call(document.querySelectorAll('[data-blog-filter]')),out=document.getElementById('blog-results'),category='All Articles';function go(){var term=q.value.toLowerCase().trim(),shown=0;cards.forEach(function(c){var ok=(category==='All Articles'||c.dataset.category===category)&&(!term||c.dataset.search.indexOf(term)>-1);c.hidden=!ok;if(ok)shown++});out.textContent=shown+' article'+(shown===1?'':'s')+' found';}q.addEventListener('input',go);buttons.forEach(function(b){b.addEventListener('click',function(){category=b.dataset.blogFilter;buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});go()})})})();</script>`}]};
 finalHome.schema[0].name = site.name;
-const allPages = [finalHome, ...landings, ...topicPages, about, clone(contact), ...clone(legal), ...doctorProfiles];
+const allPages = [finalHome, ...landings, ...topicPages, blogsIndex, ...publishedBlogs.pages, about, clone(contact), ...clone(legal), ...doctorProfiles];
 const finalSite = clone(site);
 const menuLabel = (title) => title.split(':')[0];
 finalSite.nav = [
@@ -398,6 +400,7 @@ finalSite.nav = [
     shortLabel: ['Surgical', 'Non-surgical', 'Education & Research'][i],
     children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
+  { label: 'Blogs', href: '/blogs/' },
   { label: 'About', href: '/about-us/' },
   { label: 'Contact us', href: '/contact/' }
 ];

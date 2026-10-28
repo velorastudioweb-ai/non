@@ -10,7 +10,7 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 9);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'About', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'Blogs', 'About', 'Contact us']);
 assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory and leadership must be consolidated into About');
 assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/about-us/#our-doctors'));
 assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
