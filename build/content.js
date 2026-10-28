@@ -517,7 +517,7 @@ pages.push({
       '<p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individual’s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>' },
     { type: 'cards', alt: true, cols: 3, ratio: 'ratio-3-4', eyebrow: 'Options', heading: 'Surgical pathways',
       items: [
-        { title: 'Breast augmentation', text: 'A personalised approach to increasing breast volume or altering shape using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', slot: 'Breast augmentation imagery' },
+        { title: 'Breast augmentation', text: 'A personalised approach to increasing breast volume or altering shape using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', media: '<img src="/breast-augmentation-implants-fat-transfer.png" alt="Breast augmentation planning" width="1254" height="1254" loading="lazy" decoding="async">' },
         { title: 'Breast implants', text: 'Medical devices with an outer shell and a silicone gel filling — not the same as injectable silicone.', href: '/breast-implants/', slot: 'Implant imagery' },
         { title: 'Fat transfer', text: 'Using your own fat, transferred from a donor area, for a modest and individualised increase in volume.', href: '/surgical/fat-transfer-breast-augmentation/', slot: 'Fat transfer imagery' }
       ]
