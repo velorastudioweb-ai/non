@@ -342,9 +342,9 @@ const implantSafety = {
   bannerEyebrow: 'Safety',
   bannerLead:
     'Most people who have implants are satisfied, but implants have documented risks that do not disappear with time. This page sets out what the evidence and regulators actually say.',
-  bannerImage: '/implants.webp',
-  bannerWidth: 1254,
-  bannerHeight: 1254,
+  bannerImage: '/Breast Implant Safety Infographic.png',
+  bannerWidth: 1536,
+  bannerHeight: 1024,
   breadcrumb: [{ label: 'Safety', href: '/breast-enlargement-safety/' }, { label: 'Breast implant safety' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Implant Safety', url: site.url + '/breast-implant-safety/' }],
   blocks: [

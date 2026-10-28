@@ -173,6 +173,8 @@ function cards(entries, heading, lead) {
     const p = byUrl.get(href);
     const media = href === '/breast-implants/'
       ? '<img src="/breast-implants-banner.png" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">'
+      : href === '/breast-implant-safety/'
+        ? '<img src="/Breast Implant Safety Infographic.png" alt="Breast implant safety" width="1536" height="1024" loading="lazy" decoding="async">'
       : href === '/surgical/fat-transfer-breast-augmentation/'
         ? '<img src="/Breast Fat Transfer Medical Infographic.png" alt="Fat transfer breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">'
         : undefined;
