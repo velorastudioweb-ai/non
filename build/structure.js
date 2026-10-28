@@ -364,7 +364,8 @@ const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
   const qualificationList = qualifications.length
     ? `<ul>${qualifications.map((item) => `<li>${escapeAboutText(item)}</li>`).join('')}</ul>`
     : '<p class="qh-doctor-card__empty">No qualifications are listed in the supplied profile.</p>';
-  return `<article class="qh-card qh-doctor-card"><div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div><h3>${escapeAboutText(doctor.name)}</h3><div class="qh-doctor-card__details"><div><h4>Profile-listed expertise</h4>${expertiseList}</div><div><h4>Profile-listed qualifications</h4>${qualificationList}</div></div><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
+  const portrait = doctor.portrait ? `<img class="qh-doctor-card__image" src="${escapeAboutText(doctor.portrait)}" alt="Portrait of ${escapeAboutText(doctor.name)}" style="display:block;width:100%;height:180px;object-fit:cover;object-position:center;margin-bottom:1rem;border:1px solid #C98B9170">` : `<div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div>`;
+  return `<article class="qh-card qh-doctor-card">${portrait}<h3>${escapeAboutText(doctor.name)}</h3><div class="qh-doctor-card__details"><div><h4>Profile-listed expertise</h4>${expertiseList}</div><div><h4>Profile-listed qualifications</h4>${qualificationList}</div></div><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
 }).join('');
 const aboutBody = `${aboutHero}
   <section id="our-doctors" aria-labelledby="our-doctors-heading">
