@@ -4,6 +4,7 @@ const { keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = re
 const visualPlan = require('./visual-plan');
 const assets = require('./assets');
 const { imageInfo, responsiveMarkup } = require('./responsive-images');
+const { topicImageFor } = require('./site-images');
 /* ---------- tiny helpers ---------- */
 const raw = (s) => s; // trusted authored HTML fragments
 /* Photograph for a content item — or a designed "not published" frame when the
@@ -203,7 +204,7 @@ function renderCards(b) {
   const sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
   const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
-${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${it.media ? responsiveMarkup(it.media, sizes) : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
+ ${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${topicImageFor(it.href) ? responsiveMarkup(`<img src="${topicImageFor(it.href)}" alt="${esc(it.imgAlt || it.title)}" width="1536" height="1024" loading="lazy" decoding="async">`, sizes) : it.media ? responsiveMarkup(it.media, sizes) : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>

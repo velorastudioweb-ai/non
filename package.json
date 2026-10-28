@@ -5,7 +5,7 @@
   "description": "Independent patient-education website about breast enlargement. Builds plain HTML/CSS/JS into dist/ with no runtime dependencies.",
   "scripts": {
     "build": "node build/gen.js",
-    "qa": "node build/gen.js && node build/qa.js && node build/restructure-qa.js",
+    "qa": "node build/gen.js && node build/image-registry-qa.js && node build/qa.js && node build/restructure-qa.js",
     "qa:preserve": "node build/performance-retention-qa.js --snapshot docs/performance-audit/about-doctor-details.json",
     "qa:responsive": "node build/performance-browser-qa.js",
     "qa:interactions": "node build/performance-interaction-qa.js",
