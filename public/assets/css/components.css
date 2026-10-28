@@ -2183,8 +2183,3 @@ button.gallery-item .gallery-item__cap {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
   .header-cta { display: none; }
 }
-/* Shared visual sizing for verified doctor portraits.  `contain` is deliberate:
-   it keeps every supplied face, hairline and shoulders visible. */
-.qh-doctor-card__portrait{width:100%;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#24171C;border:1px solid rgba(216,189,131,.35);margin-bottom:1rem}
-.qh-doctor-card__portrait--leadership{width:min(100%,260px)}
-.qh-doctor-card__portrait .qh-doctor-card__image{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
