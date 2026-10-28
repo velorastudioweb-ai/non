@@ -203,6 +203,9 @@ const landings = [
 landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.webp';
 landings[0].bannerWidth = 1600;
 landings[0].bannerHeight = 600;
+landings[1].bannerImage = '/nonsurgical-breast-enlargement-banner.png';
+landings[1].bannerWidth = 1600;
+landings[1].bannerHeight = 600;
 const topicMembership = new Map();
 [surgical, nonsurgical, education].forEach((entries, i) => entries.forEach(([url]) => topicMembership.set(url, i)));
 topicPages.forEach((p) => {
