@@ -261,7 +261,7 @@ const implants = {
   bannerEyebrow: 'Surgical pathway',
   bannerLead:
     'Breast implants are medical devices placed surgically to increase breast volume. They are the most studied enlargement method — with real complication and revision rates that every patient should understand before deciding.',
-  bannerImage: '/implants.webp',
+  bannerImage: '/breast-implants-banner.png',
   bannerWidth: 1254,
   bannerHeight: 1254,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast implants' }],

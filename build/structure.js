@@ -171,7 +171,8 @@ byUrl.set(research.url, research);
 function cards(entries, heading, lead) {
   return { type: 'cards', cols: 3, heading, lead, items: entries.map(([href, title]) => {
     const p = byUrl.get(href);
-    return { title, href, text: p.seoDescription, slot: title };
+    return { title, href, text: p.seoDescription, slot: title,
+      media: href === '/breast-implants/' ? '<img src="/breast-implants-banner.png" alt="Breast implants" width="1254" height="1254" loading="lazy" decoding="async">' : undefined };
   }) };
 }
 function landing(section, title, lead, blocks, slug) {
