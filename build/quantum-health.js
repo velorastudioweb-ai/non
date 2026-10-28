@@ -11,7 +11,7 @@ const doctors = [
   { id:'sekhar', name:'Dr. D R Sekhar', designation:'Senior Consultant — Plastic, Aesthetic & Reconstructive Surgery', qualifications:['MBBS','MS (General Surgery)','MCh (Plastic Surgery)'], slug:'dr-dr-sekhar' },
   { id:'nandita', name:'Dr. Nandita', designation:'Oral & Maxillofacial Surgeon', qualifications:['MDS (OMFS)'], slug:'dr-nandita' },
   { id:'alisha', name:'Dr. Alisha Khan', designation:'Aesthetic Healer & Cosmetologist', specialisations:['Aesthetic Treatments | Cosmetology | Skin | Hair | Laser | Wellness | Training & Education'], experience:'Over 10 Years', qualifications:[], slug:'dr-alisha-khan', profile:true }
-].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'vikas' ? '/dr-vikas-singh.png' : d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : d.id === 'amod' ? '/dr-amod-rao.png' : d.id === 'arivazhagan' ? '/dr-arivazhagan.png' : null}));
+].map(d => ({...d, profileUrl:'/doctors/'+d.slug+'/', consultationLink:'/contact/', portrait:d.id === 'vikas' ? '/dr-vikas-singh.png' : d.id === 'alisha' ? '/dr-alisha-khan.png' : d.id === 'surindher' ? '/dr-surindher-dsa.png' : d.id === 'amod' ? '/dr-amod-rao.png' : d.id === 'arivazhagan' ? '/dr-arivazhagan.png' : d.id === 'nandita' ? '/dr-nandita.png' : d.id === 'sekhar' ? '/dr-sekhar.png' : d.id === 'subramini' ? '/dr-subramini.png' : null}));
 
 const sunitha = {
   name:'DR. SUNITHA DEVARAJ', designation:'EXECUTIVE DIRECTOR — QUANTUM HEALTH',

@@ -1,0 +1,660 @@
+{
+  "base": "http://127.0.0.1:58696",
+  "label": "vikas-profile",
+  "checks": 20,
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 320,
+            "bottom": 250.046875,
+            "width": 320,
+            "height": 178.65625
+          },
+          "text": {
+            "left": 24,
+            "top": 250.046875,
+            "right": 296,
+            "bottom": 1024.5625,
+            "width": 272,
+            "height": 774.515625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 526.8125,
+            "right": 320,
+            "bottom": 646.8125,
+            "width": 320,
+            "height": 120
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 526.8125,
+            "width": 272,
+            "height": 455.421875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/implants-5c45fc6a5a11-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 727.921875,
+            "right": 320,
+            "bottom": 1047.921875,
+            "width": 320,
+            "height": 320
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 727.921875,
+            "width": 272,
+            "height": 656.53125
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/img/qh-non-surgical-evidence-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 518.953125,
+            "right": 320,
+            "bottom": 646.953125,
+            "width": 320,
+            "height": 128
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 518.953125,
+            "width": 272,
+            "height": 447.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/doctors/dr-vikas-singh/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 375,
+            "bottom": 280.765625,
+            "width": 375,
+            "height": 209.375
+          },
+          "text": {
+            "left": 24,
+            "top": 280.765625,
+            "right": 351,
+            "bottom": 970.328125,
+            "width": 327,
+            "height": 689.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 502.40625,
+            "right": 375,
+            "bottom": 643.03125,
+            "width": 375,
+            "height": 140.625
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 351,
+            "bottom": 502.40625,
+            "width": 327,
+            "height": 431.015625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/implants-5c45fc6a5a11-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 661,
+            "right": 375,
+            "bottom": 1036,
+            "width": 375,
+            "height": 375
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 351,
+            "bottom": 661,
+            "width": 327,
+            "height": 589.609375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/img/qh-non-surgical-evidence-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 474.40625,
+            "right": 375,
+            "bottom": 624.40625,
+            "width": 375,
+            "height": 150
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 351,
+            "bottom": 474.40625,
+            "width": 327,
+            "height": 403.015625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/doctors/dr-vikas-singh/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/hero-banner-7879e6996dde-768.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 744,
+            "bottom": 473.578125,
+            "width": 720,
+            "height": 402.1875
+          },
+          "text": {
+            "left": 24,
+            "top": 473.578125,
+            "right": 744,
+            "bottom": 1032.078125,
+            "width": 720,
+            "height": 558.5
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-768.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 24,
+            "top": 408.15625,
+            "right": 744,
+            "bottom": 678.15625,
+            "width": 720,
+            "height": 270
+          },
+          "text": {
+            "left": 26.046875,
+            "top": 71.390625,
+            "right": 741.9375,
+            "bottom": 408.15625,
+            "width": 715.890625,
+            "height": 336.765625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/responsive/implants-5c45fc6a5a11-768.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 24,
+            "top": 507.3125,
+            "right": 744,
+            "bottom": 1227.3125,
+            "width": 720,
+            "height": 720
+          },
+          "text": {
+            "left": 26.046875,
+            "top": 71.390625,
+            "right": 741.9375,
+            "bottom": 507.3125,
+            "width": 715.890625,
+            "height": 435.921875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/img/qh-non-surgical-evidence-banner-960.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 24,
+            "top": 380.15625,
+            "right": 744,
+            "bottom": 668.15625,
+            "width": 720,
+            "height": 288
+          },
+          "text": {
+            "left": 26.046875,
+            "top": 71.390625,
+            "right": 741.9375,
+            "bottom": 380.15625,
+            "width": 715.890625,
+            "height": 308.765625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/doctors/dr-vikas-singh/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/hero-banner.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 843.84375,
+            "width": 1440,
+            "height": 761.25
+          },
+          "text": {
+            "left": 120,
+            "top": 82.59375,
+            "right": 1320,
+            "bottom": 843.84375,
+            "width": 1200,
+            "height": 761.25
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 690.78125,
+            "width": 1440,
+            "height": 608.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 690.78125,
+            "width": 715.890625,
+            "height": 608.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/implants.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 824.546875,
+            "width": 1440,
+            "height": 741.953125
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 824.546875,
+            "width": 715.890625,
+            "height": 741.953125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:58696/assets/img/qh-non-surgical-evidence-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 662.78125,
+            "width": 1440,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/doctors/dr-vikas-singh/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    }
+  ]
+}

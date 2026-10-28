@@ -1,0 +1,86 @@
+{
+  "base": "http://127.0.0.1:59153",
+  "label": "responsive-interactions-local",
+  "allowDesktopCover": true,
+  "checks": 2,
+  "desktopCrops": [],
+  "problems": [],
+  "results": [
+    {
+      "route": "/book-consultation/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:59153/assets/img/qh-website-enquiries-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 429.015625,
+            "right": 320,
+            "bottom": 557.015625,
+            "width": 320,
+            "height": 128
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 429.015625,
+            "width": 272,
+            "height": 357.625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    },
+    {
+      "route": "/book-consultation/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:59153/assets/img/qh-website-enquiries-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 402.8125,
+            "right": 375,
+            "bottom": 552.8125,
+            "width": 375,
+            "height": 150
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 351,
+            "bottom": 402.8125,
+            "width": 327,
+            "height": 331.421875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 2
+    }
+  ]
+}

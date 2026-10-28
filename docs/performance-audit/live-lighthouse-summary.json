@@ -1,0 +1,4524 @@
+[
+  {
+    "url": "https://quantumhealth-website.vercel.app/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:47:59.326Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 2290.1710000000003,
+    "cls": 0,
+    "tbt": 243.00000000000023,
+    "fcp": 1690.171,
+    "bytes": 404729,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.92,
+        "title": "First Contentful Paint",
+        "value": "1.7 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.93,
+        "title": "Largest Contentful Paint",
+        "value": "2.3 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.78,
+        "title": "Speed Index",
+        "value": "4.2 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.85,
+        "title": "Total Blocking Time",
+        "value": "240 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.37,
+        "title": "Max Potential First Input Delay",
+        "value": "290 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "title": "Time to Interactive",
+        "value": "2.3 s"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-home > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 16421,
+                  "bottom": 16457,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "15 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/dermal-fillers/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/prp/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/breast-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/sculptra-plla/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implants/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/fat-transfer-breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/understanding-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-anatomy/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 141.508
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "title": "Improve image delivery",
+        "value": "Est savings of 109 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-1-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,2,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 2306,
+                  "bottom": 2555,
+                  "left": 25,
+                  "right": 387,
+                  "width": 362,
+                  "height": 249
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/prp-4f0e03d51ff…\" alt=\"Education and Research\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/prp-4f0e03d51ff6-480.webp 480w, /assets/responsive/prp-…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Education and Research"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/prp-4f0e03d51ff6-768.webp",
+              "totalBytes": 78778,
+              "wastedBytes": 53443,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (768x768) for its displayed dimensions (436x436). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 53443
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-2-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,1,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 1747,
+                  "bottom": 1995,
+                  "left": 25,
+                  "right": 387,
+                  "width": 362,
+                  "height": 249
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf…\" alt=\"Non-Surgical Breast Enlargement\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/non-surgical-bf9edbf01ebb-480.webp 480w, /assets/respon…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Non-Surgical Breast Enlargement"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf9edbf01ebb-768.webp",
+              "totalBytes": 61400,
+              "wastedBytes": 41654,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (768x768) for its displayed dimensions (436x436). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 41654
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-3-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 1217,
+                  "bottom": 1466,
+                  "left": 25,
+                  "right": 387,
+                  "width": 362,
+                  "height": 249
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/surgical-e0e945…\" alt=\"Surgical Breast Enlargement\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/surgical-e0e94529e38c-480.webp 480w, /assets/responsive…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Surgical Breast Enlargement"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/surgical-e0e94529e38c-768.webp",
+              "totalBytes": 24080,
+              "wastedBytes": 16336,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (768x768) for its displayed dimensions (436x436). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 16336
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 111433
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "35AED87D37A3A3A020CC6B936E4A51FC": {
+                    "url": "https://quantumhealth-website.vercel.app/",
+                    "navStartToEndTime": 167,
+                    "transferSize": 10258,
+                    "isLongest": true,
+                    "children": {
+                      "11508.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 210,
+                        "transferSize": 13877,
+                        "isLongest": true,
+                        "children": {
+                          "11508.50": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/pinyon-script-v24-normal-latin.woff2",
+                            "navStartToEndTime": 470,
+                            "transferSize": 39226,
+                            "isLongest": true,
+                            "children": {}
+                          },
+                          "11508.37": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/cormorant-garamond-v21-italic-latin.woff2",
+                            "navStartToEndTime": 427,
+                            "transferSize": 39439,
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 470
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 460 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13877,
+              "wastedMs": 150
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:48:13.434Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 586.0145,
+    "cls": 0.05024538429192162,
+    "tbt": 21,
+    "fcp": 446.0145,
+    "bytes": 500796,
+    "findings": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.97,
+        "title": "Max Potential First Input Delay",
+        "value": "90 ms"
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "score": 0.99,
+        "title": "Cumulative Layout Shift",
+        "value": "0.05",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "cumulativeLayoutShiftMainFrame": 0.05024538429192162,
+              "newEngineResult": {
+                "cumulativeLayoutShift": 0.05024538429192162,
+                "cumulativeLayoutShiftMainFrame": 0.05024538429192162
+              },
+              "newEngineResultDiffered": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-home > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 9144,
+                  "bottom": 9181,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "15 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/dermal-fillers/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/prp/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/breast-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/sculptra-plla/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implants/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/fat-transfer-breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/understanding-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-anatomy/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 177.298
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "title": "Improve image delivery",
+        "value": "Est savings of 176 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-6-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,5,SECTION,0,DIV,1,DIV,3,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 3594,
+                  "bottom": 3787,
+                  "left": 989,
+                  "right": 1269,
+                  "width": 280,
+                  "height": 193
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/sculptra-8151bd…\" alt=\"Sculptra and biostimulators\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/sculptra-8151bdedc237-480.webp 480w, /assets/responsive…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Sculptra and biostimulators"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/sculptra-8151bdedc237-480.webp",
+              "totalBytes": 38802,
+              "wastedBytes": 32626,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (193x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 32561
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-7-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,5,SECTION,0,DIV,1,DIV,2,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 3594,
+                  "bottom": 3787,
+                  "left": 683,
+                  "right": 963,
+                  "width": 280,
+                  "height": 193
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/fat-transfer-e6…\" alt=\"Thread-based procedures\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/fat-transfer-e67fc9e51611-480.webp 480w, /assets/respon…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Thread-based procedures"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/fat-transfer-e67fc9e51611-480.webp",
+              "totalBytes": 35772,
+              "wastedBytes": 30019,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (193x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 30019
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-8-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,5,SECTION,0,DIV,1,DIV,0,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 3594,
+                  "bottom": 3787,
+                  "left": 71,
+                  "right": 351,
+                  "width": 280,
+                  "height": 193
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/dermal-fillers-…\" alt=\"Breast dermal fillers\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/dermal-fillers-1d62e177adb8-480.webp 480w, /assets/resp…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Breast dermal fillers"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/dermal-fillers-1d62e177adb8-480.webp",
+              "totalBytes": 34810,
+              "wastedBytes": 29211,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (193x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 29211
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-9-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,2,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 1070,
+                  "bottom": 1333,
+                  "left": 887,
+                  "right": 1269,
+                  "width": 382,
+                  "height": 263
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/prp-4f0e03d51ff…\" alt=\"Education and Research\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/prp-4f0e03d51ff6-480.webp 480w, /assets/responsive/prp-…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Education and Research"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/prp-4f0e03d51ff6-480.webp",
+              "totalBytes": 37666,
+              "wastedBytes": 26390,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (263x263). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 26390
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-10-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,1,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 1070,
+                  "bottom": 1333,
+                  "left": 479,
+                  "right": 861,
+                  "width": 382,
+                  "height": 263
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf…\" alt=\"Non-Surgical Breast Enlargement\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/non-surgical-bf9edbf01ebb-480.webp 480w, /assets/respon…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Non-Surgical Breast Enlargement"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf9edbf01ebb-480.webp",
+              "totalBytes": 31730,
+              "wastedBytes": 22231,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x480) for its displayed dimensions (263x263). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 22231
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,3,DIV,0,IMG",
+                "selector": "main#main > section.hero > div.hero__bg > img",
+                "boundingRect": {
+                  "top": 83,
+                  "bottom": 763,
+                  "left": 0,
+                  "right": 1340,
+                  "width": 1340,
+                  "height": 680
+                },
+                "snippet": "<img src=\"/hero-banner.webp\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" width=\"1599\" height=\"893\" srcset=\"/assets/responsive/hero-banner-7879e6996dde-480.webp 480w, /assets/respons…\" sizes=\"(max-width: 1023px) min(100vw, 720px), 100vw\">",
+                "nodeLabel": "main#main > section.hero > div.hero__bg > img"
+              },
+              "url": "https://quantumhealth-website.vercel.app/hero-banner.webp",
+              "totalBytes": 70094,
+              "wastedBytes": 20869,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1599x893) for its displayed dimensions (1340x748). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 20869
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-11-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,5,SECTION,0,DIV,1,DIV,1,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 3594,
+                  "bottom": 3787,
+                  "left": 377,
+                  "right": 657,
+                  "width": 280,
+                  "height": 193
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/education-resea…\" alt=\"PRP\" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\" srcset=\"/assets/responsive/education-research-49452734319e-480.webp 480w, /assets/…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "PRP"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/education-research-49452734319e-480.webp",
+              "totalBytes": 27398,
+              "wastedBytes": 18687,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (480x320) for its displayed dimensions (280x187). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 18076
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 180033
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "369E1F2916BAFC2A71E5D02DC78B2C5B": {
+                    "url": "https://quantumhealth-website.vercel.app/",
+                    "navStartToEndTime": 117,
+                    "transferSize": 10260,
+                    "isLongest": true,
+                    "children": {
+                      "5724.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 167,
+                        "transferSize": 13878,
+                        "isLongest": true,
+                        "children": {
+                          "5724.50": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/pinyon-script-v24-normal-latin.woff2",
+                            "navStartToEndTime": 456,
+                            "transferSize": 39226,
+                            "isLongest": true,
+                            "children": {}
+                          },
+                          "5724.37": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/cormorant-garamond-v21-italic-latin.woff2",
+                            "navStartToEndTime": 454,
+                            "transferSize": 39439,
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 456
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13878
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:48:26.296Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 1884.7604999999999,
+    "cls": 0,
+    "tbt": 143,
+    "fcp": 1209.7604999999999,
+    "bytes": 197108,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "title": "First Contentful Paint",
+        "value": "1.2 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.98,
+        "title": "Largest Contentful Paint",
+        "value": "1.9 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.81,
+        "title": "Speed Index",
+        "value": "4.0 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.95,
+        "title": "Total Blocking Time",
+        "value": "140 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.44,
+        "title": "Max Potential First Input Delay",
+        "value": "270 ms"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-surgical-breast-enhancement > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 10622,
+                  "bottom": 10657,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "9 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implants/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implant-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/fat-transfer-breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-lift/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-revision/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-filler-removal/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-reduction/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/mastectomy-chest-surgery/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 127.013
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "452799CB7BF0FB0B104284FE0A36B4BA": {
+                    "url": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+                    "navStartToEndTime": 131,
+                    "transferSize": 7953,
+                    "isLongest": true,
+                    "children": {
+                      "3440.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 201,
+                        "transferSize": 13849,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 201
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 70 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13849,
+              "wastedMs": 150
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:48:39.064Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 525.887,
+    "cls": 0,
+    "tbt": 32.99999999999994,
+    "fcp": 375.887,
+    "bytes": 234139,
+    "findings": [
+      {
+        "id": "max-potential-fid",
+        "score": 0.98,
+        "title": "Max Potential First Input Delay",
+        "value": "80 ms"
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-surgical-breast-enhancement > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 6347,
+                  "bottom": 6383,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "9 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implants/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implant-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/fat-transfer-breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-lift/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-revision/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-filler-removal/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-reduction/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/mastectomy-chest-surgery/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 159.563
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "C74B955C2318A9CCFB767CA869CF4761": {
+                    "url": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+                    "navStartToEndTime": 136,
+                    "transferSize": 7954,
+                    "isLongest": true,
+                    "children": {
+                      "12668.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 216,
+                        "transferSize": 13877,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 216
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13877
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/breast-implants/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:48:49.970Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 92,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 2143.992,
+    "cls": 0,
+    "tbt": 252.00000000000023,
+    "fcp": 1269.992,
+    "bytes": 201662,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "title": "First Contentful Paint",
+        "value": "1.3 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.95,
+        "title": "Largest Contentful Paint",
+        "value": "2.1 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.81,
+        "title": "Speed Index",
+        "value": "4.0 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.84,
+        "title": "Total Blocking Time",
+        "value": "250 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.35,
+        "title": "Max Potential First Input Delay",
+        "value": "300 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "title": "Time to Interactive",
+        "value": "2.1 s"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 1059,
+                  "bottom": 1111,
+                  "left": 82,
+                  "right": 363,
+                  "width": 281,
+                  "height": 52
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Not the same as injectable silicone",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-breast-implants > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 8998,
+                  "bottom": 9033,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "6 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implant-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/#choosing-a-surgeon",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 146.427
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "727AB4A68AF27C0C7E41FFBC51890E28": {
+                    "url": "https://quantumhealth-website.vercel.app/breast-implants/",
+                    "navStartToEndTime": 131,
+                    "transferSize": 8194,
+                    "isLongest": true,
+                    "children": {
+                      "22896.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 222,
+                        "transferSize": 13850,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 222
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13850,
+              "wastedMs": 150
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/breast-implants/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:02.114Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 573.5074999999999,
+    "cls": 0,
+    "tbt": 25.999999999999943,
+    "fcp": 413.5075,
+    "bytes": 269478,
+    "findings": [
+      {
+        "id": "speed-index",
+        "score": 0.99,
+        "title": "Speed Index",
+        "value": "0.8 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.99,
+        "title": "Max Potential First Input Delay",
+        "value": "80 ms"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 910,
+                  "bottom": 935,
+                  "left": 128,
+                  "right": 1245,
+                  "width": 1117,
+                  "height": 26
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Not the same as injectable silicone",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-breast-implants > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 6702,
+                  "bottom": 6738,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "6 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-implant-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical/breast-augmentation/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/#choosing-a-surgeon",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/surgical-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 148.008
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "9727936AEDFA95D6166AF851EB4C7929": {
+                    "url": "https://quantumhealth-website.vercel.app/breast-implants/",
+                    "navStartToEndTime": 175,
+                    "transferSize": 8193,
+                    "isLongest": true,
+                    "children": {
+                      "6048.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 420,
+                        "transferSize": 13849,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 420
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13849
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:12.892Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 98,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 1744.935,
+    "cls": 0,
+    "tbt": 159,
+    "fcp": 1294.935,
+    "bytes": 192788,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.98,
+        "title": "First Contentful Paint",
+        "value": "1.3 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.99,
+        "title": "Largest Contentful Paint",
+        "value": "1.7 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.94,
+        "title": "Total Blocking Time",
+        "value": "160 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.63,
+        "title": "Max Potential First Input Delay",
+        "value": "210 ms"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 711,
+                  "bottom": 763,
+                  "left": 82,
+                  "right": 363,
+                  "width": 281,
+                  "height": 52
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Non-surgical does not mean proven or safe",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-non-surgical > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 6386,
+                  "bottom": 6421,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "9 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-without-surgery/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/dermal-fillers/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/breast-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/mono-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/prp/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/biostimulators/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/sculptra-plla/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/regenerative-medicine/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 100.512
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "103B9E9B74E1C73C8029B69AEEE1B7D0": {
+                    "url": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+                    "navStartToEndTime": 132,
+                    "transferSize": 6217,
+                    "isLongest": true,
+                    "children": {
+                      "4208.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 181,
+                        "transferSize": 13850,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 181
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 190 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13850,
+              "wastedMs": 300
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:22.812Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 450.18399999999997,
+    "cls": 0,
+    "tbt": 8,
+    "fcp": 370.18399999999997,
+    "bytes": 182582,
+    "findings": [
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 748,
+                  "bottom": 774,
+                  "left": 128,
+                  "right": 1245,
+                  "width": 1117,
+                  "height": 26
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Non-surgical does not mean proven or safe",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-non-surgical > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 3056,
+                  "bottom": 3093,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "9 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-without-surgery/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/dermal-fillers/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/breast-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/mono-threads/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/prp/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/biostimulators/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/sculptra-plla/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/non-surgical/regenerative-medicine/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 110.77
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "35DE082B7C892A0688CED7B9380D530F": {
+                    "url": "https://quantumhealth-website.vercel.app/non-surgical-breast-enlargement/",
+                    "navStartToEndTime": 138,
+                    "transferSize": 6217,
+                    "isLongest": true,
+                    "children": {
+                      "5656.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 195,
+                        "transferSize": 13849,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 195
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 50 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13849,
+              "wastedMs": 80
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/education-research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:32.917Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 95,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 1747.121,
+    "cls": 0,
+    "tbt": 168,
+    "fcp": 1147.121,
+    "bytes": 181212,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.99,
+        "title": "First Contentful Paint",
+        "value": "1.1 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.99,
+        "title": "Largest Contentful Paint",
+        "value": "1.7 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.79,
+        "title": "Speed Index",
+        "value": "4.1 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.93,
+        "title": "Total Blocking Time",
+        "value": "170 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.6,
+        "title": "Max Potential First Input Delay",
+        "value": "220 ms"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 687,
+                  "bottom": 738,
+                  "left": 82,
+                  "right": 363,
+                  "width": 281,
+                  "height": 52
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Education before a personal decision",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-education-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 5826,
+                  "bottom": 5862,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "8 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/understanding-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-anatomy/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/references/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/glossary/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/faqs/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 102.935
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "score": 0,
+        "title": "LCP breakdown",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "label",
+                  "valueType": "text",
+                  "label": "Subpart"
+                },
+                {
+                  "key": "duration",
+                  "valueType": "ms",
+                  "label": "Duration"
+                }
+              ],
+              "items": [
+                {
+                  "subpart": "timeToFirstByte",
+                  "label": "Time to first byte",
+                  "duration": 125.82
+                },
+                {
+                  "subpart": "resourceLoadDelay",
+                  "label": "Resource load delay",
+                  "duration": 37.026
+                },
+                {
+                  "subpart": "resourceLoadDuration",
+                  "label": "Resource load duration",
+                  "duration": 70.692
+                },
+                {
+                  "subpart": "elementRenderDelay",
+                  "label": "Element render delay",
+                  "duration": 2287.35
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,0,DIV,0,PICTURE,1,IMG",
+              "selector": "section.page-banner > div.page-banner__art > picture.editorial-picture > img.editorial-image",
+              "boundingRect": {
+                "top": 457,
+                "bottom": 622,
+                "left": 0,
+                "right": 412,
+                "width": 412,
+                "height": 165
+              },
+              "snippet": "<img class=\"editorial-image page-banner__image\" src=\"https://quantumhealth-website.vercel.app/assets/img/qh-education-research-…\" width=\"1600\" height=\"640\" alt=\"\" loading=\"eager\" fetchpriority=\"high\">",
+              "nodeLabel": "section.page-banner > div.page-banner__art > picture.editorial-picture > img.editorial-image"
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "DA06FDC63A3E23E840C451E1FE3A4FDA": {
+                    "url": "https://quantumhealth-website.vercel.app/education-research/",
+                    "navStartToEndTime": 162,
+                    "transferSize": 6137,
+                    "isLongest": true,
+                    "children": {
+                      "18240.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 231,
+                        "transferSize": 13876,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 231
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 80 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13876,
+              "wastedMs": 150
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/education-research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:44.922Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 98,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 456.075,
+    "cls": 0,
+    "tbt": 4,
+    "fcp": 376.075,
+    "bytes": 168064,
+    "findings": [
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 748,
+                  "bottom": 774,
+                  "left": 128,
+                  "right": 1245,
+                  "width": 1117,
+                  "height": 26
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "Education before a personal decision",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-education-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 3105,
+                  "bottom": 3142,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "8 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/understanding-breast-enlargement/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-anatomy/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enhancement-comparison/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/references/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/glossary/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/faqs/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 103.577
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "8C9CBAC264C02958D744B3FE6D9B3A93": {
+                    "url": "https://quantumhealth-website.vercel.app/education-research/",
+                    "navStartToEndTime": 124,
+                    "transferSize": 6138,
+                    "isLongest": true,
+                    "children": {
+                      "13072.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 179,
+                        "transferSize": 13877,
+                        "isLongest": true,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 179
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0,
+        "title": "Render-blocking requests",
+        "value": "Est savings of 40 ms",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13877,
+              "wastedMs": 80
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:49:55.010Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 91,
+      "accessibility": 99,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 2370.64,
+    "cls": 0,
+    "tbt": 207.5,
+    "fcp": 1869.1399999999999,
+    "bytes": 230109,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.88,
+        "title": "First Contentful Paint",
+        "value": "1.9 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.92,
+        "title": "Largest Contentful Paint",
+        "value": "2.4 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.76,
+        "title": "Speed Index",
+        "value": "4.3 s"
+      },
+      {
+        "id": "total-blocking-time",
+        "score": 0.89,
+        "title": "Total Blocking Time",
+        "value": "210 ms"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.26,
+        "title": "Max Potential First Input Delay",
+        "value": "340 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.98,
+        "title": "Time to Interactive",
+        "value": "2.5 s"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 698,
+                  "bottom": 750,
+                  "left": 82,
+                  "right": 363,
+                  "width": 281,
+                  "height": 52
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "External research, clearly attributed",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 10,
+                  "bottom": 61,
+                  "left": 24,
+                  "right": 289,
+                  "width": 265,
+                  "height": 51
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 19517,
+                  "bottom": 19552,
+                  "left": 24,
+                  "right": 362,
+                  "width": 338,
+                  "height": 35
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "2 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "forced-reflow-insight",
+        "score": 0,
+        "title": "Forced reflow",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "source",
+                  "valueType": "source-location",
+                  "label": "Source"
+                },
+                {
+                  "key": "reflowTime",
+                  "valueType": "ms",
+                  "granularity": 1,
+                  "label": "Total reflow time"
+                }
+              ],
+              "items": [
+                {
+                  "source": {
+                    "type": "source-location",
+                    "url": "https://quantumhealth-website.vercel.app/assets/built/main-a0658155276d.js",
+                    "urlProvider": "network",
+                    "line": 0,
+                    "column": 1439
+                  },
+                  "reflowTime": 162.535
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "26C451CC46E9B33CAB12930B08A2E13F": {
+                    "url": "https://quantumhealth-website.vercel.app/research/",
+                    "navStartToEndTime": 173,
+                    "transferSize": 107325,
+                    "isLongest": true,
+                    "children": {
+                      "6192.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/research-0682c9fdb427.css",
+                        "navStartToEndTime": 209,
+                        "transferSize": 1324,
+                        "isLongest": true,
+                        "children": {}
+                      },
+                      "6192.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 207,
+                        "transferSize": 13850,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 209
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/research-0682c9fdb427.css",
+              "totalBytes": 1324
+            },
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13850
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/research/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-25T23:50:09.876Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 81,
+      "accessibility": 99,
+      "best-practices": 100,
+      "seo": 92
+    },
+    "lcp": 1522.213,
+    "cls": 0,
+    "tbt": 0,
+    "fcp": 1481.213,
+    "bytes": 237414,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.57,
+        "title": "First Contentful Paint",
+        "value": "1.5 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.8,
+        "title": "Largest Contentful Paint",
+        "value": "1.5 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.01,
+        "title": "Speed Index",
+        "value": "5.9 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.99,
+        "title": "Max Potential First Input Delay",
+        "value": "80 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "title": "Time to Interactive",
+        "value": "1.5 s"
+      },
+      {
+        "id": "heading-order",
+        "score": 0,
+        "title": "Heading elements are not in a sequentially-descending order",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-H3",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,0,DIV,1,DIV,0,H3",
+                "selector": "div.container > div.notice > div > h3",
+                "boundingRect": {
+                  "top": 748,
+                  "bottom": 774,
+                  "left": 128,
+                  "right": 1245,
+                  "width": 1117,
+                  "height": 26
+                },
+                "snippet": "<h3>",
+                "nodeLabel": "External research, clearly attributed",
+                "explanation": "Fix any of the following:\n  Heading order invalid"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "moderate",
+            "tags": [
+              "cat.semantics",
+              "best-practice"
+            ]
+          }
+        }
+      },
+      {
+        "id": "label-content-name-mismatch",
+        "score": 0,
+        "title": "Elements with visible text labels do not have matching accessible names.",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "subItemsHeading": {
+                "key": "relatedNode",
+                "valueType": "node"
+              },
+              "label": "Failing Elements"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-1-A",
+                "path": "1,HTML,1,BODY,1,HEADER,0,DIV,0,A",
+                "selector": "body.page-research > header.site-header > div.container > a.brand",
+                "boundingRect": {
+                  "top": 14,
+                  "bottom": 67,
+                  "left": 70,
+                  "right": 350,
+                  "width": 280,
+                  "height": 53
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-A",
+                "path": "1,HTML,1,BODY,4,FOOTER,0,DIV,0,DIV,0,DIV,0,A",
+                "selector": "div.container > div.footer-top > div.footer-brand > a.brand",
+                "boundingRect": {
+                  "top": 13795,
+                  "bottom": 13832,
+                  "left": 70,
+                  "right": 408,
+                  "width": 338,
+                  "height": 37
+                },
+                "snippet": "<a class=\"brand\" href=\"/\" aria-label=\"Quantum Health home\">",
+                "nodeLabel": "QUANTUM HEALTH\nINDEPENDENT PATIENT EDUCATION",
+                "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "impact": "serious",
+            "tags": [
+              "cat.semantics",
+              "wcag21a",
+              "wcag253",
+              "EN-301-549",
+              "EN-9.2.5.3",
+              "RGAAv4",
+              "RGAA-6.1.5"
+            ]
+          }
+        }
+      },
+      {
+        "id": "link-text",
+        "score": 0,
+        "title": "Links do not have descriptive text",
+        "value": "2 links found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "href",
+              "valueType": "url",
+              "label": "Link destination"
+            },
+            {
+              "key": "text",
+              "valueType": "text",
+              "label": "Link Text"
+            }
+          ],
+          "items": [
+            {
+              "href": "https://quantumhealth-website.vercel.app/education-research/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            },
+            {
+              "href": "https://quantumhealth-website.vercel.app/breast-enlargement-safety/",
+              "text": "LEARN MORE",
+              "textLang": "en-IN"
+            }
+          ]
+        }
+      },
+      {
+        "id": "lcp-breakdown-insight",
+        "score": 0,
+        "title": "LCP breakdown",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "label",
+                  "valueType": "text",
+                  "label": "Subpart"
+                },
+                {
+                  "key": "duration",
+                  "valueType": "ms",
+                  "label": "Duration"
+                }
+              ],
+              "items": [
+                {
+                  "subpart": "timeToFirstByte",
+                  "label": "Time to first byte",
+                  "duration": 4116.586
+                },
+                {
+                  "subpart": "resourceLoadDelay",
+                  "label": "Resource load delay",
+                  "duration": 14.684
+                },
+                {
+                  "subpart": "resourceLoadDuration",
+                  "label": "Resource load duration",
+                  "duration": 4646.949
+                },
+                {
+                  "subpart": "elementRenderDelay",
+                  "label": "Element render delay",
+                  "duration": 419.248
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "lhId": "page-0-IMG",
+              "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,0,DIV,0,PICTURE,1,IMG",
+              "selector": "section.page-banner > div.page-banner__art > picture.editorial-picture > img.editorial-image",
+              "boundingRect": {
+                "top": 83,
+                "bottom": 663,
+                "left": 0,
+                "right": 1340,
+                "width": 1340,
+                "height": 580
+              },
+              "snippet": "<img class=\"editorial-image page-banner__image\" src=\"https://quantumhealth-website.vercel.app/assets/img/qh-external-research-l…\" width=\"1600\" height=\"640\" alt=\"\" loading=\"eager\" fetchpriority=\"high\">",
+              "nodeLabel": "section.page-banner > div.page-banner__art > picture.editorial-picture > img.editorial-image"
+            }
+          ]
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "57C1775AA739EBE7FDB9999DC469557C": {
+                    "url": "https://quantumhealth-website.vercel.app/research/",
+                    "navStartToEndTime": 4333,
+                    "transferSize": 107325,
+                    "isLongest": true,
+                    "children": {
+                      "11680.4": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/research-0682c9fdb427.css",
+                        "navStartToEndTime": 8781,
+                        "transferSize": 1321,
+                        "isLongest": true,
+                        "children": {}
+                      },
+                      "11680.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+                        "navStartToEndTime": 8772,
+                        "transferSize": 13852,
+                        "children": {}
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 8781
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/research-0682c9fdb427.css",
+              "totalBytes": 1321
+            },
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-ec768f274bd5.css",
+              "totalBytes": 13852
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "base": "http://127.0.0.1:56836",
+  "label": "about-details",
+  "allowDesktopCover": true,
+  "checks": 6,
+  "desktopCrops": [],
+  "problems": [],
+  "results": [
+    {
+      "route": "/about-us/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/about-us/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/about-us/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/about-us/",
+      "width": 430,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/about-us/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    },
+    {
+      "route": "/about-us/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 0
+    }
+  ]
+}

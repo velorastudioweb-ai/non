@@ -1,0 +1,631 @@
+{
+  "base": "http://127.0.0.1:65278",
+  "label": "render-fix-local",
+  "allowDesktopCover": true,
+  "checks": 16,
+  "desktopCrops": [
+    {
+      "route": "/",
+      "width": 1024
+    },
+    {
+      "route": "/",
+      "width": 1440
+    },
+    {
+      "route": "/",
+      "width": 1920
+    }
+  ],
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 320,
+            "bottom": 250.046875,
+            "width": 320,
+            "height": 178.65625
+          },
+          "text": {
+            "left": 24,
+            "top": 250.046875,
+            "right": 296,
+            "bottom": 1024.5625,
+            "width": 272,
+            "height": 774.515625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 505.953125,
+            "right": 320,
+            "bottom": 633.953125,
+            "width": 320,
+            "height": 128
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 505.953125,
+            "width": 272,
+            "height": 434.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 375,
+            "bottom": 280.765625,
+            "width": 375,
+            "height": 209.375
+          },
+          "text": {
+            "left": 24,
+            "top": 280.765625,
+            "right": 351,
+            "bottom": 970.328125,
+            "width": 327,
+            "height": 689.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 375,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 509.546875,
+            "right": 375,
+            "bottom": 659.546875,
+            "width": 375,
+            "height": 150
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 351,
+            "bottom": 509.546875,
+            "width": 327,
+            "height": 438.15625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 390,
+            "bottom": 289.140625,
+            "width": 390,
+            "height": 217.75
+          },
+          "text": {
+            "left": 24,
+            "top": 289.140625,
+            "right": 366,
+            "bottom": 948.109375,
+            "width": 342,
+            "height": 658.96875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 484.265625,
+            "right": 390,
+            "bottom": 640.265625,
+            "width": 390,
+            "height": 156
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 366,
+            "bottom": 484.265625,
+            "width": 342,
+            "height": 412.875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 430,
+            "bottom": 311.46875,
+            "width": 430,
+            "height": 240.078125
+          },
+          "text": {
+            "left": 24,
+            "top": 311.46875,
+            "right": 406,
+            "bottom": 953.515625,
+            "width": 382,
+            "height": 642.046875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 430,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-640.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 471.5,
+            "right": 430,
+            "bottom": 643.5,
+            "width": 430,
+            "height": 172
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 406,
+            "bottom": 471.5,
+            "width": 382,
+            "height": 400.109375
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-768.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 768,
+            "bottom": 500.390625,
+            "width": 768,
+            "height": 429
+          },
+          "text": {
+            "left": 24,
+            "top": 500.390625,
+            "right": 744,
+            "bottom": 1058.890625,
+            "width": 720,
+            "height": 558.5
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 768,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-960.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 380.15625,
+            "right": 768,
+            "bottom": 687.34375,
+            "width": 768,
+            "height": 307.1875
+          },
+          "text": {
+            "left": 26.046875,
+            "top": 71.390625,
+            "right": 741.9375,
+            "bottom": 380.15625,
+            "width": 715.890625,
+            "height": 308.765625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/responsive/hero-banner-7879e6996dde-1024.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 977.84375,
+            "width": 1024,
+            "height": 895.25
+          },
+          "text": {
+            "left": 24,
+            "top": 82.59375,
+            "right": 1000,
+            "bottom": 977.84375,
+            "width": 976,
+            "height": 895.25
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 577.21875,
+            "width": 1024,
+            "height": 494.625
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 577.21875,
+            "width": 715.890625,
+            "height": 494.625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/hero-banner.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 843.84375,
+            "width": 1440,
+            "height": 761.25
+          },
+          "text": {
+            "left": 120,
+            "top": 82.59375,
+            "right": 1320,
+            "bottom": 843.84375,
+            "width": 1200,
+            "height": 761.25
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 662.78125,
+            "width": 1440,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/hero-banner.webp",
+          "loaded": true,
+          "fit": "cover",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 859.84375,
+            "width": 1920,
+            "height": 777.25
+          },
+          "text": {
+            "left": 360,
+            "top": 82.59375,
+            "right": 1560,
+            "bottom": 859.84375,
+            "width": 1200,
+            "height": 777.25
+          },
+          "uncropped": false,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 18
+    },
+    {
+      "route": "/research/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65278/assets/img/qh-external-research-library-banner-1600.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 662.78125,
+            "width": 1920,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 602.046875,
+            "top": 82.59375,
+            "right": 1317.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 16
+    }
+  ]
+}
