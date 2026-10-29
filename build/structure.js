@@ -365,7 +365,7 @@ const aboutBody = `${aboutHero}
     <div class="qh-grid">${aboutDoctorCards}</div>
   </section>
   <section id="leadership" class="qh-about-leadership" aria-labelledby="leadership-heading">
-    <p class="eyebrow">Leadership reference</p><div class="qh-portrait" aria-hidden="true"><span>SD</span></div><div><h2 id="leadership-heading">Dr. Sunitha Devaraj</h2><p class="qh-about-note">The supplied material includes a leadership profile under this name. This educational website does not verify a current role, professional affiliation, or credentials.</p></div>
+    <p class="eyebrow">Leadership reference</p>${quantumHealth.doctorPortraits.sunitha ? `<img class="qh-portrait-image" src="${escapeAboutText(quantumHealth.doctorPortraits.sunitha.src)}" alt="Portrait of Dr. Sunitha Devaraj" width="${quantumHealth.doctorPortraits.sunitha.width}" height="${quantumHealth.doctorPortraits.sunitha.height}" loading="lazy" decoding="async">` : `<div class="qh-portrait" aria-hidden="true"><span>SD</span></div>`}<div><h2 id="leadership-heading">Dr. Sunitha Devaraj</h2><p class="qh-about-note">The supplied material includes a leadership profile under this name. This educational website does not verify a current role, professional affiliation, or credentials.</p></div>
   </section>
   <section id="contact" class="qh-about-contact" aria-labelledby="about-contact-heading">
     <div><p class="eyebrow">Stay in touch</p><h2 id="about-contact-heading">Questions or corrections?</h2><p class="qh-about-note">Contact us about website content, sources, or accessibility.</p></div><a class="qh-btn" href="/contact/">Contact us</a>

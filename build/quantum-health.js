@@ -161,4 +161,4 @@ if (vikasPage) {
     .replace('<section><h2>Professional Philosophy</h2>', `${vikasMedia}${vikasBlogs}${vikasSocial}<section><h2>Professional Philosophy</h2>`);
 }
 const pages=[page('/doctors/','OUR DOCTORS PANEL','Meet the Quantum Health doctors and executive leadership team.',directoryBody),...profilePages,page('/leadership/dr-sunitha-devaraj/','Dr. Sunitha Devaraj — Executive Director','Executive Director of Quantum Health: nutrition, aesthetics, regenerative medicine and longevity.',sunithaBody)];
-module.exports={doctors,sunitha,alisha,vikasProfile,pages};
+module.exports={doctors,sunitha,alisha,vikasProfile,pages,doctorPortraits};
