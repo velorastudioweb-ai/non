@@ -513,9 +513,14 @@ pages.push({
   breadcrumb: [{ label: 'Surgical' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Surgical Breast Enhancement', url: site.url + '/surgical-breast-enhancement/' }],
   blocks: [
-    { type: 'prose', html:
-      '<p>Breast augmentation is a surgical procedure designed to increase breast volume or alter breast shape using implants or, in selected cases, the patient’s own fat. It may be considered by people seeking greater fullness, a change in proportions, or restoration of volume following pregnancy or weight change.</p>' +
-      '<p>Treatment planning should take account of anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, and the individual’s willingness to accept surgical risks and future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>' },
+    { type: 'split', id: 'surgical-augmentation-overview', alt: true,
+      eyebrow: 'Surgical breast enlargement',
+      heading: 'A personal decision that needs careful planning',
+      body: '<p>Breast augmentation is a surgical option for increasing breast volume or changing breast shape. It may involve implants or, for selected people, their own fat.</p>' +
+        '<p>People may consider it for greater fullness, a change in proportions, or restoration of volume after pregnancy or weight change.</p>' +
+        '<h3>What guides the plan</h3>' +
+        '<p>An assessment should consider anatomy, existing breast tissue, skin characteristics, general health, lifestyle, expectations, willingness to accept surgical risks and the need for future follow-up. An appropriately credentialed surgeon should lead this assessment.</p>',
+      media: topicImage('surgicalOptions'), mediaRatio: 'ratio-4-3' },
     { type: 'cards', alt: true, cols: 3, ratio: 'ratio-3-4', eyebrow: 'Options', heading: 'Surgical pathways',
       items: [
         { title: 'Breast augmentation', text: 'A personalised approach to increasing breast volume or altering shape using implants or, in selected cases, your own fat.', href: '/surgical/breast-augmentation/', media: topicImage('breastAugmentationPlanning') },

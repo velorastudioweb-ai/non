@@ -253,8 +253,8 @@ function landing(section, title, lead, blocks, slug) {
     schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, url: site.url + section.href }] };
 }
 const oldSurgical = get('/surgical-breast-enhancement/');
-const surgicalIntro = contentBlocks(oldSurgical).filter((b) => b.type === 'prose');
-const surgicalGuidance = contentBlocks(oldSurgical).filter((b) => b.type !== 'cards' && b.type !== 'prose');
+const surgicalIntro = contentBlocks(oldSurgical).filter((b) => b.id === 'surgical-augmentation-overview');
+const surgicalGuidance = contentBlocks(oldSurgical).filter((b) => b.type !== 'cards' && b.id !== 'surgical-augmentation-overview');
 const landings = [
   landing(sections[0], sections[0].label, oldSurgical.bannerLead, [
     ...surgicalIntro,
