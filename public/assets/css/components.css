@@ -2138,7 +2138,7 @@ body .page-about-us .qh-about .qh-about-contact { border-color: var(--border-sof
 /* Doctor portraits arrive at slightly different aspect ratios. Let each one keep
    its own proportions instead of forcing a 4:5 crop, which used to letterbox the
    wider photographs inside a fixed 220px frame. */
-body .page-about-us .qh-about .qh-doctor-card__image {
+body.page-about-us .qh-about .qh-doctor-card__image {
   width: 100%;
   height: auto;
   aspect-ratio: auto;
