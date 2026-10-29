@@ -25,6 +25,7 @@ const fs = require('fs');
 const path = require('path');
 const { site, stdCta } = require('./content');
 const { terms } = require('./glossary');
+const { siteImages } = require('./site-images');
 
 const DATA_DIR = path.join(__dirname, '..', 'public', 'assets', 'data');
 
@@ -261,9 +262,9 @@ const implants = {
   bannerEyebrow: 'Surgical pathway',
   bannerLead:
     'Breast implants are medical devices placed surgically to increase breast volume. They are the most studied enlargement method — with real complication and revision rates that every patient should understand before deciding.',
-  bannerImage: '/Breast Fat Transfer Medical Infographic.png',
-  bannerWidth: 1536,
-  bannerHeight: 1024,
+  bannerImage: siteImages.breastImplants.src,
+  bannerWidth: siteImages.breastImplants.width,
+  bannerHeight: siteImages.breastImplants.height,
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Breast implants' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Implants', url: site.url + '/breast-implants/', about: { '@type': 'MedicalDevice', name: 'Breast implant' } }],
   blocks: [
@@ -342,9 +343,9 @@ const implantSafety = {
   bannerEyebrow: 'Safety',
   bannerLead:
     'Most people who have implants are satisfied, but implants have documented risks that do not disappear with time. This page sets out what the evidence and regulators actually say.',
-  bannerImage: '/Breast Implant Safety Infographic.png',
-  bannerWidth: 1536,
-  bannerHeight: 1024,
+  bannerImage: siteImages.breastImplantSafety.src,
+  bannerWidth: siteImages.breastImplantSafety.width,
+  bannerHeight: siteImages.breastImplantSafety.height,
   breadcrumb: [{ label: 'Safety', href: '/breast-enlargement-safety/' }, { label: 'Breast implant safety' }],
   schema: [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Breast Implant Safety', url: site.url + '/breast-implant-safety/' }],
   blocks: [

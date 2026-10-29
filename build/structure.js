@@ -7,6 +7,7 @@ const { libraryPages } = require('./library');
 const { articles } = require('./blog');
 const publishedBlogs = require('./published-blogs');
 const { contact, legal } = require('./extra-pages');
+const { siteImages, topicImage } = require('./site-images');
 const clone = (value) => JSON.parse(JSON.stringify(value));
 const source = new Map(pages.concat(libraryPages).map((p) => [p.url, p]));
 const get = (url) => {
@@ -171,15 +172,13 @@ byUrl.set(research.url, research);
 function cards(entries, heading, lead) {
   return { type: 'cards', cols: 3, heading, lead, items: entries.map(([href, title]) => {
     const p = byUrl.get(href);
-    const media = href === '/breast-implants/'
-      ? '<img src="/Breast Fat Transfer Medical Infographic.png" alt="Breast implants" width="1536" height="1024" loading="lazy" decoding="async">'
-      : href === '/surgical/breast-augmentation/'
-        ? '<img src="/Breast Augmentation Options Infographic.png" alt="Breast augmentation options" width="1536" height="1024" loading="lazy" decoding="async">'
-      : href === '/breast-implant-safety/'
-        ? '<img src="/Breast Implant Safety Infographic.png" alt="Breast implant safety" width="1536" height="1024" loading="lazy" decoding="async">'
-      : href === '/surgical/fat-transfer-breast-augmentation/'
-        ? '<img src="/Breast Fat Transfer Medical Infographic.png" alt="Fat transfer breast augmentation" width="1536" height="1024" loading="lazy" decoding="async">'
-        : undefined;
+    const imageKey = {
+      '/breast-implants/': 'breastImplants',
+      '/surgical/breast-augmentation/': 'breastAugmentation',
+      '/breast-implant-safety/': 'breastImplantSafety',
+      '/surgical/fat-transfer-breast-augmentation/': 'fatTransfer'
+    }[href];
+    const media = imageKey ? topicImage(imageKey) : undefined;
     return { title, href, text: p.seoDescription, slot: title, media };
   }) };
 }
@@ -209,12 +208,12 @@ const landings = [
     cards(education, 'Learn, compare and read the evidence')
   ], 'education-research')
 ];
-landings[0].bannerImage = '/Breast Augmentation Consultation Illustration.webp';
-landings[0].bannerWidth = 1600;
-landings[0].bannerHeight = 600;
-landings[1].bannerImage = '/Non-Surgical Breast Enhancement Infographic.png';
-landings[1].bannerWidth = 1600;
-landings[1].bannerHeight = 600;
+landings[0].bannerImage = siteImages.surgicalOverview.src;
+landings[0].bannerWidth = siteImages.surgicalOverview.width;
+landings[0].bannerHeight = siteImages.surgicalOverview.height;
+landings[1].bannerImage = siteImages.nonSurgicalHero.src;
+landings[1].bannerWidth = siteImages.nonSurgicalHero.width;
+landings[1].bannerHeight = siteImages.nonSurgicalHero.height;
 const topicMembership = new Map();
 [surgical, nonsurgical, education].forEach((entries, i) => entries.forEach(([url]) => topicMembership.set(url, i)));
 topicPages.forEach((p) => {
@@ -236,15 +235,15 @@ topicPages.forEach((p) => {
 
 const finalHome = clone(home);
 const pathways = finalHome.blocks.find((b) => b.id === 'treatments');
-Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, media: i === 0 ? '<img src="/surgical.webp" alt="Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 1 ? '<img src="/non surgical.webp" alt="Non-Surgical Breast Enlargement" width="1254" height="1254" loading="lazy" decoding="async">' : i === 2 ? '<img src="/prp.webp" alt="Education and Research" width="1254" height="1254" loading="lazy" decoding="async">' : undefined, slot: undefined })) });
+Object.assign(pathways, { cols: 3, eyebrow: 'Three educational sections', heading: 'Find your starting point', lead: 'Explore the options, then compare the evidence and safety considerations.', items: sections.map((s, i) => ({ title: s.label, href: s.href, text: landings[i].seoDescription, media: i === 0 ? topicImage('surgicalOptions', { alt: 'Surgical Breast Enlargement' }) : i === 1 ? topicImage('nonSurgicalOverview', { alt: 'Non-Surgical Breast Enlargement' }) : i === 2 ? topicImage('educationResearch', { alt: 'Education and Research' }) : undefined, slot: undefined })) });
 // Replace duplicate article and publisher archives on the home page with the
 // canonical shared-education links; detailed topic content stays on its page.
 finalHome.blocks = finalHome.blocks.filter((b) => !['Education and insights', 'Research & sources'].includes(b.eyebrow));
 const foundationCards = cards(education.slice(0, 4), 'A clear foundation for your decision');
-foundationCards.items[0].media = '<img src="/Breast Enhancement Medical Infographic.webp" alt="Understanding Breast Enlargement" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[1].media = '<img src="/Breast Anatomy and Augmentation Illustration.webp" alt="Breast Anatomy Explained" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[2].media = '<img src="/Breast Enhancement Options Infographic.webp" alt="Breast Enhancement Options Compared" width="1536" height="1024" loading="lazy" decoding="async">';
-foundationCards.items[3].media = '<img src="/Breast Augmentation Safety Consultation Infographic.webp" alt="Breast Enlargement Safety" width="1536" height="1024" loading="lazy" decoding="async">';
+foundationCards.items[0].media = topicImage('breastEducation', { alt: 'Understanding Breast Enlargement' });
+foundationCards.items[1].media = topicImage('breastAnatomy', { alt: 'Breast Anatomy Explained' });
+foundationCards.items[2].media = topicImage('compareOptions', { alt: 'Breast Enhancement Options Compared' });
+foundationCards.items[3].media = topicImage('breastSafety', { alt: 'Breast Enlargement Safety' });
 finalHome.blocks.push(foundationCards);
 const homeOrder = [
   (b) => b.type === 'hero',
@@ -259,104 +258,17 @@ const homeOrder = [
 ];
 finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
 const quantumHealth = require('./quantum-health');
-finalHome.blocks.push({ type: 'prose', html: '<style>.qh-home{background:#080608;color:#FFF8F8;padding:clamp(2rem,6vw,5rem);border-top:1px solid #C98B91}.qh-home h2,.qh-home h3{font-family:Georgia,serif}.qh-home h2{font-size:clamp(2rem,4vw,3rem)}.qh-home a{color:#FFF8F8}.qh-home .qh-home-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem}.qh-home article{padding:1.2rem;border:1px solid #C98B9170;background:linear-gradient(140deg,#4A071F,#10090d)}.qh-home .qh-pink{color:#F36A99}.qh-home .qh-home-cta{display:inline-block;background:#FF4D91;color:#080608;padding:.8rem 1.1rem;text-decoration:none;font-weight:bold}</style><section class="qh-home"><p class="qh-pink">AESTHETICS | REGENERATIVE | WELLNESS</p><h2>Beauty. Science. Longevity.</h2><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><h3>LOOK BETTER · FEEL HEALTHIER · LIVE LONGER</h3><p>A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p><p><a class="qh-home-cta" href="/doctors/">OUR DOCTORS PANEL</a>　<a href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a></p><div class="qh-home-grid"><article><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team</a></article><article><h3>Nutrition & Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership</a></article><article><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise</a></article><article><h3>Regenerative & Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team</a></article><article><h3>Training & Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training & Academy</a></article><article><h3>Core Values</h3><p>SCIENCE DRIVEN · COMPREHENSIVE CARE · NATURAL RESULTS · EXPERT TEAM · LONG-TERM WELLNESS</p></article></div><p><a href="/contact/">BOOK CONSULTATION</a></p></section>' });
-const homeTeam = finalHome.blocks.find((b) => b.html && b.html.includes('<section class="qh-home">'));
-Object.assign(homeTeam, { bleed: true, wide: true });
-const quantumHomeStyles = `<style>
-.qh-home{--qh-ink:#10070b;--qh-rose:#f36a99;--qh-cream:#fff8f5;position:relative;isolation:isolate;display:flex;align-items:center;width:100%;min-height:100vh;min-height:100svh;margin-block:clamp(-5.5rem,-6vw,-3.25rem);overflow:hidden;padding:clamp(3rem,7vw,6.5rem) clamp(1.25rem,6vw,6rem);border-block:1px solid #c98b9166;background:radial-gradient(ellipse at 50% 0%,#650b2d 0%,#260d18 42%,var(--qh-ink) 78%);color:var(--qh-cream);font-family:Arial,sans-serif;line-height:1.6}
-.qh-home *{box-sizing:border-box}
-.qh-home::before,.qh-home::after{position:absolute;z-index:-1;pointer-events:none;content:"";border:1px solid #c98b9128;border-radius:50%;aspect-ratio:1}
-.qh-home::before{width:min(70vw,900px);top:-30%;left:-22%}
-.qh-home::after{width:min(55vw,700px);right:-23%;bottom:-36%;border-color:#f36a9926}
-.qh-home__inner{position:relative;width:min(100%,1500px);margin-inline:auto}
-.qh-home__hero{max-width:1120px;margin:0 auto clamp(3.5rem,7vw,6.5rem);text-align:center}
-.qh-home__eyebrow,.qh-home__section-label{color:var(--qh-rose);font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.qh-home p.qh-home__eyebrow,.qh-home p.qh-home__subtitle,.qh-home p.qh-home__promise,.qh-home p.qh-home__manifesto,.qh-home p.qh-home__number,.qh-home p.qh-home__values-title{color:inherit}
-.qh-home p.qh-home__eyebrow,.qh-home p.qh-home__values-title{color:var(--qh-rose)}
-.qh-home p.qh-home__subtitle{color:#f3dfe4}
-.qh-home p.qh-home__promise{color:#ffdce6}
-.qh-home p.qh-home__manifesto{color:#d9c4ca}
-.qh-home p.qh-home__number{color:var(--qh-rose)}
-.qh-home__eyebrow{display:flex;justify-content:center;align-items:center;gap:.8rem}
-.qh-home__eyebrow::before,.qh-home__eyebrow::after{width:clamp(1.5rem,5vw,4rem);height:1px;background:#f36a9980;content:""}
-.qh-home__hero h2{margin:1.2rem 0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.3rem,8vw,8rem);font-weight:400;letter-spacing:-.065em;line-height:.96;color:var(--qh-cream)}
-.qh-home__hero h2 span{color:#e5b6ba}
-.qh-home__hero h2 em{color:var(--qh-rose);font-weight:400}
-.qh-home__subtitle{max-width:54ch;margin:1.5rem auto 0;color:#f3dfe4;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.15rem,2vw,1.55rem);line-height:1.45}
-.qh-home__promise{display:flex;justify-content:center;flex-wrap:wrap;gap:.65rem 1rem;margin:1.5rem 0 0;color:#ffdce6;font-size:.74rem;font-weight:700;letter-spacing:.14em}
-.qh-home__promise span+span::before{margin-right:1rem;color:var(--qh-rose);content:"·"}
-.qh-home__manifesto{max-width:72ch;margin:1.4rem auto 0;color:#d9c4ca;font-size:.95rem}
-.qh-home__actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.85rem 1.5rem;margin-top:2rem}
-.qh-home .qh-home__button{display:inline-flex;justify-content:center;align-items:center;gap:.8rem;min-height:3.25rem;padding:.8rem 1.3rem;border:1px solid var(--qh-rose);background:var(--qh-rose);color:#190910!important;font-size:.76rem;font-weight:800;letter-spacing:.09em;text-decoration:none;text-transform:uppercase;transition:background .2s ease,color .2s ease,transform .2s ease}
-.qh-home .qh-home__button:hover{transform:translateY(-2px);background:transparent;color:var(--qh-cream)!important}
-.qh-home__leadership{color:var(--qh-cream)!important;font-size:.9rem;font-weight:600;text-decoration-color:#f36a9980;text-underline-offset:.3em}
-.qh-home .qh-home__leadership{color:var(--qh-cream)!important}
-.qh-home__section-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:1rem;padding-bottom:.85rem;border-bottom:1px solid #c98b9155}
-.qh-home__section-head p{margin:0;color:#cbb6bd;font-size:.78rem}
-.qh-home__section-label{margin:0!important;color:var(--qh-rose)!important}
-.qh-home__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
-.qh-home__card{position:relative;display:flex;min-height:220px;flex-direction:column;align-items:flex-start;padding:1.25rem;border:1px solid #c98b914c;background:linear-gradient(145deg,#ffffff0b,#ffffff03);transition:background .2s ease,border-color .2s ease,transform .2s ease}
-.qh-home__card:hover{transform:translateY(-4px);border-color:#f36a99a3;background:linear-gradient(145deg,#650b2d73,#ffffff08)}
-.qh-home__number{margin:0 0 1.6rem!important;color:var(--qh-rose)!important;font-size:.7rem;font-weight:700;letter-spacing:.15em}
-.qh-home__card h3{margin:0;color:var(--qh-cream)!important;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.18rem,1.5vw,1.55rem);font-weight:400;line-height:1.18}
-.qh-home__card>p:not(.qh-home__number){margin:.65rem 0 1.2rem;color:#d9c4ca;font-size:.82rem;line-height:1.55}
-.qh-home__card a{display:inline-flex;align-items:center;gap:.55rem;margin-top:auto;color:#ffdce6!important;font-size:.73rem;font-weight:700;text-decoration:none}
-.qh-home__card a span{color:var(--qh-rose);font-size:1rem;transition:transform .2s ease}
-.qh-home__card a:hover span{transform:translateX(4px)}
-.qh-home .qh-home__button::after,.qh-home .qh-home__leadership::after,.qh-home .qh-home__card a::after{display:none}
-.qh-home__bottom{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;margin-top:clamp(2.5rem,5vw,4rem);padding-top:1.35rem;border-top:1px solid #c98b9155}
-.qh-home__values-title{margin:0 0 .7rem;color:var(--qh-rose);font-size:.69rem;font-weight:700;letter-spacing:.17em}
-.qh-home__values{display:flex;flex-wrap:wrap;gap:.5rem}
-.qh-home__values span{padding:.38rem .65rem;border:1px solid #c98b9155;color:#f3dfe4;font-size:.68rem;letter-spacing:.06em}
-.qh-home__consult{white-space:nowrap}
-.qh-home a:focus-visible{outline:2px solid var(--qh-cream);outline-offset:4px}
-@media(max-width:1050px){.qh-home__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.qh-home__card{min-height:200px}}
-@media(max-width:680px){.qh-home{padding:3rem 1.15rem}.qh-home__hero{margin-bottom:3rem}.qh-home__hero h2{font-size:clamp(3rem,13vw,5.4rem)}.qh-home__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.qh-home__card{min-height:205px;padding:1rem}.qh-home__section-head{align-items:flex-start;flex-direction:column;gap:.25rem}.qh-home__bottom{grid-template-columns:1fr;gap:1.5rem}.qh-home__consult{justify-self:start}}
-@media(max-width:430px){.qh-home__grid{grid-template-columns:1fr}.qh-home__card{min-height:170px}.qh-home__number{margin-bottom:.9rem!important}.qh-home__promise{gap:.5rem;font-size:.65rem}.qh-home__promise span+span::before{margin-right:.5rem}}
-@media(prefers-reduced-motion:reduce){.qh-home *,.qh-home *::before,.qh-home *::after{scroll-behavior:auto!important;transition:none!important}}
-</style>`;
-homeTeam.html = `${quantumHomeStyles}
-<section class="qh-home" aria-labelledby="qh-home-title"><div class="qh-home__inner">
-  <header class="qh-home__hero">
-    <p class="qh-home__eyebrow">Aesthetics · Regenerative · Wellness</p>
-    <h2 id="qh-home-title">Beauty. <span>Science.</span> <em>Longevity.</em></h2>
-    <p class="qh-home__subtitle">Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p>
-    <p class="qh-home__promise"><span>LOOK BETTER</span><span>FEEL HEALTHIER</span><span>LIVE LONGER</span></p>
-    <p class="qh-home__manifesto">A Team of Experts, United by a Shared Vision — To Help You Look Better, Feel Healthier and Live More Confidently.</p>
-    <nav class="qh-home__actions" aria-label="Explore Quantum Health">
-      <a class="qh-home__button" href="/doctors/">OUR DOCTORS PANEL <span aria-hidden="true">↗</span></a>
-      <a class="qh-home__leadership" href="/leadership/dr-sunitha-devaraj/">Meet Executive Director Dr. Sunitha Devaraj</a>
-    </nav>
-  </header>
-  <div class="qh-home__section-head"><p class="qh-home__section-label">A considered approach to wellbeing</p><p>Expertise. Experience. Exceptional Care.</p></div>
-  <div class="qh-home__grid">
-    <article class="qh-home__card"><p class="qh-home__number">01 / PEOPLE</p><h3>Doctors Panel</h3><p>Expertise. Experience. Exceptional Care.</p><a href="/doctors/">Meet the team <span aria-hidden="true">→</span></a></article>
-    <article class="qh-home__card"><p class="qh-home__number">02 / LONGEVITY</p><h3>Nutrition &amp; Longevity</h3><p>Science. Nutrition. Aesthetics. For a Longer, Healthier You.</p><a href="/leadership/dr-sunitha-devaraj/">Explore leadership <span aria-hidden="true">→</span></a></article>
-    <article class="qh-home__card"><p class="qh-home__number">03 / AESTHETICS</p><h3>Aesthetic Treatments</h3><p>Personalised care with appropriate professional assessment.</p><a href="/doctors/dr-alisha-khan/">Explore aesthetic expertise <span aria-hidden="true">→</span></a></article>
-    <article class="qh-home__card"><p class="qh-home__number">04 / WELLNESS</p><h3>Regenerative &amp; Wellness</h3><p>Long-term wellness grounded in science and comprehensive care.</p><a href="/doctors/">Explore our team <span aria-hidden="true">→</span></a></article>
-    <article class="qh-home__card"><p class="qh-home__number">05 / LEARNING</p><h3>Training &amp; Academy</h3><p>Training Today for a More Beautiful Tomorrow.</p><a href="/doctors/dr-alisha-khan/">Training &amp; Academy <span aria-hidden="true">→</span></a></article>
-  </div>
-  <div class="qh-home__bottom">
-    <div><p class="qh-home__values-title">CORE VALUES</p><div class="qh-home__values"><span>SCIENCE DRIVEN</span><span>COMPREHENSIVE CARE</span><span>NATURAL RESULTS</span><span>EXPERT TEAM</span><span>LONG-TERM WELLNESS</span></div></div>
-    <a class="qh-home__button qh-home__consult" href="/contact/">BOOK CONSULTATION <span aria-hidden="true">↗</span></a>
-  </div>
-</div></section>`;
-// Keep the public site aligned with its independent-education purpose. The
-// imported promotional homepage panel is retained as source material but not
-// rendered alongside the footer's no-clinic statement.
-finalHome.blocks = finalHome.blocks.filter((block) => block !== homeTeam);
+
 function extractQuantumBody(page) {
   const html = page.blocks[0].html;
-  const styleEnd = html.indexOf('</style>');
   const wrapper = '<main class="qh"><div class="qh-wrap">';
   const note = '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p>';
-  if (styleEnd < 0 || !html.includes(wrapper) || !html.endsWith('</div></main>')) {
+  const wrapperStart = html.indexOf(wrapper);
+  if (wrapperStart < 0 || !html.endsWith('</div></main>')) {
     throw new Error('Unexpected Quantum Health page structure: ' + page.url);
   }
   return {
-    style: html.slice(0, styleEnd + '</style>'.length),
-    body: html.slice(styleEnd + '</style>'.length)
-      .replace(wrapper, '')
+    body: html.slice(wrapperStart + wrapper.length)
       .replace(note, '')
       .replace(/<\/div><\/main>$/, '')
       .replace(/<h1>/g, '<h2>').replace(/<\/h1>/g, '</h2>')
@@ -376,7 +288,9 @@ const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
   const qualificationList = qualifications.length
     ? `<ul>${qualifications.map((item) => `<li>${escapeAboutText(item)}</li>`).join('')}</ul>`
     : '<p class="qh-doctor-card__empty">No qualifications are listed in the supplied profile.</p>';
-  const portrait = doctor.portrait ? `<img class="qh-doctor-card__image" src="${escapeAboutText(doctor.portrait)}" alt="Portrait of ${escapeAboutText(doctor.name)}" style="display:block;width:100%;height:180px;object-fit:cover;object-position:center;margin-bottom:1rem;border:1px solid #C98B9170">` : `<div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div>`;
+  const portrait = doctor.portrait
+    ? `<img class="qh-portrait-image qh-doctor-card__image" src="${escapeAboutText(doctor.portrait.src)}" alt="Portrait of ${escapeAboutText(doctor.name)}" width="${doctor.portrait.width}" height="${doctor.portrait.height}" loading="lazy" decoding="async">`
+    : `<div class="qh-portrait" aria-hidden="true"><span>${escapeAboutText(initials)}</span></div>`;
   return `<article class="qh-card qh-doctor-card">${portrait}<h3>${escapeAboutText(doctor.name)}</h3><div class="qh-doctor-card__details"><div><h4>Profile-listed expertise</h4>${expertiseList}</div><div><h4>Profile-listed qualifications</h4>${qualificationList}</div></div><div class="qh-actions"><a class="qh-btn" href="${escapeAboutText(doctor.profileUrl)}">View profile</a></div></article>`;
 }).join('');
 const aboutBody = `${aboutHero}
@@ -398,11 +312,32 @@ about.bannerEyebrow = 'Independent education';
 about.bannerLead = 'An evidence-aware guide to breast-enlargement options, limitations, and safety.';
 about.showBanner = false;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
-about.blocks = [{ type: 'prose', wide: true, html: doctorDirectory.style + '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
+about.blocks = [{ type: 'prose', wide: true, html: '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
-const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="" loading="lazy"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · 8 min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
-const blogsIndex = {url:'/blogs/',slug:'blogs',h1:'Breast Enlargement Blogs',showBanner:false,seoTitle:'Breast Enlargement Blogs | Quantum Health',seoDescription:'Evidence-aware breast enlargement education and illustrative patient-perspective articles.',breadcrumb:[{label:'Blogs'}],schema:[{'@context':'https://schema.org','@type':'CollectionPage',name:'Breast Enlargement Blogs',url:site.url+'/blogs/'}],blocks:[{type:'prose',wide:true,html:`<div class="blog-hub"><p class="eyebrow">Independent patient education</p><h1>Breast Enlargement Blogs</h1><p class="lead">Clear, evidence-aware articles about options, safety, recovery and decision-making. Patient-perspective pieces are fictional educational scenarios, never testimonials.</p><div class="blog-tools"><label>Search articles <input id="blog-search" type="search" placeholder="Search by topic or category"></label><div class="blog-tabs" role="tablist"><button type="button" data-blog-filter="All Articles" aria-pressed="true">All Articles</button><button type="button" data-blog-filter="Breast Enlargement Education" aria-pressed="false">Breast Enlargement Education</button><button type="button" data-blog-filter="Patient Perspectives" aria-pressed="false">Patient Perspectives</button></div></div><p id="blog-results" class="blog-meta">${publishedBlogs.articles.length} articles</p><div class="blog-grid" id="blog-grid">${blogCards}</div></div><style>.blog-hub{max-width:1180px;margin:auto}.blog-tools{display:grid;gap:1rem;padding:1.2rem;margin:2rem 0;background:#fff7f8;border:1px solid #e8cdd1}.blog-tools input{width:100%;padding:.8rem;margin-top:.4rem;border:1px solid #8b5260}.blog-tabs{display:flex;gap:.5rem;flex-wrap:wrap}.blog-tabs button{padding:.65rem .9rem;border:1px solid #751e35;background:#fff;color:#4a071f;cursor:pointer}.blog-tabs button[aria-pressed="true"]{background:#751e35;color:#fff}.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}.blog-card{border:1px solid #e8cdd1;background:#fff;overflow:hidden}.blog-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.blog-card>div{padding:1.2rem}.blog-card h2{font-size:1.45rem}.blog-card h2 a{color:#4a071f}.blog-meta{font-size:.9rem;color:#6d5360}@media(max-width:800px){.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.blog-grid{grid-template-columns:1fr}}</style><script>(function(){var q=document.getElementById('blog-search'),cards=[].slice.call(document.querySelectorAll('.blog-card')),buttons=[].slice.call(document.querySelectorAll('[data-blog-filter]')),out=document.getElementById('blog-results'),category='All Articles';function go(){var term=q.value.toLowerCase().trim(),shown=0;cards.forEach(function(c){var ok=(category==='All Articles'||c.dataset.category===category)&&(!term||c.dataset.search.indexOf(term)>-1);c.hidden=!ok;if(ok)shown++});out.textContent=shown+' article'+(shown===1?'':'s')+' found';}q.addEventListener('input',go);buttons.forEach(function(b){b.addEventListener('click',function(){category=b.dataset.blogFilter;buttons.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});go()})})})();</script>`}]};
+const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="" width="${a.imageWidth}" height="${a.imageHeight}" loading="lazy" decoding="async"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · 8 min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
+const blogsIndex = { url: '/blogs/', slug: 'blogs', h1: 'Breast Enlargement Blogs', showBanner: false, seoTitle: 'Breast Enlargement Blogs | Quantum Health', seoDescription: 'Evidence-aware breast enlargement education and illustrative patient-perspective articles.', breadcrumb: [{ label: 'Blogs' }], schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Breast Enlargement Blogs', url: site.url + '/blogs/' }], blocks: [{ type: 'prose', wide: true, html: '' }] };
 finalHome.schema[0].name = site.name;
+// Keep the interactive listing semantic and theme-neutral. Styling is shared in
+// components.css so this page cannot introduce a light-card colour scheme.
+function blogIndexMarkup() {
+  return `<div class="blog-hub">
+    <p class="eyebrow">Independent patient education</p>
+    <h1>Breast Enlargement Blogs</h1>
+    <p class="lead">Clear, evidence-aware articles about options, safety, recovery and decision-making. Patient-perspective pieces are fictional educational scenarios, never testimonials.</p>
+    <div class="blog-tools">
+      <label for="blog-search">Search articles</label>
+      <input id="blog-search" type="search" placeholder="Search by topic or category" aria-describedby="blog-results">
+      <div class="blog-tabs" role="group" aria-label="Filter articles by category">
+        <button type="button" data-blog-filter="All Articles" aria-controls="blog-grid" aria-pressed="true">All Articles</button>
+        <button type="button" data-blog-filter="Breast Enlargement Education" aria-controls="blog-grid" aria-pressed="false">Breast Enlargement Education</button>
+        <button type="button" data-blog-filter="Patient Perspectives" aria-controls="blog-grid" aria-pressed="false">Patient Perspectives</button>
+      </div>
+    </div>
+    <p id="blog-results" class="blog-meta" role="status" aria-live="polite">${publishedBlogs.articles.length} articles</p>
+    <div class="blog-grid" id="blog-grid">${blogCards}</div>
+  </div>`;
+}
+blogsIndex.blocks[0].html = blogIndexMarkup();
 const allPages = [finalHome, ...landings, ...topicPages, blogsIndex, ...publishedBlogs.pages, about, clone(contact), ...clone(legal), ...doctorProfiles];
 const finalSite = clone(site);
 const menuLabel = (title) => title.split(':')[0];

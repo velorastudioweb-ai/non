@@ -241,9 +241,42 @@
  if (e.key === 'Escape') close();
  else if (e.key === 'ArrowRight') step(1);
  else if (e.key === 'ArrowLeft') step(-1);
- });
- }
- /* ---------------- Consultation form ---------------- */
+  });
+  }
+  /* ---------------- Blog search and category filters ---------------- */
+  var blogHub = $('.blog-hub');
+  if (blogHub){
+  var blogSearch = $('#blog-search',blogHub);
+  var blogResults = $('#blog-results',blogHub);
+  var blogCards = $$('.blog-card',blogHub);
+  var blogFilters = $$('[data-blog-filter]',blogHub);
+  var activeBlogFilter = 'All Articles';
+  function blogPlural(count){ return count === 1 ? 'article' : 'articles'; }
+  function applyBlogFilter(){
+  var query = blogSearch ? blogSearch.value.trim().toLowerCase() : '';
+  var visible = 0;
+  blogCards.forEach(function (card){
+  var category = card.getAttribute('data-category') || '';
+  var searchable = card.getAttribute('data-search') || '';
+  var matchesCategory = activeBlogFilter === 'All Articles' || category === activeBlogFilter;
+  var matchesSearch = !query || searchable.indexOf(query) !== -1;
+  var show = matchesCategory && matchesSearch;
+  card.hidden = !show;
+  if (show) visible += 1;
+  });
+  if (blogResults) blogResults.textContent = visible + ' ' + blogPlural(visible) + (query || activeBlogFilter !== 'All Articles' ? ' matching your filters' : '');
+  }
+  blogFilters.forEach(function (button){
+  button.addEventListener('click',function (){
+  activeBlogFilter = button.getAttribute('data-blog-filter') || 'All Articles';
+  blogFilters.forEach(function (item){ item.setAttribute('aria-pressed',item === button ? 'true' : 'false'); });
+  applyBlogFilter();
+  });
+  });
+  if (blogSearch) blogSearch.addEventListener('input',applyBlogFilter);
+  applyBlogFilter();
+  }
+  /* ---------------- Consultation form ---------------- */
  var form = $('[data-consult-form]');
  if (form){
  var status = $('[data-status]',form);

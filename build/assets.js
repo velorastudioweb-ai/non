@@ -21,7 +21,9 @@ let components = fs.readFileSync(path.join(PUBLIC, 'css/components.css'), 'utf8'
 for (const [name, pattern] of [
   ['form', /\/\* =+ form =+ \*\/[\s\S]*?(?=\/\* =+ page banner)/],
   ['gallery', /\/\* =+ gallery =+ \*\/[\s\S]*?(?=\/\* =+ page banner)/],
-  ['research', /\/\* ---------- PMC research library ---------- \*\/[\s\S]*?(?=\/\* Canonical section)/]
+  ['research', /\/\* ---------- PMC research library ---------- \*\/[\s\S]*?(?=\/\* Canonical section)/],
+  ['blog', /\/\* =+ blog styles =+ \*\/[\s\S]*?(?=\/\* =+ profile styles =+ \*\/)/],
+  ['profiles', /\/\* =+ profile styles =+ \*\/[\s\S]*?\/\* =+ end profile styles =+ \*\/\s*/]
 ]) {
   const match = components.match(pattern);
   if (!match) throw new Error('Missing component CSS boundary: ' + name);

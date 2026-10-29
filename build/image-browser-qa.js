@@ -8,6 +8,13 @@ const { chromium } = require('playwright-core');
 const { allPages } = require('./structure');
 const baseline = process.argv.includes('--baseline');
 const out = path.join(__dirname, '..', 'docs', 'image-audit');
+const arg = (name) => process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : null;
+const requestedRoutes = arg('--routes');
+const routes = requestedRoutes ? requestedRoutes.split(',').map((route) => route.trim()).filter(Boolean) : allPages.map((page) => page.url);
+const pages = allPages.filter((page) => routes.includes(page.url));
+const widths = (arg('--widths') || '390,768,1440').split(',').map(Number);
+const label = arg('--label') || (baseline ? 'browser-before' : 'browser-after');
+if (!pages.length) throw new Error('No requested image-audit routes matched the page registry.');
 
 async function main() {
   fs.mkdirSync(out, { recursive: true });
@@ -28,11 +35,11 @@ async function main() {
     browser = await chromium.launch({ executablePath: chrome, headless: true });
     const results = [];
     const failures = [];
-    await Promise.all([390, 768, 1440].map(async (width) => {
+    await Promise.all(widths.map(async (width) => {
       const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
       const page = await context.newPage();
       page.on('pageerror', (e) => failures.push('JS: ' + e.message));
-      for (const p of allPages) {
+      for (const p of pages) {
         const response = await page.goto(base + p.url, { waitUntil: 'load' });
         assert.equal(response.status(), 200, p.url);
         // Open source disclosures and force lazy images to load so the audit
@@ -42,7 +49,14 @@ async function main() {
           document.querySelectorAll('.reveal').forEach((e) => e.classList.add('is-visible'));
           await Promise.all([...document.images].map((img) => {
             img.loading = 'eager';
-            return img.decode().catch(() => {});
+            img.scrollIntoView({ block: 'center' });
+            return new Promise((resolve) => {
+              if (img.complete) { resolve(); return; }
+              const finish = () => resolve();
+              img.addEventListener('load', finish, { once: true });
+              img.addEventListener('error', finish, { once: true });
+              window.setTimeout(finish, 8000);
+            }).then(() => img.decode().catch(() => {}));
           }));
           await document.fonts.ready;
         });
@@ -68,9 +82,9 @@ async function main() {
         }
       }
       await context.close();
-      console.log('Audited all 36 routes at ' + width + 'px, including below-the-fold images and source sections.');
+      console.log('Audited ' + pages.length + ' routes at ' + width + 'px, including below-the-fold images and source sections.');
     }));
-    fs.writeFileSync(path.join(out, baseline ? 'browser-before.json' : 'browser-after.json'), JSON.stringify({ phase: baseline ? 'before' : 'after', renders: results.length, failures, results }, null, 2));
+    fs.writeFileSync(path.join(out, label + '.json'), JSON.stringify({ phase: baseline ? 'before' : 'after', renders: results.length, failures, results }, null, 2));
     console.log('Image browser audit: ' + results.length + ' renders; ' + failures.length + ' failures.');
     assert.equal(failures.length, 0, failures.join('\n'));
   } finally {

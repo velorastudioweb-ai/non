@@ -23,8 +23,10 @@ function head(page, site) {
   const types = new Set();
   const collect = blocks => blocks.forEach(b => { types.add(b.type); if (b.blocks) collect(b.blocks); });
   collect(page.blocks || []);
-  const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : [])]
-    .filter(name => name === 'research' || types.has(name))
+  const isBlog = page.url === '/blogs/' || page.url.startsWith('/blogs/');
+  const isProfile = page.url === '/about-us/' || page.url.startsWith('/doctors/');
+  const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : []), ...(isBlog ? ['blog'] : []), ...(isProfile ? ['profiles'] : [])]
+    .filter(name => ['research', 'blog', 'profiles'].includes(name) || types.has(name))
     .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
   const schema = (page.schema || []).map((s) =>
 `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n  ');

@@ -70,11 +70,24 @@ const ROOT = path.resolve(__dirname, '..');
       await questions.nth(1).click();
       assert.equal(await page.locator('.faq__item.is-open').count(), 1);
       assert.equal(await questions.nth(1).getAttribute('aria-expanded'), 'true');
-      await page.waitForTimeout(400);
-      assert(await page.locator('.faq__item.is-open .faq__a').evaluate(el => el.clientHeight >= el.scrollHeight - 2));
-      const faqEvents = await page.evaluate(() => window.measuredEvents);
+       await page.waitForTimeout(400);
+       assert(await page.locator('.faq__item.is-open .faq__a').evaluate(el => el.clientHeight >= el.scrollHeight - 2));
+       const faqEvents = await page.evaluate(() => window.measuredEvents);
 
-      await page.goto(base + '/contact/', { waitUntil: 'load' });
+       await page.goto(base + '/blogs/', { waitUntil: 'load' });
+       assert.equal(await page.locator('.blog-card').count(), 10);
+       await page.locator('[data-blog-filter="Patient Perspectives"]').click();
+       assert.equal(await page.locator('.blog-card:visible').count(), 5);
+       await page.locator('#blog-search').fill('recovery');
+       assert.equal(await page.locator('.blog-card:visible').count(), 1);
+       assert.match(await page.locator('#blog-results').innerText(), /^1 article matching your filters$/);
+       await page.locator('[data-blog-filter="All Articles"]').click();
+       assert.equal(await page.locator('.blog-card:visible').count(), 3);
+       await page.locator('.blog-card:visible h2 a').first().click();
+       await page.waitForURL(/\/blogs\/[^/]+\/$/);
+       assert.equal(await page.locator('.blog-article__figure img').count(), 1);
+
+       await page.goto(base + '/contact/', { waitUntil: 'load' });
       const form = page.locator('[data-consult-form]');
       // Exercise the existing unconfigured-endpoint feedback, never send a lead.
       assert.equal(await form.getAttribute('data-endpoint'), '');
@@ -121,7 +134,7 @@ const ROOT = path.resolve(__dirname, '..');
       const researchEvents = await page.evaluate(() => window.measuredEvents);
       const events = [...navEvents, ...faqEvents, ...researchEvents];
       assert.deepEqual(errors, []);
-      results.push({ width, navigation: 'pass', faq: 'pass', contact: 'pass', research: 'pass', maxObservedEventMs: Math.max(0, ...events.map(e => e.duration)), events });
+       results.push({ width, navigation: 'pass', faq: 'pass', blogs: 'pass', contact: 'pass', research: 'pass', maxObservedEventMs: Math.max(0, ...events.map(e => e.duration)), events });
       await context.close();
       console.log('Interactions passed at ' + width + 'px');
     }
@@ -137,6 +150,6 @@ const ROOT = path.resolve(__dirname, '..');
     const out = path.join(ROOT, 'docs/performance-audit');
     fs.mkdirSync(out, { recursive: true });
     fs.writeFileSync(path.join(out, label + '-interactions.json'), JSON.stringify({ base, note: 'Lab Event Timing observations, not field INP.', results }, null, 2));
-    console.log('PASS: navigation, FAQ, contact validation, research search/year/sort/pagination/abstracts, hashes and no-JS rendering.');
+    console.log('PASS: navigation, FAQ, blog filters/search/article links, contact validation, research search/year/sort/pagination/abstracts, hashes and no-JS rendering.');
   } finally { await browser.close(); await server.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

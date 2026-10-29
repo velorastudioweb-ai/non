@@ -40,6 +40,26 @@ const perspectives = [
 ];
 perspectives.forEach(([slug,title,image,lead],i)=>articles.push({slug,title,category:'Patient Perspectives',date:'2026-10-'+String(23-i).padStart(2,'0'),image:'/'+image,keyword:'patient perspective breast enlargement',description:'An illustrative, educational patient-perspective scenario about informed breast enlargement decisions.',perspective:true,sections:[['A fictional composite perspective',lead],['Questions I needed to ask','I wrote down what I wanted to know about safety, realistic outcomes, costs, recovery, scars, alternatives and the option of waiting. A question list helped me recognise that an answer should be specific to the person and procedure, not a slogan.'],['What I learned from reliable information','I looked for regulator guidance and qualified professional advice rather than before-and-after marketing. I learned that online stories cannot predict my body, healing, risk or satisfaction.'],['Planning without pressure','I considered time off, support at home, follow-up care and finances, including potential future treatment. I gave myself time between consultation and any decision.'],['My balanced takeaway','This scenario is educational, not a treatment record. People may decide to proceed, postpone, choose another option or decide against treatment; each can be a thoughtful outcome when it is informed and freely made.']]}));
 
+// Editorial artwork deliberately differs where an article explains a distinct
+// scenario. Keep intrinsic dimensions with each record to reserve its layout
+// before the image downloads.
+const editorialImageDimensions = Object.freeze({
+  '/Breast Augmentation Medical Collage.webp': [1536, 1024],
+  '/implants.webp': [1254, 1254],
+  '/non surgical.webp': [1254, 1254],
+  '/Breast Augmentation Consultation Illustration.webp': [1600, 600],
+  '/Breast Augmentation Safety Consultation Infographic.webp': [1536, 1024],
+  '/Breast Enhancement Options Infographic.webp': [1536, 1024],
+  '/Five-Step Beauty Consultation Journey.webp': [1536, 1024],
+  '/fat-transfer.webp': [1254, 1254],
+  '/Our approach.webp': [1536, 1024]
+});
+articles.forEach((article) => {
+  const dimensions = editorialImageDimensions[article.image];
+  if (!dimensions) throw new Error('Missing editorial image dimensions: ' + article.image);
+  [article.imageWidth, article.imageHeight] = dimensions;
+});
+
 function deepDive(a) {
   const clinical = a.category === 'Breast Enlargement Education';
   const topic = a.title.replace(/[—–].*/, '').replace(/:.*/, '');
@@ -51,4 +71,12 @@ function deepDive(a) {
   <h3>Protect your independence</h3><p>Take notes, request written information and discuss the decision with someone you trust if that feels helpful. Be cautious about limited-time discounts, guaranteed results, pressure to pay a deposit immediately, or vague answers about who performs aftercare. ${clinical ? 'Choosing no treatment, or postponing a decision, remains an appropriate option.' : 'The composite narrator’s decision is not a recommendation for anyone else; choosing no treatment is equally valid.'}</p>`;
 }
 function page(a){ const related=articles.filter(x=>x.slug!==a.slug).slice(0,3); return {url:'/blogs/'+a.slug+'/',slug:'blogs-'+a.slug,h1:a.title,showBanner:false,seoTitle:a.title+' | Quantum Health',seoDescription:a.description,ogType:'article',breadcrumb:[{label:'Blogs',href:'/blogs/'},{label:a.title}],schema:[{'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.date,mainEntityOfPage:'https://nonsurgicalbreastenlargement.in/blogs/'+a.slug+'/',keywords:a.keyword}],blocks:[{type:'prose',html:`<p class="eyebrow">${a.category}</p><h1>${a.title}</h1><p class="blog-meta">Published ${a.date} · 8 min read</p>${a.perspective?disclosure:''}<p class="lead">${a.description}</p><nav class="blog-toc" aria-label="Table of contents"><strong>In this article</strong><ol>${a.sections.map(([h],i)=>'<li><a href="#section-'+(i+1)+'">'+h+'</a></li>').join('')}</ol></nav>${a.sections.map(([h,t],i)=>'<h2 id="section-'+(i+1)+'">'+h+'</h2>'+t).join('')}${deepDive(a)}<h2>Key takeaways</h2><ul><li>Individual assessment matters more than generic online claims.</li><li>Evidence, safety and realistic expectations should guide decisions.</li><li>Taking time and choosing no treatment are valid options.</li></ul>${refs}<h2>Related articles</h2><ul>${related.map(r=>'<li><a href="/blogs/'+r.slug+'/">'+r.title+'</a></li>').join('')}</ul>`},educationFaq(a.title),{type:'cta',heading:'Use information to prepare your questions',text:'This educational article cannot assess individual suitability. Discuss any treatment decision with an appropriately qualified clinician.',button:{label:'Explore safety guidance',href:'/breast-enlargement-safety/'}}]}; }
-module.exports={articles,pages:articles.map(page),disclosure};
+const escapeAttribute = (value) => String(value).replace(/[&"<>]/g, (char) => ({ '&': '&amp;', '"': '&quot;', '<': '&lt;', '>': '&gt;' })[char]);
+const pages = articles.map(page);
+pages.forEach((blogPage, index) => {
+  const article = articles[index];
+  const feature = `<figure class="blog-article__figure"><img src="${escapeAttribute(article.image)}" alt="Editorial illustration accompanying ${escapeAttribute(article.title)}" width="${article.imageWidth}" height="${article.imageHeight}" loading="eager" fetchpriority="high" decoding="async"></figure>`;
+  const metadata = `<p class="blog-meta">Published ${article.date} · 8 min read</p>`;
+  blogPage.blocks[0].html = blogPage.blocks[0].html.replace(metadata, metadata + feature);
+});
+module.exports={articles,pages,disclosure};
