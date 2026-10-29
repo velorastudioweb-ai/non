@@ -26,7 +26,7 @@ const siteImages = Object.freeze({
   sculptraBiostimulators: { src: '/sculptra.webp', width: 1254, height: 1254, alt: 'Sculptra and biostimulator information' },
   // Each treatment keeps its own named illustration; do not share the fat-transfer
   // infographic between implant and fat-transfer concepts.
-  breastImplants: { src: '/implants.webp', width: 1254, height: 1254, alt: 'Breast implants' },
+  breastImplants: { src: '/Cosmetic Implant Infographic in Burgundy.png', width: 2048, height: 768, alt: 'Breast implants' },
   fatTransfer: { src: '/Breast Fat Transfer Medical Infographic.png', width: 1254, height: 1254, alt: 'Fat transfer breast augmentation' },
   fatTransferGuide: { src: '/dfsjifl.png', width: 1254, height: 1254, alt: 'Illustration of fat-transfer breast augmentation from liposuction to transfer' },
   breastAugmentation: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options' },
