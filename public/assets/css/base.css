@@ -223,6 +223,11 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
     content-visibility: auto;
     contain-intrinsic-size: auto 800px;
   }
+  /* The hero is the LCP surface; never defer its paint. */
+  .page-home #main > .hero {
+    content-visibility: visible;
+    contain-intrinsic-size: none;
+  }
 }
 /* Alternate and wine bands are never flat: each carries a restrained
    ruby / orchid radial sheen so consecutive sections read as distinct. */
