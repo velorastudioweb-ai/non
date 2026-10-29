@@ -335,9 +335,11 @@ ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
    would be unreadable in a two-column split, so they get their own section. */
 function renderFigure(b) {
   const sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1240px) 92vw, 1100px';
-  const img = b.src
-    ? `<img src="${esc(b.src)}" alt="${esc(b.alt || '')}" width="${b.width || 1536}" height="${b.height || 1024}" loading="lazy" decoding="async">`
-    : '';
+  const img = b.art
+    ? picture(b.art, { variant: 'card', sizes, alt: b.imgAlt })
+    : b.src
+      ? `<img src="${esc(b.src)}" alt="${esc(b.alt || '')}" width="${b.width || 1536}" height="${b.height || 1024}" loading="lazy" decoding="async">`
+      : '';
   return `<div class="container">
   <div class="section-head section-head--center reveal">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}

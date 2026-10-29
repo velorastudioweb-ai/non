@@ -46,7 +46,9 @@ const doctorPortraits = Object.freeze({
   amod: { src: '/dr-amod-rao.png', width: 268, height: 342 },
   arivazhagan: { src: '/dr-arivazhagan.png', width: 367, height: 348 },
   sekhar: { src: '/dr-sekhar.png', width: 382, height: 372 },
-  alisha: { src: '/dr-alisha-khan.png', width: 208, height: 246 }
+  alisha: { src: '/dr-alisha-khan.png', width: 208, height: 246 },
+  nandita: { src: '/dr-nandita.png', width: 355, height: 431 },
+  sunitha: { src: '/dr-sunitha-devaraj.png', width: 350, height: 400 }
 });
 
 const escapeAttribute = (value) => String(value)

@@ -532,7 +532,7 @@ pages.push({
       items: [
         { title: 'Breast revision', text: 'Implant exchange, removal or repair when a previous operation needs attention.', href: '/surgical/breast-revision/', slot: 'Revision surgery imagery' },
         { title: 'Breast reduction', text: 'Reducing breast size and weight to relieve physical symptoms and restore proportion.', href: '/surgical/breast-reduction/', slot: 'Breast reduction imagery' },
-        { title: 'Breast lift (mastopexy)', text: 'Reshaping and raising sagging breasts without adding volume.', href: '/surgical/breast-lift/', slot: 'Breast lift imagery' },
+        { title: 'Breast lift (mastopexy)', text: 'Reshaping and raising sagging breasts without adding volume.', href: '/surgical/breast-lift/', slot: 'Mastopexy planning imagery' },
         { title: 'Mastectomy & chest surgery', text: 'Removal of breast tissue for chest contouring, risk reduction or treatment.', href: '/surgical/mastectomy-chest-surgery/', slot: 'Chest surgery imagery' },
         { title: 'Breast filler removal', text: 'Corrective surgery for injected fillers and liquid silicone that have caused problems.', href: '/surgical/breast-filler-removal/', slot: 'Corrective surgery imagery' }
       ]
@@ -779,6 +779,16 @@ pages.push(treatmentPage({
         { icon: 'info', title: 'Breastfeeding', text: 'Future breastfeeding ability can be affected; this is discussed in advance.' }
       ]
     },
+    { type: 'figure', eyebrow: 'Techniques', heading: 'Incisions, tissue removal and reshaping',
+      lead: 'Reduction removes glandular tissue, fat and skin, then reshapes the remaining breast and repositions the nipple–areola complex. The incision pattern depends on how much tissue is removed and how much lift is needed.',
+      art: 'qh-reduction-incisions', src: '/assets/img/qh-reduction-incisions-card.svg',
+      caption: 'Schematic areolar, vertical and inframammary incision patterns. Scars are permanent, although they usually fade and flatten over time.',
+      note: 'Conceptual educational illustration; not a patient, treatment result or clinical recommendation.' },
+    { type: 'figure', alt: true, eyebrow: 'Recovery', heading: 'A gradual return to activity',
+      lead: 'The first weeks focus on wound care, support and avoiding heavy lifting. Light daily activity usually resumes before strenuous exercise, and your surgeon’s aftercare instructions take priority over any general timeline.',
+      art: 'qh-reduction-recovery', src: '/assets/img/qh-reduction-recovery-card.svg',
+      caption: 'Conceptual recovery stages: early support and rest, a gradual return to light activity, then a phased return to exercise.',
+      note: 'Individual healing, follow-up and activity restrictions vary; discuss them with your surgeon.' },
     { type: 'faq', id: 'red', eyebrow: 'Questions', heading: 'Breast reduction FAQs',
       items: [
         { q: 'Can breast reduction be combined with a lift?', a: '<p>Breast reduction inherently includes lifting and reshaping the breast. A separate lift is generally not needed, although the specific technique is tailored to each case.</p>' },
@@ -802,6 +812,16 @@ pages.push(treatmentPage({
     { type: 'prose', html:
       '<p>Sagging (ptosis) develops with ageing, pregnancy, breastfeeding, weight change and gravity. A breast lift addresses it by removing loose skin, reshaping the remaining breast tissue and repositioning the nipple–areola complex higher on the chest. Unlike augmentation, a lift on its own does not add volume — the breast is reshaped using the tissue already present.</p>' +
       '<p>The degree of lift required determines the pattern of scars: around the areola alone for mild sagging, plus a vertical line for moderate sagging, or an additional line within the inframammary fold for more significant sagging. Where more fullness is also desired, a lift can be combined with an implant or fat transfer, with the trade-offs of each discussed at consultation.</p>' },
+    { type: 'split', alt: true,
+      eyebrow: 'Shape, scars and longevity',
+      heading: 'What a lift changes — and what it cannot promise',
+      body: '<p>A mastopexy repositions the nipple–areola complex and reshapes the breast using the tissue already present. It can improve droop and projection, but it does not reliably add volume; where both shape and fullness need to change, a lift may be combined with an implant or fat transfer.</p>' +
+        '<p>The scar pattern follows the amount of lift and skin tightening required: around the areola for a smaller lift, with a vertical line for a moderate lift, and sometimes an additional line within the inframammary fold. Scars soften and fade over months but remain permanent.</p>' +
+        '<p>The reshaping can last many years, but it is not permanent. Pregnancy, weight change and ageing continue to affect the breast, and some people eventually choose further surgery.</p>',
+      slot: 'Mastopexy planning imagery',
+      imgAlt: 'Schematic areolar, vertical and inframammary-fold incision-pattern concepts for breast lift surgery',
+      mediaRatio: 'ratio-4-3',
+      script: 'Schematic incision-pattern concepts; not a patient result.' },
     { type: 'table', eyebrow: 'At a glance', heading: 'Lift compared with augmentation and reduction',
       head: ['Procedure', 'What it changes', 'Volume'],
       rows: [

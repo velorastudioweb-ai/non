@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="825" viewBox="0 0 1200 825"><defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#4A0D24"/><stop offset=".6" stop-color="#651B36"/><stop offset="1" stop-color="#300C1B"/></linearGradient>
+<linearGradient id="paper" x2=".8" y2="1"><stop stop-color="#FFF4E4"/><stop offset="1" stop-color="#DCC1AC"/></linearGradient>
+<radialGradient id="pearl" cx=".35" cy=".28"><stop stop-color="#FFF6E8"/><stop offset=".6" stop-color="#E6C9BD"/><stop offset="1" stop-color="#AF7C89"/></radialGradient>
+<linearGradient id="gel" x2="1" y2="1"><stop stop-color="#F1C6C3" stop-opacity=".85"/><stop offset="1" stop-color="#A96B88" stop-opacity=".45"/></linearGradient>
+<radialGradient id="fat" cx=".3" cy=".25"><stop stop-color="#FFF0CC"/><stop offset="1" stop-color="#D6AC7C"/></radialGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#FFF4E4" stop-opacity=".5"/><stop offset="1" stop-color="#EBC4B9" stop-opacity=".12"/></linearGradient>
+<linearGradient id="wine" x2=".8" y2="1"><stop stop-color="#8C3856"/><stop offset="1" stop-color="#4A0D24"/></linearGradient>
+<radialGradient id="light"><stop stop-color="#E6B8A9" stop-opacity=".18"/><stop offset="1" stop-color="#E6B8A9" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.6"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#160711" flood-opacity=".22"/></filter></defs>
+<rect width="1200" height="825" fill="url(#bg)"/><ellipse cx="768" cy="330" rx="648" ry="660" fill="url(#light)"/>
+<path d="M0 726Q600 561 1200 726" fill="none" stroke="#D6B77A" stroke-opacity=".12" stroke-width="2"/>
+<g transform="translate(90 55)"><ellipse cx="505" cy="565" rx="365" ry="52" fill="#160713" opacity=".16"/><circle cx="505" cy="325" r="310" fill="none" stroke="#D6B77A" stroke-opacity=".13" stroke-width="2"/><g filter="url(#shadow)"><g>
+        <path d="M150 585H850" stroke="#D6B77A" stroke-opacity=".3" stroke-width="3" stroke-dasharray="12 14"/>
+        <ellipse cx="345" cy="330" rx="170" ry="225" fill="url(#pearl)" stroke="#D6B77A" stroke-width="5"/>
+        <path d="M345 555Q475 520 505 380Q530 260 470 118Q405 80 345 88Z" fill="url(#wine)" opacity=".28"/>
+        <circle cx="360" cy="325" r="60" fill="none" stroke="#651B36" stroke-width="7" stroke-dasharray="11 9"/>
+        <path d="M360 385V515" stroke="#651B36" stroke-width="7" stroke-linecap="round"/>
+        <path d="M220 520Q360 585 500 520" fill="none" stroke="#651B36" stroke-width="7" stroke-linecap="round"/>
+        <path d="M165 230V440" fill="none" stroke="#D6B77A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M145 250H195" fill="none" stroke="#D6B77A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M145 320H195" fill="none" stroke="#D6B77A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M145 390H195" fill="none" stroke="#D6B77A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <g>
+        <ellipse cx="745" cy="170" rx="58" ry="88" fill="url(#pearl)" stroke="#D6B77A" stroke-width="3"/>
+        <circle cx="745" cy="144" r="17" fill="none" stroke="#651B36" stroke-width="4" stroke-dasharray="5 4"/>
+        
+        
+      </g>
+        <g>
+        <ellipse cx="745" cy="365" rx="58" ry="88" fill="url(#pearl)" stroke="#D6B77A" stroke-width="3"/>
+        <circle cx="745" cy="339" r="17" fill="none" stroke="#651B36" stroke-width="4" stroke-dasharray="5 4"/>
+        <path d="M745 356V407" fill="none" stroke="#651B36" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        
+      </g>
+        <g>
+        <ellipse cx="745" cy="560" rx="58" ry="88" fill="url(#pearl)" stroke="#D6B77A" stroke-width="3"/>
+        <circle cx="745" cy="534" r="17" fill="none" stroke="#651B36" stroke-width="4" stroke-dasharray="5 4"/>
+        <path d="M745 551V602" fill="none" stroke="#651B36" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M711 608Q745 634 779 608" fill="none" stroke="#651B36" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      </g></g></g></svg>

@@ -31,7 +31,11 @@ const entries = [
   ['/glossary/', 'medical-terms-reference', 'glossary', 'Open dictionary with blank index tabs and a reading lens; no embedded lettering', 'Plain-language medical terminology'],
   ['/faqs/', 'shared-questions', 'questions', 'Unmarked speech cards and an open notebook, without embedded text', 'Questions and informed discussion'],
   ['/about-us/', 'independent-patient-education', 'reading', 'An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait', 'Independent patient education'],
-  ['/contact/', 'website-enquiries', 'contact', 'Envelope and unmarked correspondence card on a quiet maroon desk', 'Website correspondence']
+  ['/contact/', 'website-enquiries', 'contact', 'Envelope and unmarked correspondence card on a quiet maroon desk', 'Website correspondence'],
+  /* Body-section artwork. These keys are referenced directly by figure blocks
+     rather than by a route, so the pseudo-route keeps them out of banners. */
+  ['#reduction-incisions', 'reduction-incisions', 'incisionPlans', 'Schematic breast contour with areolar, vertical and inframammary incision lines and a shaded excision area', 'Schematic incision patterns discussed before breast reduction'],
+  ['#reduction-recovery', 'reduction-recovery', 'recovery', 'Unmarked calendar checkpoints, a support garment and a gradual-activity path', 'Recovery stages and aftercare concepts after breast reduction']
 ];
 const routes = Object.fromEntries(entries.map(([route, slug, kind, concept, alt], i) => [route, {
   route, key: 'qh-' + slug, kind, concept, alt: 'Educational illustration: ' + alt.toLowerCase(), seed: i,

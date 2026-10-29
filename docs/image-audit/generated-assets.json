@@ -494,5 +494,21 @@
     "variant": "card",
     "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
     "alt": "Educational illustration: website correspondence"
+  },
+  {
+    "route": "#reduction-incisions",
+    "filename": "qh-reduction-incisions-card.svg",
+    "kind": "incisionPlans",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: schematic incision patterns discussed before breast reduction"
+  },
+  {
+    "route": "#reduction-recovery",
+    "filename": "qh-reduction-recovery-card.svg",
+    "kind": "recovery",
+    "variant": "card",
+    "provenance": "Original deterministic SVG illustration; not AI photography or clinical imagery",
+    "alt": "Educational illustration: recovery stages and aftercare concepts after breast reduction"
   }
 ]

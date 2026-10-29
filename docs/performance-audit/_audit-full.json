@@ -124,11 +124,11 @@
         "inMain": true
       },
       {
-        "src": "http://127.0.0.1:4187/assets/responsive/implants-5c45fc6a5a11-480.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Breast implants",
         "decorative": false,
-        "nw": 349,
-        "nh": 349,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 340,
         "h": 234,
@@ -364,6 +364,17 @@
         "inMain": true
       },
       {
+        "src": "http://127.0.0.1:4187/assets/responsive/surgical-e0e94529e38c-480.webp",
+        "alt": "Surgical breast enlargement options",
+        "decorative": false,
+        "nw": 349,
+        "nh": 349,
+        "loading": "eager",
+        "w": 340,
+        "h": 255,
+        "inMain": true
+      },
+      {
         "src": "http://127.0.0.1:4187/Breast%20Augmentation%20Options%20Infographic.png",
         "alt": "Breast augmentation options",
         "decorative": false,
@@ -375,11 +386,11 @@
         "inMain": true
       },
       {
-        "src": "http://127.0.0.1:4187/assets/responsive/implants-5c45fc6a5a11-480.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Breast implants",
         "decorative": false,
-        "nw": 349,
-        "nh": 349,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 340,
         "h": 234,
@@ -1199,14 +1210,14 @@
     "whites": [],
     "images": [
       {
-        "src": "http://127.0.0.1:4187/assets/responsive/implants-5c45fc6a5a11-480.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Educational illustration: implant-device shapes and outer shells",
         "decorative": false,
-        "nw": 389,
-        "nh": 389,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 390,
-        "h": 390,
+        "h": 146,
         "inMain": true
       },
       {
@@ -1673,6 +1684,17 @@
         "w": 390,
         "h": 156,
         "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-mastopexy-planning-card-480.webp",
+        "alt": "Schematic areolar, vertical and inframammary-fold incision-pattern concepts for breast lift surgery",
+        "decorative": false,
+        "nw": 389,
+        "nh": 268,
+        "loading": "eager",
+        "w": 340,
+        "h": 255,
+        "inMain": true
       }
     ],
     "links": [
@@ -2051,6 +2073,28 @@
         "w": 390,
         "h": 156,
         "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-reduction-incisions-card-480.webp",
+        "alt": "Educational illustration: schematic incision patterns discussed before breast reduction",
+        "decorative": false,
+        "nw": 349,
+        "nh": 240,
+        "loading": "eager",
+        "w": 340,
+        "h": 234,
+        "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-reduction-recovery-card-480.webp",
+        "alt": "Educational illustration: recovery stages and aftercare concepts after breast reduction",
+        "decorative": false,
+        "nw": 349,
+        "nh": 240,
+        "loading": "eager",
+        "w": 340,
+        "h": 234,
+        "inMain": true
       }
     ],
     "links": [
@@ -2129,6 +2173,8 @@
       "/contact/",
       "/",
       "/surgical-breast-enlargement/",
+      "/assets/img/qh-reduction-incisions-card.svg",
+      "/assets/img/qh-reduction-recovery-card.svg",
       "/surgical-breast-enlargement/",
       "/breast-enlargement-safety/",
       "/research/",
@@ -7209,7 +7255,7 @@
         "nh": 431,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 334,
         "inMain": true
       },
       {
@@ -7220,7 +7266,7 @@
         "nh": 317,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 251,
         "inMain": true
       },
       {
@@ -7231,7 +7277,7 @@
         "nh": 342,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 350,
         "inMain": true
       },
       {
@@ -7242,7 +7288,7 @@
         "nh": 348,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 265,
         "inMain": true
       },
       {
@@ -7253,7 +7299,18 @@
         "nh": 372,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 271,
+        "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/dr-nandita.png",
+        "alt": "Portrait of Dr. Nandita",
+        "decorative": false,
+        "nw": 377,
+        "nh": 370,
+        "loading": "eager",
+        "w": 278,
+        "h": 273,
         "inMain": true
       },
       {
@@ -7264,7 +7321,7 @@
         "nh": 246,
         "loading": "eager",
         "w": 278,
-        "h": 180,
+        "h": 326,
         "inMain": true
       }
     ],
@@ -8693,7 +8750,19 @@
     "htmlBg": "rgb(74, 15, 36)",
     "overflow": 0,
     "whites": [],
-    "images": [],
+    "images": [
+      {
+        "src": "http://127.0.0.1:4187/dr-nandita.png",
+        "alt": "Portrait of Dr. Nandita",
+        "decorative": false,
+        "nw": 377,
+        "nh": 370,
+        "loading": "eager",
+        "w": 310,
+        "h": 281,
+        "inMain": true
+      }
+    ],
     "links": [
       "#main",
       "/",
@@ -9037,11 +9106,11 @@
         "inMain": true
       },
       {
-        "src": "http://127.0.0.1:4187/assets/responsive/implants-5c45fc6a5a11-480.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Breast implants",
         "decorative": false,
-        "nw": 310,
-        "nh": 310,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 280,
         "h": 193,
@@ -9277,6 +9346,17 @@
         "inMain": true
       },
       {
+        "src": "http://127.0.0.1:4187/assets/responsive/surgical-e0e94529e38c-768.webp",
+        "alt": "Surgical breast enlargement options",
+        "decorative": false,
+        "nw": 580,
+        "nh": 580,
+        "loading": "eager",
+        "w": 562,
+        "h": 421,
+        "inMain": true
+      },
+      {
         "src": "http://127.0.0.1:4187/Breast%20Augmentation%20Options%20Infographic.png",
         "alt": "Breast augmentation options",
         "decorative": false,
@@ -9288,11 +9368,11 @@
         "inMain": true
       },
       {
-        "src": "http://127.0.0.1:4187/assets/responsive/implants-5c45fc6a5a11-480.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Breast implants",
         "decorative": false,
-        "nw": 413,
-        "nh": 413,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 382,
         "h": 263,
@@ -10112,11 +10192,11 @@
     "whites": [],
     "images": [
       {
-        "src": "http://127.0.0.1:4187/implants.webp",
+        "src": "http://127.0.0.1:4187/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
         "alt": "Educational illustration: implant-device shapes and outer shells",
         "decorative": false,
-        "nw": 1440,
-        "nh": 1440,
+        "nw": 2048,
+        "nh": 768,
         "loading": "eager",
         "w": 1440,
         "h": 742,
@@ -10586,6 +10666,17 @@
         "w": 1440,
         "h": 714,
         "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-mastopexy-planning-card-960.webp",
+        "alt": "Schematic areolar, vertical and inframammary-fold incision-pattern concepts for breast lift surgery",
+        "decorative": false,
+        "nw": 662,
+        "nh": 455,
+        "loading": "eager",
+        "w": 562,
+        "h": 421,
+        "inMain": true
       }
     ],
     "links": [
@@ -10964,6 +11055,28 @@
         "w": 1440,
         "h": 768,
         "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-reduction-incisions-card-1600.webp",
+        "alt": "Educational illustration: schematic incision patterns discussed before breast reduction",
+        "decorative": false,
+        "nw": 1100,
+        "nh": 756,
+        "loading": "eager",
+        "w": 1098,
+        "h": 755,
+        "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/assets/img/qh-reduction-recovery-card-1600.webp",
+        "alt": "Educational illustration: recovery stages and aftercare concepts after breast reduction",
+        "decorative": false,
+        "nw": 1100,
+        "nh": 756,
+        "loading": "eager",
+        "w": 1098,
+        "h": 755,
+        "inMain": true
       }
     ],
     "links": [
@@ -11042,6 +11155,8 @@
       "/contact/",
       "/",
       "/surgical-breast-enlargement/",
+      "/assets/img/qh-reduction-incisions-card.svg",
+      "/assets/img/qh-reduction-recovery-card.svg",
       "/surgical-breast-enlargement/",
       "/breast-enlargement-safety/",
       "/research/",
@@ -16122,7 +16237,7 @@
         "nh": 431,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 363,
         "inMain": true
       },
       {
@@ -16133,7 +16248,7 @@
         "nh": 317,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 273,
         "inMain": true
       },
       {
@@ -16144,7 +16259,7 @@
         "nh": 342,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 381,
         "inMain": true
       },
       {
@@ -16155,7 +16270,7 @@
         "nh": 348,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 288,
         "inMain": true
       },
       {
@@ -16166,7 +16281,18 @@
         "nh": 372,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 295,
+        "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/dr-nandita.png",
+        "alt": "Portrait of Dr. Nandita",
+        "decorative": false,
+        "nw": 377,
+        "nh": 370,
+        "loading": "eager",
+        "w": 302,
+        "h": 297,
         "inMain": true
       },
       {
@@ -16177,7 +16303,7 @@
         "nh": 246,
         "loading": "eager",
         "w": 302,
-        "h": 180,
+        "h": 354,
         "inMain": true
       }
     ],
@@ -17606,7 +17732,19 @@
     "htmlBg": "rgb(74, 15, 36)",
     "overflow": 0,
     "whites": [],
-    "images": [],
+    "images": [
+      {
+        "src": "http://127.0.0.1:4187/dr-nandita.png",
+        "alt": "Portrait of Dr. Nandita",
+        "decorative": false,
+        "nw": 377,
+        "nh": 370,
+        "loading": "eager",
+        "w": 340,
+        "h": 420,
+        "inMain": true
+      }
+    ],
     "links": [
       "#main",
       "/",

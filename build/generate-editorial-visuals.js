@@ -22,6 +22,50 @@ function subject(kind, seed) {
     case 'claims': return [-1, 0, 1].map((i) => `<g transform="rotate(${i * 12} 500 350)"><rect x="${300 + i * 115}" y="${160 + Math.abs(i) * 65}" width="300" height="360" rx="22" fill="${['#D6B77A', '#EDD6C6', '#8C3856'][i + 1]}" stroke="#D6B77A" stroke-width="4"/></g>`).join('') + lens(700, 380, 125);
     case 'material': return `<ellipse cx="455" cy="370" rx="255" ry="145" fill="url(#glass)" stroke="#D6B77A" stroke-width="5"/><path d="M200 370V425Q455 640 710 425V370" fill="url(#gel)" stroke="#D6B77A" stroke-width="4"/>${circle(335, 350, 60, 'url(#pearl)')}${circle(485, 335, 45, 'url(#gel)')}${circle(570, 425, 28, 'url(#pearl)')}` + lens(730, 230, 98) + shield(260, 520, .35);
     case 'scars': return `<g>${[280, 510, 740].map((x, i) => `<ellipse cx="${x}" cy="330" rx="100" ry="150" fill="url(#pearl)" stroke="#D6B77A" stroke-width="3"/><circle cx="${x}" cy="295" r="37" fill="none" stroke="#651B36" stroke-width="5" stroke-dasharray="8 7"/>${i > 0 ? line(`M${x} 335V428`, '#651B36', 5) : ''}${i > 1 ? line(`M${x - 70} 435Q${x} 470 ${x + 70} 435`, '#651B36', 5) : ''}`).join('')}</g>`;
+    case 'incisionPlans': {
+      const mini = (x, y, type) => `<g>
+        <ellipse cx="${x}" cy="${y}" rx="58" ry="88" fill="url(#pearl)" stroke="#D6B77A" stroke-width="3"/>
+        <circle cx="${x}" cy="${y - 26}" r="17" fill="none" stroke="#651B36" stroke-width="4" stroke-dasharray="5 4"/>
+        ${type > 0 ? line(`M${x} ${y - 9}V${y + 42}`, '#651B36', 4) : ''}
+        ${type > 1 ? line(`M${x - 34} ${y + 48}Q${x} ${y + 74} ${x + 34} ${y + 48}`, '#651B36', 4) : ''}
+      </g>`;
+      return `<g>
+        <path d="M150 585H850" stroke="#D6B77A" stroke-opacity=".3" stroke-width="3" stroke-dasharray="12 14"/>
+        <ellipse cx="345" cy="330" rx="170" ry="225" fill="url(#pearl)" stroke="#D6B77A" stroke-width="5"/>
+        <path d="M345 555Q475 520 505 380Q530 260 470 118Q405 80 345 88Z" fill="url(#wine)" opacity=".28"/>
+        <circle cx="360" cy="325" r="60" fill="none" stroke="#651B36" stroke-width="7" stroke-dasharray="11 9"/>
+        <path d="M360 385V515" stroke="#651B36" stroke-width="7" stroke-linecap="round"/>
+        <path d="M220 520Q360 585 500 520" fill="none" stroke="#651B36" stroke-width="7" stroke-linecap="round"/>
+        ${line('M165 230V440', '#D6B77A', 3)}
+        ${[250, 320, 390].map((y) => line(`M145 ${y}H195`, '#D6B77A', 4)).join('')}
+        ${mini(745, 170, 0)}
+        ${mini(745, 365, 1)}
+        ${mini(745, 560, 2)}
+      </g>`;
+    }
+    case 'recovery': {
+      const cell = (x, y, done) => done
+        ? `<circle cx="${x}" cy="${y}" r="11" fill="#651B36" stroke="#D6B77A" stroke-width="2.5"/><path d="M${x - 5} ${y}l4 4 7-9" fill="none" stroke="#F6EBDD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`
+        : circle(x, y, 8, 'url(#pearl)');
+      const cells = [];
+      [285, 335, 385, 435].forEach((y, r) => [230, 285, 340, 395, 450].forEach((x, c) => cells.push(cell(x, y, (r + c) % 5 === 2))));
+      return `<g>
+        <g transform="rotate(-5 330 330)">
+          <rect x="190" y="164" width="310" height="370" rx="20" fill="#160713" opacity=".2"/>
+          <rect x="180" y="150" width="310" height="370" rx="20" fill="url(#paper)" stroke="#D6B77A" stroke-width="3"/>
+          <path d="M180 235H490" stroke="#651B36" stroke-opacity=".26" stroke-width="5"/>
+          <path d="M245 118V168M430 118V168" stroke="#D6B77A" stroke-width="11" stroke-linecap="round"/>
+          ${cells.join('')}
+        </g>
+        <g transform="translate(575 80) scale(.62)">
+          <path d="M300 155L390 125Q445 200 500 125L590 155L670 295L600 340L575 280V560Q445 595 315 560V280L290 340L220 295Z" fill="url(#pearl)" stroke="#D6B77A" stroke-width="5"/>
+          <path d="M445 205V565M320 390H570" stroke="#A96A80" stroke-width="4"/>
+          ${[260, 320, 380, 440, 500].map((y) => circle(445, y, 5, '#651B36')).join('')}
+        </g>
+        <path d="M600 610H860" stroke="#D6B77A" stroke-opacity=".35" stroke-width="3" stroke-dasharray="10 10"/>
+        ${[600, 730, 860].map((x) => circle(x, 610, 13, 'url(#pearl)')).join('')}
+      </g>`;
+    }
     case 'shoulders': return sheet(535, 160, 300, 350, 10) + `<path d="M300 140V205Q245 220 210 255L165 360M450 140V205Q505 220 540 255L585 360M245 290V530Q375 570 505 530V290M375 260V515" fill="none" stroke="#F4E6D6" stroke-width="7" stroke-linecap="round"/>${circle(245, 245, 45, 'none')}${circle(505, 245, 45, 'none')}${line('M300 140Q375 175 450 140', '#D6B77A', 5)}`;
     case 'garment': return `<path d="M300 155L390 125Q445 200 500 125L590 155L670 295L600 340L575 280V560Q445 595 315 560V280L290 340L220 295Z" fill="url(#pearl)" stroke="#D6B77A" stroke-width="5"/>${line('M445 205V565M320 390H570', '#A96A80', 4)}${[260, 320, 380, 440, 500].map((y) => circle(445, y, 5, '#651B36')).join('')}<g transform="translate(560 270) scale(.48)">${book(470, 340, 1)}</g>`;
     case 'implant': return implant(395, 315, 1.05) + `<g transform="translate(710 445)"><path d="M-150 40Q-90 -100 40 -80Q140 -40 155 40Z" fill="url(#pearl)" stroke="#D6B77A" stroke-width="5"/>${line('M-128 30Q-58 -72 33 -63', '#FFF3E5', 5)}</g>`;
@@ -77,6 +121,9 @@ const required = new Map();
 // itself has no split block.
 if (!required.has('qh-independent-patient-education')) required.set('qh-independent-patient-education', new Set());
 required.get('qh-independent-patient-education').add('portrait');
+/* Body-section artwork used by figure blocks rather than card links. */
+need('qh-reduction-incisions', 'card');
+need('qh-reduction-recovery', 'card');
 function need(key, variant) {
   if (!key) return;
   if (!required.has(key)) required.set(key, new Set());

@@ -158,6 +158,7 @@ const SLOTS = {
   'Patient resources imagery': 'notebook',
   'Safety and evidence imagery': 'concrete',
   'Breast lift imagery': 'treatment-breast-lift',
+  'Mastopexy planning imagery': 'qh-mastopexy-planning',
   'Breast anatomy imagery': 'education-breast-anatomy',
   /* deliberately unpublished — never filled with stock photography */
   'Video thumbnail': null,

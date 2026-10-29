@@ -104,7 +104,9 @@
   .hero__curve { z-index: 0; }
 }
 @media (min-width: 1024px) {
-  .hero__bg img { object-fit: cover; object-position: center; }
+  /* Content-bearing artwork must never lose faces, heads or labels to a crop. */
+  .page-banner__art img { object-fit: contain; object-position: center; }
+  .hero__bg img { object-fit: contain; object-position: center; }
   .hero__inner { padding-block: clamp(3rem, 5vw, 5rem); }
   .hero__copy > * { margin-top: 0; }
 }
