@@ -1,0 +1,506 @@
+{
+  "phase": "before",
+  "renders": 2,
+  "failures": [
+    "/surgical-breast-enlargement/@390: page overflow 1218",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-480.webp",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/assets/responsive/implants-5c45fc6a5a11-480.webp",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Breast%20Implant%20Safety%20Infographic.png",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Breast%20Filler%20Removal%20Medical%20Infographic.png",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Breast%20Surgery%20Planning%20and%20Recovery%20Collage.png",
+    "/surgical-breast-enlargement/@390: broken image http://127.0.0.1:8142/Personalized%20Breast%20Consultation%20Scene.png",
+    "/surgical-breast-enlargement/@1440: page overflow 168",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Augmentation%20Consultation%20Illustration.webp",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/assets/responsive/implants-5c45fc6a5a11-480.webp",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Implant%20Safety%20Infographic.png",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Filler%20Removal%20Medical%20Infographic.png",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Breast%20Surgery%20Planning%20and%20Recovery%20Collage.png",
+    "/surgical-breast-enlargement/@1440: broken image http://127.0.0.1:8142/Personalized%20Breast%20Consultation%20Scene.png"
+  ],
+  "results": [
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 390,
+      "overflow": 1218,
+      "sections": [
+        {
+          "heading": "Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "",
+          "imageCount": 0
+        },
+        {
+          "heading": "Breast enlargement: implants and fat transfer",
+          "imageCount": 4
+        },
+        {
+          "heading": "Related surgical procedures",
+          "imageCount": 0
+        },
+        {
+          "heading": "Related surgery: shape, correction, reduction and chest contouring",
+          "imageCount": 5
+        },
+        {
+          "heading": "Key considerations before surgery",
+          "imageCount": 0
+        },
+        {
+          "heading": "Preparing for a surgical consultation",
+          "imageCount": 1
+        },
+        {
+          "heading": "No guarantees",
+          "imageCount": 0
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-480.webp",
+          "alt": "Educational illustration: surgical options and informed planning",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            374,
+            36
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "600",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+          "alt": "Breast augmentation options",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            199,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/implants-5c45fc6a5a11-480.webp",
+          "alt": "Breast implants",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            116,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Implant%20Safety%20Infographic.png",
+          "alt": "Breast implant safety",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            152,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Fat transfer breast augmentation",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            223,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-mastopexy-planning-card-480.webp",
+          "alt": "Educational illustration: schematic areolar, vertical and fold incision-pattern concepts",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-implant-revision-card-480.webp",
+          "alt": "Educational illustration: implant review and revision planning",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Filler%20Removal%20Medical%20Infographic.png",
+          "alt": "Breast filler removal medical infographic",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            281,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-reduction-planning-card-480.webp",
+          "alt": "Educational illustration: back and shoulder symptoms to discuss before breast reduction",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Surgery%20Planning%20and%20Recovery%20Collage.png",
+          "alt": "Mastectomy and chest contouring surgery planning and recovery",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            374,
+            36
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Personalized%20Breast%20Consultation%20Scene.png",
+          "alt": "Illustration of a patient preparing for a breast-surgery consultation",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            374,
+            36
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1440,
+      "overflow": 168,
+      "sections": [
+        {
+          "heading": "Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "",
+          "imageCount": 0
+        },
+        {
+          "heading": "Breast enlargement: implants and fat transfer",
+          "imageCount": 4
+        },
+        {
+          "heading": "Related surgical procedures",
+          "imageCount": 0
+        },
+        {
+          "heading": "Related surgery: shape, correction, reduction and chest contouring",
+          "imageCount": 5
+        },
+        {
+          "heading": "Key considerations before surgery",
+          "imageCount": 0
+        },
+        {
+          "heading": "Preparing for a surgical consultation",
+          "imageCount": 1
+        },
+        {
+          "heading": "No guarantees",
+          "imageCount": 0
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "alt": "Educational illustration: surgical options and informed planning",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            425,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "600",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+          "alt": "Breast augmentation options",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            199,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/implants-5c45fc6a5a11-480.webp",
+          "alt": "Breast implants",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            116,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Implant%20Safety%20Infographic.png",
+          "alt": "Breast implant safety",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            152,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Fat transfer breast augmentation",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            223,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-mastopexy-planning-card-480.webp",
+          "alt": "Educational illustration: schematic areolar, vertical and fold incision-pattern concepts",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-implant-revision-card-480.webp",
+          "alt": "Educational illustration: implant review and revision planning",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Filler%20Removal%20Medical%20Infographic.png",
+          "alt": "Breast filler removal medical infographic",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            281,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-reduction-planning-card-480.webp",
+          "alt": "Educational illustration: back and shoulder symptoms to discuss before breast reduction",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            1600,
+            1100
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Surgery%20Planning%20and%20Recovery%20Collage.png",
+          "alt": "Mastectomy and chest contouring surgery planning and recovery",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            431,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Personalized%20Breast%20Consultation%20Scene.png",
+          "alt": "Illustration of a patient preparing for a breast-surgery consultation",
+          "natural": [
+            0,
+            0
+          ],
+          "rendered": [
+            439,
+            18
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    }
+  ]
+}

@@ -1934,6 +1934,13 @@ button.gallery-item .gallery-item__cap {
 }
 .educational-visual .editorial-picture img { width: 100%; }
 .educational-visual figcaption { padding: 1rem 1.25rem; color: var(--ivory-soft); font-size: var(--fs-sm); line-height: 1.6; }
+/* Wide explanatory figures: readable infographics that need the full column. */
+.figure-feature { max-width: 1100px; margin-inline: auto; border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; background: #4A0D24; }
+.figure-feature__media img { display: block; width: 100%; height: auto; background: #4A0D24; }
+.figure-feature figcaption { display: grid; gap: .35rem; padding: 1rem 1.25rem; color: var(--ivory-soft); font-size: var(--fs-sm); line-height: 1.6; }
+.figure-feature__note { color: var(--muted-2); }
+.figure-feature__link { justify-self: start; color: var(--gold-light); font-size: var(--fs-small); text-decoration: underline; text-underline-offset: 3px; }
+.figure-feature__link:hover { color: var(--rose-light); }
 .hero__figure > picture { display: block; width: 100%; height: 100%; }
 .hero__credit[data-image-caption] { max-width: calc(100% - 28px); white-space: normal; line-height: 1.5; }
 
@@ -2089,6 +2096,11 @@ body .qh .qh-portrait {
   background: var(--panel-gradient-alt) !important;
   color: var(--gold-light) !important;
 }
+body .qh .qh-portrait--initials span {
+  color: var(--gold-light) !important;
+  font: 500 clamp(1.6rem, 4vw, 2.4rem)/1 var(--font-heading);
+  letter-spacing: .14em;
+}
 body .qh .qh-portrait-image {
   display: block;
   width: 100%;
@@ -2123,7 +2135,15 @@ body .qh .qh-breadcrumb a { color: var(--gold-light) !important; }
 body .page-about-us .qh-about .qh-about-hero,
 body .page-about-us .qh-about .qh-about-leadership,
 body .page-about-us .qh-about .qh-about-contact { border-color: var(--border-soft) !important; background: var(--ruby-aurora-soft), var(--panel-gradient-alt) !important; }
-body .page-about-us .qh-about .qh-doctor-card__image { width: 100%; height: 220px; aspect-ratio: 4 / 5; }
+/* Doctor portraits arrive at slightly different aspect ratios. Let each one keep
+   its own proportions instead of forcing a 4:5 crop, which used to letterbox the
+   wider photographs inside a fixed 220px frame. */
+body .page-about-us .qh-about .qh-doctor-card__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain !important;
+}
 @media (max-width: 900px) {
   body .qh .qh-vikas-hero { grid-template-columns: minmax(0, 1fr) minmax(250px, 320px); }
   body .qh .qh-locations { grid-template-columns: repeat(3, minmax(0, 1fr)); }

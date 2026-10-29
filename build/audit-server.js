@@ -17,6 +17,7 @@ async function startAuditServer(base) {
   fs.cpSync(path.join(__dirname, '../dist'), snapshot, { recursive: true });
   const server = http.createServer((req, res) => {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+    if (pathname === '/api/contact') return require('../api/contact')(req, res);
     const requested = path.resolve(snapshot, '.' + pathname);
     let file = requested;
     if (!file.startsWith(snapshot + path.sep) && file !== snapshot) { res.writeHead(400); return res.end(); }

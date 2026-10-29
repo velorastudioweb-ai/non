@@ -1,11 +1,17 @@
 {
   "base": "https://quantumhealth-website.vercel.app",
   "expectedSiteUrl": "https://quantumhealth-website.vercel.app",
-  "checkedAt": "2026-10-26T00:37:24.448Z",
-  "pages": 44,
-  "redirects": 38,
+  "checkedAt": "2026-10-29T01:29:50.093Z",
+  "pages": 55,
+  "redirects": 37,
   "custom404": "pass",
   "assets": [
+    {
+      "url": "/assets/built/blog-fcce2ba9f3a9.css",
+      "bytes": 3462,
+      "cache": "public, max-age=31536000, immutable",
+      "encoding": "br"
+    },
     {
       "url": "/assets/built/form-61c3449633fa.css",
       "bytes": 3809,
@@ -19,14 +25,20 @@
       "encoding": "br"
     },
     {
-      "url": "/assets/built/main-a0658155276d.js",
-      "bytes": 8732,
+      "url": "/assets/built/main-fdb1998b85e4.js",
+      "bytes": 10150,
       "cache": "public, max-age=31536000, immutable",
       "encoding": "br"
     },
     {
-      "url": "/assets/built/research-0682c9fdb427.css",
-      "bytes": 3993,
+      "url": "/assets/built/profiles-23dc1bd36a28.css",
+      "bytes": 11911,
+      "cache": "public, max-age=31536000, immutable",
+      "encoding": "br"
+    },
+    {
+      "url": "/assets/built/research-08af334f2700.css",
+      "bytes": 3965,
       "cache": "public, max-age=31536000, immutable",
       "encoding": "br"
     },
@@ -37,8 +49,8 @@
       "encoding": "br"
     },
     {
-      "url": "/assets/built/site-705a01e48480.css",
-      "bytes": 62173,
+      "url": "/assets/built/site-3f8e8fe6dcb4.css",
+      "bytes": 60091,
       "cache": "public, max-age=31536000, immutable",
       "encoding": "br"
     },
@@ -50,13 +62,13 @@
     },
     {
       "url": "/assets/css/base.css",
-      "bytes": 10244,
+      "bytes": 10631,
       "cache": "public, max-age=604800",
       "encoding": "br"
     },
     {
       "url": "/assets/css/components.css",
-      "bytes": 67224,
+      "bytes": 84850,
       "cache": "public, max-age=604800",
       "encoding": "br"
     },
@@ -1748,7 +1760,7 @@
     },
     {
       "url": "/assets/js/main.js",
-      "bytes": 13622,
+      "bytes": 16361,
       "cache": "public, max-age=604800",
       "encoding": "br"
     },
@@ -2161,6 +2173,12 @@
       "encoding": null
     },
     {
+      "url": "/Breast Augmentation Options Infographic.png",
+      "bytes": 2319075,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
       "url": "/Breast Augmentation Safety Consultation Infographic.webp",
       "bytes": 150468,
       "cache": "public, max-age=15768000",
@@ -2179,9 +2197,87 @@
       "encoding": null
     },
     {
+      "url": "/Breast Fat Transfer Medical Infographic.png",
+      "bytes": 2331832,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/Breast Implant Medical Illustration.png",
+      "bytes": 2287569,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/Breast Implant Safety Infographic.png",
+      "bytes": 2420396,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/breast-augmentation-implants-fat-transfer.png",
+      "bytes": 140923,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/breast-implants-banner.png",
+      "bytes": 132796,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
       "url": "/dermal-fillers.webp",
       "bytes": 121016,
       "cache": "public, max-age=15768000",
+      "encoding": null
+    },
+    {
+      "url": "/dr-alisha-khan.png",
+      "bytes": 101654,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-amod-rao.png",
+      "bytes": 141569,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-arivazhagan.png",
+      "bytes": 130495,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-nandita.png",
+      "bytes": 132796,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-sekhar.png",
+      "bytes": 136968,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-subramini.png",
+      "bytes": 140923,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-surindher-dsa.png",
+      "bytes": 105543,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
+      "url": "/dr-vikas-singh.png",
+      "bytes": 198606,
+      "cache": "public, max-age=0, must-revalidate",
       "encoding": null
     },
     {
@@ -2227,6 +2323,12 @@
       "encoding": null
     },
     {
+      "url": "/Non-Surgical Breast Enhancement Infographic.png",
+      "bytes": 2144472,
+      "cache": "public, max-age=0, must-revalidate",
+      "encoding": null
+    },
+    {
       "url": "/Our approach.webp",
       "bytes": 23210,
       "cache": "public, max-age=15768000",
@@ -2236,6 +2338,12 @@
       "url": "/prp.webp",
       "bytes": 143372,
       "cache": "public, max-age=15768000",
+      "encoding": null
+    },
+    {
+      "url": "/Screenshot 2026-10-28 140539.png",
+      "bytes": 283932,
+      "cache": "public, max-age=0, must-revalidate",
       "encoding": null
     },
     {

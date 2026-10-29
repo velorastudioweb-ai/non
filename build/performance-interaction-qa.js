@@ -89,8 +89,22 @@ const ROOT = path.resolve(__dirname, '..');
 
        await page.goto(base + '/contact/', { waitUntil: 'load' });
       const form = page.locator('[data-consult-form]');
-      // Exercise the existing unconfigured-endpoint feedback, never send a lead.
-      assert.equal(await form.getAttribute('data-endpoint'), '');
+      // Exercise the real endpoint. Without mail credentials it must report an
+      // honest failure rather than a false success; no lead is actually sent.
+      assert.equal(await form.getAttribute('data-endpoint'), '/api/contact');
+      const invalidApi = await page.request.post(base + '/api/contact', {
+        data: { name: 'A', email: 'not-an-email', country_code: '+91', phone: '1', interest: 'Unknown', contact_method: 'Phone' }
+      });
+      assert.equal(invalidApi.status(), 422);
+      if (!process.env.RESEND_API_KEY) {
+        const unavailable = await page.request.post(base + '/api/contact', {
+          data: { name: 'Layout QA', email: 'layout-qa@example.com', country_code: '+91', phone: '9876543210', interest: 'General question about this website', contact_method: 'Email', consent: true }
+        });
+        assert.equal(unavailable.status(), 503);
+        const unavailableBody = await unavailable.json();
+        assert.equal(unavailableBody.ok, false);
+        assert.equal(unavailableBody.code, 'delivery_unconfigured');
+      }
       assert.notEqual(await page.locator('#cf-country-code').getAttribute('required'), null);
       assert.notEqual(await page.locator('#cf-phone').getAttribute('required'), null);
       await form.locator('[type="submit"]').click();

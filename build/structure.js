@@ -235,7 +235,7 @@ function cards(entries, heading, lead) {
       '/breast-implants/': 'breastImplants',
       '/surgical/breast-augmentation/': 'breastAugmentation',
       '/breast-implant-safety/': 'breastImplantSafety',
-      '/surgical/fat-transfer-breast-augmentation/': 'fatTransfer',
+      '/surgical/fat-transfer-breast-augmentation/': 'fatTransferGuide',
       '/surgical/breast-revision/': 'breastRevision',
       '/surgical/mastectomy-chest-surgery/': 'mastectomyChestSurgery',
       '/surgical/breast-filler-removal/': 'breastFillerRemoval',

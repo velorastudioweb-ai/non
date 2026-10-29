@@ -1,0 +1,411 @@
+{
+  "phase": "before",
+  "renders": 2,
+  "failures": [],
+  "results": [
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 390,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "Non-Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Non-surgical does not mean proven or safe",
+          "imageCount": 0
+        },
+        {
+          "heading": "Non-surgical options: evidence, limitations and safety",
+          "imageCount": 9
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "alt": "",
+          "natural": [
+            2048,
+            768
+          ],
+          "rendered": [
+            390,
+            146
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "2048",
+          "height": "768",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Guide.png",
+          "alt": "Breast enlargement without surgery evidence guide",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/ChatGPT%20Image%20Oct%2029,%202026,%2007_10_19%20AM.png",
+          "alt": "Illustration of non-surgical breast enhancement techniques and medical assessment",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-cog-suture-material-card-480.webp",
+          "alt": "Educational illustration: cog-suture material, not a placement guide",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-smooth-suture-material-card-480.webp",
+          "alt": "Educational illustration: smooth monofilament-suture material",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-prp-preparation-tube-card-480.webp",
+          "alt": "Educational illustration: blood-preparation laboratory concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-biostimulator-research-card-480.webp",
+          "alt": "Educational illustration: biostimulator material research concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-plla-material-concept-card-480.webp",
+          "alt": "Educational illustration: plla material concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+          "alt": "Educational illustration: regenerative laboratory research",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1440,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "Non-Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Non-surgical does not mean proven or safe",
+          "imageCount": 0
+        },
+        {
+          "heading": "Non-surgical options: evidence, limitations and safety",
+          "imageCount": 9
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "alt": "",
+          "natural": [
+            2048,
+            768
+          ],
+          "rendered": [
+            1440,
+            580
+          ],
+          "fit": "cover",
+          "position": "100% 50%",
+          "lazy": "eager",
+          "width": "2048",
+          "height": "768",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Guide.png",
+          "alt": "Breast enlargement without surgery evidence guide",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/ChatGPT%20Image%20Oct%2029,%202026,%2007_10_19%20AM.png",
+          "alt": "Illustration of non-surgical breast enhancement techniques and medical assessment",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-cog-suture-material-card-480.webp",
+          "alt": "Educational illustration: cog-suture material, not a placement guide",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-smooth-suture-material-card-480.webp",
+          "alt": "Educational illustration: smooth monofilament-suture material",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-prp-preparation-tube-card-480.webp",
+          "alt": "Educational illustration: blood-preparation laboratory concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-biostimulator-research-card-480.webp",
+          "alt": "Educational illustration: biostimulator material research concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-plla-material-concept-card-480.webp",
+          "alt": "Educational illustration: plla material concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+          "alt": "Educational illustration: regenerative laboratory research",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    }
+  ]
+}

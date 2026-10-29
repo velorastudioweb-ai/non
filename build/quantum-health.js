@@ -98,8 +98,14 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const list=items=>`<ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
 const cards=items=>`<div class="qh-grid">${items.map(([a,b,...rest])=>`<article class="qh-card"><h3>${esc(a)}</h3><p>${esc(b)}</p>${rest.length?list(rest):''}</article>`).join('')}</div>`;
 const section=(title,body)=>`<section><h2>${title}</h2>${body}</section>`;
+function initialsFor(name) {
+  return name.replace(/^Dr\.\s*/i, '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
+}
 function portrait(d, hero) {
-  if (!d.portrait) return `<div class="qh-portrait" role="img" aria-label="Professional portrait pending for ${esc(d.name)}">Approved professional portrait pending</div>`;
+  if (!d.portrait) {
+    const initials = initialsFor(d.name);
+    return `<div class="qh-portrait qh-portrait--initials" role="img" aria-label="${esc(initials)} monogram — verified professional portrait of ${esc(d.name)} not yet supplied"><span aria-hidden="true">${esc(initials)}</span></div>`;
+  }
   const image = d.portrait;
   const heroClass = hero ? ' qh-portrait-image--hero' : '';
   const priority = hero ? ' loading="eager" fetchpriority="high"' : ' loading="lazy"';

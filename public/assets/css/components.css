@@ -2135,7 +2135,15 @@ body .qh .qh-breadcrumb a { color: var(--gold-light) !important; }
 body .page-about-us .qh-about .qh-about-hero,
 body .page-about-us .qh-about .qh-about-leadership,
 body .page-about-us .qh-about .qh-about-contact { border-color: var(--border-soft) !important; background: var(--ruby-aurora-soft), var(--panel-gradient-alt) !important; }
-body .page-about-us .qh-about .qh-doctor-card__image { width: 100%; height: 220px; aspect-ratio: 4 / 5; }
+/* Doctor portraits arrive at slightly different aspect ratios. Let each one keep
+   its own proportions instead of forcing a 4:5 crop, which used to letterbox the
+   wider photographs inside a fixed 220px frame. */
+body .page-about-us .qh-about .qh-doctor-card__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain !important;
+}
 @media (max-width: 900px) {
   body .qh .qh-vikas-hero { grid-template-columns: minmax(0, 1fr) minmax(250px, 320px); }
   body .qh .qh-locations { grid-template-columns: repeat(3, minmax(0, 1fr)); }

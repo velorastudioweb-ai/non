@@ -344,13 +344,45 @@
    'Please email enquiries@nonsurgicalbreastenlargement.in instead.');
   return;
   }
- var data = new FormData(form);
+ var payload = {
+  name: $('#cf-name',form) ? $('#cf-name',form).value : '',
+  email: $('#cf-email',form) ? $('#cf-email',form).value : '',
+  country_code: $('[name="country_code"]',form) ? $('[name="country_code"]',form).value : '',
+  phone: $('#cf-phone',form) ? $('#cf-phone',form).value : '',
+  interest: $('#cf-interest',form) ? $('#cf-interest',form).value : '',
+  contact_method: $('[name="contact_method"]:checked',form) ? $('[name="contact_method"]:checked',form).value : '',
+  message: $('#cf-message',form) ? $('#cf-message',form).value : '',
+  consent: $('#cf-consent',form) ? $('#cf-consent',form).checked : false,
+  company_website: hp ? hp.value : ''
+ };
  var original = submitBtn.innerHTML;
  submitBtn.classList.add('is-loading');
+ submitBtn.disabled = true;
  submitBtn.innerHTML = '<span class="spinner" aria-hidden="true"></span><span class="btn__label">Sending…</span>';
- fetch(endpoint,{ method: 'POST',body: data,headers: { Accept: 'application/json' } })
- .then(function (r){ return r.ok ? r : Promise.reject(r.status); })
- .then(function (){
+ fetch(endpoint,{
+  method: 'POST',
+  body: JSON.stringify(payload),
+  headers: { 'Content-Type': 'application/json',Accept: 'application/json' }
+ })
+ .then(function (r){
+  return r.json().catch(function (){ return {}; }).then(function (body){
+   return { ok: r.ok,status: r.status,body: body };
+  });
+ })
+ .then(function (result){
+  if (!result.ok){
+   var message = result.body && result.body.message;
+   if (result.status === 422 && result.body && result.body.errors){
+    Object.keys(result.body.errors).forEach(function (field){
+     var input = $('[name="' + field + '"]',form);
+     if (input) showError(input,result.body.errors[field]);
+    });
+    var first = $('.field--error input, .field--error select, .field--error textarea',form);
+    if (first) first.focus();
+   }
+   setStatus('err',message || 'We could not send your enquiry right now. Please try again or email enquiries@nonsurgicalbreastenlargement.in.');
+   return;
+  }
   var preferredContact = $('[name="contact_method"]:checked',form);
   setStatus('ok','Thank you — your website enquiry has been received. We will follow up by ' + (preferredContact ? preferredContact.value.toLowerCase() : 'your selected contact method') + '.');
  form.reset();
@@ -360,6 +392,7 @@
  })
  .then(function (){
  submitBtn.classList.remove('is-loading');
+ submitBtn.disabled = false;
  submitBtn.innerHTML = original;
  });
  });

@@ -1,0 +1,1195 @@
+{
+  "phase": "before",
+  "renders": 4,
+  "failures": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "A More Informed Approach to Breast Enhancement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Find your starting point",
+          "imageCount": 3
+        },
+        {
+          "heading": "Clear information. Honest limits. No promotion.",
+          "imageCount": 1
+        },
+        {
+          "heading": "Four commitments behind every page",
+          "imageCount": 0
+        },
+        {
+          "heading": "An important clinical distinction",
+          "imageCount": 0
+        },
+        {
+          "heading": "What a change in volume can look like",
+          "imageCount": 1
+        },
+        {
+          "heading": "A closer look at individual options",
+          "imageCount": 8
+        },
+        {
+          "heading": "A clear, five-step pathway to an informed decision",
+          "imageCount": 1
+        },
+        {
+          "heading": "A clear foundation for your decision",
+          "imageCount": 4
+        },
+        {
+          "heading": "Keep exploring the evidence",
+          "imageCount": 0
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/hero-banner-7879e6996dde-480.webp",
+          "alt": "",
+          "natural": [
+            389,
+            217
+          ],
+          "rendered": [
+            390,
+            218
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1599",
+          "height": "893",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/surgical-e0e94529e38c-480.webp",
+          "alt": "Surgical Breast Enlargement",
+          "natural": [
+            349,
+            349
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/non-surgical-bf9edbf01ebb-480.webp",
+          "alt": "Non-Surgical Breast Enlargement",
+          "natural": [
+            349,
+            349
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/prp-4f0e03d51ff6-480.webp",
+          "alt": "Education and Research",
+          "natural": [
+            349,
+            349
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/our-approach-773a38679115-480.webp",
+          "alt": "Independent patient education and evidence review",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            255
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/before-after-breast-enhancement-2cc16cb17267-480.webp",
+          "alt": "AI-generated illustration showing the same torso in a bra before and after breast enhancement, labelled Before and After; not a real patient.",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            227
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/education-research-49452734319e-480.webp",
+          "alt": "PRP",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/fat-transfer-e67fc9e51611-480.webp",
+          "alt": "Thread-based breast procedure information",
+          "natural": [
+            349,
+            349
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/sculptra-8151bdedc237-480.webp",
+          "alt": "Sculptra and biostimulator information",
+          "natural": [
+            349,
+            349
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Breast implants",
+          "natural": [
+            1254,
+            1254
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Fat transfer breast augmentation",
+          "natural": [
+            1254,
+            1254
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+          "alt": "Breast augmentation options",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-480.webp",
+          "alt": "Compare all options",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-480.webp",
+          "alt": "How to use this website",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            255
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-480.webp",
+          "alt": "Understanding Breast Enlargement",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-480.webp",
+          "alt": "Breast Anatomy Explained",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-480.webp",
+          "alt": "Breast Enhancement Options Compared",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-480.webp",
+          "alt": "Breast Enlargement Safety",
+          "natural": [
+            349,
+            233
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "A More Informed Approach to Breast Enhancement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Find your starting point",
+          "imageCount": 3
+        },
+        {
+          "heading": "Clear information. Honest limits. No promotion.",
+          "imageCount": 1
+        },
+        {
+          "heading": "Four commitments behind every page",
+          "imageCount": 0
+        },
+        {
+          "heading": "An important clinical distinction",
+          "imageCount": 0
+        },
+        {
+          "heading": "What a change in volume can look like",
+          "imageCount": 1
+        },
+        {
+          "heading": "A closer look at individual options",
+          "imageCount": 8
+        },
+        {
+          "heading": "A clear, five-step pathway to an informed decision",
+          "imageCount": 1
+        },
+        {
+          "heading": "A clear foundation for your decision",
+          "imageCount": 4
+        },
+        {
+          "heading": "Keep exploring the evidence",
+          "imageCount": 0
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/hero-banner.webp",
+          "alt": "",
+          "natural": [
+            1440,
+            804
+          ],
+          "rendered": [
+            1440,
+            687
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1599",
+          "height": "893",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/surgical-e0e94529e38c-480.webp",
+          "alt": "Surgical Breast Enlargement",
+          "natural": [
+            413,
+            413
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/non-surgical-bf9edbf01ebb-480.webp",
+          "alt": "Non-Surgical Breast Enlargement",
+          "natural": [
+            413,
+            413
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/prp-4f0e03d51ff6-480.webp",
+          "alt": "Education and Research",
+          "natural": [
+            413,
+            413
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "cover",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/our-approach-773a38679115-768.webp",
+          "alt": "Independent patient education and evidence review",
+          "natural": [
+            580,
+            386
+          ],
+          "rendered": [
+            562,
+            421
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/before-after-breast-enhancement-2cc16cb17267-1280.webp",
+          "alt": "AI-generated illustration showing the same torso in a bra before and after breast enhancement, labelled Before and After; not a real patient.",
+          "natural": [
+            1100,
+            733
+          ],
+          "rendered": [
+            1098,
+            732
+          ],
+          "fit": "fill",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/education-research-49452734319e-480.webp",
+          "alt": "PRP",
+          "natural": [
+            310,
+            206
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/fat-transfer-e67fc9e51611-480.webp",
+          "alt": "Thread-based breast procedure information",
+          "natural": [
+            310,
+            310
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/sculptra-8151bdedc237-480.webp",
+          "alt": "Sculptra and biostimulator information",
+          "natural": [
+            310,
+            310
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Breast implants",
+          "natural": [
+            1254,
+            1254
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Fat%20Transfer%20Medical%20Infographic.png",
+          "alt": "Fat transfer breast augmentation",
+          "natural": [
+            1254,
+            1254
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1254",
+          "height": "1254",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Breast%20Augmentation%20Options%20Infographic.png",
+          "alt": "Breast augmentation options",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-480.webp",
+          "alt": "Compare all options",
+          "natural": [
+            310,
+            206
+          ],
+          "rendered": [
+            280,
+            193
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-768.webp",
+          "alt": "How to use this website",
+          "natural": [
+            580,
+            386
+          ],
+          "rendered": [
+            562,
+            421
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-480.webp",
+          "alt": "Understanding Breast Enlargement",
+          "natural": [
+            413,
+            275
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-480.webp",
+          "alt": "Breast Anatomy Explained",
+          "natural": [
+            413,
+            275
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-480.webp",
+          "alt": "Breast Enhancement Options Compared",
+          "natural": [
+            413,
+            275
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-480.webp",
+          "alt": "Breast Enlargement Safety",
+          "natural": [
+            413,
+            275
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 390,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "Non-Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Non-surgical does not mean proven or safe",
+          "imageCount": 0
+        },
+        {
+          "heading": "Non-surgical options: evidence, limitations and safety",
+          "imageCount": 9
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "alt": "",
+          "natural": [
+            2048,
+            768
+          ],
+          "rendered": [
+            390,
+            146
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "2048",
+          "height": "768",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-without-surgery-evidence-card-480.webp",
+          "alt": "Educational illustration: reading the evidence behind enlargement claims",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-non-surgical-safety-review-card-480.webp",
+          "alt": "Educational illustration: reviewing non-surgical claims and safety",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-cog-suture-material-card-480.webp",
+          "alt": "Educational illustration: cog-suture material, not a placement guide",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-smooth-suture-material-card-480.webp",
+          "alt": "Educational illustration: smooth monofilament-suture material",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-prp-preparation-tube-card-480.webp",
+          "alt": "Educational illustration: blood-preparation laboratory concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-biostimulator-research-card-480.webp",
+          "alt": "Educational illustration: biostimulator material research concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-plla-material-concept-card-480.webp",
+          "alt": "Educational illustration: plla material concept",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+          "alt": "Educational illustration: regenerative laboratory research",
+          "natural": [
+            349,
+            240
+          ],
+          "rendered": [
+            340,
+            234
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1440,
+      "overflow": 0,
+      "sections": [
+        {
+          "heading": "Non-Surgical Breast Enlargement",
+          "imageCount": 1
+        },
+        {
+          "heading": "Non-surgical does not mean proven or safe",
+          "imageCount": 0
+        },
+        {
+          "heading": "Non-surgical options: evidence, limitations and safety",
+          "imageCount": 9
+        }
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:8142/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "alt": "",
+          "natural": [
+            2048,
+            768
+          ],
+          "rendered": [
+            1440,
+            580
+          ],
+          "fit": "cover",
+          "position": "100% 50%",
+          "lazy": "eager",
+          "width": "2048",
+          "height": "768",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-without-surgery-evidence-card-480.webp",
+          "alt": "Educational illustration: reading the evidence behind enlargement claims",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-non-surgical-safety-review-card-480.webp",
+          "alt": "Educational illustration: reviewing non-surgical claims and safety",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/Medical%20Breast%20Augmentation%20Infographic.png",
+          "alt": "Breast dermal fillers",
+          "natural": [
+            1536,
+            1024
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1536",
+          "height": "1024",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-cog-suture-material-card-480.webp",
+          "alt": "Educational illustration: cog-suture material, not a placement guide",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-smooth-suture-material-card-480.webp",
+          "alt": "Educational illustration: smooth monofilament-suture material",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-prp-preparation-tube-card-480.webp",
+          "alt": "Educational illustration: blood-preparation laboratory concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-biostimulator-research-card-480.webp",
+          "alt": "Educational illustration: biostimulator material research concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-plla-material-concept-card-480.webp",
+          "alt": "Educational illustration: plla material concept",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        },
+        {
+          "src": "http://127.0.0.1:8142/assets/img/qh-regenerative-laboratory-research-card-480.webp",
+          "alt": "Educational illustration: regenerative laboratory research",
+          "natural": [
+            413,
+            283
+          ],
+          "rendered": [
+            382,
+            263
+          ],
+          "fit": "contain",
+          "position": "50% 50%",
+          "lazy": "eager",
+          "width": "1600",
+          "height": "1100",
+          "inMain": true
+        }
+      ],
+      "placeholders": 0
+    }
+  ]
+}

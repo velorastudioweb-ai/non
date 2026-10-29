@@ -33,10 +33,9 @@ const site = {
     address: '',
     addressNote: '',
     hours: '',
-    // Placeholder delivery endpoint. Leave empty to keep the form honest (it
-    // will NOT fake a successful submission). Set a real Web3Forms/Formspree/
-    // custom URL to enable delivery.
-    formEndpoint: ''
+    // Same-origin serverless endpoint. It returns an honest 503 when mail
+    // credentials are absent and never reports a false success.
+    formEndpoint: '/api/contact'
   },
   footerBlurb: 'An independent educational website about breast enlargement — what works, what does not, the published evidence behind each option and the safety questions to ask. This is not a clinic, and no treatments are offered or sold here.',
   medicalDisclaimerShort: '',
@@ -552,7 +551,7 @@ pages.push({
         { title: 'Ask about the plan and its limits', text: 'Discuss technique, expected limitations, recovery, costs and potential revision.' },
         { title: 'Take time to decide', text: 'Proceed only when you understand the risks, alternatives and aftercare, and feel ready to consent.' }
       ],
-      slot: 'Surgical consultation imagery'
+      media: topicImage('surgicalConsultationPreparation')
     },
     { type: 'notice', icon: 'info', title: 'No guarantees',
       text: 'Surgery is not appropriate for everyone and cannot promise permanent outcomes, guaranteed symmetry, zero scarring or a risk-free result. Individual suitability, risks and outcomes vary and require assessment by an appropriately qualified clinician.' },

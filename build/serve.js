@@ -54,6 +54,8 @@ function send(res, file, status) {
 }
 
 const server = http.createServer((req, res) => {
+  const urlPath = decodeURIComponent(req.url.split('?')[0]);
+  if (urlPath === '/api/contact') return require('../api/contact')(req, res);
   const target = redirects.get(req.url.split('?')[0]);
   if (target) { res.writeHead(301, { Location: target }); return res.end(); }
   const file = resolveFile(req.url);
