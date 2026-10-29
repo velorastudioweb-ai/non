@@ -1,0 +1,580 @@
+{
+  "base": "http://127.0.0.1:56214",
+  "label": "check-contain",
+  "allowDesktopCover": false,
+  "checks": 15,
+  "desktopCrops": [],
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/assets/responsive/hero-banner-7879e6996dde-1024.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 903.15625,
+            "width": 1024,
+            "height": 820.5625
+          },
+          "text": {
+            "left": 24,
+            "top": 82.59375,
+            "right": 1000,
+            "bottom": 903.15625,
+            "width": 976,
+            "height": 820.5625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 19
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-1024.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 605.21875,
+            "width": 1024,
+            "height": 522.625
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 605.21875,
+            "width": 715.890625,
+            "height": 522.625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 577.21875,
+            "width": 1024,
+            "height": 494.625
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 577.21875,
+            "width": 715.890625,
+            "height": 494.625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 720.046875,
+            "width": 1024,
+            "height": 637.453125
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 720.046875,
+            "width": 715.890625,
+            "height": 637.453125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/breast-implant-safety/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Breast%20Implant%20Safety%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 692.046875,
+            "width": 1024,
+            "height": 609.453125
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 692.046875,
+            "width": 715.890625,
+            "height": 609.453125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/hero-banner.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 769.15625,
+            "width": 1440,
+            "height": 686.5625
+          },
+          "text": {
+            "left": 120,
+            "top": 82.59375,
+            "right": 1320,
+            "bottom": 769.15625,
+            "width": 1200,
+            "height": 686.5625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 19
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 690.78125,
+            "width": 1440,
+            "height": 608.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 690.78125,
+            "width": 715.890625,
+            "height": 608.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 662.78125,
+            "width": 1440,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 824.546875,
+            "width": 1440,
+            "height": 741.953125
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 824.546875,
+            "width": 715.890625,
+            "height": 741.953125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/breast-implant-safety/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Breast%20Implant%20Safety%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1440,
+            "bottom": 878.140625,
+            "width": 1440,
+            "height": 795.546875
+          },
+          "text": {
+            "left": 362.046875,
+            "top": 82.59375,
+            "right": 1077.9375,
+            "bottom": 878.140625,
+            "width": 715.890625,
+            "height": 795.546875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/hero-banner.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 785.15625,
+            "width": 1920,
+            "height": 702.5625
+          },
+          "text": {
+            "left": 360,
+            "top": 82.59375,
+            "right": 1560,
+            "bottom": 785.15625,
+            "width": 1200,
+            "height": 702.5625
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 19
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Breast%20Augmentation%20Consultation%20Illustration.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 690.78125,
+            "width": 1920,
+            "height": 608.1875
+          },
+          "text": {
+            "left": 602.046875,
+            "top": 82.59375,
+            "right": 1317.9375,
+            "bottom": 690.78125,
+            "width": 715.890625,
+            "height": 608.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 11
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Non-Surgical%20Breast%20Enhancement%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 662.78125,
+            "width": 1920,
+            "height": 580.1875
+          },
+          "text": {
+            "left": 602.046875,
+            "top": 82.59375,
+            "right": 1317.9375,
+            "bottom": 662.78125,
+            "width": 715.890625,
+            "height": 580.1875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Cosmetic%20Implant%20Infographic%20in%20Burgundy.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 824.546875,
+            "width": 1920,
+            "height": 741.953125
+          },
+          "text": {
+            "left": 602.046875,
+            "top": 82.59375,
+            "right": 1317.9375,
+            "bottom": 824.546875,
+            "width": 715.890625,
+            "height": 741.953125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 5
+    },
+    {
+      "route": "/breast-implant-safety/",
+      "width": 1920,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:56214/Breast%20Implant%20Safety%20Infographic.png",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1920,
+            "bottom": 878.140625,
+            "width": 1920,
+            "height": 795.546875
+          },
+          "text": {
+            "left": 602.046875,
+            "top": 82.59375,
+            "right": 1317.9375,
+            "bottom": 878.140625,
+            "width": 715.890625,
+            "height": 795.546875
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    }
+  ]
+}
