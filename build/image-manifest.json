@@ -1,4 +1,36 @@
 {
+  "/before-after-breast-enhancement.webp": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2cc16cb17267af17d186302fcf29d1cb0bfc81068ab3bb07bb0ead65bffa03ef",
+    "bytes": 59706,
+    "variants": [
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 11222
+      },
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 20498
+      },
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 29334
+      },
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 39572
+      }
+    ]
+  },
   "/Breast Anatomy and Augmentation Illustration.webp": {
     "width": 1536,
     "height": 1024,
@@ -188,6 +220,134 @@
         "width": 1280,
         "height": 853,
         "bytes": 148404
+      }
+    ]
+  },
+  "/breast-enhancement-options-non-surgical.webp": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "553c045c97df5b4f26212dd87d6596cd94cd9b80298815d72d6cf11398e93fca",
+    "bytes": 196622,
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 35034
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 69684
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 108196
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 147472
+      }
+    ]
+  },
+  "/breast-enhancement-options-surgical.webp": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "fabbe0427e76e739abe1086ec311b7b3c9ca0317d7c9518981935d75f5e85a4d",
+    "bytes": 186116,
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32196
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 65598
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 102000
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 137242
+      }
+    ]
+  },
+  "/breast-enhancement-treatment-grid.webp": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "6df7e175f68c1cb82f185c2b2cc5ebcceb913a342e80fed84e1f8c2673abb4ff",
+    "bytes": 151178,
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 28360
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 56192
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 83452
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 111678
+      }
+    ]
+  },
+  "/breast-enhancement-treatment-infographic.webp": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "372b38ff08c5aac66a7e404cf2948196f03145218bff0d5be85441e003109408",
+    "bytes": 211324,
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 37378
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 76404
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 113716
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 155064
       }
     ]
   },

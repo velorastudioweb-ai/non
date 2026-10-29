@@ -1,6 +1,6 @@
 ﻿'use strict';
 const { icons, figure, flourish, divider } = require('./icons');
-const { keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = require('./images');
+const { IMAGES, keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, esc } = require('./images');
 const visualPlan = require('./visual-plan');
 const assets = require('./assets');
 const { imageInfo, responsiveMarkup } = require('./responsive-images');
@@ -152,20 +152,24 @@ ${site.footerLegal.map((i) => `<a href="${i.href}">${esc(i.label)}</a>`).join('\
 }
 /* ---------- PAGE BANNER ---------- */
 function pageBanner(page, site) {
+  const bannerKey = bannerFor(page);
+  const bannerAlt = page.bannerAlt
+    || (bannerKey && IMAGES[bannerKey] && IMAGES[bannerKey].alt)
+    || `Educational illustration for ${page.h1}`;
   const bannerImage = page.bannerImage
-    ? responsiveMarkup(`<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`, '100vw')
-    : picture(bannerFor(page), {
+    ? responsiveMarkup(`<img class="page-banner__image" src="${esc(page.bannerImage)}" alt="${esc(bannerAlt)}" width="${page.bannerWidth || 1536}" height="${page.bannerHeight || 1024}" loading="eager" fetchpriority="high">`, '100vw')
+    : picture(bannerKey, {
         className: 'page-banner__image',
         sizes: '100vw',
         variant: 'banner',
-        alt: '',
+        alt: bannerAlt,
         eager: true
       });
   const crumbs = [`<a href="${site.base}">Home</a>`]
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
   return `<section class="page-banner petals">
-  ${bannerImage ? `<div class="page-banner__art" aria-hidden="true">${bannerImage}</div>` : ''}
+  ${bannerImage ? `<div class="page-banner__art">${bannerImage}</div>` : ''}
   <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}
@@ -325,6 +329,25 @@ ${b.eyebrow ? `<p class="eyebrow ${b.center !== false ? 'eyebrow--center' : ''}"
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
   </div>
   <div class="gallery-grid" style="margin-top:var(--sp-5)">${items}</div>
+</div>`;
+}
+/* Full-width educational figure. Used for wide explanatory infographics that
+   would be unreadable in a two-column split, so they get their own section. */
+function renderFigure(b) {
+  const sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1240px) 92vw, 1100px';
+  const img = b.src
+    ? `<img src="${esc(b.src)}" alt="${esc(b.alt || '')}" width="${b.width || 1536}" height="${b.height || 1024}" loading="lazy" decoding="async">`
+    : '';
+  return `<div class="container">
+  <div class="section-head section-head--center reveal">
+${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}
+<h2 class="h2">${raw(b.heading)}</h2>
+${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
+  </div>
+  <figure class="figure-feature reveal" style="margin-top:var(--sp-5)">
+<div class="figure-feature__media">${responsiveMarkup(img, sizes)}</div>
+${(b.caption || b.note || b.src) ? `<figcaption>${b.caption ? `<span class="figure-feature__caption">${esc(b.caption)}</span>` : ''}${b.note ? `<span class="figure-feature__note">${esc(b.note)}</span>` : ''}${b.src ? `<a class="figure-feature__link" href="${esc(b.src)}" target="_blank" rel="noopener">View full-size image</a>` : ''}</figcaption>` : ''}
+  </figure>
 </div>`;
 }
 function renderCta(b) {
@@ -494,6 +517,7 @@ case 'notice': return `<section${sid} class="section section--tight">${renderNot
 case 'table': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderTable(b)}</section>`;
 case 'faq': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderFaq(b)}</section>`;
 case 'gallery': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderGallery(b)}</section>`;
+case 'figure': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderFigure(b)}</section>`;
 case 'form': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderForm(b, site)}</section>`;
 case 'cta': return `<section${sid} class="section section--tight cta-band petals">${renderCta(b)}</section>`;
 default: return '';

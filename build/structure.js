@@ -122,6 +122,64 @@ augmentation.blocks.filter((b) => b.type === 'faq').forEach((b) => {
   b.items = b.items.filter((i) => i.q !== 'How do I know which approach is right for me?');
 });
 
+/* Supplied before/after concept artwork. Each wide infographic gets its own
+   section on a different page rather than being repeated in one gallery. The
+   captions keep the distinction between an AI illustration and a real result
+   explicit, in line with the site's evidence-first editorial policy. */
+const figure = (id, props) => ({ type: 'figure', id, width: 1536, height: 1024, ...props });
+function insertAfter(url, anchor, block) {
+  const page = byUrl.get(url);
+  if (!page) throw new Error('Missing figure host page: ' + url);
+  const index = page.blocks.findIndex(anchor);
+  if (index < 0) throw new Error('Missing figure anchor on ' + url);
+  page.blocks.splice(index + 1, 0, block);
+}
+const beforeAfterFigure = figure('before-after-illustration', {
+  eyebrow: 'Illustrative comparison',
+  heading: 'What a change in volume can look like',
+  lead: 'An illustration can show a difference in size and proportion. It cannot predict what a treatment will do for you, how your tissues will heal, or what result is achievable.',
+  src: '/before-after-breast-enhancement.webp',
+  alt: 'AI-generated illustration showing the same torso in a bra before and after breast enhancement, labelled Before and After; not a real patient.',
+  caption: 'AI-generated educational illustration — not a real patient and not a treatment result.',
+  note: 'No outcome, cup size or result is guaranteed. Suitability and realistic expectations require assessment by a qualified clinician.'
+});
+insertAfter('/surgical/breast-augmentation/', (b) => /^What breast augmentation can/.test(b.heading || ''), figure('augmentation-options-figure', {
+  eyebrow: 'Options at a glance',
+  heading: 'Implants, fat transfer and injectable options',
+  lead: 'The four approaches shown here add volume in different ways — and differ in evidence, duration and risk.',
+  src: '/breast-enhancement-options-surgical.webp',
+  alt: 'AI-generated infographic illustrating breast implants, fat transfer, breast augmentation and dermal fillers with before-and-after concept images and brief notes.',
+  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  note: 'Dermal fillers are not approved for breast enlargement in many countries. Conceptual illustration only; no option is suitable for everyone.'
+}));
+insertAfter('/non-surgical/', (b) => b.heading === 'Primary consideration and key limitation', figure('non-surgical-options-figure', {
+  eyebrow: 'Non-surgical and adjunct options',
+  heading: 'PRP, threads, biostimulators and lift',
+  lead: 'These options are often marketed as alternatives to augmentation. The illustration summarises what each claims; the sections below explain where the evidence is limited.',
+  src: '/breast-enhancement-options-non-surgical.webp',
+  alt: 'AI-generated infographic illustrating PRP, thread-based procedures, Sculptra and biostimulators, and breast lift with before-and-after concept images and brief notes.',
+  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  note: 'Breast lift is a surgical procedure, not a non-surgical treatment. PRP, threads and biostimulators have limited evidence for lasting breast volume; results vary.'
+}));
+insertAfter('/breast-enhancement-comparison/', (b) => /^Intended effect, primary consideration/.test(b.heading || ''), figure('comparison-options-figure', {
+  eyebrow: 'Compare the concepts',
+  heading: 'Eight approaches in one view',
+  lead: 'Each approach acts differently: implants add volume, fat transfer adds your own tissue, fillers add temporary material, and a lift changes shape rather than volume.',
+  src: '/breast-enhancement-treatment-infographic.webp',
+  alt: 'AI-generated infographic grid comparing breast implants, fat transfer, breast augmentation, dermal fillers, PRP, threads, biostimulators and breast lift.',
+  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  note: 'This overview is not a rating or recommendation. Availability, approval and suitability vary by country and by person.'
+}));
+insertAfter('/understanding-breast-enlargement/', (b) => /^The four broad routes to more volume/.test(b.heading || ''), figure('treatment-landscape-figure', {
+  eyebrow: 'Visual overview',
+  heading: 'The treatment landscape at a glance',
+  lead: 'A quick map of the approaches discussed across this guide, from implants and fat transfer to injectables, threads and lift.',
+  src: '/breast-enhancement-treatment-grid.webp',
+  alt: 'AI-generated grid of eight breast enhancement approaches, each shown with a simple before-and-after concept image.',
+  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  note: 'Illustrations are conceptual and do not show real patients or guaranteed results.'
+}));
+
 // The options/safety topic is distinct from its new category landing page.
 // Remove the old duplicate topic grid; the category is the single topic index.
 const nsOverview = byUrl.get('/non-surgical/');
@@ -173,10 +231,16 @@ function cards(entries, heading, lead) {
   return { type: 'cards', cols: 3, heading, lead, items: entries.map(([href, title]) => {
     const p = byUrl.get(href);
     const imageKey = {
+      '/breast-enlargement-without-surgery/': 'withoutSurgery',
       '/breast-implants/': 'breastImplants',
       '/surgical/breast-augmentation/': 'breastAugmentation',
       '/breast-implant-safety/': 'breastImplantSafety',
-      '/surgical/fat-transfer-breast-augmentation/': 'fatTransfer'
+      '/surgical/fat-transfer-breast-augmentation/': 'fatTransfer',
+      '/surgical/breast-revision/': 'breastRevision',
+      '/surgical/mastectomy-chest-surgery/': 'mastectomyChestSurgery',
+      '/surgical/breast-filler-removal/': 'breastFillerRemoval',
+      '/non-surgical/': 'nonSurgicalSafety',
+      '/non-surgical/dermal-fillers/': 'dermalFillers'
     }[href];
     const media = imageKey ? topicImage(imageKey) : undefined;
     return { title, href, text: p.seoDescription, slot: title, media };
@@ -245,12 +309,14 @@ foundationCards.items[1].media = topicImage('breastAnatomy', { alt: 'Breast Anat
 foundationCards.items[2].media = topicImage('compareOptions', { alt: 'Breast Enhancement Options Compared' });
 foundationCards.items[3].media = topicImage('breastSafety', { alt: 'Breast Enlargement Safety' });
 finalHome.blocks.push(foundationCards);
+finalHome.blocks.push(beforeAfterFigure);
 const homeOrder = [
   (b) => b.type === 'hero',
   (b) => b.id === 'treatments',
   (b) => b.eyebrow === 'Our approach',
   (b) => b.eyebrow === 'Our principles',
   (b) => b.title === 'An important clinical distinction',
+  (b) => b.id === 'before-after-illustration',
   (b) => b.eyebrow === 'Treatments',
   (b) => b.eyebrow === 'How to use this website',
   (b) => b.heading === 'A clear foundation for your decision',
@@ -314,7 +380,7 @@ about.showBanner = false;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
 about.blocks = [{ type: 'prose', wide: true, html: '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
-const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="" width="${a.imageWidth}" height="${a.imageHeight}" loading="lazy" decoding="async"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · 8 min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
+const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="${escapeAboutText('Editorial illustration for the article ' + a.title)}" width="${a.imageWidth}" height="${a.imageHeight}" loading="lazy" decoding="async"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · 8 min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
 const blogsIndex = { url: '/blogs/', slug: 'blogs', h1: 'Breast Enlargement Blogs', showBanner: false, seoTitle: 'Breast Enlargement Blogs | Quantum Health', seoDescription: 'Evidence-aware breast enlargement education and illustrative patient-perspective articles.', breadcrumb: [{ label: 'Blogs' }], schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Breast Enlargement Blogs', url: site.url + '/blogs/' }], blocks: [{ type: 'prose', wide: true, html: '' }] };
 finalHome.schema[0].name = site.name;
 // Keep the interactive listing semantic and theme-neutral. Styling is shared in
