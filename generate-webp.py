@@ -17,7 +17,7 @@ for size in sizes:
     width = size
     height = int(img.height * (size / img.width))
     resized = img.resize((width, height), Image.LANCZOS)
-    
+
     webp_path = os.path.join(base_dir, f'qh-education-research-banner-{size}.webp')
     resized.save(webp_path, 'WEBP')
     print(f'Generated: {webp_path} - {width}x{height}')
