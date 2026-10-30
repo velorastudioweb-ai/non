@@ -88,7 +88,7 @@ All 25 pages are within the requested approximate 350–400-word range.
 | Breast lift | Protecting results | 383 |
 | Breast revision | Reasons | 369 |
 | Breast revision | Removal and exchange | 383 |
-| Breast revision | Capsule surgery | 398 |
+| Breast revision | Capsule surgery | 400 |
 | Breast revision | Malposition | 390 |
 | Breast revision | Preparing | 391 |
 | Filler removal | Why removal may be needed | 388 |

@@ -848,7 +848,7 @@ const pages = [
 <h2>Capsulectomy</h2>
 <p>The capsule is removed, partly or totally. This can treat capsular contracture and allows new implants to sit in a fresh pocket. It takes longer and has more bleeding and risk than a release.</p>
 <h2>En bloc capsulectomy</h2>
-<p>The implant and capsule are removed together as a single unit, without opening the capsule. This is used when there is concern about certain conditions, such as BIA-ALCL, or when it is felt important to avoid leaking contents.</p>
+<p>In precise usage, “en bloc” removes the capsule with a margin of uninvolved tissue for suspected or established implant-associated cancer after work-up. It differs from taking the implant and capsule out intact as one unit, often called total intact capsulectomy.</p>
 <h2>The capsule is a normal response</h2>
 <p>Implants develop a scar capsule. The presence of a capsule alone is not a disease and does not automatically mean it must be removed. The relevant questions are whether it is tight, thickened, calcified, infected, contains abnormal fluid or is linked to another diagnosed problem.</p>
 <h2>Why en bloc is not a universal standard</h2>
