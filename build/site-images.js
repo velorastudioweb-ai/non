@@ -15,6 +15,13 @@ const siteImages = Object.freeze({
   surgicalOptions: { src: '/surgical.webp', width: 1254, height: 1254, alt: 'Surgical breast enlargement options' },
   mastectomyChestSurgery: { src: '/Breast Surgery Planning and Recovery Collage.png', width: 1536, height: 1024, alt: 'Mastectomy and chest contouring surgery planning and recovery' },
   breastFillerRemoval: { src: '/Breast Filler Removal Medical Infographic.png', width: 1254, height: 1254, alt: 'Breast filler removal medical infographic' },
+  // Wide banners for the surgical sub-pages share the parent guide's approved
+  // conceptual artwork rather than presenting a new clinical image.
+  fatTransferBanner: { src: '/assets/img/qh-fat-transfer-tissue-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of fat-tissue and cannula concepts for fat transfer' },
+  breastLiftBanner: { src: '/assets/img/qh-mastopexy-planning-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of breast-lift incision-pattern concepts' },
+  breastRevisionBanner: { src: '/assets/img/qh-implant-revision-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of implant review and revision planning' },
+  breastFillerRemovalBanner: { src: '/assets/img/qh-filler-removal-assessment-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of assessment of previously injected materials' },
+  breastReductionBanner: { src: '/assets/img/qh-reduction-planning-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of assessment before breast reduction' },
   nonSurgicalOverview: { src: '/non surgical.webp', width: 1254, height: 1254, alt: 'Non-surgical breast enlargement evidence overview' },
   nonSurgicalHero: { src: '/Non-Surgical Breast Enhancement Infographic.png', width: 2048, height: 768, alt: 'Non-surgical breast enhancement evidence overview' },
   nonSurgicalSafety: { src: '/ChatGPT Image Oct 29, 2026, 07_10_19 AM.png', width: 1536, height: 1024, alt: 'Illustration of non-surgical breast enhancement techniques and medical assessment' },
@@ -47,8 +54,10 @@ const doctorPortraits = Object.freeze({
   arivazhagan: { src: '/dr-arivazhagan.png', width: 367, height: 348 },
   sekhar: { src: '/dr-sekhar.png', width: 382, height: 372 },
   alisha: { src: '/dr-alisha-khan.png', width: 208, height: 246 },
-  nandita: { src: '/dr-nandita.png', width: 355, height: 431 },
-  sunitha: { src: '/dr-sunitha-devaraj.png', width: 350, height: 400 }
+  // Dr. Nandita intentionally uses the initials fallback: the only supplied
+  // file was byte-identical to the breast-implants banner, so it is not a
+  // verified portrait and must not be presented as one.
+  sunitha: { src: '/dr-sunitha-devaraj.png', width: 426, height: 452 }
 });
 
 const escapeAttribute = (value) => String(value)

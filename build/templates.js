@@ -122,7 +122,7 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
   <div class="container">
 <div class="footer-top">
 <div class="footer-brand">
-<a class="brand" href="${site.base}" aria-label="${esc(site.name)} Independent patient education — home">
+<a class="brand" href="${site.base}">
 <span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
 <span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
 </a>
@@ -215,7 +215,7 @@ ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 <h3 class="card__title">${esc(it.title)}</h3>
 <p class="card__text">${esc(it.text)}</p>
 </div>
-${it.href ? `<div class="card__footer"><a class="link-arrow" href="${it.href}" aria-label="Learn more about ${esc(it.title)}">Learn more ${icon('arrow')}</a></div>` : ''}
+${it.href ? `<div class="card__footer"><a class="link-arrow" href="${it.href}">Learn more<span class="sr-only"> about ${esc(it.title)}</span> ${icon('arrow')}</a></div>` : ''}
   </article>`).join('\n    ');
   return `<div class="container">
   <div class="section-head ${b.center ? 'section-head--center' : ''} reveal">

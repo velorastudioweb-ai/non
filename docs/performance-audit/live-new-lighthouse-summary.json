@@ -1,0 +1,508 @@
+[
+  {
+    "url": "https://quantumhealth-website.vercel.app/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-30T02:03:02.096Z",
+    "mode": "mobile",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 2304.3109999999997,
+    "cls": 0.019282682253000706,
+    "tbt": 18,
+    "fcp": 1560.311,
+    "bytes": 369714,
+    "findings": [
+      {
+        "id": "first-contentful-paint",
+        "score": 0.95,
+        "title": "First Contentful Paint",
+        "value": "1.6 s"
+      },
+      {
+        "id": "largest-contentful-paint",
+        "score": 0.93,
+        "title": "Largest Contentful Paint",
+        "value": "2.3 s"
+      },
+      {
+        "id": "speed-index",
+        "score": 0.96,
+        "title": "Speed Index",
+        "value": "2.7 s"
+      },
+      {
+        "id": "max-potential-fid",
+        "score": 0.16,
+        "title": "Max Potential First Input Delay",
+        "value": "410 ms"
+      },
+      {
+        "id": "interactive",
+        "score": 0.99,
+        "title": "Time to Interactive",
+        "value": "2.3 s"
+      },
+      {
+        "id": "bf-cache",
+        "score": 0,
+        "title": "Page prevented back/forward cache restoration",
+        "value": "1 failure reason",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "reason",
+              "valueType": "text",
+              "subItemsHeading": {
+                "key": "frameUrl",
+                "valueType": "url"
+              },
+              "label": "Failure reason"
+            },
+            {
+              "key": "failureType",
+              "valueType": "text",
+              "label": "Failure type"
+            }
+          ],
+          "items": [
+            {
+              "reason": "Navigation was cancelled before the page could be restored from back/forward cache.",
+              "failureType": "Not actionable",
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://quantumhealth-website.vercel.app/"
+                  }
+                ]
+              },
+              "protocolReason": "NavigationCancelledWhileRestoring"
+            }
+          ]
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0.5,
+        "title": "Improve image delivery",
+        "value": "Est savings of 13 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-2-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,2,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 2231,
+                  "bottom": 2480,
+                  "left": 25,
+                  "right": 387,
+                  "width": 362,
+                  "height": 249
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/education-resea…\" alt=\"Education and Research\" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\" srcset=\"/assets/responsive/education-research-49452734319e-480.webp 480w, /assets/…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Education and Research"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/education-research-49452734319e-768.webp",
+              "totalBytes": 53642,
+              "wastedBytes": 13540,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (743x512) for its displayed dimensions (653x436). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 13540
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 13540
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "C621136C2E6B373CAAC2238B4197D88D": {
+                    "url": "https://quantumhealth-website.vercel.app/",
+                    "navStartToEndTime": 456,
+                    "transferSize": 10062,
+                    "isLongest": true,
+                    "children": {
+                      "6672.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-55e4d29f03b9.css",
+                        "navStartToEndTime": 783,
+                        "transferSize": 14125,
+                        "isLongest": true,
+                        "children": {
+                          "6672.38": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/cormorant-garamond-v21-italic-latin.woff2",
+                            "navStartToEndTime": 1539,
+                            "transferSize": 39440,
+                            "isLongest": true,
+                            "children": {}
+                          },
+                          "6672.51": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/pinyon-script-v24-normal-latin.woff2",
+                            "navStartToEndTime": 1487,
+                            "transferSize": 39220,
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 1539
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-55e4d29f03b9.css",
+              "totalBytes": 14125,
+              "wastedMs": 150
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://quantumhealth-website.vercel.app/",
+    "lighthouseVersion": "13.5.0",
+    "time": "2026-10-30T02:03:42.529Z",
+    "mode": "desktop",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcp": 528.951,
+    "cls": 0.05365271526245598,
+    "tbt": 0,
+    "fcp": 368.951,
+    "bytes": 353850,
+    "findings": [
+      {
+        "id": "cumulative-layout-shift",
+        "score": 0.98,
+        "title": "Cumulative Layout Shift",
+        "value": "0.054",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "cumulativeLayoutShiftMainFrame": 0.05365271526245598,
+              "newEngineResult": {
+                "cumulativeLayoutShift": 0.05365271526245598,
+                "cumulativeLayoutShiftMainFrame": 0.05365271526245598
+              },
+              "newEngineResultDiffered": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "image-delivery-insight",
+        "score": 0,
+        "title": "Improve image delivery",
+        "value": "Est savings of 33 KiB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "node",
+              "valueType": "node",
+              "label": ""
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL",
+              "subItemsHeading": {
+                "key": "reason",
+                "valueType": "text"
+              }
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Resource Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Est Savings",
+              "subItemsHeading": {
+                "key": "wastedBytes",
+                "valueType": "bytes"
+              }
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,0,SECTION,3,DIV,0,IMG",
+                "selector": "main#main > section.hero > div.hero__bg > img",
+                "boundingRect": {
+                  "top": 83,
+                  "bottom": 688,
+                  "left": 0,
+                  "right": 1340,
+                  "width": 1340,
+                  "height": 606
+                },
+                "snippet": "<img src=\"/hero-banner.webp\" alt=\"\" loading=\"eager\" fetchpriority=\"high\" decoding=\"sync\" width=\"1599\" height=\"893\" srcset=\"/assets/responsive/hero-banner-7879e6996dde-480.webp 480w, /assets/respons…\" sizes=\"100vw\">",
+                "nodeLabel": "main#main > section.hero > div.hero__bg > img"
+              },
+              "url": "https://quantumhealth-website.vercel.app/hero-banner.webp",
+              "totalBytes": 70094,
+              "wastedBytes": 28871,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1599x893) for its displayed dimensions (1226x685). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 28871
+                  }
+                ]
+              }
+            },
+            {
+              "node": {
+                "type": "node",
+                "lhId": "page-1-IMG",
+                "path": "1,HTML,1,BODY,3,MAIN,1,SECTION,0,DIV,1,DIV,1,ARTICLE,0,DIV,0,IMG",
+                "selector": "div.grid > article.card > div.card__media > img",
+                "boundingRect": {
+                  "top": 996,
+                  "bottom": 1258,
+                  "left": 479,
+                  "right": 861,
+                  "width": 382,
+                  "height": 263
+                },
+                "snippet": "<img src=\"https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf…\" alt=\"Non-Surgical Breast Enlargement\" loading=\"lazy\" decoding=\"async\" width=\"1254\" height=\"1254\" srcset=\"/assets/responsive/non-surgical-bf9edbf01ebb-480.webp 480w, /assets/respon…\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-widt…\">",
+                "nodeLabel": "Non-Surgical Breast Enlargement"
+              },
+              "url": "https://quantumhealth-website.vercel.app/assets/responsive/non-surgical-bf9edbf01ebb-480.webp",
+              "totalBytes": 31730,
+              "wastedBytes": 5292,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "Increasing the image compression factor could improve this image's download size.",
+                    "wastedBytes": 5292
+                  }
+                ]
+              }
+            }
+          ],
+          "debugData": {
+            "type": "debugdata",
+            "wastedBytes": 34163
+          }
+        }
+      },
+      {
+        "id": "network-dependency-tree-insight",
+        "score": 0,
+        "title": "Network dependency tree",
+        "details": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list-section",
+              "value": {
+                "type": "network-tree",
+                "chains": {
+                  "D49FDFBE1B1B0E6F1D1201B7B132F263": {
+                    "url": "https://quantumhealth-website.vercel.app/",
+                    "navStartToEndTime": 146,
+                    "transferSize": 10064,
+                    "isLongest": true,
+                    "children": {
+                      "7480.5": {
+                        "url": "https://quantumhealth-website.vercel.app/assets/built/site-55e4d29f03b9.css",
+                        "navStartToEndTime": 308,
+                        "transferSize": 14076,
+                        "isLongest": true,
+                        "children": {
+                          "7480.51": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/pinyon-script-v24-normal-latin.woff2",
+                            "navStartToEndTime": 592,
+                            "transferSize": 39222,
+                            "isLongest": true,
+                            "children": {}
+                          },
+                          "7480.38": {
+                            "url": "https://quantumhealth-website.vercel.app/assets/fonts/cormorant-garamond-v21-italic-latin.woff2",
+                            "navStartToEndTime": 578,
+                            "transferSize": 39445,
+                            "children": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "longestChain": {
+                  "duration": 592
+                }
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnected origins",
+              "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+              "value": {
+                "type": "text",
+                "value": "no origins were preconnected"
+              }
+            },
+            {
+              "type": "list-section",
+              "title": "Preconnect candidates",
+              "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+              "value": {
+                "type": "text",
+                "value": "No additional origins are good candidates for preconnecting"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "render-blocking-insight",
+        "score": 0.5,
+        "title": "Render-blocking requests",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Transfer Size"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Duration"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://quantumhealth-website.vercel.app/assets/built/site-55e4d29f03b9.css",
+              "totalBytes": 14076
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

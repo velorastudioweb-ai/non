@@ -7,9 +7,17 @@ const { libraryPages } = require('./library');
 const { articles } = require('./blog');
 const publishedBlogs = require('./published-blogs');
 const { contact, legal } = require('./extra-pages');
+const { expandedPages: batchOnePages } = require('./expanded-content');
+const { surgicalSubpages } = require('./surgical-subpages');
+const { nonsurgicalSubpages } = require('./nonsurgical-subpages-content');
+const expandedPages = batchOnePages.concat(surgicalSubpages);
 const { siteImages, topicImage } = require('./site-images');
 const clone = (value) => JSON.parse(JSON.stringify(value));
 const source = new Map(pages.concat(libraryPages).map((p) => [p.url, p]));
+// New editorial pages are assembled through this registry as well, so route
+// membership, cards, breadcrumbs, schema and the sitemap cannot drift apart.
+expandedPages.forEach((p) => source.set(p.url, p));
+nonsurgicalSubpages.forEach((p) => source.set(p.url, p));
 const get = (url) => {
   if (!source.has(url)) throw new Error('Missing source content: ' + url);
   return clone(source.get(url));
@@ -49,8 +57,27 @@ const education = [
   ['/research/', 'Breast Enlargement Research Library'],
   ['/references/', 'Clinical Studies, Reviews and Research References'],
   ['/glossary/', 'Glossary of Medical Terms'],
-  ['/faqs/', 'Frequently Asked Questions']
+  ['/faqs/', 'Breast Enlargement FAQs: 15 Questions Answered']
 ];
+const expandedSurgical = expandedPages.filter((p) => p.section === 'surgical');
+const expandedNonsurgical = expandedPages.filter((p) => p.section === 'non-surgical');
+const expandedEducation = expandedPages.filter((p) => p.section === 'education');
+const toEntry = (list) => list.map((p) => [p.url, p.cardTitle]);
+const expandedSurgicalEntries = toEntry(expandedSurgical);
+const expandedNonsurgicalEntries = toEntry(expandedNonsurgical);
+const nonsurgicalSubpageEntries = toEntry(nonsurgicalSubpages);
+const expandedEducationEntries = toEntry(expandedEducation);
+const expandedSurgicalImplants = toEntry(expandedSurgical.filter((p) => p.group === 'implants'));
+const expandedSurgicalProcedures = toEntry(expandedSurgical.filter((p) => p.group === 'procedures'));
+const expandedSurgicalAugmentation = toEntry(expandedSurgical.filter((p) => p.group === 'augmentation'));
+const expandedSurgicalSafety = toEntry(expandedSurgical.filter((p) => p.group === 'safety'));
+const expandedSurgicalSurface = toEntry(expandedSurgical.filter((p) => [
+  'how-breast-implants-are-made',
+  'implant-profile-width-volume',
+  'implant-rippling',
+  'implant-surface-texture',
+  'implant-records-warranties'
+].includes(p.slug)));
 const redirects = [
   { from: '/surgical-breast-enhancement/', to: sections[0].href },
   { from: '/choosing-a-surgeon/', to: '/breast-enlargement-safety/#choosing-a-surgeon' },
@@ -65,10 +92,19 @@ function articleSections(slug, indices) {
   return { type: 'prose', html: a.body.filter((_, i) => !indices || indices.includes(i))
     .map(([h, text]) => '<h2 class="h3">' + h + '</h2>' + text).join('') };
 }
-const topicPages = surgical.concat(nonsurgical, education.filter(([u]) => u !== '/research/')).map(([url, title]) => {
+const topicPages = surgical.concat(
+  expandedSurgicalEntries,
+  nonsurgical,
+  nonsurgicalSubpageEntries,
+  expandedNonsurgicalEntries,
+  education.filter(([u]) => u !== '/research/'),
+  expandedEducationEntries
+).map(([url, title]) => {
   const p = get(url);
-  p.h1 = title;
-  p.seoTitle = title + ' | Quantum Health';
+  if (!p.cardTitle) {
+    p.h1 = title;
+    p.seoTitle = title + ' | Quantum Health';
+  }
   return p;
 });
 const byUrl = new Map(topicPages.map((p) => [p.url, p]));
@@ -115,8 +151,6 @@ safety.blocks.push(...surgeonGuide);
 // already live in their guides and are linked here instead of repeated.
 const sharedFaq = byUrl.get('/faqs/');
 sharedFaq.blocks.find((b) => b.type === 'faq').id = 'shared-faq';
-sharedFaq.blocks.find((b) => b.type === 'faq').items = sharedFaq.blocks.find((b) => b.type === 'faq').items.filter((_, i) => [0, 3, 6].includes(i));
-sharedFaq.blocks.push({ type: 'prose', html: '<h2>Questions about an individual option</h2><p>Read the dedicated FAQs for <a href="/non-surgical/dermal-fillers/">fillers</a>, <a href="/non-surgical/prp/">PRP</a>, <a href="/surgical/fat-transfer-breast-augmentation/">fat transfer</a> and <a href="/surgical/breast-augmentation/">augmentation and recovery</a>.</p>' });
 const augmentation = byUrl.get('/surgical/breast-augmentation/');
 augmentation.blocks.filter((b) => b.type === 'faq').forEach((b) => {
   b.items = b.items.filter((i) => i.q !== 'How do I know which approach is right for me?');
@@ -140,7 +174,7 @@ const beforeAfterFigure = figure('before-after-illustration', {
   lead: 'An illustration can show a difference in size and proportion. It cannot predict what a treatment will do for you, how your tissues will heal, or what result is achievable.',
   src: '/before-after-breast-enhancement.webp',
   alt: 'AI-generated illustration showing the same torso in a bra before and after breast enhancement, labelled Before and After; not a real patient.',
-  caption: 'AI-generated educational illustration — not a real patient and not a treatment result.',
+  caption: 'AI-generated conceptual illustration. Not a real patient or a prediction of treatment results.',
   note: 'No outcome, cup size or result is guaranteed. Suitability and realistic expectations require assessment by a qualified clinician.'
 });
 insertAfter('/surgical/breast-augmentation/', (b) => /^What breast augmentation can/.test(b.heading || ''), figure('augmentation-options-figure', {
@@ -149,7 +183,7 @@ insertAfter('/surgical/breast-augmentation/', (b) => /^What breast augmentation 
   lead: 'The four approaches shown here add volume in different ways — and differ in evidence, duration and risk.',
   src: '/breast-enhancement-options-surgical.webp',
   alt: 'AI-generated infographic illustrating breast implants, fat transfer, breast augmentation and dermal fillers with before-and-after concept images and brief notes.',
-  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  caption: 'AI-generated conceptual illustration. Not a real patient or a prediction of treatment results.',
   note: 'Dermal fillers are not approved for breast enlargement in many countries. Conceptual illustration only; no option is suitable for everyone.'
 }));
 insertAfter('/non-surgical/', (b) => b.heading === 'Primary consideration and key limitation', figure('non-surgical-options-figure', {
@@ -158,7 +192,7 @@ insertAfter('/non-surgical/', (b) => b.heading === 'Primary consideration and ke
   lead: 'These options are often marketed as alternatives to augmentation. The illustration summarises what each claims; the sections below explain where the evidence is limited.',
   src: '/breast-enhancement-options-non-surgical.webp',
   alt: 'AI-generated infographic illustrating PRP, thread-based procedures, Sculptra and biostimulators, and breast lift with before-and-after concept images and brief notes.',
-  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  caption: 'AI-generated conceptual illustration. Not a real patient or a prediction of treatment results.',
   note: 'Breast lift is a surgical procedure, not a non-surgical treatment. PRP, threads and biostimulators have limited evidence for lasting breast volume; results vary.'
 }));
 insertAfter('/breast-enhancement-comparison/', (b) => /^Intended effect, primary consideration/.test(b.heading || ''), figure('comparison-options-figure', {
@@ -167,7 +201,7 @@ insertAfter('/breast-enhancement-comparison/', (b) => /^Intended effect, primary
   lead: 'Each approach acts differently: implants add volume, fat transfer adds your own tissue, fillers add temporary material, and a lift changes shape rather than volume.',
   src: '/breast-enhancement-treatment-infographic.webp',
   alt: 'AI-generated infographic grid comparing breast implants, fat transfer, breast augmentation, dermal fillers, PRP, threads, biostimulators and breast lift.',
-  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  caption: 'AI-generated conceptual illustration. Not a real patient or a prediction of treatment results.',
   note: 'This overview is not a rating or recommendation. Availability, approval and suitability vary by country and by person.'
 }));
 insertAfter('/understanding-breast-enlargement/', (b) => /^The four broad routes to more volume/.test(b.heading || ''), figure('treatment-landscape-figure', {
@@ -176,7 +210,7 @@ insertAfter('/understanding-breast-enlargement/', (b) => /^The four broad routes
   lead: 'A quick map of the approaches discussed across this guide, from implants and fat transfer to injectables, threads and lift.',
   src: '/breast-enhancement-treatment-grid.webp',
   alt: 'AI-generated grid of eight breast enhancement approaches, each shown with a simple before-and-after concept image.',
-  caption: 'AI-generated educational illustration — not real patients and not a record of treatment results.',
+  caption: 'AI-generated conceptual illustration. Not a real patient or a prediction of treatment results.',
   note: 'Illustrations are conceptual and do not show real patients or guaranteed results.'
 }));
 
@@ -261,15 +295,21 @@ const landings = [
     cards(surgical.slice(0, 4), 'Breast enlargement: implants and fat transfer'),
     { type: 'notice', icon: 'info', title: 'Related surgical procedures', text: 'A lift changes shape and position; reduction removes tissue; mastectomy removes breast tissue for specific clinical or chest-contouring goals. These are not breast enlargement procedures. Revision and filler-removal surgery address previous procedures and their complications.' },
     cards(surgical.slice(4), 'Related surgery: shape, correction, reduction and chest contouring'),
+    cards(expandedSurgicalAugmentation, 'Augmentation: candidacy, planning and recovery'),
+    cards(expandedSurgicalImplants, 'Implant choices, placement and safety'),
+    cards(expandedSurgicalSafety, 'Implant safety: risks, rupture and complications'),
+    cards(expandedSurgicalProcedures, 'Fat transfer, lift, asymmetry and urgent care'),
     ...surgicalGuidance
   ], 'surgical-breast-enhancement'),
   landing(sections[1], sections[1].label, 'Understand what changes appearance, what has evidence for lasting volume, and which breast-enlargement claims are unsupported or unsafe.', [
     { type: 'notice', icon: 'safety', title: 'Non-surgical does not mean proven or safe', text: 'Fillers are not FDA-approved for breast enlargement. Facial approval does not establish breast-use approval. Threads, PRP, biostimulators and regenerative products should not be presented as proven substitutes for augmentation. Fat transfer is surgery, even though it does not use an implant.' },
-    cards(nonsurgical, 'Non-surgical options: evidence, limitations and safety')
+    cards(nonsurgical, 'Non-surgical options: evidence, limitations and safety'),
+    cards(expandedNonsurgicalEntries, 'Evidence and safety guides')
   ], 'non-surgical'),
   landing(sections[2], 'General Education & Research', 'Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.', [
     { type: 'notice', icon: 'info', title: 'Education before a personal decision', text: 'These resources provide general education, not individual medical advice. Research is attributed to its external authors and publishers; no treatments or clinical consultations are offered by this website.' },
-    cards(education, 'Learn, compare and read the evidence')
+    cards(education, 'Learn, compare and read the evidence'),
+    cards(expandedEducationEntries, 'Decision and practical guides')
   ], 'education-research')
 ];
 landings[0].bannerImage = siteImages.surgicalOverview.src;
@@ -280,21 +320,87 @@ landings[1].bannerWidth = siteImages.nonSurgicalHero.width;
 landings[1].bannerHeight = siteImages.nonSurgicalHero.height;
 const topicMembership = new Map();
 [surgical, nonsurgical, education].forEach((entries, i) => entries.forEach(([url]) => topicMembership.set(url, i)));
+const expandedSectionIndex = { surgical: 0, 'non-surgical': 1, education: 2 };
+expandedPages.forEach((p) => topicMembership.set(p.url, expandedSectionIndex[p.section]));
+nonsurgicalSubpages.forEach((p) => topicMembership.set(p.url, expandedSectionIndex[p.section]));
 topicPages.forEach((p) => {
   const section = sections[topicMembership.get(p.url)];
   p.sectionUrl = section.href;
   p.bannerEyebrow = section.label;
   p.breadcrumb = [{ label: section.label, href: section.href }, { label: p.h1 }];
+  const parentUrl = p.parent || p.parentUrl;
+  const parentLabel = p.parentLabel || p.parentTitle;
+  if (parentUrl && parentLabel) {
+    p.breadcrumb = [
+      { label: section.label, href: section.href },
+      { label: parentLabel, href: parentUrl },
+      { label: p.h1 }
+    ];
+  }
   // Detailed guidance comes before FAQs; shared related links remain last.
   const topicBlocks = contentBlocks(p);
   const faqBlocks = topicBlocks.filter((b) => b.type === 'faq');
   p.blocks = topicBlocks.filter((b) => b.type !== 'faq').concat(faqBlocks);
-  p.blocks.push({ type: 'cards', cols: 3, eyebrow: 'Continue reading', heading: 'Related education', items: [
+  const relatedItems = [
     { title: section.label, href: section.href, text: 'Return to the full category guide.' },
     { title: 'Safety and warning signs', href: '/breast-enlargement-safety/', text: 'Candidacy, risks and when to seek medical help.' },
-    { title: 'External research and sources', href: '/research/', text: 'Study findings, limitations and original publications.' }
-  ].filter((i) => i.href !== p.url) });
-  p.schema = [{ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: p.h1, url: site.url + p.url, isPartOf: { '@type': 'CollectionPage', url: site.url + section.href } }];
+    { title: 'External research and sources', href: '/research/', text: 'Study findings, limitations and original publications.' },
+    ...(p.related || []).map(([href, title, text]) => ({ href, title, text }))
+  ].filter((item, index, all) => item.href !== p.url && all.findIndex((other) => other.href === item.href) === index);
+  p.blocks.push({ type: 'cards', cols: 3, eyebrow: 'Continue reading', heading: 'Related education', items: relatedItems });
+  const medicalSchema = { '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: p.h1, url: site.url + p.url, isPartOf: { '@type': 'CollectionPage', url: site.url + section.href } };
+  const existingSchema = Array.isArray(p.schema) ? p.schema : p.schema ? [p.schema] : [];
+  p.schema = [medicalSchema, ...existingSchema]
+    .filter((entry, index, all) => all.findIndex((other) => other['@type'] === entry['@type']) === index);
+});
+
+// Link each parent guide to its detailed sub-pages before the shared related
+// links, so the narrower pages are reachable from the page they expand on.
+[
+  ['/surgical/breast-augmentation/', expandedSurgicalAugmentation, 'Candidacy, planning and recovery in more detail'],
+  ['/breast-implants/', expandedSurgicalSurface, 'Implant design, records and visibility in more detail'],
+  ['/breast-implant-safety/', expandedSurgicalSafety, 'Implant risks, rupture and complications in more detail']
+].forEach(([url, entries, heading]) => {
+  const parent = byUrl.get(url);
+  const related = parent.blocks.pop();
+  parent.blocks.push(cards(entries, heading));
+  parent.blocks.push(related);
+});
+
+// Batch-2 sub-pages declare their parent guide. Link them from that guide so
+// every new route is reachable by browsing, not only from the sitemap.
+const subpagesByParent = new Map();
+expandedPages.filter((p) => p.group === 'subpages').forEach((p) => {
+  if (!subpagesByParent.has(p.parent)) subpagesByParent.set(p.parent, []);
+  subpagesByParent.get(p.parent).push([p.url, p.cardTitle]);
+});
+subpagesByParent.forEach((entries, url) => {
+  const parent = byUrl.get(url);
+  if (!parent) throw new Error('Missing sub-page parent: ' + url);
+  const related = parent.blocks.pop();
+  const guideCards = cards(entries, 'Explore this guide in detail',
+    'Five focused pages on the questions people ask most about this procedure.');
+  guideCards.eyebrow = 'In this guide';
+  parent.blocks.push(guideCards);
+  parent.blocks.push(related);
+});
+
+// Batch-3 non-surgical pages use parentUrl/parentTitle. Surface each set from
+// its canonical parent guide so the routes are reachable without a sitemap.
+const nonsurgicalSubpagesByParent = new Map();
+nonsurgicalSubpages.forEach((p) => {
+  if (!nonsurgicalSubpagesByParent.has(p.parentUrl)) nonsurgicalSubpagesByParent.set(p.parentUrl, []);
+  nonsurgicalSubpagesByParent.get(p.parentUrl).push([p.url, p.cardTitle]);
+});
+nonsurgicalSubpagesByParent.forEach((entries, url) => {
+  const parent = byUrl.get(url);
+  if (!parent) throw new Error('Missing non-surgical sub-page parent: ' + url);
+  const related = parent.blocks.pop();
+  const guideCards = cards(entries, 'Explore this guide in detail',
+    'Five focused pages on the questions people ask most about this option.');
+  guideCards.eyebrow = 'In this guide';
+  parent.blocks.push(guideCards);
+  parent.blocks.push(related);
 });
 
 const finalHome = clone(home);

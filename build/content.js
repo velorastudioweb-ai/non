@@ -1207,37 +1207,53 @@ pages.push({
 /* ---------- FAQ page ---------- */
 pages.push({
   url: '/faqs/', slug: 'faqs',
-  h1: 'Frequently Asked Questions',
-  seoTitle: 'Breast Enhancement FAQs | Breast Enlargement Guide',
-  seoDescription: 'Answers to common questions about non-surgical and surgical breast enhancement, evidence, safety, recovery and how to choose which option may be appropriate.',
+  h1: 'Breast Enlargement FAQs: 15 Questions Answered',
+  seoTitle: 'Breast Enlargement FAQs: 15 Questions Answered | Quantum Health',
+  seoDescription: 'Clear answers to 15 common questions about surgical and non-surgical breast enlargement, including safety, recovery, longevity and choosing a clinician.',
   bannerEyebrow: 'Patient information',
   bannerLead: 'Straightforward answers to the questions patients most often ask. Every individual situation still requires assessment by an appropriately qualified clinician.',
   breadcrumb: [{ label: 'FAQs' }],
   schema: [{
     '@context': 'https://schema.org', '@type': 'FAQPage', url: site.url + '/faqs/',
     mainEntity: [
-      ['Can breast size be increased without surgery?', 'Some treatments are marketed for this purpose, but the evidence and regulatory status vary. Many non-surgical approaches have not been shown to reliably increase breast volume.'],
-      ['Are dermal fillers safe for breast enlargement?', 'Dermal fillers are not approved for breast enlargement because of potentially serious complications. A filler approved for facial use should not be assumed suitable for injection into the breasts.'],
-      ['Is PRP a proven breast enlargement treatment?', 'PRP should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.'],
-      ['What is the difference between silicone implants and injectable silicone?', 'They are entirely different. Injectable silicone should not be used as a substitute for a breast implant and can cause serious, potentially permanent harm.'],
-      ['Does fat transfer produce permanent results?', 'Some transferred fat can survive long term, but a proportion may be reabsorbed, so the final result varies and additional procedures may be considered.'],
-      ['How long does breast augmentation recovery take?', 'Recovery varies according to the procedure, technique, individual healing and the clinician’s advice.'],
-      ['How do I know which procedure is right for me?', 'The appropriate option depends on your health, anatomy, expectations and risk tolerance, and should follow assessment by an appropriately qualified clinician.']
+      ['Can breast size be increased without surgery?', 'Some products and procedures are marketed for this, but evidence that they reliably and lastingly increase breast volume is limited or absent. Weight gain can increase breast size because breasts contain fat, but this is not targeted or controllable.'],
+      ['Is a non-surgical procedure automatically safer?', 'No. Injections and threads can cause infection, lumps, tissue damage and complications that are hard to treat. Non-surgical describes the method, not the level of risk.'],
+      ['How long do breast implants last?', 'Implants are not lifetime devices. Many people need further surgery at some point.'],
+      ['Will I need more surgery in the future?', 'It is possible. Reasons include rupture, scar tissue tightening, changes in breast shape or size preference, and implant displacement.'],
+      ['What is the difference between silicone and saline implants?', 'Both have a silicone shell. Saline implants are filled with sterile salt water; silicone implants contain a cohesive gel. They differ in feel, appearance and how a rupture is detected.'],
+      ['Can I breastfeed after augmentation?', 'Many people can, but it depends on the incision, implant placement and your breast tissue. Discuss this before surgery.'],
+      ['Do implants affect mammograms?', 'They can make imaging more complex. Tell the imaging team you have implants so they can adapt the technique.'],
+      ['Is fat transfer permanent?', 'Fat that survives in its new location can last, but a portion is usually reabsorbed, and the amount varies between people.'],
+      ['How long is recovery?', 'It varies by procedure and person. Many people return to light activity within days to weeks, with restrictions on strenuous exercise lasting longer. Your surgeon’s instructions take priority.'],
+      ['Are the results the same as a before-and-after photo?', 'No. Photos show one person’s result under particular conditions and cannot predict yours.'],
+      ['What is injectable silicone and why is it dangerous?', 'It is liquid silicone or other substances injected directly into tissue. It is not the same as a regulated implant and can cause permanent harm, including lumps, migration and chronic inflammation.'],
+      ['How do I choose a surgeon?', 'Check medical registration, specialist training, experience with your specific procedure, and the facility’s emergency arrangements.'],
+      ['Can I get breast surgery if I plan to have children?', 'Some surgeons advise waiting, because pregnancy and breastfeeding change breast shape. This is a personal decision to discuss with your surgeon.'],
+      ['What are the signs that something is wrong after surgery?', 'Fever, spreading redness, sudden one-sided swelling, severe pain, wound opening, chest pain or breathlessness need prompt medical attention.'],
+      ['Does a larger implant look better?', 'Not necessarily. Proportion, tissue quality and long-term risk matter more than volume alone.']
     ].map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }))
   }],
   blocks: [
-    { type: 'faq', id: 'main', eyebrow: 'Common questions', heading: 'Breast enhancement FAQs',
+    { type: 'faq', id: 'main', eyebrow: 'Common questions', heading: 'Breast enlargement FAQs',
       items: [
-        { q: 'Can breast size be increased without surgery?', a: '<p>Some treatments are marketed for this purpose, but the evidence and regulatory status vary. Many non-surgical approaches have not been shown to reliably increase breast volume. A professional assessment is the appropriate way to establish what is realistic and which options, if any, are appropriate.</p>' },
-        { q: 'Are dermal fillers safe for breast enlargement?', a: '<p>Dermal fillers are not approved for breast enlargement, and regulators advise against using them for this purpose because of potentially serious complications. A filler approved for facial use should not be assumed suitable for injection into the breasts.</p>' },
-        { q: 'Is PRP a proven breast enlargement treatment?', a: '<p>PRP’s effects depend on the specific indication and the evidence available. It should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.</p>' },
-        { q: 'What is the difference between silicone implants and injectable silicone?', a: '<p>They are entirely different. Injectable silicone is a different product and should not be used as a substitute for a breast implant. Injectable silicone used for breast enhancement can cause serious, potentially permanent harm.</p>' },
-        { q: 'Does fat transfer produce permanent results?', a: '<p>Some transferred fat can survive long term, but a proportion may be reabsorbed. The final result varies between individuals, and additional procedures may be considered.</p>' },
-        { q: 'How long does breast augmentation recovery take?', a: '<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>' },
-        { q: 'How do I know which procedure is right for me?', a: '<p>The appropriate option depends on your health, anatomy, expectations, risk tolerance and the evidence for the intended treatment. The decision should follow an assessment by an appropriately qualified clinician.</p>' }
+        { q: 'Can breast size be increased without surgery?', a: '<p>Some products and procedures are marketed for this, but evidence that they reliably and lastingly increase breast volume is limited or absent. Weight gain can increase breast size because breasts contain fat, but this is not targeted or controllable. See <a href="/breast-enlargement-without-surgery/">breast enlargement without surgery</a>.</p>' },
+        { q: 'Is a non-surgical procedure automatically safer?', a: '<p>No. Injections and threads can cause infection, lumps, tissue damage and complications that are hard to treat. “Non-surgical” describes the method, not the level of risk.</p>' },
+        { q: 'How long do breast implants last?', a: '<p>Implants are not lifetime devices. Many people need further surgery at some point. See our page on <a href="/surgical/implant-longevity/">how long implants last</a>.</p>' },
+        { q: 'Will I need more surgery in the future?', a: '<p>It is possible. Reasons include rupture, scar tissue tightening, changes in breast shape or size preference, and implant displacement. See <a href="/surgical/breast-revision/">breast revision surgery</a>.</p>' },
+        { q: 'What is the difference between silicone and saline implants?', a: '<p>Both have a silicone shell. Saline implants are filled with sterile salt water; silicone implants contain a cohesive gel. They differ in feel, appearance and how a rupture is detected. See <a href="/surgical/silicone-vs-saline-implants/">silicone vs saline implants</a>.</p>' },
+        { q: 'Can I breastfeed after augmentation?', a: '<p>Many people can, but it depends on the incision, implant placement and your breast tissue. Discuss this before surgery. See <a href="/surgical/pregnancy-breastfeeding-implants/">pregnancy and breastfeeding</a>.</p>' },
+        { q: 'Do implants affect mammograms?', a: '<p>They can make imaging more complex. Tell the imaging team you have implants so they can adapt the technique. See <a href="/surgical/mammograms-with-implants/">implants and mammograms</a>.</p>' },
+        { q: 'Is fat transfer permanent?', a: '<p>Fat that survives in its new location can last, but a portion is usually reabsorbed, and the amount varies between people. See <a href="/surgical/fat-transfer-survival/">how much fat survives</a>.</p>' },
+        { q: 'How long is recovery?', a: '<p>It varies by procedure and person. Many people return to light activity within days to weeks, with restrictions on strenuous exercise lasting longer. Your surgeon’s instructions take priority. See <a href="/surgical/breast-augmentation/">breast augmentation</a>.</p>' },
+        { q: 'Are the results the same as a before-and-after photo?', a: '<p>No. Photos show one person’s result under particular conditions and cannot predict yours.</p>' },
+        { q: 'What is injectable silicone and why is it dangerous?', a: '<p>It is liquid silicone or other substances injected directly into tissue. It is not the same as a regulated implant and can cause permanent harm, including lumps, migration and chronic inflammation. See <a href="/non-surgical/unsafe-breast-injections/">unsafe breast injections</a>.</p>' },
+        { q: 'How do I choose a surgeon?', a: '<p>Check medical registration, specialist training, experience with your specific procedure, and the facility’s emergency arrangements. See <a href="/breast-surgeon-credentials/">how to check credentials</a>.</p>' },
+        { q: 'Can I get breast surgery if I plan to have children?', a: '<p>Some surgeons advise waiting, because pregnancy and breastfeeding change breast shape. This is a personal decision to discuss with your surgeon.</p>' },
+        { q: 'What are the signs that something is wrong after surgery?', a: '<p>Fever, spreading redness, sudden one-sided swelling, severe pain, wound opening, chest pain or breathlessness need prompt medical attention. See <a href="/surgical/breast-surgery-warning-signs/">urgent warning signs</a>.</p>' },
+        { q: 'Does a larger implant look better?', a: '<p>Not necessarily. Proportion, tissue quality and long-term risk matter more than volume alone. See <a href="/surgical/implant-size/">choosing implant size</a>.</p>' }
       ]
     },
-    stdCta({ heading: 'Still have questions? Arrange a consultation' })
+    { type: 'notice', icon: 'info', title: 'These answers are general information', text: 'They cannot replace an assessment by a qualified clinician who can review your health, anatomy and expectations in person.' }
   ]
 });
 

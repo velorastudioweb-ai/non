@@ -324,7 +324,7 @@
  function setStatus(type,msg){
  if (!status) return;
  status.textContent = msg;
- status.className = 'form__status is-visible form__status--' + (type === 'ok' ? 'ok' : 'err');
+ status.className = 'form__status is-visible form__status--' + (type === 'ok' || type === 'pending' ? type : 'err');
  }
  form.addEventListener('submit',function (e){
  e.preventDefault();
@@ -359,6 +359,7 @@
  submitBtn.classList.add('is-loading');
  submitBtn.disabled = true;
  submitBtn.innerHTML = '<span class="spinner" aria-hidden="true"></span><span class="btn__label">Sending…</span>';
+ setStatus('pending','Sending your enquiry…');
  fetch(endpoint,{
   method: 'POST',
   body: JSON.stringify(payload),

@@ -118,6 +118,7 @@ const ROOT = path.resolve(__dirname, '..');
       await page.locator('#cf-consent').check();
       assert.equal(await page.locator('.field--error').count(), 0);
       await form.locator('[type="submit"]').click();
+      await page.waitForFunction(() => !/Sending your enquiry/i.test(document.querySelector('[data-status]').textContent));
       const feedback = await page.locator('[data-status]').innerText();
       assert(/not.*sent|not.*connected|not.*configured/i.test(feedback), feedback);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);

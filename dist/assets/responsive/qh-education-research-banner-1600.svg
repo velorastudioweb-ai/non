@@ -1,0 +1,6 @@
+<svg width="1600" height="640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="640" fill="var(--light)" />
+  <text x="800.0" y="320.0" fill="var(--accent-ink)" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle" dominant-baseline="middle">
+    Breast Education & Research
+  </text>
+</svg>

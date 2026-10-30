@@ -7323,6 +7323,17 @@
         "w": 278,
         "h": 326,
         "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/dr-sunitha-devaraj.png",
+        "alt": "Portrait of Dr. Sunitha Devaraj",
+        "decorative": false,
+        "nw": 426,
+        "nh": 452,
+        "loading": "eager",
+        "w": 258,
+        "h": 180,
+        "inMain": true
       }
     ],
     "links": [
@@ -16304,6 +16315,17 @@
         "loading": "eager",
         "w": 302,
         "h": 354,
+        "inMain": true
+      },
+      {
+        "src": "http://127.0.0.1:4187/dr-sunitha-devaraj.png",
+        "alt": "Portrait of Dr. Sunitha Devaraj",
+        "decorative": false,
+        "nw": 426,
+        "nh": 452,
+        "loading": "eager",
+        "w": 171,
+        "h": 180,
         "inMain": true
       }
     ],

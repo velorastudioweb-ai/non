@@ -3,7 +3,7 @@
 const entries = [
   ['/surgical-breast-enlargement/', 'surgical-options', 'options', 'Implant device, adipose-tissue motif and an open planning notebook', 'Surgical options and informed planning'],
   ['/non-surgical-breast-enlargement/', 'non-surgical-evidence', 'evidence', 'Magnifying lens over a reading card beside an unmarked evidence checklist', 'Assessing non-surgical evidence'],
-  ['/education-research/', 'education-research', 'learning', 'Open reference book with three distinct unmarked subject tabs', 'Shared education and external research'],
+  ['/education-research/', 'education-research', 'learning', 'Breast Education and Research Collage', 'Breast education and research overview'],
   ['/surgical/breast-augmentation/', 'augmentation-planning', 'options', 'A closed implant device and adipose-cell motifs beside a planning sheet', 'Implants and fat-transfer planning'],
   ['/breast-implants/', 'implant-shell-profiles', 'implant', 'Two isolated implant-device profiles with a clearly visible outer shell', 'Implant-device shapes and outer shells'],
   ['/breast-implant-safety/', 'implant-monitoring', 'monitoring', 'A sealed implant-device illustration beside a monitoring lens and shield', 'Implant monitoring and safety'],
@@ -54,7 +54,8 @@ function forItem(item) {
   return null;
 }
 function showCardImages(block) {
-  return block.eyebrow !== 'Continue reading' && !/^Related education$/.test(block.heading || '');
+  return block.eyebrow !== 'Continue reading' && block.eyebrow !== 'In this guide'
+    && !/^Related education$/.test(block.heading || '');
 }
 const inlineRoutes = new Set(['/breast-anatomy/', '/breast-implants/', '/surgical/fat-transfer-breast-augmentation/', '/non-surgical/prp/', '/non-surgical/breast-threads/', '/non-surgical/mono-threads/', '/non-surgical/regenerative-medicine/']);
 function inlineFor(page, block) {

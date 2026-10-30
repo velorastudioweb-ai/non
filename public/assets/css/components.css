@@ -1245,6 +1245,11 @@ button.gallery-item .gallery-item__cap {
   border: var(--hairline) solid var(--border-soft);
 }
 .form__status.is-visible { display: block; }
+.form__status--pending {
+  background: rgba(216, 180, 124, .08);
+  border-color: var(--gold);
+  color: var(--text-secondary);
+}
 .form__status--ok {
   background: rgba(255, 215, 130, .10);
   border-color: var(--success);
