@@ -850,7 +850,7 @@ const pages = [
 <h2>En bloc capsulectomy</h2>
 <p>The implant and capsule are removed together as a single unit, without opening the capsule. This is used when there is concern about certain conditions, such as BIA-ALCL, or when it is felt important to avoid leaking contents.</p>
 <h2>The capsule is a normal response</h2>
-<p>Every implant develops a scar capsule around it. The presence of a capsule alone is not a disease and does not automatically mean it must be removed. The relevant questions are whether it is tight, thickened, calcified, infected, contains abnormal fluid or is linked to another diagnosed problem.</p>
+<p>Implants develop a scar capsule. The presence of a capsule alone is not a disease and does not automatically mean it must be removed. The relevant questions are whether it is tight, thickened, calcified, infected, contains abnormal fluid or is linked to another diagnosed problem.</p>
 <h2>Why en bloc is not a universal standard</h2>
 <p>Removing an implant and capsule together may be important when malignancy is suspected or confirmed, but it is not automatically safer or necessary in every removal. In some positions, forcing a capsule away from the chest wall could create avoidable risk. The reason, benefit and alternatives should be explained clearly.</p>
 <h2>Trade-offs</h2>
@@ -1209,7 +1209,7 @@ const pages = [
 <h2>Choosing observation or intervention</h2>
 <p>Observation is not doing nothing: it needs a plan for symptoms, imaging, breast screening and review. Intervention may be reasonable when symptoms, infection, tissue damage or diagnostic uncertainty outweigh its risks. The decision should be individual and revisited if the situation changes.</p>
 <h2>Regulatory check</h2>
-<p>In India, medical-device regulatory requirements and a product’s labelled intended use should be checked against current CDSCO records and the product information. Ask for the product name, manufacturer and documentation. A claim or authorisation for another anatomical area does not establish that breast use is authorised, appropriate or safe.</p>`
+<p>In India, check the product’s regulatory status and labelled intended use against current CDSCO records and product information. Ask for its name, manufacturer and documentation. An authorisation for another anatomical area does not establish that breast use is authorised, appropriate or safe.</p>`
       },
       {
         type: 'notice',
@@ -1422,8 +1422,6 @@ const pages = [
 <p>Cup sizes differ between brands and do not describe breast width, shape, scars or nipple position. Explain which activities or clothing are difficult and what amount of change feels acceptable. A surgeon can discuss a range of likely proportions, but cannot promise an exact bra size.</p>
 <h2>Screening and timing</h2>
 <p>Tell the surgeon about previous lumps, biopsies, implants, family history and any screening that is due. Significant weight change or pregnancy plans can alter breast size and shape, so timing may matter. A review can help decide whether waiting would make the result more predictable.</p>
-<h2>The decision does not have to be immediate</h2>
-<p>Reduction is elective for many people, even when symptoms are burdensome. Take time to review the scar, sensation and breastfeeding trade-offs, seek another opinion if useful and arrange practical support for recovery. Feeling pressure to choose quickly is a reason to pause and ask more questions.</p>
 <h2>Questions to ask</h2>
 <ul>
 <li>Am I suitable now, or should I wait?</li>
@@ -1690,7 +1688,7 @@ const pages = [
 <h2>Long-term care</h2>
 <p>Routine screening, general breast awareness and a stable weight where possible remain important after a reduction. Keep your surgical records and seek assessment for new symptoms rather than assuming that every change is scar tissue or normal ageing.</p>
 <h2>Costs and cover</h2>
-<p>In India, health policies may apply IRDAI’s standard cosmetic or plastic-surgery exclusion. Its stated exceptions include reconstruction after an accident, burns or cancer, and medically necessary treatment to remove a direct and immediate health risk when certified by the attending medical practitioner. Claim eligibility remains policy- and case-specific, so read the current wording and obtain written pre-authorisation; clinical certification does not guarantee payment.</p>`
+<p>In India, health policies may apply IRDAI’s standard cosmetic or plastic-surgery exclusion. Exceptions include reconstruction after accident, burns or cancer, and medically necessary treatment to remove a direct and immediate health risk certified by the attending medical practitioner. Eligibility remains policy- and case-specific. Read the current wording and obtain written pre-authorisation; certification does not guarantee payment.</p>`
       },
       {
         type: 'notice',
