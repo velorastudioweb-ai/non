@@ -1,0 +1,255 @@
+{
+  "note": "The pre-elaboration snapshot was captured before the Batch 3 editorial finishing notes landed. The final build was verified to be purely additive, then the baseline was recaptured for the deployed build. The old snapshot remains in Git history at commit fa49a0a.",
+  "previousSnapshotSha256": "6867d0c96ab25999a5e6f772644f26683d7890b3c13de3357359c25dae0f076f",
+  "previousSnapshotCommit": "fa49a0a",
+  "finalSnapshotSha256": "91aaf15db4be18771b02c5f3917ed2561c5e0d93e746e7390b53687f356cb7a8",
+  "pages": 165,
+  "changedRoutes": 30,
+  "totalInsertedWords": 2763,
+  "totalDeletedWords": 0,
+  "seoChanges": 0,
+  "linkChanges": 0,
+  "imageChanges": 0,
+  "routes": [
+    {
+      "route": "/non-surgical/what-breast-enlargement-means/",
+      "insertedWords": 78,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/bras-posture-clothing/",
+      "insertedWords": 71,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/hormones-breast-size/",
+      "insertedWords": 102,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/weight-breast-size/",
+      "insertedWords": 58,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/unhappy-breast-size/",
+      "insertedWords": 53,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/treatments-at-a-glance/",
+      "insertedWords": 113,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/appearance-vs-volume/",
+      "insertedWords": 91,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/reading-the-evidence/",
+      "insertedWords": 115,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/regulatory-status/",
+      "insertedWords": 44,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/questions-red-flags/",
+      "insertedWords": 93,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/hyaluronic-acid-fillers/",
+      "insertedWords": 70,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/why-breast-fillers-differ/",
+      "insertedWords": 84,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/filler-complications/",
+      "insertedWords": 136,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/fillers-and-screening/",
+      "insertedWords": 117,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/fillers-options-compared/",
+      "insertedWords": 149,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/breast-threads-types/",
+      "insertedWords": 84,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/breast-threads-results/",
+      "insertedWords": 108,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/breast-threads-procedure/",
+      "insertedWords": 71,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/breast-threads-risks/",
+      "insertedWords": 106,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/threads-vs-breast-lift/",
+      "insertedWords": 77,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/mono-threads-basics/",
+      "insertedWords": 99,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/mono-vs-cog-threads/",
+      "insertedWords": 96,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/mono-threads-collagen/",
+      "insertedWords": 110,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/mono-threads-procedure/",
+      "insertedWords": 100,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/mono-threads-risks/",
+      "insertedWords": 131,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/what-is-prp/",
+      "insertedWords": 76,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/prp-uses/",
+      "insertedWords": 73,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/prp-fat-transfer/",
+      "insertedWords": 89,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/prp-safety/",
+      "insertedWords": 78,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    },
+    {
+      "route": "/non-surgical/prp-claims/",
+      "insertedWords": 91,
+      "deletedWords": 0,
+      "seoChanged": false,
+      "linksChanged": false,
+      "imagesChanged": false
+    }
+  ]
+}

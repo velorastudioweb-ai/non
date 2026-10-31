@@ -8,6 +8,14 @@
  'use strict';
  var $ = function (s,c){ return (c || document).querySelector(s); };
  var $$ = function (s,c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+ /* Keep the initial loading screen brief: the document is usable as soon as
+    its DOM is ready, so it must not wait for below-the-fold images. */
+ var preLoader = $('.pre-loader');
+ if (preLoader) {
+  var hidePreLoader = function (){ preLoader.setAttribute('aria-hidden','true'); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hidePreLoader, { once: true });
+  else window.requestAnimationFrame(hidePreLoader);
+ }
  // Incoming source-library links reveal their collapsed collection.
  function revealSourceHash(){
   var id;

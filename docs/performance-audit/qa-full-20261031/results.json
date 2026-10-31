@@ -1,0 +1,173 @@
+{
+  "base": "http://127.0.0.1:61096",
+  "label": "qa-full-20261031",
+  "allowDesktopCover": false,
+  "checks": 5,
+  "desktopCrops": [],
+  "problems": [],
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:61096/assets/responsive/hero-banner-7879e6996dde-320.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 71.390625,
+            "right": 320,
+            "bottom": 250.390625,
+            "width": 320,
+            "height": 179
+          },
+          "text": {
+            "left": 24,
+            "top": 250.390625,
+            "right": 296,
+            "bottom": 930.65625,
+            "width": 272,
+            "height": 680.265625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 19
+    },
+    {
+      "route": "/surgical-breast-enlargement/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:61096/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-320.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 526.8125,
+            "right": 320,
+            "bottom": 646.8125,
+            "width": 320,
+            "height": 120
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 526.8125,
+            "width": 272,
+            "height": 455.421875
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 40
+    },
+    {
+      "route": "/breast-implants/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:61096/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-320.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 727.921875,
+            "right": 320,
+            "bottom": 847.921875,
+            "width": 320,
+            "height": 120
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 727.921875,
+            "width": 272,
+            "height": 656.53125
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 10
+    },
+    {
+      "route": "/non-surgical-breast-enlargement/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:61096/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-320.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 518.953125,
+            "right": 320,
+            "bottom": 638.953125,
+            "width": 320,
+            "height": 120
+          },
+          "text": {
+            "left": 24,
+            "top": 71.390625,
+            "right": 296,
+            "bottom": 518.953125,
+            "width": 272,
+            "height": 447.5625
+          },
+          "uncropped": true,
+          "separate": true,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 13
+    },
+    {
+      "route": "/doctors/dr-vikas-singh/",
+      "width": 320,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    }
+  ]
+}

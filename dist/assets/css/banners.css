@@ -1,4 +1,44 @@
 /* Bold breast-medical artwork treatment for every generated page banner. */
+.pre-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rose-pill);
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.25s var(--ease), visibility 0s linear 0.25s;
+  visibility: visible;
+}
+.pre-loader[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.pre-loader .loader-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.pre-loader .loader-svg {
+  width: 32px;
+  height: 32px;
+}
+.pre-loader .loader-svg #loader-circle {
+  stroke: var(--ivory);
+  animation: loader-spin 0.8s linear infinite;
+}
+@keyframes loader-spin {
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pre-loader { transition: none; }
+  .pre-loader .loader-svg #loader-circle { animation: none; }
+}
 .page-banner {
   position: relative;
   isolation: isolate;

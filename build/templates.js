@@ -57,6 +57,7 @@ function head(page, site) {
 ${hero ? `<link rel="preload" as="image" href="${esc(hero.src)}" imagesrcset="${esc(hero.srcset)}" imagesizes="100vw" fetchpriority="high">` : ''}
 ${componentStyles}
 <link rel="stylesheet" href="${assets.href('site.css')}">
+  <script src="${assets.href('smooth-scroll.js')}" defer></script>
 
 ${schema}
 </head>`;
@@ -538,6 +539,13 @@ function layout(page, site) {
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">
 ${header(page, site)}
+<div class="pre-loader" aria-label="Page loading" role="status">
+  <div class="loader-inner">
+    <svg class="loader-svg" viewBox="0 0 80 80" width="40" height="40" aria-hidden="true">
+      <circle cx="40" cy="40" r="34" fill="none" stroke-width="6" stroke-miterlimit="10" id="loader-circle"/>
+    </svg>
+  </div>
+</div>
 <main id="main" tabindex="-1">
 ${banner}
 ${body}
