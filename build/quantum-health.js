@@ -104,7 +104,7 @@ function initialsFor(name) {
 function portrait(d, hero) {
   if (!d.portrait) {
     const initials = initialsFor(d.name);
-    return `<div class="qh-portrait qh-portrait--initials" role="img" aria-label="${esc(initials)} monogram — verified professional portrait of ${esc(d.name)} not yet supplied"><span aria-hidden="true">${esc(initials)}</span></div>`;
+    return `<div class="qh-portrait qh-portrait--initials" role="img" aria-label="${esc(initials)} monogram — a verified professional portrait of ${esc(d.name)} has not yet been supplied"><span aria-hidden="true">${esc(initials)}</span></div>`;
   }
   const image = d.portrait;
   const heroClass = hero ? ' qh-portrait-image--hero' : '';

@@ -13,6 +13,8 @@ const siteUrlIndex = process.argv.indexOf('--site-url');
 const expectedSiteUrl = siteUrlIndex < 0 ? site.url : process.argv[siteUrlIndex + 1].replace(/\/+$/, '');
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
 const expectedHtml = file => fs.readFileSync(file, 'utf8').split(site.url).join(expectedSiteUrl).replace(/\r\n/g, '\n');
+const vercel = JSON.parse(fs.readFileSync(path.join(ROOT, 'vercel.json'), 'utf8'));
+const sharedHeaders = Object.fromEntries(vercel.headers[0].headers.map(({ key, value }) => [key.toLowerCase(), value]));
 async function main() {
   const checked = [], failures = [];
   for (const page of allPages) {
@@ -26,6 +28,13 @@ async function main() {
   const missing = await fetch(base + '/__performance-qa-not-found/');
   assert.equal(missing.status, 404);
   assert.equal(sha((await missing.text()).replace(/\r\n/g, '\n')), sha(expectedHtml(path.join(ROOT, 'dist/404.html'))));
+  const securityResponse = await fetch(base + '/');
+  const securityHeaders = {};
+  for (const [name, expected] of Object.entries(sharedHeaders)) {
+    const actual = securityResponse.headers.get(name);
+    assert.equal(actual, expected, 'Security header mismatch: ' + name);
+    securityHeaders[name] = actual;
+  }
   for (const redirect of redirects) {
     const response = await fetch(base + redirect.from, { redirect: 'manual' });
     assert([301, 308].includes(response.status), 'Redirect status: ' + redirect.from);
@@ -53,8 +62,8 @@ async function main() {
   }));
   const out = path.join(ROOT, 'docs/performance-audit');
   fs.mkdirSync(out, { recursive: true });
-  fs.writeFileSync(path.join(out, 'deployment-verification.json'), JSON.stringify({ base, expectedSiteUrl, checkedAt: new Date().toISOString(), pages: checked.length, redirects: redirects.length, custom404: 'pass', assets: assets.sort((a, b) => a.url.localeCompare(b.url)), failures }, null, 2));
-  console.log(`Verified ${checked.length} deployed pages, ${redirects.length} redirects, custom 404 and ${assets.length} assets against the local production build.`);
+  fs.writeFileSync(path.join(out, 'deployment-verification.json'), JSON.stringify({ base, expectedSiteUrl, checkedAt: new Date().toISOString(), pages: checked.length, redirects: redirects.length, custom404: 'pass', securityHeaders, assets: assets.sort((a, b) => a.url.localeCompare(b.url)), failures }, null, 2));
+  console.log(`Verified ${checked.length} deployed pages, ${redirects.length} redirects, custom 404, ${Object.keys(securityHeaders).length} security headers and ${assets.length} assets against the local production build.`);
   assert.deepEqual(failures, []);
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

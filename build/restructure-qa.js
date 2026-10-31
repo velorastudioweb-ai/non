@@ -43,6 +43,9 @@ for (const phrase of [
 assert(aboutHtml.includes('does not provide treatment or medical consultations'), 'About must align with the educational-site purpose');
 assert(aboutHtml.includes('not been independently verified'), 'Profile-listed details must not be presented as verified facts');
 assert(aboutHtml.includes('does not represent or endorse the clinicians listed'), 'Doctor links must be framed as non-endorsing references');
+const nanditaHtml = html('/doctors/dr-nandita/');
+assert(nanditaHtml.includes('qh-portrait--initials'), 'Dr. Nandita must use the verified-portrait fallback');
+assert(!nanditaHtml.includes('src="/dr-nandita.png"'), 'A reused treatment image must not be presented as Dr. Nandita');
 const homeHtml = html('/');
 assert(!homeHtml.includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
 assert(!homeHtml.includes('This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.'), 'Removed hero note remains on the homepage');
@@ -54,6 +57,17 @@ for (const interest of ['General breast-enlargement information', 'Surgical opti
 }
 assert(contactHtml.includes('Phone follow-up is only about your website enquiry'), 'Contact page must limit phone follow-up to website enquiries');
 assert(!contactHtml.includes('Preferred consultation location') && !contactHtml.includes('To be confirmed by the clinic'), 'Clinic-specific location fields must not appear on the education-site contact form');
+const { articles } = require('./published-blogs');
+const blogIndexHtml = html('/blogs/');
+assert.equal(articles.length, 10, 'The published blog index must contain ten articles');
+for (const article of articles) {
+  const articleHtml = html('/blogs/' + article.slug + '/');
+  assert(articleHtml.includes('· ' + article.readingMinutes + ' min read'), 'Calculated reading time missing: ' + article.slug);
+  assert(articleHtml.includes('"timeRequired":"PT' + article.readingMinutes + 'M"'), 'Schema reading time missing: ' + article.slug);
+  assert(blogIndexHtml.includes(article.date + ' · ' + article.readingMinutes + ' min read'), 'Calculated card reading time missing: ' + article.slug);
+  if (article.perspective) assert(articleHtml.includes('Illustrative scenario:'), 'Fictional-scenario disclosure missing: ' + article.slug);
+}
+assert(!blogIndexHtml.includes('8 min read'), 'The blog index must not retain a fixed reading-time label');
 const titles = new Set();
 const retired = new Set(redirects.map((r) => r.from));
 assert.equal(retired.size, redirects.length, 'Duplicate redirect sources');
@@ -89,5 +103,8 @@ for (const [i, entries] of [surgical, nonsurgical, education].entries()) {
   entries.forEach(([url]) => assert(landing.includes('href="' + url + '"'), 'Topic missing from section: ' + url));
 }
 const vercel = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'vercel.json')));
+const csp = vercel.headers[0].headers.find((header) => header.key === 'Content-Security-Policy').value;
+assert(csp.includes("script-src 'self' 'sha256-DamCoPgB/VkDCPsu0R6X4sJsz1c66vGlUGBXLu04Yxg='"), 'CSP must allow only the hashed progressive-enhancement bootstrap');
+assert(!csp.includes("script-src 'self' 'unsafe-inline'"), 'CSP must not broadly allow inline scripts');
 assert.deepEqual(vercel.redirects, redirects.map((r) => ({ source: r.from, destination: r.to, permanent: true })), 'Run node build/sync-redirects.js');
 console.log('Canonical migration QA: ' + allPages.length + ' retained routes, ' + redirects.length + ' redirects; titles, content, topic membership, direct internal links, anchors and sitemap verified.');

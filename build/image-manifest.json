@@ -4,12 +4,26 @@
     "height": 1024,
     "sha256": "2cc16cb17267af17d186302fcf29d1cb0bfc81068ab3bb07bb0ead65bffa03ef",
     "bytes": 59706,
+    "format": "webp",
+    "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 6656
+      },
       {
         "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 11222
+      },
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 16086
       },
       {
         "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-768.webp",
@@ -28,6 +42,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 39572
+      },
+      {
+        "src": "/assets/responsive/before-after-breast-enhancement-2cc16cb17267-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 59706
       }
     ]
   },
@@ -36,12 +56,26 @@
     "height": 1024,
     "sha256": "9898f73fcdf1b6fe9ccde7906e1074dbe764cc84c3aa3c396bb7d7e080c8cfcd",
     "bytes": 208384,
+    "format": "webp",
+    "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 20462
+      },
       {
         "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 40078
+      },
+      {
+        "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 63696
       },
       {
         "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-768.webp",
@@ -60,6 +94,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 179492
+      },
+      {
+        "src": "/assets/responsive/breast-anatomy-and-augmentation-illustration-9898f73fcdf1-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 208384
       }
     ]
   },
@@ -68,12 +108,26 @@
     "height": 600,
     "sha256": "ac5493578cf02d9c6a04a1349cf3292500bd35d7fb1aef91bb380b0af12f635e",
     "bytes": 65008,
+    "format": "webp",
+    "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-1600.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-320.webp",
+        "width": 320,
+        "height": 120,
+        "bytes": 7522
+      },
       {
         "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-480.webp",
         "width": 480,
         "height": 180,
         "bytes": 13678
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-640.webp",
+        "width": 640,
+        "height": 240,
+        "bytes": 20760
       },
       {
         "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-768.webp",
@@ -92,6 +146,18 @@
         "width": 1280,
         "height": 480,
         "bytes": 53884
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-1536.webp",
+        "width": 1536,
+        "height": 576,
+        "bytes": 68382
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-consultation-illustration-ac5493578cf0-1600.webp",
+        "width": 1600,
+        "height": 600,
+        "bytes": 65008
       }
     ]
   },
@@ -100,12 +166,26 @@
     "height": 1024,
     "sha256": "a8232e65263bb10480a0942d50df2e56a1f801372fbf6e38eab3b600c47be756",
     "bytes": 162932,
+    "format": "webp",
+    "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 18232
+      },
       {
         "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 33920
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 52728
       },
       {
         "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-768.webp",
@@ -124,6 +204,64 @@
         "width": 1280,
         "height": 853,
         "bytes": 140492
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-medical-collage-a8232e65263b-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 162932
+      }
+    ]
+  },
+  "/Breast Augmentation Options Infographic.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "04d7efb932d8a061df322acb4c216236b6719207cdf00789cc6d492e6a3d528d",
+    "bytes": 2319075,
+    "format": "webp",
+    "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 17348
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32904
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 51188
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 68634
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 105956
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 145776
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-options-infographic-04d7efb932d8-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 193910
       }
     ]
   },
@@ -132,12 +270,26 @@
     "height": 1024,
     "sha256": "646791fa64b1e864a1309df12bd4575367f2f4d6fedcd76a157ebcc279da1306",
     "bytes": 150468,
+    "format": "webp",
+    "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 19276
+      },
       {
         "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 34842
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 52076
       },
       {
         "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-768.webp",
@@ -156,6 +308,76 @@
         "width": 1280,
         "height": 853,
         "bytes": 132860
+      },
+      {
+        "src": "/assets/responsive/breast-augmentation-safety-consultation-infographic-646791fa64b1-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 150468
+      }
+    ]
+  },
+  "/Breast Education and Research Collage.png": {
+    "width": 1991,
+    "height": 790,
+    "sha256": "86e68390c39f5562d2ca55f9d4e294d459c6d0deb175857b8ff255ed2ed15579",
+    "bytes": 2285778,
+    "format": "webp",
+    "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1991.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-320.webp",
+        "width": 320,
+        "height": 127,
+        "bytes": 13104
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-480.webp",
+        "width": 480,
+        "height": 190,
+        "bytes": 24570
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-640.webp",
+        "width": 640,
+        "height": 254,
+        "bytes": 37906
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-768.webp",
+        "width": 768,
+        "height": 305,
+        "bytes": 50272
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1024.webp",
+        "width": 1024,
+        "height": 406,
+        "bytes": 76512
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1280.webp",
+        "width": 1280,
+        "height": 508,
+        "bytes": 104746
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1536.webp",
+        "width": 1536,
+        "height": 609,
+        "bytes": 136396
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1920.webp",
+        "width": 1920,
+        "height": 762,
+        "bytes": 181180
+      },
+      {
+        "src": "/assets/responsive/breast-education-and-research-collage-86e68390c39f-1991.webp",
+        "width": 1991,
+        "height": 790,
+        "bytes": 191244
       }
     ]
   },
@@ -164,12 +386,26 @@
     "height": 1024,
     "sha256": "15c6c38e8714bd6535a8db70f0d3041d65b6c341b832e434ce55ed37198adb5f",
     "bytes": 187490,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 20052
+      },
       {
         "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 38314
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 60286
       },
       {
         "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-768.webp",
@@ -188,6 +424,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 163824
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-medical-infographic-15c6c38e8714-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 187490
       }
     ]
   },
@@ -196,12 +438,26 @@
     "height": 1024,
     "sha256": "1ece795f9a0acdd53ed262de5272fdfc3c1784ea17e3081904496a474a3e93b1",
     "bytes": 167282,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 19744
+      },
       {
         "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 37514
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 58122
       },
       {
         "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-768.webp",
@@ -220,6 +476,294 @@
         "width": 1280,
         "height": 853,
         "bytes": 148404
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-infographic-1ece795f9a0a-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 167282
+      }
+    ]
+  },
+  "/Breast Fat Transfer Medical Infographic.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d022e2a0bcc7917591fd3a6fc775e4b25935fa6d4c73fa5ed842d78299dca275",
+    "bytes": 2331832,
+    "format": "webp",
+    "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22452
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 42798
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 67530
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 91648
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 144506
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 189056
+      }
+    ]
+  },
+  "/Breast Filler Removal Medical Infographic.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "32266b37473a353aac4eb0c7bc2bda7a072f5a0374bd6eea25b92da9b4ffc12e",
+    "bytes": 2150539,
+    "format": "webp",
+    "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17858
+      },
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 31660
+      },
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 48404
+      },
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 64236
+      },
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 101002
+      },
+      {
+        "src": "/assets/responsive/breast-filler-removal-medical-infographic-32266b37473a-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 133952
+      }
+    ]
+  },
+  "/Breast Implant Medical Illustration.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "1f750dc4194b987e6885e37263ba588d853851ae1afba97fd7e4e3d64d12005a",
+    "bytes": 2287569,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17946
+      },
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 33306
+      },
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 53570
+      },
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 73836
+      },
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 118760
+      },
+      {
+        "src": "/assets/responsive/breast-implant-medical-illustration-1f750dc4194b-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 163142
+      }
+    ]
+  },
+  "/Breast Implant Revision Infographic.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "78c087da7f81b1fdb2b9adf9df22bf2fc2b85212fbbdc8f72170f5a661f52f1d",
+    "bytes": 2216189,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19306
+      },
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 33708
+      },
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 51650
+      },
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 68298
+      },
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 107838
+      },
+      {
+        "src": "/assets/responsive/breast-implant-revision-infographic-78c087da7f81-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 147356
+      }
+    ]
+  },
+  "/Breast Implant Safety Infographic.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "03460546f2b8c2c65bd09097da7c60bd5cd70cad0574a9e4b8b3f40965ea7865",
+    "bytes": 2420396,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23478
+      },
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 44772
+      },
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 72066
+      },
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 95776
+      },
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 150886
+      },
+      {
+        "src": "/assets/responsive/breast-implant-safety-infographic-03460546f2b8-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 203204
+      }
+    ]
+  },
+  "/Breast Surgery Planning and Recovery Collage.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "68d7bcdfbd00e3b24078e1bf55fa616cca60c57ecd0b9678c61ca3e554267715",
+    "bytes": 2171356,
+    "format": "webp",
+    "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 13612
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 24114
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 36164
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 46078
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 69498
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 98098
+      },
+      {
+        "src": "/assets/responsive/breast-surgery-planning-and-recovery-collage-68d7bcdfbd00-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 129130
       }
     ]
   },
@@ -228,12 +772,26 @@
     "height": 1024,
     "sha256": "553c045c97df5b4f26212dd87d6596cd94cd9b80298815d72d6cf11398e93fca",
     "bytes": 196622,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 18428
+      },
       {
         "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 35034
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 54206
       },
       {
         "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-768.webp",
@@ -252,6 +810,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 147472
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-non-surgical-553c045c97df-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 196622
       }
     ]
   },
@@ -260,12 +824,26 @@
     "height": 1024,
     "sha256": "fabbe0427e76e739abe1086ec311b7b3c9ca0317d7c9518981935d75f5e85a4d",
     "bytes": 186116,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 17508
+      },
       {
         "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 32196
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 50500
       },
       {
         "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-768.webp",
@@ -284,6 +862,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 137242
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-options-surgical-fabbe0427e76-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 186116
       }
     ]
   },
@@ -292,12 +876,26 @@
     "height": 1024,
     "sha256": "6df7e175f68c1cb82f185c2b2cc5ebcceb913a342e80fed84e1f8c2673abb4ff",
     "bytes": 151178,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 15504
+      },
       {
         "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 28360
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 42568
       },
       {
         "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-768.webp",
@@ -316,6 +914,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 111678
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-grid-6df7e175f68c-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 151178
       }
     ]
   },
@@ -324,12 +928,26 @@
     "height": 1024,
     "sha256": "372b38ff08c5aac66a7e404cf2948196f03145218bff0d5be85441e003109408",
     "bytes": 211324,
+    "format": "webp",
+    "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 20474
+      },
       {
         "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 37378
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 58614
       },
       {
         "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-768.webp",
@@ -348,6 +966,150 @@
         "width": 1280,
         "height": 853,
         "bytes": 155064
+      },
+      {
+        "src": "/assets/responsive/breast-enhancement-treatment-infographic-372b38ff08c5-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 211324
+      }
+    ]
+  },
+  "/breast-implants-banner.png": {
+    "width": 377,
+    "height": 370,
+    "sha256": "545609d6b992aafd2a7d59f150515734ada467d246664c034923f24ed7209de6",
+    "bytes": 132796,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implants-banner-545609d6b992-377.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implants-banner-545609d6b992-320.webp",
+        "width": 320,
+        "height": 314,
+        "bytes": 8388
+      },
+      {
+        "src": "/assets/responsive/breast-implants-banner-545609d6b992-377.webp",
+        "width": 377,
+        "height": 370,
+        "bytes": 9704
+      }
+    ]
+  },
+  "/ChatGPT Image Oct 29, 2026, 07_10_19 AM.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "25f298942b84f8af277b46e6a690ed3825418ab7e05be87df4e943aa54332646",
+    "bytes": 2223157,
+    "format": "webp",
+    "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 15276
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 27474
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 41644
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 54040
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 84638
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 120800
+      },
+      {
+        "src": "/assets/responsive/chatgpt-image-oct-29-2026-07-10-19-am-25f298942b84-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 159584
+      }
+    ]
+  },
+  "/Cosmetic Implant Infographic in Burgundy.png": {
+    "width": 2048,
+    "height": 768,
+    "sha256": "51c5e2fca52682681c4b7e662a0e572b2daf2a521d262f9eb9d5eeccb4efb998",
+    "bytes": 2108749,
+    "format": "webp",
+    "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-2048.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-320.webp",
+        "width": 320,
+        "height": 120,
+        "bytes": 10534
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-480.webp",
+        "width": 480,
+        "height": 180,
+        "bytes": 19382
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-640.webp",
+        "width": 640,
+        "height": 240,
+        "bytes": 29512
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-768.webp",
+        "width": 768,
+        "height": 288,
+        "bytes": 38218
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-1024.webp",
+        "width": 1024,
+        "height": 384,
+        "bytes": 57804
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-1280.webp",
+        "width": 1280,
+        "height": 480,
+        "bytes": 80580
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-1536.webp",
+        "width": 1536,
+        "height": 576,
+        "bytes": 104448
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-1920.webp",
+        "width": 1920,
+        "height": 720,
+        "bytes": 141806
+      },
+      {
+        "src": "/assets/responsive/cosmetic-implant-infographic-in-burgundy-51c5e2fca526-2048.webp",
+        "width": 2048,
+        "height": 768,
+        "bytes": 156464
       }
     ]
   },
@@ -356,12 +1118,26 @@
     "height": 1254,
     "sha256": "1d62e177adb8f7c6c5e7d0e6861b01e45d1a99bb60a4cdca7f26f5d9e4fda1ec",
     "bytes": 121016,
+    "format": "webp",
+    "src": "/assets/responsive/dermal-fillers-1d62e177adb8-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/dermal-fillers-1d62e177adb8-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18718
+      },
       {
         "src": "/assets/responsive/dermal-fillers-1d62e177adb8-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 34810
+      },
+      {
+        "src": "/assets/responsive/dermal-fillers-1d62e177adb8-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 54258
       },
       {
         "src": "/assets/responsive/dermal-fillers-1d62e177adb8-768.webp",
@@ -374,6 +1150,224 @@
         "width": 1024,
         "height": 1024,
         "bytes": 104170
+      },
+      {
+        "src": "/assets/responsive/dermal-fillers-1d62e177adb8-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 121016
+      }
+    ]
+  },
+  "/dfsjifl.png": {
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d022e2a0bcc7917591fd3a6fc775e4b25935fa6d4c73fa5ed842d78299dca275",
+    "bytes": 2331832,
+    "format": "webp",
+    "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1254.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22452
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 42798
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 67530
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 91648
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 144506
+      },
+      {
+        "src": "/assets/responsive/breast-fat-transfer-medical-infographic-d022e2a0bcc7-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 189056
+      }
+    ],
+    "canonicalSource": "/Breast Fat Transfer Medical Infographic.png"
+  },
+  "/dr-alisha-khan.png": {
+    "width": 208,
+    "height": 246,
+    "sha256": "84fe17c1b572e9bc3842d3555278ebbe4ad63f8439760869dec09779dac10b2c",
+    "bytes": 101654,
+    "format": "webp",
+    "src": "/assets/responsive/dr-alisha-khan-84fe17c1b572-208.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-alisha-khan-84fe17c1b572-208.webp",
+        "width": 208,
+        "height": 246,
+        "bytes": 9788
+      }
+    ]
+  },
+  "/dr-amod-rao.png": {
+    "width": 268,
+    "height": 342,
+    "sha256": "ce4bb71dab97ec55648bcd786fc6f446a253ed9227986cb7e81d1bcc6a8c36d8",
+    "bytes": 141569,
+    "format": "webp",
+    "src": "/assets/responsive/dr-amod-rao-ce4bb71dab97-268.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-amod-rao-ce4bb71dab97-268.webp",
+        "width": 268,
+        "height": 342,
+        "bytes": 9864
+      }
+    ]
+  },
+  "/dr-arivazhagan.png": {
+    "width": 367,
+    "height": 348,
+    "sha256": "2ee717d7a39bada435119e303c968408151ba11c36215501b52ec2f7bbca225f",
+    "bytes": 130495,
+    "format": "webp",
+    "src": "/assets/responsive/dr-arivazhagan-2ee717d7a39b-367.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-arivazhagan-2ee717d7a39b-320.webp",
+        "width": 320,
+        "height": 303,
+        "bytes": 9528
+      },
+      {
+        "src": "/assets/responsive/dr-arivazhagan-2ee717d7a39b-367.webp",
+        "width": 367,
+        "height": 348,
+        "bytes": 10642
+      }
+    ]
+  },
+  "/dr-nandita.png": {
+    "width": 377,
+    "height": 370,
+    "sha256": "545609d6b992aafd2a7d59f150515734ada467d246664c034923f24ed7209de6",
+    "bytes": 132796,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implants-banner-545609d6b992-377.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implants-banner-545609d6b992-320.webp",
+        "width": 320,
+        "height": 314,
+        "bytes": 8388
+      },
+      {
+        "src": "/assets/responsive/breast-implants-banner-545609d6b992-377.webp",
+        "width": 377,
+        "height": 370,
+        "bytes": 9704
+      }
+    ],
+    "canonicalSource": "/breast-implants-banner.png"
+  },
+  "/dr-sekhar.png": {
+    "width": 382,
+    "height": 372,
+    "sha256": "b0acf59b0f26bad029d8706eeb7606109a5b5ed0ee723db5a23c899c73a32f30",
+    "bytes": 136968,
+    "format": "webp",
+    "src": "/assets/responsive/dr-sekhar-b0acf59b0f26-382.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-sekhar-b0acf59b0f26-320.webp",
+        "width": 320,
+        "height": 312,
+        "bytes": 6570
+      },
+      {
+        "src": "/assets/responsive/dr-sekhar-b0acf59b0f26-382.webp",
+        "width": 382,
+        "height": 372,
+        "bytes": 7778
+      }
+    ]
+  },
+  "/dr-sunitha-devaraj.png": {
+    "width": 426,
+    "height": 452,
+    "sha256": "ef08d3625cc26d47f3e02ae23a5be1c349de114bb2b1aabe85edeb01277963ba",
+    "bytes": 283932,
+    "format": "webp",
+    "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-320.webp",
+        "width": 320,
+        "height": 340,
+        "bytes": 12518
+      },
+      {
+        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
+        "width": 426,
+        "height": 452,
+        "bytes": 17692
+      }
+    ]
+  },
+  "/dr-surindher-dsa.png": {
+    "width": 353,
+    "height": 317,
+    "sha256": "226f449b4856f31d166842009bc09e7769dd8a42ed8109e81aba5f31107baddf",
+    "bytes": 105543,
+    "format": "webp",
+    "src": "/assets/responsive/dr-surindher-dsa-226f449b4856-353.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-surindher-dsa-226f449b4856-320.webp",
+        "width": 320,
+        "height": 287,
+        "bytes": 4492
+      },
+      {
+        "src": "/assets/responsive/dr-surindher-dsa-226f449b4856-353.webp",
+        "width": 353,
+        "height": 317,
+        "bytes": 4960
+      }
+    ]
+  },
+  "/dr-vikas-singh.png": {
+    "width": 355,
+    "height": 431,
+    "sha256": "edfe787793e4c12c59f0c99d86febc65717c7261538f83387b40becde34deed2",
+    "bytes": 198606,
+    "format": "webp",
+    "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-355.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-320.webp",
+        "width": 320,
+        "height": 389,
+        "bytes": 9368
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-355.webp",
+        "width": 355,
+        "height": 431,
+        "bytes": 10770
       }
     ]
   },
@@ -382,12 +1376,26 @@
     "height": 1024,
     "sha256": "49452734319e90b095f3909cce72bc9bbf6258d3a96d7e7b5fbaa6e22cae859d",
     "bytes": 121038,
+    "format": "webp",
+    "src": "/assets/responsive/education-research-49452734319e-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/education-research-49452734319e-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 14978
+      },
       {
         "src": "/assets/responsive/education-research-49452734319e-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 27398
+      },
+      {
+        "src": "/assets/responsive/education-research-49452734319e-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 40934
       },
       {
         "src": "/assets/responsive/education-research-49452734319e-768.webp",
@@ -406,6 +1414,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 107560
+      },
+      {
+        "src": "/assets/responsive/education-research-49452734319e-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 121038
       }
     ]
   },
@@ -414,12 +1428,26 @@
     "height": 1254,
     "sha256": "e67fc9e5161167ca1c3aec21ae578187d5cb6323a5fa0e2ebb48055f26e0f2ed",
     "bytes": 124140,
+    "format": "webp",
+    "src": "/assets/responsive/fat-transfer-e67fc9e51611-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/fat-transfer-e67fc9e51611-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19680
+      },
       {
         "src": "/assets/responsive/fat-transfer-e67fc9e51611-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 35772
+      },
+      {
+        "src": "/assets/responsive/fat-transfer-e67fc9e51611-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 55276
       },
       {
         "src": "/assets/responsive/fat-transfer-e67fc9e51611-768.webp",
@@ -432,6 +1460,12 @@
         "width": 1024,
         "height": 1024,
         "bytes": 107022
+      },
+      {
+        "src": "/assets/responsive/fat-transfer-e67fc9e51611-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 124140
       }
     ]
   },
@@ -440,12 +1474,26 @@
     "height": 1024,
     "sha256": "2d61a805f6d1abf1b33ccd874cef57e9cbbaaebf51abcfc2212274f15ab2bd05",
     "bytes": 108158,
+    "format": "webp",
+    "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 14774
+      },
       {
         "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 26102
+      },
+      {
+        "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 38718
       },
       {
         "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-768.webp",
@@ -464,6 +1512,12 @@
         "width": 1280,
         "height": 853,
         "bytes": 95960
+      },
+      {
+        "src": "/assets/responsive/five-step-beauty-consultation-journey-2d61a805f6d1-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 108158
       }
     ]
   },
@@ -472,12 +1526,26 @@
     "height": 893,
     "sha256": "7879e6996ddeb61ccfcaaf77d8cd9d7ca94ec91332f29988ca40914aa0b59aa5",
     "bytes": 70094,
+    "format": "webp",
+    "src": "/assets/responsive/hero-banner-7879e6996dde-1599.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/hero-banner-7879e6996dde-320.webp",
+        "width": 320,
+        "height": 179,
+        "bytes": 7618
+      },
       {
         "src": "/assets/responsive/hero-banner-7879e6996dde-480.webp",
         "width": 480,
         "height": 268,
         "bytes": 14218
+      },
+      {
+        "src": "/assets/responsive/hero-banner-7879e6996dde-640.webp",
+        "width": 640,
+        "height": 357,
+        "bytes": 22768
       },
       {
         "src": "/assets/responsive/hero-banner-7879e6996dde-768.webp",
@@ -496,6 +1564,18 @@
         "width": 1280,
         "height": 715,
         "bytes": 59578
+      },
+      {
+        "src": "/assets/responsive/hero-banner-7879e6996dde-1536.webp",
+        "width": 1536,
+        "height": 858,
+        "bytes": 75034
+      },
+      {
+        "src": "/assets/responsive/hero-banner-7879e6996dde-1599.webp",
+        "width": 1599,
+        "height": 893,
+        "bytes": 70094
       }
     ]
   },
@@ -504,12 +1584,26 @@
     "height": 1254,
     "sha256": "5c45fc6a5a111d48a5eb61a2b5da039dafaa8d388ed3de4da110fa758fab6452",
     "bytes": 121438,
+    "format": "webp",
+    "src": "/assets/responsive/implants-5c45fc6a5a11-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/implants-5c45fc6a5a11-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19920
+      },
       {
         "src": "/assets/responsive/implants-5c45fc6a5a11-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 35612
+      },
+      {
+        "src": "/assets/responsive/implants-5c45fc6a5a11-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 54930
       },
       {
         "src": "/assets/responsive/implants-5c45fc6a5a11-768.webp",
@@ -522,6 +1616,64 @@
         "width": 1024,
         "height": 1024,
         "bytes": 104854
+      },
+      {
+        "src": "/assets/responsive/implants-5c45fc6a5a11-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 121438
+      }
+    ]
+  },
+  "/Medical Breast Augmentation Infographic.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "38c92086da5855068fa158f4e9501213b3e805cf661e1ecc706842d93d3408c9",
+    "bytes": 2202333,
+    "format": "webp",
+    "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 15320
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 27586
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 42314
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 55432
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 85188
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 118900
+      },
+      {
+        "src": "/assets/responsive/medical-breast-augmentation-infographic-38c92086da58-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 157550
       }
     ]
   },
@@ -530,12 +1682,26 @@
     "height": 1254,
     "sha256": "bf9edbf01ebbf68dac4426ba9e60d97002bc5eb47758c60898ef16b8fc9aff50",
     "bytes": 106566,
+    "format": "webp",
+    "src": "/assets/responsive/non-surgical-bf9edbf01ebb-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/non-surgical-bf9edbf01ebb-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17694
+      },
       {
         "src": "/assets/responsive/non-surgical-bf9edbf01ebb-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 31730
+      },
+      {
+        "src": "/assets/responsive/non-surgical-bf9edbf01ebb-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 47102
       },
       {
         "src": "/assets/responsive/non-surgical-bf9edbf01ebb-768.webp",
@@ -548,6 +1714,128 @@
         "width": 1024,
         "height": 1024,
         "bytes": 89972
+      },
+      {
+        "src": "/assets/responsive/non-surgical-bf9edbf01ebb-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 106566
+      }
+    ]
+  },
+  "/Non-Surgical Breast Enhancement Guide.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "458dd0f266b62d1c8d61e1ac257d3b3c3ccdaf4179e258e75bc3b151f2c58672",
+    "bytes": 1999780,
+    "format": "webp",
+    "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 15016
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 25784
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 37776
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 48004
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 70624
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 96134
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-guide-458dd0f266b6-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 118484
+      }
+    ]
+  },
+  "/Non-Surgical Breast Enhancement Infographic.png": {
+    "width": 2048,
+    "height": 768,
+    "sha256": "7dec2c8dffdb8eb8672edebcc33002b1f8001776e9c3e597b676f847e5f39205",
+    "bytes": 2144472,
+    "format": "webp",
+    "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-2048.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-320.webp",
+        "width": 320,
+        "height": 120,
+        "bytes": 10412
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-480.webp",
+        "width": 480,
+        "height": 180,
+        "bytes": 19692
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-640.webp",
+        "width": 640,
+        "height": 240,
+        "bytes": 30470
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-768.webp",
+        "width": 768,
+        "height": 288,
+        "bytes": 39720
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-1024.webp",
+        "width": 1024,
+        "height": 384,
+        "bytes": 60500
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-1280.webp",
+        "width": 1280,
+        "height": 480,
+        "bytes": 84946
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-1536.webp",
+        "width": 1536,
+        "height": 576,
+        "bytes": 108246
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-1920.webp",
+        "width": 1920,
+        "height": 720,
+        "bytes": 149872
+      },
+      {
+        "src": "/assets/responsive/non-surgical-breast-enhancement-infographic-7dec2c8dffdb-2048.webp",
+        "width": 2048,
+        "height": 768,
+        "bytes": 165242
       }
     ]
   },
@@ -556,12 +1844,26 @@
     "height": 1024,
     "sha256": "773a3867911570d892a45eac80df157416b38488a5a7aee892bb21558e2b31b3",
     "bytes": 23210,
+    "format": "webp",
+    "src": "/assets/responsive/our-approach-773a38679115-1536.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/our-approach-773a38679115-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 3636
+      },
       {
         "src": "/assets/responsive/our-approach-773a38679115-480.webp",
         "width": 480,
         "height": 320,
         "bytes": 5756
+      },
+      {
+        "src": "/assets/responsive/our-approach-773a38679115-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 8318
       },
       {
         "src": "/assets/responsive/our-approach-773a38679115-768.webp",
@@ -580,6 +1882,64 @@
         "width": 1280,
         "height": 853,
         "bytes": 19762
+      },
+      {
+        "src": "/assets/responsive/our-approach-773a38679115-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 23210
+      }
+    ]
+  },
+  "/Personalized Breast Consultation Scene.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "7610cea30a0394fa2d601c4d878bc9da2541df037c0ef5fa3b917631b9cd9a5f",
+    "bytes": 2146539,
+    "format": "webp",
+    "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 15802
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 29264
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 44102
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 57290
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 81860
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 111054
+      },
+      {
+        "src": "/assets/responsive/personalized-breast-consultation-scene-7610cea30a03-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 140862
       }
     ]
   },
@@ -588,12 +1948,26 @@
     "height": 1254,
     "sha256": "4f0e03d51ff67abc0fe693ca3e3ea4d5eb886769e62561b5a23bdba12202b45a",
     "bytes": 143372,
+    "format": "webp",
+    "src": "/assets/responsive/prp-4f0e03d51ff6-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/prp-4f0e03d51ff6-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20006
+      },
       {
         "src": "/assets/responsive/prp-4f0e03d51ff6-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 37666
+      },
+      {
+        "src": "/assets/responsive/prp-4f0e03d51ff6-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 60028
       },
       {
         "src": "/assets/responsive/prp-4f0e03d51ff6-768.webp",
@@ -606,20 +1980,63 @@
         "width": 1024,
         "height": 1024,
         "bytes": 119004
+      },
+      {
+        "src": "/assets/responsive/prp-4f0e03d51ff6-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 143372
       }
     ]
+  },
+  "/Screenshot 2026-10-28 140539.png": {
+    "width": 426,
+    "height": 452,
+    "sha256": "ef08d3625cc26d47f3e02ae23a5be1c349de114bb2b1aabe85edeb01277963ba",
+    "bytes": 283932,
+    "format": "webp",
+    "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-320.webp",
+        "width": 320,
+        "height": 340,
+        "bytes": 12518
+      },
+      {
+        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
+        "width": 426,
+        "height": 452,
+        "bytes": 17692
+      }
+    ],
+    "canonicalSource": "/dr-sunitha-devaraj.png"
   },
   "/sculptra.webp": {
     "width": 1254,
     "height": 1254,
     "sha256": "8151bdedc23712365da660e5d1431901f2a1897e5ffe5beebaaffa294332a43c",
     "bytes": 136184,
+    "format": "webp",
+    "src": "/assets/responsive/sculptra-8151bdedc237-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/sculptra-8151bdedc237-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20864
+      },
       {
         "src": "/assets/responsive/sculptra-8151bdedc237-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 38802
+      },
+      {
+        "src": "/assets/responsive/sculptra-8151bdedc237-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 59442
       },
       {
         "src": "/assets/responsive/sculptra-8151bdedc237-768.webp",
@@ -632,6 +2049,12 @@
         "width": 1024,
         "height": 1024,
         "bytes": 114422
+      },
+      {
+        "src": "/assets/responsive/sculptra-8151bdedc237-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 136184
       }
     ]
   },
@@ -640,12 +2063,26 @@
     "height": 1254,
     "sha256": "e0e94529e38cbfa4063e4e8e095f5b7d703ff9607c3374e1c0dbab5ab7a6ffa5",
     "bytes": 42698,
+    "format": "webp",
+    "src": "/assets/responsive/surgical-e0e94529e38c-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/surgical-e0e94529e38c-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 7874
+      },
       {
         "src": "/assets/responsive/surgical-e0e94529e38c-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 13384
+      },
+      {
+        "src": "/assets/responsive/surgical-e0e94529e38c-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 19446
       },
       {
         "src": "/assets/responsive/surgical-e0e94529e38c-768.webp",
@@ -658,6 +2095,12 @@
         "width": 1024,
         "height": 1024,
         "bytes": 34652
+      },
+      {
+        "src": "/assets/responsive/surgical-e0e94529e38c-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 42698
       }
     ]
   },
@@ -666,12 +2109,26 @@
     "height": 1254,
     "sha256": "d1268aa5a3c4ad0a2c32d9474f5d74dd1d2319b8d14d8849a967ebc72c139900",
     "bytes": 118220,
+    "format": "webp",
+    "src": "/assets/responsive/threads-d1268aa5a3c4-1254.webp",
     "variants": [
+      {
+        "src": "/assets/responsive/threads-d1268aa5a3c4-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19254
+      },
       {
         "src": "/assets/responsive/threads-d1268aa5a3c4-480.webp",
         "width": 480,
         "height": 480,
         "bytes": 34966
+      },
+      {
+        "src": "/assets/responsive/threads-d1268aa5a3c4-640.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 53358
       },
       {
         "src": "/assets/responsive/threads-d1268aa5a3c4-768.webp",
@@ -684,6 +2141,12 @@
         "width": 1024,
         "height": 1024,
         "bytes": 101874
+      },
+      {
+        "src": "/assets/responsive/threads-d1268aa5a3c4-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 118220
       }
     ]
   }

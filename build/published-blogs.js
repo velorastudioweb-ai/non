@@ -72,13 +72,31 @@ function deepDive(a) {
   <h3>Keep expectations realistic</h3><p>People vary in anatomy, healing, scar formation, sensation, priorities and tolerance for risk. Even a technically uncomplicated procedure may involve discomfort, swelling, uncertainty during healing or a result that differs from an imagined picture. It is reasonable to ask what can go wrong, how it would be managed, and what the alternative is if the hoped-for change is not achieved.</p>
   <h3>Protect your independence</h3><p>Take notes, request written information and discuss the decision with someone you trust if that feels helpful. Be cautious about limited-time discounts, guaranteed results, pressure to pay a deposit immediately, or vague answers about who performs aftercare. ${clinical ? 'Choosing no treatment, or postponing a decision, remains an appropriate option.' : 'The composite narrator’s decision is not a recommendation for anyone else; choosing no treatment is equally valid.'}</p>`;
 }
-function page(a){ const related=articles.filter(x=>x.slug!==a.slug).slice(0,3); return {url:'/blogs/'+a.slug+'/',slug:'blogs-'+a.slug,h1:a.title,showBanner:false,seoTitle:a.title+' | Quantum Health',seoDescription:a.description,ogType:'article',breadcrumb:[{label:'Blogs',href:'/blogs/'},{label:a.title}],schema:[{'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.date,mainEntityOfPage:site.url+'/blogs/'+a.slug+'/',keywords:a.keyword}],blocks:[{type:'prose',html:`<p class="eyebrow">${a.category}</p><h1>${a.title}</h1><p class="blog-meta">Published ${a.date} · 8 min read</p>${a.perspective?disclosure:''}<p class="lead">${a.description}</p><nav class="blog-toc" aria-label="Table of contents"><strong>In this article</strong><ol>${a.sections.map(([h],i)=>'<li><a href="#section-'+(i+1)+'">'+h+'</a></li>').join('')}</ol></nav>${a.sections.map(([h,t],i)=>'<h2 id="section-'+(i+1)+'">'+h+'</h2>'+t).join('')}${deepDive(a)}<h2>Key takeaways</h2><ul><li>Individual assessment matters more than generic online claims.</li><li>Evidence, safety and realistic expectations should guide decisions.</li><li>Taking time and choosing no treatment are valid options.</li></ul>${refs}<h2>Related articles</h2><ul>${related.map(r=>'<li><a href="/blogs/'+r.slug+'/">'+r.title+'</a></li>').join('')}</ul>`},educationFaq(a.title),{type:'cta',heading:'Use information to prepare your questions',text:'This educational article cannot assess individual suitability. Discuss any treatment decision with an appropriately qualified clinician.',button:{label:'Explore safety guidance',href:'/breast-enlargement-safety/'}}]}; }
+function wordCount(html) {
+  const text = String(html)
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&(?:#\d+|#x[\da-f]+|[a-z]+);/gi, ' ');
+  return (text.match(/[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*/gu) || []).length;
+}
+function readingMinutes(article) {
+  const body = [
+    article.description,
+    article.perspective ? disclosure : '',
+    ...article.sections.flatMap(([heading, content]) => [heading, content]),
+    deepDive(article),
+    'Key takeaways Individual assessment matters more than generic online claims. Evidence, safety and realistic expectations should guide decisions. Taking time and choosing no treatment are valid options.',
+    refs
+  ].join(' ');
+  return Math.max(1, Math.ceil(wordCount(body) / 200));
+}
+articles.forEach((article) => { article.readingMinutes = readingMinutes(article); });
+function page(a){ const related=articles.filter(x=>x.slug!==a.slug).slice(0,3); return {url:'/blogs/'+a.slug+'/',slug:'blogs-'+a.slug,h1:a.title,showBanner:false,seoTitle:a.title+' | Quantum Health',seoDescription:a.description,ogType:'article',breadcrumb:[{label:'Blogs',href:'/blogs/'},{label:a.title}],schema:[{'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.date,timeRequired:'PT'+a.readingMinutes+'M',mainEntityOfPage:site.url+'/blogs/'+a.slug+'/',keywords:a.keyword}],blocks:[{type:'prose',html:`<p class="eyebrow">${a.category}</p><h1>${a.title}</h1><p class="blog-meta">Published ${a.date} · ${a.readingMinutes} min read</p>${a.perspective?disclosure:''}<p class="lead">${a.description}</p><nav class="blog-toc" aria-label="Table of contents"><strong>In this article</strong><ol>${a.sections.map(([h],i)=>'<li><a href="#section-'+(i+1)+'">'+h+'</a></li>').join('')}</ol></nav>${a.sections.map(([h,t],i)=>'<h2 id="section-'+(i+1)+'">'+h+'</h2>'+t).join('')}${deepDive(a)}<h2>Key takeaways</h2><ul><li>Individual assessment matters more than generic online claims.</li><li>Evidence, safety and realistic expectations should guide decisions.</li><li>Taking time and choosing no treatment are valid options.</li></ul>${refs}<h2>Related articles</h2><ul>${related.map(r=>'<li><a href="/blogs/'+r.slug+'/">'+r.title+'</a></li>').join('')}</ul>`},educationFaq(a.title),{type:'cta',heading:'Use information to prepare your questions',text:'This educational article cannot assess individual suitability. Discuss any treatment decision with an appropriately qualified clinician.',button:{label:'Explore safety guidance',href:'/breast-enlargement-safety/'}}]}; }
 const escapeAttribute = (value) => String(value).replace(/[&"<>]/g, (char) => ({ '&': '&amp;', '"': '&quot;', '<': '&lt;', '>': '&gt;' })[char]);
 const pages = articles.map(page);
 pages.forEach((blogPage, index) => {
   const article = articles[index];
   const feature = `<figure class="blog-article__figure"><img src="${escapeAttribute(article.image)}" alt="Editorial illustration accompanying ${escapeAttribute(article.title)}" width="${article.imageWidth}" height="${article.imageHeight}" loading="eager" fetchpriority="high" decoding="async"></figure>`;
-  const metadata = `<p class="blog-meta">Published ${article.date} · 8 min read</p>`;
+  const metadata = `<p class="blog-meta">Published ${article.date} · ${article.readingMinutes} min read</p>`;
   blogPage.blocks[0].html = blogPage.blocks[0].html.replace(metadata, metadata + feature);
 });
 module.exports={articles,pages,disclosure};

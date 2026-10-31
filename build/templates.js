@@ -54,7 +54,7 @@ function head(page, site) {
 <meta name="twitter:description" content="${esc(page.seoDescription)}">
 <link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/montserrat-v31-normal-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="${site.base}assets/fonts/cormorant-garamond-v21-normal-latin.woff2" crossorigin>
-${hero ? `<link rel="preload" as="image" href="/hero-banner.webp" imagesrcset="${esc(hero.srcset)}" imagesizes="100vw" fetchpriority="high">` : ''}
+${hero ? `<link rel="preload" as="image" href="${esc(hero.src)}" imagesrcset="${esc(hero.srcset)}" imagesizes="100vw" fetchpriority="high">` : ''}
 ${componentStyles}
 <link rel="stylesheet" href="${assets.href('site.css')}">
 
@@ -528,8 +528,12 @@ default: return '';
 /* ---------- FULL LAYOUT ---------- */
 function layout(page, site) {
   const isHome = page.url === '/';
-  const body = page.blocks.map((b) => renderBlock(b, page, site) + (visualPlan.inlineFor(page, b) ?
+  const rawBody = page.blocks.map((b) => renderBlock(b, page, site) + (visualPlan.inlineFor(page, b) ?
     `<section class="section section--tight" data-image-addition><div class="container"><figure class="educational-visual">${picture(visualPlan.routes[page.url].key, { sizes: '(max-width: 900px) 100vw, 800px' })}<figcaption data-image-caption>${esc(visualPlan.routes[page.url].caption)}</figcaption></figure></div></section>` : '')).join('\n').replace('src="/assets/js/research.js"', `src="${assets.href('research.js')}"`);
+  // Apply the root-image pipeline once more after all blocks have rendered.
+  // This catches trusted prose fragments, article cards and doctor portraits
+  // that do not pass through a component-specific renderer.
+  const body = responsiveMarkup(rawBody);
   const banner = (page.h1 && !isHome && page.showBanner !== false) ? pageBanner(page, site) : '';
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">

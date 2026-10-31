@@ -14,7 +14,20 @@ async function startAuditServer(base) {
   const parent = path.join(os.tmpdir(), 'opencode');
   fs.mkdirSync(parent, { recursive: true });
   const snapshot = fs.mkdtempSync(path.join(parent, 'responsive-'));
-  fs.cpSync(path.join(__dirname, '../dist'), snapshot, { recursive: true });
+  // Windows can transiently fail a recursive copy (antivirus/indexer lock).
+  // Retry a clean snapshot before aborting a long browser audit.
+  const source = path.join(__dirname, '../dist');
+  for (let attempt = 1; ; attempt++) {
+    try {
+      fs.cpSync(source, snapshot, { recursive: true, force: true });
+      break;
+    } catch (error) {
+      if (attempt >= 3) throw error;
+      fs.rmSync(snapshot, { recursive: true, force: true });
+      fs.mkdirSync(snapshot, { recursive: true });
+      console.warn('Snapshot copy retry ' + attempt + ': ' + error.message);
+    }
+  }
   const server = http.createServer((req, res) => {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     if (pathname === '/api/contact') return require('../api/contact')(req, res);

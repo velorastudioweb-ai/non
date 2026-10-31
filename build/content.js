@@ -853,14 +853,14 @@ pages.push(treatmentPage({
   url: '/surgical/mastectomy-chest-surgery/', slug: 'mastectomy-chest-surgery',
   h1: 'Mastectomy and Chest Contouring Surgery',
   seoTitle: 'Mastectomy & Chest Contouring Surgery: Patient Information | Breast Enlargement Guide',
-  seoDescription: 'Mastectomy and chest contouring: why the surgery is performed, common surgical approaches, important considerations, recovery and questions to ask at consultation.',
+  seoDescription: 'Mastectomy and chest contouring: why surgery is performed, common approaches, recovery and questions for people considering mastectomy, gender-affirming chest surgery or gynaecomastia surgery.',
   bannerEyebrow: 'Surgical · Chest surgery',
-  bannerLead: 'Mastectomy removes breast tissue. When performed to create a flatter, more contoured chest, it is often called chest masculinisation or top surgery.',
+  bannerLead: 'Mastectomy removes breast tissue. Chest contouring may follow mastectomy or be used for gender affirmation or gynaecomastia, with distinct techniques and goals.',
   breadcrumb: [{ label: 'Surgical', href: '/surgical-breast-enhancement/' }, { label: 'Mastectomy & chest surgery' }],
   blocks: [
     { type: 'prose', html:
-      '<p>Mastectomy is the surgical removal of breast tissue. It is performed for several reasons, including gender-affirming chest masculinisation, reduction of elevated cancer risk in selected patients, and treatment of disease. This page provides general educational information; the appropriate procedure, eligibility and timing are determined through individual medical assessment.</p>' +
-      '<p>When the goal is chest contouring rather than treatment of disease, the technique is tailored to the amount of breast tissue, skin laxity and the desired chest shape. Approaches may include a double-incision technique with nipple grafting, or a periareolar (keyhole) approach in suitable anatomy. The surgeon also considers scar placement, chest-wall contour and future revision options.</p>' },
+      '<p>Mastectomy is the surgical removal of breast tissue. It is performed for several reasons, including gender-affirming chest masculinisation, reduction of elevated cancer risk in selected patients, and treatment of disease. Chest contouring is a broader term that can also include surgery for gynaecomastia. These are distinct operations with different medical purposes, even where some techniques overlap. This page provides general educational information; the appropriate procedure, eligibility and timing are determined through individual medical assessment.</p>' +
+      '<p>When the goal is chest contouring rather than treatment of disease, the technique is tailored to the amount of breast tissue, skin laxity and the desired chest shape. Approaches may include a double-incision technique with nipple grafting, a periareolar (keyhole) approach in suitable anatomy, or gland excision and liposuction for gynaecomastia. The surgeon also considers scar placement, chest-wall contour and future revision options.</p>' },
     { type: 'icon-grid', eyebrow: 'What to discuss', heading: 'Questions for your consultation', cols: 3,
       items: [
         { icon: 'personalised', title: 'Which technique suits you', text: 'The approach depends on tissue volume, skin elasticity and the contour you want.' },

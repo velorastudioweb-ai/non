@@ -28,7 +28,16 @@ const ROOT = path.resolve(__dirname, '..');
       const page = await context.newPage();
       const errors = [];
       page.on('pageerror', e => errors.push(String(e)));
+      page.on('console', message => {
+        if (message.type() !== 'error') return;
+        // Without RESEND_API_KEY the honest contact response is 503. Chrome logs
+        // that failed fetch as a console error; every other console error stays fatal.
+        const source = message.location() ? message.location().url : '';
+        if (source.endsWith('/api/contact') && /status of 503/.test(message.text())) return;
+        errors.push('Console: ' + message.text());
+      });
       await page.goto(base, { waitUntil: 'load' });
+      assert.equal(await page.evaluate(() => document.documentElement.classList.contains('js')), true, 'Progressive-enhancement bootstrap did not run');
       await page.evaluate(() => document.fonts.ready);
       await page.evaluate(() => window.scrollTo({ top: 100, behavior: 'instant' }));
       await page.waitForFunction(() => document.querySelector('.site-header').classList.contains('is-scrolled'));

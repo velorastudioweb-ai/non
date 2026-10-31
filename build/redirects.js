@@ -27,7 +27,6 @@ function stubHtml(from, to) {
     '<link rel="canonical" href="' + target + '">\n' +
     '<meta name="robots" content="noindex, follow">\n' +
     '<meta http-equiv="refresh" content="0; url=' + to + '">\n' +
-    '<script>location.replace(' + JSON.stringify(to) + ');</script>\n' +
     '</head>\n<body>\n' +
     '<p>This page has moved. <a href="' + to + '">Continue to the new page</a>.</p>\n' +
     '</body>\n</html>\n';

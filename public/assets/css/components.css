@@ -1338,7 +1338,8 @@ button.gallery-item .gallery-item__cap {
 .prose > * + * { margin-top: var(--sp-3); }
 .prose h2 { margin-top: var(--sp-5); color: var(--ivory); }
 .prose h3 { margin-top: var(--sp-4); color: var(--ivory); }
-.prose p, .prose li { color: var(--ivory-soft); }
+.prose p:not(.eyebrow), .prose li { color: var(--ivory-soft); }
+.prose .eyebrow { color: var(--gold); }
 .prose ul, .prose ol { padding-left: 1.2rem; display: grid; gap: .5rem; }
 .prose ul li { list-style: none; position: relative; padding-left: 1.15rem; }
 .prose ul li::before {

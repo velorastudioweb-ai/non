@@ -3,13 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright-core');
 const { allPages } = require('./structure');
+const { startAuditServer } = require('./audit-server');
 
-const base = 'http://127.0.0.1:4187';
+const arg = name => process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : null;
+let base = arg('--base');
 const widths = [390, 1440];
 const out = [];
 const failures = [];
 
 (async () => {
+  const server = await startAuditServer(base);
+  base = server.base;
   const chrome = ['C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'].find(fs.existsSync);
   const browser = await chromium.launch({ executablePath: chrome, headless: true });
   for (const width of widths) {
@@ -77,6 +81,7 @@ const failures = [];
     console.log('Audited at ' + width);
   }
   await browser.close();
+  await server.close();
   fs.writeFileSync('docs/performance-audit/_audit-full.json', JSON.stringify(out, null, 2));
   console.log('Records', out.length, 'Failures', failures.length);
   console.log([...new Set(failures)].slice(0, 120).join('\n'));

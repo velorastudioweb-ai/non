@@ -1,5 +1,5 @@
 {
-  "base": "http://127.0.0.1:54889",
+  "base": "http://127.0.0.1:52145",
   "note": "Lab Event Timing observations, not field INP.",
   "results": [
     {
@@ -9,31 +9,67 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 80,
+      "maxObservedEventMs": 136,
       "events": [
         {
           "name": "pointerdown",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "pointerup",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "click",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "pointerdown",
-          "duration": 80
+          "duration": 48
         },
         {
           "name": "pointerup",
-          "duration": 80
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 80
+          "duration": 48
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "keydown",
+          "duration": 16
+        },
+        {
+          "name": "keydown",
+          "duration": 32
+        },
+        {
+          "name": "keyup",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
         },
         {
           "name": "pointerdown",
@@ -52,32 +88,20 @@
           "duration": 24
         },
         {
-          "name": "pointerdown",
-          "duration": 32
-        },
-        {
-          "name": "pointerup",
-          "duration": 32
-        },
-        {
-          "name": "click",
-          "duration": 32
+          "name": "keyup",
+          "duration": 16
         },
         {
           "name": "pointerdown",
-          "duration": 16
+          "duration": 136
         },
         {
           "name": "pointerup",
-          "duration": 16
+          "duration": 136
         },
         {
           "name": "click",
-          "duration": 16
-        },
-        {
-          "name": "keydown",
-          "duration": 24
+          "duration": 136
         },
         {
           "name": "pointerdown",
@@ -85,11 +109,11 @@
         },
         {
           "name": "pointerup",
-          "duration": 72
+          "duration": 64
         },
         {
           "name": "click",
-          "duration": 72
+          "duration": 64
         }
       ]
     },
@@ -100,35 +124,35 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 64,
+      "maxObservedEventMs": 168,
       "events": [
         {
           "name": "pointerdown",
-          "duration": 24
-        },
-        {
-          "name": "pointerup",
-          "duration": 24
-        },
-        {
-          "name": "click",
-          "duration": 24
-        },
-        {
-          "name": "pointerdown",
-          "duration": 32
-        },
-        {
-          "name": "pointerup",
-          "duration": 32
-        },
-        {
-          "name": "click",
-          "duration": 32
-        },
-        {
-          "name": "pointerdown",
           "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 56
+        },
+        {
+          "name": "pointerup",
+          "duration": 56
+        },
+        {
+          "name": "click",
+          "duration": 56
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
         },
         {
           "name": "pointerup",
@@ -152,47 +176,43 @@
         },
         {
           "name": "pointerdown",
-          "duration": 32
-        },
-        {
-          "name": "pointerup",
-          "duration": 32
-        },
-        {
-          "name": "click",
-          "duration": 32
-        },
-        {
-          "name": "pointerdown",
-          "duration": 16
-        },
-        {
-          "name": "pointerup",
-          "duration": 16
-        },
-        {
-          "name": "click",
-          "duration": 16
-        },
-        {
-          "name": "keydown",
           "duration": 40
         },
         {
-          "name": "keyup",
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "keydown",
           "duration": 24
         },
         {
           "name": "pointerdown",
-          "duration": 64
+          "duration": 168
         },
         {
           "name": "pointerup",
-          "duration": 64
+          "duration": 160
         },
         {
           "name": "click",
-          "duration": 64
+          "duration": 160
         }
       ]
     },
@@ -203,19 +223,19 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 64,
+      "maxObservedEventMs": 88,
       "events": [
         {
           "name": "pointerdown",
-          "duration": 40
+          "duration": 24
         },
         {
           "name": "pointerup",
-          "duration": 40
+          "duration": 24
         },
         {
           "name": "click",
-          "duration": 40
+          "duration": 24
         },
         {
           "name": "pointerdown",
@@ -228,6 +248,18 @@
         {
           "name": "click",
           "duration": 48
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
         },
         {
           "name": "keydown",
@@ -239,63 +271,59 @@
         },
         {
           "name": "keyup",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "pointerdown",
-          "duration": 32
-        },
-        {
-          "name": "pointerup",
-          "duration": 32
-        },
-        {
-          "name": "click",
-          "duration": 32
-        },
-        {
-          "name": "pointerdown",
-          "duration": 16
-        },
-        {
-          "name": "pointerup",
-          "duration": 16
-        },
-        {
-          "name": "click",
-          "duration": 16
-        },
-        {
-          "name": "keydown",
           "duration": 48
         },
         {
-          "name": "keyup",
-          "duration": 16
-        },
-        {
-          "name": "pointerdown",
-          "duration": 64
-        },
-        {
           "name": "pointerup",
-          "duration": 64
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 64
+          "duration": 48
         },
         {
           "name": "pointerdown",
-          "duration": 32
+          "duration": 24
         },
         {
           "name": "pointerup",
-          "duration": 32
+          "duration": 24
         },
         {
           "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "keydown",
           "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 88
+        },
+        {
+          "name": "pointerup",
+          "duration": 88
+        },
+        {
+          "name": "click",
+          "duration": 88
+        },
+        {
+          "name": "pointerdown",
+          "duration": 56
+        },
+        {
+          "name": "pointerup",
+          "duration": 56
+        },
+        {
+          "name": "click",
+          "duration": 56
         }
       ]
     },
@@ -306,7 +334,7 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 80,
+      "maxObservedEventMs": 96,
       "events": [
         {
           "name": "pointerdown",
@@ -322,27 +350,27 @@
         },
         {
           "name": "pointerdown",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "pointerup",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "pointerdown",
-          "duration": 24
+          "duration": 16
         },
         {
           "name": "pointerup",
-          "duration": 24
+          "duration": 16
         },
         {
           "name": "click",
-          "duration": 24
+          "duration": 16
         },
         {
           "name": "keydown",
@@ -358,27 +386,27 @@
         },
         {
           "name": "pointerdown",
-          "duration": 32
+          "duration": 40
         },
         {
           "name": "pointerup",
-          "duration": 32
+          "duration": 40
         },
         {
           "name": "click",
-          "duration": 32
+          "duration": 40
         },
         {
           "name": "pointerdown",
-          "duration": 16
+          "duration": 32
         },
         {
           "name": "pointerup",
-          "duration": 16
+          "duration": 32
         },
         {
           "name": "click",
-          "duration": 16
+          "duration": 32
         },
         {
           "name": "keydown",
@@ -386,27 +414,27 @@
         },
         {
           "name": "pointerdown",
-          "duration": 80
+          "duration": 96
         },
         {
           "name": "pointerup",
-          "duration": 80
+          "duration": 96
         },
         {
           "name": "click",
-          "duration": 80
+          "duration": 96
         },
         {
           "name": "pointerdown",
-          "duration": 32
+          "duration": 48
         },
         {
           "name": "pointerup",
-          "duration": 32
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 32
+          "duration": 48
         }
       ]
     },
@@ -417,7 +445,7 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 64,
+      "maxObservedEventMs": 80,
       "events": [
         {
           "name": "pointerdown",
@@ -433,27 +461,27 @@
         },
         {
           "name": "pointerdown",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "pointerup",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "pointerdown",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "pointerup",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "click",
-          "duration": 16
+          "duration": 24
         },
         {
           "name": "keydown",
@@ -464,10 +492,6 @@
           "duration": 24
         },
         {
-          "name": "keyup",
-          "duration": 16
-        },
-        {
           "name": "pointerdown",
           "duration": 40
         },
@@ -493,19 +517,19 @@
         },
         {
           "name": "keydown",
-          "duration": 40
+          "duration": 48
         },
         {
           "name": "pointerdown",
-          "duration": 64
+          "duration": 80
         },
         {
           "name": "pointerup",
-          "duration": 64
+          "duration": 80
         },
         {
           "name": "click",
-          "duration": 64
+          "duration": 80
         },
         {
           "name": "pointerdown",
@@ -528,121 +552,6 @@
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
-      "maxObservedEventMs": 88,
-      "events": [
-        {
-          "name": "pointerdown",
-          "duration": 32
-        },
-        {
-          "name": "pointerup",
-          "duration": 32
-        },
-        {
-          "name": "click",
-          "duration": 32
-        },
-        {
-          "name": "pointerdown",
-          "duration": 88
-        },
-        {
-          "name": "pointerup",
-          "duration": 88
-        },
-        {
-          "name": "click",
-          "duration": 88
-        },
-        {
-          "name": "keydown",
-          "duration": 56
-        },
-        {
-          "name": "keyup",
-          "duration": 56
-        },
-        {
-          "name": "pointerdown",
-          "duration": 40
-        },
-        {
-          "name": "pointerup",
-          "duration": 40
-        },
-        {
-          "name": "click",
-          "duration": 40
-        },
-        {
-          "name": "keydown",
-          "duration": 16
-        },
-        {
-          "name": "keyup",
-          "duration": 16
-        },
-        {
-          "name": "pointerdown",
-          "duration": 24
-        },
-        {
-          "name": "pointerup",
-          "duration": 24
-        },
-        {
-          "name": "click",
-          "duration": 24
-        },
-        {
-          "name": "pointerdown",
-          "duration": 40
-        },
-        {
-          "name": "pointerup",
-          "duration": 40
-        },
-        {
-          "name": "click",
-          "duration": 40
-        },
-        {
-          "name": "pointerdown",
-          "duration": 24
-        },
-        {
-          "name": "pointerup",
-          "duration": 24
-        },
-        {
-          "name": "click",
-          "duration": 24
-        },
-        {
-          "name": "keydown",
-          "duration": 40
-        },
-        {
-          "name": "pointerdown",
-          "duration": 88
-        },
-        {
-          "name": "pointerup",
-          "duration": 88
-        },
-        {
-          "name": "click",
-          "duration": 88
-        }
-      ]
-    },
-    {
-      "width": 1440,
-      "navigation": "pass",
-      "faq": "pass",
-      "blogs": "pass",
-      "contact": "pass",
-      "research": "pass",
       "maxObservedEventMs": 112,
       "events": [
         {
@@ -659,55 +568,59 @@
         },
         {
           "name": "pointerdown",
-          "duration": 112
+          "duration": 48
         },
         {
           "name": "pointerup",
-          "duration": 112
+          "duration": 48
         },
         {
           "name": "click",
-          "duration": 112
+          "duration": 48
         },
         {
           "name": "keydown",
-          "duration": 104
+          "duration": 40
         },
         {
           "name": "keyup",
-          "duration": 104
+          "duration": 40
         },
         {
           "name": "pointerdown",
-          "duration": 56
+          "duration": 16
         },
         {
           "name": "pointerup",
-          "duration": 56
+          "duration": 16
         },
         {
           "name": "click",
-          "duration": 56
+          "duration": 16
         },
         {
           "name": "keydown",
-          "duration": 32
+          "duration": 16
         },
         {
           "name": "keyup",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
           "duration": 24
         },
         {
-          "name": "pointerdown",
-          "duration": 40
-        },
-        {
           "name": "pointerup",
-          "duration": 40
+          "duration": 24
         },
         {
           "name": "click",
-          "duration": 40
+          "duration": 24
+        },
+        {
+          "name": "keydown",
+          "duration": 16
         },
         {
           "name": "pointerdown",
@@ -723,19 +636,31 @@
         },
         {
           "name": "pointerdown",
-          "duration": 16
+          "duration": 40
         },
         {
           "name": "pointerup",
-          "duration": 16
+          "duration": 40
         },
         {
           "name": "click",
-          "duration": 16
+          "duration": 40
         },
         {
           "name": "keydown",
           "duration": 48
+        },
+        {
+          "name": "pointerdown",
+          "duration": 112
+        },
+        {
+          "name": "pointerup",
+          "duration": 112
+        },
+        {
+          "name": "click",
+          "duration": 112
         },
         {
           "name": "pointerdown",
@@ -752,13 +677,132 @@
       ]
     },
     {
-      "width": 1920,
+      "width": 1440,
       "navigation": "pass",
       "faq": "pass",
       "blogs": "pass",
       "contact": "pass",
       "research": "pass",
       "maxObservedEventMs": 96,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 80
+        },
+        {
+          "name": "pointerup",
+          "duration": 80
+        },
+        {
+          "name": "click",
+          "duration": 80
+        },
+        {
+          "name": "keydown",
+          "duration": 48
+        },
+        {
+          "name": "keyup",
+          "duration": 48
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "keydown",
+          "duration": 80
+        },
+        {
+          "name": "keyup",
+          "duration": 64
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 64
+        },
+        {
+          "name": "pointerup",
+          "duration": 64
+        },
+        {
+          "name": "click",
+          "duration": 64
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "keydown",
+          "duration": 80
+        },
+        {
+          "name": "keyup",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 96
+        },
+        {
+          "name": "pointerup",
+          "duration": 96
+        },
+        {
+          "name": "click",
+          "duration": 96
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "navigation": "pass",
+      "faq": "pass",
+      "blogs": "pass",
+      "contact": "pass",
+      "research": "pass",
+      "maxObservedEventMs": 128,
       "events": [
         {
           "name": "pointerdown",
@@ -774,39 +818,83 @@
         },
         {
           "name": "pointerdown",
-          "duration": 96
+          "duration": 128
         },
         {
           "name": "pointerup",
-          "duration": 96
+          "duration": 128
         },
         {
           "name": "click",
-          "duration": 96
+          "duration": 128
         },
         {
           "name": "keydown",
-          "duration": 64
+          "duration": 88
         },
         {
           "name": "keyup",
+          "duration": 88
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "keydown",
+          "duration": 32
+        },
+        {
+          "name": "keyup",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 64
+        },
+        {
+          "name": "pointerup",
+          "duration": 56
+        },
+        {
+          "name": "click",
           "duration": 56
         },
         {
           "name": "pointerdown",
-          "duration": 48
+          "duration": 16
         },
         {
           "name": "pointerup",
-          "duration": 48
+          "duration": 16
         },
         {
           "name": "click",
-          "duration": 48
+          "duration": 16
         },
         {
           "name": "keydown",
-          "duration": 32
+          "duration": 96
         },
         {
           "name": "keyup",
@@ -814,67 +902,27 @@
         },
         {
           "name": "pointerdown",
-          "duration": 24
+          "duration": 96
         },
         {
           "name": "pointerup",
-          "duration": 24
+          "duration": 96
         },
         {
           "name": "click",
-          "duration": 24
-        },
-        {
-          "name": "keydown",
-          "duration": 24
-        },
-        {
-          "name": "keyup",
-          "duration": 24
+          "duration": 96
         },
         {
           "name": "pointerdown",
-          "duration": 72
+          "duration": 40
         },
         {
           "name": "pointerup",
-          "duration": 72
+          "duration": 88
         },
         {
           "name": "click",
-          "duration": 72
-        },
-        {
-          "name": "pointerdown",
-          "duration": 16
-        },
-        {
-          "name": "pointerup",
-          "duration": 16
-        },
-        {
-          "name": "click",
-          "duration": 16
-        },
-        {
-          "name": "keydown",
-          "duration": 80
-        },
-        {
-          "name": "keyup",
-          "duration": 16
-        },
-        {
-          "name": "pointerdown",
-          "duration": 80
-        },
-        {
-          "name": "pointerup",
-          "duration": 72
-        },
-        {
-          "name": "click",
-          "duration": 72
+          "duration": 88
         }
       ]
     }
