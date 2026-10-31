@@ -10,11 +10,12 @@
  * wording is deliberately general and must be checked against current Indian
  * medical-device and advertising rules before publication.
  *
- * Word counts are approximately 330-380 words per page, excluding the key
- * takeaway and related-card navigation.
+ * Word counts are approximately 330-380 words per page before related-card
+ * navigation, including the key takeaway.
  */
 
 const { siteImages } = require('./site-images');
+const { batchThreeElaborations, batchThreeFinishingNotes } = require('./nonsurgical-subpages-elaborations');
 
 function page(data) {
   const image = siteImages[data.imageKey];
@@ -1254,5 +1255,15 @@ const prp = [
 ];
 
 const pages = withoutSurgery.concat(enhancement, fillers, threads, monoThreads, prp);
+
+// Each draft is expanded with one focused, decision-useful section. Keeping the
+// additions in a separate module makes clinical review of the original supplied
+// copy and the word-count balancing notes straightforward.
+pages.forEach((item) => {
+  const elaboration = batchThreeElaborations[item.slug];
+  if (!elaboration) throw new Error('Missing Batch 3 elaboration: ' + item.slug);
+  const finishingNote = batchThreeFinishingNotes[item.slug] || '';
+  item.blocks.splice(Math.max(item.blocks.length - 1, 0), 0, prose(elaboration + finishingNote));
+});
 
 module.exports = { nonsurgicalSubpages: pages };
