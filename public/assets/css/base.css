@@ -328,11 +328,11 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   will-change: opacity, transform;
 }
 .motion-reveals .reveal--left:not(.is-revealed) {
-  --motion-x: -1.8rem;
+  --motion-x: -1rem;
   --motion-y: 0px;
 }
 .motion-reveals .reveal--right:not(.is-revealed) {
-  --motion-x: 1.8rem;
+  --motion-x: 1rem;
   --motion-y: 0px;
 }
 .motion-reveals .reveal--image {

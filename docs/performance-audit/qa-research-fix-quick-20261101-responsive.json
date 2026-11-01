@@ -1,0 +1,2198 @@
+{
+  "findings": [
+    {
+      "route": "/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 293,
+          "clipY": 24,
+          "text": "about Breast dermal fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 102,
+          "clipY": 24,
+          "text": "about PRP"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 334,
+          "clipY": 24,
+          "text": "about Thread-based procedures"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 338,
+          "clipY": 24,
+          "text": "about Sculptra & biostimulators"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 231,
+          "clipY": 24,
+          "text": "about Breast implants"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 197,
+          "clipY": 24,
+          "text": "about Fat transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 284,
+          "clipY": 24,
+          "text": "about Breast augmentation"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 277,
+          "clipY": 24,
+          "text": "about Compare all options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Treatments at a glance"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 296,
+          "clipY": 24,
+          "text": "about Appearance vs volume"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 285,
+          "clipY": 24,
+          "text": "about Reading the evidence"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 298,
+          "clipY": 24,
+          "text": "about Approved vs off-label"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 319,
+          "clipY": 24,
+          "text": "about Questions and red flags"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical-breast-enhancement/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 538,
+          "clipY": 24,
+          "text": "about Breast Augmentation: Implants & Fat Transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 623,
+          "clipY": 24,
+          "text": "about Breast Implants: Types, Placement & Long-Ter"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 724,
+          "clipY": 24,
+          "text": "about Breast Implant Safety: Rupture, ALCL, Contra"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 576,
+          "clipY": 24,
+          "text": "about Fat Transfer Breast Augmentation: What to Kn"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 655,
+          "clipY": 24,
+          "text": "about Breast Lift Surgery (Mastopexy): Shape, Scar"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 693,
+          "clipY": 24,
+          "text": "about Breast Revision Surgery: Implant Exchange, R"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 672,
+          "clipY": 24,
+          "text": "about Breast Filler Removal: Clearing Injected Fil"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 675,
+          "clipY": 24,
+          "text": "about Breast Reduction Surgery: Benefits, Techniqu"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 699,
+          "clipY": 24,
+          "text": "about Mastectomy & Chest Contouring Surgery: Patie"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/breast-enhancement-comparison/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/our-team/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/before-after-gallery/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/video-gallery/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 709,
+          "clipY": 24,
+          "text": "about Breast Anatomy Explained: Tissue, Ligaments "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 740,
+          "clipY": 24,
+          "text": "about Breast Enhancement Options Compared: Surgica"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 721,
+          "clipY": 24,
+          "text": "about Breast Enlargement Safety: Candidacy, Risks "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 458,
+          "clipY": 24,
+          "text": "about Breast Enlargement Research Library"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 589,
+          "clipY": 24,
+          "text": "about Clinical Studies, Reviews and Research Refer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 341,
+          "clipY": 24,
+          "text": "about Glossary of Medical Terms"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 571,
+          "clipY": 24,
+          "text": "about Breast Enlargement FAQs: 15 Questions Answer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 270,
+          "clipY": 24,
+          "text": "about Checking a surgeon"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Consultation checklist"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 283,
+          "clipY": 24,
+          "text": "about Understanding costs"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/faqs/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/blogs/surgical-vs-non-surgical-breast-enhancement/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/dermal-fillers/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 310,
+          "clipY": 24,
+          "text": "about Hyaluronic acid fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 340,
+          "clipY": 24,
+          "text": "about Why breasts are different"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 280,
+          "clipY": 24,
+          "text": "about Filler complications"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 292,
+          "clipY": 24,
+          "text": "about Fillers and screening"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 318,
+          "clipY": 24,
+          "text": "about Fillers vs other options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical/breast-augmentation/",
+      "vp": "320x568 (small mobile)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 301,
+          "clipY": 24,
+          "text": "about Preparing for surgery"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 247,
+          "clipY": 24,
+          "text": "about Results over time"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 293,
+          "clipY": 24,
+          "text": "about Breast dermal fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 102,
+          "clipY": 24,
+          "text": "about PRP"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 334,
+          "clipY": 24,
+          "text": "about Thread-based procedures"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 338,
+          "clipY": 24,
+          "text": "about Sculptra & biostimulators"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 231,
+          "clipY": 24,
+          "text": "about Breast implants"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 197,
+          "clipY": 24,
+          "text": "about Fat transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 284,
+          "clipY": 24,
+          "text": "about Breast augmentation"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 277,
+          "clipY": 24,
+          "text": "about Compare all options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Treatments at a glance"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 296,
+          "clipY": 24,
+          "text": "about Appearance vs volume"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 285,
+          "clipY": 24,
+          "text": "about Reading the evidence"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 298,
+          "clipY": 24,
+          "text": "about Approved vs off-label"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 319,
+          "clipY": 24,
+          "text": "about Questions and red flags"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical-breast-enhancement/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 538,
+          "clipY": 24,
+          "text": "about Breast Augmentation: Implants & Fat Transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 623,
+          "clipY": 24,
+          "text": "about Breast Implants: Types, Placement & Long-Ter"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 724,
+          "clipY": 24,
+          "text": "about Breast Implant Safety: Rupture, ALCL, Contra"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 576,
+          "clipY": 24,
+          "text": "about Fat Transfer Breast Augmentation: What to Kn"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 655,
+          "clipY": 24,
+          "text": "about Breast Lift Surgery (Mastopexy): Shape, Scar"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 693,
+          "clipY": 24,
+          "text": "about Breast Revision Surgery: Implant Exchange, R"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 672,
+          "clipY": 24,
+          "text": "about Breast Filler Removal: Clearing Injected Fil"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 675,
+          "clipY": 24,
+          "text": "about Breast Reduction Surgery: Benefits, Techniqu"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 699,
+          "clipY": 24,
+          "text": "about Mastectomy & Chest Contouring Surgery: Patie"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/breast-enhancement-comparison/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/our-team/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/before-after-gallery/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/video-gallery/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 709,
+          "clipY": 24,
+          "text": "about Breast Anatomy Explained: Tissue, Ligaments "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 740,
+          "clipY": 24,
+          "text": "about Breast Enhancement Options Compared: Surgica"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 721,
+          "clipY": 24,
+          "text": "about Breast Enlargement Safety: Candidacy, Risks "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 458,
+          "clipY": 24,
+          "text": "about Breast Enlargement Research Library"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 589,
+          "clipY": 24,
+          "text": "about Clinical Studies, Reviews and Research Refer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 341,
+          "clipY": 24,
+          "text": "about Glossary of Medical Terms"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 571,
+          "clipY": 24,
+          "text": "about Breast Enlargement FAQs: 15 Questions Answer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 270,
+          "clipY": 24,
+          "text": "about Checking a surgeon"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Consultation checklist"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 283,
+          "clipY": 24,
+          "text": "about Understanding costs"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/faqs/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/blogs/surgical-vs-non-surgical-breast-enhancement/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/dermal-fillers/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 310,
+          "clipY": 24,
+          "text": "about Hyaluronic acid fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 340,
+          "clipY": 24,
+          "text": "about Why breasts are different"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 280,
+          "clipY": 24,
+          "text": "about Filler complications"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 292,
+          "clipY": 24,
+          "text": "about Fillers and screening"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 318,
+          "clipY": 24,
+          "text": "about Fillers vs other options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical/breast-augmentation/",
+      "vp": "768x1024 (tablet portrait)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 301,
+          "clipY": 24,
+          "text": "about Preparing for surgery"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 247,
+          "clipY": 24,
+          "text": "about Results over time"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 293,
+          "clipY": 24,
+          "text": "about Breast dermal fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 102,
+          "clipY": 24,
+          "text": "about PRP"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 334,
+          "clipY": 24,
+          "text": "about Thread-based procedures"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 338,
+          "clipY": 24,
+          "text": "about Sculptra & biostimulators"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 231,
+          "clipY": 24,
+          "text": "about Breast implants"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 197,
+          "clipY": 24,
+          "text": "about Fat transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 284,
+          "clipY": 24,
+          "text": "about Breast augmentation"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 277,
+          "clipY": 24,
+          "text": "about Compare all options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Treatments at a glance"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 296,
+          "clipY": 24,
+          "text": "about Appearance vs volume"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 285,
+          "clipY": 24,
+          "text": "about Reading the evidence"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 298,
+          "clipY": 24,
+          "text": "about Approved vs off-label"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 319,
+          "clipY": 24,
+          "text": "about Questions and red flags"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical-breast-enhancement/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 538,
+          "clipY": 24,
+          "text": "about Breast Augmentation: Implants & Fat Transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 623,
+          "clipY": 24,
+          "text": "about Breast Implants: Types, Placement & Long-Ter"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 724,
+          "clipY": 24,
+          "text": "about Breast Implant Safety: Rupture, ALCL, Contra"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 576,
+          "clipY": 24,
+          "text": "about Fat Transfer Breast Augmentation: What to Kn"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 655,
+          "clipY": 24,
+          "text": "about Breast Lift Surgery (Mastopexy): Shape, Scar"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 693,
+          "clipY": 24,
+          "text": "about Breast Revision Surgery: Implant Exchange, R"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 672,
+          "clipY": 24,
+          "text": "about Breast Filler Removal: Clearing Injected Fil"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 675,
+          "clipY": 24,
+          "text": "about Breast Reduction Surgery: Benefits, Techniqu"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 699,
+          "clipY": 24,
+          "text": "about Mastectomy & Chest Contouring Surgery: Patie"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/breast-enhancement-comparison/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/our-team/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/before-after-gallery/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/video-gallery/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 709,
+          "clipY": 24,
+          "text": "about Breast Anatomy Explained: Tissue, Ligaments "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 740,
+          "clipY": 24,
+          "text": "about Breast Enhancement Options Compared: Surgica"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 721,
+          "clipY": 24,
+          "text": "about Breast Enlargement Safety: Candidacy, Risks "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 458,
+          "clipY": 24,
+          "text": "about Breast Enlargement Research Library"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 589,
+          "clipY": 24,
+          "text": "about Clinical Studies, Reviews and Research Refer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 341,
+          "clipY": 24,
+          "text": "about Glossary of Medical Terms"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 571,
+          "clipY": 24,
+          "text": "about Breast Enlargement FAQs: 15 Questions Answer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 270,
+          "clipY": 24,
+          "text": "about Checking a surgeon"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Consultation checklist"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 283,
+          "clipY": 24,
+          "text": "about Understanding costs"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/faqs/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/blogs/surgical-vs-non-surgical-breast-enhancement/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/dermal-fillers/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 310,
+          "clipY": 24,
+          "text": "about Hyaluronic acid fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 340,
+          "clipY": 24,
+          "text": "about Why breasts are different"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 280,
+          "clipY": 24,
+          "text": "about Filler complications"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 292,
+          "clipY": 24,
+          "text": "about Fillers and screening"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 318,
+          "clipY": 24,
+          "text": "about Fillers vs other options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical/breast-augmentation/",
+      "vp": "1024x768 (tablet landscape)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 301,
+          "clipY": 24,
+          "text": "about Preparing for surgery"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 247,
+          "clipY": 24,
+          "text": "about Results over time"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 293,
+          "clipY": 24,
+          "text": "about Breast dermal fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 102,
+          "clipY": 24,
+          "text": "about PRP"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 334,
+          "clipY": 24,
+          "text": "about Thread-based procedures"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 338,
+          "clipY": 24,
+          "text": "about Sculptra & biostimulators"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 231,
+          "clipY": 24,
+          "text": "about Breast implants"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 197,
+          "clipY": 24,
+          "text": "about Fat transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 284,
+          "clipY": 24,
+          "text": "about Breast augmentation"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 277,
+          "clipY": 24,
+          "text": "about Compare all options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Treatments at a glance"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 296,
+          "clipY": 24,
+          "text": "about Appearance vs volume"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 285,
+          "clipY": 24,
+          "text": "about Reading the evidence"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 298,
+          "clipY": 24,
+          "text": "about Approved vs off-label"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 319,
+          "clipY": 24,
+          "text": "about Questions and red flags"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical-breast-enhancement/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 538,
+          "clipY": 24,
+          "text": "about Breast Augmentation: Implants & Fat Transfer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 623,
+          "clipY": 24,
+          "text": "about Breast Implants: Types, Placement & Long-Ter"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 724,
+          "clipY": 24,
+          "text": "about Breast Implant Safety: Rupture, ALCL, Contra"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 576,
+          "clipY": 24,
+          "text": "about Fat Transfer Breast Augmentation: What to Kn"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 655,
+          "clipY": 24,
+          "text": "about Breast Lift Surgery (Mastopexy): Shape, Scar"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 693,
+          "clipY": 24,
+          "text": "about Breast Revision Surgery: Implant Exchange, R"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 672,
+          "clipY": 24,
+          "text": "about Breast Filler Removal: Clearing Injected Fil"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 675,
+          "clipY": 24,
+          "text": "about Breast Reduction Surgery: Benefits, Techniqu"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 699,
+          "clipY": 24,
+          "text": "about Mastectomy & Chest Contouring Surgery: Patie"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/breast-enhancement-comparison/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/our-team/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/before-after-gallery/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/video-gallery/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 741,
+          "clipY": 24,
+          "text": "about Understanding Breast Enlargement: An Evidenc"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 709,
+          "clipY": 24,
+          "text": "about Breast Anatomy Explained: Tissue, Ligaments "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 740,
+          "clipY": 24,
+          "text": "about Breast Enhancement Options Compared: Surgica"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 721,
+          "clipY": 24,
+          "text": "about Breast Enlargement Safety: Candidacy, Risks "
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 458,
+          "clipY": 24,
+          "text": "about Breast Enlargement Research Library"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 589,
+          "clipY": 24,
+          "text": "about Clinical Studies, Reviews and Research Refer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 341,
+          "clipY": 24,
+          "text": "about Glossary of Medical Terms"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 571,
+          "clipY": 24,
+          "text": "about Breast Enlargement FAQs: 15 Questions Answer"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 270,
+          "clipY": 24,
+          "text": "about Checking a surgeon"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 306,
+          "clipY": 24,
+          "text": "about Consultation checklist"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 283,
+          "clipY": 24,
+          "text": "about Understanding costs"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/faqs/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/blogs/surgical-vs-non-surgical-breast-enhancement/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 289,
+          "clipY": 24,
+          "text": "about Education & Research"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/non-surgical/dermal-fillers/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 310,
+          "clipY": 24,
+          "text": "about Hyaluronic acid fillers"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 340,
+          "clipY": 24,
+          "text": "about Why breasts are different"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 280,
+          "clipY": 24,
+          "text": "about Filler complications"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 292,
+          "clipY": 24,
+          "text": "about Fillers and screening"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 318,
+          "clipY": 24,
+          "text": "about Fillers vs other options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 417,
+          "clipY": 24,
+          "text": "about Non-Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    },
+    {
+      "route": "/surgical/breast-augmentation/",
+      "vp": "1440x900 (desktop)",
+      "overflow": 0,
+      "offenders": [],
+      "clipped": [
+        {
+          "sel": "span.sr-only",
+          "clipX": 320,
+          "clipY": 24,
+          "text": "about Augmentation candidacy"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 346,
+          "clipY": 24,
+          "text": "about The procedure step by step"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 233,
+          "clipY": 24,
+          "text": "about Incision options"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 301,
+          "clipY": 24,
+          "text": "about Preparing for surgery"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 247,
+          "clipY": 24,
+          "text": "about Results over time"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 369,
+          "clipY": 24,
+          "text": "about Surgical Breast Enlargement"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 330,
+          "clipY": 24,
+          "text": "about Safety and warning signs"
+        },
+        {
+          "sel": "span.sr-only",
+          "clipX": 393,
+          "clipY": 24,
+          "text": "about External research and sources"
+        }
+      ],
+      "brokenImages": [],
+      "distorted": []
+    }
+  ],
+  "consoleNoise": [],
+  "checks": 72
+}

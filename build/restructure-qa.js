@@ -72,7 +72,7 @@ for (const category of ['All Articles', 'Breast Enlargement Education', 'Patient
   assert(blogIndexHtml.includes('data-blog-filter="' + category + '"'), 'Blog category filter missing: ' + category);
 }
 const vikasHtml = html('/doctors/dr-vikas-singh/');
-for (const phrase of ['ABOUT DR. VIKAS SINGH', 'An International Medical Presence', 'Indian Clinical Network', 'Bengaluru locations', 'Contact & Enquiries', 'enquiries@nonsurgicalbreastenlargement.in']) {
+for (const phrase of ['ABOUT DR. VIKAS SINGH', 'An International Medical Presence', 'Indian Clinical Network', 'Bengaluru locations', 'Contact & Enquiries', 'drvikas090909@gmail.com']) {
   assert(vikasHtml.includes(phrase), 'Dr. Vikas Singh profile missing: ' + phrase);
 }
 for (const article of articles) {

@@ -543,8 +543,8 @@ finalSite.nav = [
   { label: 'About', href: '/about-us/' },
   { label: 'Contact us', href: '/contact/' }
 ];
-finalSite.footerExplore = sections;
 finalSite.footerPatient = education.filter(([u]) => ['/breast-enlargement-safety/', '/research/', '/references/', '/glossary/', '/faqs/'].includes(u)).map(([href, label]) => ({ href, label }));
+finalSite.footerExplore = sections.concat(finalSite.footerPatient);
 finalSite.medicalDisclaimerShort = '';
 
 // Apply canonical replacements to every nested content field (including authored

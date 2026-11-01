@@ -207,8 +207,11 @@ function auditInPage() {
     const r = el.getBoundingClientRect();
     if (r.width === 0 && r.height === 0) continue;
 
-    /* element sticking out of the viewport */
-    if (!scrollParent(el) && r.width > 0 && (r.right > vw + 1.5 || r.left < -1.5)) {
+    /* element sticking out of the viewport.  Transforms on elements that are
+       not currently in (or adjacent to) the viewport are reveal animations
+       whose geometry does not affect the visible page, so they are ignored. */
+    const verticallyVisible = r.bottom > -8 && r.top < window.innerHeight + 8;
+    if (verticallyVisible && !scrollParent(el) && r.width > 0 && (r.right > vw + 1.5 || r.left < -1.5)) {
       findings.offenders.push({
         sel: describe(el),
         left: Math.round(r.left), right: Math.round(r.right), width: Math.round(r.width),

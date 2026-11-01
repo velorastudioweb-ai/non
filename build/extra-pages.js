@@ -63,6 +63,7 @@ const contact = {
     },
     {
       type: 'appointment',
+      id: 'appointment',
       eyebrow: 'Appointment enquiry',
       heading: 'Tell us how we can help',
       lead: 'Share your preferred country, branch, topic and timing. The team will review your enquiry and contact you to confirm what is available. Please do not book travel until you receive confirmation.',
@@ -102,11 +103,17 @@ const locationsPage = {
   bannerEyebrow: 'Global locations',
   bannerLead: 'The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.',
   breadcrumb: [{ label: 'Locations' }],
+  showBanner: false,
   schema: [
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Our Global Locations', url: site.url + '/locations/' },
     organizationSchema(site.url)
   ],
   blocks: [
+    {
+      type: 'prose',
+      wide: true,
+      html: '<h1 class="locations-page__title">Our Global Locations</h1><p class="lead">The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.</p>'
+    },
     {
       type: 'locations',
       eyebrow: 'Where to reach us',

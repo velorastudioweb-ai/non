@@ -316,6 +316,9 @@
  var status = $('[data-status]',form);
  var submitBtn = $('[type="submit"]',form);
  var endpoint = form.getAttribute('data-endpoint') || '';
+ var countrySelect = $('#cf-preferred-country',form);
+ var branchSelect = $('#cf-preferred-branch',form);
+ var dateInput = $('#cf-date',form);
  var validators = {
  name: function (v){ return v.trim().length >= 2 || 'Please enter your full name.'; },
  email: function (v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) || 'Please enter a valid email address.'; },
@@ -326,7 +329,18 @@
    var fullDigits = ((code ? code.value : '') + v).replace(/[^\d]/g,'').length;
    return (digits >= 7 && digits <= 15 && fullDigits <= 15) || 'Please enter a valid mobile number for the selected country code.';
   },
- interest: function (v){ return v !== '' || 'Please choose an area of interest.'; },
+ preferred_country: function (v){ return v !== '' || 'Please choose your preferred country.'; },
+  preferred_branch: function (v){ return v !== '' || 'Please choose your preferred branch.'; },
+  topic: function (v){ return v !== '' || 'Please choose a treatment or consultation topic.'; },
+  preferred_date: function (v){
+   if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return 'Please choose a preferred date.';
+   var today = new Date();
+   var todayUtc = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+   var parts = v.split('-').map(Number);
+   var dateUtc = Date.UTC(parts[0], parts[1] - 1, parts[2]);
+   return dateUtc >= todayUtc || 'Please choose a date from today onwards.';
+  },
+  preferred_time: function (v){ return v !== '' || 'Please choose a preferred time.'; },
  consent: function (v){ return v === true || v === 'on' || 'Please confirm you agree to be contacted.'; }
  };
  function fieldWrap(input){ return input.closest('.field') || input.closest('.checkbox'); }
@@ -383,8 +397,11 @@
   email: $('#cf-email',form) ? $('#cf-email',form).value : '',
   country_code: $('[name="country_code"]',form) ? $('[name="country_code"]',form).value : '',
   phone: $('#cf-phone',form) ? $('#cf-phone',form).value : '',
-  interest: $('#cf-interest',form) ? $('#cf-interest',form).value : '',
-  contact_method: $('[name="contact_method"]:checked',form) ? $('[name="contact_method"]:checked',form).value : '',
+  preferred_country: countrySelect ? countrySelect.value : '',
+  preferred_branch: branchSelect ? branchSelect.value : '',
+  topic: $('#cf-topic',form) ? $('#cf-topic',form).value : '',
+  preferred_date: dateInput ? dateInput.value : '',
+  preferred_time: $('#cf-time',form) ? $('#cf-time',form).value : '',
   message: $('#cf-message',form) ? $('#cf-message',form).value : '',
   consent: $('#cf-consent',form) ? $('#cf-consent',form).checked : false,
   company_website: hp ? hp.value : ''

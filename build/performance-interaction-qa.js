@@ -131,7 +131,7 @@ const ROOT = path.resolve(__dirname, '..');
       assert.equal(invalidApi.status(), 422);
       if (!process.env.RESEND_API_KEY) {
         const unavailable = await page.request.post(base + '/api/contact', {
-          data: { name: 'Layout QA', email: 'layout-qa@example.com', country_code: '+91', phone: '9876543210', interest: 'General question about this website', contact_method: 'Email', consent: true }
+          data: { name: 'Layout QA', email: 'layout-qa@example.com', country_code: '+91', phone: '9876543210', preferred_country: 'India', preferred_branch: 'la-crown', topic: 'General breast-enlargement information', preferred_date: '2030-01-01', preferred_time: 'Any time', consent: true }
         });
         assert.equal(unavailable.status(), 503);
         const unavailableBody = await unavailable.json();
@@ -147,7 +147,11 @@ const ROOT = path.resolve(__dirname, '..');
       await page.locator('#cf-email').fill('layout-qa@example.com');
       await page.locator('#cf-country-code').selectOption('+91');
       await page.locator('#cf-phone').fill('9876543210');
-      await page.locator('#cf-interest').selectOption({ index: 1 });
+      await page.locator('#cf-preferred-country').selectOption('India');
+      await page.locator('#cf-preferred-branch').selectOption('la-crown');
+      await page.locator('#cf-topic').selectOption({ index: 1 });
+      await page.locator('#cf-date').fill('2030-01-01');
+      await page.locator('#cf-time').selectOption('Any time');
       await page.locator('#cf-consent').check();
       assert.equal(await page.locator('.field--error').count(), 0);
       await form.locator('[type="submit"]').click();
