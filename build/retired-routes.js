@@ -3,7 +3,6 @@
 // pages are served by the existing 404 handler.
 module.exports = [
   { from: '/about-dr-vikas-singh/', to: '/about-us/' },
-  { from: '/locations/', to: '/about-us/' },
   { from: '/media-and-press/', to: '/about-us/' },
   { from: '/technology-and-medical-standards/', to: '/about-us/' },
   { from: '/patient-photography-consent/', to: '/about-us/' },

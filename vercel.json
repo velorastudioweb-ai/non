@@ -220,11 +220,6 @@
       "permanent": true
     },
     {
-      "source": "/locations/",
-      "destination": "/about-us/",
-      "permanent": true
-    },
-    {
       "source": "/media-and-press/",
       "destination": "/about-us/",
       "permanent": true

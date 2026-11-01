@@ -6,7 +6,7 @@ const { site, home, pages } = require('./content');
 const { libraryPages } = require('./library');
 const { articles } = require('./blog');
 const publishedBlogs = require('./published-blogs');
-const { contact, legal } = require('./extra-pages');
+const { contact, legal, locationsPage } = require('./extra-pages');
 const { expandedPages: batchOnePages } = require('./expanded-content');
 const { surgicalSubpages: batchTwoSurgicalSubpages } = require('./surgical-subpages');
 const { nonsurgicalSubpages: batchThreeNonsurgicalSubpages } = require('./nonsurgical-subpages-content');
@@ -419,6 +419,15 @@ foundationCards.items[2].media = topicImage('compareOptions', { alt: 'Breast Enh
 foundationCards.items[3].media = topicImage('breastSafety', { alt: 'Breast Enlargement Safety' });
 finalHome.blocks.push(foundationCards);
 finalHome.blocks.push(beforeAfterFigure);
+finalHome.blocks.push({
+  type: 'locations',
+  variant: 'preview',
+  eyebrow: 'Global locations',
+  heading: 'Our global locations',
+  lead: 'Quantum Health’s contact network spans Hong Kong, Bengaluru and Dubai. Find telephone numbers, verified addresses and map links before you travel.',
+  action: { label: 'All locations & contacts', href: '/locations/' },
+  locations: site.contact.locations
+});
 const homeOrder = [
   (b) => b.type === 'hero',
   (b) => b.id === 'treatments',
@@ -429,6 +438,7 @@ const homeOrder = [
   (b) => b.eyebrow === 'Treatments',
   (b) => b.eyebrow === 'How to use this website',
   (b) => b.heading === 'A clear foundation for your decision',
+  (b) => b.type === 'locations',
   (b) => b.type === 'cta'
 ];
 finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
@@ -513,17 +523,23 @@ function blogIndexMarkup() {
   </div>`;
 }
 blogsIndex.blocks[0].html = blogIndexMarkup();
-const allPages = [finalHome, ...landings, ...topicPages, blogsIndex, ...publishedBlogs.pages, about, clone(contact), ...clone(legal), ...doctorProfiles];
+const allPages = [finalHome, ...landings, ...topicPages, blogsIndex, ...publishedBlogs.pages, about, clone(contact), clone(locationsPage), ...clone(legal), ...doctorProfiles];
 const finalSite = clone(site);
 const menuLabel = (title) => title.split(':')[0];
+// The main navigation promotes the clinician profile in the position formerly
+// used by Education & Research. Education remains available from the homepage
+// pathways, footer and in-content links, so its articles and URLs are retained.
+const primarySections = sections.slice(0, 2);
 finalSite.nav = [
   { label: 'Home', href: '/' },
-  ...sections.map((s, i) => ({
+  ...primarySections.map((s, i) => ({
     ...s,
-    shortLabel: ['Surgical', 'Non-surgical', 'Education & Research'][i],
-    children: [surgical, nonsurgical, education][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
+    shortLabel: ['Surgical', 'Non-surgical'][i],
+    children: [surgical, nonsurgical][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
+  { label: 'Meet Dr. Vikas Singh', href: '/doctors/dr-vikas-singh/' },
   { label: 'Blogs', href: '/blogs/' },
+  { label: 'Locations', href: '/locations/' },
   { label: 'About', href: '/about-us/' },
   { label: 'Contact us', href: '/contact/' }
 ];

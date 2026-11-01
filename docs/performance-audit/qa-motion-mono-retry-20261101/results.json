@@ -1,0 +1,48 @@
+{
+  "base": "http://127.0.0.1:65216",
+  "label": "qa-motion-mono-retry-20261101",
+  "allowDesktopCover": true,
+  "checks": 1,
+  "desktopCrops": [],
+  "problems": [],
+  "results": [
+    {
+      "route": "/non-surgical/mono-threads-procedure/",
+      "width": 1024,
+      "status": 200,
+      "errors": [],
+      "overflow": 0,
+      "banners": [
+        {
+          "src": "http://127.0.0.1:65216/assets/responsive/threads-d1268aa5a3c4-1024.webp",
+          "loaded": true,
+          "fit": "contain",
+          "box": {
+            "left": 0,
+            "top": 82.59375,
+            "right": 1024,
+            "bottom": 664.046875,
+            "width": 1024,
+            "height": 581.453125
+          },
+          "text": {
+            "left": 154.046875,
+            "top": 82.59375,
+            "right": 869.9375,
+            "bottom": 664.046875,
+            "width": 715.890625,
+            "height": 581.453125
+          },
+          "uncropped": true,
+          "separate": false,
+          "artOpacity": "1",
+          "loading": "eager",
+          "priority": "high"
+        }
+      ],
+      "broken": [],
+      "outside": [],
+      "images": 1
+    }
+  ]
+}

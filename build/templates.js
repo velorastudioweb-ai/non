@@ -4,8 +4,19 @@ const { IMAGES, keyFor, picture, pictureFor, pendingFrame, srcFor, bannerFor, es
 const visualPlan = require('./visual-plan');
 const assets = require('./assets');
 const { imageInfo, responsiveMarkup } = require('./responsive-images');
+const { appointmentTopics, preferredTimes, preferredCountries, branches, telHref } = require('./locations');
 /* ---------- tiny helpers ---------- */
 const raw = (s) => s; // trusted authored HTML fragments
+/* The home hero uses two authored visual lines so its entrance can be animated
+   without splitting words in the browser or changing its accessible heading. */
+function heroTitle(title) {
+  const source = String(title || '').trim();
+  const emphasis = source.match(/^(.*?)(<em\b[\s\S]*?<\/em>)\s*$/i);
+  if (emphasis) {
+    return `<span class="hero__title-line"><span class="hero__title-text">${raw(emphasis[1].trim())}</span></span><span class="hero__title-line"><span class="hero__title-text">${raw(emphasis[2])}</span></span>`;
+  }
+  return `<span class="hero__title-line"><span class="hero__title-text">${raw(source)}</span></span>`;
+}
 /* Photograph for a content item — or a designed "not published" frame when the
    content must never be faked (consented cases, not-yet-recorded videos). */
 function media(item, opts, cls) {
@@ -26,7 +37,7 @@ function head(page, site) {
   const isBlog = page.url === '/blogs/' || page.url.startsWith('/blogs/');
   const isProfile = page.url === '/about-us/' || page.url.startsWith('/doctors/');
   const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : []), ...(isBlog ? ['blog'] : []), ...(isProfile ? ['profiles'] : [])]
-    .filter(name => ['research', 'blog', 'profiles'].includes(name) || types.has(name))
+    .filter(name => name === 'form' ? (types.has('form') || types.has('appointment')) : (['research', 'blog', 'profiles'].includes(name) || types.has(name)))
     .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
   const schema = (page.schema || []).map((s) =>
 `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n  ');
@@ -58,6 +69,7 @@ ${hero ? `<link rel="preload" as="image" href="${esc(hero.src)}" imagesrcset="${
 ${componentStyles}
 <link rel="stylesheet" href="${assets.href('site.css')}">
   <script src="${assets.href('smooth-scroll.js')}" defer></script>
+  <script src="${assets.href('motion.js')}" defer></script>
 
 ${schema}
 </head>`;
@@ -94,7 +106,7 @@ return `<li class="mobile-nav__item"><a class="mobile-nav__link" href="${i.href}
 ${links}
 </ul></nav>
 <div class="header-cta">
-<a class="btn--header" href="${site.base}contact/">Contact us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn--header" href="${site.base}contact/#appointment">Request consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
 <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
@@ -104,21 +116,37 @@ ${links}
 </header>
 <div class="mobile-nav" id="mobile-nav">
   <nav aria-label="Mobile">
+<div class="mobile-nav__quick" aria-label="Quick contact">
+<a href="${telHref(site.contact.phoneTel || site.contact.phone)}">${icon('phone')}<span>Call</span></a>
+<a href="https://wa.me/${esc(site.contact.whatsapp)}" target="_blank" rel="noopener">${icon('whatsapp')}<span>WhatsApp</span></a>
+<a href="${site.base}locations/">${icon('pin')}<span>Locations</span></a>
+</div>
 <ul class="mobile-nav__list">
 ${mobileLinks}
 </ul>
 <div class="mobile-nav__cta">
-<a class="btn btn--primary btn--block" href="${site.base}contact/">Contact us</a>
+<a class="btn btn--primary btn--block" href="${site.base}contact/#appointment">Appointment enquiry</a>
 </div>
 <p class="mobile-nav__meta">${esc(site.tagline)}</p>
   </nav>
-</div>`;
+</div>
+<nav class="mobile-quickbar" aria-label="Quick contact">
+<a href="${telHref(site.contact.phoneTel || site.contact.phone)}">${icon('phone')}<span>Call</span></a>
+<a href="https://wa.me/${esc(site.contact.whatsapp)}" target="_blank" rel="noopener">${icon('whatsapp')}<span>WhatsApp</span></a>
+<a href="${site.base}locations/">${icon('pin')}<span>Locations</span></a>
+<a href="${site.base}contact/#appointment">${icon('calendar')}<span>Enquire</span></a>
+</nav>`;
 }
 /* ---------- FOOTER ---------- */
 function footer(page, site) {
   const col = (title, items) => `<div class="footer-col"><h3>${esc(title)}</h3><ul>
-${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n      ')}
+${items.map((i) => `<li><a href="${i.href}"${/^https?:/.test(i.href) ? ' target="_blank" rel="noopener"' : ''}>${esc(i.label)}</a></li>`).join('\n      ')}
 </ul></div>`;
+  const locationItems = (site.contact.locations || []).map((location) => `<li class="footer-location">
+<a href="${site.base}locations/#${location.id}">${esc(location.shortName)}</a>
+<span>${esc(location.role)}${location.phones.length ? ' · ' + esc(location.phones[0].display) : ''}</span>
+</li>`).join('\n      ');
+  const contactLinks = (site.footerContact || []).map((i) => `<li><a href="${i.href}"${/^https?:/.test(i.href) ? ' target="_blank" rel="noopener"' : ''}>${esc(i.label)}</a></li>`).join('\n      ');
   return `<footer class="site-footer">
   <div class="container">
 <div class="footer-top">
@@ -128,16 +156,27 @@ ${items.map((i) => `<li><a href="${i.href}">${esc(i.label)}</a></li>`).join('\n 
 <span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
 </a>
 <p>${esc(site.footerBlurb)}</p>
-<ul class="footer-contact-details">
-${site.contact.phone ? `<li><a href="tel:${esc(String(site.contact.phone).replace(/\s/g, ''))}">${esc(site.contact.phone)}</a></li>` : ''}
-${site.contact.email ? `<li><a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a></li>` : ''}
-${site.contact.address ? `<li>${esc(site.contact.address)}</li>` : ''}
-${site.contact.hours ? `<li>${esc(site.contact.hours)}</li>` : ''}
-</ul>
+<p class="footer-brand__note">Location details are supplied by Quantum Health. Clinical services, practitioner availability and opening hours are confirmed directly by the team.</p>
 </div>
 ${col('Explore', site.footerExplore)}
-${col('Patient information', site.footerPatient)}
-${col('Contact', site.footerContact)}
+<div class="footer-col footer-col--locations">
+<h3>Global locations</h3>
+<ul class="footer-locations">
+${locationItems}
+</ul>
+<a class="footer-locations__all" href="${site.base}locations/">All locations &amp; directions ${icon('arrow')}</a>
+</div>
+<div class="footer-col footer-col--contact">
+<h3>Contact</h3>
+<ul class="footer-links">
+${contactLinks}
+</ul>
+<ul class="footer-contact-details">
+<li><a href="${telHref(site.contact.phoneTel || site.contact.phone)}">${esc(site.contact.phoneDisplay || site.contact.phone)}</a></li>
+<li><a href="https://wa.me/${esc(site.contact.whatsapp)}" target="_blank" rel="noopener">WhatsApp ${esc(site.contact.whatsappDisplay || '')}</a></li>
+<li><a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a></li>
+</ul>
+</div>
 </div>
 ${site.medicalDisclaimerShort ? `<div class="footer-disclaimer">
 ${esc(site.medicalDisclaimerShort)}
@@ -170,11 +209,11 @@ function pageBanner(page, site) {
 .concat((page.breadcrumb || []).map((b) => b.href ? `<a href="${b.href}">${esc(b.label)}</a>` : esc(b.label)))
 .join('<span aria-hidden="true">/</span>');
   return `<section class="page-banner petals">
-  ${bannerImage ? `<div class="page-banner__art">${bannerImage}</div>` : ''}
+  ${bannerImage ? `<div class="page-banner__art page-banner__art--motion">${bannerImage}</div>` : ''}
   <span class="page-banner__figure" aria-hidden="true">${figure}</span>
   <div class="container page-banner__inner">
 ${page.bannerEyebrow ? `<p class="eyebrow eyebrow--light">${esc(page.bannerEyebrow)}</p>` : ''}
-<h1>${esc(page.h1)}</h1>
+<h1 class="page-banner__title">${esc(page.h1)}</h1>
 ${page.bannerLead ? `<p>${esc(page.bannerLead)}</p>` : ''}
 <nav class="breadcrumbs" aria-label="Breadcrumb">${crumbs}</nav>
   </div>
@@ -191,13 +230,13 @@ function renderSplit(b) {
 : responsiveMarkup(b.media || '', '(max-width: 767px) calc(100vw - 40px), (max-width: 1300px) 46vw, 580px');
   return `<div class="container">
   <div class="split ${b.reverse ? 'split--reverse' : ''}">
-<div class="split__copy reveal">
+<div class="split__copy reveal reveal--left">
 ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.body ? `<div class="prose" style="margin-top:var(--sp-3)">${raw(b.body)}</div>` : ''}
 ${b.link ? `<p style="margin-top:var(--sp-4)"><a class="link-arrow" href="${b.link.href}">${esc(b.link.label)} ${icon('arrow')}</a></p>` : ''}
 </div>
-<div class="split__media reveal" data-delay="1">
+<div class="split__media reveal reveal--image reveal--right" data-delay="1">
 <div class="media-frame ${b.mediaRatio || 'ratio-4-3'}">${mediaHtml}</div>
 ${b.script ? `<p class="script">${esc(b.script)}</p><span class="ornament ornament--split" aria-hidden="true">${flourish}</span>` : ''}
 </div>
@@ -209,7 +248,7 @@ function renderCards(b) {
   const cardRatio = b.ratio || 'ratio-16-11';
   const sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 46vw, (max-width: 1300px) ' + Math.round(100 / cols) + 'vw, ' +
     Math.floor(1240 / cols) + 'px';
-  const cards = b.items.map((it, i) => `<article class="card reveal" data-delay="${(i % cols)}">
+  const cards = b.items.map((it, i) => `<article class="card${it.href ? ' card--interactive' : ''} reveal reveal--card" data-delay="${(i % cols) + 1}">
 ${visualPlan.showCardImages(b) ? `<div class="card__media ${esc(cardRatio)}">${it.media ? responsiveMarkup(it.media, sizes) : media(it, { sizes, alt: it.imgAlt }, cardRatio)}</div>` : ''}
 <div class="card__body">
 ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
@@ -219,7 +258,7 @@ ${it.kicker ? `<p class="card__kicker">${esc(it.kicker)}</p>` : ''}
 ${it.href ? `<div class="card__footer"><a class="link-arrow" href="${it.href}">Learn more<span class="sr-only"> about ${esc(it.title)}</span> ${icon('arrow')}</a></div>` : ''}
   </article>`).join('\n    ');
   return `<div class="container">
-  <div class="section-head ${b.center ? 'section-head--center' : ''} reveal">
+  <div class="section-head ${b.center ? 'section-head--center' : ''} reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow ${b.center ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
@@ -231,13 +270,13 @@ ${cards}
 }
 function renderIconGrid(b) {
   const cols = b.cols || 4;
-  const items = b.items.map((it, i) => `<div class="icon-card reveal" data-delay="${i % cols}">
+  const items = b.items.map((it, i) => `<div class="icon-card reveal reveal--card" data-delay="${(i % cols) + 1}">
 <div class="icon-card__icon">${icon(it.icon)}</div>
 <h3>${esc(it.title)}</h3>
 <p>${esc(it.text)}</p>
   </div>`).join('\n    ');
   return `<div class="container">
-  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal">
+  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow ${b.center !== false ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
@@ -246,25 +285,25 @@ ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
 </div>`;
 }
 function renderSteps(b) {
-  const items = b.items.map((it, i) => `<div class="step reveal" data-delay="${i % 3}">
+  const items = b.items.map((it, i) => `<div class="step reveal" data-delay="${(i % 3) + 1}">
 <span class="step__num">${String(i + 1).padStart(2, '0')}</span>
 <div><h3>${esc(it.title)}</h3><p>${esc(it.text)}</p></div>
   </div>`).join('\n    ');
   return `<div class="container">
   <div class="split" style="align-items:start">
-<div class="reveal">
+<div class="reveal reveal--left">
 ${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead" style="margin-top:var(--sp-3)">${esc(b.lead)}</p>` : ''}
 <hr class="rule">
 ${b.slot || b.media ? `<div class="media-frame ratio-4-3">${b.media ? responsiveMarkup(b.media, '(max-width: 767px) calc(100vw - 40px), (max-width: 1300px) 46vw, 580px') : media(b, { sizes: '(max-width: 767px) calc(100vw - 40px), 46vw', alt: b.imgAlt }, 'ratio-4-3')}</div>` : ''}
 </div>
-<div class="steps reveal" data-delay="1">${items}</div>
+<div class="steps reveal reveal--right" data-delay="1">${items}</div>
   </div>
 </div>`;
 }
 function renderNotice(b) {
-  return `<div class="container"><div class="notice ${b.blush ? 'notice--blush' : ''} reveal">
+  return `<div class="container"><div class="notice ${b.blush ? 'notice--blush' : ''} reveal reveal--notice">
 <span class="notice__icon" aria-hidden="true">${icon(b.icon || 'info')}</span>
 <div><h3>${esc(b.title)}</h3><p>${raw(b.text)}</p></div>
   </div></div>`;
@@ -273,12 +312,12 @@ function renderTable(b) {
   const head = `<tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join('')}</tr>`;
   const rows = b.rows.map((r) => `<tr>${r.map((c) => `<td>${raw(c)}</td>`).join('')}</tr>`).join('\n    ');
   return `<div class="container">
-  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal">
+  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow ${b.center !== false ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
   </div>
-  <div class="table-wrap reveal" style="margin-top:var(--sp-5)">
+  <div class="table-wrap reveal reveal--up" data-delay="1" style="margin-top:var(--sp-5)">
 <table class="compare"><caption class="hp-field">${esc(b.heading)}</caption>
 <thead>${head}</thead>
 <tbody>${rows}</tbody>
@@ -300,7 +339,7 @@ function renderFaq(b) {
 </div>
   </div>`).join('\n    ');
   return `<div class="container container-narrow">
-  <div class="section-head section-head--center reveal">
+  <div class="section-head section-head--center reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
   </div>
@@ -308,23 +347,23 @@ ${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}
 </div>`;
 }
 function renderGallery(b) {
-  const items = b.items.map((it) => {
+  const items = b.items.map((it, i) => {
     const key = keyFor(it);
     const ratio = it.ratio || 'ratio-4-5';
     if (!key) {
-      return `<figure class="gallery-item gallery-item--pending reveal">
+       return `<figure class="gallery-item gallery-item--pending reveal reveal--card" data-delay="${(i % 4) + 1}">
 ${pendingFrame(it, ratio)}
 <figcaption class="gallery-item__cap">${esc(it.caption)}</figcaption>
   </figure>`;
     }
-    return `<button class="gallery-item reveal" type="button" data-lightbox
+     return `<button class="gallery-item reveal reveal--card" data-delay="${(i % 4) + 1}" type="button" data-lightbox
  data-full="${it.full || srcFor(key)}" data-caption="${esc(it.caption)}" aria-label="${esc('Open image: ' + it.caption)}">
 ${picture(key, { sizes: '(max-width: 640px) 100vw, (max-width: 1300px) 25vw, 300px', alt: it.imgAlt })}
 <span class="gallery-item__cap">${esc(it.caption)}</span>
   </button>`;
   }).join('\n    ');
   return `<div class="container">
-  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal">
+  <div class="section-head ${b.center !== false ? 'section-head--center' : ''} reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow ${b.center !== false ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
@@ -342,12 +381,12 @@ function renderFigure(b) {
       ? `<img src="${esc(b.src)}" alt="${esc(b.alt || '')}" width="${b.width || 1536}" height="${b.height || 1024}" loading="lazy" decoding="async">`
       : '';
   return `<div class="container">
-  <div class="section-head section-head--center reveal">
+  <div class="section-head section-head--center reveal reveal--heading">
 ${b.eyebrow ? `<p class="eyebrow eyebrow--center">${esc(b.eyebrow)}</p>` : ''}
 <h2 class="h2">${raw(b.heading)}</h2>
 ${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
   </div>
-  <figure class="figure-feature reveal" style="margin-top:var(--sp-5)">
+  <figure class="figure-feature reveal reveal--image" data-delay="1" style="margin-top:var(--sp-5)">
 <div class="figure-feature__media">${responsiveMarkup(img, sizes)}</div>
 ${(b.caption || b.note || b.src) ? `<figcaption>${b.caption ? `<span class="figure-feature__caption">${esc(b.caption)}</span>` : ''}${b.note ? `<span class="figure-feature__note">${esc(b.note)}</span>` : ''}${b.src ? `<a class="figure-feature__link" href="${esc(b.src)}" target="_blank" rel="noopener">View full-size image</a>` : ''}</figcaption>` : ''}
   </figure>
@@ -356,7 +395,7 @@ ${(b.caption || b.note || b.src) ? `<figcaption>${b.caption ? `<span class="figu
 function renderCta(b) {
   return `<div class="container">
   <span class="ornament ornament--cta" aria-hidden="true">${divider}</span>
-  <div class="cta-band__inner reveal">
+  <div class="cta-band__inner reveal reveal--up">
 <div>
 ${b.eyebrow ? `<p class="eyebrow eyebrow--light">${esc(b.eyebrow)}</p>` : ''}
 <h2>${raw(b.heading)}</h2>
@@ -458,6 +497,177 @@ ${contacts}
   </div>
 </div>`;
 }
+function renderLocations(b, site) {
+  const preview = b.variant === 'preview';
+  const action = b.action
+    ? `<p class="locations__action"><a class="btn btn--outline" href="${b.action.href}">${esc(b.action.label)} ${icon('arrow')}</a></p>`
+    : '';
+  const cards = (b.locations || []).map((location, i) => {
+    const phones = (preview ? location.phones.slice(0, 1) : location.phones)
+      .map((phone) => `<li><a href="${telHref(phone.tel)}">${esc(phone.display)}</a></li>`).join('\n          ');
+    const whatsapp = location.whatsappUrl
+      ? `<li><a class="location-card__whatsapp" href="${esc(location.whatsappUrl)}" target="_blank" rel="noopener">${icon('whatsapp')} WhatsApp enquiry</a></li>`
+      : '';
+    const address = location.address
+      ? `<address class="location-card__address">${location.addressLines.map((line) => `<span>${esc(line)}</span>`).join('')}</address>`
+      : '<p class="location-card__address location-card__address--note">Telephone contact only. No street address or walk-in office has been supplied.</p>';
+    const mapLinks = location.mapUrl && !preview
+      ? `<div class="location-card__maps">${location.embedUrl ? `<button class="map-lazy__btn" type="button" data-map-load="${esc(location.embedUrl)}" data-map-label="${esc('Google map of ' + location.name)}">${icon('pin')} Show map<span>Google Maps loads only when requested</span></button>` : ''}<a href="${esc(location.mapUrl)}" target="_blank" rel="noopener">Open in Google Maps</a><a href="${esc(location.directionsUrl)}" target="_blank" rel="noopener">Directions</a></div>`
+      : '';
+    return `<article class="location-card${location.kind === 'contact' ? ' location-card--contact' : ''} reveal reveal--card" id="${esc(location.id)}" data-delay="${(i % 2) + 1}">
+<header class="location-card__head">
+<p class="location-card__role">${esc(location.role)}</p>
+<h3>${esc(location.name)}</h3>
+</header>
+${address}
+<ul class="location-card__phones">
+${phones}
+${preview ? '' : whatsapp}
+</ul>
+${preview ? '' : `<p class="location-card__email"><a href="mailto:${esc((site.contact && site.contact.email) || '')}">${icon('mail')} Email the team</a></p>`}
+<p class="location-card__note">${esc(location.note)}</p>
+${preview ? `<a class="link-arrow location-card__link" href="/locations/#${esc(location.id)}">View location ${icon('arrow')}</a>` : `<div class="location-card__actions"><a class="btn btn--primary" href="/contact/?branch=${esc(location.id)}#appointment">Appointment enquiry</a></div>${mapLinks}`}
+    </article>`;
+  }).join('\n    ');
+  return `<div class="container">
+  <div class="section-head ${b.center ? 'section-head--center' : ''} reveal reveal--heading">
+${b.eyebrow ? `<p class="eyebrow ${b.center ? 'eyebrow--center' : ''}">${esc(b.eyebrow)}</p>` : ''}
+<h2 class="h2">${raw(b.heading)}</h2>
+${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
+  </div>
+  <div class="location-grid${preview ? ' location-grid--preview' : ''}" style="margin-top:var(--sp-5)">
+${cards}
+  </div>
+  ${action}
+</div>`;
+}
+
+function renderAppointment(b, site) {
+  const topics = (b.topics || appointmentTopics).map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
+  const countries = preferredCountries.map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
+  const times = preferredTimes.map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
+  const branchOptions = branches.map((o) => `<option value="${esc(o.value)}" data-country="${esc(o.country)}">${esc(o.label)}</option>`).join('\n          ');
+  const countryCodes = [
+    ['+91', 'India (+91)'], ['+852', 'Hong Kong (+852)'], ['+971', 'United Arab Emirates (+971)'],
+    ['+1', 'United States / Canada (+1)'], ['+44', 'United Kingdom (+44)'],
+    ['+61', 'Australia (+61)'], ['+65', 'Singapore (+65)'], ['+64', 'New Zealand (+64)'],
+    ['+27', 'South Africa (+27)'], ['+353', 'Ireland (+353)'], ['+49', 'Germany (+49)'],
+    ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'], ['+966', 'Saudi Arabia (+966)'],
+    ['+974', 'Qatar (+974)'], ['+973', 'Bahrain (+973)'], ['+968', 'Oman (+968)'],
+    ['+965', 'Kuwait (+965)'], ['+880', 'Bangladesh (+880)'], ['+92', 'Pakistan (+92)'],
+    ['+94', 'Sri Lanka (+94)']
+  ].map(([code, label]) => `<option value="${esc(code)}"${code === '+91' ? ' selected' : ''}>${esc(label)}</option>`).join('\n          ');
+  const points = (b.points || []).map((p) => `<li>${icon('check')}<span>${esc(p)}</span></li>`).join('');
+  return `<div class="container">
+  <div class="appointment">
+<div class="appointment__aside reveal reveal--left">
+${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
+<h2 class="h2">${raw(b.heading)}</h2>
+${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
+<hr class="rule">
+<ul class="appointment__points">${points}</ul>
+<div class="appointment__note">
+<p><strong>This is an enquiry, not a confirmed appointment.</strong> The team will review your preferred location, date and time and contact you to confirm what is available. Please do not book travel until you have confirmation.</p>
+<p>For urgent symptoms — including fever, spreading redness, a new lump or chest pain — contact a clinician or emergency service immediately rather than using this form.</p>
+</div>
+</div>
+<div class="appointment__form reveal reveal--right" data-delay="1">
+<form class="form form--appointment" data-consult-form data-endpoint="${esc(b.endpoint || site.contact.formEndpoint)}" data-fallback-email="${esc(site.contact.email)}" novalidate>
+<div class="form-row">
+<div class="field">
+<label for="cf-name">Patient name <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-err">
+<span class="field__error" id="cf-name-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-email">Email address <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-err">
+<span class="field__error" id="cf-email-err" role="alert"></span>
+</div>
+</div>
+<div class="form-row">
+<div class="field">
+<label for="cf-country-code">Phone country code <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-country-code" name="country_code" autocomplete="tel-country-code" required aria-describedby="cf-country-code-err">
+${countryCodes}
+</select>
+<span class="field__error" id="cf-country-code-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required placeholder="Number without country code" aria-describedby="cf-phone-hint cf-phone-err">
+<span class="field__hint" id="cf-phone-hint">Include the number the team should call or message about this enquiry.</span>
+<span class="field__error" id="cf-phone-err" role="alert"></span>
+</div>
+</div>
+<div class="form-row">
+<div class="field">
+<label for="cf-preferred-country">Preferred country <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-preferred-country" name="preferred_country" required aria-describedby="cf-preferred-country-err">
+<option value="">Please choose…</option>
+${countries}
+</select>
+<span class="field__error" id="cf-preferred-country-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-preferred-branch">Preferred branch <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-preferred-branch" name="preferred_branch" required aria-describedby="cf-preferred-branch-err">
+<option value="">Please choose…</option>
+${branchOptions}
+</select>
+<span class="field__error" id="cf-preferred-branch-err" role="alert"></span>
+</div>
+</div>
+<div class="field">
+<label for="cf-topic">Treatment or consultation topic <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-topic" name="topic" required aria-describedby="cf-topic-err">
+<option value="">Please choose…</option>
+${topics}
+</select>
+<span class="field__error" id="cf-topic-err" role="alert"></span>
+</div>
+<div class="form-row">
+<div class="field">
+<label for="cf-date">Preferred date <span class="req" aria-hidden="true">*</span></label>
+<input id="cf-date" name="preferred_date" type="date" required aria-describedby="cf-date-hint cf-date-err">
+<span class="field__hint" id="cf-date-hint">Choose a date from today onwards. The team will confirm availability.</span>
+<span class="field__error" id="cf-date-err" role="alert"></span>
+</div>
+<div class="field">
+<label for="cf-time">Preferred time <span class="req" aria-hidden="true">*</span></label>
+<select id="cf-time" name="preferred_time" required aria-describedby="cf-time-hint cf-time-err">
+<option value="">Please choose…</option>
+${times}
+</select>
+<span class="field__hint" id="cf-time-hint">Local time at your preferred branch. Exact appointment times are confirmed by the team.</span>
+<span class="field__error" id="cf-time-err" role="alert"></span>
+</div>
+</div>
+<div class="field">
+<label for="cf-message">Additional message <span class="field__hint">(optional — please do not include sensitive medical details)</span></label>
+<textarea id="cf-message" name="message" rows="4" aria-describedby="cf-message-hint"></textarea>
+<span class="field__hint" id="cf-message-hint">Tell us anything that would help the team route your enquiry, such as a preferred language or a question about the information on this website.</span>
+</div>
+<div class="hp-field" aria-hidden="true">
+<label for="cf-company">Company website</label>
+<input id="cf-company" name="company_website" type="text" tabindex="-1" autocomplete="off">
+</div>
+<div class="checkbox">
+<input id="cf-consent" name="consent" type="checkbox" required aria-describedby="cf-consent-err">
+<label for="cf-consent">I consent to Quantum Health using the details above to respond to this appointment enquiry and I have read the <a href="${site.base}privacy-policy/" style="text-decoration:underline">privacy notice</a>. <span class="req" aria-hidden="true">*</span>
+<span class="field__error" id="cf-consent-err" role="alert"></span>
+</label>
+</div>
+<div class="form__submit">
+<button class="btn btn--primary" type="submit">${esc(b.submitLabel || 'Send appointment enquiry')} ${icon('arrow')}</button>
+<span class="field__hint">Your information is handled confidentially. No appointment is confirmed until the team replies.</span>
+</div>
+<div class="form__status" data-status role="status" aria-live="polite"></div>
+</form>
+</div>
+  </div>
+</div>`;
+}
 function renderFeatureStrip(items) {
   const chips = items.map((it) => `<div class="feature-chip">
 <span class="feature-chip__icon" aria-hidden="true">${icon(it.icon)}</span>
@@ -475,7 +685,7 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="sync">', '100vw')}</div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img class="hero__image" src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="sync">', '100vw')}</div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
@@ -486,7 +696,7 @@ function renderHero(b, site) {
     <div class="hero__body">
       <div class="hero__copy">
         ${b.eyebrow ? `<p class="eyebrow hero__eyebrow">${esc(b.eyebrow)}</p>` : ''}
-        <h1 class="hero__title">${raw(b.title)}</h1>
+         <h1 class="hero__title">${heroTitle(b.title)}</h1>
         ${b.uppercase ? `<p class="hero__uppercase-stmt">${esc(b.uppercase)}</p>` : ''}
         ${b.lead ? `<p class="hero__lead">${esc(b.lead)}</p>` : ''}
         <div class="hero__actions">
@@ -522,6 +732,8 @@ case 'faq': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}
 case 'gallery': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderGallery(b)}</section>`;
 case 'figure': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderFigure(b)}</section>`;
 case 'form': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderForm(b, site)}</section>`;
+case 'locations': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderLocations(b, site)}</section>`;
+case 'appointment': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderAppointment(b, site)}</section>`;
 case 'cta': return `<section${sid} class="section section--tight cta-band petals">${renderCta(b)}</section>`;
 default: return '';
   }
@@ -539,11 +751,11 @@ function layout(page, site) {
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">
 ${header(page, site)}
-<div class="pre-loader" aria-label="Page loading" role="status">
+<div class="pre-loader" aria-label="Preparing Quantum Health" role="status">
   <div class="loader-inner">
-    <svg class="loader-svg" viewBox="0 0 80 80" width="40" height="40" aria-hidden="true">
-      <circle cx="40" cy="40" r="34" fill="none" stroke-width="6" stroke-miterlimit="10" id="loader-circle"/>
-    </svg>
+    <span class="loader-mark" aria-hidden="true">${icon('lotus')}</span>
+    <span class="loader-name" aria-hidden="true">${esc(site.name)}</span>
+    <span class="loader-line" aria-hidden="true"><span></span></span>
   </div>
 </div>
 <main id="main" tabindex="-1">

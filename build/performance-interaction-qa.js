@@ -39,6 +39,27 @@ const ROOT = path.resolve(__dirname, '..');
       await page.goto(base, { waitUntil: 'load' });
       assert.equal(await page.evaluate(() => document.documentElement.classList.contains('js')), true, 'Progressive-enhancement bootstrap did not run');
       await page.evaluate(() => document.fonts.ready);
+      // Motion readiness: reveals enable only after in-view targets are marked,
+      // and the authored homepage hero must finish its entrance behind the loader.
+      await page.waitForFunction(() => document.documentElement.classList.contains('motion-reveals'), null, { timeout: 5000 });
+      assert.equal(await page.evaluate(() => document.documentElement.classList.contains('motion-ready')), true, 'Motion system did not initialise');
+      await page.waitForFunction(() => {
+        const title = document.querySelector('.page-home .hero__title-text');
+        return !title || Number(getComputedStyle(title).opacity) > 0.99;
+      }, null, { timeout: 3000 });
+      // A below-the-fold reveal must resolve once it enters the viewport.
+      const lastReveal = page.locator('.reveal').last();
+      assert(await lastReveal.count() > 0, 'No reveal targets were authored');
+      await lastReveal.scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => {
+        const targets = document.querySelectorAll('.reveal');
+        const last = targets[targets.length - 1];
+        return !last || (last.classList.contains('is-revealed') && Number(getComputedStyle(last).opacity) > 0.99);
+      }, null, { timeout: 5000 });
+      assert((await lastReveal.evaluate(el => Number(getComputedStyle(el).opacity))) > 0.99, 'Scrolled reveal did not become visible');
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+      // Compact and touch navigation stays immediate: no desktop handoff layer.
+      if (width < 1024) assert.equal(await page.locator('.page-transition').count(), 0, 'Touch navigation must not use the desktop transition');
       await page.evaluate(() => window.scrollTo({ top: 100, behavior: 'instant' }));
       await page.waitForFunction(() => document.querySelector('.site-header').classList.contains('is-scrolled'));
       await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
@@ -87,6 +108,9 @@ const ROOT = path.resolve(__dirname, '..');
        assert.equal(await page.locator('.blog-card').count(), 10);
        await page.locator('[data-blog-filter="Patient Perspectives"]').click();
        assert.equal(await page.locator('.blog-card:visible').count(), 5);
+       // The filter animation must hand transform back to the reveal/hover layer.
+       await page.waitForFunction(() => !document.querySelector('.blog-card.filter-enter'), null, { timeout: 3000 });
+       assert.equal(await page.locator('.blog-card.filter-enter').count(), 0, 'Blog filter animation class was not cleaned up');
        await page.locator('#blog-search').fill('recovery');
        assert.equal(await page.locator('.blog-card:visible').count(), 1);
        assert.match(await page.locator('#blog-results').innerText(), /^1 article matching your filters$/);
@@ -158,7 +182,7 @@ const ROOT = path.resolve(__dirname, '..');
       const researchEvents = await page.evaluate(() => window.measuredEvents);
       const events = [...navEvents, ...faqEvents, ...researchEvents];
       assert.deepEqual(errors, []);
-       results.push({ width, navigation: 'pass', faq: 'pass', blogs: 'pass', contact: 'pass', research: 'pass', maxObservedEventMs: Math.max(0, ...events.map(e => e.duration)), events });
+       results.push({ width, navigation: 'pass', faq: 'pass', blogs: 'pass', contact: 'pass', research: 'pass', motion: 'pass', maxObservedEventMs: Math.max(0, ...events.map(e => e.duration)), events });
       await context.close();
       console.log('Interactions passed at ' + width + 'px');
     }
@@ -171,9 +195,51 @@ const ROOT = path.resolve(__dirname, '..');
       assert.equal(await page.locator('.reveal').first().evaluate(el => getComputedStyle(el).opacity), '1');
       await context.close();
     }
+    // Reduced motion: no reveal gating, no motion styling and no page handoff.
+    {
+      const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
+      const page = await context.newPage();
+      const errors = [];
+      page.on('pageerror', e => errors.push(String(e)));
+      await page.goto(base, { waitUntil: 'load' });
+      await page.evaluate(() => document.fonts.ready);
+      assert.equal(await page.evaluate(() => document.documentElement.classList.contains('motion-reveals')), false, 'Reduced motion enabled reveal gating');
+      assert.equal(await page.evaluate(() => document.documentElement.classList.contains('motion-ready')), false, 'Reduced motion enabled motion styling');
+      assert.equal(await page.locator('.page-transition').count(), 0, 'Reduced motion created a page transition');
+      assert.equal(await page.locator('.reveal').first().evaluate(el => getComputedStyle(el).opacity), '1', 'Reduced motion hid reveal content');
+      assert.deepEqual(errors, []);
+      await context.close();
+      console.log('Reduced motion passed');
+    }
+    // Fine-pointer desktop navigation uses the short handoff without blocking input.
+    {
+      const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+      await context.addInitScript(() => {
+        const real = window.matchMedia.bind(window);
+        window.matchMedia = query => query === '(hover: hover) and (pointer: fine)'
+          ? { matches: true, media: query, onchange: null, addListener() {}, removeListener() {}, addEventListener() {}, removeEventListener() {}, dispatchEvent() { return false; } }
+          : real(query);
+      });
+      const page = await context.newPage();
+      const errors = [];
+      page.on('pageerror', e => errors.push(String(e)));
+      await page.goto(base, { waitUntil: 'load' });
+      const overlay = page.locator('.page-transition');
+      assert.equal(await overlay.count(), 1, 'Fine-pointer desktop did not create a page transition');
+      assert.equal(await overlay.evaluate(el => getComputedStyle(el).pointerEvents), 'none', 'Transition overlay blocks input at rest');
+      await page.locator('.site-footer a[href="/surgical-breast-enlargement/"]').first().scrollIntoViewIfNeeded();
+      await page.waitForTimeout(100);
+      await page.locator('.site-footer a[href="/surgical-breast-enlargement/"]').first().click();
+      await page.waitForFunction(() => document.documentElement.classList.contains('is-leaving'), null, { timeout: 2000 });
+      await page.waitForURL(/\/surgical-breast-enlargement\/$/);
+      assert.equal(await page.evaluate(() => document.documentElement.classList.contains('is-leaving')), false, 'Transition state survived navigation');
+      assert.deepEqual(errors, []);
+      await context.close();
+      console.log('Desktop page transition passed');
+    }
     const out = path.join(ROOT, 'docs/performance-audit');
     fs.mkdirSync(out, { recursive: true });
     fs.writeFileSync(path.join(out, label + '-interactions.json'), JSON.stringify({ base, note: 'Lab Event Timing observations, not field INP.', results }, null, 2));
-    console.log('PASS: navigation, FAQ, blog filters/search/article links, contact validation, research search/year/sort/pagination/abstracts, hashes and no-JS rendering.');
+    console.log('PASS: navigation, FAQ, blog filters/search/article links, contact validation, research search/year/sort/pagination/abstracts, hashes, reveals, reduced motion, desktop handoff and no-JS rendering.');
   } finally { await browser.close(); await server.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

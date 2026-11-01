@@ -298,8 +298,77 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   white-space: nowrap; border: 0;
 }
 
-/* Content paints immediately, including when scripts are delayed or disabled. */
-.reveal { opacity: 1; transform: none; }
+/* Content paints immediately, including when scripts are delayed or disabled.
+   The motion script only enables `motion-reveals` after visible targets have
+   been marked revealed, preventing a flash of hidden content on first paint. */
+.reveal {
+  --motion-x: 0px;
+  --motion-y: 0px;
+  --motion-scale: 1;
+  --interaction-x: 0px;
+  --interaction-y: 0px;
+  --reveal-delay: 0ms;
+  opacity: 1;
+  transform: translate3d(
+    calc(var(--motion-x) + var(--interaction-x)),
+    calc(var(--motion-y) + var(--interaction-y)),
+    0
+  ) scale(var(--motion-scale));
+}
+.motion-reveals .reveal {
+  transition:
+    opacity .68s var(--ease) var(--reveal-delay),
+    transform .78s var(--ease) var(--reveal-delay),
+    clip-path .82s var(--ease) var(--reveal-delay);
+}
+.motion-reveals .reveal:not(.is-revealed) {
+  --motion-y: 1.65rem;
+  --motion-scale: .985;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+.motion-reveals .reveal--left:not(.is-revealed) {
+  --motion-x: -1.8rem;
+  --motion-y: 0px;
+}
+.motion-reveals .reveal--right:not(.is-revealed) {
+  --motion-x: 1.8rem;
+  --motion-y: 0px;
+}
+.motion-reveals .reveal--image {
+  clip-path: inset(0 0 0 0 round var(--radius-md));
+}
+.motion-reveals .reveal--image:not(.is-revealed) {
+  clip-path: inset(0 0 12% 0 round var(--radius-md));
+}
+.motion-reveals .reveal--heading .h2 {
+  transition: clip-path .72s var(--ease) calc(var(--reveal-delay) + 40ms);
+}
+.motion-reveals .reveal--heading:not(.is-revealed) .h2 {
+  clip-path: inset(0 100% 0 0);
+}
+.motion-reveals .reveal.is-revealed { will-change: auto; }
+
+/* A short native page handoff makes route changes feel intentional while
+   preserving normal links, browser history and static-page navigation. */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-transition);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 80% at 18% 18%, var(--gold-glow-soft), transparent 72%),
+    linear-gradient(135deg, var(--burgundy-darker), var(--burgundy-deep));
+  transition: opacity .17s var(--ease), visibility 0s linear .17s;
+}
+.is-leaving .page-transition {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity .17s var(--ease), visibility 0s linear 0s;
+}
 
 /* ============================ responsive ================================ */
 @media (max-width: 767px) {
@@ -307,6 +376,15 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   .petals::before {
     background-image: var(--petals-image-mobile);
     animation: none;
+  }
+  .motion-reveals .reveal:not(.is-revealed) {
+    --motion-y: 1rem;
+    --motion-scale: 1;
+  }
+  .motion-reveals .reveal--left:not(.is-revealed),
+  .motion-reveals .reveal--right:not(.is-revealed) {
+    --motion-x: 0px;
+    --motion-y: 1rem;
   }
 }
 
@@ -338,6 +416,13 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
     transition-duration: .001ms !important;
     transition-delay: 0s !important;
   }
-  .js .reveal { opacity: 1; transform: none; }
+  .js .reveal {
+    opacity: 1;
+    clip-path: none;
+    --motion-x: 0px;
+    --motion-y: 0px;
+    --motion-scale: 1;
+  }
+  .js .reveal--heading .h2 { clip-path: none; }
   .petals::before { animation: none; }
 }

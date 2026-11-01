@@ -550,9 +550,13 @@ async function main() {
         if (res && res.status() >= 400 && route !== '/404.html') {
           findings.push({ route, vp: vp.name, fatal: 'HTTP ' + res.status() });
         }
-        /* settle lazy content: nudge scroll so IntersectionObserver reveals run */
+        /* Settle lazy content: nudge scroll so IntersectionObserver reveals run.
+           Motion-enabled builds intentionally animate newly visible sections;
+           audit their final geometry rather than a transform mid-flight. */
         await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-        await page.waitForTimeout(120);
+        const motionSettle = await page.evaluate(() =>
+          document.documentElement.classList.contains('motion-ready') ? 900 : 120);
+        await page.waitForTimeout(motionSettle);
         await page.evaluate(() => window.scrollTo(0, 0));
         await page.waitForTimeout(80);
 

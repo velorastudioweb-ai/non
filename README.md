@@ -8,8 +8,10 @@ modules and `content/sections/`.
 
 Run `npm run build`, `npm run qa` (build, links/assets and migration invariants)
 or `npm run dev` (build + local server). The approved navigation is Home,
-Surgical Breast Enlargement, Non-Surgical Breast Enlargement, Education &
-Research, About. Individual topics are linked from category cards.
+Surgical Breast Enlargement, Non-Surgical Breast Enlargement, Meet Dr. Vikas
+Singh, Blogs, About and Contact us. Education & Research remains reachable
+from the homepage pathways, footer and in-content links. Individual topics are
+linked from category cards.
 
 After changing the redirect registry, run `node build/sync-redirects.js` to
 update Vercel's permanent redirects. QA checks that the deployment table agrees
@@ -166,7 +168,7 @@ whole site updates at once. Semantic aliases (`--bg`, `--text`, `--accent`,
 * Transparent over the hero, fades to dark burgundy on scroll.
 * Ivory nav text, rose-pink active state with a thin underline.
 * Logo: gold four-petal mark + "Quantum Health" / "Independent patient education".
-* Five primary links wrap at desktop widths. A hamburger toggle opens the mobile
+* Primary navigation links wrap at desktop widths. A hamburger toggle opens the mobile
   drawer; contact information is also available in the footer.
 * Mobile drawer is a full-screen deep-burgundy panel with ivory text and
   rose-pink current-page markers.

@@ -1,6 +1,7 @@
 'use strict';
 
 const { siteImages, topicImage } = require('./site-images');
+const { CONTACT_EMAIL, WHATSAPP, locations } = require('./locations');
 
 /* =============================================================================
    Site content — Breast Enlargement Guide (nonsurgicalbreastenlargement.in)
@@ -25,25 +26,31 @@ const site = {
   base: '/',
   defaultOg: '/assets/img/og-cover.svg',
   contact: {
-    // Only the site mailbox is published. No phone number, clinic address or
-    // opening hours are listed because this website is an educational
-    // resource, not a clinic, and no such details have been verified.
-    phone: '',
-    email: 'enquiries@nonsurgicalbreastenlargement.in',
+    // Central contact details. Global addresses and branch numbers live in
+    // ./locations.js so the header, footer, contact page, locations page,
+    // doctor profile, form and schema always publish the same values.
+    phone: WHATSAPP.display,
+    phoneDisplay: WHATSAPP.display,
+    phoneTel: WHATSAPP.number,
+    email: CONTACT_EMAIL,
+    whatsapp: WHATSAPP.number,
+    whatsappDisplay: WHATSAPP.display,
     address: '',
     addressNote: '',
     hours: '',
+    locations,
     // Same-origin serverless endpoint. It returns an honest 503 when mail
     // credentials are absent and never reports a false success.
     formEndpoint: '/api/contact'
   },
-  footerBlurb: 'An independent educational website about breast enlargement — what works, what does not, the published evidence behind each option and the safety questions to ask. This is not a clinic, and no treatments are offered or sold here.',
+  footerBlurb: 'Independent, evidence-based education about breast enlargement — what works, what does not, the published evidence and the safety questions to ask. Quantum Health’s international locations and enquiry contacts are listed for patients who wish to speak to the team. Clinical availability is confirmed directly.',
   medicalDisclaimerShort: '',
   nav: [
     { label: 'Home', href: '/' },
     { label: 'Surgical Breast Enlargement', href: '/surgical-breast-enlargement/' },
     { label: 'Non-Surgical Breast Enlargement', href: '/non-surgical-breast-enlargement/' },
     { label: 'Education & Research', href: '/education-research/' },
+    { label: 'Locations', href: '/locations/' },
     { label: 'About', href: '/about-us/' }
   ],
   navSecondary: [],
@@ -74,8 +81,10 @@ const site = {
     { label: 'FAQs', href: '/faqs/' }
   ],
   footerContact: [
-    { label: 'Contact us', href: '/contact/' },
-    { label: 'Enquiries by email', href: 'mailto:enquiries@nonsurgicalbreastenlargement.in' }
+    { label: 'Contact & appointment enquiry', href: '/contact/' },
+    { label: 'Our global locations', href: '/locations/' },
+    { label: 'Email the team', href: 'mailto:' + CONTACT_EMAIL },
+    { label: 'WhatsApp enquiries', href: 'https://wa.me/' + WHATSAPP.number }
   ],
   footerLegal: [
     { label: 'Privacy policy', href: '/privacy-policy/' },
@@ -91,7 +100,7 @@ const stdCta = (over) => Object.assign({
   eyebrow: 'Your journey starts with information',
   heading: 'Keep exploring the evidence',
   text: 'Use the guides, comparisons and research libraries on this website to prepare your questions — then discuss them with a qualified, registered healthcare professional who can assess you in person.',
-  button: { label: 'Contact us', href: '/contact/' }
+  button: { label: 'Make an appointment enquiry', href: '/contact/#appointment' }
 }, over || {});
 
 /* =============================================================================

@@ -256,10 +256,12 @@
   --dur-slow: .9s;
 
   /* --------------------------------------------------------------- layers */
-  --z-menu: 950;
-  --z-header: 960;
-  --z-lightbox: 1000;
-  --z-vignette: 2400;
-  --z-grain: 2500;
-  --z-skip: 2600;
+   --z-menu: 950;
+   --z-header: 960;
+   --z-lightbox: 1000;
+   --z-transition: 2300;
+   --z-vignette: 2400;
+   --z-grain: 2500;
+   --z-loader: 2700;
+   --z-skip: 2600;
 }

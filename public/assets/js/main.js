@@ -10,12 +10,16 @@
  var $$ = function (s,c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
  /* Keep the initial loading screen brief: the document is usable as soon as
     its DOM is ready, so it must not wait for below-the-fold images. */
- var preLoader = $('.pre-loader');
- if (preLoader) {
-  var hidePreLoader = function (){ preLoader.setAttribute('aria-hidden','true'); };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hidePreLoader, { once: true });
-  else window.requestAnimationFrame(hidePreLoader);
- }
+  var preLoader = $('.pre-loader');
+  var markPageReady = function () {
+   window.requestAnimationFrame(function () {
+    document.documentElement.classList.add('page-ready');
+    if (preLoader) preLoader.setAttribute('aria-hidden','true');
+   });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', markPageReady, { once: true });
+  else markPageReady();
+  window.addEventListener('pageshow', markPageReady);
  // Incoming source-library links reveal their collapsed collection.
  function revealSourceHash(){
   var id;
@@ -256,24 +260,46 @@
   if (blogHub){
   var blogSearch = $('#blog-search',blogHub);
   var blogResults = $('#blog-results',blogHub);
-  var blogCards = $$('.blog-card',blogHub);
-  var blogFilters = $$('[data-blog-filter]',blogHub);
-  var activeBlogFilter = 'All Articles';
-  function blogPlural(count){ return count === 1 ? 'article' : 'articles'; }
-  function applyBlogFilter(){
+   var blogCards = $$('.blog-card',blogHub);
+   var blogFilters = $$('[data-blog-filter]',blogHub);
+   var activeBlogFilter = 'All Articles';
+   var hasAppliedBlogFilter = false;
+   /* The filter animation owns transform while it runs. Remove its class at
+      completion so the reusable reveal transform and hover lift take over. */
+   blogCards.forEach(function (card){
+    card.addEventListener('animationend', function (event){
+     if (event.animationName === 'blog-card-filter-in') card.classList.remove('filter-enter');
+    });
+   });
+   function blogPlural(count){ return count === 1 ? 'article' : 'articles'; }
+   function applyBlogFilter(){
   var query = blogSearch ? blogSearch.value.trim().toLowerCase() : '';
   var visible = 0;
-  blogCards.forEach(function (card){
+   var revealIndex = 0;
+   blogCards.forEach(function (card){
   var category = card.getAttribute('data-category') || '';
   var searchable = card.getAttribute('data-search') || '';
   var matchesCategory = activeBlogFilter === 'All Articles' || category === activeBlogFilter;
   var matchesSearch = !query || searchable.indexOf(query) !== -1;
   var show = matchesCategory && matchesSearch;
-  card.hidden = !show;
-  if (show) visible += 1;
-  });
-  if (blogResults) blogResults.textContent = visible + ' ' + blogPlural(visible) + (query || activeBlogFilter !== 'All Articles' ? ' matching your filters' : '');
-  }
+   if (show) {
+    card.hidden = false;
+    if (hasAppliedBlogFilter) {
+     card.style.setProperty('--filter-delay', Math.min(revealIndex, 5) * 45 + 'ms');
+     card.classList.remove('filter-enter');
+     void card.offsetWidth;
+     card.classList.add('filter-enter');
+    }
+    revealIndex += 1;
+    visible += 1;
+   } else {
+    card.classList.remove('filter-enter');
+    card.hidden = true;
+   }
+   });
+   if (blogResults) blogResults.textContent = visible + ' ' + blogPlural(visible) + (query || activeBlogFilter !== 'All Articles' ? ' matching your filters' : '');
+   hasAppliedBlogFilter = true;
+   }
   blogFilters.forEach(function (button){
   button.addEventListener('click',function (){
   activeBlogFilter = button.getAttribute('data-blog-filter') || 'All Articles';

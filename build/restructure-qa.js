@@ -10,7 +10,10 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 9);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Education & Research', 'Blogs', 'About', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Meet Dr. Vikas Singh', 'Blogs', 'Locations', 'About', 'Contact us']);
+const vikasNav = site.nav.find((n) => n.label === 'Meet Dr. Vikas Singh');
+assert(vikasNav && vikasNav.href === '/doctors/dr-vikas-singh/', 'Primary navigation must link to the Dr. Vikas Singh profile');
+assert(!site.nav.some((n) => n.href === '/education-research/'), 'Education & Research must not remain in the primary navigation');
 assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory and leadership must be consolidated into About');
 assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/about-us/#our-doctors'));
 assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
@@ -52,14 +55,26 @@ assert(!homeHtml.includes('This website provides general education only. Individ
 const contactHtml = html('/contact/');
 assert(contactHtml.includes('id="cf-country-code" name="country_code" autocomplete="tel-country-code" required'), 'Contact form must require a country calling code');
 assert(contactHtml.includes('id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" required'), 'Contact form must require a mobile number');
-for (const interest of ['General breast-enlargement information', 'Surgical options', 'Non-surgical options', 'Evidence and research', 'Safety and risks', 'Content correction', 'Source or reference suggestion', 'General question about this website', 'Other']) {
-  assert(contactHtml.includes('>' + interest + '</option>'), 'Contact interest option missing: ' + interest);
-}
-assert(contactHtml.includes('Phone follow-up is only about your website enquiry'), 'Contact page must limit phone follow-up to website enquiries');
+assert(contactHtml.includes('id="cf-preferred-country" name="preferred_country"'), 'Contact form must collect a preferred country');
+assert(contactHtml.includes('id="cf-preferred-branch" name="preferred_branch"'), 'Contact form must collect a preferred branch');
+assert(contactHtml.includes('id="cf-topic" name="topic"'), 'Contact form must collect a treatment or consultation topic');
+assert(contactHtml.includes('id="cf-date" name="preferred_date" type="date"'), 'Contact form must collect a preferred date');
+assert(contactHtml.includes('id="cf-time" name="preferred_time"'), 'Contact form must collect a preferred time');
+assert(contactHtml.includes('No appointment is confirmed until the team replies.'), 'Contact form must not imply an appointment is confirmed');
+assert(contactHtml.includes('data-fallback-email="' + site.contact.email + '"'), 'Contact form must expose the fallback mailbox');
 assert(!contactHtml.includes('Preferred consultation location') && !contactHtml.includes('To be confirmed by the clinic'), 'Clinic-specific location fields must not appear on the education-site contact form');
 const { articles } = require('./published-blogs');
 const blogIndexHtml = html('/blogs/');
 assert.equal(articles.length, 10, 'The published blog index must contain ten articles');
+assert(!blogIndexHtml.includes('before-after'), 'The blog index must not contain a Before & After section');
+assert(!blogIndexHtml.includes('figure-feature'), 'The blog index must not contain a Before & After figure');
+for (const category of ['All Articles', 'Breast Enlargement Education', 'Patient Perspectives']) {
+  assert(blogIndexHtml.includes('data-blog-filter="' + category + '"'), 'Blog category filter missing: ' + category);
+}
+const vikasHtml = html('/doctors/dr-vikas-singh/');
+for (const phrase of ['ABOUT DR. VIKAS SINGH', 'An International Medical Presence', 'Indian Clinical Network', 'Bengaluru locations', 'Contact & Enquiries', 'enquiries@nonsurgicalbreastenlargement.in']) {
+  assert(vikasHtml.includes(phrase), 'Dr. Vikas Singh profile missing: ' + phrase);
+}
 for (const article of articles) {
   const articleHtml = html('/blogs/' + article.slug + '/');
   assert(articleHtml.includes('· ' + article.readingMinutes + ' min read'), 'Calculated reading time missing: ' + article.slug);
