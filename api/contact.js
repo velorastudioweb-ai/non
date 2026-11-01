@@ -289,6 +289,7 @@ function clientIp(req) {
 }
 
 function rateLimit(req) {
+  if (process.env.DISABLE_RATE_LIMIT === '1') return true;
   const now = Date.now();
   const ip = clientIp(req);
   const entry = rateLimitState.get(ip);

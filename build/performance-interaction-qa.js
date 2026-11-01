@@ -11,6 +11,8 @@ const label = arg('--label') || 'local';
 const data = require('../public/assets/data/pmc-breast-enlargement.json');
 const ROOT = path.resolve(__dirname, '..');
 
+process.env.DISABLE_RATE_LIMIT = '1';
+
 (async () => {
   const server = await startAuditServer(base);
   base = server.base;
@@ -126,11 +128,13 @@ const ROOT = path.resolve(__dirname, '..');
       // honest failure rather than a false success; no lead is actually sent.
       assert.equal(await form.getAttribute('data-endpoint'), '/api/contact');
       const invalidApi = await page.request.post(base + '/api/contact', {
-        data: { name: 'A', email: 'not-an-email', country_code: '+91', phone: '1', interest: 'Unknown', contact_method: 'Phone' }
+        headers: { 'X-Forwarded-For': '10.0.0.' + width },
+        data: { name: 'A', email: 'not-an-email', country_code: '+91', phone: '1', preferred_country: 'India', preferred_branch: 'la-crown', topic: 'General breast-enlargement information', preferred_date: '2020-01-01', preferred_time: 'Morning (10:00–13:00)', consent: false }
       });
       assert.equal(invalidApi.status(), 422);
       if (!process.env.RESEND_API_KEY) {
         const unavailable = await page.request.post(base + '/api/contact', {
+          headers: { 'X-Forwarded-For': '10.0.0.' + width },
           data: { name: 'Layout QA', email: 'layout-qa@example.com', country_code: '+91', phone: '9876543210', preferred_country: 'India', preferred_branch: 'la-crown', topic: 'General breast-enlargement information', preferred_date: '2030-01-01', preferred_time: 'Any time', consent: true }
         });
         assert.equal(unavailable.status(), 503);
@@ -155,7 +159,7 @@ const ROOT = path.resolve(__dirname, '..');
       await page.locator('#cf-consent').check();
       assert.equal(await page.locator('.field--error').count(), 0);
       await form.locator('[type="submit"]').click();
-      await page.waitForFunction(() => !/Sending your enquiry/i.test(document.querySelector('[data-status]').textContent));
+      await page.waitForFunction(() => !/Sending your appointment enquiry/i.test(document.querySelector('[data-status]').textContent));
       const feedback = await page.locator('[data-status]').innerText();
       assert(/not.*sent|not.*connected|not.*configured/i.test(feedback), feedback);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
