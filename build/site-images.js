@@ -56,9 +56,8 @@ const doctorPortraits = Object.freeze({
   arivazhagan: { src: '/dr-arivazhagan.png', width: 367, height: 348 },
   sekhar: { src: '/dr-sekhar.png', width: 382, height: 372 },
   alisha: { src: '/dr-alisha-khan.png', width: 208, height: 246 },
-  // Dr. Nandita intentionally uses the initials fallback: the only supplied
-  // file was byte-identical to the breast-implants banner, so it is not a
-  // verified portrait and must not be presented as one.
+  subramini: { src: '/dr-subramini.png', width: 376, height: 362 },
+  nandita: { src: '/dr-nandita.png', width: 377, height: 370 },
   sunitha: { src: '/dr-sunitha-devaraj.png', width: 426, height: 452 }
 });
 

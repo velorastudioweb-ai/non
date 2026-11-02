@@ -1305,6 +1305,28 @@
       }
     ]
   },
+  "/dr-subramini.png": {
+    "width": 376,
+    "height": 362,
+    "sha256": "1e4e8f5369e2ca1028dde55ef67f4fb4f7afb6fed890296022c18092e72b84d6",
+    "bytes": 140923,
+    "format": "webp",
+    "src": "/assets/responsive/dr-subramini-1e4e8f5369e2-376.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-subramini-1e4e8f5369e2-320.webp",
+        "width": 320,
+        "height": 308,
+        "bytes": 7368
+      },
+      {
+        "src": "/assets/responsive/dr-subramini-1e4e8f5369e2-376.webp",
+        "width": 376,
+        "height": 362,
+        "bytes": 8474
+      }
+    ]
+  },
   "/dr-sunitha-devaraj.png": {
     "width": 426,
     "height": 452,

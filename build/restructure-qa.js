@@ -47,8 +47,11 @@ assert(aboutHtml.includes('does not provide treatment or medical consultations')
 assert(aboutHtml.includes('not been independently verified'), 'Profile-listed details must not be presented as verified facts');
 assert(aboutHtml.includes('does not represent or endorse the clinicians listed'), 'Doctor links must be framed as non-endorsing references');
 const nanditaHtml = html('/doctors/dr-nandita/');
-assert(nanditaHtml.includes('qh-portrait--initials'), 'Dr. Nandita must use the verified-portrait fallback');
-assert(!nanditaHtml.includes('src="/dr-nandita.png"'), 'A reused treatment image must not be presented as Dr. Nandita');
+assert(nanditaHtml.includes('Portrait of Dr. Nandita'), 'Dr. Nandita must show her supplied portrait');
+assert(!nanditaHtml.includes('qh-portrait--initials'), 'Dr. Nandita must not use the initials fallback');
+const subraminiHtml = html('/doctors/dr-subramini/');
+assert(subraminiHtml.includes('Portrait of Dr. Subramini'), 'Dr. Subramini must show his supplied portrait');
+assert(!subraminiHtml.includes('qh-portrait--initials'), 'Dr. Subramini must not use the initials fallback');
 const homeHtml = html('/');
 assert(!homeHtml.includes('qh-home__'), 'Clinic-oriented promotional panel must not appear on the education-site homepage');
 assert(!homeHtml.includes('This website provides general education only. Individual suitability, outcomes and risks vary and require assessment by a qualified clinician.'), 'Removed hero note remains on the homepage');
