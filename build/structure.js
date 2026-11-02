@@ -279,7 +279,17 @@ function cards(entries, heading, lead) {
       '/non-surgical/': 'nonSurgicalSafety',
       '/non-surgical/dermal-fillers/': 'dermalFillers'
     }[href];
-    const media = imageKey ? topicImage(imageKey) : undefined;
+    const groupImageKey = {
+      augmentation: 'qh-augmentation-planning',
+      implants: 'qh-implant-shell-profiles',
+      safety: 'qh-implant-monitoring',
+      procedures: 'qh-fat-transfer-tissue',
+      nonsurgical: 'qh-non-surgical-safety-review',
+      education: 'qh-understanding-options'
+    }[p.group];
+    let media;
+    if (imageKey) media = topicImage(imageKey);
+    else if (groupImageKey) media = require('./images').picture(groupImageKey, { variant: 'card', alt: 'Educational illustration: ' + title.toLowerCase() });
     return { title, href, text: p.seoDescription, slot: title, media };
   }) };
 }
