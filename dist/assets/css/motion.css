@@ -1,0 +1,493 @@
+/* =============================================================================
+   QuantumHealth — premium motion layer
+   A restrained, transform/opacity-only choreography layered on top of the
+   existing one-shot reveal system. No scroll hijacking, no layout-affecting
+   animation, and every effect is removed by prefers-reduced-motion.
+   ========================================================================== */
+
+/* ---------------------------------------------------------- scroll progress */
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 2px;
+  z-index: 2550;
+  transform: scaleX(var(--scroll-progress, 0));
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--gold-metal), var(--gold), var(--rose-light) 72%, var(--rose));
+  box-shadow: 0 0 14px rgba(255, 120, 175, .55);
+  pointer-events: none;
+  opacity: .9;
+  will-change: transform;
+}
+.scroll-progress::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 9px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rose-light);
+  box-shadow: 0 0 12px 2px rgba(255, 77, 166, .65);
+  opacity: .85;
+}
+
+/* --------------------------------------------------------------- preloader */
+.js .pre-loader {
+  clip-path: inset(0 0 0 0);
+  transition:
+    opacity .5s var(--ease),
+    clip-path .72s var(--ease-out-expo),
+    visibility 0s linear .72s;
+}
+.js .pre-loader[aria-hidden="true"] {
+  clip-path: inset(0 0 100% 0);
+}
+.js .pre-loader .loader-inner {
+  transition: opacity .34s var(--ease), transform .5s var(--ease-out-expo);
+}
+.js .pre-loader[aria-hidden="true"] .loader-inner {
+  opacity: 0;
+  transform: translateY(-.65rem) scale(.98);
+}
+.js .pre-loader .loader-name { letter-spacing: .2em; }
+.js .pre-loader .loader-line > span {
+  animation-duration: .9s;
+  animation-timing-function: var(--ease-out-expo);
+}
+
+/* ---------------------------------------------------------- page handoff */
+/* The desktop-only overlay rises as a burgundy curtain with a fine gold edge.
+   It stays pointer-events:none at rest so no click is ever blocked. */
+.page-transition {
+  clip-path: inset(100% 0 0 0);
+  box-shadow: inset 0 1px 0 var(--gold-line-solid);
+  transition:
+    opacity .18s var(--ease),
+    clip-path var(--dur-handoff) var(--ease-in-out-soft),
+    visibility 0s linear var(--dur-handoff);
+}
+.is-leaving .page-transition {
+  clip-path: inset(0 0 0 0);
+  transition:
+    opacity .16s var(--ease),
+    clip-path var(--dur-handoff) var(--ease-out-expo),
+    visibility 0s linear 0s;
+}
+
+/* ----------------------------------------------------------- hero entrance */
+.js.motion-ready .page-home .hero__title-text {
+  transition:
+    opacity .82s var(--ease-out-expo),
+    transform 1.02s var(--ease-out-expo);
+}
+.js.motion-ready:not(.page-ready) .page-home .hero__title-text {
+  transform: translate3d(0, 118%, 0);
+}
+.js.motion-ready .page-home .hero__image {
+  transform: scale(1.045);
+  transition: transform 1.8s var(--ease-out-expo);
+}
+.js.motion-ready.page-ready .page-home .hero__image { transform: scale(1); }
+
+.js.motion-ready .page-home .feature-chip {
+  transition: opacity .62s var(--ease), transform .78s var(--ease-out-expo);
+}
+.js.motion-ready:not(.page-ready) .page-home .feature-chip {
+  opacity: 0;
+  transform: translate3d(0, .9rem, 0);
+}
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(1) { transition-delay: .58s; }
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(2) { transition-delay: .63s; }
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(3) { transition-delay: .68s; }
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(4) { transition-delay: .73s; }
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(5) { transition-delay: .78s; }
+.js.motion-ready.page-ready .page-home .feature-chip:nth-child(6) { transition-delay: .83s; }
+
+/* slow ambient breathing on the decorative hero glows */
+@keyframes hero-ambient {
+  from { transform: translate3d(0, 0, 0) scale(1); opacity: .55; }
+  to   { transform: translate3d(0, -1.2rem, 0) scale(1.05); opacity: .78; }
+}
+.js.motion-ready .hero__rose--tr {
+  animation: hero-ambient 14s var(--ease-in-out-soft) infinite alternate;
+}
+
+/* vertical scroll cue, desktop only, above the feature strip */
+.hero__scroll-cue {
+  position: absolute;
+  right: max(var(--gutter), calc((100vw - var(--container)) / 2));
+  bottom: calc(7.25rem + env(safe-area-inset-bottom, 0px));
+  z-index: 4;
+  display: none;
+  align-items: center;
+  gap: .85rem;
+  writing-mode: vertical-rl;
+  color: var(--gold-light);
+  font-size: var(--fs-micro);
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  opacity: .82;
+  transition: opacity .35s var(--ease), color .35s var(--ease);
+}
+.hero__scroll-cue::before {
+  content: "";
+  width: var(--hairline);
+  height: 54px;
+  background: linear-gradient(180deg, transparent, var(--gold-line-solid));
+  position: relative;
+  overflow: hidden;
+}
+.hero__scroll-cue::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: var(--hairline);
+  height: 16px;
+  background: var(--rose-light);
+  box-shadow: 0 0 10px rgba(255, 77, 166, .8);
+  animation: scroll-cue-travel 2.6s var(--ease-in-out-soft) infinite;
+}
+.hero__scroll-cue:hover { opacity: 1; color: var(--ivory); }
+@keyframes scroll-cue-travel {
+  0%   { transform: translateY(-10px); opacity: 0; }
+  22%  { opacity: 1; }
+  78%  { opacity: 1; }
+  100% { transform: translateY(56px); opacity: 0; }
+}
+@media (min-width: 1024px) {
+  .hero__scroll-cue { display: inline-flex; }
+}
+
+/* ------------------------------------------------------------ reveal layer */
+.motion-reveals .reveal {
+  transition:
+    opacity .78s var(--ease-out-expo) var(--reveal-delay),
+    transform .92s var(--ease-out-expo) var(--reveal-delay),
+    clip-path 1s var(--ease-out-expo) var(--reveal-delay);
+}
+.motion-reveals .reveal:not(.is-revealed) {
+  --motion-y: 2rem;
+  --motion-scale: .985;
+}
+.motion-reveals .reveal--left:not(.is-revealed) {
+  --motion-x: -1.35rem;
+  --motion-y: 0px;
+}
+.motion-reveals .reveal--right:not(.is-revealed) {
+  --motion-x: 1.35rem;
+  --motion-y: 0px;
+}
+.motion-reveals .reveal--card:not(.is-revealed) {
+  --motion-y: 2.35rem;
+  --motion-scale: .982;
+}
+.motion-reveals .reveal--image:not(.is-revealed) {
+  clip-path: inset(0 0 15% 0 round var(--radius-md));
+}
+.motion-reveals .reveal--notice:not(.is-revealed) {
+  --motion-y: 1.25rem;
+  --motion-scale: 1;
+}
+.motion-reveals .reveal.is-revealed { will-change: auto; }
+
+/* image reveal: clip + a slow settle of the photograph inside its frame */
+.motion-reveals .reveal--image img,
+.motion-reveals .reveal--image .editorial-image {
+  transition:
+    transform 1.15s var(--ease-out-expo),
+    filter .9s var(--ease);
+}
+.motion-reveals .reveal--image:not(.is-revealed) img,
+.motion-reveals .reveal--image:not(.is-revealed) .editorial-image {
+  transform: scale(1.055);
+}
+.motion-reveals .reveal--card:not(.is-revealed) .card__media img,
+.motion-reveals .reveal--card:not(.is-revealed) > img,
+.motion-reveals .reveal--card:not(.is-revealed) > picture img {
+  transform: scale(1.045);
+}
+
+/* masked word-by-word section headings (split only when JS is enabled) */
+.motion-reveals .reveal--heading .h2.motion-split { clip-path: none; }
+.motion-split { display: inline; }
+.motion-split .motion-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: .14em;
+  margin-bottom: -.14em;
+}
+.motion-split .motion-word__inner {
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+  transition:
+    transform .92s var(--ease-out-expo) calc(var(--reveal-delay, 0ms) + var(--word-delay, 0ms)),
+    opacity .7s var(--ease) calc(var(--reveal-delay, 0ms) + var(--word-delay, 0ms));
+}
+.motion-reveals .reveal--heading:not(.is-revealed) .motion-split .motion-word__inner {
+  transform: translate3d(0, 112%, 0);
+}
+
+/* ------------------------------------------------------------- card polish */
+.motion-reveals .reveal--card .card__media img {
+  transition: transform 1.2s var(--ease-out-expo);
+}
+.blog-card > img,
+.gallery-item > img,
+.gallery-item > picture img,
+.gallery-item > .editorial-picture img {
+  transition: transform 1.15s var(--ease-out-expo);
+}
+.card__title {
+  transition: color .35s var(--ease);
+}
+.card::before,
+.location-card::before,
+.icon-card::before,
+.blog-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    18rem circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(255, 225, 190, .13),
+    rgba(255, 22, 138, .05) 38%,
+    transparent 68%
+  );
+  transition: opacity .45s var(--ease);
+}
+.location-card,
+.icon-card,
+.blog-card { position: relative; isolation: isolate; }
+.location-card {
+  transition:
+    transform .5s var(--ease-out-expo),
+    border-color .4s var(--ease),
+    box-shadow .45s var(--ease);
+}
+.location-card:hover {
+  --interaction-y: -5px;
+  border-color: var(--border-rose-strong);
+  box-shadow: var(--shadow-rose);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover::before,
+  .location-card:hover::before,
+  .icon-card:hover::before,
+  .blog-card:hover::before { opacity: 1; }
+  .card:hover .card__title { color: var(--gold-light); }
+  .card--interactive:active,
+  .blog-card:active,
+  .location-card:active {
+    transition-duration: .12s;
+    --interaction-y: -1px;
+    --motion-scale: .994;
+  }
+}
+
+/* ---------------------------------------------------------- button polish */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    7rem circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+    rgba(255, 248, 243, .26),
+    transparent 68%
+  );
+  transition: opacity .35s var(--ease);
+}
+.btn > *,
+.btn .arrow,
+.btn svg { position: relative; z-index: 1; }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover::before { opacity: 1; }
+}
+.link-arrow {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 var(--hairline);
+  transition: color .3s var(--ease), background-size .45s var(--ease-out-expo);
+}
+@media (hover: hover) and (pointer: fine) {
+  .link-arrow:hover { background-size: 100% var(--hairline); }
+}
+
+/* ------------------------------------------------------ feature strip hover */
+.feature-chip__icon {
+  transition:
+    transform .5s var(--ease-out-expo),
+    border-color .35s var(--ease),
+    box-shadow .4s var(--ease),
+    background-color .35s var(--ease);
+}
+.feature-chip__label { transition: color .3s var(--ease); }
+@media (hover: hover) and (pointer: fine) {
+  .feature-chip:hover .feature-chip__icon {
+    transform: translateY(-3px) scale(1.045);
+    border-color: var(--gold);
+    background-color: rgba(255, 215, 130, .07);
+    box-shadow: 0 8px 24px -14px rgba(255, 215, 130, .8);
+  }
+  .feature-chip:hover .feature-chip__label { color: var(--gold-light); }
+}
+
+/* -------------------------------------------------------- navigation polish */
+@media (hover: hover) and (pointer: fine) {
+  .nav__item--has-menu:hover > .nav__menu li,
+  .nav__item--has-menu:focus-within > .nav__menu li,
+  .nav__item--has-menu.is-open > .nav__menu li {
+    animation: nav-menu-item-in .45s var(--ease-out-expo) both;
+  }
+  .nav__item--has-menu:hover > .nav__menu li:nth-child(2),
+  .nav__item--has-menu:focus-within > .nav__menu li:nth-child(2),
+  .nav__item--has-menu.is-open > .nav__menu li:nth-child(2) { animation-delay: .025s; }
+  .nav__item--has-menu:hover > .nav__menu li:nth-child(3),
+  .nav__item--has-menu:focus-within > .nav__menu li:nth-child(3),
+  .nav__item--has-menu.is-open > .nav__menu li:nth-child(3) { animation-delay: .05s; }
+  .nav__item--has-menu:hover > .nav__menu li:nth-child(4),
+  .nav__item--has-menu:focus-within > .nav__menu li:nth-child(4),
+  .nav__item--has-menu.is-open > .nav__menu li:nth-child(4) { animation-delay: .075s; }
+  .nav__item--has-menu:hover > .nav__menu li:nth-child(5),
+  .nav__item--has-menu:focus-within > .nav__menu li:nth-child(5),
+  .nav__item--has-menu.is-open > .nav__menu li:nth-child(5) { animation-delay: .1s; }
+  .nav__item--has-menu:hover > .nav__menu li:nth-child(n+6),
+  .nav__item--has-menu:focus-within > .nav__menu li:nth-child(n+6),
+  .nav__item--has-menu.is-open > .nav__menu li:nth-child(n+6) { animation-delay: .125s; }
+}
+@keyframes nav-menu-item-in {
+  from { opacity: 0; transform: translate3d(0, .4rem, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.mobile-nav__link {
+  background-image: linear-gradient(90deg, rgba(255, 77, 166, .18), transparent);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .4s var(--ease-out-expo), color .3s var(--ease);
+}
+.mobile-nav__link:hover,
+.mobile-nav__link:focus-visible { background-size: 100% 100%; }
+.mobile-nav__link[aria-current="page"] { background-size: 100% 100%; }
+
+/* -------------------------------------------------------- table row reveal */
+.motion-reveals .table-wrap:not(.is-revealed) .compare tbody tr {
+  opacity: 0;
+  transform: translate3d(0, .5rem, 0);
+}
+.motion-reveals .table-wrap.is-revealed .compare tbody tr {
+  animation: table-row-in .5s var(--ease-out-expo) both;
+}
+.motion-reveals .table-wrap.is-revealed .compare tbody tr:nth-child(2) { animation-delay: .04s; }
+.motion-reveals .table-wrap.is-revealed .compare tbody tr:nth-child(3) { animation-delay: .08s; }
+.motion-reveals .table-wrap.is-revealed .compare tbody tr:nth-child(4) { animation-delay: .12s; }
+.motion-reveals .table-wrap.is-revealed .compare tbody tr:nth-child(5) { animation-delay: .16s; }
+.motion-reveals .table-wrap.is-revealed .compare tbody tr:nth-child(n+6) { animation-delay: .2s; }
+@keyframes table-row-in {
+  from { opacity: 0; transform: translate3d(0, .5rem, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* ------------------------------------------------------------- form polish */
+.field:focus-within label,
+.checkbox:focus-within label { color: var(--gold-light); }
+.field input:focus-visible,
+.field textarea:focus-visible,
+.field select:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 121, 183, .16), 0 12px 30px -22px rgba(255, 22, 138, .8);
+}
+
+/* ------------------------------------------------------ CTA ambient drift */
+@keyframes cta-drift {
+  from { transform: translate3d(-2%, 0, 0) scale(1); }
+  to   { transform: translate3d(2%, -1.5%, 0) scale(1.05); }
+}
+.cta-band::after {
+  content: "";
+  position: absolute;
+  inset: -15%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 46% at 24% 30%, rgba(255, 22, 138, .16), transparent 70%),
+    radial-gradient(38% 44% at 78% 68%, rgba(255, 215, 130, .10), transparent 72%);
+  animation: cta-drift 15s var(--ease-in-out-soft) infinite alternate;
+  opacity: .8;
+}
+
+/* ------------------------------------------- scroll-linked image movement */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .motion-parallax {
+    overflow: hidden;
+    --parallax-y: 0px;
+  }
+  .motion-parallax img {
+    transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1.07);
+    will-change: transform;
+    transition: transform .16s linear;
+  }
+  .motion-parallax.is-parallax-idle img { will-change: auto; }
+}
+
+/* ------------------------------------------------------------- responsive */
+@media (max-width: 767px) {
+  .motion-reveals .reveal:not(.is-revealed) {
+    --motion-y: 1.15rem;
+    --motion-scale: 1;
+  }
+  .motion-reveals .reveal--left:not(.is-revealed),
+  .motion-reveals .reveal--right:not(.is-revealed) {
+    --motion-x: 0px;
+    --motion-y: 1.15rem;
+  }
+  .motion-reveals .reveal--card:not(.is-revealed) {
+    --motion-y: 1.35rem;
+    --motion-scale: 1;
+  }
+  .motion-split .motion-word__inner {
+    transition-duration: .72s;
+  }
+  .hero__scroll-cue { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress,
+  .hero__scroll-cue { display: none; }
+  .js .pre-loader,
+  .js .pre-loader[aria-hidden="true"],
+  .page-transition,
+  .is-leaving .page-transition {
+    clip-path: none;
+    transition: none;
+  }
+  .js.motion-ready .page-home .hero__image,
+  .js.motion-ready:not(.page-ready) .page-home .hero__title-text,
+  .js.motion-ready:not(.page-ready) .page-home .feature-chip { transform: none; opacity: 1; }
+  .js.motion-ready .hero__rose--tr,
+  .cta-band::after,
+  .hero__scroll-cue::after { animation: none; }
+  .motion-split .motion-word__inner,
+  .motion-reveals .reveal--image img,
+  .motion-reveals .reveal--card:not(.is-revealed) .card__media img { transform: none !important; }
+  .card::before,
+  .location-card::before,
+  .icon-card::before,
+  .blog-card::before,
+  .btn::before { display: none; }
+  .motion-parallax img { transform: none !important; transition: none; }
+  .motion-reveals .table-wrap.is-revealed .compare tbody tr { animation: none; }
+  .nav__item--has-menu:hover > .nav__menu li,
+  .nav__item--has-menu:focus-within > .nav__menu li,
+  .nav__item--has-menu.is-open > .nav__menu li { animation: none; }
+}

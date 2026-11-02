@@ -89,8 +89,7 @@ const site = {
   footerLegal: [
     { label: 'Privacy policy', href: '/privacy-policy/' },
     { label: 'Cookie policy', href: '/cookie-policy/' },
-    { label: 'Terms of use', href: '/terms-of-use/' },
-    { label: 'Medical disclaimer', href: '/medical-disclaimer/' }
+    { label: 'Terms of use', href: '/terms-of-use/' }
   ]
 };
 

@@ -2635,7 +2635,8 @@ body.page-about-us .qh-about .qh-doctor-card__image {
 .page-about-us .qh-about .eyebrow { color: #D8B58A; }
 .page-about-us .qh-about .eyebrow::before { background: #D8B58A; }
 .page-about-us .qh-about-crumb a { color: #FFF8F8; }
-.page-about-us .qh-about-hero h1 {
+.page-about-us .qh-about-hero h1,
+.page-about-us .qh-about-hero h2 {
   max-width: 24ch;
   margin: .75rem 0 1rem;
   font-size: clamp(2.35rem, 5vw, 4.5rem);
@@ -2839,7 +2840,8 @@ body.page-about-us .qh-about .qh-doctor-card__image {
 .page-about-us .qh-about .qh-about-contact h2 { margin: .5rem 0; }
 @media (max-width: 760px) {
   .page-about-us .qh-about .qh-about-hero { grid-template-columns: 1fr; align-items: start; }
-  .page-about-us .qh-about-hero h1 { max-width: 24ch; }
+  .page-about-us .qh-about-hero h1,
+.page-about-us .qh-about-hero h2 { max-width: 24ch; }
   .page-about-us .qh-about .qh-about-section-head { grid-template-columns: 1fr; align-items: start; }
   .page-about-us .qh-about .qh-about-contact { grid-template-columns: 1fr; }
   .page-about-us .qh-about .qh-about-contact .qh-btn { justify-self: start; min-width: 12rem; }

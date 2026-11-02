@@ -108,14 +108,17 @@
 .page-banner__art::after {
   content: "";
   position: absolute; inset: 0;
+  /* Readability scrim for the left-hand copy only. It fades to fully
+     transparent by the right edge so the banner artwork stays visible
+     instead of sitting under a flat colour wash. */
   background:
     linear-gradient(90deg,
-      rgba(24, 0, 9, .97) 0%,
-      rgba(36, 0, 14, .90) 34%,
-      rgba(50, 0, 20, .58) 68%,
-      rgba(201, 0, 75, .20) 100%),
-    radial-gradient(70% 90% at 92% 24%, rgba(255, 22, 138, .30), transparent 66%),
-    linear-gradient(0deg, rgba(18, 0, 7, .70), transparent 58%);
+      rgba(24, 0, 9, .92) 0%,
+      rgba(28, 0, 11, .84) 24%,
+      rgba(34, 0, 13, .58) 48%,
+      rgba(40, 0, 16, .22) 72%,
+      rgba(40, 0, 16, 0) 100%),
+    linear-gradient(0deg, rgba(18, 0, 7, .58), transparent 52%);
 }
 .page-banner .container { position: relative; z-index: 2; }
 .page-banner__inner {
@@ -203,9 +206,14 @@
   .hero__curve { z-index: 0; }
 }
 @media (min-width: 1024px) {
-  /* Content-bearing artwork must never lose faces, heads or labels to a crop. */
-  .page-banner__art img { object-fit: contain; object-position: center; }
-  .hero__bg img { object-fit: contain; object-position: center; }
+  /* Dashboard-style banners are full-bleed backgrounds: cover the whole
+     section edge to edge so artwork never floats in a letterboxed box.
+     The scrim above keeps the copy readable on the left. */
+  .page-banner__art img,
+  .page-banner__art .editorial-image { object-fit: cover; object-position: center; }
+  /* The home hero is a full-bleed background: fill the full viewport width so
+     no gradient gutters appear either side on wide or tall screens. */
+  .hero__bg img { object-fit: cover; object-position: center; }
   .hero__inner { padding-block: clamp(3rem, 5vw, 5rem); }
   .hero__copy > * { margin-top: 0; }
 }

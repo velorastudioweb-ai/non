@@ -471,7 +471,7 @@ function extractQuantumBody(page) {
 }
 const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/doctors/'));
 const escapeAboutText = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h1>About this website</h1><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
+const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h2>About this website</h2><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
 const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
   const initials = doctor.name.replace(/^Dr\.\s*/i, '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
   const expertise = (doctor.specialisations && doctor.specialisations.length ? doctor.specialisations : [doctor.designation])
@@ -505,7 +505,7 @@ about.seoTitle = 'About this website | Breast Enlargement Guide';
 about.seoDescription = 'Learn about this independent educational website on breast-enlargement options, evidence, limitations, and safety.';
 about.bannerEyebrow = 'Independent education';
 about.bannerLead = 'An evidence-aware guide to breast-enlargement options, limitations, and safety.';
-about.showBanner = false;
+about.showBanner = true;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
 about.blocks = [{ type: 'prose', wide: true, html: '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
 const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/') && p.url !== '/doctors/');
