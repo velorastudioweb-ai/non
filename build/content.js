@@ -125,7 +125,7 @@ const home = {
       uppercase: 'Confidence begins with clear, honest information.',
       lead: 'Understand surgical and non-surgical breast enlargement options through clear explanations, published evidence and realistic limitations — before you speak to any clinic.',
       actions: [
-        { label: 'Read the evidence guide', href: '/breast-enlargement-without-surgery/', style: 'primary' },
+        { label: 'Trending Options For Non-Surgical Breast Enlargement', href: '/non-surgical/trending-options/', style: 'primary' },
         { label: 'Explore treatments', href: '#treatments', style: 'outline' }
       ],
       slot: 'Hero portrait'
