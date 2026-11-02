@@ -11,7 +11,8 @@
  * Deliberate limits:
  *  - only the central India WhatsApp number is marked as WhatsApp-enabled,
  *    because that is the only number confirmed for WhatsApp enquiries;
- *  - Dubai has no street address and is never presented as a walk-in office;
+ *  - the Dubai meeting point is Badr Al Samaa Medical Center in Mankhool,
+ *    Bur Dubai, as supplied for the United Arab Emirates enquiries;
  *  - no opening hours or treatment availability are invented for any location.
  */
 
@@ -125,20 +126,30 @@ const rawLocations = [
   },
   {
     id: 'dubai',
-    kind: 'contact',
+    kind: 'physical',
     country: 'United Arab Emirates',
     countryCode: 'AE',
-    role: 'International Contact',
-    name: 'Dubai — International Contact',
+    role: 'Dubai Branch',
+    name: 'Dubai — Badr Al Samaa Medical Center',
     shortName: 'Dubai',
-    addressLines: [],
-    postal: null,
-    mapQuery: '',
+    addressLines: [
+      'Badr Al Samaa Medical Center, Ground Floor',
+      'Next to Sharaf DG Metro Station, Exit 1',
+      'Khalid Bin Al Waleed Road, Mankhool, Bur Dubai',
+      'Dubai, United Arab Emirates'
+    ],
+    postal: {
+      streetAddress: 'Badr Al Samaa Medical Center, Ground Floor, Khalid Bin Al Waleed Road, Mankhool',
+      addressLocality: 'Dubai',
+      addressRegion: 'Dubai',
+      addressCountry: 'AE'
+    },
+    mapQuery: 'Badr Al Samaa Medical Center, Khalid Bin Al Waleed Road, Mankhool, Bur Dubai, Dubai, United Arab Emirates',
     phones: [
       { display: '+971 50 128 9115', tel: '+971501289115' }
     ],
     whatsapp: '',
-    note: 'Telephone contact only. No street address, physical office or walk-in clinic has been supplied for Dubai, so none is published.'
+    note: 'Consultations in Dubai are held at Badr Al Samaa Medical Center in Mankhool, Bur Dubai. Confirm the appointment, the exact floor and the meeting point with the team before travelling.'
   }
 ];
 

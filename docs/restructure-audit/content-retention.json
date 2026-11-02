@@ -1,5 +1,5 @@
 {
-  "checked": 332,
+  "checked": 348,
   "results": [
     {
       "source": "/non-surgical/",
@@ -52,7 +52,7 @@
     {
       "source": "/surgical-breast-enhancement/",
       "target": "/surgical-breast-enlargement/",
-      "fragments": 6,
+      "fragments": 8,
       "missing": []
     },
     {
@@ -78,14 +78,16 @@
     {
       "source": "/surgical/breast-reduction/",
       "target": "/surgical/breast-reduction/",
-      "fragments": 6,
+      "fragments": 12,
       "missing": []
     },
     {
       "source": "/surgical/breast-lift/",
       "target": "/surgical/breast-lift/",
-      "fragments": 6,
-      "missing": []
+      "fragments": 8,
+      "missing": [
+        "Schematic areolar, vertical and inframammary-fold incision-pattern concepts for breast lift surgery"
+      ]
     },
     {
       "source": "/surgical/mastectomy-chest-surgery/",
@@ -102,7 +104,7 @@
     {
       "source": "/breast-enlargement-without-surgery/",
       "target": "/breast-enlargement-without-surgery/",
-      "fragments": 48,
+      "fragments": 47,
       "missing": []
     },
     {
@@ -115,29 +117,26 @@
       "source": "/about-us/",
       "target": "/about-us/",
       "fragments": 1,
-      "missing": []
+      "missing": [
+        "<p>This website is an independent educational resource about breast enlargement. It aims to explain surgical and non-surgical options clearly, describe what the published evidence does — and does not — show, and set realistic expectations about benefits, limitations and risks.</p><p>There is no clinic, medical practice, doctor, team or physical address promoted here. Content is written to help readers prepare informed questions for a qualified, registered healthcare professional who can assess them in person.</p><p>Where possible, explanations are grounded in published research, peer-reviewed literature and guidance from recognised regulators and public-health bodies. Marketing claims are not accepted uncritically: terms like \"regenerative\", \"natural\" or \"permanent\" are explained by what evidence supports them.</p><p>This site does not sell treatments, products or procedures. Links to external sources are provided for verification. For decisions about your health, speak to an appropriately qualified clinician.</p>"
+      ]
     },
     {
       "source": "/faqs/",
       "target": "/faqs/",
-      "fragments": 7,
-      "missing": [
-        "<p>Dermal fillers are not approved for breast enlargement, and regulators advise against using them for this purpose because of potentially serious complications. A filler approved for facial use should not be assumed suitable for injection into the breasts.</p>",
-        "<p>PRP’s effects depend on the specific indication and the evidence available. It should not be marketed as a proven method of increasing breast size without robust evidence supporting that particular use.</p>",
-        "<p>Some transferred fat can survive long term, but a proportion may be reabsorbed. The final result varies between individuals, and additional procedures may be considered.</p>",
-        "<p>Recovery varies according to the procedure, surgical technique, individual healing and the clinician’s advice. Your surgeon will give you a personalised return-to-activity timeline.</p>"
-      ]
+      "fragments": 16,
+      "missing": []
     },
     {
       "source": "/breast-enlargement-research/",
       "target": "/research/",
-      "fragments": 94,
+      "fragments": 93,
       "missing": []
     },
     {
       "source": "/understanding-breast-enlargement/",
       "target": "/understanding-breast-enlargement/",
-      "fragments": 13,
+      "fragments": 12,
       "missing": []
     },
     {

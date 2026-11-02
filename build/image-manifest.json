@@ -51,6 +51,52 @@
       }
     ]
   },
+  "/Bengaluru Clinic Panel.webp": {
+    "width": 1100,
+    "height": 713,
+    "sha256": "386a9aa8163089651b59d2bbd40294401e952f34ae015d8a2bf04c5c1dcbb8de",
+    "bytes": 60902,
+    "format": "webp",
+    "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-1100.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-320.webp",
+        "width": 320,
+        "height": 207,
+        "bytes": 8952
+      },
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-480.webp",
+        "width": 480,
+        "height": 311,
+        "bytes": 17054
+      },
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-640.webp",
+        "width": 640,
+        "height": 415,
+        "bytes": 26506
+      },
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-768.webp",
+        "width": 768,
+        "height": 498,
+        "bytes": 33848
+      },
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-1024.webp",
+        "width": 1024,
+        "height": 664,
+        "bytes": 48362
+      },
+      {
+        "src": "/assets/responsive/bengaluru-clinic-panel-386a9aa81630-1100.webp",
+        "width": 1100,
+        "height": 713,
+        "bytes": 60902
+      }
+    ]
+  },
   "/Breast Anatomy and Augmentation Illustration.webp": {
     "width": 1536,
     "height": 1024,
@@ -1206,6 +1252,64 @@
     ],
     "canonicalSource": "/Breast Fat Transfer Medical Infographic.png"
   },
+  "/Dr Vikas Singh Global Practice Banner.webp": {
+    "width": 1600,
+    "height": 753,
+    "sha256": "879319963875ebd2a158c0ab4a9d43a7274dee55dc6e9f7cc7b6063e6229c15e",
+    "bytes": 79824,
+    "format": "webp",
+    "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-1600.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-320.webp",
+        "width": 320,
+        "height": 151,
+        "bytes": 6988
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-480.webp",
+        "width": 480,
+        "height": 226,
+        "bytes": 12630
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-640.webp",
+        "width": 640,
+        "height": 301,
+        "bytes": 19122
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-768.webp",
+        "width": 768,
+        "height": 361,
+        "bytes": 25162
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-1024.webp",
+        "width": 1024,
+        "height": 482,
+        "bytes": 38674
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-1280.webp",
+        "width": 1280,
+        "height": 602,
+        "bytes": 51876
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-1536.webp",
+        "width": 1536,
+        "height": 723,
+        "bytes": 66196
+      },
+      {
+        "src": "/assets/responsive/dr-vikas-singh-global-practice-banner-879319963875-1600.webp",
+        "width": 1600,
+        "height": 753,
+        "bytes": 79824
+      }
+    ]
+  },
   "/dr-alisha-khan.png": {
     "width": 208,
     "height": 246,
@@ -1368,6 +1472,52 @@
         "width": 353,
         "height": 317,
         "bytes": 4960
+      }
+    ]
+  },
+  "/Dubai Clinic Panel.webp": {
+    "width": 1100,
+    "height": 714,
+    "sha256": "b866ea408cd7d0f4aefe67a7fa94ad5419495c7f0627a323d84afa157a90918e",
+    "bytes": 75828,
+    "format": "webp",
+    "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-1100.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-320.webp",
+        "width": 320,
+        "height": 208,
+        "bytes": 9904
+      },
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-480.webp",
+        "width": 480,
+        "height": 312,
+        "bytes": 19170
+      },
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-640.webp",
+        "width": 640,
+        "height": 415,
+        "bytes": 30788
+      },
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-768.webp",
+        "width": 768,
+        "height": 499,
+        "bytes": 40148
+      },
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-1024.webp",
+        "width": 1024,
+        "height": 665,
+        "bytes": 60974
+      },
+      {
+        "src": "/assets/responsive/dubai-clinic-panel-b866ea408cd7-1100.webp",
+        "width": 1100,
+        "height": 714,
+        "bytes": 75828
       }
     ]
   },
@@ -2090,6 +2240,58 @@
         "width": 1254,
         "height": 1254,
         "bytes": 143372
+      }
+    ]
+  },
+  "/Quantum Health Consultation Scene.webp": {
+    "width": 1536,
+    "height": 969,
+    "sha256": "3f7cb71138dbd89b5eced9e978df29f40ce58c36574538c87f8040e4d38b23f2",
+    "bytes": 169976,
+    "format": "webp",
+    "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-320.webp",
+        "width": 320,
+        "height": 202,
+        "bytes": 17532
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-480.webp",
+        "width": 480,
+        "height": 303,
+        "bytes": 31188
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-640.webp",
+        "width": 640,
+        "height": 404,
+        "bytes": 46262
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-768.webp",
+        "width": 768,
+        "height": 484,
+        "bytes": 59488
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-1024.webp",
+        "width": 1024,
+        "height": 646,
+        "bytes": 88434
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-1280.webp",
+        "width": 1280,
+        "height": 808,
+        "bytes": 116310
+      },
+      {
+        "src": "/assets/responsive/quantum-health-consultation-scene-3f7cb71138db-1536.webp",
+        "width": 1536,
+        "height": 969,
+        "bytes": 169976
       }
     ]
   },

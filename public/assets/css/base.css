@@ -307,25 +307,31 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   --motion-scale: 1;
   --interaction-x: 0px;
   --interaction-y: 0px;
+  --interaction-scale: 1;
   --reveal-delay: 0ms;
   opacity: 1;
-  transform: translate3d(
-    calc(var(--motion-x) + var(--interaction-x)),
-    calc(var(--motion-y) + var(--interaction-y)),
-    0
-  ) scale(var(--motion-scale));
+  /* Entrance motion rides the individual translate/scale properties so the
+     slower, staggered reveal transition never delays pointer interactions.
+     Hover/press motion composes separately through transform at 0.3s. */
+  translate: var(--motion-x) var(--motion-y);
+  scale: var(--motion-scale);
+  transform: translate3d(var(--interaction-x), var(--interaction-y), 0) scale(var(--interaction-scale));
 }
 .motion-reveals .reveal {
   transition:
     opacity .68s var(--ease) var(--reveal-delay),
-    transform .78s var(--ease) var(--reveal-delay),
-    clip-path .82s var(--ease) var(--reveal-delay);
+    translate .78s var(--ease) var(--reveal-delay),
+    scale .78s var(--ease) var(--reveal-delay),
+    clip-path .82s var(--ease) var(--reveal-delay),
+    transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
 }
 .motion-reveals .reveal:not(.is-revealed) {
   --motion-y: 1.65rem;
   --motion-scale: .985;
   opacity: 0;
-  will-change: opacity, transform;
+  will-change: opacity, translate, scale;
 }
 .motion-reveals .reveal--left:not(.is-revealed) {
   --motion-x: -1rem;

@@ -99,7 +99,7 @@ function branchLabel(value) {
     'hong-kong': 'Hong Kong — Head Office',
     'la-crown': 'Bengaluru — La Crown, Jayanagar',
     ritz: 'Bengaluru — Ritz',
-    dubai: 'Dubai — International contact',
+    dubai: 'Dubai — Badr Al Samaa Medical Center',
     'no-preference': 'No preference — advise me'
   };
   return labels[value] || value;

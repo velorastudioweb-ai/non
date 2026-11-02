@@ -9,7 +9,7 @@
  * article rather than the treatment itself.
  */
 const siteImages = Object.freeze({
-  ourApproach: { src: '/Our approach.webp', width: 1536, height: 1024, alt: 'Independent patient education and evidence review' },
+  ourApproach: { src: '/Quantum Health Consultation Scene.webp', width: 1536, height: 969, alt: 'Illustrative consultation scene: a clinician talks a patient through non-surgical breast enhancement options' },
   'consultation-illustrative': { src: '/assets/img/consultation-illustrative-1600.webp', width: 1600, height: 1200, alt: 'Illustrative scene of a patient and healthcare professional discussing breast enhancement options in a calm consultation setting' },
   'recovery-illustrative': { src: '/assets/img/recovery-illustrative-1600.webp', width: 1600, height: 1200, alt: 'Illustrative respectful scene of an adult woman resting comfortably, representing recovery education' },
   surgicalOverview: { src: '/Breast Augmentation Consultation Illustration.webp', width: 1600, height: 600, alt: 'Surgical breast augmentation consultation' },
@@ -46,7 +46,11 @@ const siteImages = Object.freeze({
   breastAnatomy: { src: '/Breast Anatomy and Augmentation Illustration.webp', width: 1536, height: 1024, alt: 'Breast anatomy explained' },
   breastSafety: { src: '/Breast Augmentation Safety Consultation Infographic.webp', width: 1536, height: 1024, alt: 'Breast enlargement safety consultation' },
   breastEducation: { src: '/Breast Enhancement Medical Infographic.webp', width: 1536, height: 1024, alt: 'Understanding breast enlargement' },
-  decisionPath: { src: '/Five-Step Beauty Consultation Journey.webp', width: 1536, height: 1024, alt: 'Five steps for using this educational website' }
+  decisionPath: { src: '/Five-Step Beauty Consultation Journey.webp', width: 1536, height: 1024, alt: 'Five steps for using this educational website' },
+  // Supplied Quantum Health brand artwork (November 2026).
+  vikasBanner: { src: '/Dr Vikas Singh Global Practice Banner.webp', width: 1600, height: 753, alt: 'Dr. Vikas Singh seated in front of a lit world map and the Hong Kong harbour skyline' },
+  dubaiPanel: { src: '/Dubai Clinic Panel.webp', width: 1100, height: 714, alt: 'Dubai cityscape at night in a gold-outlined frame' },
+  bengaluruPanel: { src: '/Bengaluru Clinic Panel.webp', width: 1100, height: 713, alt: 'Bengaluru cityscape at night in a gold-outlined frame' }
 });
 
 const doctorPortraits = Object.freeze({

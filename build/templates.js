@@ -96,7 +96,7 @@ return `<li class="mobile-nav__item"><a class="mobile-nav__link" href="${i.href}
 <header class="site-header">
   <div class="container header-inner">
 <a class="brand" href="${site.base}" aria-label="${esc(site.name)} Independent patient education — home">
-<span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
+<span class="brand__ico" aria-hidden="true"><img class="brand__logo" src="/assets/img/quantum-health-logo-mark.webp" width="320" height="320" alt="" loading="eager" decoding="async"></span>
 <span class="brand__text">
 <span class="brand__name">${esc(site.name)}</span>
 <span class="brand__tag">Independent patient education</span>
@@ -152,7 +152,7 @@ ${items.map((i) => `<li><a href="${i.href}"${/^https?:/.test(i.href) ? ' target=
 <div class="footer-top">
 <div class="footer-brand">
 <a class="brand" href="${site.base}">
-<span class="brand__ico" aria-hidden="true">${icon('lotus')}</span>
+<span class="brand__ico" aria-hidden="true"><img class="brand__logo" src="/assets/img/quantum-health-logo-mark.webp" width="320" height="320" alt="" loading="lazy" decoding="async"></span>
 <span class="brand__text"><span class="brand__name">${esc(site.name)}</span><span class="brand__tag">Independent patient education</span></span>
 </a>
 <p>${esc(site.footerBlurb)}</p>
@@ -542,6 +542,49 @@ ${cards}
 </div>`;
 }
 
+/*
+ * Dubai and Bengaluru consultation panels.
+ *
+ * The supplied artwork carries its own neon frame, title rule and pill-shaped
+ * button, so the overlay is positioned in percentages of that artwork and sized
+ * with container queries. That keeps the published address and the enquiry
+ * control aligned with the baked-in furniture at every width instead of
+ * drifting off it.
+ */
+function renderCityPanels(b) {
+  const panels = (b.panels || []).map((panel, i) => {
+    const image = panel.image;
+    const phones = (panel.phones || [])
+      .map((phone) => `<a href="${telHref(phone.tel)}">${esc(phone.display)}</a>`).join(' · ');
+    return `<article class="city-panel reveal reveal--card" data-delay="${(i % 2) + 1}">
+  <div class="city-panel__frame" style="--city-panel-ratio:${(image.width / image.height).toFixed(4)}">
+    <div class="city-panel__media">
+      <img class="city-panel__art" src="${esc(image.src)}" alt="${esc(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async">
+      <a class="city-panel__cta" href="${esc(panel.href)}"><span>${esc(panel.cta)}</span>${icon('arrow')}</a>
+    </div>
+    <div class="city-panel__head">
+      <p class="city-panel__country">${esc(panel.country)}</p>
+      <h3 class="city-panel__city">${esc(panel.city)}</h3>
+    </div>
+    <div class="city-panel__body">
+      <p class="city-panel__address">${esc(panel.address)}</p>
+      ${phones ? `<p class="city-panel__phones">${phones}</p>` : ''}
+    </div>
+  </div>
+</article>`;
+  }).join('\n    ');
+  return `<div class="container">
+  <div class="section-head ${b.center ? 'section-head--center' : ''} reveal reveal--heading">
+${b.eyebrow ? `<p class="eyebrow">${esc(b.eyebrow)}</p>` : ''}
+<h2 class="h2">${raw(b.heading)}</h2>
+${b.lead ? `<p class="lead">${esc(b.lead)}</p>` : ''}
+  </div>
+  <div class="city-panels">
+    ${panels}
+  </div>
+</div>`;
+}
+
 function renderAppointment(b, site) {
   const topics = (b.topics || appointmentTopics).map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
   const countries = preferredCountries.map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
@@ -734,6 +777,7 @@ case 'gallery': return `<section${sid} class="section${b.alt ? ' section--alt' :
 case 'figure': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderFigure(b)}</section>`;
 case 'form': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderForm(b, site)}</section>`;
 case 'locations': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderLocations(b, site)}</section>`;
+case 'city-panels': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderCityPanels(b)}</section>`;
 case 'appointment': return `<section${sid} class="section${b.alt ? ' section--alt' : ''}">${renderAppointment(b, site)}</section>`;
 case 'cta': return `<section${sid} class="section section--tight cta-band petals">${renderCta(b)}</section>`;
 default: return '';

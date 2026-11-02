@@ -113,7 +113,7 @@
      keeps an aria-label with the complete text for assistive technology. */
   function setupSplitHeadings() {
     if (reducedMotion.matches) return;
-    $$('.reveal--heading .h2').forEach(function (heading) {
+    $$('.reveal--heading .h2, .reveal--left > .h2').forEach(function (heading) {
       if (heading.dataset.motionSplit || heading.children.length) return;
       var text = (heading.textContent || '').replace(/\s+/g, ' ').trim();
       if (!text || text.length > 120) return;
@@ -287,7 +287,7 @@
 
   function setupSpotlight() {
     if (reducedMotion.matches || !finePointer.matches) return;
-    var targets = $$('.card, .location-card, .icon-card, .blog-card, .gallery-item');
+    var targets = $$('.card, .location-card, .icon-card, .blog-card, .gallery-item, .qh-card');
     targets.forEach(function (element) {
       var frame = 0;
       var x = 50;
@@ -321,6 +321,37 @@
         element.style.removeProperty('--spot-x');
         element.style.removeProperty('--spot-y');
       });
+    });
+  }
+
+  /* Touch feedback for cards. Coarse pointers never hover, so a delegated
+     touchstart/touchend pair mirrors the hover highlight for the pressed card
+     only. Two passive document listeners, no scroll work, reduced-motion safe
+     (CSS strips the geometry when motion is reduced). */
+  function setupTouchFeedback() {
+    if (finePointer.matches || !window.matchMedia('(pointer: coarse)').matches) return;
+    var selector = '.card, .blog-card, .location-card, .gallery-item, .qh-card';
+    var pressed = null;
+    function release() {
+      if (pressed) pressed.classList.remove('is-pressed');
+      pressed = null;
+    }
+    function start(event) {
+      var element = event.target;
+      var card = element && element.closest ? element.closest(selector) : null;
+      if (!card || card.classList.contains('gallery-item--pending')) return;
+      release();
+      pressed = card;
+      card.classList.add('is-pressed');
+    }
+    document.addEventListener('touchstart', start, { passive: true });
+    document.addEventListener('touchend', release, { passive: true });
+    document.addEventListener('touchcancel', release, { passive: true });
+    addCleanup(function () {
+      release();
+      document.removeEventListener('touchstart', start);
+      document.removeEventListener('touchend', release);
+      document.removeEventListener('touchcancel', release);
     });
   }
 
@@ -427,6 +458,7 @@
     setupHeroParallax();
     setupScrollLinkedMedia();
     setupSpotlight();
+    setupTouchFeedback();
     setupMagneticButtons();
     setupPageTransitions();
   }

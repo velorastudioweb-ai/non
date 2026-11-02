@@ -164,12 +164,17 @@
 .motion-reveals .reveal {
   transition:
     opacity .78s var(--ease-out-expo) var(--reveal-delay),
-    transform .92s var(--ease-out-expo) var(--reveal-delay),
-    clip-path 1s var(--ease-out-expo) var(--reveal-delay);
+    translate .92s var(--ease-out-expo) var(--reveal-delay),
+    scale .92s var(--ease-out-expo) var(--reveal-delay),
+    clip-path 1s var(--ease-out-expo) var(--reveal-delay),
+    transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
 }
 .motion-reveals .reveal:not(.is-revealed) {
   --motion-y: 2rem;
   --motion-scale: .985;
+  will-change: opacity, translate, scale;
 }
 .motion-reveals .reveal--left:not(.is-revealed) {
   --motion-x: -1.35rem;
@@ -210,7 +215,7 @@
 }
 
 /* masked word-by-word section headings (split only when JS is enabled) */
-.motion-reveals .reveal--heading .h2.motion-split { clip-path: none; }
+.motion-reveals .reveal .h2.motion-split { clip-path: none; }
 .motion-split { display: inline; }
 .motion-split .motion-word {
   display: inline-block;
@@ -226,8 +231,26 @@
     transform .92s var(--ease-out-expo) calc(var(--reveal-delay, 0ms) + var(--word-delay, 0ms)),
     opacity .7s var(--ease) calc(var(--reveal-delay, 0ms) + var(--word-delay, 0ms));
 }
-.motion-reveals .reveal--heading:not(.is-revealed) .motion-split .motion-word__inner {
+.motion-reveals .reveal:not(.is-revealed) .motion-split .motion-word__inner {
   transform: translate3d(0, 112%, 0);
+}
+
+/* Supporting copy settles in just after its heading words land, so the
+   paragraph reads as arriving naturally behind the title. */
+.motion-reveals .reveal--heading > p.lead,
+.motion-reveals .reveal--left .lead,
+.motion-reveals .reveal--left .prose {
+  opacity: 0;
+  translate: 0 .6rem;
+  transition:
+    opacity .62s var(--ease) calc(var(--reveal-delay, 0ms) + .34s),
+    translate .72s var(--ease-out-expo) calc(var(--reveal-delay, 0ms) + .34s);
+}
+.motion-reveals .reveal--heading.is-revealed > p.lead,
+.motion-reveals .reveal--left.is-revealed .lead,
+.motion-reveals .reveal--left.is-revealed .prose {
+  opacity: 1;
+  translate: 0 0;
 }
 
 /* ------------------------------------------------------------- card polish */
@@ -246,7 +269,8 @@
 .card::before,
 .location-card::before,
 .icon-card::before,
-.blog-card::before {
+.blog-card::before,
+.qh-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -260,19 +284,28 @@
     rgba(255, 22, 138, .05) 38%,
     transparent 68%
   );
-  transition: opacity .45s var(--ease);
+  transition: opacity var(--dur-fast) var(--ease);
 }
 .location-card,
 .icon-card,
-.blog-card { position: relative; isolation: isolate; }
+.blog-card,
+.qh-card { position: relative; isolation: isolate; }
 .location-card {
+  --interaction-x: 0px;
+  --interaction-y: 0px;
+  --interaction-scale: 1;
+  transform: translate3d(var(--interaction-x), var(--interaction-y), 0) scale(var(--interaction-scale));
   transition:
-    transform .5s var(--ease-out-expo),
-    border-color .4s var(--ease),
-    box-shadow .45s var(--ease);
+    opacity .92s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    translate .92s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    scale .92s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
 }
 .location-card:hover {
   --interaction-y: -5px;
+  --interaction-scale: 1.03;
   border-color: var(--border-rose-strong);
   box-shadow: var(--shadow-rose);
 }
@@ -281,15 +314,40 @@
   .card:hover::before,
   .location-card:hover::before,
   .icon-card:hover::before,
-  .blog-card:hover::before { opacity: 1; }
+  .blog-card:hover::before,
+  .qh-card:hover::before { opacity: 1; }
   .card:hover .card__title { color: var(--gold-light); }
   .card--interactive:active,
   .blog-card:active,
   .location-card:active {
     transition-duration: .12s;
     --interaction-y: -1px;
-    --motion-scale: .994;
+    --interaction-scale: .994;
   }
+}
+
+/* Touch surfaces never hover — they get a lighter press feedback instead.
+   The is-pressed class is maintained by motion.js touch delegation; :active
+   is kept as a progressive no-JS fallback where browsers apply it. */
+@media (hover: none) and (pointer: coarse) {
+  .card:active,
+  .blog-card:active,
+  .location-card:active,
+  button.gallery-item:active,
+  .qh-card:active,
+  .card.is-pressed,
+  .blog-card.is-pressed,
+  .location-card.is-pressed,
+  .gallery-item.is-pressed:not(.gallery-item--pending),
+  .qh-card.is-pressed {
+    transition-duration: .16s;
+    --interaction-y: -2px;
+    --interaction-scale: 1.01;
+    border-color: var(--border-rose-strong);
+    box-shadow: var(--shadow-rose);
+  }
+  .blog-card:active,
+  .blog-card.is-pressed { box-shadow: var(--shadow-gold); }
 }
 
 /* ---------------------------------------------------------- button polish */
@@ -484,7 +542,24 @@
   .location-card::before,
   .icon-card::before,
   .blog-card::before,
+  .qh-card::before,
   .btn::before { display: none; }
+  /* Keep the colour-and-shadow highlight but remove geometric movement. */
+  .card:hover,
+  .card:active,
+  .icon-card:hover,
+  .blog-card:hover,
+  .blog-card:active,
+  .location-card:hover,
+  .location-card:active,
+  .gallery-item:hover,
+  .gallery-item:active,
+  .card.is-pressed,
+  .blog-card.is-pressed,
+  .location-card.is-pressed,
+  .gallery-item.is-pressed,
+  body .qh .qh-card:hover,
+  body .qh .qh-card:active { --interaction-scale: 1; --interaction-y: 0px; }
   .motion-parallax img { transform: none !important; transition: none; }
   .motion-reveals .table-wrap.is-revealed .compare tbody tr { animation: none; }
   .nav__item--has-menu:hover > .nav__menu li,

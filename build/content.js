@@ -139,7 +139,7 @@ const home = {
         '<p>We explain what each option is intended to do and distinguish procedures designed to change breast volume from those that may affect appearance in other ways. A treatment being described as “non-surgical” does not necessarily mean it is effective, risk-free or suitable for breast enlargement.</p>' +
         '<p>Our guides draw on published research and guidance from health authorities and professional organisations. Where possible, we link to original sources and explain the strength and limitations of the evidence. When evidence is uncertain, limited or does not support a claim, we aim to say so clearly.</p>' +
         '<p>For each approach, we consider potential benefits alongside limitations, recovery, alternatives and safety questions. The goal is to support realistic expectations and better-prepared conversations with a qualified healthcare professional—not to rush or promote a decision.</p>',
-      media: topicImage('consultation-illustrative'),
+      media: topicImage('ourApproach'),
       link: { label: 'Explore the sources and evidence', href: '/education-research/' },
       script: 'Clarity before any decision'
     },

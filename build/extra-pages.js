@@ -7,7 +7,8 @@
    than for a treating clinic. */
 
 const { site } = require('./content');
-const { organizationSchema, WHATSAPP, whatsappLink, WHATSAPP_MESSAGE } = require('./locations');
+const { organizationSchema, WHATSAPP, whatsappLink, WHATSAPP_MESSAGE, locations } = require('./locations');
+const { siteImages } = require('./site-images');
 const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 const mailIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="6" width="17" height="12" rx="1.5"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg>';
 const whatsappIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.4 11.7a8.4 8.4 0 0 1-12.4 7.4L3.6 20.4l1.3-4.3a8.4 8.4 0 1 1 15.5-4.4Z"/><path d="M9 8.4h2l.8 2-1 .8a6 6 0 0 0 2.9 2.9l.8-1 2 .8v2a1 1 0 0 1-1 1 7.6 7.6 0 0 1-6.6-6.5 1 1 0 0 1 1-1Z"/></svg>';
@@ -31,7 +32,7 @@ const contact = {
   url: '/contact/', slug: 'contact',
   h1: 'Contact Us',
   seoTitle: 'Contact Us & Appointment Enquiries | Quantum Health',
-  seoDescription: 'Contact Quantum Health about breast enlargement: Hong Kong head office, La Crown and Ritz in Bengaluru, Dubai international contact, click-to-call numbers and a secure appointment enquiry form.',
+  seoDescription: 'Contact Quantum Health about breast enlargement: Hong Kong head office, La Crown and Ritz in Bengaluru, Badr Al Samaa Medical Center in Dubai, click-to-call numbers and a secure appointment enquiry form.',
   bannerEyebrow: 'Contact & appointments',
   bannerLead: 'Reach the Quantum Health team in Hong Kong, Bengaluru or Dubai, or send an appointment enquiry. This is an enquiry service — no appointment is confirmed until the team replies.',
   breadcrumb: [{ label: 'Contact' }],
@@ -87,7 +88,7 @@ const contact = {
       heading: 'What helps the team route your enquiry',
       cols: 3,
       items: [
-        { icon: 'pin', title: 'Preferred location', text: 'Tell us whether you are asking about Hong Kong, La Crown or Ritz in Bengaluru, or Dubai international contact.' },
+        { icon: 'pin', title: 'Preferred location', text: 'Tell us whether you are asking about Hong Kong, La Crown or Ritz in Bengaluru, or Dubai — Badr Al Samaa Medical Center.' },
         { icon: 'calendar', title: 'A realistic window', text: 'Give a preferred date and time window rather than an exact slot. The team will confirm the actual appointment time.' },
         { icon: 'safety', title: 'No urgent medical details', text: 'Use this form for appointment enquiries only. Do not send test results, images or detailed medical history, and never use it for an emergency.' }
       ]
@@ -99,7 +100,7 @@ const locationsPage = {
   url: '/locations/', slug: 'locations',
   h1: 'Our Global Locations',
   seoTitle: 'Our Global Locations | Quantum Health',
-  seoDescription: 'Quantum Health global contact network: Hong Kong head office in Tuen Mun, Bengaluru branches at La Crown Jayanagar and Ritz, and Dubai international enquiries.',
+  seoDescription: 'Quantum Health global contact network: Hong Kong head office in Tuen Mun, Bengaluru branches at La Crown Jayanagar and Ritz, and Badr Al Samaa Medical Center in Bur Dubai, with telephone numbers and map links.',
   bannerEyebrow: 'Global locations',
   bannerLead: 'The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.',
   bannerImage: '/Neon Cityscape with Golden Location Pins.png',
@@ -118,17 +119,44 @@ const locationsPage = {
       html: '<p class="lead">The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.</p>'
     },
     {
+      type: 'city-panels',
+      center: true,
+      eyebrow: 'Dubai and Bengaluru',
+      heading: 'Where consultations happen in Dubai and Bengaluru',
+      lead: 'Dubai consultations are held at Badr Al Samaa Medical Center in Mankhool, Bur Dubai. In Bengaluru the team consults at La Crown in Jayanagar and at Ritz. Choose a panel to send an enquiry to that branch.',
+      panels: [
+        {
+          image: siteImages.dubaiPanel,
+          country: 'United Arab Emirates',
+          city: 'Dubai',
+          address: 'Badr Al Samaa Medical Center, Ground Floor, Mankhool, Bur Dubai',
+          phones: locations.find((location) => location.id === 'dubai').phones,
+          href: '/contact/?branch=dubai#appointment',
+          cta: 'Enquire'
+        },
+        {
+          image: siteImages.bengaluruPanel,
+          country: 'India',
+          city: 'Bengaluru',
+          address: 'La Crown, Jayanagar, and Ritz — confirm the branch when you book',
+          phones: locations.find((location) => location.id === 'la-crown').phones.slice(0, 2),
+          href: '/contact/?branch=la-crown#appointment',
+          cta: 'Enquire'
+        }
+      ]
+    },
+    {
       type: 'locations',
       eyebrow: 'Where to reach us',
       heading: 'Four points of contact',
-      lead: 'Hong Kong is the head office. Bengaluru has two branch locations, La Crown in Jayanagar and Ritz. Dubai is an international telephone contact only. No opening hours or treatment availability are implied.',
+      lead: 'Hong Kong is the head office. Bengaluru has two branch locations, La Crown in Jayanagar and Ritz. Dubai consultations are held at Badr Al Samaa Medical Center in Mankhool, Bur Dubai. No opening hours or treatment availability are implied.',
       locations: site.contact.locations
     },
     {
       type: 'notice',
       icon: 'pin',
       title: 'Before travelling to any location',
-      text: 'Please confirm your appointment and the exact meeting point with the team before travelling. The Dubai number is an international contact line: no Dubai street address or walk-in office has been supplied, so none is published. Map links open Google Maps in a new tab; check the pin and the destination before setting out.'
+      text: 'Please confirm your appointment and the exact meeting point with the team before travelling. In Dubai the address is Badr Al Samaa Medical Center in Mankhool, Bur Dubai: confirm the floor and suite with the team before setting out. Map links open Google Maps in a new tab; check the pin and the destination before setting out.'
     },
     {
       type: 'icon-grid',

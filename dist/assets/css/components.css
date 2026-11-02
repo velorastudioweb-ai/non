@@ -265,6 +265,15 @@
 .brand { display: inline-flex; align-items: center; gap: .75rem; min-width: 0; text-decoration: none; }
 .brand__ico { color: var(--gold); display: inline-flex; flex: none; }
 .brand__ico svg { width: 32px; height: 32px; }
+/* Crowned-Q brand mark supplied by Quantum Health; the ring keeps it legible
+   against both the transparent hero header and the scrolled burgundy state. */
+.brand__logo {
+  width: 42px;
+  height: 42px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--border), 0 6px 18px rgba(31, 3, 7, .45);
+}
 .brand__text { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
 .brand__name {
   font-family: var(--font-heading);
@@ -763,10 +772,10 @@ body.nav-open { overflow: hidden; }
   position: relative;
   isolation: isolate;
   transition:
-    transform var(--dur) var(--ease),
-    border-color var(--dur) var(--ease),
-    box-shadow var(--dur) var(--ease),
-    background var(--dur) var(--ease);
+    transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease);
 }
 .card::after {
   content: "";
@@ -778,7 +787,7 @@ body.nav-open { overflow: hidden; }
   opacity: 0;
   pointer-events: none;
   transform: scale(.985);
-  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
 }
 /* subtle ruby sheen over card imagery ties photography into the palette */
 .card__media::before {
@@ -832,9 +841,9 @@ body.nav-open { overflow: hidden; }
   border-radius: var(--radius-md);
   height: 100%;
   transition:
-    border-color var(--dur) var(--ease),
-    box-shadow var(--dur) var(--ease),
-    transform var(--dur) var(--ease);
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
 }
 .icon-card__icon {
   width: 50px; height: 50px;
@@ -869,6 +878,7 @@ body.nav-open { overflow: hidden; }
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     --interaction-y: -6px;
+    --interaction-scale: 1.03;
     border-color: var(--border-rose-strong);
     box-shadow: var(--shadow-rose);
   }
@@ -878,6 +888,7 @@ body.nav-open { overflow: hidden; }
     border-color: var(--border-rose-strong);
     box-shadow: var(--shadow-rose);
     --interaction-y: -6px;
+    --interaction-scale: 1.03;
   }
 }
 .card:focus-within, .icon-card:focus-within {
@@ -1064,9 +1075,9 @@ table.compare { width: 100%; min-width: 45rem; }
   text-align: left;
   min-width: 0;
   transition:
-    border-color var(--dur) var(--ease),
-    box-shadow var(--dur) var(--ease),
-    transform var(--dur) var(--ease);
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
 }
 .gallery-item img {
   width: 100%; height: 100%;
@@ -1094,10 +1105,12 @@ button.gallery-item .gallery-item__cap {
     border-color: var(--border-rose-strong);
     box-shadow: var(--shadow-rose);
     --interaction-y: -6px;
+    --interaction-scale: 1.03;
   }
   .gallery-item:hover img { transform: scale(1.05); }
   .gallery-item--pending:hover {
-    --interaction-y: 0px; box-shadow: none; border-color: var(--border-rose);
+    --interaction-y: 0px; --interaction-scale: 1;
+    box-shadow: none; border-color: var(--border-rose);
   }
 }
 .gallery-item:focus-visible { border-color: var(--gold); box-shadow: var(--shadow-gold); }
@@ -1790,6 +1803,7 @@ button.gallery-item .gallery-item__cap {
 @media (max-width: 380px) {
   .brand__tag { display: none; }
   .brand__ico svg { width: 28px; height: 28px; }
+  .brand__logo { width: 34px; height: 34px; }
   .site-header .brand__name { font-size: 1rem; letter-spacing: .02em; white-space: normal; overflow: visible; text-overflow: clip; }
 }
 @media (max-width: 479px) {
@@ -2439,7 +2453,7 @@ body.nav-open .mobile-quickbar { display: none; }
 }
 .blog-card[hidden] { display: none; }
 @media (hover: hover) and (pointer: fine) {
-  .blog-card:hover { --interaction-y: -4px; border-color: var(--border-rose-strong); box-shadow: var(--shadow-gold); }
+  .blog-card:hover { --interaction-y: -4px; --interaction-scale: 1.03; border-color: var(--border-rose-strong); box-shadow: var(--shadow-gold); }
 }
 .blog-card.filter-enter {
   animation: blog-card-filter-in .42s var(--ease) both;
@@ -2512,7 +2526,34 @@ body .qh .qh-hero {
   background: var(--ruby-aurora-soft), var(--panel-gradient-alt) !important;
 }
 body .qh .qh-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.5rem); }
-body .qh .qh-card { min-width: 0; padding: clamp(1rem, 2vw, 1.35rem); border-color: var(--border-soft) !important; background: var(--panel-gradient) !important; border-radius: var(--radius-md); }
+body .qh .qh-card {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border-color: var(--border-soft) !important;
+  background: var(--panel-gradient) !important;
+  border-radius: var(--radius-md);
+  position: relative;
+  isolation: isolate;
+  --interaction-x: 0px;
+  --interaction-y: 0px;
+  --interaction-scale: 1;
+  transform: translate3d(var(--interaction-x), var(--interaction-y), 0) scale(var(--interaction-scale));
+  transition:
+    opacity .78s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    translate .92s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    scale .92s var(--ease-out-expo) var(--reveal-delay, 0ms),
+    transform var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+}
+@media (hover: hover) and (pointer: fine) {
+  body .qh .qh-card:hover {
+    --interaction-y: -4px;
+    --interaction-scale: 1.03;
+    border-color: var(--border-rose-strong) !important;
+    box-shadow: var(--shadow-rose);
+  }
+}
 body .qh .qh-card ul { padding-left: 1.2rem; }
 body .qh .qh-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
 body .qh .qh-btn {
@@ -2573,6 +2614,47 @@ body .qh .qh-table tbody th,
 body .qh .qh-location-number { color: var(--gold-light) !important; }
 body .qh .qh-specialty p { color: var(--ivory) !important; font-family: var(--font-heading) !important; }
 body .qh .qh-vikas-hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); gap: clamp(1.5rem, 4vw, 2.5rem); align-items: center; }
+/* Dr. Vikas Singh page banner. The supplied artwork keeps its subject on the
+   right third, so it is published at its own aspect ratio above the profile
+   copy instead of being stretched behind it: stretching cropped the subject and
+   blew the 1600px source up to nearly three times its width. */
+body .qh .qh-vikas-hero--banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2.6vw, 1.6rem);
+}
+body .qh .qh-vikas-banner {
+  order: -1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 753;
+  object-fit: cover;
+  border: var(--hairline) solid var(--border-soft);
+  border-radius: var(--radius-md);
+}
+body .qh .qh-vikas-hero__copy { min-width: 0; }
+/* Supplied Zee Business / Times Magazine coverage. */
+body .qh .qh-video { margin: 1.25rem 0 0; }
+body .qh .qh-video__player {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin-inline: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #1F0307;
+}
+body .qh .qh-video figcaption {
+  max-width: 900px;
+  margin-inline: auto;
+  padding-top: .6rem;
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.5;
+  text-align: center;
+}
 body .qh .qh-locations { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 body .qh .qh-specialty { min-height: 150px; }
 body .qh .qh-breadcrumb { color: var(--muted) !important; }
@@ -2590,7 +2672,7 @@ body.page-about-us .qh-about .qh-doctor-card__image {
   object-fit: contain !important;
 }
 @media (max-width: 900px) {
-  body .qh .qh-vikas-hero { grid-template-columns: minmax(0, 1fr) minmax(250px, 320px); }
+  body .qh .qh-vikas-hero:not(.qh-vikas-hero--banner) { grid-template-columns: minmax(0, 1fr) minmax(250px, 320px); }
   body .qh .qh-locations { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 650px) {
@@ -2856,7 +2938,124 @@ body.page-about-us .qh-about .qh-doctor-card__image {
   .page-about-us .qh-about .qh-about-leadership > .eyebrow { grid-column: auto; }
   .page-about-us .qh-about .qh-about-leadership .qh-portrait { width: 6rem; }
 }
-/* ========== end profile styles ========== */
+/* ========== end profile styles ========== *//* ========== Dubai and Bengaluru consultation panels ==========
+   The supplied artwork already draws its own neon frame, title rule and
+   pill-shaped button, so the enquiry control is placed in percentages of the
+   artwork in both layouts and sized with container-query units. Geometry
+   measured from the artwork: title rule at 24% of the panel height, pill
+   between 80% and 90%, both starting about 6.5% in from the left edge. Wide
+   screens also overlay the published address on the dark sky at the top left;
+   narrow screens keep the artwork at its own aspect ratio and read the text
+   below it, because the overlay text would otherwise run into the skyline. */
+.city-panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.25rem, 3vw, var(--sp-4));
+  margin-top: var(--sp-5);
+}
+@media (min-width: 900px) {
+  .city-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.city-panel { container-type: inline-size; min-width: 0; }
+.city-panel__frame { min-width: 0; }
+.city-panel__media { position: relative; }
+.city-panel__art {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+.city-panel__cta {
+  position: absolute;
+  left: 6.6%;
+  top: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28.6%;
+  height: 10.4%;
+  color: var(--gold-light);
+  font-size: clamp(.62rem, 1.8cqw, .78rem);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* The pill in the artwork is shorter than a comfortable tap target, so the
+   hit area extends beyond the visible label. */
+.city-panel__cta::before {
+  content: "";
+  position: absolute;
+  left: -12%;
+  top: -85%;
+  width: 124%;
+  height: 270%;
+}
+.city-panel__cta span { display: inline-block; }
+.city-panel__cta svg { display: none; width: 1.55em; height: 1.55em; flex: none; margin-left: .45em; }
+.city-panel__cta:hover { color: var(--ivory); }
+.city-panel__head { margin-top: 1rem; }
+.city-panel__country {
+  margin: 0 0 .25rem;
+  color: var(--gold);
+  font-size: var(--fs-micro);
+  letter-spacing: .26em;
+  text-transform: uppercase;
+}
+.city-panel__city {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 5vw, 2.1rem);
+  font-weight: var(--w-head-strong);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--ivory);
+}
+.city-panel__address {
+  margin: .5rem 0 .35rem;
+  color: var(--muted);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+}
+.city-panel__phones { margin: 0; font-size: var(--fs-body); }
+.city-panel__phones a { color: var(--gold-light); }
+@container (min-width: 540px) {
+  .city-panel__frame {
+    position: relative;
+    aspect-ratio: var(--city-panel-ratio);
+  }
+  .city-panel__media {
+    position: absolute;
+    inset: 0;
+  }
+  .city-panel__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .city-panel__cta svg { display: block; }
+  .city-panel__head {
+    position: absolute;
+    left: 6.4%;
+    top: 6%;
+    width: 44%;
+    margin: 0;
+  }
+  .city-panel__country { font-size: clamp(.62rem, 1.75cqw, .82rem); letter-spacing: .3em; }
+  .city-panel__city { font-size: clamp(1.35rem, 4.6cqw, 2.2rem); }
+  .city-panel__body {
+    position: absolute;
+    left: 6.4%;
+    top: 29.5%;
+    width: 42%;
+  }
+  .city-panel__address { margin-top: 0; font-size: clamp(.72rem, 1.95cqw, .96rem); line-height: 1.5; }
+  .city-panel__phones { font-size: clamp(.7rem, 1.9cqw, .92rem); line-height: 1.45; }
+}
+/* ========== end Dubai and Bengaluru consultation panels ========== */
+
 @media (min-width: 1024px) {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
   .header-cta { display: none; }
