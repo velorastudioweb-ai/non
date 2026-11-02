@@ -171,12 +171,6 @@ const understanding = {
       ],
       slot: 'Consultation room detail'
     },
-    {
-      type: 'notice',
-      icon: 'evidence',
-      title: 'Educational information only — not medical advice',
-      text: 'This page explains concepts for general education. It cannot account for your health, anatomy or circumstances, and it does not recommend any treatment. Decisions about breast enlargement should be made with a qualified, registered clinician after proper assessment.'
-    },
     stdCta({ heading: 'Ready to look at the options in detail?' })
   ]
 };

@@ -8,8 +8,6 @@ const disclosure = '<p class="blog-disclosure"><strong>Illustrative scenario:</s
 const refs = '<h2>Sources and further reading</h2><ul><li><a href="https://www.fda.gov/medical-devices/breast-implants/breast-implants" rel="noopener" target="_blank">U.S. FDA: Breast implants</a></li><li><a href="https://www.nhs.uk/conditions/cosmetic-procedures/breast-enlargement/" rel="noopener" target="_blank">NHS: Breast enlargement</a></li><li><a href="https://www.plasticsurgery.org/cosmetic-procedures/breast-augmentation" rel="noopener" target="_blank">ASPS: Breast augmentation</a></li></ul>';
 const faq = (items) => ({ type:'faq', heading:'Frequently asked questions', items:items.map(([q,a])=>({q,a:'<p>'+a+'</p>'})) });
 const educationFaq = (topic) => faq([
-  ['Is this article medical advice?', 'No. It is general education and cannot assess your health, anatomy, goals or suitability.'],
-  ['Can a result be guaranteed?', 'No. Results, risks, healing and the need for future care vary between individuals.'],
   ['Who should I speak to?', 'Discuss individual questions with an appropriately qualified, registered clinician.'],
   ['Where can I check evidence?', 'Use the linked regulator and professional-body sources, and ask for product-specific information.'],
   ['What is the safest next step?', 'Take time, compare reliable information, and do not proceed under pressure.']

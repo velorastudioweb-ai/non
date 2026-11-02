@@ -121,8 +121,7 @@ const BANNERS = {
   '/blogs/breast-fillers-sculptra-and-biostimulators-safety-questions/': 'banner-blog-safety',
   '/privacy-policy/': 'banner-policy',
   '/cookie-policy/': 'banner-policy',
-  '/terms-of-use/': 'banner-policy',
-  '/medical-disclaimer/': 'banner-policy'
+  '/terms-of-use/': 'banner-policy'
 };
 
 function bannerFor(page) {

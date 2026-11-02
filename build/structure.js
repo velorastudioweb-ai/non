@@ -320,7 +320,6 @@ const landings = [
     cards(expandedNonsurgicalEntries, 'Evidence and safety guides')
   ], 'non-surgical'),
   landing(sections[2], 'General Education & Research', 'Shared information on anatomy, comparisons, candidacy, warning signs and the external evidence behind surgical and non-surgical options.', [
-    { type: 'notice', icon: 'info', title: 'Education before a personal decision', text: 'These resources provide general education, not individual medical advice. Research is attributed to its external authors and publishers; no treatments or clinical consultations are offered by this website.' },
     cards(education, 'Learn, compare and read the evidence'),
     cards(expandedEducationEntries, 'Decision and practical guides')
   ], 'education-research')

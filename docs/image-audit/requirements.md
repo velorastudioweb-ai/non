@@ -2,7 +2,7 @@
 
 Prepared before generating assets. The JSON companion contains the full existing content, placement, dimensions, concepts and generation prompts for every section.
 
-Pages: 165; audited page-banner/content sections: 974.
+Pages: 164; audited page-banner/content sections: 968.
 
 | Route | Section | Image needed | Planned asset |
 | --- | --- | --- | --- |
@@ -35,7 +35,6 @@ Pages: 165; audited page-banner/content sections: 974.
 | `/non-surgical-breast-enlargement/` | Non-surgical options: evidence, limitations and safety | Yes | qh-non-surgical-evidence-card-960.webp |
 | `/non-surgical-breast-enlargement/` | Evidence and safety guides | Yes | qh-non-surgical-evidence-card-960.webp |
 | `/education-research/` | Page banner | Yes | qh-education-research-banner-1600.webp |
-| `/education-research/` | Education before a personal decision | No | Text / existing subtle icon |
 | `/education-research/` | Learn, compare and read the evidence | Yes | qh-education-research-card-960.webp |
 | `/education-research/` | Decision and practical guides | Yes | qh-education-research-card-960.webp |
 | `/surgical/breast-augmentation/` | Page banner | Yes | qh-augmentation-planning-banner-1600.webp |
@@ -404,7 +403,6 @@ Pages: 165; audited page-banner/content sections: 974.
 | `/breast-enlargement-without-surgery/` | Warning signs — and what to do | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Sources and further reading | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Browse the complete published literature | No | Text / existing subtle icon |
-| `/breast-enlargement-without-surgery/` | Educational information only — not medical advice | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Further reading from the consolidated article | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Frequently asked questions | No | Text / existing subtle icon |
 | `/breast-enlargement-without-surgery/` | Explore this guide in detail | No | Text / existing subtle icon |
@@ -700,7 +698,6 @@ Pages: 165; audited page-banner/content sections: 974.
 | `/understanding-breast-enlargement/` | The four broad routes to more volume | No | Text / existing subtle icon |
 | `/understanding-breast-enlargement/` | The treatment landscape at a glance | No | Text / existing subtle icon |
 | `/understanding-breast-enlargement/` | A clear path from curiosity to an informed decision | Yes | qh-understanding-options-card-960.webp |
-| `/understanding-breast-enlargement/` | Educational information only — not medical advice | No | Text / existing subtle icon |
 | `/understanding-breast-enlargement/` | Related education | No | Text / existing subtle icon |
 | `/breast-anatomy/` | Page banner | Yes | qh-breast-tissue-schematic-banner-1600.webp |
 | `/breast-anatomy/` | prose 1 | Yes | qh-breast-tissue-schematic-card-960.webp |
@@ -775,7 +772,6 @@ Pages: 165; audited page-banner/content sections: 974.
 | `/research/` | PubMed: topic-grouped study findings / prose 12 | No | Text / existing subtle icon |
 | `/research/` | PubMed: topic-grouped study findings / What the registry and benchmark studies report | No | Text / existing subtle icon |
 | `/research/` | PubMed: topic-grouped study findings / About this research page | No | Text / existing subtle icon |
-| `/research/` | PubMed: topic-grouped study findings / Educational information only — not medical advice | No | Text / existing subtle icon |
 | `/research/` | PubMed Central: searchable citation archive | No | Text / existing subtle icon |
 | `/research/` | PubMed Central: searchable citation archive / prose 1 | No | Text / existing subtle icon |
 | `/research/` | PubMed Central: searchable citation archive / How this library was built | No | Text / existing subtle icon |
@@ -962,8 +958,6 @@ Pages: 165; audited page-banner/content sections: 974.
 | `/cookie-policy/` | prose 1 | No | Text / existing subtle icon |
 | `/terms-of-use/` | Page banner | No | Text / existing subtle icon |
 | `/terms-of-use/` | prose 1 | No | Text / existing subtle icon |
-| `/medical-disclaimer/` | Page banner | No | Text / existing subtle icon |
-| `/medical-disclaimer/` | prose 1 | No | Text / existing subtle icon |
 | `/doctors/dr-vikas-singh/` | Page banner | No | Text / existing subtle icon |
 | `/doctors/dr-vikas-singh/` | prose 1 | No | Text / existing subtle icon |
 | `/doctors/dr-surindher-dsa/` | Page banner | No | Text / existing subtle icon |

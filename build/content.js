@@ -89,7 +89,8 @@ const site = {
   footerLegal: [
     { label: 'Privacy policy', href: '/privacy-policy/' },
     { label: 'Cookie policy', href: '/cookie-policy/' },
-    { label: 'Terms of use', href: '/terms-of-use/' }
+    { label: 'Terms of use', href: '/terms-of-use/' },
+    { label: 'Medical disclaimer', href: '/medical-disclaimer/' }
   ]
 };
 
@@ -1153,8 +1154,6 @@ pages.push({
         '</ul>Evidence and regulations change, and study figures may not apply to your situation. Check the originals and current regulator guidance before acting.' },
     { type: 'notice', icon: 'evidence', title: 'Browse the complete published literature',
       text: 'This guide cites selected sources. The <a href="/research/breast-enlargement/">PMC research library</a> indexes every PubMed Central record for the phrase “breast enlargement” — with abstracts, citations and direct links to the original articles.' },
-    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
-      text: 'This guide does not recommend any treatment for you. Decisions about your body should be made with a qualified, registered doctor who can examine you. If you notice a new breast lump or any urgent warning sign, seek medical care promptly.' },
     stdCta({ heading: 'Talk through the options with a qualified clinician' })
   ]
 });
@@ -1372,8 +1371,6 @@ pages.push({
         { q: 'Where can I read the full articles?', a: '<p>Each link opens the study’s PubMed record with its abstract. Many full texts sit behind journal subscriptions; ask a librarian, university library or your clinician for access, and treat any claim you cannot verify with caution.</p>' }
       ]
     },
-    { type: 'notice', blush: true, icon: 'info', title: 'Educational information only — not medical advice',
-      text: 'This page summarises published research for general education. It cannot account for your health, anatomy or circumstances, and it does not recommend any treatment. Study figures may not transfer to individuals. Decisions about breast enlargement should be made with a qualified, registered clinician after proper assessment. If you notice a new breast lump or any urgent symptom, seek medical care promptly.' },
     stdCta({ heading: 'Want to discuss what the evidence means for you?' })
   ]
 });
