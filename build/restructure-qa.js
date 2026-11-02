@@ -9,7 +9,7 @@ const pages = new Map(allPages.map((p) => [p.url, p]));
 const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'index.html'), 'utf8');
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
-assert.equal(nonsurgical.length, 9);
+assert.equal(nonsurgical.length, 10);
 assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Meet Dr. Vikas Singh', 'Blogs', 'Locations', 'About', 'Contact us']);
 const vikasNav = site.nav.find((n) => n.label === 'Meet Dr. Vikas Singh');
 assert(vikasNav && vikasNav.href === '/doctors/dr-vikas-singh/', 'Primary navigation must link to the Dr. Vikas Singh profile');

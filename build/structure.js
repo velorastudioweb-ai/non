@@ -14,7 +14,7 @@ const { batchFourNonsurgicalSubpages, batchFourSurgicalSubpages } = require('./b
 const { trendingOptionsPage } = require('./trending-options');
 const surgicalSubpages = batchTwoSurgicalSubpages.concat(batchFourSurgicalSubpages);
 const nonsurgicalSubpages = batchThreeNonsurgicalSubpages.concat(batchFourNonsurgicalSubpages);
-const expandedPages = batchOnePages.concat(surgicalSubpages, trendingOptionsPage);
+const expandedPages = batchOnePages.concat(surgicalSubpages);
 const { siteImages, topicImage } = require('./site-images');
 const clone = (value) => JSON.parse(JSON.stringify(value));
 const source = new Map(pages.concat(libraryPages).map((p) => [p.url, p]));
@@ -22,6 +22,9 @@ const source = new Map(pages.concat(libraryPages).map((p) => [p.url, p]));
 // membership, cards, breadcrumbs, schema and the sitemap cannot drift apart.
 expandedPages.forEach((p) => source.set(p.url, p));
 nonsurgicalSubpages.forEach((p) => source.set(p.url, p));
+// The trending-options hub is a navigated non-surgical topic of its own rather
+// than an expansion of an existing guide, so it joins the registry directly.
+source.set(trendingOptionsPage.url, trendingOptionsPage);
 const get = (url) => {
   if (!source.has(url)) throw new Error('Missing source content: ' + url);
   return clone(source.get(url));
@@ -43,6 +46,7 @@ const surgical = [
   ['/surgical/mastectomy-chest-surgery/', 'Mastectomy & Chest Contouring Surgery: Patient Information']
 ];
 const nonsurgical = [
+  ['/non-surgical/trending-options/', 'Trending Options: Fillers, Sculptra, Threads, PRP and Stem Cells'],
   ['/breast-enlargement-without-surgery/', 'Breast Enlargement Without Surgery: What Works — Evidence Guide'],
   ['/non-surgical/', 'Non-Surgical Breast Enhancement: Options & Safety'],
   ['/non-surgical/dermal-fillers/', 'Breast Fillers: Safety, Evidence & Alternatives'],

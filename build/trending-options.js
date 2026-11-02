@@ -29,9 +29,9 @@ const trendingOptionsPage = page({
   section: 'non-surgical',
   group: 'nonsurgical',
   h1: 'Trending Options For Non-Surgical Breast Enlargement',
-  cardTitle: 'Trending options: fillers, Sculptra, threads, PRP',
+  cardTitle: 'Trending options: fillers, Sculptra, threads, PRP, AAA stem cell',
   seoTitle: 'Trending Options For Non-Surgical Breast Enlargement | Quantum Health',
-  seoDescription: 'Dermal fillers, Sculptra, PDO threads, PRP and stem-cell approaches are the most-advertised non-surgical breast enlargement options. Here is what each claims and what the evidence shows.',
+  seoDescription: 'Dermal fillers, Sculptra, PDO threads, PRP and AAA stem cell protocols are the most-advertised non-surgical breast enlargement options. Here is what each claims and what the evidence shows.',
   bannerLead: 'The five treatments advertised most often for non-surgical breast enlargement, explained one by one: what each is approved to do, what clinics claim, and what the published evidence supports.',
   imageKey: 'nonSurgicalSafety',
   related: [
@@ -44,7 +44,7 @@ const trendingOptionsPage = page({
       type: 'prose',
       id: 'trending-intro',
       html:
-        '<p class="lead">Ask about a “no-surgery” way to increase breast size and the same five treatments come up, in clinics and on social media, almost every time: dermal fillers, Sculptra (poly-L-lactic acid), PDO threads, PRP (platelet-rich plasma, often sold as a “vampire breast lift”) and stem-cell or “regenerative” protocols.</p>' +
+        '<p class="lead">Ask about a “no-surgery” way to increase breast size and the same five treatments come up, in clinics and on social media, almost every time: dermal fillers, Sculptra (poly-L-lactic acid), PDO threads, PRP (platelet-rich plasma, often sold as a “vampire breast lift”) and AAA stem cell or “regenerative” protocols.</p>' +
         '<p>Each is genuinely popular. Popularity is not evidence. A treatment trends because it is marketable — quick to advertise, framed as natural, reversible or “just an injection” — and because a consultation room can offer it on the same afternoon. None of these five has an approved indication for increasing breast size, and none has been shown in published research to produce a reliable, lasting increase in breast volume.</p>' +
         '<p>This page sets out what each option actually is, how it is being sold, where the evidence stands and what can go wrong, then links to the full guide for each one. It is written so that a claim in an advertisement can be compared with a claim in a study. For a method-by-method verdict on more than 20 approaches, including bras, creams, supplements and exercises, read the <a href="/breast-enlargement-without-surgery/">evidence guide</a>; for the underlying terms, see <a href="/non-surgical/reading-the-evidence/">how to read the evidence on non-surgical breast treatments</a>.</p>' +
         '<p>If a measurable, lasting increase in breast volume is the goal, the two established routes are implants and autologous fat transfer — both surgical, both with their own recovery and long-term commitments. That comparison is set out on the <a href="/breast-enhancement-comparison/">surgical versus non-surgical</a> page, and <a href="/non-surgical/appearance-vs-volume/">appearance versus volume</a> explains why so many non-surgical results are temporary.</p>'
@@ -52,7 +52,7 @@ const trendingOptionsPage = page({
     {
       type: 'prose',
       html:
-        '<nav class="source-index" aria-label="Trending options on this page"><a href="#trending-dermal-fillers">1. Dermal fillers</a> · <a href="#trending-sculptra">2. Sculptra and biostimulators</a> · <a href="#trending-pdo-threads">3. PDO threads</a> · <a href="#trending-prp">4. PRP</a> · <a href="#trending-stem-cells">5. Stem-cell approaches</a> · <a href="#trending-comparison">Side-by-side view</a> · <a href="#trending-before-you-book">Before you book</a> · <a href="#trending-faq">Questions</a></nav>'
+        '<nav class="source-index" aria-label="Trending options on this page"><a href="#trending-dermal-fillers">1. Dermal fillers</a> · <a href="#trending-sculptra">2. Sculptra and biostimulators</a> · <a href="#trending-pdo-threads">3. PDO threads</a> · <a href="#trending-prp">4. PRP</a> · <a href="#trending-stem-cells">5. AAA stem cell</a> · <a href="#trending-comparison">Side-by-side view</a> · <a href="#trending-before-you-book">Before you book</a> · <a href="#trending-faq">Questions</a></nav>'
     },
     {
       type: 'notice',
@@ -126,12 +126,12 @@ const trendingOptionsPage = page({
       type: 'split',
       id: 'trending-stem-cells',
       alt: true,
-      eyebrow: 'Trending option 5 · Regenerative protocols',
-      heading: 'Stem-cell and “regenerative” breast enlargement',
+      eyebrow: 'Trending option 5 · AAA stem cell protocol',
+      heading: 'AAA stem cell and “regenerative” breast enlargement',
       media: topicImage('nonSurgicalOverview', { alt: 'Educational illustration about stem-cell and regenerative breast treatments' }),
       script: 'The label is the marketing. Ask what is actually in the syringe, and how it was processed.',
       body:
-        '<p><strong>What it is.</strong> An umbrella for several different things. Adipose-derived stem or stromal cells (ASC) and stromal vascular fraction (SVF) are cell mixtures obtained from fat tissue, sometimes added to a fat graft in “cell-assisted lipotransfer” (CAL). Exosomes and “secretome” products are substances released by cells. “AAA” and similar brand names attach stem-cell language to particular clinic protocols. Our glossary page on <a href="/non-surgical/regenerative-medicine/stem-cell-terms/">stem-cell and regenerative terms</a> separates these.</p>' +
+        '<p><strong>What it is.</strong> An umbrella for several different things. Adipose-derived stem or stromal cells (ASC) and stromal vascular fraction (SVF) are cell mixtures obtained from fat tissue, sometimes added to a fat graft in “cell-assisted lipotransfer” (CAL). Exosomes and “secretome” products are substances released by cells. “AAA stem cell” and similar brand names attach stem-cell language to a particular clinic protocol — the name is a marketing label, not a licensed product with its own published indication. Our glossary page on <a href="/non-surgical/regenerative-medicine/stem-cell-terms/">stem-cell and regenerative terms</a> separates these.</p>' +
         '<p><strong>Why it trends.</strong> It sounds like the science has caught up with surgery: grow your own tissue, no implant, no donor site morbidity, “natural” results. It also justifies a premium price.</p>' +
         '<p><strong>Where the evidence stands.</strong> Basic research on these cells is real and active, and fat-graft biology is one of the areas where enrichment is being studied. That is a long way from an established enlargement treatment. A systematic review of cell-enriched fat grafting for primary cosmetic breast augmentation found the approach counter-productive for most women seeking aesthetic augmentation, and trial evidence for “stem cell breast enlargement” protocols as marketed is absent. Regulators, including the FDA, warn that many products promoted as stem-cell therapies are unapproved and investigational. If a protocol is offered as a treatment rather than a study, ask whether a registered clinical trial exists for exactly that product and indication — see <a href="/non-surgical/regenerative-medicine/clinical-trials/">how to check a trial</a> and <a href="/non-surgical/regenerative-medicine/marketing-claims-evidence/">marketing claims versus evidence</a>.</p>' +
         '<p><strong>Main risks.</strong> Uncertain content and potency — a product labelled “stem cell” may contain few such cells, or none, and processing varies. Cell and tissue handling that falls outside regulated manufacturing carries infection and contamination risk. Injected or grafted material can produce oil cysts, calcification, nodules and asymmetry that alter breast imaging for years. The long-term behaviour of added cell products in breast tissue, including anything relevant to cancer risk and cancer surveillance, is not established. Unproven regenerative treatments also carry real harms described in <a href="/non-surgical/regenerative-medicine/safety-unproven-treatments/">safety of unproven treatments</a>. And note that the procedure that supplies the cells usually involves liposuction, which is surgery.</p>' +
@@ -151,7 +151,7 @@ const trendingOptionsPage = page({
         ['<a href="#trending-sculptra">Sculptra / PLLA</a>', 'Poly-L-lactic acid microparticles that trigger collagen formation', 'Gradual, “natural” collagen-based fullness', 'No. Authorised for specified facial indications, not the breast'],
         ['<a href="#trending-pdo-threads">PDO threads</a>', 'Absorbable polydioxanone sutures, barbed or smooth', 'A lift and projection without an implant', 'No. Temporary mechanical support; no evidence of lasting breast elevation'],
         ['<a href="#trending-prp">PRP</a>', 'Your own concentrated platelet plasma', 'Fuller, firmer breasts using your own cells', 'No. Studied mainly alongside surgery, not as enlargement'],
-        ['<a href="#trending-stem-cells">Stem-cell protocols</a>', 'ASC/SVF cell mixtures, exosomes or branded regenerative products', 'Tissue growth that replaces surgery', 'No. Investigational, and often involves liposuction to obtain the cells']
+        ['<a href="#trending-stem-cells">AAA stem cell</a>', 'ASC/SVF cell mixtures, exosomes or branded regenerative products', 'Tissue growth that replaces surgery', 'No. Investigational, and often involves liposuction to obtain the cells']
       ],
       note: 'For completeness: the approaches with evidence for a real, lasting increase in breast volume are implants and autologous fat transfer — both surgical. Creams, pills, massage, pumps and exercises are assessed in the <a href="/breast-enlargement-without-surgery/">evidence guide</a>, and <a href="/non-surgical/treatments-at-a-glance/">treatments at a glance</a> separates procedures that add volume from those that change appearance.'
     },
