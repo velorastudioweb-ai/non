@@ -1349,28 +1349,6 @@
       }
     ]
   },
-  "/dr-vikas-singh.png": {
-    "width": 355,
-    "height": 431,
-    "sha256": "edfe787793e4c12c59f0c99d86febc65717c7261538f83387b40becde34deed2",
-    "bytes": 198606,
-    "format": "webp",
-    "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-355.webp",
-    "variants": [
-      {
-        "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-320.webp",
-        "width": 320,
-        "height": 389,
-        "bytes": 9368
-      },
-      {
-        "src": "/assets/responsive/dr-vikas-singh-edfe787793e4-355.webp",
-        "width": 355,
-        "height": 431,
-        "bytes": 10770
-      }
-    ]
-  },
   "/education-research.webp": {
     "width": 1536,
     "height": 1024,
@@ -1625,6 +1603,52 @@
       }
     ]
   },
+  "/Luxury Burgundy Suit Editorial Portrait.png": {
+    "width": 1027,
+    "height": 1531,
+    "sha256": "0834fdcaf7a13e82372efac3c59422d5734641d4b4579cc3461a79b3eb29ffcd",
+    "bytes": 1847020,
+    "format": "webp",
+    "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-1027.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-320.webp",
+        "width": 320,
+        "height": 477,
+        "bytes": 15776
+      },
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-480.webp",
+        "width": 480,
+        "height": 716,
+        "bytes": 27330
+      },
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-640.webp",
+        "width": 640,
+        "height": 954,
+        "bytes": 41914
+      },
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-768.webp",
+        "width": 768,
+        "height": 1145,
+        "bytes": 53962
+      },
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-1024.webp",
+        "width": 1024,
+        "height": 1527,
+        "bytes": 76196
+      },
+      {
+        "src": "/assets/responsive/luxury-burgundy-suit-editorial-portrait-0834fdcaf7a1-1027.webp",
+        "width": 1027,
+        "height": 1531,
+        "bytes": 75578
+      }
+    ]
+  },
   "/Medical Breast Augmentation Infographic.png": {
     "width": 1536,
     "height": 1024,
@@ -1674,6 +1698,64 @@
         "width": 1536,
         "height": 1024,
         "bytes": 157550
+      }
+    ]
+  },
+  "/Neon Cityscape with Golden Location Pins.png": {
+    "width": 1762,
+    "height": 892,
+    "sha256": "973bcecba2f5220738304c59ae7c219ba158d977f4978d865260162bced2e48c",
+    "bytes": 1874906,
+    "format": "webp",
+    "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-1762.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-320.webp",
+        "width": 320,
+        "height": 162,
+        "bytes": 10682
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-480.webp",
+        "width": 480,
+        "height": 243,
+        "bytes": 19758
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-640.webp",
+        "width": 640,
+        "height": 324,
+        "bytes": 30662
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-768.webp",
+        "width": 768,
+        "height": 389,
+        "bytes": 40742
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-1024.webp",
+        "width": 1024,
+        "height": 518,
+        "bytes": 63152
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-1280.webp",
+        "width": 1280,
+        "height": 648,
+        "bytes": 89782
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-1536.webp",
+        "width": 1536,
+        "height": 778,
+        "bytes": 115336
+      },
+      {
+        "src": "/assets/responsive/neon-cityscape-with-golden-location-pins-973bcecba2f5-1762.webp",
+        "width": 1762,
+        "height": 892,
+        "bytes": 139178
       }
     ]
   },

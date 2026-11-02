@@ -10,6 +10,8 @@
  */
 const siteImages = Object.freeze({
   ourApproach: { src: '/Our approach.webp', width: 1536, height: 1024, alt: 'Independent patient education and evidence review' },
+  'consultation-illustrative': { src: '/assets/img/consultation-illustrative-1600.webp', width: 1600, height: 1200, alt: 'Illustrative scene of a patient and healthcare professional discussing breast enhancement options in a calm consultation setting' },
+  'recovery-illustrative': { src: '/assets/img/recovery-illustrative-1600.webp', width: 1600, height: 1200, alt: 'Illustrative respectful scene of an adult woman resting comfortably, representing recovery education' },
   surgicalOverview: { src: '/Breast Augmentation Consultation Illustration.webp', width: 1600, height: 600, alt: 'Surgical breast augmentation consultation' },
   surgicalConsultationPreparation: { src: '/Personalized Breast Consultation Scene.png', width: 1536, height: 1024, alt: 'Illustration of a patient preparing for a breast-surgery consultation' },
   surgicalOptions: { src: '/surgical.webp', width: 1254, height: 1254, alt: 'Surgical breast enlargement options' },
@@ -48,7 +50,7 @@ const siteImages = Object.freeze({
 });
 
 const doctorPortraits = Object.freeze({
-  vikas: { src: '/dr-vikas-singh.png', width: 355, height: 431 },
+  vikas: { src: '/Luxury Burgundy Suit Editorial Portrait.png', width: 1027, height: 1531 },
   surindher: { src: '/dr-surindher-dsa.png', width: 353, height: 317 },
   amod: { src: '/dr-amod-rao.png', width: 268, height: 342 },
   arivazhagan: { src: '/dr-arivazhagan.png', width: 367, height: 348 },

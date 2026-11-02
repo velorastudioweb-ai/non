@@ -40,7 +40,10 @@ const IMAGES = {
   'fabric-folds':    { dims: [[1800, 1012]], alt: 'Abstract breast-focused medical artwork with flowing rose and gold contours' },
 
   /* ---------- new luxury medical-aesthetics campaign assets ---------- */
-  'homepage-hero-luxury-editorial': { dims: [[1920, 1080], [2560, 1440]], alt: 'Cinematic abstract breast anatomy artwork with bold rose contours and champagne highlights' },
+  'homepage-hero-luxury-editorial': { dims: [[1920, 1080], [2560, 1440]], alt: 'Premium editorial portrait of a confident adult woman in a refined setting, representing informed breast enhancement education' },
+  'homepage-hero-photoreal': { dims: [[1920, 1080], [2560, 1440]], alt: 'Premium editorial portrait of a confident adult woman in a refined setting, representing informed breast enhancement education' },
+  'consultation-illustrative': { dims: [[1200, 900], [1600, 1200]], alt: 'Illustrative scene of a patient and healthcare professional discussing breast enhancement options in a calm consultation setting' },
+  'recovery-illustrative': { dims: [[1200, 900], [1600, 1200]], alt: 'Illustrative respectful scene of an adult woman resting comfortably, representing recovery education' },
   'treatment-dermal-fillers':       { dims: [[620, 827], [900, 1200]], alt: 'Abstract breast tissue contours in a bold rose-pink and champagne-gold medical-editorial style' },
   'treatment-prp-visualization':    { dims: [[620, 827], [900, 1200]], alt: 'Breast anatomy-inspired medical illustration with luminous rose tissue layers and gold details' },
   'treatment-pdo-threads':          { dims: [[620, 827], [900, 1200]], alt: 'Abstract breast contour illustration with fine rose and gold lines' },
@@ -173,7 +176,7 @@ const SLOTS = {
 
 /* Route -> image key for cards that carry a link but no slot. */
 const ROUTES = {
-  '/': 'homepage-hero-luxury-editorial',
+  '/': 'homepage-hero-photoreal',
   '/non-surgical/': 'stilllife',
   '/surgical-breast-enhancement/': 'portrait-shadow',
   '/non-surgical/dermal-fillers/': 'treatment-dermal-fillers',
@@ -263,7 +266,7 @@ function picture(key, opts) {
   const image = '<img' + cls + ' src="' + src + '" srcset="' + srcset + '"' + sizes +
     ' width="' + largest[0] + '" height="' + largest[1] + '"' +
     ' alt="' + esc(o.alt != null ? o.alt : meta.alt) + '"' + eager + '>';
-  if (key === 'homepage-hero-luxury-editorial') {
+  if (key === 'homepage-hero-luxury-editorial' || key === 'homepage-hero-photoreal') {
     return '<picture><source type="image/webp" srcset="' + srcset.replace(/\.jpg/g, '.webp') + '"' + sizes + '>' + image + '</picture>';
   }
   return image;
@@ -300,6 +303,12 @@ function srcFor(key) {
   const meta = IMAGES[key];
   if (!meta) return '';
   const d = meta.dims[meta.dims.length - 1];
+  if (key === 'homepage-hero-photoreal') {
+    return BASE + key + '-' + d[0] + '.jpg';
+  }
+  if (key === 'consultation-illustrative' || key === 'recovery-illustrative') {
+    return BASE + key + '-' + d[0] + '.jpg';
+  }
   return BASE + key + '-' + d[0] + '.jpg';
 }
 

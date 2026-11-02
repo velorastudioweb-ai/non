@@ -102,8 +102,11 @@ const locationsPage = {
   seoDescription: 'Quantum Health global contact network: Hong Kong head office in Tuen Mun, Bengaluru branches at La Crown Jayanagar and Ritz, and Dubai international enquiries.',
   bannerEyebrow: 'Global locations',
   bannerLead: 'The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.',
+  bannerImage: '/Neon Cityscape with Golden Location Pins.png',
+  bannerWidth: 1762,
+  bannerHeight: 892,
+  bannerAlt: 'Neon cityscape with golden location pins representing the Quantum Health global contact network',
   breadcrumb: [{ label: 'Locations' }],
-  showBanner: false,
   schema: [
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Our Global Locations', url: site.url + '/locations/' },
     organizationSchema(site.url)
@@ -112,7 +115,7 @@ const locationsPage = {
     {
       type: 'prose',
       wide: true,
-      html: '<h1 class="locations-page__title">Our Global Locations</h1><p class="lead">The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.</p>'
+      html: '<p class="lead">The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.</p>'
     },
     {
       type: 'locations',
