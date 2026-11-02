@@ -28,13 +28,16 @@
   var target = document.getElementById(id);
   if (!target) return;
   var parent = target.closest('details');
+  var openedCollection = Boolean(parent);
   if (parent) parent.open = true;
   if (target.classList.contains('source-group')) {
    var details = target.querySelector('details');
    if (details) details.open = true;
+   openedCollection = true;
   }
-  // Jump directly to an opened source collection. Smooth traversal across the
-  // research archive can trigger intermediate lazy content and miss its target.
+  // Only the research archive needs an immediate jump after opening a collapsed
+  // collection. Every other same-page anchor is eased by smooth-scroll.js.
+  if (!openedCollection) return;
   target.scrollIntoView({ behavior: 'instant', block: 'start' });
  }
  revealSourceHash();

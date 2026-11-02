@@ -30,7 +30,7 @@ for (const [name, pattern] of [
   register(name + '.css', match[0], 'css');
   components = components.replace(pattern, '');
 }
-register('site.css', ['fonts', 'tokens', 'base', 'components', 'banners'].map(name => name === 'components' ? components : fs.readFileSync(path.join(PUBLIC, 'css', name + '.css'), 'utf8')).join('\n'), 'css');
+register('site.css', ['fonts', 'tokens', 'base', 'components', 'banners', 'motion'].map(name => name === 'components' ? components : fs.readFileSync(path.join(PUBLIC, 'css', name + '.css'), 'utf8')).join('\n'), 'css');
 for (const name of ['main', 'research', 'smooth-scroll', 'motion']) register(name + '.js', fs.readFileSync(path.join(PUBLIC, 'js', name + '.js'), 'utf8'), 'js');
 function href(name) { return files.get(name).href; }
 function write(dist) {

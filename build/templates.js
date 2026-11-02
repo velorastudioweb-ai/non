@@ -713,6 +713,7 @@ function renderHero(b, site) {
     </svg>
   </div>
   ${strip}
+  <a class="hero__scroll-cue" href="#treatments" aria-label="Scroll to explore your treatment options">Explore</a>
 </section>`;
 }
 /* ---------- SECTION WRAPPER ---------- */
