@@ -111,6 +111,19 @@ const pages = [
           '<p>Check-ups monitor healing and implant position. Ask how many are included, how to reach the team out of hours, and what monitoring is advised for your implant type. Keep your implant card and report any new change in shape, size or comfort.</p>'
       },
       {
+        type: 'figure',
+        alt: true,
+        eyebrow: 'Visual overview',
+        heading: 'The breast augmentation journey at a glance',
+        lead: 'The journey runs from the first consultation through pre-operative assessment, anaesthesia and the operation, then into recovery and follow-up. The illustration below summarises those stages so you can see how they connect before reading the detail above.',
+        src: siteImages.breastAugmentationProcedure.src,
+        width: siteImages.breastAugmentationProcedure.width,
+        height: siteImages.breastAugmentationProcedure.height,
+        alt: 'Illustration of the breast augmentation journey: consultation with a surgeon, anaesthesia, the operation, recovery and a follow-up appointment',
+        caption: 'Illustrative overview of the usual stages of breast augmentation, from consultation and anaesthesia to the operation, recovery and follow-up.',
+        note: 'Educational illustration; individual pathways, timings and follow-up schedules are set by your own surgical team.'
+      },
+      {
         type: 'notice',
         icon: 'clock',
         title: 'Key takeaway',

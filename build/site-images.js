@@ -40,6 +40,7 @@ const siteImages = Object.freeze({
   fatTransfer: { src: '/Breast Fat Transfer Medical Infographic.png', width: 1254, height: 1254, alt: 'Fat transfer breast augmentation' },
   fatTransferGuide: { src: '/dfsjifl.png', width: 1254, height: 1254, alt: 'Illustration of fat-transfer breast augmentation from liposuction to transfer' },
   breastAugmentation: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options' },
+  breastAugmentationProcedure: { src: '/Breast Augmentation Procedure Journey.png', width: 1536, height: 1024, alt: 'Illustration of the breast augmentation journey from consultation and anaesthesia to surgery, recovery and follow-up' },
   breastAugmentationPlanning: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options and planning' },
   breastRevision: { src: '/Breast Implant Revision Infographic.png', width: 1254, height: 1254, alt: 'Illustration of breast implant revision planning' },
   breastImplantSafety: { src: '/Breast Implant Safety Infographic.png', width: 1254, height: 1254, alt: 'Breast implant safety' },
