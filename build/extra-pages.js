@@ -77,12 +77,6 @@ const contact = {
       ]
     },
     {
-      type: 'notice',
-      icon: 'info',
-      title: 'An enquiry is not a confirmed appointment',
-      text: 'Submitting this form does not create a doctor–patient relationship and does not confirm a consultation, treatment or price. The team will contact you to confirm availability, suitability and next steps. If you have urgent symptoms — including fever, spreading redness, a new lump or chest pain — contact a clinician or emergency service immediately.'
-    },
-    {
       type: 'icon-grid',
       eyebrow: 'Before you write',
       heading: 'What helps the team route your enquiry',
@@ -102,7 +96,6 @@ const locationsPage = {
   seoTitle: 'Our Global Locations | Quantum Health',
   seoDescription: 'Quantum Health global contact network: Hong Kong head office in Tuen Mun, Bengaluru branches at La Crown Jayanagar and Ritz, and Badr Al Samaa Medical Center in Bur Dubai, with telephone numbers and map links.',
   bannerEyebrow: 'Global locations',
-  bannerLead: 'The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.',
   bannerImage: '/Neon Cityscape with Golden Location Pins.png',
   bannerWidth: 1762,
   bannerHeight: 892,
@@ -113,11 +106,6 @@ const locationsPage = {
     organizationSchema(site.url)
   ],
   blocks: [
-    {
-      type: 'prose',
-      wide: true,
-      html: '<p class="lead">The Quantum Health contact network spans Hong Kong, Bengaluru and Dubai. Telephone numbers, verified addresses and map links are listed below.</p>'
-    },
     {
       type: 'city-panels',
       center: true,
