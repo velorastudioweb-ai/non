@@ -1,5 +1,6 @@
 node_modules/
 .vercel
+build.log
 
 assets-src/
 build/_qa-snapshot/
