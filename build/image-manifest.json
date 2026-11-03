@@ -623,6 +623,70 @@
       }
     ]
   },
+  "/Breast Health Education Workspace.png": {
+    "width": 1991,
+    "height": 790,
+    "sha256": "0ea0244aea7b6c9d9e8034639e8c88697b9fd3f2d774c00a5c841eecc29db981",
+    "bytes": 2053019,
+    "format": "webp",
+    "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1991.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-320.webp",
+        "width": 320,
+        "height": 127,
+        "bytes": 10942
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-480.webp",
+        "width": 480,
+        "height": 190,
+        "bytes": 19950
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-640.webp",
+        "width": 640,
+        "height": 254,
+        "bytes": 30416
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-768.webp",
+        "width": 768,
+        "height": 305,
+        "bytes": 40318
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1024.webp",
+        "width": 1024,
+        "height": 406,
+        "bytes": 61278
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1280.webp",
+        "width": 1280,
+        "height": 508,
+        "bytes": 83652
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1536.webp",
+        "width": 1536,
+        "height": 609,
+        "bytes": 107450
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1920.webp",
+        "width": 1920,
+        "height": 762,
+        "bytes": 143770
+      },
+      {
+        "src": "/assets/responsive/breast-health-education-workspace-0ea0244aea7b-1991.webp",
+        "width": 1991,
+        "height": 790,
+        "bytes": 152742
+      }
+    ]
+  },
   "/Breast Implant Medical Illustration.png": {
     "width": 1254,
     "height": 1254,
@@ -1818,6 +1882,70 @@
         "width": 1027,
         "height": 1531,
         "bytes": 75578
+      }
+    ]
+  },
+  "/Maroon Medical Booking Service Scene.png": {
+    "width": 1991,
+    "height": 790,
+    "sha256": "7bdd7ec1150581c4c2605100b352d12f432e5355bce7402d9da949ce014e6b5f",
+    "bytes": 2119528,
+    "format": "webp",
+    "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1991.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-320.webp",
+        "width": 320,
+        "height": 127,
+        "bytes": 11900
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-480.webp",
+        "width": 480,
+        "height": 190,
+        "bytes": 21426
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-640.webp",
+        "width": 640,
+        "height": 254,
+        "bytes": 32798
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-768.webp",
+        "width": 768,
+        "height": 305,
+        "bytes": 42514
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1024.webp",
+        "width": 1024,
+        "height": 406,
+        "bytes": 65272
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1280.webp",
+        "width": 1280,
+        "height": 508,
+        "bytes": 89138
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1536.webp",
+        "width": 1536,
+        "height": 609,
+        "bytes": 116260
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1920.webp",
+        "width": 1920,
+        "height": 762,
+        "bytes": 157692
+      },
+      {
+        "src": "/assets/responsive/maroon-medical-booking-service-scene-7bdd7ec11505-1991.webp",
+        "width": 1991,
+        "height": 790,
+        "bytes": 167466
       }
     ]
   },

@@ -35,6 +35,10 @@ const contact = {
   seoDescription: 'Contact Quantum Health about breast enlargement: Hong Kong head office, La Crown and Ritz in Bengaluru, Badr Al Samaa Medical Center in Dubai, click-to-call numbers and a secure appointment enquiry form.',
   bannerEyebrow: 'Contact & appointments',
   bannerLead: 'Reach the Quantum Health team in Hong Kong, Bengaluru or Dubai, or send an appointment enquiry. This is an enquiry service — no appointment is confirmed until the team replies.',
+  bannerImage: '/Maroon Medical Booking Service Scene.png',
+  bannerWidth: 1991,
+  bannerHeight: 790,
+  bannerAlt: 'Maroon booking scene: a woman calling on her phone beside a consultant at a service desk with a laptop, WhatsApp handset and appointment calendar, framed by Hong Kong, Bengaluru and Dubai city views',
   breadcrumb: [{ label: 'Contact' }],
   schema: [
     { '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Contact Us', url: site.url + '/contact/' },
@@ -198,7 +202,7 @@ const legal = [
     seoDescription: 'The terms governing use of the Quantum Health website and its educational content.',
     lead: 'The terms governing use of this website and its educational content.',
     html:
-      '<h2 class="h3">Educational purpose</h2><p>Content on this website is provided for general educational purposes. It is not a substitute for professional medical advice, diagnosis or treatment, and it does not create a doctor–patient relationship.</p>' +
+      '<h2 class="h3">Educational purpose</h2><p>Content on this website is provided for general educational purposes. It is not a substitute for professional medical advice, diagnosis or treatment.</p>' +
       '<h2 class="h3">No personalised advice</h2><p>Nothing on this website constitutes a personal recommendation for any specific individual. Treatment suitability, availability, risks and results vary and must be assessed in consultation with a qualified clinician.</p>' +
       '<h2 class="h3">External sources</h2><p>This website links to third-party sources so that readers can verify information. We do not control those sources and are not responsible for their content, availability, privacy practices or changes after linking.</p>' +
       '<h2 class="h3">Acceptable use</h2><p>You may use this website for personal, non-commercial educational purposes. Do not use it to seek emergency care, submit another person’s private health information, interfere with the site, or rely on it as a substitute for individual medical advice.</p>' +

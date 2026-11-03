@@ -377,7 +377,6 @@ finalHome.blocks.push({
   variant: 'preview',
   eyebrow: 'Global locations',
   heading: 'Our global locations',
-  lead: 'Quantum Health’s contact network spans Hong Kong, Bengaluru and Dubai. Find telephone numbers, verified addresses and map links before you travel.',
   action: { label: 'All locations & contacts', href: '/locations/' },
   locations: site.contact.locations
 });
@@ -447,6 +446,10 @@ about.seoTitle = 'About this website | Breast Enlargement Guide';
 about.seoDescription = 'Learn about this independent educational website on breast-enlargement options, evidence, limitations, and safety.';
 about.bannerEyebrow = 'Independent education';
 about.bannerLead = 'An evidence-aware guide to breast-enlargement options, limitations, and safety.';
+about.bannerImage = '/Breast Health Education Workspace.png';
+about.bannerWidth = 1991;
+about.bannerHeight = 790;
+about.bannerAlt = 'Breast health education workspace: an open notebook, anatomical study materials and reference texts arranged on a quiet desk for independent patient education';
 about.showBanner = true;
 about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
 about.blocks = [{ type: 'prose', wide: true, html: '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
