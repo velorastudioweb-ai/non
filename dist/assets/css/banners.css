@@ -157,6 +157,30 @@
 /* The full artwork has its own intrinsic-height row on phones AND tablets.
    Unlike an absolute bottom strip it cannot sit underneath copy, clip a face,
    or reserve a fixed height that no longer fits when text wraps/zooms. */
+/* The supplied booking scene carries people and desk detail across the full
+   frame, so on desktop it is shown as the artwork row rather than behind the
+   heading. This keeps the artwork intact and the copy readable. */
+body.page-contact .page-banner { display: flex; flex-direction: column; }
+body.page-contact .page-banner__inner { order: 0; padding-block: clamp(2.5rem, 6vw, 5rem); }
+body.page-contact .page-banner__art {
+  position: relative;
+  inset: auto;
+  order: 1;
+  width: 100%;
+  height: auto;
+  flex: none;
+  overflow: hidden;
+}
+body.page-contact .page-banner__art::after { display: none; }
+body.page-contact .page-banner__art img,
+body.page-contact .page-banner__art .editorial-image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
 @media (max-width: 1023px) {
   .page-banner { display: flex; flex-direction: column; }
   .page-banner__inner { order: 0; padding-block: clamp(1.75rem, 5vw, 3rem); }
