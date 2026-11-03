@@ -169,13 +169,6 @@ const home = {
       ]
     },
     {
-      type: 'notice',
-      blush: false,
-      icon: 'info',
-      title: 'An important clinical distinction',
-      text: 'Injectable fillers, threads, PRP and biostimulators should not be presented as interchangeable alternatives to breast augmentation surgery. Their evidence, indications and ability to increase breast volume differ substantially, and a procedure being described as “non-surgical” does not by itself make it safe.'
-    },
-    {
       type: 'cards',
       alt: true,
       cols: 4,
@@ -567,8 +560,6 @@ pages.push({
       ],
       media: topicImage('surgicalConsultationPreparation')
     },
-    { type: 'notice', icon: 'info', title: 'No guarantees',
-      text: 'Surgery is not appropriate for everyone and cannot promise permanent outcomes, guaranteed symmetry, zero scarring or a risk-free result. Individual suitability, risks and outcomes vary and require assessment by an appropriately qualified clinician.' },
     stdCta({ heading: 'Discuss surgical options with a qualified surgeon' })
   ]
 });
