@@ -2634,6 +2634,42 @@ body .qh .qh-vikas-banner {
   border-radius: var(--radius-md);
 }
 body .qh .qh-vikas-hero__copy { min-width: 0; }
+/* The Dr. Vikas Singh profile banner is a full-screen hero: edge to edge across
+   the viewport, with the profile copy and page sections returned to the normal
+   centred reading width. Previously the artwork sat inside the padded profile
+   column, so it read as an inset card rather than a hero banner. */
+body.page-doctors-dr-vikas-singh > main > .section { padding-top: 0; }
+body.page-doctors-dr-vikas-singh .section > .container { width: 100%; margin-inline: 0; }
+body.page-doctors-dr-vikas-singh .qh { width: 100%; padding: 0; }
+body.page-doctors-dr-vikas-singh .qh-wrap { width: 100%; max-width: none; }
+body.page-doctors-dr-vikas-singh .qh-breadcrumb {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(.9rem, 2.6vw, 1.5rem) clamp(1.2rem, 4vw, 4rem) clamp(.6rem, 1.6vw, 1rem);
+}
+body.page-doctors-dr-vikas-singh .qh-vikas-hero--banner { gap: 0; padding: 0; }
+body.page-doctors-dr-vikas-singh .qh-vikas-banner {
+  width: 100%;
+  max-height: min(82vh, 900px);
+  aspect-ratio: 1600 / 753;
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
+}
+body.page-doctors-dr-vikas-singh .qh-vikas-hero__copy {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.2rem, 4vw, 4rem) clamp(2.2rem, 6vw, 4rem);
+}
+body.page-doctors-dr-vikas-singh .qh-wrap > section {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding-inline: clamp(1.2rem, 4vw, 4rem);
+}
+@media (max-width: 650px) {
+  body.page-doctors-dr-vikas-singh .qh { padding: 0 !important; }
+}
 /* Supplied Zee Business / Times Magazine coverage. */
 body .qh .qh-video { margin: 1.25rem 0 0; }
 body .qh .qh-video__player {
