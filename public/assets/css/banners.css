@@ -154,32 +154,21 @@
   }
 }
 
-/* The full artwork has its own intrinsic-height row on phones AND tablets.
-   Unlike an absolute bottom strip it cannot sit underneath copy, clip a face,
-   or reserve a fixed height that no longer fits when text wraps/zooms. */
-/* The supplied booking scene carries people and desk detail across the full
-   frame, so on desktop it is shown as the artwork row rather than behind the
-   heading. This keeps the artwork intact and the copy readable. */
-body.page-contact .page-banner { display: flex; flex-direction: column; }
-body.page-contact .page-banner__inner { order: 0; padding-block: clamp(2.5rem, 6vw, 5rem); }
-body.page-contact .page-banner__art {
-  position: relative;
-  inset: auto;
-  order: 1;
-  width: 100%;
-  height: auto;
-  flex: none;
-  overflow: hidden;
+/* The supplied booking scene is used as the banner background, behind the
+   heading and copy rather than in its own row below. It is anchored to the
+   right edge so the caller and the service desk stay in view while the
+   readability scrim keeps the left-hand copy legible. */
+body.page-contact .page-banner { min-height: clamp(24rem, 40vw, 34rem); }
+body.page-contact .page-banner__art img {
+  object-fit: cover;
+  object-position: right center;
 }
-body.page-contact .page-banner__art::after { display: none; }
-body.page-contact .page-banner__art img,
-body.page-contact .page-banner__art .editorial-image {
-  display: block;
-  width: 100%;
-  max-width: none;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
+body.page-contact .page-banner__inner {
+  padding-block: clamp(6rem, 13vw, 10rem);
+}
+@media (max-width: 1023px) {
+  body.page-contact .page-banner { min-height: clamp(26rem, 92vw, 34rem); }
+  body.page-contact .page-banner__inner { padding-block: clamp(4.5rem, 16vw, 7rem); }
 }
 @media (max-width: 1023px) {
   .page-banner { display: flex; flex-direction: column; }
@@ -242,6 +231,40 @@ body.page-contact .page-banner__art .editorial-image {
   .hero__copy > * { margin-top: 0; }
 }
 
+/* Load-in alignment for the contact banner only after the upstream breakpoint
+   rules have applied, so this page's art direction wins on phones/tablets too. */
+@media (max-width: 1023px) {
+  body.page-contact .page-banner {
+    display: block;
+    min-height: clamp(30rem, 118vw, 40rem);
+  }
+  body.page-contact .page-banner__inner {
+    padding-block: clamp(5rem, 18vw, 8rem);
+  }
+  body.page-contact .page-banner__art {
+    position: absolute;
+    inset: 0;
+    order: initial;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    flex: none;
+  }
+  body.page-contact .page-banner__art::after {
+    display: block;
+    background:
+      linear-gradient(90deg, rgba(18, 0, 7, .96) 0%, rgba(21, 0, 8, .88) 46%, rgba(28, 0, 11, .48) 78%, rgba(28, 0, 11, .16) 100%),
+      linear-gradient(0deg, rgba(18, 0, 7, .68), transparent 58%);
+  }
+  body.page-contact .page-banner__art img,
+  body.page-contact .page-banner__art .editorial-image {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 /* Keep educational diagrams and supplied artwork intact inside cards and
    frames.  Letterboxing is intentional: no treatment artwork is cropped or
    zoomed to fill a different aspect ratio. */

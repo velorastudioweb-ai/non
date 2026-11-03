@@ -24,6 +24,7 @@ const siteImages = Object.freeze({
   breastRevisionBanner: { src: '/assets/img/qh-implant-revision-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of implant review and revision planning' },
   breastFillerRemovalBanner: { src: '/assets/img/qh-filler-removal-assessment-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of assessment of previously injected materials' },
   breastReductionBanner: { src: '/assets/img/qh-reduction-planning-banner-1600.webp', width: 1600, height: 640, alt: 'Educational illustration of assessment before breast reduction' },
+  breastReductionBenefits: { src: '/Breast Reduction Benefits Infographic.png', width: 1536, height: 1024, alt: 'Infographic summarising the benefits of breast reduction surgery' },
   nonSurgicalOverview: { src: '/non surgical.webp', width: 1254, height: 1254, alt: 'Non-surgical breast enlargement evidence overview' },
   nonSurgicalHero: { src: '/Non-Surgical Breast Enhancement Infographic.png', width: 2048, height: 768, alt: 'Non-surgical breast enhancement evidence overview' },
   nonSurgicalSafety: { src: '/ChatGPT Image Oct 29, 2026, 07_10_19 AM.png', width: 1536, height: 1024, alt: 'Illustration of non-surgical breast enhancement techniques and medical assessment' },

@@ -825,6 +825,58 @@
       }
     ]
   },
+  "/Breast Reduction Benefits Infographic.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "f649df44814f88f530bfcd67367c67570e6ca8418b517cc717606a75b5111b00",
+    "bytes": 2091741,
+    "format": "webp",
+    "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 13190
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23330
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 34418
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 43644
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 67702
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 92276
+      },
+      {
+        "src": "/assets/responsive/breast-reduction-benefits-infographic-f649df44814f-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 120236
+      }
+    ]
+  },
   "/Breast Surgery Planning and Recovery Collage.png": {
     "width": 1536,
     "height": 1024,

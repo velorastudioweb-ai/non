@@ -779,6 +779,14 @@ pages.push(treatmentPage({
         { icon: 'info', title: 'Breastfeeding', text: 'Future breastfeeding ability can be affected; this is discussed in advance.' }
       ]
     },
+    { type: 'figure', eyebrow: 'Benefits overview', heading: 'Benefits of breast reduction at a glance',
+      lead: 'Many people consider reduction because of physical symptoms: neck, shoulder and back strain, bra-strap grooves, skin irritation and practical difficulties with activity. The infographic summarises commonly discussed benefits and the shape of the operation.',
+      src: siteImages.breastReductionBenefits.src,
+      width: siteImages.breastReductionBenefits.width,
+      height: siteImages.breastReductionBenefits.height,
+      alt: 'Breast reduction benefits infographic: relief from back, neck and shoulder strain, improved posture and proportion, and reduction of breast volume and weight with surgery',
+      caption: 'Illustrative overview of commonly discussed benefits of breast reduction surgery.',
+      note: 'Educational illustration; not a promise of outcome. Symptom relief and suitability are assessed individually.' },
     { type: 'figure', eyebrow: 'Techniques', heading: 'Incisions, tissue removal and reshaping',
       lead: 'Reduction removes glandular tissue, fat and skin, then reshapes the remaining breast and repositions the nipple–areola complex. The incision pattern depends on how much tissue is removed and how much lift is needed.',
       art: 'qh-reduction-incisions', src: '/assets/img/qh-reduction-incisions-card.svg',
