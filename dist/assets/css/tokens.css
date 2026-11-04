@@ -52,6 +52,12 @@
   --gold-light:      #EAD7DD;             /* secondary text accent              */
   --gold-dark:       #B89267;             /* deeper accent                      */
 
+  /* Metallic gold used by the navbar glow effects (premium maroon + gold) */
+  --nav-gold:        #D4AF37;             /* metallic gold hover / underline     */
+  --nav-gold-light:  #F0D58B;             /* light gold highlight                */
+  --nav-gold-dark:   #9C7628;             /* dark gold shadow grounding          */
+  --nav-ivory:       #FFF8EF;             /* ivory on maroon header              */
+
   /* Ivory family (typography) */
   --ivory:           #FFF8F3;              /* requested primary text             */
   --ivory-soft:      rgba(255, 248, 243, 0.88);

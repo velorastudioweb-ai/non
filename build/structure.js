@@ -222,6 +222,7 @@ function cards(entries, heading, lead) {
       '/surgical/implant-longevity/': 'breastImplantLongevity',
       '/breast-implants/': 'breastImplants',
       '/surgical/breast-augmentation/': 'breastAugmentation',
+      '/surgical/breast-augmentation-candidacy/': 'breastAugmentationCandidacy',
       '/breast-implant-safety/': 'breastImplantSafety',
       '/surgical/fat-transfer-breast-augmentation/': 'fatTransferGuide',
       '/surgical/breast-revision/': 'breastRevision',

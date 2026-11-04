@@ -3096,3 +3096,62 @@ body.page-about-us .qh-about .qh-doctor-card__image {
   .nav__link { white-space: normal; max-width: 16rem; text-align: center; line-height: 1.4; }
   .header-cta { display: none; }
 }
+
+/* ============================ gold navbar effects =========================
+   Premium metallic-gold hover, glow, shadow and animated underline states for
+   the desktop navbar, dropdowns and mobile navigation. Colours resolve from
+   --nav-gold tokens in tokens.css so the Appearance settings can retune them.
+   -------------------------------------------------------------------------- */
+.nav__link {
+  transition:
+    color .3s ease,
+    text-shadow .3s ease;
+}
+.nav__link:hover,
+.nav__link[aria-current="page"] {
+  color: var(--nav-gold);
+  text-shadow:
+    0 0 8px rgba(212, 175, 55, .55),
+    0 0 18px rgba(212, 175, 55, .25);
+}
+.nav__link::after {
+  background: linear-gradient(90deg, var(--nav-gold-dark), var(--nav-gold), var(--nav-gold-light));
+  height: 2px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, .8);
+}
+.nav__link:hover::after,
+.nav__link[aria-current="page"]::after { right: 0; transform: scaleX(1); }
+.nav__dropdown-toggle:hover,
+.nav__dropdown-toggle:focus-visible { color: var(--nav-gold); text-shadow: 0 0 8px rgba(212, 175, 55, .45); }
+.nav__menu a:hover,
+.nav__menu a:focus-visible {
+  color: var(--nav-gold-light);
+  background: rgba(212, 175, 55, .12);
+  text-shadow: 0 0 8px rgba(212, 175, 55, .35);
+}
+.nav__menu a[aria-current="page"] { color: var(--nav-gold); background: rgba(212, 175, 55, .14); }
+.nav__menu-title { color: var(--nav-gold); }
+.nav__overview:hover { color: var(--nav-gold-light); }
+.btn--header {
+  transition:
+    color .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease,
+    text-shadow .3s ease;
+}
+.btn--header:hover,
+.btn--header:focus-visible {
+  color: var(--nav-gold-light);
+  border-color: var(--nav-gold);
+  box-shadow: 0 0 14px rgba(212, 175, 55, .35), inset 0 0 8px rgba(212, 175, 55, .18);
+  text-shadow: 0 0 8px rgba(212, 175, 55, .45);
+}
+.mobile-nav__link:hover,
+.mobile-nav__link[aria-current="page"],
+.mobile-nav__topic-link:hover { color: var(--nav-gold); text-shadow: 0 0 8px rgba(212, 175, 55, .4); }
+.mobile-nav__topics summary:hover { color: var(--nav-gold-light); }
+@media (prefers-reduced-motion: reduce) {
+  .nav__link,
+  .nav__link::after,
+  .btn--header { transition: none; }
+}

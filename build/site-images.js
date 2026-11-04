@@ -41,6 +41,9 @@ const siteImages = Object.freeze({
   fatTransfer: { src: '/Breast Fat Transfer Medical Infographic.png', width: 1254, height: 1254, alt: 'Fat transfer breast augmentation' },
   fatTransferGuide: { src: '/dfsjifl.png', width: 1254, height: 1254, alt: 'Illustration of fat-transfer breast augmentation from liposuction to transfer' },
   breastAugmentation: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options' },
+  // Supplied candidacy artwork (November 2026): assessment and preparation
+  // themes, not a patient, an operative view or a treatment result.
+  breastAugmentationCandidacy: { src: '/Preparing for Breast Augmentation.png', width: 1536, height: 1024, alt: 'Illustration of a woman considering breast augmentation, surrounded by assessment and preparation themes: a clinician consultation, a health checklist with blood-sample tubes, medication, a no-smoking symbol, a breast outline on a planning card, recovery pillows and towels, and a support bra' },
   breastAugmentationPreparation: { src: '/Preparing for Breast Augmentation.png', width: 1536, height: 1024, alt: 'Illustration of breast augmentation preparation with a consultation, medical checks, medicines, no-smoking guidance, a recovery checklist and home arrangements' },
   breastAugmentationProcedure: { src: '/Breast Augmentation Procedure Journey.png', width: 1536, height: 1024, alt: 'Illustration of the breast augmentation journey from consultation and anaesthesia to surgery, recovery and follow-up' },
   breastAugmentationPlanning: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options and planning' },

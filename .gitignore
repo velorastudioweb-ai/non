@@ -1,6 +1,9 @@
 node_modules/
 .vercel
 build.log
+.env
+.env.*
+!.env.example
 
 assets-src/
 build/_qa-snapshot/
