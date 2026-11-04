@@ -414,7 +414,7 @@ function extractQuantumBody(page) {
       .replace(/<h1>/g, '<h2>').replace(/<\/h1>/g, '</h2>')
   };
 }
-const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/doctors/'));
+const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/meet-doctors/' || p.url === '/doctors/'));
 const escapeAboutText = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h2>About this website</h2><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
 const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
