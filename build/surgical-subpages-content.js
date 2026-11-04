@@ -275,6 +275,19 @@ const pages = [
           '<ul><li>Attend follow-up visits and any recommended imaging.</li><li>Wear supportive bras as advised.</li><li>Maintain a stable weight where possible.</li><li>Protect scars from sun.</li><li>Report any new change promptly.</li></ul>'
       },
       {
+        type: 'figure',
+        alt: true,
+        eyebrow: 'Visual overview',
+        heading: 'Results over time at a glance',
+        lead: 'The infographic below summarises the timeline covered above: the first one to two weeks, settling over one to three months, stabilisation around six to twelve months, and the long term as ageing, weight and body change continue to shape the result.',
+        src: siteImages.breastAugmentationResults.src,
+        width: siteImages.breastAugmentationResults.width,
+        height: siteImages.breastAugmentationResults.height,
+        alt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later',
+        caption: 'Illustrative timeline of breast augmentation results from the first weeks through settling and stabilisation to the long term.',
+        note: 'Educational illustration; individual healing varies, and your own surgeon’s review schedule and instructions come first.'
+      },
+      {
         type: 'notice',
         icon: 'clock',
         title: 'Key takeaway',
