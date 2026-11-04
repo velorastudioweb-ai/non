@@ -70,6 +70,8 @@ function build() {
   // assets
   copyDir(path.join(PUB, 'assets'), path.join(DIST, 'assets'));
   assets.write(DIST);
+  // admin panel (static SPA; all data flows through /api/qh)
+  copyDir(path.join(PUB, 'admin'), path.join(DIST, 'admin'));
 
   // copy any root-level static files from public/ (e.g. .htaccess)
   for (const entry of fs.readdirSync(PUB, { withFileTypes: true })) {
@@ -79,7 +81,46 @@ function build() {
 
   // robots.txt
   fs.writeFileSync(path.join(DIST, 'robots.txt'),
-    'User-agent: *\nAllow: /\n\nSitemap: ' + site.url + '/sitemap.xml\n', 'utf8');
+    'User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\n\nSitemap: ' + site.url + '/sitemap.xml\n', 'utf8');
+
+  // CMS page registry + placeholder baseline (consumed by /admin and the
+  // Placeholder Audit module; published edits overlay these at runtime).
+  const qhData = path.join(DIST, 'assets', 'data');
+  ensureDir(qhData);
+  const slugOf = (u) => { const seg = u.replace(/^\/+|\/+$/g, ''); return !seg || seg === 'index' ? 'home' : seg.replace(/\/+$/, '').replace(/\//g, '-').replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase(); };
+  fs.writeFileSync(path.join(qhData, 'qh-pages.json'), JSON.stringify({
+    generatedAt: new Date().toISOString(),
+    pages: all.map((p) => ({ url: p.url, slug: slugOf(p.url), title: p.seoTitle || p.h1, h1: p.h1, noindex: !!p.noindex }))
+  }), 'utf8');
+
+  // placeholder baseline: scan generated HTML for template leftovers
+  const patterns = [
+    [/lorem\s+ipsum/i, 'lorem-ipsum'],
+    [/\bTBD\b|\bTODO\b/i, 'todo'],
+    [/coming\s+soon/i, 'coming-soon'],
+    [/919000000000|\+91\s?90000\s?00000/, 'placeholder-phone'],
+    [/[\w.-]+@quantumhealth\.example|example\.(com|org)/i, 'placeholder-email'],
+    [/PLACEHOLDER/i, 'placeholder-token'],
+    [/portrait pending/i, 'portrait-pending'],
+    [/verification pending/i, 'verification-pending']
+  ];
+  const findings = [];
+  const walkDir = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const fp = path.join(dir, e.name);
+      if (e.isDirectory()) { walkDir(fp); continue; }
+      if (!fp.endsWith('index.html')) continue;
+      if (/[\\/]admin[\\/]/.test(fp)) continue;
+      const rel = '/' + path.relative(DIST, fp).replace(/\\/g, '/').replace(/index\.html$/, '').replace(/^\//, '');
+      const html = fs.readFileSync(fp, 'utf8');
+      patterns.forEach(([re, name]) => {
+        const hits = html.match(new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g'));
+        if (hits) findings.push({ page: rel.startsWith('/') ? rel : '/' + rel + '/', pattern: name, count: hits.length });
+      });
+    }
+  };
+  walkDir(DIST);
+  fs.writeFileSync(path.join(qhData, 'qh-placeholders.json'), JSON.stringify({ generatedAt: new Date().toISOString(), findings }, null, 1), 'utf8');
 
   // sitemap.xml (exclude noindex pages)
   const indexable = all.filter((p) => !p.noindex);

@@ -1,0 +1,30 @@
+{
+ "generatedAt": "2026-11-04T16:31:13.406Z",
+ "findings": [
+  {
+   "page": "/blogs/",
+   "pattern": "placeholder-token",
+   "count": 1
+  },
+  {
+   "page": "/contact/",
+   "pattern": "placeholder-token",
+   "count": 1
+  },
+  {
+   "page": "/doctors/dr-subramini/",
+   "pattern": "verification-pending",
+   "count": 1
+  },
+  {
+   "page": "/meet-doctors/",
+   "pattern": "verification-pending",
+   "count": 1
+  },
+  {
+   "page": "/research/",
+   "pattern": "placeholder-token",
+   "count": 1
+  }
+ ]
+}

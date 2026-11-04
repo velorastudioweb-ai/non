@@ -809,6 +809,7 @@ ${body}
 </main>
 ${footer(page, site)}
 <script src="${assets.href('main.js')}" defer></script>
+<script src="${assets.href('qh-cms.js')}" defer></script>
 </body>
 </html>`;
 }

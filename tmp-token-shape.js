@@ -1,0 +1,10 @@
+'use strict';
+const fs = require('fs');
+const env = fs.readFileSync('.env.local', 'utf8');
+const line = env.split(/\r?\n/).find((l) => l.startsWith('BLOB_READ_WRITE_TOKEN'));
+const value = line.replace(/^BLOB_READ_WRITE_TOKEN=/, '').replace(/^"|"$/g, '').trim();
+const p = JSON.parse(Buffer.from(value.split('.')[1], 'base64').toString('utf8'));
+console.log('payload keys:', Object.keys(p).join(','));
+console.log('url host:', p.url && new URL(p.url).host);
+console.log('endpoint host:', p.endpoint && new URL(p.endpoint).host);
+console.log('type:', p.type);

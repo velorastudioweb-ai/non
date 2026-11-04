@@ -167,8 +167,22 @@ function storageConfig(env) {
 }
 
 async function storeEnquiry(value, env) {
+  // Primary store: the Quantum Health CMS Blob storage (api/_qh), so every
+  // enquiry is visible in the admin panel. A KV REST store remains supported
+  // as a secondary destination when configured.
+  let cmsResult = { code: 'storage_unconfigured' };
+  if (env.BLOB_READ_WRITE_TOKEN) {
+    try {
+      const actions = require('./_qh/actions');
+      const out = await actions.createEnquiry(value);
+      cmsResult = { code: out && out.ok ? 'stored' : 'storage_failed', id: out && out.id, key: out && out.key };
+    } catch (e) {
+      cmsResult = { code: 'storage_failed' };
+    }
+  }
+
   const config = storageConfig(env);
-  if (!config) return { code: 'storage_unconfigured' };
+  if (!config) return cmsResult;
 
   const id = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + '-' + Math.random().toString(36).slice(2));
   const receivedAt = new Date().toISOString();
@@ -228,7 +242,13 @@ async function deliver(value, env) {
   const apiKey = env.RESEND_API_KEY;
   if (!apiKey) return { code: 'delivery_unconfigured' };
 
-  const to = env.CONTACT_TO_EMAIL || FALLBACK_EMAIL;
+  let to = env.CONTACT_TO_EMAIL || FALLBACK_EMAIL;
+  try {
+    const lib = require('./_qh/lib');
+    const siteDoc = await lib.readDoc('site.json', null);
+    if (siteDoc && siteDoc.settings && siteDoc.settings.formNotifyEmail) to = siteDoc.settings.formNotifyEmail;
+  } catch {}
+
   const from = env.CONTACT_FROM_EMAIL || 'Quantum Health Website <onboarding@resend.dev>';
   const subject = 'Appointment enquiry — ' + value.topic + ' — ' + branchLabel(value.preferredBranch);
   const text = [
@@ -353,10 +373,11 @@ async function handler(req, res) {
   }
 
   const storage = storageConfig(process.env);
-  let storageResult = { code: storage ? 'pending' : 'storage_unconfigured' };
+  const cmsEnabled = !!process.env.BLOB_READ_WRITE_TOKEN;
+  let storageResult = { code: (storage || cmsEnabled) ? 'pending' : 'storage_unconfigured' };
   let storedKey = null;
 
-  if (storage) {
+  if (storage || cmsEnabled) {
     storageResult = await storeEnquiry(value, process.env);
     if (storageResult.code !== 'stored') {
       return json(res, 502, {
@@ -376,7 +397,11 @@ async function handler(req, res) {
     });
   }
 
-  if (storedKey) await deleteEnquiry(storedKey, process.env);
+  // If the enquiry is safely stored in the CMS, it is received even when the
+  // optional email relay is not configured — the team reviews it in /admin.
+  if (storageResult.code === 'stored') {
+    return json(res, 200, { ok: true, storage: 'stored', delivery: 'pending-email-configuration' });
+  }
 
   if (result.code === 'delivery_unconfigured') {
     return json(res, 503, {

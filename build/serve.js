@@ -11,6 +11,7 @@ const { execFileSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
+try { process.loadEnvFile(path.join(ROOT, '.env.local')); } catch (e) { /* no local env file */ }
 const WATCH = process.argv.includes('--watch');
 const redirects = new Map(require('./structure').redirects.map((r) => [r.from, r.to]));
 
@@ -56,6 +57,16 @@ function send(res, file, status) {
 const server = http.createServer((req, res) => {
   const urlPath = decodeURIComponent(req.url.split('?')[0]);
   if (urlPath === '/api/contact') return require('../api/contact')(req, res);
+  if (urlPath.startsWith('/api/qh/')) {
+    const u = new URL(req.url, 'http://localhost');
+    const parts = urlPath.replace('/api/qh/', '').split('/').filter(Boolean);
+    req.query = Object.assign(Object.fromEntries(u.searchParams), { _path: parts });
+    return require('../api/qh/[...segments]')(req, res);
+  }
+  if (urlPath === '/admin' || urlPath === '/admin/') {
+    const adminFile = path.join(DIST, 'admin', 'index.html');
+    if (fs.existsSync(adminFile)) return send(res, adminFile);
+  }
   const target = redirects.get(req.url.split('?')[0]);
   if (target) { res.writeHead(301, { Location: target }); return res.end(); }
   const file = resolveFile(req.url);
