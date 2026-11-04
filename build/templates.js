@@ -35,7 +35,7 @@ function head(page, site) {
   const collect = blocks => blocks.forEach(b => { types.add(b.type); if (b.blocks) collect(b.blocks); });
   collect(page.blocks || []);
   const isBlog = page.url === '/blogs/' || page.url.startsWith('/blogs/');
-  const isProfile = page.url === '/about-us/' || page.url.startsWith('/doctors/');
+  const isProfile = page.url === '/about-us/' || page.url === '/meet-doctors/' || page.url.startsWith('/doctors/');
   const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : []), ...(isBlog ? ['blog'] : []), ...(isProfile ? ['profiles'] : [])]
     .filter(name => name === 'form' ? (types.has('form') || types.has('appointment')) : (['research', 'blog', 'profiles'].includes(name) || types.has(name)))
     .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
@@ -504,7 +504,7 @@ function renderLocations(b, site) {
     : '';
   const cards = (b.locations || []).map((location, i) => {
     const phones = (preview ? location.phones.slice(0, 1) : location.phones)
-      .map((phone) => `<li><a href="${telHref(phone.tel)}">${esc(phone.display)}</a></li>`).join('\n          ');
+      .map((phone) => `<li><a href="${telHref(phone.tel)}">${esc(phone.display)}</a>${phone.whatsappUrl && !preview ? `<a class="location-card__wa" href="${esc(phone.whatsappUrl)}" target="_blank" rel="noopener" aria-label="WhatsApp enquiry on ${esc(phone.display)}" title="WhatsApp: ${esc(phone.display)}">${icon('whatsapp')}<span class="sr-only">WhatsApp</span></a>` : ''}</li>`).join('\n          ');
     const whatsapp = location.whatsappUrl
       ? `<li><a class="location-card__whatsapp" href="${esc(location.whatsappUrl)}" target="_blank" rel="noopener">${icon('whatsapp')} WhatsApp enquiry</a></li>`
       : '';
@@ -555,7 +555,7 @@ function renderCityPanels(b) {
   const panels = (b.panels || []).map((panel, i) => {
     const image = panel.image;
     const phones = (panel.phones || [])
-      .map((phone) => `<a href="${telHref(phone.tel)}">${esc(phone.display)}</a>`).join(' · ');
+      .map((phone) => `<a href="${telHref(phone.tel)}">${esc(phone.display)}</a>${phone.whatsappUrl ? `<a class="city-panel__wa" href="${esc(phone.whatsappUrl)}" target="_blank" rel="noopener" aria-label="WhatsApp enquiry on ${esc(phone.display)}">${icon('whatsapp')}</a>` : ''}`).join(' ');
     return `<article class="city-panel reveal reveal--card" data-delay="${(i % 2) + 1}">
   <div class="city-panel__frame" style="--city-panel-ratio:${(image.width / image.height).toFixed(4)}">
     <div class="city-panel__media">

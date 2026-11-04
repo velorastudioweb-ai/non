@@ -1,0 +1,2495 @@
+{
+ "total": 196,
+ "dupes": [
+  [
+   "educational information only",
+   [
+    {
+     "page": "/breast-implants/",
+     "path": "6",
+     "title": "Educational information only",
+     "text": "Implant selection, technique and suitability are individual decisions that require examination and assessment by an appropriately credential",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-implant-safety/",
+     "path": "5",
+     "title": "Educational information only",
+     "text": "This page summarises published evidence and regulator guidance for general education. It cannot account for your health or circumstances and",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-enlargement-safety/",
+     "path": "5",
+     "title": "Educational information only",
+     "text": "This page is general education, not a personal assessment. Suitability, risks and outcomes vary and require evaluation by an appropriately q",
+     "icon": "evidence"
+    }
+   ]
+  ],
+  [
+   "further reading from the consolidated article",
+   [
+    {
+     "page": "/breast-implants/",
+     "path": "8",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Breast implants (risks and long-term monitoring) American Society of Plastic Surgeons — Breast augmentation: implant types and s",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-enlargement-without-surgery/",
+     "path": "22",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/dermal-fillers/",
+     "path": "4",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Regenerative medicine and stem cell safety ",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/prp/",
+     "path": "3",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Regenerative medicine and stem cell safety ",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-enhancement-comparison/",
+     "path": "3",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Dermal Fillers (approved uses and safety communications) U.S. FDA — Regenerative medicine and stem cell safety American Society ",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-enlargement-safety/",
+     "path": "7",
+     "title": "Further reading from the consolidated article",
+     "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Breast implants American Society of Plastic Surgeons — Questions to ask your p",
+     "icon": "evidence"
+    }
+   ]
+  ],
+  [
+   "key takeaway",
+   [
+    {
+     "page": "/surgical/silicone-vs-saline-implants/",
+     "path": "3",
+     "title": "Key takeaway",
+     "text": "Neither type is better for everyone. The right choice depends on your anatomy, preferences and willingness to follow long-term monitoring. S",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/round-vs-anatomical-implants/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Shape is a design choice, not a guarantee of a natural result. Prioritise safety information and your own anatomy over trends.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/implant-size/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The best size is the one your tissues can support with the lowest long-term risk. A qualified surgeon can help you estimate that, but no sim",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/implant-placement/",
+     "path": "4",
+     "title": "Key takeaway",
+     "text": "Placement is a surgical decision with trade-offs, not a loyalty test for one technique. Ask for the reasoning specific to your anatomy. See ",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/implant-longevity/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Think of implants as long-term devices that need ongoing attention, not a one-time procedure. See breast revision surgery and breast implant",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/capsular-contracture/",
+     "path": "3",
+     "title": "Key takeaway",
+     "text": "Capsular contracture is a known and relatively common reason for revision surgery. Ask any surgeon you consult how often they see it and how",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/bia-alcl-implant-illness/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Serious implant-associated lymphoma is rare but real, and honest counselling should mention it. See breast implant safety and our research l",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/mammograms-with-implants/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Implants make screening a little more complex, not less important. See breast enlargement safety .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/pregnancy-breastfeeding-implants/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "If pregnancy is likely in the near future, discuss timing openly with your surgeon before deciding. See breast augmentation .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/fat-transfer-survival/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Fat transfer can be a good option for modest change, but expectations should be set around variability. See fat transfer breast augmentation",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-lift-vs-augmentation/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Volume and position are separate problems. A thorough assessment, not a guess from photos, decides which operation fits. See breast lift and",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-asymmetry/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Some asymmetry is normal. If it affects your confidence, there are options, but realistic expectations matter. See breast enlargement safety",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-surgery-warning-signs/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Act early. A prompt call is better than waiting to see if a symptom passes. See breast enlargement safety .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-augmentation-candidacy/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A good consultation includes being told when surgery is not the right step. That is part of careful assessment, not a reason to feel rejecte",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-augmentation-procedure/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "The operation is only one part of the process. Planning, consent and aftercare matter as much, and a clear route for urgent questions is par",
+     "icon": "clock"
+    },
+    {
+     "page": "/surgical/breast-augmentation-incisions/",
+     "path": "3",
+     "title": "Key takeaway",
+     "text": "Choose the incision on safety and suitability first, scar position second. See the breast augmentation guide .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/preparing-for-breast-augmentation/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Follow instructions carefully and arrange support at home before you go in. See the consultation checklist for the questions to settle first",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-augmentation-results/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Think of augmentation as the beginning of a long-term relationship with your implants and your breast health, not a single finished result. ",
+     "icon": "clock"
+    },
+    {
+     "page": "/surgical/how-breast-implants-are-made/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The implant is a regulated device. You are entitled to know exactly what is placed in your body, who made it and how it is traced. See breas",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-profile-width-volume/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Ask about width and projection, not just cc or cup size. See choosing implant size and the breast implants guide .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/implant-rippling/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Honest assessment of your tissue before surgery is the best protection against visible implants. See the breast implants guide .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/implant-surface-texture/",
+     "path": "3",
+     "title": "Key takeaway",
+     "text": "Always ask what the surface is, and why it was chosen. See breast implant safety .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/implant-records-warranties/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Treat the implant card like an important medical document. See the breast implants guide .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-implant-risks/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A clinic that welcomes tough questions about risk is a good sign. See the breast implant safety guide .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/implant-rupture/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A silicone rupture can happen without symptoms, so scheduled monitoring matters. See how long implants last and breast implant safety .",
+     "icon": "clock"
+    },
+    {
+     "page": "/surgical/breast-sensation-changes/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Sensation change is a real possibility. Make sure it is part of your informed consent. See breast augmentation incision options .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/early-implant-complications/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Early recognition and treatment usually leads to better outcomes. See the full list of warning signs after breast surgery .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/who-should-delay-implants/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Good surgeons turn some people down or ask them to wait. That is protective, not obstructive. See breast enlargement safety .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/fat-transfer-breast-augmentation/candidacy/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Fat transfer works best for modest change in people with adequate donor fat and healthy tissue. It is not a reliable way to achieve a large ",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/fat-transfer-breast-augmentation/procedure/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The technique matters, so ask your surgeon to explain their method, their experience and why it suits your goals.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/fat-transfer-breast-augmentation/recovery/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Patience matters, because the early look is not the final result. Most of the settling takes weeks to months, not days.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/fat-transfer-breast-augmentation/lumps-fat-necrosis/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Lumps after fat transfer are a known issue, but they should always be checked. See Breast Enlargement Safety .",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/fat-transfer-breast-augmentation/with-implants/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Composite augmentation can help in selected people, but it adds complexity. See breast implants and how much fat survives .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-lift/understanding-sagging/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The right procedure depends on how much skin and tissue has descended, not just on size.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-lift/incisions-scars/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Every lift trades scars for position and shape. Make sure you understand the trade-off before you consent.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-lift/recovery/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Plan for rest, help at home and patience while the shape settles. See Breast Lift Surgery .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-lift/risks/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The risks are manageable when you are well prepared, but they are real. Ask how your surgeon prevents, recognises and treats them.",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-lift/protecting-results/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Think of a lift as resetting the clock, not stopping it. Stable weight and realistic expectations help protect the result.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-revision/reasons/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Needing revision is common, and the best start is a clear understanding of the cause.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-revision/removal-exchange/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Plan for what the breast will look like after removal, not just the removal itself.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-revision/capsule-surgery/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Make sure you understand which capsule operation is planned and why. See capsular contracture .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-revision/malposition/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Correction is possible, but the cause must be understood first.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-revision/preparing/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Good records and a clear plan make revision safer and less stressful. See Breast Revision Surgery .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-filler-removal/why-removal/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Report symptoms early. The sooner the problem is understood, the more options there may be.",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-filler-removal/assessment/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A careful assessment guides safe treatment. Do not skip it, even if the appearance bothers you more than the symptoms.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-filler-removal/removal-options/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The material determines the method. Do not try dissolving agents or drainage without knowing what was injected and without qualified clinica",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-filler-removal/permanent-unknown/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Seek an experienced specialist. Do not delay care out of embarrassment.",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-filler-removal/after-removal/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Ongoing follow-up matters, because some problems can reappear. See Breast Enlargement Safety .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-reduction/candidacy/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Suitability depends on health, symptoms and goals, not size alone.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-reduction/techniques/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Technique depends on your breasts. Ask for the reasons behind your surgeon’s choice, not just the name of the operation.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-reduction/recovery/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Plan for rest and help at home. See Breast Reduction .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/breast-reduction/risks/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Understand the trade-offs, especially for sensation and breastfeeding, before you decide.",
+     "icon": "safety"
+    },
+    {
+     "page": "/surgical/breast-reduction/outcomes/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Many people benefit, but understanding trade-offs and keeping up long-term breast health matters. See Breast Reduction .",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/mastectomy-chest-surgery/why-chest-surgery-is-done/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The same phrase, “chest surgery”, covers very different needs. Choose a surgeon and team experienced in yours.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/mastectomy-chest-surgery/types-of-mastectomy/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Both reconstruction and a flat chest are valid choices. Your care team can explain the options for your situation.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/mastectomy-chest-surgery/contouring-after-mastectomy/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "There is no single right choice after mastectomy. Informed preference and a clear follow-up plan matter.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/mastectomy-chest-surgery/gender-affirming-chest-surgery/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Choose an experienced surgeon and a team that supports you before and after surgery.",
+     "icon": "info"
+    },
+    {
+     "page": "/surgical/mastectomy-chest-surgery/gynaecomastia/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Find the cause first. Surgery works best once the cause and the tissue involved are understood.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/what-breast-enlargement-means/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Ask whether a treatment changes volume or only appearance. The honest answer shapes everything else.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/bras-posture-clothing/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "A well-fitted bra and good posture are the safest ways to change how breasts look. See breast enhancement options compared .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/hormones-breast-size/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Natural size is largely determined by genes, hormones and life stage. Avoid self-prescribing hormones.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/weight-breast-size/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Weight affects breast size in unpredictable ways, and it is not a safe tool for targeted enlargement.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/unhappy-breast-size/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Your feelings are valid. Decisions about your body are best made calmly, with accurate information and support.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/treatments-at-a-glance/",
+     "path": "4",
+     "title": "Key takeaway",
+     "text": "Each non-surgical option has a different purpose. See breast enhancement options compared .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/appearance-vs-volume/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Judge any result at several months, not days after a procedure.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/reading-the-evidence/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Look for independent, controlled, long-term evidence in the breast itself. Absence of it is information too.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/regulatory-status/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Approval is specific to a purpose. Ask what the product is approved for, not just whether it is approved.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/questions-red-flags/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "If you cannot get clear answers, walk away.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/hyaluronic-acid-fillers/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Fillers approved for the face are not proven for breast use.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/why-breast-fillers-differ/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "The scale and nature of the breast make filler use there a different, higher-risk proposition.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/filler-complications/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Most problems are better managed when caught early.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/fillers-and-screening/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Always tell imaging teams about breast injections. See breast enlargement safety .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/fillers-options-compared/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Compare options by evidence and long-term implications, not just by whether they involve a knife. See options compared .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/breast-threads-types/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Threads differ in material and design, and their breast use is largely unproven.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/breast-threads-results/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Threads are not a replacement for a surgical lift or for implants. See threads vs a lift .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/breast-threads-procedure/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Ask for a clear written explanation of the procedure and aftercare before you agree.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/breast-threads-risks/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Understand the risks and the plan for problems before you agree to threads.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/threads-vs-breast-lift/",
+     "path": "4",
+     "title": "Key takeaway",
+     "text": "Threads are not an equivalent substitute for a lift. See breast lift surgery .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/mono-threads-basics/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Mono threads aim to improve skin quality, not to enlarge breasts.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/mono-vs-cog-threads/",
+     "path": "4",
+     "title": "Key takeaway",
+     "text": "Know which type of thread is proposed. They are not interchangeable. See breast thread procedures .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/mono-threads-collagen/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Collagen stimulation in skin is not the same as breast enlargement.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/mono-threads-procedure/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Ask for a written plan including repeat treatments, costs and complications.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/mono-threads-risks/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "Even small treatments carry risk. Ask for a clear answer before agreeing. See breast enlargement safety .",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/what-is-prp/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "PRP is concentrated platelets from your own blood. Preparation varies between clinics.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/prp-uses/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "PRP is a legitimate medical tool in some settings, but breast enlargement is not an established use.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/prp-fat-transfer/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "PRP with fat transfer is a developing area with uncertain benefit.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/prp-safety/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "\"Your own blood\" does not mean no risk. Look for medical standards and honest explanations.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/prp-claims/",
+     "path": "2",
+     "title": "Key takeaway",
+     "text": "The more dramatic and certain the promise, the more reason to ask for the evidence.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/biostimulators/what-are-biostimulators/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Biostimulators change skin and soft tissue gradually. They are not breast enlargement treatments.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/biostimulators/approved-uses/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Biostimulators have specific approved uses, and breast enlargement is not usually one of them.",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/biostimulators/how-collagen-stimulation-works/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Be patient and be sceptical of fast claims. Slow biology means results cannot be judged within days.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/biostimulators/risks/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Choose a trained clinician with a plan for complications. Read the breast enlargement safety guide .",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/biostimulators/chest-skin-vs-breast-volume/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Chest-skin improvement is not breast enlargement. Be clear which one you are paying for.",
+     "icon": "info"
+    },
+    {
+     "page": "/non-surgical/sculptra-plla/what-is-plla/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "PLLA is a collagen stimulator used mainly in the face. It is not an established breast enlargement product.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/sculptra-plla/approvals-evidence/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Good evidence for facial PLLA does not extend to breast enlargement.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/sculptra-plla/preparation-technique/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Technique affects safety, so ask for specifics and credentials.",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/sculptra-plla/nodules-complications/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Nodules can appear late and be hard to treat. Ask how your clinician manages them before you consent.",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/sculptra-plla/realistic-expectations/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Think of PLLA on the chest as a skin treatment, not an enlargement treatment.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/regenerative-medicine/stem-cell-terms/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "“Stem cell” describes a type of cell, not a proven treatment.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/regenerative-medicine/marketing-claims-evidence/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Most “stem cell breast enlargement” is fat transfer with extra marketing.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/regenerative-medicine/cell-assisted-fat-grafting/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Cell-assisted fat grafting is promising to some researchers but remains unproven and is best accessed through regulated trials.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/regenerative-medicine/safety-unproven-treatments/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Regenerative does not mean safe. Insist on documentation, oversight and a plan for follow-up.",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/regenerative-medicine/clinical-trials/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A real trial is open about uncertainty and has oversight. Treat anything else with caution.",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/creams-pills-massage/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "There is no proven cream, pill, massage or device that lastingly enlarges breasts. If you are unhappy with your breast size, a conversation ",
+     "icon": "evidence"
+    },
+    {
+     "page": "/non-surgical/unsafe-breast-injections/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Choose approaches with a clear regulatory status, a known product and a qualified clinician. Be cautious of anything that sounds quick and e",
+     "icon": "safety"
+    },
+    {
+     "page": "/non-surgical/breast-enlargement-myths/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "Be sceptical of any treatment that promises large, quick and lasting enlargement without surgery. Ask what the product is approved for, what",
+     "icon": "evidence"
+    },
+    {
+     "page": "/breast-surgeon-credentials/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "A good surgeon welcomes questions, explains risks plainly and gives you time. See breast enlargement safety and the consultation checklist .",
+     "icon": "info"
+    },
+    {
+     "page": "/breast-augmentation-consultation-checklist/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The aim is to leave with clear answers and no pressure. See also our surgeon credential checks .",
+     "icon": "info"
+    },
+    {
+     "page": "/breast-surgery-costs/",
+     "path": "1",
+     "title": "Key takeaway",
+     "text": "The cheapest quote is not necessarily the lowest cost once complications and revisions are counted. Compare what is included, not just the h",
+     "icon": "info"
+    }
+   ]
+  ],
+  [
+   "draft review and sources",
+   [
+    {
+     "page": "/surgical/breast-augmentation-candidacy/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/breast-augmentation-procedure/",
+     "path": "3",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/breast-augmentation-incisions/",
+     "path": "4",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/preparing-for-breast-augmentation/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/breast-augmentation-results/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/how-breast-implants-are-made/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-profile-width-volume/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-rippling/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-surface-texture/",
+     "path": "4",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-records-warranties/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/breast-implant-risks/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/implant-rupture/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/breast-sensation-changes/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/early-implant-complications/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+     "icon": "evidence"
+    },
+    {
+     "page": "/surgical/who-should-delay-implants/",
+     "path": "2",
+     "title": "Draft review and sources",
+     "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+     "icon": "evidence"
+    }
+   ]
+  ],
+  [
+   "what this library does and does not mean",
+   [
+    {
+     "page": "/research/",
+     "path": "4.1",
+     "title": "What this library does and does not mean",
+     "text": " Cochrane publishes independent systematic reviews that search for and appraise all available studies on a clinical question. A review here ",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "5.1",
+     "title": "What this library does and does not mean",
+     "text": " The FDA regulates medical devices such as breast implants and dermal fillers. It does not approve breast enlargement as a procedure, and it",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "6.1",
+     "title": "What this library does and does not mean",
+     "text": " The NHS is a national health service, not a regulator of cosmetic procedures. Its pages describe how breast enlargement is provided and fun",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "7.1",
+     "title": "What this library does and does not mean",
+     "text": " healthdirect is a free Australian Government health information service, not a regulator or a clinic. Its pages describe breast augmentatio",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "8.1",
+     "title": "What this library does and does not mean",
+     "text": " Cleveland Clinic is an academic medical center that publishes patient education; it does not endorse any clinic, surgeon or treatment packa",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "9.1",
+     "title": "What this library does and does not mean",
+     "text": " ASPS is a professional membership organization for board-certified plastic surgeons, not a government regulator and not a clinic. Its pages",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "11.1",
+     "title": "What this library does and does not mean",
+     "text": " BAAPS is a professional association of aesthetic plastic surgeons; it publishes patient education and safety guidance but does not endorse ",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "13.1",
+     "title": "What this library does and does not mean",
+     "text": " MedlinePlus is a consumer-health information service of the U.S. National Library of Medicine. It does not provide medical advice, endorse ",
+     "icon": "info"
+    }
+   ]
+  ],
+  [
+   "source and copyright",
+   [
+    {
+     "page": "/research/",
+     "path": "4.7",
+     "title": "Source and copyright",
+     "text": " Cochrane reviews and protocols are published in the Cochrane Database of Systematic Reviews in the Cochrane Library and remain the property",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "8.5",
+     "title": "Source and copyright",
+     "text": " Cleveland Clinic pages describe care in the United States; costs, licensing, professional registration and clinical standards differ betwee",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "10.15",
+     "title": "Source and copyright",
+     "text": " Summarised from the four-part BAPRAS patient guide to breast augmentation (updated 2021), edited by Lee Martin and Emma de Sousa. All origi",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "11.5",
+     "title": "Source and copyright",
+     "text": " BAAPS patient information describes practice in the United Kingdom; costs, funding, professional registration and clinical standards differ",
+     "icon": "evidence"
+    }
+   ]
+  ],
+  [
+   "jurisdiction and copyright",
+   [
+    {
+     "page": "/research/",
+     "path": "6.5",
+     "title": "Jurisdiction and copyright",
+     "text": " NHS pages describe practice and funding in the United Kingdom. Costs, clinic registration, funding rules and professional registers differ ",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "7.5",
+     "title": "Jurisdiction and copyright",
+     "text": " healthdirect pages describe practice, costs and regulation in Australia. Medicare, private insurance, GP referral rules, AHPRA registration",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "9.5",
+     "title": "Jurisdiction and copyright",
+     "text": " ASPS pages describe practice, board certification and fees in the United States. Board-certification bodies, FDA device approvals, facility",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "13.5",
+     "title": "Jurisdiction and copyright",
+     "text": " MedlinePlus pages describe care in the United States; costs, professional registration, screening programmes and clinical standards differ ",
+     "icon": "evidence"
+    }
+   ]
+  ],
+  [
+   "what this library is — and what it is not",
+   [
+    {
+     "page": "/research/",
+     "path": "14.1",
+     "title": "What this library is — and what it is not",
+     "text": " Wikipedia is a collaboratively edited, open encyclopedia. It is a starting point for orientation, not medical guidance: its articles are no",
+     "icon": "info"
+    },
+    {
+     "page": "/research/",
+     "path": "15.1",
+     "title": "What this library is — and what it is not",
+     "text": " Wikipedia is a collaboratively edited, open encyclopedia. It is a starting point for orientation, not medical guidance: its articles are no",
+     "icon": "info"
+    }
+   ]
+  ],
+  [
+   "source, licence and attribution",
+   [
+    {
+     "page": "/research/",
+     "path": "14.9",
+     "title": "Source, licence and attribution",
+     "text": " Text on this page is a condensed, paraphrased summary of the English Wikipedia article “Breast enlargement”, not a verbatim copy. The origi",
+     "icon": "evidence"
+    },
+    {
+     "page": "/research/",
+     "path": "15.10",
+     "title": "Source, licence and attribution",
+     "text": " Text on this page is a condensed, paraphrased summary of the English Wikipedia article “Breast augmentation”, not a verbatim copy. The orig",
+     "icon": "evidence"
+    }
+   ]
+  ]
+ ],
+ "all": [
+  {
+   "page": "/surgical/breast-augmentation/",
+   "path": "6",
+   "title": "Recovery and results (ASPS patient information)",
+   "text": " Immediately after surgery the breasts are wrapped in gauze, with an elastic bandage or support bra to limit swelling and support healing. P",
+   "icon": "downtime"
+  },
+  {
+   "page": "/surgical/breast-augmentation/",
+   "path": "7",
+   "title": "Risks and safety (ASPS patient information)",
+   "text": " ASPS lists the following possible risks of breast augmentation surgery, discussed fully before consent: Anaesthesia risks. Breast implant-a",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-augmentation/",
+   "path": "10",
+   "title": "Source: American Society of Plastic Surgeons",
+   "text": " Summarised from ASPS patient information and statistics pages: Breast augmentation Candidates Types of breast implants Procedure steps Reco",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-augmentation/",
+   "path": "11",
+   "title": "Source: NCBI Bookshelf clinical review",
+   "text": " The clinical background on this page is also drawn from the peer-reviewed StatPearls review Breast Augmentation (Bookshelf ID NBK482206, PM",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-augmentation/",
+   "path": "12.2",
+   "title": "Scar-care source references",
+   "text": " U.S. Food and Drug Administration (2024). Breast Implants. https://www.fda.gov/medical-devices/breast-implants U.S. Food and Drug Administr",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-implants/",
+   "path": "0",
+   "title": "Not the same as injectable silicone",
+   "text": "Injectable silicone is a different product from a silicone gel-filled implant and must never be used as a substitute. Injectable silicone us",
+   "icon": "safety"
+  },
+  {
+   "page": "/breast-implants/",
+   "path": "5",
+   "title": "Where this page is grounded",
+   "text": " NCBI Bookshelf (StatPearls Publishing) — www.ncbi.nlm.nih.gov/books/ Continuing Education Activity (StatPearls review section) Introduction",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-implants/",
+   "path": "6",
+   "title": "Educational information only",
+   "text": "Implant selection, technique and suitability are individual decisions that require examination and assessment by an appropriately credential",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-implants/",
+   "path": "8",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Breast implants (risks and long-term monitoring) American Society of Plastic Surgeons — Breast augmentation: implant types and s",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-implant-safety/",
+   "path": "2",
+   "title": "Monitoring, not reassurance",
+   "text": "For silicone implants the FDA recommends MRI or ultrasound at five to six years after placement and then every two to three years, because a",
+   "icon": "clock"
+  },
+  {
+   "page": "/breast-implant-safety/",
+   "path": "4",
+   "title": "Regulator and systematic-review sources",
+   "text": " U.S. Food and Drug Administration (FDA) — www.fda.gov/ Breast Implants (Regulatory hub) Types of Breast Implants (Regulatory page) Risks an",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-implant-safety/",
+   "path": "5",
+   "title": "Educational information only",
+   "text": "This page summarises published evidence and regulator guidance for general education. It cannot account for your health or circumstances and",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/",
+   "path": "1",
+   "title": "Fat transfer data from the American Society of Plastic Surgeons",
+   "text": " ASPS describes fat transfer breast augmentation as using liposuction to remove fat from another part of the body and inject it into the bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-revision/",
+   "path": "2",
+   "title": "Revision is individualised",
+   "text": "What is possible depends on the remaining breast tissue, skin quality, implant position and your goals. In some cases a good result requires",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/",
+   "path": "0",
+   "title": "Fillers are not implants",
+   "text": "Dermal fillers approved for facial use must never be assumed suitable for the breasts. Injected silicone and fillers can migrate, form granu",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/",
+   "path": "2",
+   "title": "Assessment comes first",
+   "text": "Chest surgery is elective and requires assessment by an appropriately qualified surgeon, including a discussion of risks, alternatives, real",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/silicone-vs-saline-implants/",
+   "path": "3",
+   "title": "Key takeaway",
+   "text": "Neither type is better for everyone. The right choice depends on your anatomy, preferences and willingness to follow long-term monitoring. S",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/round-vs-anatomical-implants/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Shape is a design choice, not a guarantee of a natural result. Prioritise safety information and your own anatomy over trends.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-size/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The best size is the one your tissues can support with the lowest long-term risk. A qualified surgeon can help you estimate that, but no sim",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-placement/",
+   "path": "4",
+   "title": "Key takeaway",
+   "text": "Placement is a surgical decision with trade-offs, not a loyalty test for one technique. Ask for the reasoning specific to your anatomy. See ",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-longevity/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Think of implants as long-term devices that need ongoing attention, not a one-time procedure. See breast revision surgery and breast implant",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/capsular-contracture/",
+   "path": "3",
+   "title": "Key takeaway",
+   "text": "Capsular contracture is a known and relatively common reason for revision surgery. Ask any surgeon you consult how often they see it and how",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/bia-alcl-implant-illness/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Serious implant-associated lymphoma is rare but real, and honest counselling should mention it. See breast implant safety and our research l",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/mammograms-with-implants/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Implants make screening a little more complex, not less important. See breast enlargement safety .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/pregnancy-breastfeeding-implants/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "If pregnancy is likely in the near future, discuss timing openly with your surgeon before deciding. See breast augmentation .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/fat-transfer-survival/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Fat transfer can be a good option for modest change, but expectations should be set around variability. See fat transfer breast augmentation",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-lift-vs-augmentation/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Volume and position are separate problems. A thorough assessment, not a guess from photos, decides which operation fits. See breast lift and",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-asymmetry/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Some asymmetry is normal. If it affects your confidence, there are options, but realistic expectations matter. See breast enlargement safety",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-surgery-warning-signs/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Act early. A prompt call is better than waiting to see if a symptom passes. See breast enlargement safety .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-augmentation-candidacy/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A good consultation includes being told when surgery is not the right step. That is part of careful assessment, not a reason to feel rejecte",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-augmentation-candidacy/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-augmentation-procedure/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "The operation is only one part of the process. Planning, consent and aftercare matter as much, and a clear route for urgent questions is par",
+   "icon": "clock"
+  },
+  {
+   "page": "/surgical/breast-augmentation-procedure/",
+   "path": "3",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-augmentation-incisions/",
+   "path": "3",
+   "title": "Key takeaway",
+   "text": "Choose the incision on safety and suitability first, scar position second. See the breast augmentation guide .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-augmentation-incisions/",
+   "path": "4",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/preparing-for-breast-augmentation/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Follow instructions carefully and arrange support at home before you go in. See the consultation checklist for the questions to settle first",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/preparing-for-breast-augmentation/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-augmentation-results/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Think of augmentation as the beginning of a long-term relationship with your implants and your breast health, not a single finished result. ",
+   "icon": "clock"
+  },
+  {
+   "page": "/surgical/breast-augmentation-results/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ASPS: Bre",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/how-breast-implants-are-made/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The implant is a regulated device. You are entitled to know exactly what is placed in your body, who made it and how it is traced. See breas",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/how-breast-implants-are-made/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/implant-profile-width-volume/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Ask about width and projection, not just cc or cup size. See choosing implant size and the breast implants guide .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-profile-width-volume/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/implant-rippling/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Honest assessment of your tissue before surgery is the best protection against visible implants. See the breast implants guide .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-rippling/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/implant-surface-texture/",
+   "path": "3",
+   "title": "Key takeaway",
+   "text": "Always ask what the surface is, and why it was chosen. See breast implant safety .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/implant-surface-texture/",
+   "path": "4",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/implant-records-warranties/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Treat the implant card like an important medical document. See the breast implants guide .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/implant-records-warranties/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Brea",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-implant-risks/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A clinic that welcomes tough questions about risk is a good sign. See the breast implant safety guide .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-implant-risks/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/implant-rupture/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A silicone rupture can happen without symptoms, so scheduled monitoring matters. See how long implants last and breast implant safety .",
+   "icon": "clock"
+  },
+  {
+   "page": "/surgical/implant-rupture/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/breast-sensation-changes/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Sensation change is a real possibility. Make sure it is part of your informed consent. See breast augmentation incision options .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-sensation-changes/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/early-implant-complications/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Early recognition and treatment usually leads to better outcomes. See the full list of warning signs after breast surgery .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/early-implant-complications/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/who-should-delay-implants/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Good surgeons turn some people down or ask them to wait. That is protective, not obstructive. See breast enlargement safety .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/who-should-delay-implants/",
+   "path": "2",
+   "title": "Draft review and sources",
+   "text": " Before publication: qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: FDA: Risk",
+   "icon": "evidence"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/candidacy/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Fat transfer works best for modest change in people with adequate donor fat and healthy tissue. It is not a reliable way to achieve a large ",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/procedure/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The technique matters, so ask your surgeon to explain their method, their experience and why it suits your goals.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/recovery/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Patience matters, because the early look is not the final result. Most of the settling takes weeks to months, not days.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/lumps-fat-necrosis/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Lumps after fat transfer are a known issue, but they should always be checked. See Breast Enlargement Safety .",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/fat-transfer-breast-augmentation/with-implants/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Composite augmentation can help in selected people, but it adds complexity. See breast implants and how much fat survives .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-lift/understanding-sagging/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The right procedure depends on how much skin and tissue has descended, not just on size.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-lift/incisions-scars/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Every lift trades scars for position and shape. Make sure you understand the trade-off before you consent.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-lift/recovery/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Plan for rest, help at home and patience while the shape settles. See Breast Lift Surgery .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-lift/risks/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The risks are manageable when you are well prepared, but they are real. Ask how your surgeon prevents, recognises and treats them.",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-lift/protecting-results/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Think of a lift as resetting the clock, not stopping it. Stable weight and realistic expectations help protect the result.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-revision/reasons/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Needing revision is common, and the best start is a clear understanding of the cause.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-revision/removal-exchange/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Plan for what the breast will look like after removal, not just the removal itself.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-revision/capsule-surgery/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Make sure you understand which capsule operation is planned and why. See capsular contracture .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-revision/malposition/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Correction is possible, but the cause must be understood first.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-revision/preparing/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Good records and a clear plan make revision safer and less stressful. See Breast Revision Surgery .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/why-removal/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Report symptoms early. The sooner the problem is understood, the more options there may be.",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/assessment/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A careful assessment guides safe treatment. Do not skip it, even if the appearance bothers you more than the symptoms.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/removal-options/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The material determines the method. Do not try dissolving agents or drainage without knowing what was injected and without qualified clinica",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/permanent-unknown/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Seek an experienced specialist. Do not delay care out of embarrassment.",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-filler-removal/after-removal/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Ongoing follow-up matters, because some problems can reappear. See Breast Enlargement Safety .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-reduction/candidacy/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Suitability depends on health, symptoms and goals, not size alone.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-reduction/techniques/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Technique depends on your breasts. Ask for the reasons behind your surgeon’s choice, not just the name of the operation.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-reduction/recovery/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Plan for rest and help at home. See Breast Reduction .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/breast-reduction/risks/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Understand the trade-offs, especially for sensation and breastfeeding, before you decide.",
+   "icon": "safety"
+  },
+  {
+   "page": "/surgical/breast-reduction/outcomes/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Many people benefit, but understanding trade-offs and keeping up long-term breast health matters. See Breast Reduction .",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/why-chest-surgery-is-done/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The same phrase, “chest surgery”, covers very different needs. Choose a surgeon and team experienced in yours.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/types-of-mastectomy/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Both reconstruction and a flat chest are valid choices. Your care team can explain the options for your situation.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/contouring-after-mastectomy/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "There is no single right choice after mastectomy. Informed preference and a clear follow-up plan matter.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/gender-affirming-chest-surgery/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Choose an experienced surgeon and a team that supports you before and after surgery.",
+   "icon": "info"
+  },
+  {
+   "page": "/surgical/mastectomy-chest-surgery/gynaecomastia/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Find the cause first. Surgery works best once the cause and the tissue involved are understood.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/trending-options/",
+   "path": "2",
+   "title": "What the regulators actually say",
+   "text": "The U.S. FDA recommends against using dermal fillers — or any injectable filler — to increase breast size, and has warned that injectable si",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/trending-options/",
+   "path": "10",
+   "title": "Sources behind this page",
+   "text": " U.S. FDA — Dermal Fillers (Soft Tissue Fillers), including the advice against using fillers to increase breast size, and the 2017 safety co",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-without-surgery/",
+   "path": "3",
+   "title": "How we judged whether a method works",
+   "text": "Four questions were applied to every method: Does it add measurable volume? — not a feeling of fullness or a better-fitting bra, but more br",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-without-surgery/",
+   "path": "14",
+   "title": "Methods to avoid: fillers, silicone and unsupervised hormones",
+   "text": "The US FDA recommends against using dermal fillers or any injectable filler to increase breast size — these uses are not approved, and the r",
+   "icon": "safety"
+  },
+  {
+   "page": "/breast-enlargement-without-surgery/",
+   "path": "20",
+   "title": "Sources and further reading",
+   "text": " U.S. Food and Drug Administration — Dermal Fillers (Soft Tissue Fillers), and the 2017 safety communication on illegal use of injectable si",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-without-surgery/",
+   "path": "21",
+   "title": "Browse the complete published literature",
+   "text": "This guide cites selected sources. The PMC research library indexes every PubMed Central record for the phrase “breast enlargement” — with a",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-without-surgery/",
+   "path": "22",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Dermal Fillers (Soft Tissue Fillers); 2017 safety communication on injectable silicone for body contouring; August 2025 advisory",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/",
+   "path": "2",
+   "title": "The most important point",
+   "text": "Dermal fillers are not approved for breast enlargement, and the FDA advises against using fillers or other injectable fillers to increase br",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/dermal-fillers/",
+   "path": "0",
+   "title": "Regulatory position",
+   "text": "The FDA advises against using dermal fillers or other injectable fillers to increase breast size. Serious complications from inappropriate b",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/dermal-fillers/",
+   "path": "4",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Regenerative medicine and stem cell safety ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/prp/",
+   "path": "3",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Regenerative medicine and stem cell safety ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/",
+   "path": "0",
+   "title": "Research versus established care",
+   "text": "Many marketed regenerative uses remain unapproved or investigational. Products marketed as regenerative can carry risks including infection ",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/what-breast-enlargement-means/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Ask whether a treatment changes volume or only appearance. The honest answer shapes everything else.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/bras-posture-clothing/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "A well-fitted bra and good posture are the safest ways to change how breasts look. See breast enhancement options compared .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/hormones-breast-size/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Natural size is largely determined by genes, hormones and life stage. Avoid self-prescribing hormones.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/weight-breast-size/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Weight affects breast size in unpredictable ways, and it is not a safe tool for targeted enlargement.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/unhappy-breast-size/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Your feelings are valid. Decisions about your body are best made calmly, with accurate information and support.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/treatments-at-a-glance/",
+   "path": "4",
+   "title": "Key takeaway",
+   "text": "Each non-surgical option has a different purpose. See breast enhancement options compared .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/appearance-vs-volume/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Judge any result at several months, not days after a procedure.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/reading-the-evidence/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Look for independent, controlled, long-term evidence in the breast itself. Absence of it is information too.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/regulatory-status/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Approval is specific to a purpose. Ask what the product is approved for, not just whether it is approved.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/questions-red-flags/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "If you cannot get clear answers, walk away.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/hyaluronic-acid-fillers/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Fillers approved for the face are not proven for breast use.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/why-breast-fillers-differ/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "The scale and nature of the breast make filler use there a different, higher-risk proposition.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/filler-complications/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Most problems are better managed when caught early.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/fillers-and-screening/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Always tell imaging teams about breast injections. See breast enlargement safety .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/fillers-options-compared/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Compare options by evidence and long-term implications, not just by whether they involve a knife. See options compared .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/breast-threads-types/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Threads differ in material and design, and their breast use is largely unproven.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/breast-threads-results/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Threads are not a replacement for a surgical lift or for implants. See threads vs a lift .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/breast-threads-procedure/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Ask for a clear written explanation of the procedure and aftercare before you agree.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/breast-threads-risks/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Understand the risks and the plan for problems before you agree to threads.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/threads-vs-breast-lift/",
+   "path": "4",
+   "title": "Key takeaway",
+   "text": "Threads are not an equivalent substitute for a lift. See breast lift surgery .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/mono-threads-basics/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Mono threads aim to improve skin quality, not to enlarge breasts.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/mono-vs-cog-threads/",
+   "path": "4",
+   "title": "Key takeaway",
+   "text": "Know which type of thread is proposed. They are not interchangeable. See breast thread procedures .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/mono-threads-collagen/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Collagen stimulation in skin is not the same as breast enlargement.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/mono-threads-procedure/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Ask for a written plan including repeat treatments, costs and complications.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/mono-threads-risks/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "Even small treatments carry risk. Ask for a clear answer before agreeing. See breast enlargement safety .",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/what-is-prp/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "PRP is concentrated platelets from your own blood. Preparation varies between clinics.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/prp-uses/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "PRP is a legitimate medical tool in some settings, but breast enlargement is not an established use.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/prp-fat-transfer/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "PRP with fat transfer is a developing area with uncertain benefit.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/prp-safety/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "\"Your own blood\" does not mean no risk. Look for medical standards and honest explanations.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/prp-claims/",
+   "path": "2",
+   "title": "Key takeaway",
+   "text": "The more dramatic and certain the promise, the more reason to ask for the evidence.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/biostimulators/what-are-biostimulators/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Biostimulators change skin and soft tissue gradually. They are not breast enlargement treatments.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/biostimulators/approved-uses/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Biostimulators have specific approved uses, and breast enlargement is not usually one of them.",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/biostimulators/how-collagen-stimulation-works/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Be patient and be sceptical of fast claims. Slow biology means results cannot be judged within days.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/biostimulators/risks/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Choose a trained clinician with a plan for complications. Read the breast enlargement safety guide .",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/biostimulators/chest-skin-vs-breast-volume/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Chest-skin improvement is not breast enlargement. Be clear which one you are paying for.",
+   "icon": "info"
+  },
+  {
+   "page": "/non-surgical/sculptra-plla/what-is-plla/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "PLLA is a collagen stimulator used mainly in the face. It is not an established breast enlargement product.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/sculptra-plla/approvals-evidence/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Good evidence for facial PLLA does not extend to breast enlargement.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/sculptra-plla/preparation-technique/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Technique affects safety, so ask for specifics and credentials.",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/sculptra-plla/nodules-complications/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Nodules can appear late and be hard to treat. Ask how your clinician manages them before you consent.",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/sculptra-plla/realistic-expectations/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Think of PLLA on the chest as a skin treatment, not an enlargement treatment.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/stem-cell-terms/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "“Stem cell” describes a type of cell, not a proven treatment.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/marketing-claims-evidence/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Most “stem cell breast enlargement” is fat transfer with extra marketing.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/cell-assisted-fat-grafting/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Cell-assisted fat grafting is promising to some researchers but remains unproven and is best accessed through regulated trials.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/safety-unproven-treatments/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Regenerative does not mean safe. Insist on documentation, oversight and a plan for follow-up.",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/regenerative-medicine/clinical-trials/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A real trial is open about uncertainty and has oversight. Treat anything else with caution.",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/creams-pills-massage/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "There is no proven cream, pill, massage or device that lastingly enlarges breasts. If you are unhappy with your breast size, a conversation ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/non-surgical/unsafe-breast-injections/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Choose approaches with a clear regulatory status, a known product and a qualified clinician. Be cautious of anything that sounds quick and e",
+   "icon": "safety"
+  },
+  {
+   "page": "/non-surgical/breast-enlargement-myths/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "Be sceptical of any treatment that promises large, quick and lasting enlargement without surgery. Ask what the product is approved for, what",
+   "icon": "evidence"
+  },
+  {
+   "page": "/understanding-breast-enlargement/",
+   "path": "3",
+   "title": "A quick test: swelling or growth?",
+   "text": " If fullness fades within hours or days, it was fluid, swelling or a cycle effect — not growth. If it appears and disappears with your menst",
+   "icon": "info"
+  },
+  {
+   "page": "/breast-anatomy/",
+   "path": "3",
+   "title": "Anatomy is why “non-surgical” is not automatically “safe”",
+   "text": "The breast is a blood-rich, nerve-dense area that drains to the lymph nodes. Material injected into it can migrate, obstruct vessels, provok",
+   "icon": "safety"
+  },
+  {
+   "page": "/breast-anatomy/",
+   "path": "4",
+   "title": "Putting it in context",
+   "text": "This page gives a general anatomical overview. Individual anatomy varies widely, and how any structure affects your own options can only be ",
+   "icon": "info"
+  },
+  {
+   "page": "/breast-enhancement-comparison/",
+   "path": "3",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Dermal Fillers (approved uses and safety communications) U.S. FDA — Regenerative medicine and stem cell safety American Society ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "3",
+   "title": "Warning signs — seek help promptly",
+   "text": " Fever, spreading redness, pus or worsening pain after any procedure — possible infection; contact your clinician the same day. Pale, bluish",
+   "icon": "safety"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "4",
+   "title": "Regulator sources",
+   "text": " U.S. Food and Drug Administration (FDA) — www.fda.gov/ Breast Implants (Regulatory hub) Types of Breast Implants (Regulatory page) Risks an",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "5",
+   "title": "Educational information only",
+   "text": "This page is general education, not a personal assessment. Suitability, risks and outcomes vary and require evaluation by an appropriately q",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "7",
+   "title": "Further reading from the consolidated article",
+   "text": " U.S. FDA — Dermal fillers and their approved uses U.S. FDA — Breast implants American Society of Plastic Surgeons — Questions to ask your p",
+   "icon": "evidence"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "11",
+   "title": "Red flags that should end a consultation",
+   "text": " Pressure to decide or pay a deposit the same day, or a “limited-time” discount. Guaranteed results, guaranteed symmetry, or claims of “no r",
+   "icon": "safety"
+  },
+  {
+   "page": "/breast-enlargement-safety/",
+   "path": "13",
+   "title": "Professional-society guidance",
+   "text": " bapras American Society of Plastic Surgeons (ASPS) — www.plasticsurgery.org/ Breast Augmentation (Augmentation Mammaplasty) (Procedure over",
+   "icon": "evidence"
+  },
+  {
+   "page": "/references/",
+   "path": "1",
+   "title": "How to use a bibliography",
+   "text": "Listing a source here means it forms part of the evidence base for a topic — not that its every claim is endorsed or current. Check the sour",
+   "icon": "evidence"
+  },
+  {
+   "page": "/glossary/",
+   "path": "1",
+   "title": "A note on terminology",
+   "text": "Some terms — such as “regenerative” or “non-surgical” — are used in marketing far more loosely than their technical meaning allows. Where th",
+   "icon": "info"
+  },
+  {
+   "page": "/faqs/",
+   "path": "0",
+   "title": "These answers are general information",
+   "text": "They cannot replace an assessment by a qualified clinician who can review your health, anatomy and expectations in person.",
+   "icon": "info"
+  },
+  {
+   "page": "/breast-surgeon-credentials/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "A good surgeon welcomes questions, explains risks plainly and gives you time. See breast enlargement safety and the consultation checklist .",
+   "icon": "info"
+  },
+  {
+   "page": "/breast-augmentation-consultation-checklist/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The aim is to leave with clear answers and no pressure. See also our surgeon credential checks .",
+   "icon": "info"
+  },
+  {
+   "page": "/breast-surgery-costs/",
+   "path": "1",
+   "title": "Key takeaway",
+   "text": "The cheapest quote is not necessarily the lowest cost once complications and revisions are counted. Compare what is included, not just the h",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "0",
+   "title": "External research, clearly attributed",
+   "text": "Quantum Health provides educational summaries, not original clinical research. Publication does not prove effectiveness. Read each source in",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "2.1",
+   "title": "How this page was compiled",
+   "text": "Searches were run on PubMed (National Library of Medicine, USA) in October 2026 using title/abstract terms: “breast augmentation”, “breast e",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "3.1",
+   "title": "How this library was built",
+   "text": " The dataset is a complete capture of a single PubMed Central search rather than a hand-picked reading list. The query was the exact phrase ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "3.3",
+   "title": "Reading research responsibly",
+   "text": " PubMed Central is an archive, not a recommendation service. A published paper can be small, observational, outdated or contradicted by late",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "4.1",
+   "title": "What this library does and does not mean",
+   "text": " Cochrane publishes independent systematic reviews that search for and appraise all available studies on a clinical question. A review here ",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "4.5",
+   "title": "Where the Cochrane evidence runs out",
+   "text": " Cochrane has published no systematic review of cosmetic breast augmentation as a procedure — no review of augmentation techniques, implant ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "4.7",
+   "title": "Source and copyright",
+   "text": " Cochrane reviews and protocols are published in the Cochrane Database of Systematic Reviews in the Cochrane Library and remain the property",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "5.1",
+   "title": "What this library does and does not mean",
+   "text": " The FDA regulates medical devices such as breast implants and dermal fillers. It does not approve breast enlargement as a procedure, and it",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "5.5",
+   "title": "Regulatory scope and jurisdiction",
+   "text": " FDA statements describe the position of the U.S. regulator. Approvals, warnings and labeling requirements can differ in other countries, an",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "6.1",
+   "title": "What this library does and does not mean",
+   "text": " The NHS is a national health service, not a regulator of cosmetic procedures. Its pages describe how breast enlargement is provided and fun",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "6.5",
+   "title": "Jurisdiction and copyright",
+   "text": " NHS pages describe practice and funding in the United Kingdom. Costs, clinic registration, funding rules and professional registers differ ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "7.1",
+   "title": "What this library does and does not mean",
+   "text": " healthdirect is a free Australian Government health information service, not a regulator or a clinic. Its pages describe breast augmentatio",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "7.5",
+   "title": "Jurisdiction and copyright",
+   "text": " healthdirect pages describe practice, costs and regulation in Australia. Medicare, private insurance, GP referral rules, AHPRA registration",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "8.1",
+   "title": "What this library does and does not mean",
+   "text": " Cleveland Clinic is an academic medical center that publishes patient education; it does not endorse any clinic, surgeon or treatment packa",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "8.5",
+   "title": "Source and copyright",
+   "text": " Cleveland Clinic pages describe care in the United States; costs, licensing, professional registration and clinical standards differ betwee",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "9.1",
+   "title": "What this library does and does not mean",
+   "text": " ASPS is a professional membership organization for board-certified plastic surgeons, not a government regulator and not a clinic. Its pages",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "9.5",
+   "title": "Jurisdiction and copyright",
+   "text": " ASPS pages describe practice, board certification and fees in the United States. Board-certification bodies, FDA device approvals, facility",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "10.2",
+   "title": "What this page is — and is not",
+   "text": " This is a condensed, section-by-section summary of BAPRAS patient information written for people considering breast enlargement in the Unit",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "10.5",
+   "title": "Why there is a cooling-off period",
+   "text": " Breast augmentation is a lifetime commitment and must not be considered a one-stop permanent solution. You need to be making the appropriat",
+   "icon": "clock"
+  },
+  {
+   "page": "/research/",
+   "path": "10.15",
+   "title": "Source and copyright",
+   "text": " Summarised from the four-part BAPRAS patient guide to breast augmentation (updated 2021), edited by Lee Martin and Emma de Sousa. All origi",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "11.1",
+   "title": "What this library does and does not mean",
+   "text": " BAAPS is a professional association of aesthetic plastic surgeons; it publishes patient education and safety guidance but does not endorse ",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "11.5",
+   "title": "Source and copyright",
+   "text": " BAAPS patient information describes practice in the United Kingdom; costs, funding, professional registration and clinical standards differ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "12.1",
+   "title": "About this source",
+   "text": " Breast Augmentation , Dean Fardo; Miguel B. Sequeira Campos; Jay M. Pensler · King's College London; Northwestern University Feinberg Schoo",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "12.5",
+   "title": "Source, citation and licence",
+   "text": " Fardo D, Sequeira Campos MB, Pensler JM. Breast Augmentation. [Updated 2023 Jul 18]. In: StatPearls [Internet]. Treasure Island (FL): StatP",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "13.1",
+   "title": "What this library does and does not mean",
+   "text": " MedlinePlus is a consumer-health information service of the U.S. National Library of Medicine. It does not provide medical advice, endorse ",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "13.5",
+   "title": "Jurisdiction and copyright",
+   "text": " MedlinePlus pages describe care in the United States; costs, professional registration, screening programmes and clinical standards differ ",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "14.1",
+   "title": "What this library is — and what it is not",
+   "text": " Wikipedia is a collaboratively edited, open encyclopedia. It is a starting point for orientation, not medical guidance: its articles are no",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "14.9",
+   "title": "Source, licence and attribution",
+   "text": " Text on this page is a condensed, paraphrased summary of the English Wikipedia article “Breast enlargement”, not a verbatim copy. The origi",
+   "icon": "evidence"
+  },
+  {
+   "page": "/research/",
+   "path": "15.1",
+   "title": "What this library is — and what it is not",
+   "text": " Wikipedia is a collaboratively edited, open encyclopedia. It is a starting point for orientation, not medical guidance: its articles are no",
+   "icon": "info"
+  },
+  {
+   "page": "/research/",
+   "path": "15.10",
+   "title": "Source, licence and attribution",
+   "text": " Text on this page is a condensed, paraphrased summary of the English Wikipedia article “Breast augmentation”, not a verbatim copy. The orig",
+   "icon": "evidence"
+  },
+  {
+   "page": "/locations/",
+   "path": "2",
+   "title": "Before travelling to any location",
+   "text": "Please confirm your appointment and the exact meeting point with the team before travelling. In Dubai the address is Badr Al Samaa Medical C",
+   "icon": "pin"
+  }
+ ]
+}

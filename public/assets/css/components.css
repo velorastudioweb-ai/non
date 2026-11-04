@@ -3155,3 +3155,28 @@ body.page-about-us .qh-about .qh-doctor-card__image {
   .nav__link::after,
   .btn--header { transition: none; }
 }
+
+/* ===================== per-number WhatsApp contact links ===================
+   Small metallic-gold WhatsApp badge rendered beside numbers confirmed to
+   support WhatsApp. The plain number keeps its tel: link; the badge opens
+   wa.me in a new tab with the prefilled enquiry message.
+   -------------------------------------------------------------------------- */
+.location-card__phones li { display: flex; align-items: center; gap: .55rem; flex-wrap: wrap; }
+.location-card__wa,
+.city-panel__wa {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.9rem; height: 1.9rem; flex: none;
+  border-radius: 999px; border: var(--hairline) solid var(--nav-gold-dark);
+  background: rgba(212, 175, 55, .12); color: var(--nav-gold);
+  transition: background var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.location-card__wa svg,
+.city-panel__wa svg { width: 1.05rem; height: 1.05rem; }
+.location-card__wa:hover, .location-card__wa:focus-visible,
+.city-panel__wa:hover, .city-panel__wa:focus-visible {
+  background: rgba(212, 175, 55, .24); color: var(--nav-gold-light);
+  box-shadow: 0 0 10px rgba(212, 175, 55, .45);
+}
+@media (prefers-reduced-motion: reduce) {
+  .location-card__wa, .city-panel__wa { transition: none; }
+}

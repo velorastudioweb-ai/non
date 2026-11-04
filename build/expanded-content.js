@@ -198,7 +198,8 @@ const pages = [
     seoTitle: 'Round vs Anatomical (Teardrop) Breast Implants | Quantum Health',
     seoDescription: 'Learn how round and teardrop-shaped breast implants differ in shape, rotation risk and appearance, and which questions help you choose.',
     bannerLead: 'Implant shape affects how the upper and lower breast look. It also affects rotation risk and, in some cases, the implant surface used.',
-    imageKey: 'breastImplants',
+    bannerAlt: 'Infographic comparing round and anatomical (teardrop) breast implants: shape, appearance, rotation risk and practical notes, covering symmetrical dome shape with more upper-pole fullness versus a teardrop shape with a more natural slope, rotation behaviour, and questions to ask your surgeon',
+    imageKey: 'roundVsAnatomical',
     related: [
       ['/breast-implants/', 'Breast implants: types and placement', 'Surfaces, profiles and incisions explained.'],
       ['/surgical/bia-alcl-implant-illness/', 'BIA-ALCL and implant illness', 'Why implant surface texture matters for safety.'],

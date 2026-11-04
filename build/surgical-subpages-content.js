@@ -792,10 +792,9 @@ function reviewAndSources(group) {
     .join(' · ');
   return {
     type: 'notice',
-    blush: true,
     icon: 'evidence',
-    title: 'Draft review and sources',
-    text: `<strong>Before publication:</strong> qualified clinician review and current Indian regulatory verification, where relevant, are required. Sources: ${links}.`
+    title: 'Sources and references',
+    text: `Sources: ${links}.`
   };
 }
 

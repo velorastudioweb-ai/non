@@ -158,7 +158,7 @@ const locationsPage = {
       cols: 3,
       items: [
         { icon: 'phone', title: 'Click to call', text: 'Every published number is a direct telephone link. International call charges depend on your provider.' },
-        { icon: 'whatsapp', title: 'WhatsApp', text: 'WhatsApp enquiries are available on the central India number ' + site.contact.whatsappDisplay + '. Other numbers are telephone contacts.' },
+        { icon: 'whatsapp', title: 'WhatsApp', text: 'WhatsApp enquiries are available on the confirmed numbers: +91 91487 17036, +91 76762 10310 and +91 74061 10611 in India, and +852 4460 8658 and +852 4464 4381 in Hong Kong. A WhatsApp icon appears beside every number that supports it.' },
         { icon: 'mail', title: 'Email and form', text: 'Use the appointment enquiry form or email ' + site.contact.email + '. The team will route your enquiry to the right location.' }
       ]
     },

@@ -10,12 +10,12 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 10);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Meet Dr. Vikas Singh', 'Blogs', 'Locations', 'About', 'Contact us']);
-const vikasNav = site.nav.find((n) => n.label === 'Meet Dr. Vikas Singh');
-assert(vikasNav && vikasNav.href === '/doctors/dr-vikas-singh/', 'Primary navigation must link to the Dr. Vikas Singh profile');
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Meet Doctors', 'Blogs', 'Locations', 'About', 'Contact us']);
+const doctorsNav = site.nav.find((n) => n.label === 'Meet Doctors');
+assert(doctorsNav && doctorsNav.href === '/meet-doctors/', 'Primary navigation must link to the Meet Doctors page');
 assert(!site.nav.some((n) => n.href === '/education-research/'), 'Education & Research must not remain in the primary navigation');
-assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory and leadership must be consolidated into About');
-assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/about-us/#our-doctors'));
+assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory must live at /meet-doctors/ and leadership must be consolidated into About');
+assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/meet-doctors/'));
 assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
 const aboutHtml = html('/about-us/');
 assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
@@ -96,8 +96,8 @@ for (const p of allPages) {
   titles.add(p.seoTitle);
   const doc = html(p.url);
   const main = doc.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
-  if (!p.url.startsWith('/doctors/')) assert(main.replace(/<[^>]+>/g, '').trim().length > 100, 'Empty page: ' + p.url);
-  if (p.url !== '/about-us/' && !p.url.startsWith('/doctors/')) {
+  if (!p.url.startsWith('/doctors/') && p.url !== '/meet-doctors/') assert(main.replace(/<[^>]+>/g, '').trim().length > 100, 'Empty page: ' + p.url);
+  if (p.url !== '/about-us/' && p.url !== '/meet-doctors/' && !p.url.startsWith('/doctors/')) {
     assert(!/MedicHorizon|Dr\.\s*Vikas|\bour clinic\b|editorial draft/i.test(main), 'Unrelated branding or placeholder: ' + p.url);
   }
   const ids = [...doc.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);

@@ -266,7 +266,7 @@
     },
     {
       "source": "/doctors/",
-      "destination": "/about-us/#our-doctors",
+      "destination": "/meet-doctors/",
       "permanent": true
     },
     {

@@ -8,8 +8,8 @@ modules and `content/sections/`.
 
 Run `npm run build`, `npm run qa` (build, links/assets and migration invariants)
 or `npm run dev` (build + local server). The approved navigation is Home,
-Surgical Breast Enlargement, Non-Surgical Breast Enlargement, Meet Dr. Vikas
-Singh, Blogs, About and Contact us. Education & Research remains reachable
+Surgical Breast Enlargement, Non-Surgical Breast Enlargement, Meet Doctors,
+Blogs, Locations, About and Contact us. Education & Research remains reachable
 from the homepage pathways, footer and in-content links. Individual topics are
 linked from category cards.
 

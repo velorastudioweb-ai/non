@@ -37,6 +37,7 @@ const siteImages = Object.freeze({
   // Each treatment keeps its own named illustration; do not share the fat-transfer
   // infographic between implant and fat-transfer concepts.
   breastImplants: { src: '/Cosmetic Implant Infographic in Burgundy.png', width: 2048, height: 768, alt: 'Breast implants' },
+  roundVsAnatomical: { src: '/Round vs. Anatomical Implants_ A Visual Guide.png', width: 1536, height: 1024, alt: 'Infographic comparing round and anatomical (teardrop) breast implants: shape, appearance, rotation risk and practical notes, covering symmetrical dome shape with more upper-pole fullness versus a teardrop shape with a more natural slope, rotation behaviour, and questions to ask your surgeon' },
   breastImplantPlacement: { src: '/Breast Implant Placement Guide.png', width: 1536, height: 1024, alt: 'Infographic comparing breast implant placement options: subglandular over the muscle, submuscular under the muscle and dual plane, showing how each affects appearance, recovery, complications and final shape, with key takeaways and questions to ask your surgeon' },
   fatTransfer: { src: '/Breast Fat Transfer Medical Infographic.png', width: 1254, height: 1254, alt: 'Fat transfer breast augmentation' },
   fatTransferGuide: { src: '/dfsjifl.png', width: 1254, height: 1254, alt: 'Illustration of fat-transfer breast augmentation from liposuction to transfer' },

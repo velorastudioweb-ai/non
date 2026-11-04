@@ -9,8 +9,10 @@
  * published contact information cannot drift between pages.
  *
  * Deliberate limits:
- *  - only the central India WhatsApp number is marked as WhatsApp-enabled,
- *    because that is the only number confirmed for WhatsApp enquiries;
+ *  - WhatsApp-enabled numbers are only those confirmed by Quantum Health for
+ *    WhatsApp enquiries: +91 9148717036, +91 7676210310, +91 7406110611,
+ *    +852 44608658 and +852 44644381. Every other number keeps a plain
+ *    telephone link;
  *  - the Dubai meeting point is Badr Al Samaa Medical Center in Mankhool,
  *    Bur Dubai, as supplied for the United Arab Emirates enquiries;
  *  - no opening hours or treatment availability are invented for any location.
@@ -18,7 +20,7 @@
 
 const CONTACT_EMAIL = 'drvikas090909@gmail.com';
 const WHATSAPP = Object.freeze({ number: '919148717036', display: '+91 91487 17036' });
-const WHATSAPP_MESSAGE = 'Hello Quantum Health, I would like to make an appointment enquiry about breast enlargement.';
+const WHATSAPP_MESSAGE = 'Hello Quantum Health, I would like to know more about your treatments and consultation availability.';
 
 function telHref(phone) {
   let value = String(phone || '').replace(/[^\d+]/g, '');
@@ -62,11 +64,11 @@ const rawLocations = [
     },
     mapQuery: '55–65 Lung Mun Road, Sun Tuen Mun Shopping Centre, Tuen Mun, New Territories, Hong Kong',
     phones: [
-      { display: '+852 4460 8658', tel: '+85244608658' },
-      { display: '+852 4464 4381', tel: '+85244644381' }
+      { display: '+852 4460 8658', tel: '+85244608658', whatsapp: '85244608658' },
+      { display: '+852 4464 4381', tel: '+85244644381', whatsapp: '85244644381' }
     ],
-    whatsapp: '',
-    note: 'Head office address supplied by Quantum Health. Please confirm appointment availability with the team before travelling.'
+    whatsapp: '85244608658',
+    note: 'Head office address supplied by Quantum Health. Both head-office numbers receive WhatsApp enquiries. Please confirm appointment availability with the team before travelling.'
   },
   {
     id: 'la-crown',
@@ -89,12 +91,12 @@ const rawLocations = [
     },
     mapQuery: 'La Crown, Jayanagar, Bengaluru, Karnataka, India',
     phones: [
-      { display: '+91 91487 17036', tel: '+919148717036' },
-      { display: '+91 76762 10310', tel: '+917676210310' },
-      { display: '+91 74061 10611', tel: '+917406110611' }
+      { display: '+91 91487 17036', tel: '+919148717036', whatsapp: '919148717036' },
+      { display: '+91 76762 10310', tel: '+917676210310', whatsapp: '917676210310' },
+      { display: '+91 74061 10611', tel: '+917406110611', whatsapp: '917406110611' }
     ],
     whatsapp: WHATSAPP.number,
-    note: 'Central India enquiry numbers. WhatsApp enquiries are received on +91 91487 17036.'
+    note: 'Central India enquiry numbers. All three numbers receive WhatsApp enquiries.'
   },
   {
     id: 'ritz',
@@ -117,9 +119,9 @@ const rawLocations = [
     },
     mapQuery: 'Ritz, Bengaluru, Karnataka, India',
     phones: [
-      { display: '+91 91487 17036', tel: '+919148717036' },
-      { display: '+91 76762 10310', tel: '+917676210310' },
-      { display: '+91 74061 10611', tel: '+917406110611' }
+      { display: '+91 91487 17036', tel: '+919148717036', whatsapp: '919148717036' },
+      { display: '+91 76762 10310', tel: '+917676210310', whatsapp: '917676210310' },
+      { display: '+91 74061 10611', tel: '+917406110611', whatsapp: '917406110611' }
     ],
     whatsapp: WHATSAPP.number,
     note: 'Uses the same central India enquiry numbers as the La Crown branch unless branch-specific numbers are supplied.'
@@ -158,7 +160,10 @@ const locations = rawLocations.map((location) => Object.assign({}, location, {
   mapUrl: location.mapQuery ? mapSearch(location.mapQuery) : '',
   directionsUrl: location.mapQuery ? mapDirections(location.mapQuery) : '',
   embedUrl: location.mapQuery ? mapEmbed(location.mapQuery) : '',
-  whatsappUrl: location.whatsapp ? whatsappLink(location.whatsapp, WHATSAPP_MESSAGE) : ''
+  whatsappUrl: location.whatsapp ? whatsappLink(location.whatsapp, WHATSAPP_MESSAGE) : '',
+  phones: location.phones.map((phone) => Object.assign({}, phone, {
+    whatsappUrl: phone.whatsapp ? whatsappLink(phone.whatsapp, WHATSAPP_MESSAGE) : ''
+  }))
 }));
 
 const appointmentTopics = [
