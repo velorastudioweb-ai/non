@@ -247,6 +247,7 @@ const pages = [
     seoDescription: 'How breast augmentation results change from the first weeks to years later, including swelling, settling, ageing and weight change.',
     bannerLead: 'Augmentation is not a one-off event with a fixed result. Swelling, healing, ageing and body change all affect how the breasts look.',
     imageKey: 'breastAugmentationResults',
+    bannerAlt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later',
     related: [
       ['/surgical/implant-longevity/', 'How long implants last', 'Replacement, revision and long-term monitoring.'],
       ['/surgical/breast-augmentation/', 'Breast augmentation', 'The parent guide to planning and recovery.'],
