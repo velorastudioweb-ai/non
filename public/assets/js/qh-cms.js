@@ -416,7 +416,7 @@
       send({ type: 'qh:ready', structure: structure() });
       return;
     }
-    fetch('/api/qh/content?page=' + encodeURIComponent(location.pathname), { credentials: 'same-origin' })
+    fetch('/api/qh/content/?page=' + encodeURIComponent(location.pathname), { credentials: 'same-origin' })
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (data) {
         if (data.site) applySite(data.site);

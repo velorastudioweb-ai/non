@@ -1,6 +1,6 @@
 'use strict';
 /* Quantum Health admin panel - single-page application.
- * Talks to /api/qh/admin (session-cookie authenticated, x-qh-request CSRF header)
+ * Talks to /api/qh/admin/ (session-cookie authenticated, x-qh-request CSRF header)
  * and drives the visual editor by messaging the ?qh_edit=1 preview iframe.
  * Keep this file ASCII-only in literals (PowerShell-safe). */
 
@@ -26,7 +26,7 @@ function toast(msg, isErr) {
   toast._t = setTimeout(() => { t.classList.add('hidden'); }, 4200);
 }
 async function api(action, payload) {
-  const res = await fetch('/api/qh/admin', {
+  const res = await fetch('/api/qh/admin/', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'x-qh-request': '1' },
     credentials: 'same-origin',
@@ -1125,7 +1125,7 @@ VIEWS.settings = async function () {
     v.appendChild(el('div', { class: 'row' }, [save]));
   }
   const db = el('div', { class: 'card' }, [el('h3', {}, 'Storage & environment')]);
-  const probe = await fetch('/api/qh/content?page=/').then((r) => r.status).catch(() => 0);
+  const probe = await fetch('/api/qh/content/?page=/').then((r) => r.status).catch(() => 0);
   db.appendChild(el('p', {}, 'Content API: ' + (probe === 200 ? 'CONNECTED (Vercel Blob database)' : 'ERROR HTTP ' + probe)));
   db.appendChild(el('p', { class: 'muted small' }, 'Pages, media, doctors, contacts, enquiries, revisions and the audit log share one private Blob store behind /api/qh. Backups:'));
   db.appendChild(el('button', { class: 'btn ghost small', onclick: async () => { const b = await api('backup.export'); download('qh-cms-backup.json', JSON.stringify(b, null, 1)); } }, 'Export full JSON backup'));

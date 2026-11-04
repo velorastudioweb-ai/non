@@ -59,9 +59,13 @@ const server = http.createServer((req, res) => {
   if (urlPath === '/api/contact') return require('../api/contact')(req, res);
   if (urlPath.startsWith('/api/qh/')) {
     const u = new URL(req.url, 'http://localhost');
-    const parts = urlPath.replace('/api/qh/', '').split('/').filter(Boolean);
-    req.query = Object.assign(Object.fromEntries(u.searchParams), { _path: parts });
-    return require('../api/qh/[...segments]')(req, res);
+    req.query = Object.fromEntries(u.searchParams);
+    const rel = urlPath.replace('/api/qh/', '');
+    if (rel === 'content') return require('../api/qh/content')(req, res);
+    if (rel === 'content/') return require('../api/qh/content')(req, res);
+    if (rel === 'admin' || rel === 'admin/') return require('../api/qh/admin')(req, res);
+    if (rel.startsWith('file/')) { req.query.name = rel.slice(5).split('/'); return require('../api/qh/file/[...name]')(req, res); }
+    res.statusCode = 404; return res.end('{"error":"Unknown endpoint"}');
   }
   if (urlPath === '/admin' || urlPath === '/admin/') {
     const adminFile = path.join(DIST, 'admin', 'index.html');

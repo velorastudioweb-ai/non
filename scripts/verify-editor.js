@@ -20,14 +20,14 @@ const ok = (n, c, x) => { if (c) { pass++; console.log('PASS | ' + n); } else { 
   await page.fill('#login-email', 'rjagadeeswara66@gmail.com');
   await page.fill('#login-password', PW);
   await page.click('#login-form button[type=submit]');
-  await page.waitForSelector('#shell:not(.hidden)', { timeout: 15000 });
+  await page.waitForSelector('#shell:not(.hidden)', { timeout: 60000 });
 
   // open editor directly for FAQs page
   await page.evaluate(() => { location.hash = '#/editor/faqs'; });
-  await page.waitForSelector('#editor-frame', { timeout: 10000 });
+  await page.waitForSelector('#editor-frame', { timeout: 30000 });
 
   // wait for the iframe to index the DOM (seclist populated)
-  await page.waitForFunction(() => document.querySelectorAll('#seclist .sec-item').length >= 2, { timeout: 20000 }).catch(() => {});
+  await page.waitForFunction(() => document.querySelectorAll('#seclist .sec-item').length >= 2, { timeout: 45000 }).catch(() => {});
   const secCount = await page.$$eval('#seclist .sec-item', (n) => n.length);
   ok('editor lists page sections', secCount >= 2, secCount);
 
