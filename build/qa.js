@@ -25,7 +25,13 @@ function walkExt(dir, ext, out = []) {
   return out;
 }
 
-const files = walk(DIST).sort();
+// The /admin SPA is the authenticated CMS application, not public content:
+// the template rules (inline js-class script, canonical, description) do not
+// apply to it, so it is excluded from this public-content QA.
+const files = walk(DIST).filter((f) => {
+  const r = path.relative(DIST, f).replace(/\\/g, '/');
+  return r !== 'admin/index.html' && !r.startsWith('admin/');
+}).sort();
 const urlsOf = new Set();
 files.forEach((f) => {
   const rel = path.relative(DIST, f).replace(/\\/g, '/');

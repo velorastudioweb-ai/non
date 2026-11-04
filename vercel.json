@@ -4,7 +4,7 @@
   "outputDirectory": "dist",
   "framework": null,
   "functions": {
-    "api/qh/[...path].js": { "maxDuration": 30 },
+    "api/qh/[...segments].js": { "maxDuration": 30 },
     "api/contact.js": { "maxDuration": 30 }
   },
   "cleanUrls": true,

@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://nonsurgicalbreastenlargement.in/sitemap.xml
+Sitemap: https://www.breastenlargementclinic.co.in/sitemap.xml
