@@ -10,3 +10,5 @@ docs/restructure-audit/complete-pdf.txt
 docs/performance-audit/**/*.png
 docs/performance-audit/*.report.html
 docs/performance-audit/*.report.json
+
+.env*
