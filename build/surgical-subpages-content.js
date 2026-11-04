@@ -39,7 +39,10 @@ const pages = [
     seoTitle: 'Who Is a Good Candidate for Breast Augmentation? | Quantum Health',
     seoDescription: 'Understand who may be suitable for breast augmentation, who may need to wait, and the health and expectation factors a surgeon assesses.',
     bannerLead: 'Suitability is about health, anatomy and motivation as much as size. A good consultation includes an honest discussion of when surgery is not the right step.',
-    imageKey: 'breastAugmentation',
+    imageKey: 'breastAugmentationCandidacy',
+    // Pages that use an authored bannerImage need an explicit alt: the fallback
+    // describes generated abstract artwork, which would misdescribe this image.
+    bannerAlt: 'Illustration of a woman considering breast augmentation beside assessment and preparation icons: a clinician consultation, a health checklist with blood-sample tubes, medication, a no-smoking symbol, a breast outline on a planning card, recovery pillows and towels, and a support bra',
     related: [
       ['/surgical/breast-augmentation/', 'Breast augmentation', 'The parent guide to planning, surgery and recovery.'],
       ['/breast-augmentation-consultation-checklist/', 'Consultation checklist', 'Questions and information to prepare before you decide.'],
