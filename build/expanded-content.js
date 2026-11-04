@@ -140,6 +140,7 @@ const pages = [
     seoTitle: 'Silicone vs Saline Breast Implants: Differences and Monitoring | Quantum Health',
     seoDescription: 'Compare silicone gel and saline breast implants, including feel, appearance, rupture detection, monitoring and questions to ask your surgeon.',
     bannerLead: 'Both implant types use a silicone shell. The filling, how a leak shows up and the monitoring each needs are where they differ.',
+    bannerAlt: 'Infographic comparing silicone gel and saline breast implants, covering feel, appearance, rupture detection, monitoring and questions to ask your surgeon',
     imageKey: 'siliconeVsSaline',
     related: [
       ['/breast-implants/', 'Breast implants: types and placement', 'The wider guide to implant choices, surfaces and incisions.'],
