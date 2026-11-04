@@ -197,7 +197,7 @@ const pages = [
     seoTitle: 'Preparing for Breast Augmentation: A Practical Checklist | Quantum Health',
     seoDescription: 'How to prepare for breast augmentation, covering medical checks, medicines, smoking, home preparation and what to arrange for recovery.',
     bannerLead: 'Good preparation can reduce stress and may help recovery. Always follow your surgeon’s own instructions where they differ from this general guide.',
-    imageKey: 'breastAugmentationPreparation',
+    imageKey: 'surgicalConsultationPreparation',
     related: [
       ['/surgical/breast-augmentation-procedure/', 'The procedure step by step', 'What happens from anaesthesia to follow-up.'],
       ['/breast-augmentation-consultation-checklist/', 'Consultation checklist', 'Questions to ask before committing to surgery.'],
@@ -246,8 +246,7 @@ const pages = [
     seoTitle: 'Breast Augmentation Results Over Time: Year One and Beyond | Quantum Health',
     seoDescription: 'How breast augmentation results change from the first weeks to years later, including swelling, settling, ageing and weight change.',
     bannerLead: 'Augmentation is not a one-off event with a fixed result. Swelling, healing, ageing and body change all affect how the breasts look.',
-    imageKey: 'breastAugmentationResults',
-    bannerAlt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later',
+    imageKey: 'breastAugmentation',
     related: [
       ['/surgical/implant-longevity/', 'How long implants last', 'Replacement, revision and long-term monitoring.'],
       ['/surgical/breast-augmentation/', 'Breast augmentation', 'The parent guide to planning and recovery.'],
