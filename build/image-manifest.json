@@ -791,6 +791,58 @@
       }
     ]
   },
+  "/Breast Implant Longevity Guide.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "865b8e0e497d2b7bce73cfed960eeba3ddd868d1298911f3a098551d3dec3657",
+    "bytes": 2186414,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 24036
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 46212
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 71052
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 93944
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 142590
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 195212
+      },
+      {
+        "src": "/assets/responsive/breast-implant-longevity-guide-865b8e0e497d-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 245062
+      }
+    ]
+  },
   "/Breast Implant Medical Illustration.png": {
     "width": 1254,
     "height": 1254,
@@ -834,6 +886,58 @@
         "width": 1254,
         "height": 1254,
         "bytes": 163142
+      }
+    ]
+  },
+  "/Breast Implant Placement Guide.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d5514321682779b840d1fc42551e0df98cc733d4a90d769edd34899e2384c3a6",
+    "bytes": 2176090,
+    "format": "webp",
+    "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 21776
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 41690
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 65604
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 86022
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 131718
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 181002
+      },
+      {
+        "src": "/assets/responsive/breast-implant-placement-guide-d55143216827-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 232666
       }
     ]
   },
@@ -1312,6 +1416,58 @@
         "width": 1536,
         "height": 1024,
         "bytes": 159584
+      }
+    ]
+  },
+  "/Choosing Implant Size_ A Visual Guide.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "03e35b99adcdef5790bdc6a35ce82533867b614460eeeaeb41bae654d1280be1",
+    "bytes": 2225776,
+    "format": "webp",
+    "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 22764
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 42588
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 66538
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 85534
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 131064
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 177288
+      },
+      {
+        "src": "/assets/responsive/choosing-implant-size-a-visual-guide-03e35b99adcd-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 231736
       }
     ]
   },
@@ -2481,6 +2637,58 @@
       }
     ]
   },
+  "/Preparing for Breast Augmentation.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1f8024399fb918f975fb79ffa899524706e239432c7592a435bca1ec3af9b157",
+    "bytes": 2354182,
+    "format": "webp",
+    "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 18560
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 33930
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 52488
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 69054
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 107312
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 149956
+      },
+      {
+        "src": "/assets/responsive/preparing-for-breast-augmentation-1f8024399fb9-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 194198
+      }
+    ]
+  },
   "/prp.webp": {
     "width": 1254,
     "height": 1254,
@@ -2576,6 +2784,58 @@
         "width": 1536,
         "height": 969,
         "bytes": 169976
+      }
+    ]
+  },
+  "/Round vs. Anatomical Implants_ A Visual Guide.png": {
+    "width": 1536,
+    "height": 1024,
+    "sha256": "08f1b9687b15a75489ef4cfb84c4fbea484005917fd8406c74a14322fb94c600",
+    "bytes": 2075087,
+    "format": "webp",
+    "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-1536.webp",
+    "variants": [
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-320.webp",
+        "width": 320,
+        "height": 213,
+        "bytes": 18852
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 34634
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-640.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 52492
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-768.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 67478
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-1024.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 102214
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-1280.webp",
+        "width": 1280,
+        "height": 853,
+        "bytes": 141540
+      },
+      {
+        "src": "/assets/responsive/round-vs-anatomical-implants-a-visual-guide-08f1b9687b15-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 181676
       }
     ]
   },

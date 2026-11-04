@@ -37,12 +37,17 @@ const siteImages = Object.freeze({
   // Each treatment keeps its own named illustration; do not share the fat-transfer
   // infographic between implant and fat-transfer concepts.
   breastImplants: { src: '/Cosmetic Implant Infographic in Burgundy.png', width: 2048, height: 768, alt: 'Breast implants' },
+  breastImplantPlacement: { src: '/Breast Implant Placement Guide.png', width: 1536, height: 1024, alt: 'Infographic comparing breast implant placement options: subglandular over the muscle, submuscular under the muscle and dual plane, showing how each affects appearance, recovery, complications and final shape, with key takeaways and questions to ask your surgeon' },
   fatTransfer: { src: '/Breast Fat Transfer Medical Infographic.png', width: 1254, height: 1254, alt: 'Fat transfer breast augmentation' },
   fatTransferGuide: { src: '/dfsjifl.png', width: 1254, height: 1254, alt: 'Illustration of fat-transfer breast augmentation from liposuction to transfer' },
   breastAugmentation: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options' },
+  breastAugmentationPreparation: { src: '/Preparing for Breast Augmentation.png', width: 1536, height: 1024, alt: 'Illustration of breast augmentation preparation with a consultation, medical checks, medicines, no-smoking guidance, a recovery checklist and home arrangements' },
   breastAugmentationProcedure: { src: '/Breast Augmentation Procedure Journey.png', width: 1536, height: 1024, alt: 'Illustration of the breast augmentation journey from consultation and anaesthesia to surgery, recovery and follow-up' },
   breastAugmentationPlanning: { src: '/Breast Augmentation Options Infographic.png', width: 1536, height: 1024, alt: 'Breast augmentation options and planning' },
   breastAugmentationResults: { src: '/Breast Augmentation Results Timeline.png', width: 1536, height: 1024, alt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later' },
+  siliconeVsSaline: { src: '/Silicone vs Saline Implant Guide.png', width: 1536, height: 1024, alt: 'Infographic comparing silicone gel and saline breast implants, covering feel, appearance, rupture detection, monitoring and questions to ask your surgeon' },
+  choosingImplantSize: { src: '/Choosing Implant Size_ A Visual Guide.png', width: 1536, height: 1024, alt: 'Infographic explaining how to choose breast implant size: why cup size is unreliable, how surgeons assess implant volume, key factors to consider and the typical look at around 250, 300, 350 and 400 cc' },
+  breastImplantLongevity: { src: '/Breast Implant Longevity Guide.png', width: 1536, height: 1024, alt: 'Infographic explaining how long breast implants last: typical lifespan of around 10 to 20 years, what affects how long they last, why monitoring matters, and when replacement or removal may be needed, with key takeaways and questions to ask your surgeon' },
   breastRevision: { src: '/Breast Implant Revision Infographic.png', width: 1254, height: 1254, alt: 'Illustration of breast implant revision planning' },
   breastImplantSafety: { src: '/Breast Implant Safety Infographic.png', width: 1254, height: 1254, alt: 'Breast implant safety' },
   compareOptions: { src: '/Breast Enhancement Options Infographic.webp', width: 1536, height: 1024, alt: 'Breast enhancement options compared' },

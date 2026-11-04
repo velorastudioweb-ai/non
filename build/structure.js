@@ -216,7 +216,10 @@ function cards(entries, heading, lead) {
     const p = byUrl.get(href);
     const imageKey = {
       '/breast-enlargement-without-surgery/': 'withoutSurgery',
+      '/surgical/breast-augmentation-results/': 'breastAugmentationResults',
       '/surgical/silicone-vs-saline-implants/': 'siliconeVsSaline',
+      '/surgical/implant-size/': 'choosingImplantSize',
+      '/surgical/implant-longevity/': 'breastImplantLongevity',
       '/breast-implants/': 'breastImplants',
       '/surgical/breast-augmentation/': 'breastAugmentation',
       '/breast-implant-safety/': 'breastImplantSafety',

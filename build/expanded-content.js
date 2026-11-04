@@ -140,7 +140,8 @@ const pages = [
     seoTitle: 'Silicone vs Saline Breast Implants: Differences and Monitoring | Quantum Health',
     seoDescription: 'Compare silicone gel and saline breast implants, including feel, appearance, rupture detection, monitoring and questions to ask your surgeon.',
     bannerLead: 'Both implant types use a silicone shell. The filling, how a leak shows up and the monitoring each needs are where they differ.',
-    imageKey: 'breastImplants',
+    bannerAlt: 'Infographic comparing silicone gel and saline breast implants, covering feel, appearance, rupture detection, monitoring and questions to ask your surgeon',
+    imageKey: 'siliconeVsSaline',
     related: [
       ['/breast-implants/', 'Breast implants: types and placement', 'The wider guide to implant choices, surfaces and incisions.'],
       ['/surgical/implant-longevity/', 'How long implants last', 'Replacement, revision and long-term monitoring.'],
@@ -238,7 +239,8 @@ const pages = [
     seoTitle: 'How to Choose Breast Implant Size Realistically | Quantum Health',
     seoDescription: 'Why cup size is unreliable, how surgeons assess implant volume, and what to consider so your expectations match your anatomy.',
     bannerLead: 'Cup sizes vary between brands and countries. Implants are measured in volume, and the same volume looks different on different bodies.',
-    imageKey: 'breastAugmentation',
+    imageKey: 'choosingImplantSize',
+    bannerAlt: 'Infographic explaining how to choose breast implant size: why cup size is unreliable, how surgeons assess implant volume, key factors such as chest width, skin elasticity and lifestyle, and the typical look at around 250, 300, 350 and 400 cc',
     related: [
       ['/breast-implants/', 'Breast implants: types and placement', 'How size, profile and base width interact.'],
       ['/surgical/breast-augmentation/', 'Breast augmentation', 'Planning, surgery and recovery.'],
@@ -305,6 +307,18 @@ const pages = [
         note: 'Your surgeon may use a variation or combination. Ask exactly what is planned for each breast.'
       },
       {
+        type: 'figure',
+        eyebrow: 'Visual guide',
+        heading: 'Implant placement at a glance',
+        lead: 'The infographic below brings the page together: where the implant can sit, how the three main options compare on appearance, recovery and complication considerations, how placement affects the final result, and the questions worth asking your surgeon before you decide.',
+        src: siteImages.breastImplantPlacement.src,
+        width: siteImages.breastImplantPlacement.width,
+        height: siteImages.breastImplantPlacement.height,
+        alt: 'Infographic comparing breast implant placement: subglandular (over the muscle), submuscular (under the muscle) and dual plane (partial under the muscle), shown with cross-section diagrams and silhouettes, a comparison table covering appearance, recovery and complications, how placement affects results, key takeaways and questions to ask your surgeon',
+        caption: 'Illustrative comparison of subglandular, submuscular and dual plane implant placement and how each affects appearance, recovery and complication risk.',
+        note: 'Educational illustration; not a personalised recommendation. The right plane depends on your anatomy, tissue quality, implant and goals.'
+      },
+      {
         type: 'prose',
         html:
           '<h2>What influences the choice</h2>' +
@@ -331,7 +345,7 @@ const pages = [
     seoTitle: 'How Long Do Breast Implants Last? | Quantum Health',
     seoDescription: 'Breast implants are not lifetime devices. Learn what affects their lifespan, why monitoring matters and when replacement or removal may be needed.',
     bannerLead: 'Implants are long-term medical devices, not a one-time purchase. Many people need further surgery at some point, although timing varies widely.',
-    imageKey: 'breastImplants',
+    imageKey: 'breastImplantLongevity',
     related: [
       ['/breast-implants/', 'Breast implants: types and placement', 'The wider guide to implant choice and follow-up.'],
       ['/surgical/capsular-contracture/', 'Capsular contracture', 'A common reason for revision surgery.'],

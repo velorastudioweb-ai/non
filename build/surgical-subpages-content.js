@@ -197,7 +197,7 @@ const pages = [
     seoTitle: 'Preparing for Breast Augmentation: A Practical Checklist | Quantum Health',
     seoDescription: 'How to prepare for breast augmentation, covering medical checks, medicines, smoking, home preparation and what to arrange for recovery.',
     bannerLead: 'Good preparation can reduce stress and may help recovery. Always follow your surgeon’s own instructions where they differ from this general guide.',
-    imageKey: 'surgicalConsultationPreparation',
+    imageKey: 'breastAugmentationPreparation',
     related: [
       ['/surgical/breast-augmentation-procedure/', 'The procedure step by step', 'What happens from anaesthesia to follow-up.'],
       ['/breast-augmentation-consultation-checklist/', 'Consultation checklist', 'Questions to ask before committing to surgery.'],
@@ -246,7 +246,8 @@ const pages = [
     seoTitle: 'Breast Augmentation Results Over Time: Year One and Beyond | Quantum Health',
     seoDescription: 'How breast augmentation results change from the first weeks to years later, including swelling, settling, ageing and weight change.',
     bannerLead: 'Augmentation is not a one-off event with a fixed result. Swelling, healing, ageing and body change all affect how the breasts look.',
-    imageKey: 'breastAugmentation',
+    imageKey: 'breastAugmentationResults',
+    bannerAlt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later',
     related: [
       ['/surgical/implant-longevity/', 'How long implants last', 'Replacement, revision and long-term monitoring.'],
       ['/surgical/breast-augmentation/', 'Breast augmentation', 'The parent guide to planning and recovery.'],
@@ -273,19 +274,6 @@ const pages = [
           '<p>Possible later changes include visible rippling, altered firmness, displacement and a wish for a different size. Some people need further surgery, such as a lift or revision. See <a href="/surgical/implant-longevity/">how long implants last</a>.</p>' +
           '<h2>Looking after the result</h2>' +
           '<ul><li>Attend follow-up visits and any recommended imaging.</li><li>Wear supportive bras as advised.</li><li>Maintain a stable weight where possible.</li><li>Protect scars from sun.</li><li>Report any new change promptly.</li></ul>'
-      },
-      {
-        type: 'figure',
-        alt: true,
-        eyebrow: 'Visual overview',
-        heading: 'Results over time at a glance',
-        lead: 'The infographic below summarises the timeline covered above: the first one to two weeks, settling over one to three months, stabilisation around six to twelve months, and the long term as ageing, weight and body change continue to shape the result.',
-        src: siteImages.breastAugmentationResults.src,
-        width: siteImages.breastAugmentationResults.width,
-        height: siteImages.breastAugmentationResults.height,
-        alt: 'Timeline illustration of breast augmentation results from the first one to two weeks through settling at one to three months, stabilisation at six to twelve months and the long term years later',
-        caption: 'Illustrative timeline of breast augmentation results from the first weeks through settling and stabilisation to the long term.',
-        note: 'Educational illustration; individual healing varies, and your own surgeon’s review schedule and instructions come first.'
       },
       {
         type: 'notice',
