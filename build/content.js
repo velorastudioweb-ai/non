@@ -1210,6 +1210,15 @@ pages.push({
     }
   ]
 });
+/* ---------- About page ---------- */
+pages.push({
+  url: '/about-us/', slug: 'about-us',
+  h1: 'About this website',
+  seoTitle: 'About this website | Breast Enlargement Guide',
+  seoDescription: 'Learn about this independent educational website on breast-enlargement options, evidence, limitations, and safety.',
+  blocks: []
+});
+
 /* ---------- FAQ page ---------- */
 pages.push({
   url: '/faqs/', slug: 'faqs',

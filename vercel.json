@@ -231,22 +231,22 @@
     },
     {
       "source": "/about-dr-vikas-singh/",
-      "destination": "/meet-doctors/",
+      "destination": "/doctors/dr-vikas-singh/",
       "permanent": true
     },
     {
       "source": "/media-and-press/",
-      "destination": "/meet-doctors/",
+      "destination": "/about-us/",
       "permanent": true
     },
     {
       "source": "/technology-and-medical-standards/",
-      "destination": "/meet-doctors/",
+      "destination": "/about-us/",
       "permanent": true
     },
     {
       "source": "/patient-photography-consent/",
-      "destination": "/meet-doctors/",
+      "destination": "/about-us/",
       "permanent": true
     },
     {
@@ -280,18 +280,18 @@
       "permanent": true
     },
     {
-      "source": "/about-us/",
-      "destination": "/meet-doctors/",
+      "source": "/meet-doctors/",
+      "destination": "/doctors/dr-vikas-singh/",
       "permanent": true
     },
     {
       "source": "/doctors/",
-      "destination": "/meet-doctors/",
+      "destination": "/doctors/dr-vikas-singh/",
       "permanent": true
     },
     {
       "source": "/leadership/dr-sunitha-devaraj/",
-      "destination": "/meet-doctors/#leadership",
+      "destination": "/about-us/#leadership",
       "permanent": true
     },
     {

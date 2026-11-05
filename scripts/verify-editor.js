@@ -4,12 +4,22 @@
  * draft persists and publishes, and confirm the public page updates. */
 const { chromium } = require('playwright-core');
 const BASE = 'http://localhost:8123';
-const PW = 'QhGold#2026Admin!x7';
+const PW = process.env.QH_VERIFY_PW || '';
+const CHROME_PATH = process.env.CHROME_PATH ||
+  (process.platform === 'win32'
+    ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+    : process.platform === 'darwin'
+      ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+      : '/usr/bin/google-chrome');
+if (!PW) {
+  console.error('Set QH_VERIFY_PW to the admin verification password.');
+  process.exit(1);
+}
 let pass = 0, fail = 0;
 const ok = (n, c, x) => { if (c) { pass++; console.log('PASS | ' + n); } else { fail++; console.log('FAIL | ' + n + (x ? ' | ' + String(x).slice(0, 160) : '')); } };
 
 (async () => {
-  const browser = await chromium.launch({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ executablePath: CHROME_PATH });
   const ctx = await browser.newContext();
   const page = await ctx.newPage();
   const errs = [];

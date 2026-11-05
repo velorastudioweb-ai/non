@@ -11,20 +11,22 @@ const ok = (n, c, x) => { if (c) { pass++; console.log('PASS | ' + n); } else { 
   let t = await r.text();
   ok('homepage 200', r.status === 200);
   ok('canonical now the live domain', t.includes('rel="canonical" href="https://www.breastenlargementclinic.co.in/"'));
-  ok('Meet Doctors in desktop nav', /nav__link" href="\/meet-doctors\/"[^>]*>Meet Doctors|>Meet Doctors</.test(t));
-  ok('nav no longer "Meet Dr. Vikas Singh"', !t.includes('Meet Dr. Vikas Singh'));
+  ok('Dr. Vikas Singh in desktop nav', /nav__link" href="\/doctors\/dr-vikas-singh\/"[^>]*>Dr\. Vikas Singh|>Dr\. Vikas Singh</.test(t));
+  ok('nav no longer "Meet Doctors"', !t.includes('Meet Doctors'));
   ok('CMS runtime script delivered', /assets\/built\/qh-cms-[a-f0-9]+\.js/.test(t));
   ok('gold nav CSS delivered', t.includes('site-') || true); // css is bundled
 
-  r = await get('/meet-doctors/');
+  r = await get('/doctors/dr-vikas-singh/');
   t = await r.text();
-  ok('/meet-doctors/ 200', r.status === 200);
-  ok('meet-doctors title/h1', /Meet Doctors/.test(t) && /MEET OUR DOCTORS/.test(t));
+  ok('/doctors/dr-vikas-singh/ 200', r.status === 200);
+  ok('vikas-singh title/h1', /Dr\. Vikas Singh/.test(t) && /DR\. VIKAS SINGH/.test(t));
   ok('Dr. Vikas Singh profile content present', t.includes('DR. VIKAS SINGH') || t.includes('Vikas Singh'));
-  ok('doctor detail links kept', t.includes('/doctors/dr-vikas-singh/'));
+
+  r = await get('/meet-doctors/');
+  ok('/meet-doctors/ 301 -> /doctors/dr-vikas-singh/', r.status === 301 && (r.headers.get('location') || '').includes('/doctors/dr-vikas-singh'), r.status + ' ' + r.headers.get('location'));
 
   r = await get('/doctors/');
-  ok('/doctors/ 301 -> /meet-doctors/', r.status === 301 && (r.headers.get('location') || '').includes('/meet-doctors'), r.status + ' ' + r.headers.get('location'));
+  ok('/doctors/ 301 -> /doctors/dr-vikas-singh/', r.status === 301 && (r.headers.get('location') || '').includes('/doctors/dr-vikas-singh'), r.status + ' ' + r.headers.get('location'));
 
   r = await get('/locations/');
   t = await r.text();

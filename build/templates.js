@@ -35,7 +35,7 @@ function head(page, site) {
   const collect = blocks => blocks.forEach(b => { types.add(b.type); if (b.blocks) collect(b.blocks); });
   collect(page.blocks || []);
   const isBlog = page.url === '/blogs/' || page.url.startsWith('/blogs/');
-  const isProfile = page.url === '/meet-doctors/' || page.url.startsWith('/doctors/');
+  const isProfile = page.url === '/about-us/' || page.url.startsWith('/doctors/');
   const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : []), ...(isBlog ? ['blog'] : []), ...(isProfile ? ['profiles'] : [])]
     .filter(name => name === 'form' ? (types.has('form') || types.has('appointment')) : (['research', 'blog', 'profiles'].includes(name) || types.has(name)))
     .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
@@ -747,9 +747,9 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img class="hero__image" src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="async">', '100vw')}</div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true" style="position:absolute;inset:0;z-index:0;width:100%;height:100%;overflow:hidden">${responsiveMarkup('<img class="hero__image" src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center">', '100vw')}</div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
-  return `<section class="hero petals">
+  return `<section class="hero petals" style="position:relative;min-height:80vh;min-height:80dvh;overflow:hidden;isolation:isolate">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
   <span class="hero__rose hero__rose--bl" aria-hidden="true"></span>
   <span class="hero__rose hero__rose--tr" aria-hidden="true"></span>
