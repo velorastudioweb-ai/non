@@ -96,7 +96,7 @@ window.addEventListener('hashchange', route);
 const MODULES = [
   ['dashboard', 'Dashboard'], ['pages', 'All Pages'], ['editor', 'Visual Page Editor'],
   ['home', 'Homepage'], ['surgical', 'Surgical Treatments'], ['nonsurgical', 'Non-Surgical Treatments'],
-  ['doctors', 'Meet Doctors'], ['gallery', 'Before & After'], ['media', 'Media Library'],
+  ['doctors', 'Dr. Vikas Singh & Team'], ['gallery', 'Before & After'], ['media', 'Media Library'],
   ['locations', 'Locations & Branches'], ['contacts', 'Contact & WhatsApp'], ['enquiries', 'Forms & Enquiries'],
   ['nav', 'Navigation & Footer'], ['seo', 'SEO Manager'], ['appearance', 'Global Appearance'],
   ['components', 'Reusable Components'], ['placeholders', 'Placeholder Audit'], ['revisions', 'Revision History'],

@@ -1,6 +1,6 @@
 'use strict';
 /* Browser QA: confirms the CMS runtime overlay actually mutates the public
- * DOM, WhatsApp icons render, Meet Doctors grid is live, and the admin SPA
+ * DOM, WhatsApp icons render, About page renders, and the admin SPA
  * boots and logs in. Run with the dev server on :8123. */
 const { chromium } = require('playwright-core');
 const BASE = 'http://localhost:8123';
@@ -33,24 +33,24 @@ const ok = (name, cond, extra) => { if (cond) { pass++; console.log('PASS | ' + 
     const hdr = { 'content-type': 'application/json', 'x-qh-request': '1' };
     const login = await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'login', email: 'rjagadeeswara66@gmail.com', password: PW }) }).then((r) => r.json());
     // s0.f1 = the h1 inside the page hero (f0 is the eyebrow paragraph)
-    const doc = { seo: null, sections: { s0: { fields: { f1: { text: 'MEET THE QUANTUM HEALTH CLINICAL TEAM' } } } }, order: null, added: [] };
-    await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'page.saveDraft', slug: 'meet-doctors', doc }) });
-    const pub = await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'page.publish', slug: 'meet-doctors' }) }).then((r) => r.status);
+    const doc = { seo: null, sections: { s0: { fields: { f1: { text: 'ABOUT QUANTUM HEALTH INDEPENDENT EDUCATION' } } } }, order: null, added: [] };
+    await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'page.saveDraft', slug: 'about-us', doc }) });
+    const pub = await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'page.publish', slug: 'about-us' }) }).then((r) => r.status);
     return { loginOk: !!login.ok, pub };
   }, BASE).catch((e) => ({ error: String(e) }));
   ok('browser-side publish workflow', result.loginOk === true && result.pub === 200, JSON.stringify(result));
   await pubPage.close();
 
-  await page.goto(BASE + '/meet-doctors/', { waitUntil: 'networkidle' });
-  const heading = await page.$eval('.qh-hero h1', (n) => n.textContent.trim()).catch(() => null);
-  ok('published text overlay renders in browser', heading && /MEET THE QUANTUM HEALTH CLINICAL TEAM/i.test(heading), heading);
+  await page.goto(BASE + '/about-us/', { waitUntil: 'networkidle' });
+  const heading = await page.$eval('h1', (n) => n.textContent.trim()).catch(() => null);
+  ok('published text overlay renders in browser', heading && /ABOUT QUANTUM HEALTH INDEPENDENT EDUCATION/i.test(heading), heading);
 
   const doctorCards = await page.$$eval('.qh-doctor-card, .qh-card', (n) => n.length);
   ok('doctor profiles render', doctorCards >= 4, doctorCards);
 
   const meetNav = await page.$$eval('.nav__link', (links) => links.map((l) => l.textContent.trim()));
-  ok('nav shows Meet Doctors', meetNav.some((t) => /Meet Doctors/i.test(t)), meetNav.join(','));
-  ok('nav no longer labelled About-dr alias (keeps separate About too)', meetNav.some((t) => /About/i.test(t)) && meetNav.some((t) => /Meet Doctors/i.test(t)), meetNav.join(','));
+  ok('nav shows Dr. Vikas Singh', meetNav.some((t) => /Dr\. Vikas Singh/i.test(t)), meetNav.join(','));
+  ok('nav keeps separate About link', meetNav.some((t) => /About/i.test(t)) && meetNav.some((t) => /Dr\. Vikas Singh/i.test(t)), meetNav.join(','));
 
   // gold token applied
   const goldVar = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--nav-gold').trim());
@@ -106,8 +106,8 @@ const ok = (name, cond, extra) => { if (cond) { pass++; console.log('PASS | ' + 
   await admin.evaluate(async (base) => {
     const hdr = { 'content-type': 'application/json', 'x-qh-request': '1' };
     const post = (b) => fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify(b) });
-    await post({ action: 'page.unpublish', slug: 'meet-doctors' });
-    await post({ action: 'page.discardDraft', slug: 'meet-doctors' });
+    await post({ action: 'page.unpublish', slug: 'about-us' });
+    await post({ action: 'page.discardDraft', slug: 'about-us' });
     const d = await post({ action: 'doctors.get' }).then((r) => r.json());
     await post({ action: 'doctors.save', list: d.list, publish: true });
   }, BASE).catch(() => {});

@@ -8,7 +8,7 @@ const ok = (n, c, x) => { if (c) { pass++; console.log('PASS | ' + n); } else { 
 (async () => {
   const browser = await chromium.launch({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
   const views = [[360, 640, 'small Android phone'], [412, 915, 'large phone'], [768, 1024, 'tablet'], [1366, 768, 'laptop']];
-  const pagesToCheck = ['/', '/meet-doctors/', '/locations/', '/surgical/breast-augmentation/', '/contact/'];
+  const pagesToCheck = ['/', '/doctors/dr-vikas-singh/', '/locations/', '/surgical/breast-augmentation/', '/contact/'];
   for (const [w, h, label] of views) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, isMobile: w < 500, hasTouch: w < 500 });
     for (const path of pagesToCheck) {
@@ -36,8 +36,8 @@ const ok = (n, c, x) => { if (c) { pass++; console.log('PASS | ' + n); } else { 
   await mp.waitForTimeout(500);
   const navOpen = await mp.$eval('#mobile-nav', (n) => getComputedStyle(n).visibility !== 'hidden' && n.getBoundingClientRect().height > 100).catch(() => false);
   ok('mobile menu opens', navOpen);
-  const meetLink = await mp.$$eval('#mobile-nav a', (a) => a.map((x) => x.textContent.trim()).filter((t) => /Meet Doctors/i.test(t)).length);
-  ok('Meet Doctors in mobile menu', meetLink >= 1);
+  const meetLink = await mp.$$eval('#mobile-nav a', (a) => a.map((x) => x.textContent.trim()).filter((t) => /Dr\. Vikas Singh/i.test(t)).length);
+  ok('Dr. Vikas Singh in mobile menu', meetLink >= 1);
   await mctx.close();
 
   /* payload probe (measured bytes over the wire) */

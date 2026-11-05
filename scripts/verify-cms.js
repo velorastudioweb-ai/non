@@ -71,9 +71,9 @@ async function call(action, payload) {
   const docs = await (await call('doctors.get')).json;
   ok('doctors seeded (Vikas Singh included)', docs.list.length >= 8 && docs.list.some((d) => /Vikas Singh/.test(d.name)));
   const dp = await call('doctors.save', { list: docs.list, publish: true });
-  ok('doctors publish to /meet-doctors/', dp.status === 200 && dp.json.list.length >= 8, JSON.stringify(dp.json).slice(0, 140));
-  const md = await (await fetch(BASE + '/api/qh/content?page=/meet-doctors/')).json();
-  ok('meet-doctors grid overlay live', !!(md.overlay && md.overlay.doctorsGrid && /Vikas Singh/.test(md.overlay.doctorsGrid.html)));
+  ok('doctors publish succeeds', dp.status === 200 && dp.json.list.length >= 8, JSON.stringify(dp.json).slice(0, 140));
+  const md = await (await fetch(BASE + '/api/qh/content?page=/about-us/')).json();
+  ok('about-us grid overlay live', !!(md.overlay && md.overlay.doctorsGrid && /Vikas Singh/.test(md.overlay.doctorsGrid.html)));
 
   /* site */
   const site = await (await call('site.get')).json;
