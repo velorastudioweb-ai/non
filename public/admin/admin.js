@@ -609,7 +609,7 @@ VIEWS.doctors = async function () {
   tb.appendChild(el('button', { class: 'btn primary small', onclick: async () => { try { await api('doctors.save', { list, publish: true }); toast('Doctors published to /about-us/'); } catch (e) { toast(e.message, true); } } }, 'Save & publish page'));
   function draw() {
     v.innerHTML = '';
-    const card = el('div', { class: 'card' }));
+    const card = el('div', { class: 'card' });
     card.appendChild(el('h3', {}, 'Doctor profiles'));
     card.appendChild(el('p', { class: 'muted small' }, 'Only enter qualifications and awards that the Quantum Health team has supplied. Records marked verification-pending stay labelled as supplied and are never published as verified. Publishing updates the live About page doctors grid immediately.'));
     list.forEach((d, i) => {
