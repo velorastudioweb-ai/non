@@ -30,7 +30,7 @@ const entries = [
   ['/references/', 'scientific-source-references', 'references', 'Layered citation documents with a bookmark and reference-book spine', 'External scientific references'],
   ['/glossary/', 'medical-terms-reference', 'glossary', 'Open dictionary with blank index tabs and a reading lens; no embedded lettering', 'Plain-language medical terminology'],
   ['/faqs/', 'shared-questions', 'questions', 'Unmarked speech cards and an open notebook, without embedded text', 'Questions and informed discussion'],
-  ['/about-us/', 'independent-patient-education', 'reading', 'An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait', 'Independent patient education'],
+  ['/meet-doctors/', 'independent-patient-education', 'reading', 'An open educational notebook on a quiet reading desk; no clinic identity or practitioner portrait', 'Independent patient education'],
   ['/contact/', 'website-enquiries', 'contact', 'Envelope and unmarked correspondence card on a quiet maroon desk', 'Website correspondence'],
   /* Body-section artwork. These keys are referenced directly by figure blocks
      rather than by a route, so the pseudo-route keeps them out of banners. */

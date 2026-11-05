@@ -35,7 +35,7 @@ function head(page, site) {
   const collect = blocks => blocks.forEach(b => { types.add(b.type); if (b.blocks) collect(b.blocks); });
   collect(page.blocks || []);
   const isBlog = page.url === '/blogs/' || page.url.startsWith('/blogs/');
-  const isProfile = page.url === '/about-us/' || page.url === '/meet-doctors/' || page.url.startsWith('/doctors/');
+  const isProfile = page.url === '/meet-doctors/' || page.url.startsWith('/doctors/');
   const componentStyles = ['form', 'gallery', ...(page.url === '/research/' ? ['research'] : []), ...(isBlog ? ['blog'] : []), ...(isProfile ? ['profiles'] : [])]
     .filter(name => name === 'form' ? (types.has('form') || types.has('appointment')) : (['research', 'blog', 'profiles'].includes(name) || types.has(name)))
     .map(name => `<link rel="stylesheet" href="${assets.href(name + '.css')}">`).join('\n');
@@ -46,7 +46,7 @@ function head(page, site) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.className += ' js';</script>
+<script>document.documentElement.className += ' js'; document.documentElement.classList.add('page-ready','motion-ready');</script>
 <title>${esc(page.seoTitle)}</title>
 <meta name="description" content="${esc(page.seoDescription)}">${noindex}
 <link rel="canonical" href="${url}">
@@ -409,13 +409,23 @@ function renderForm(b, site) {
   const interests = (b.interests || []).map((o) => `<option value="${esc(o)}">${esc(o)}</option>`).join('\n          ');
   const contacts = (b.contactMethods || ['Phone', 'Email']).map((m, i) => `<label><input type="radio" name="contact_method" value="${esc(m)}"${i === 0 ? ' checked' : ''}> ${esc(m)}</label>`).join('\n        ');
   const countryCodes = [
-    ['+91', 'India (+91)'], ['+1', 'United States / Canada (+1)'], ['+44', 'United Kingdom (+44)'],
-    ['+971', 'United Arab Emirates (+971)'], ['+61', 'Australia (+61)'], ['+65', 'Singapore (+65)'],
-    ['+64', 'New Zealand (+64)'], ['+27', 'South Africa (+27)'], ['+353', 'Ireland (+353)'],
-    ['+49', 'Germany (+49)'], ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'],
+    ['+91', 'India (+91)'], ['+852', 'Hong Kong (+852)'], ['+971', 'United Arab Emirates (+971)'],
+    ['+1', 'United States / Canada (+1)'], ['+44', 'United Kingdom (+44)'],
+    ['+61', 'Australia (+61)'], ['+65', 'Singapore (+65)'], ['+64', 'New Zealand (+64)'],
+    ['+27', 'South Africa (+27)'], ['+353', 'Ireland (+353)'], ['+49', 'Germany (+49)'],
+    ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'], ['+39', 'Italy (+39)'],
+    ['+34', 'Spain (+34)'], ['+41', 'Switzerland (+41)'], ['+43', 'Austria (+43)'],
+    ['+32', 'Belgium (+32)'], ['+45', 'Denmark (+45)'], ['+46', 'Sweden (+46)'],
+    ['+47', 'Norway (+47)'], ['+358', 'Finland (+358)'], ['+48', 'Poland (+48)'],
     ['+966', 'Saudi Arabia (+966)'], ['+974', 'Qatar (+974)'], ['+973', 'Bahrain (+973)'],
-    ['+968', 'Oman (+968)'], ['+965', 'Kuwait (+965)'], ['+880', 'Bangladesh (+880)'],
-    ['+92', 'Pakistan (+92)'], ['+94', 'Sri Lanka (+94)']
+    ['+968', 'Oman (+968)'], ['+965', 'Kuwait (+965)'], ['+962', 'Jordan (+962)'],
+    ['+961', 'Lebanon (+961)'], ['+20', 'Egypt (+20)'], ['+254', 'Kenya (+254)'],
+    ['+234', 'Nigeria (+234)'], ['+880', 'Bangladesh (+880)'], ['+92', 'Pakistan (+92)'],
+    ['+94', 'Sri Lanka (+94)'], ['+977', 'Nepal (+977)'], ['+960', 'Maldives (+960)'],
+    ['+66', 'Thailand (+66)'], ['+62', 'Indonesia (+62)'], ['+60', 'Malaysia (+60)'],
+    ['+63', 'Philippines (+63)'], ['+84', 'Vietnam (+84)'], ['+86', 'China (+86)'],
+    ['+81', 'Japan (+81)'], ['+82', 'South Korea (+82)'], ['+90', 'Turkey (+90)'],
+    ['+7', 'Russia / Kazakhstan (+7)'], ['+380', 'Ukraine (+380)'], ['+972', 'Israel (+972)']
   ].map(([code, label]) => `<option value="${esc(code)}"${code === '+91' ? ' selected' : ''}>${esc(label)}</option>`).join('\n          ');
   const sidebar = b.points ? `<ul class="stack">${b.points.map((p) => `<li style="display:flex;gap:.7rem;align-items:flex-start"><span style="color:var(--accent-ink);flex:none">${icon('check')}</span><span>${esc(p)}</span></li>`).join('')}</ul>` : '';
   return `<div class="container">
@@ -595,10 +605,19 @@ function renderAppointment(b, site) {
     ['+1', 'United States / Canada (+1)'], ['+44', 'United Kingdom (+44)'],
     ['+61', 'Australia (+61)'], ['+65', 'Singapore (+65)'], ['+64', 'New Zealand (+64)'],
     ['+27', 'South Africa (+27)'], ['+353', 'Ireland (+353)'], ['+49', 'Germany (+49)'],
-    ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'], ['+966', 'Saudi Arabia (+966)'],
-    ['+974', 'Qatar (+974)'], ['+973', 'Bahrain (+973)'], ['+968', 'Oman (+968)'],
-    ['+965', 'Kuwait (+965)'], ['+880', 'Bangladesh (+880)'], ['+92', 'Pakistan (+92)'],
-    ['+94', 'Sri Lanka (+94)']
+    ['+33', 'France (+33)'], ['+31', 'Netherlands (+31)'], ['+39', 'Italy (+39)'],
+    ['+34', 'Spain (+34)'], ['+41', 'Switzerland (+41)'], ['+43', 'Austria (+43)'],
+    ['+32', 'Belgium (+32)'], ['+45', 'Denmark (+45)'], ['+46', 'Sweden (+46)'],
+    ['+47', 'Norway (+47)'], ['+358', 'Finland (+358)'], ['+48', 'Poland (+48)'],
+    ['+966', 'Saudi Arabia (+966)'], ['+974', 'Qatar (+974)'], ['+973', 'Bahrain (+973)'],
+    ['+968', 'Oman (+968)'], ['+965', 'Kuwait (+965)'], ['+962', 'Jordan (+962)'],
+    ['+961', 'Lebanon (+961)'], ['+20', 'Egypt (+20)'], ['+254', 'Kenya (+254)'],
+    ['+234', 'Nigeria (+234)'], ['+880', 'Bangladesh (+880)'], ['+92', 'Pakistan (+92)'],
+    ['+94', 'Sri Lanka (+94)'], ['+977', 'Nepal (+977)'], ['+960', 'Maldives (+960)'],
+    ['+66', 'Thailand (+66)'], ['+62', 'Indonesia (+62)'], ['+60', 'Malaysia (+60)'],
+    ['+63', 'Philippines (+63)'], ['+84', 'Vietnam (+84)'], ['+86', 'China (+86)'],
+    ['+81', 'Japan (+81)'], ['+82', 'South Korea (+82)'], ['+90', 'Turkey (+90)'],
+    ['+7', 'Russia / Kazakhstan (+7)'], ['+380', 'Ukraine (+380)'], ['+972', 'Israel (+972)']
   ].map(([code, label]) => `<option value="${esc(code)}"${code === '+91' ? ' selected' : ''}>${esc(label)}</option>`).join('\n          ');
   const points = (b.points || []).map((p) => `<li>${icon('check')}<span>${esc(p)}</span></li>`).join('');
   return `<div class="container">
@@ -728,7 +747,7 @@ function renderHero(b, site) {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>`;
   }).join('\n          ');
-  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img class="hero__image" src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="sync">', '100vw')}</div>`;
+  const bgBlock = `<div class="hero__bg" aria-hidden="true">${responsiveMarkup('<img class="hero__image" src="/hero-banner.webp" alt="" width="1599" height="893" loading="eager" fetchpriority="high" decoding="async">', '100vw')}</div>`;
   const strip = b.featureStrip ? renderFeatureStrip(b.featureStrip) : '';
   return `<section class="hero petals">
   <span class="hero__rose hero__rose--tl" aria-hidden="true"></span>
@@ -796,13 +815,6 @@ function layout(page, site) {
   return `${head(page, site)}
 <body class="page-${(page.slug || 'home')}">
 ${header(page, site)}
-<div class="pre-loader" aria-label="Preparing Quantum Health" role="status">
-  <div class="loader-inner">
-    <span class="loader-mark" aria-hidden="true">${icon('lotus')}</span>
-    <span class="loader-name" aria-hidden="true">${esc(site.name)}</span>
-    <span class="loader-line" aria-hidden="true"><span></span></span>
-  </div>
-</div>
 <main id="main" tabindex="-1">
 ${banner}
 ${body}

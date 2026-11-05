@@ -432,3 +432,22 @@ h4 { font-size: 1.125rem; font-weight: var(--w-head-strong); letter-spacing: .02
   .js .reveal--heading .h2 { clip-path: none; }
   .petals::before { animation: none; }
 }
+
+/* Mobile / touch performance: the most expensive paint effects are invisible
+   at phone sizes or indistinguishable from a simple opacity treatment, so
+   removing them dramatically reduces main-thread Style & Layout work. */
+@media (hover: none), (pointer: coarse), (max-width: 767px) {
+  body::after {
+    mix-blend-mode: normal;
+    opacity: 0.035;
+  }
+  .petals::before {
+    -webkit-mask-image: none;
+    mask-image: none;
+    animation: none;
+  }
+  .motion-reveals .reveal--heading:not(.is-revealed) .h2,
+  .motion-reveals .reveal--image:not(.is-revealed) {
+    clip-path: none;
+  }
+}

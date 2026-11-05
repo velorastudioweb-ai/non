@@ -10,14 +10,14 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 10);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Meet Doctors', 'Blogs', 'Locations', 'About', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Blogs', 'Locations', 'Meet Doctors', 'Contact us']);
 const doctorsNav = site.nav.find((n) => n.label === 'Meet Doctors');
 assert(doctorsNav && doctorsNav.href === '/meet-doctors/', 'Primary navigation must link to the Meet Doctors page');
 assert(!site.nav.some((n) => n.href === '/education-research/'), 'Education & Research must not remain in the primary navigation');
 assert(!pages.has('/doctors/') && !pages.has('/leadership/dr-sunitha-devaraj/'), 'Doctor directory must live at /meet-doctors/ and leadership must be consolidated into About');
 assert(redirects.some((r) => r.from === '/doctors/' && r.to === '/meet-doctors/'));
-assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/about-us/#leadership'));
-const aboutHtml = html('/about-us/');
+assert(redirects.some((r) => r.from === '/leadership/dr-sunitha-devaraj/' && r.to === '/meet-doctors/#leadership'));
+const aboutHtml = html('/meet-doctors/');
 assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
 assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership reference');
 assert(aboutHtml.includes('id="contact"') && aboutHtml.includes('href="/contact/">Contact us</a>'), 'About must end with a website-contact CTA');
@@ -122,7 +122,7 @@ for (const [i, entries] of [surgical, nonsurgical, education].entries()) {
 }
 const vercel = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'vercel.json')));
 const csp = vercel.headers[0].headers.find((header) => header.key === 'Content-Security-Policy').value;
-assert(csp.includes("script-src 'self' 'sha256-DamCoPgB/VkDCPsu0R6X4sJsz1c66vGlUGBXLu04Yxg='"), 'CSP must allow only the hashed progressive-enhancement bootstrap');
+assert(csp.includes("script-src 'self' 'sha256-0J0RsGwLZayEXDRx+sgvWKXPOoYRvfRKOkUvovNIKxw='"), 'CSP must allow only the hashed progressive-enhancement bootstrap');
 assert(!csp.includes("script-src 'self' 'unsafe-inline'"), 'CSP must not broadly allow inline scripts');
 assert.deepEqual(vercel.redirects, redirects.map((r) => ({ source: r.from, destination: r.to, permanent: true })), 'Run node build/sync-redirects.js');
 console.log('Canonical migration QA: ' + allPages.length + ' retained routes, ' + redirects.length + ' redirects; titles, content, topic membership, direct internal links, anchors and sitemap verified.');

@@ -51,7 +51,7 @@ const site = {
     { label: 'Non-Surgical Breast Enlargement', href: '/non-surgical-breast-enlargement/' },
     { label: 'Education & Research', href: '/education-research/' },
     { label: 'Locations', href: '/locations/' },
-    { label: 'About', href: '/about-us/' }
+    { label: 'Meet Doctors', href: '/meet-doctors/' }
   ],
   navSecondary: [],
   footerExplore: [
@@ -64,7 +64,7 @@ const site = {
     { label: 'What works: evidence guide', href: '/breast-enlargement-without-surgery/' }
   ],
   footerPatient: [
-    { label: 'About this website', href: '/about-us/' },
+    { label: 'Meet Doctors', href: '/meet-doctors/' },
     { label: 'Breast anatomy', href: '/breast-anatomy/' },
     { label: 'Safety & candidacy', href: '/breast-enlargement-safety/' },
     { label: 'Breast implant safety', href: '/breast-implant-safety/' },
@@ -1186,16 +1186,16 @@ pages.push({
   ]
 });
 
-/* ---------- About ---------- */
+/* ---------- Meet Doctors ---------- */
 pages.push({
-  url: '/about-us/', slug: 'about-us',
-  h1: 'About this website',
-  seoTitle: 'About this website | Breast Enlargement Guide',
+  url: '/meet-doctors/', slug: 'meet-doctors',
+  h1: 'Meet Doctors',
+  seoTitle: 'Meet Doctors | Breast Enlargement Guide',
   seoDescription: 'Independent, evidence-based education about breast enlargement — non-surgical and surgical options, risks, limitations, and sources.',
   bannerEyebrow: 'Independent education',
-  bannerLead: 'Clear, balanced information about breast enlargement options — what works, what does not, and what to ask.',
-  breadcrumb: [{ label: 'Home', href: '/' }, { label: 'About' }],
-  schema: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About this website', url: site.url + '/about-us/' }],
+  bannerLead: 'Reference profiles and leadership information for the clinical team.',
+  breadcrumb: [{ label: 'Meet Doctors' }],
+  schema: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Meet Doctors', url: site.url + '/meet-doctors/' }],
   blocks: [
     { type: 'prose', html:
       '<p>This website is an independent educational resource about breast enlargement. It aims to explain surgical and non-surgical options clearly, describe what the published evidence does — and does not — show, and set realistic expectations about benefits, limitations and risks.</p>' +

@@ -4,10 +4,18 @@
   "outputDirectory": "dist",
   "framework": null,
   "functions": {
-    "api/qh/admin.js": { "maxDuration": 30 },
-    "api/qh/content.js": { "maxDuration": 15 },
-    "api/qh/file/[...name].js": { "maxDuration": 15 },
-    "api/contact.js": { "maxDuration": 30 }
+    "api/qh/admin.js": {
+      "maxDuration": 30
+    },
+    "api/qh/content.js": {
+      "maxDuration": 15
+    },
+    "api/qh/file/[...name].js": {
+      "maxDuration": 15
+    },
+    "api/contact.js": {
+      "maxDuration": 30
+    }
   },
   "cleanUrls": true,
   "trailingSlash": true,
@@ -33,7 +41,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'self'; frame-src 'self' https://www.google.com https://maps.google.com; img-src 'self' data:; media-src 'self'; object-src 'none'; script-src 'self' 'sha256-DamCoPgB/VkDCPsu0R6X4sJsz1c66vGlUGBXLu04Yxg='; style-src 'self' 'unsafe-inline'"
+          "value": "default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'self'; frame-src 'self' https://www.google.com https://maps.google.com; img-src 'self' data:; media-src 'self'; object-src 'none'; script-src 'self' 'sha256-0J0RsGwLZayEXDRx+sgvWKXPOoYRvfRKOkUvovNIKxw='; style-src 'self' 'unsafe-inline'"
         }
       ]
     },
@@ -223,22 +231,22 @@
     },
     {
       "source": "/about-dr-vikas-singh/",
-      "destination": "/about-us/",
+      "destination": "/meet-doctors/",
       "permanent": true
     },
     {
       "source": "/media-and-press/",
-      "destination": "/about-us/",
+      "destination": "/meet-doctors/",
       "permanent": true
     },
     {
       "source": "/technology-and-medical-standards/",
-      "destination": "/about-us/",
+      "destination": "/meet-doctors/",
       "permanent": true
     },
     {
       "source": "/patient-photography-consent/",
-      "destination": "/about-us/",
+      "destination": "/meet-doctors/",
       "permanent": true
     },
     {
@@ -272,13 +280,18 @@
       "permanent": true
     },
     {
+      "source": "/about-us/",
+      "destination": "/meet-doctors/",
+      "permanent": true
+    },
+    {
       "source": "/doctors/",
       "destination": "/meet-doctors/",
       "permanent": true
     },
     {
       "source": "/leadership/dr-sunitha-devaraj/",
-      "destination": "/about-us/#leadership",
+      "destination": "/meet-doctors/#leadership",
       "permanent": true
     },
     {

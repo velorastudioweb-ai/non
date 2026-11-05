@@ -55,9 +55,8 @@ const VIEWPORTS = [
 /* Pages that exercise each distinct layout family. */
 const KEY_PAGES = [
   '/', '/non-surgical/', '/surgical-breast-enhancement/',
-  '/breast-enhancement-comparison/', '/about-us/', '/about-dr-vikas-singh/',
-  '/our-team/', '/locations/', '/before-after-gallery/', '/video-gallery/',
-  '/faqs/', '/book-consultation/', '/blogs/',
+  '/breast-enhancement-comparison/', '/meet-doctors/', '/doctors/dr-vikas-singh/',
+  '/locations/', '/faqs/', '/blogs/',
   '/blogs/surgical-vs-non-surgical-breast-enhancement/',
   '/non-surgical/dermal-fillers/', '/surgical/breast-augmentation/',
   '/privacy-policy/', '/404.html'

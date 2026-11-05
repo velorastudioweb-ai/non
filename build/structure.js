@@ -400,24 +400,8 @@ const homeOrder = [
 finalHome.blocks = homeOrder.flatMap((match) => finalHome.blocks.filter(match));
 const quantumHealth = require('./quantum-health');
 
-function extractQuantumBody(page) {
-  const html = page.blocks[0].html;
-  const wrapper = '<main class="qh"><div class="qh-wrap">';
-  const note = '<p class="qh-note">Medical services and promotional information require appropriate professional assessment and verification before publication. No treatment outcome is guaranteed.</p>';
-  const wrapperStart = html.indexOf(wrapper);
-  if (wrapperStart < 0 || !html.endsWith('</div></main>')) {
-    throw new Error('Unexpected Quantum Health page structure: ' + page.url);
-  }
-  return {
-    body: html.slice(wrapperStart + wrapper.length)
-      .replace(note, '')
-      .replace(/<\/div><\/main>$/, '')
-      .replace(/<h1>/g, '<h2>').replace(/<\/h1>/g, '</h2>')
-  };
-}
-const doctorDirectory = extractQuantumBody(quantumHealth.pages.find((p) => p.url === '/meet-doctors/' || p.url === '/doctors/'));
 const escapeAboutText = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav><p class="eyebrow">Independent education</p><h2>About this website</h2><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="About sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
+const aboutHero = `<header class="qh-about-hero"><div><nav class="qh-about-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Meet Doctors</span></nav><p class="eyebrow">Independent education</p><h2>Meet Doctors</h2><p>An independent resource on breast-enlargement options, the evidence behind them, and important limits and safety questions. This website does not provide treatment or medical consultations.</p></div><nav class="qh-about-links" aria-label="Meet Doctors sections"><a href="#our-doctors"><span>01</span><strong>Our Doctors</strong><span aria-hidden="true">↘</span></a><a href="#leadership"><span>02</span><strong>Leadership</strong><span aria-hidden="true">↘</span></a></nav></header>`;
 const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
   const initials = doctor.name.replace(/^Dr\.\s*/i, '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
   const expertise = (doctor.specialisations && doctor.specialisations.length ? doctor.specialisations : [doctor.designation])
@@ -436,7 +420,7 @@ const aboutDoctorCards = quantumHealth.doctors.map((doctor) => {
 }).join('');
 const aboutBody = `${aboutHero}
   <section id="our-doctors" aria-labelledby="our-doctors-heading">
-    <div class="qh-about-section-head"><div><p class="eyebrow">Reference profiles</p><h2 id="our-doctors-heading">Our Doctors</h2></div><p class="qh-about-note">Names, profile-listed expertise, and qualifications are transcribed from supplied profiles for reference only. They have not been independently verified. This website does not represent or endorse the clinicians listed, provide treatment, or arrange appointments. Check credentials and affiliations with the relevant professional registers. <a class="text-link" href="/meet-doctors/">Meet the full clinical team</a>.</p></div>
+    <div class="qh-about-section-head"><div><p class="eyebrow">Reference profiles</p><h2 id="our-doctors-heading">Our Doctors</h2></div><p class="qh-about-note">Names, profile-listed expertise, and qualifications are transcribed from supplied profiles for reference only. They have not been independently verified. This website does not represent or endorse the clinicians listed, provide treatment, or arrange appointments. Check credentials and affiliations with the relevant professional registers.</p></div>
     <div class="qh-grid">${aboutDoctorCards}</div>
     <p class="qh-about-note">Media coverage: award-event video supplied by the Quantum Health team, credited by them to Zee Business and Times Magazine, is published on <a href="/doctors/dr-vikas-singh/#media">Dr. Vikas Singh's profile page</a>. It is an awards appearance rather than an interview, and this website does not verify the original broadcast or the statements made in it.</p>
   </section>
@@ -446,9 +430,9 @@ const aboutBody = `${aboutHero}
   <section id="contact" class="qh-about-contact" aria-labelledby="about-contact-heading">
     <div><p class="eyebrow">Stay in touch</p><h2 id="about-contact-heading">Questions or corrections?</h2><p class="qh-about-note">Contact us about website content, sources, or accessibility.</p></div><a class="qh-btn" href="/contact/">Contact us</a>
   </section>`;
-const about = get('/about-us/');
-about.h1 = 'About this website';
-about.seoTitle = 'About this website | Breast Enlargement Guide';
+const about = get('/meet-doctors/');
+about.h1 = 'Meet Doctors';
+about.seoTitle = 'Meet Doctors | Breast Enlargement Guide';
 about.seoDescription = 'Learn about this independent educational website on breast-enlargement options, evidence, limitations, and safety.';
 about.bannerEyebrow = 'Independent education';
 about.bannerLead = 'An evidence-aware guide to breast-enlargement options, limitations, and safety.';
@@ -457,9 +441,9 @@ about.bannerWidth = 1991;
 about.bannerHeight = 790;
 about.bannerAlt = 'Breast health education workspace: an open notebook, anatomical study materials and reference texts arranged on a quiet desk for independent patient education';
 about.showBanner = true;
-about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/about-us/' }];
+about.schema = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: about.h1, url: site.url + '/meet-doctors/' }];
 about.blocks = [{ type: 'prose', wide: true, html: '<div class="qh qh-about"><div class="qh-wrap">' + aboutBody + '</div></div>' }];
-const doctorProfiles = quantumHealth.pages.filter((p) => p.url === '/meet-doctors/' || p.url.startsWith('/doctors/'));
+const doctorProfiles = quantumHealth.pages.filter((p) => p.url.startsWith('/doctors/'));
 const blogCards = publishedBlogs.articles.map((a) => `<article class="blog-card" data-category="${a.category}" data-search="${(a.title+' '+a.category+' '+a.description+' '+a.keyword).toLowerCase()}"><img src="${a.image}" alt="${escapeAboutText('Editorial illustration for the article ' + a.title)}" width="${a.imageWidth}" height="${a.imageHeight}" loading="lazy" decoding="async"><div><p class="eyebrow">${a.category}</p><h2><a href="/blogs/${a.slug}/">${a.title}</a></h2><p>${a.description}</p><p class="blog-meta">${a.date} · ${a.readingMinutes} min read</p><a class="text-link" href="/blogs/${a.slug}/">Read article</a></div></article>`).join('');
 const blogsIndex = { url: '/blogs/', slug: 'blogs', h1: 'Breast Enlargement Blogs', showBanner: false, seoTitle: 'Breast Enlargement Blogs | Quantum Health', seoDescription: 'Evidence-aware breast enlargement education and illustrative patient-perspective articles.', breadcrumb: [{ label: 'Blogs' }], schema: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Breast Enlargement Blogs', url: site.url + '/blogs/' }], blocks: [{ type: 'prose', wide: true, html: '' }] };
 finalHome.schema[0].name = site.name;
@@ -498,10 +482,9 @@ finalSite.nav = [
     shortLabel: ['Surgical', 'Non-surgical'][i],
     children: [surgical, nonsurgical][i].map(([href, label]) => ({ href, label: menuLabel(label) }))
   })),
-  { label: 'Meet Doctors', href: '/meet-doctors/' },
   { label: 'Blogs', href: '/blogs/' },
   { label: 'Locations', href: '/locations/' },
-  { label: 'About', href: '/about-us/' },
+  { label: 'Meet Doctors', href: '/meet-doctors/' },
   { label: 'Contact us', href: '/contact/' }
 ];
 finalSite.footerPatient = education.filter(([u]) => ['/breast-enlargement-safety/', '/research/', '/references/', '/glossary/', '/faqs/'].includes(u)).map(([href, label]) => ({ href, label }));
@@ -513,8 +496,9 @@ finalSite.medicalDisclaimerShort = '';
 const retired = require('./retired-routes');
 redirects.push(...retired);
 redirects.push(
+  { from: '/about-us/', to: '/meet-doctors/' },
   { from: '/doctors/', to: '/meet-doctors/' },
-  { from: '/leadership/dr-sunitha-devaraj/', to: '/about-us/#leadership' }
+  { from: '/leadership/dr-sunitha-devaraj/', to: '/meet-doctors/#leadership' }
 );
 redirects.push(
   { from: '/wiki/breast-augmentation-scars/', to: '/surgical/breast-augmentation/#scars' },

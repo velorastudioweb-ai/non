@@ -20,7 +20,7 @@ const widths = arg('--widths') ? arg('--widths').split(',').map(Number) : baseli
 const navigationTimeout = Number(arg('--navigation-timeout') || 60000);
 const heights = { 320: 568, 375: 812, 390: 844, 430: 932, 768: 1024, 1024: 768, 1440: 900, 1920: 1080 };
 const routes = arg('--routes') ? arg('--routes').split(',') : args.includes('--quick') || baseline
-  ? ['/', '/surgical-breast-enlargement/', '/breast-implants/', '/non-surgical-breast-enlargement/', '/doctors/dr-vikas-singh/']
+  ? ['/', '/surgical-breast-enlargement/', '/breast-implants/', '/non-surgical-breast-enlargement/', '/meet-doctors/']
   : [...allPages.map(p => p.url), '/404.html'];
 
 async function main() {

@@ -139,7 +139,7 @@ files.forEach((f) => {
     .map((match) => match[2]);
   if (isRedirectStub) {
     if (inlineExecutableScripts.length) errors.push(rel + ': redirect stub must rely on meta refresh, not inline JavaScript');
-  } else if (inlineExecutableScripts.length !== 1 || inlineExecutableScripts[0] !== "document.documentElement.className += ' js';") {
+  } else if (inlineExecutableScripts.length !== 1 || !/^document\.documentElement\.className \+= ' js';/.test(inlineExecutableScripts[0])) {
     errors.push(rel + ': unexpected inline executable script');
   }
   if (!isRedirectStub) {

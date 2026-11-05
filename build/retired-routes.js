@@ -2,10 +2,10 @@
 // Historical incoming routes with relevant replacements. Unmatched retired
 // pages are served by the existing 404 handler.
 module.exports = [
-  { from: '/about-dr-vikas-singh/', to: '/about-us/' },
-  { from: '/media-and-press/', to: '/about-us/' },
-  { from: '/technology-and-medical-standards/', to: '/about-us/' },
-  { from: '/patient-photography-consent/', to: '/about-us/' },
+  { from: '/about-dr-vikas-singh/', to: '/meet-doctors/' },
+  { from: '/media-and-press/', to: '/meet-doctors/' },
+  { from: '/technology-and-medical-standards/', to: '/meet-doctors/' },
+  { from: '/patient-photography-consent/', to: '/meet-doctors/' },
   { from: '/our-team/', to: '/breast-enlargement-safety/#choosing-a-surgeon' },
   { from: '/before-after-gallery/', to: '/understanding-breast-enlargement/' },
   { from: '/video-gallery/', to: '/education-research/' },

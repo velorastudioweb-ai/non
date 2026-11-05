@@ -277,7 +277,7 @@ async function main() {
   const PORT = 8145;
   const routes = quick ? ['/', '/non-surgical/'] :
     ['/', '/non-surgical/', '/surgical-breast-enlargement/', '/faqs/',
-      '/contact/', '/blogs/', '/about-us/', '/privacy-policy/',
+      '/contact/', '/blogs/', '/meet-doctors/', '/privacy-policy/',
       '/non-surgical/hyaluronic-acid-fillers/',
       '/surgical/mastectomy-chest-surgery/'];
   const viewports = [{ w: 390, h: 844, tag: '390' }, { w: 768, h: 1024, tag: '768' }, { w: 1440, h: 900, tag: '1440' }];

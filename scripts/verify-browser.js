@@ -4,11 +4,22 @@
  * boots and logs in. Run with the dev server on :8123. */
 const { chromium } = require('playwright-core');
 const BASE = 'http://localhost:8123';
+const PW = process.env.QH_VERIFY_PW || '';
+const CHROME_PATH = process.env.CHROME_PATH ||
+  (process.platform === 'win32'
+    ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+    : process.platform === 'darwin'
+      ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+      : '/usr/bin/google-chrome');
+if (!PW) {
+  console.error('Set QH_VERIFY_PW to the admin verification password.');
+  process.exit(1);
+}
 let pass = 0, fail = 0;
 const ok = (name, cond, extra) => { if (cond) { pass++; console.log('PASS | ' + name); } else { fail++; console.log('FAIL | ' + name + (extra ? ' | ' + String(extra).slice(0, 160) : '')); } };
 
 (async () => {
-  const browser = await chromium.launch({ executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' });
+  const browser = await chromium.launch({ executablePath: CHROME_PATH });
   const ctx = await browser.newContext();
   const page = await ctx.newPage();
   const errors = [];
@@ -20,7 +31,7 @@ const ok = (name, cond, extra) => { if (cond) { pass++; console.log('PASS | ' + 
   await pubPage.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
   const result = await pubPage.evaluate(async (base) => {
     const hdr = { 'content-type': 'application/json', 'x-qh-request': '1' };
-    const login = await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'login', email: 'rjagadeeswara66@gmail.com', password: 'QhGold#2026Admin!x7' }) }).then((r) => r.json());
+    const login = await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'login', email: 'rjagadeeswara66@gmail.com', password: PW }) }).then((r) => r.json());
     // s0.f1 = the h1 inside the page hero (f0 is the eyebrow paragraph)
     const doc = { seo: null, sections: { s0: { fields: { f1: { text: 'MEET THE QUANTUM HEALTH CLINICAL TEAM' } } } }, order: null, added: [] };
     await fetch(base + '/api/qh/admin', { method: 'POST', headers: hdr, credentials: 'include', body: JSON.stringify({ action: 'page.saveDraft', slug: 'meet-doctors', doc }) });
@@ -75,7 +86,7 @@ const ok = (name, cond, extra) => { if (cond) { pass++; console.log('PASS | ' + 
   await admin.waitForSelector('#login-form', { timeout: 10000 });
   ok('admin panel loads at /admin/', await admin.$eval('#login-email', (n) => !!n));
   await admin.fill('#login-email', 'rjagadeeswara66@gmail.com');
-  await admin.fill('#login-password', 'QhGold#2026Admin!x7');
+  await admin.fill('#login-password', PW);
   await admin.click('#login-form button[type=submit]');
   await admin.waitForSelector('#shell:not(.hidden)', { timeout: 15000 }).catch(() => {});
   const shellVisible = await admin.$eval('#shell', (n) => !n.classList.contains('hidden')).catch(() => false);

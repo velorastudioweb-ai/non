@@ -8,18 +8,10 @@
  'use strict';
  var $ = function (s,c){ return (c || document).querySelector(s); };
  var $$ = function (s,c){ return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
- /* Keep the initial loading screen brief: the document is usable as soon as
-    its DOM is ready, so it must not wait for below-the-fold images. */
-  var preLoader = $('.pre-loader');
-  var markPageReady = function () {
-   window.requestAnimationFrame(function () {
-    document.documentElement.classList.add('page-ready');
-    if (preLoader) preLoader.setAttribute('aria-hidden','true');
-   });
-  };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', markPageReady, { once: true });
-  else markPageReady();
-  window.addEventListener('pageshow', markPageReady);
+ /* Content is marked ready synchronously in <head>; keep the class present
+    after bfcache restores so animations never hide content. */
+  document.documentElement.classList.add('page-ready');
+  window.addEventListener('pageshow', function () { document.documentElement.classList.add('page-ready'); });
  // Incoming source-library links reveal their collapsed collection.
  function revealSourceHash(){
   var id;

@@ -1,5 +1,6 @@
 node_modules/
 .vercel
+.vercel/output
 build.log
 .env
 .env.*
@@ -8,6 +9,10 @@ build.log
 assets-src/
 build/_qa-snapshot/
 build/_diag*.js
+tmp-*.js
+tmp-*.py
+tmp-*.ps1
+tmp-*.html
 docs/restructure-audit/before.zip
 docs/restructure-audit/complete-pdf.txt
 docs/performance-audit/**/*.png

@@ -47,8 +47,16 @@ const notFound = {
 /* ---------- generate ---------- */
 function build() {
   verifyImages();
-  if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
-  ensureDir(DIST);
+  if (fs.existsSync(DIST)) {
+    // Remove contents rather than the directory itself to avoid EPERM on Windows
+    // when the directory or a parent is held open by a file watcher / server.
+    for (const entry of fs.readdirSync(DIST, { withFileTypes: true })) {
+      const child = path.join(DIST, entry.name);
+      fs.rmSync(child, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+    }
+  } else {
+    ensureDir(DIST);
+  }
 
   const all = allPages;
   const routes = new Set();
@@ -73,7 +81,10 @@ function build() {
   // admin panel (static SPA; all data flows through /api/qh)
   copyDir(path.join(PUB, 'admin'), path.join(DIST, 'admin'));
 
-  // copy any root-level static files from public/ (e.g. .htaccess)
+  // copy any root-level static files from public/ (e.g. .htaccess, favicon,
+  // full-size source images linked from figures and captions). Keep root raster
+  // files even when a responsive manifest entry exists, because editorial
+  // captions may link to the original full-resolution asset.
   for (const entry of fs.readdirSync(PUB, { withFileTypes: true })) {
     if (entry.isDirectory()) continue;
     fs.copyFileSync(path.join(PUB, entry.name), path.join(DIST, entry.name));

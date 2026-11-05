@@ -3180,3 +3180,29 @@ body.page-about-us .qh-about .qh-doctor-card__image {
 @media (prefers-reduced-motion: reduce) {
   .location-card__wa, .city-panel__wa { transition: none; }
 }
+
+/* Mobile / touch performance: disable the heaviest paint effects on devices
+   where they cost the most battery and main-thread time. The design stays
+   intact because these are subtle tints and blurs that are hard to see at
+   small sizes or on lower-resolution screens. */
+@media (hover: none), (pointer: coarse), (max-width: 767px) {
+  .site-header.is-scrolled {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .hero__bg img,
+  .page-banner__art img,
+  .media-frame img,
+  .card__media img,
+  .gallery-item img,
+  .figure-feature__media img,
+  .location-card__image {
+    filter: none !important;
+  }
+  .lightbox,
+  .mobile-nav,
+  .nav__item--has-menu.is-open .nav__menu {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

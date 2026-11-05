@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T17:15:13.047Z",
+ "generatedAt": "2026-11-05T01:53:11.401Z",
  "findings": [
   {
    "page": "/blogs/",
@@ -13,11 +13,6 @@
   },
   {
    "page": "/doctors/dr-subramini/",
-   "pattern": "verification-pending",
-   "count": 1
-  },
-  {
-   "page": "/meet-doctors/",
    "pattern": "verification-pending",
    "count": 1
   },

@@ -56,25 +56,37 @@
   /* ---------- element identification ---------- */
   var FIELD_SELECT = 'h1,h2,h3,h4,h5,p,li,figcaption,blockquote,a[href],img';
   var sections = []; // {el, sid, fields:[{el,fid,type}]}
-  function indexMain() {
+  function indexMain(done) {
     var main = document.getElementById('main');
-    if (!main) return;
+    if (!main) { if (done) done(); return; }
     sections = [];
     var kids = Array.prototype.slice.call(main.children).filter(function (el) { return el.nodeType === 1 && !el.hasAttribute('data-qh-added'); });
-    kids.forEach(function (el, i) {
-      var sid = 's' + i;
-      el.setAttribute('data-qh-s', sid);
-      var fields = [];
-      var nodes = el.querySelectorAll(FIELD_SELECT);
-      Array.prototype.slice.call(nodes).forEach(function (n) {
-        if (n.closest('[hidden]') && !EDIT) { /* still index hidden */ }
-        var tag = n.tagName;
-        var fid = 'f' + fields.length;
-        n.setAttribute('data-qh-f', sid + '.' + fid);
-        fields.push({ el: n, fid: fid, type: tag === 'IMG' ? 'img' : (tag === 'A' ? 'link' : 'text') });
-      });
-      sections.push({ el: el, sid: sid, fields: fields });
-    });
+    var i = 0;
+    var BATCH = 8;
+    function nextBatch() {
+      var end = Math.min(kids.length, i + BATCH);
+      for (; i < end; i++) {
+        var el = kids[i];
+        var sid = 's' + i;
+        el.setAttribute('data-qh-s', sid);
+        var fields = [];
+        var nodes = el.querySelectorAll(FIELD_SELECT);
+        Array.prototype.slice.call(nodes).forEach(function (n) {
+          if (n.closest('[hidden]') && !EDIT) { /* still index hidden */ }
+          var tag = n.tagName;
+          var fid = 'f' + fields.length;
+          n.setAttribute('data-qh-f', sid + '.' + fid);
+          fields.push({ el: n, fid: fid, type: tag === 'IMG' ? 'img' : (tag === 'A' ? 'link' : 'text') });
+        });
+        sections.push({ el: el, sid: sid, fields: fields });
+      }
+      if (i < kids.length) {
+        window.requestAnimationFrame(nextBatch);
+      } else if (done) {
+        window.requestAnimationFrame(done);
+      }
+    }
+    nextBatch();
   }
   function sectionByName(sid) { for (var i = 0; i < sections.length; i++) if (sections[i].sid === sid) return sections[i]; return null; }
   function fieldOf(sec, fid) { for (var i = 0; i < sec.fields.length; i++) if (sec.fields[i].fid === fid) return sec.fields[i]; return null; }
@@ -404,26 +416,34 @@
 
   /* ---------- boot ---------- */
   function boot() {
-    indexMain();
-    if (EDIT) {
-      PRISTINE_MAIN = document.getElementById('main') ? document.getElementById('main').innerHTML : null;
-      PRISTINE_HEADER = document.querySelector('header.site-header') ? document.querySelector('header.site-header').innerHTML : null;
-      PRISTINE_FOOTER = document.querySelector('footer.site-footer') ? document.querySelector('footer.site-footer').innerHTML : null;
-      PRISTINE_QUICK = Array.prototype.slice.call(document.querySelectorAll('.mobile-nav__quick,.mobile-quickbar')).map(function (n) { return n.outerHTML; });
-      activeOutline();
-      // The admin parent already holds the draft document (page.get) and pushes
-      // it back via postMessage; no content fetch is needed in edit mode.
-      send({ type: 'qh:ready', structure: structure() });
-      return;
-    }
-    fetch('/api/qh/content/?page=' + encodeURIComponent(location.pathname), { credentials: 'same-origin' })
-      .then(function (r) { return r.ok ? r.json() : {}; })
-      .then(function (data) {
-        if (data.site) applySite(data.site);
-        if (data.overlay) applyOverlay(data.overlay);
-        window.__QH_APPLIED = { overlay: !!data.overlay, sections: data.overlay ? Object.keys(data.overlay.sections || {}) : [] };
-      })
-      .catch(function (e) { if (window.console) console.warn('qh-cms overlay failed', e && e.message); });
+    indexMain(function () {
+      if (EDIT) {
+        PRISTINE_MAIN = document.getElementById('main') ? document.getElementById('main').innerHTML : null;
+        PRISTINE_HEADER = document.querySelector('header.site-header') ? document.querySelector('header.site-header').innerHTML : null;
+        PRISTINE_FOOTER = document.querySelector('footer.site-footer') ? document.querySelector('footer.site-footer').innerHTML : null;
+        PRISTINE_QUICK = Array.prototype.slice.call(document.querySelectorAll('.mobile-nav__quick,.mobile-quickbar')).map(function (n) { return n.outerHTML; });
+        activeOutline();
+        // The admin parent already holds the draft document (page.get) and pushes
+        // it back via postMessage; no content fetch is needed in edit mode.
+        send({ type: 'qh:ready', structure: structure() });
+        return;
+      }
+      fetch('/api/qh/content/?page=' + encodeURIComponent(location.pathname), { credentials: 'same-origin' })
+        .then(function (r) { return r.ok ? r.json() : {}; })
+        .then(function (data) {
+          if (data.site) applySite(data.site);
+          if (data.overlay) applyOverlay(data.overlay);
+          window.__QH_APPLIED = { overlay: !!data.overlay, sections: data.overlay ? Object.keys(data.overlay.sections || {}) : [] };
+        })
+        .catch(function (e) { if (window.console) console.warn('qh-cms overlay failed', e && e.message); });
+    });
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+  // Defer CMS work: the server-rendered page is correct immediately; the runtime
+  // overlay is a progressive enhancement that should not block the main thread
+  // during the critical initial paint.
+  function scheduleBoot() {
+    if (window.requestIdleCallback) window.requestIdleCallback(boot, { timeout: 800 });
+    else window.setTimeout(boot, 1);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scheduleBoot); else scheduleBoot();
 })();

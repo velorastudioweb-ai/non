@@ -448,19 +448,28 @@
     });
   }
 
+  function whenIdle(fn, timeout) {
+    if (window.requestIdleCallback) return window.requestIdleCallback(fn, { timeout: timeout || 500 });
+    return window.setTimeout(fn, timeout || 1);
+  }
+
   function start() {
     if (initialized) return;
     initialized = true;
-    setupSplitHeadings();
     setupReveals();
     if (!reducedMotion.matches) root.classList.add('motion-ready');
     setupScrollProgress();
     setupHeroParallax();
     setupScrollLinkedMedia();
-    setupSpotlight();
-    setupTouchFeedback();
-    setupMagneticButtons();
     setupPageTransitions();
+    // Split headings and cursor-driven effects are visual polish only; defer
+    // them so the main thread stays free during the critical initial paint.
+    whenIdle(function () {
+      setupSplitHeadings();
+      setupSpotlight();
+      setupMagneticButtons();
+      setupTouchFeedback();
+    }, 300);
   }
 
   function boot() {
