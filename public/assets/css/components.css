@@ -2494,6 +2494,7 @@ body.nav-open .mobile-quickbar { display: none; }
   background: var(--burgundy-darker);
 }
 .blog-article__figure img { display: block; width: 100%; max-height: min(58vw, 34rem); object-fit: contain; }
+.blog-article__figure-btn { display: block; width: 100%; height: 100%; padding: 0; border: none; background: none; cursor: zoom-in; }
 @media (max-width: 800px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .blog-grid { grid-template-columns: 1fr; } }
 
