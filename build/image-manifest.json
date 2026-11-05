@@ -2839,29 +2839,6 @@
       }
     ]
   },
-  "/Screenshot 2026-10-28 140539.png": {
-    "width": 426,
-    "height": 452,
-    "sha256": "ef08d3625cc26d47f3e02ae23a5be1c349de114bb2b1aabe85edeb01277963ba",
-    "bytes": 283932,
-    "format": "webp",
-    "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
-    "variants": [
-      {
-        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-320.webp",
-        "width": 320,
-        "height": 340,
-        "bytes": 12518
-      },
-      {
-        "src": "/assets/responsive/dr-sunitha-devaraj-ef08d3625cc2-426.webp",
-        "width": 426,
-        "height": 452,
-        "bytes": 17692
-      }
-    ],
-    "canonicalSource": "/dr-sunitha-devaraj.png"
-  },
   "/sculptra.webp": {
     "width": 1254,
     "height": 1254,

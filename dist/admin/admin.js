@@ -96,7 +96,7 @@ window.addEventListener('hashchange', route);
 const MODULES = [
   ['dashboard', 'Dashboard'], ['pages', 'All Pages'], ['editor', 'Visual Page Editor'],
   ['home', 'Homepage'], ['surgical', 'Surgical Treatments'], ['nonsurgical', 'Non-Surgical Treatments'],
-  ['doctors', 'Meet Doctors'], ['gallery', 'Before & After'], ['media', 'Media Library'],
+  ['doctors', 'Dr. Vikas Singh & Team'], ['gallery', 'Before & After'], ['media', 'Media Library'],
   ['locations', 'Locations & Branches'], ['contacts', 'Contact & WhatsApp'], ['enquiries', 'Forms & Enquiries'],
   ['nav', 'Navigation & Footer'], ['seo', 'SEO Manager'], ['appearance', 'Global Appearance'],
   ['components', 'Reusable Components'], ['placeholders', 'Placeholder Audit'], ['revisions', 'Revision History'],
@@ -600,18 +600,18 @@ function copy(text) { navigator.clipboard.writeText(location.origin + text).then
 
 /* ---- doctors ---- */
 VIEWS.doctors = async function () {
-  $('#view-title').textContent = 'Meet Doctors';
+  $('#view-title').textContent = 'Dr. Vikas Singh & Team';
   const tb = $('#top-actions'); tb.innerHTML = '';
   const data = await api('doctors.get');
   let list = (data.list || []).slice().sort((a, b) => (a.order || 0) - (b.order || 0));
   const v = $('#view');
   tb.appendChild(el('button', { class: 'btn ghost small', onclick: async () => { try { await api('doctors.save', { list }); toast('Doctors saved'); } catch (e) { toast(e.message, true); } } }, 'Save'));
-  tb.appendChild(el('button', { class: 'btn primary small', onclick: async () => { try { await api('doctors.save', { list, publish: true }); toast('Doctors published to /meet-doctors/'); } catch (e) { toast(e.message, true); } } }, 'Save & publish page'));
+  tb.appendChild(el('button', { class: 'btn primary small', onclick: async () => { try { await api('doctors.save', { list, publish: true }); toast('Doctors published to /about-us/'); } catch (e) { toast(e.message, true); } } }, 'Save & publish page'));
   function draw() {
     v.innerHTML = '';
-    const card = el('div', { class: 'card' });
+    const card = el('div', { class: 'card' }));
     card.appendChild(el('h3', {}, 'Doctor profiles'));
-    card.appendChild(el('p', { class: 'muted small' }, 'Only enter qualifications and awards that the Quantum Health team has supplied. Records marked verification-pending stay labelled as supplied and are never published as verified. Publishing updates the live Meet Doctors page immediately.'));
+    card.appendChild(el('p', { class: 'muted small' }, 'Only enter qualifications and awards that the Quantum Health team has supplied. Records marked verification-pending stay labelled as supplied and are never published as verified. Publishing updates the live About page doctors grid immediately.'));
     list.forEach((d, i) => {
       const row = el('div', { class: 'list-row' });
       row.appendChild(el('b', { class: 'grow' }, d.name));
