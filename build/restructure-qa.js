@@ -10,7 +10,7 @@ const html = (url) => fs.readFileSync(path.join(dist, url.replace(/^\//, ''), 'i
 assert.equal(pages.size, allPages.length, 'Canonical routes must be unique');
 assert.equal(surgical.length, 9);
 assert.equal(nonsurgical.length, 10);
-assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Blogs', 'Locations', 'Dr. Vikas Singh', 'Contact us']);
+assert.deepEqual(site.nav.map((n) => n.label), ['Home', 'Surgical Breast Enlargement', 'Non-Surgical Breast Enlargement', 'Blogs', 'Locations', 'Dr. Vikas Singh', 'About', 'Contact us']);
 const doctorsNav = site.nav.find((n) => n.label === 'Dr. Vikas Singh');
 assert(doctorsNav && doctorsNav.href === '/doctors/dr-vikas-singh/', 'Primary navigation must link to the Dr. Vikas Singh profile page');
 assert(!site.nav.some((n) => n.href === '/education-research/'), 'Education & Research must not remain in the primary navigation');

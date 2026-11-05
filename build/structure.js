@@ -488,10 +488,11 @@ finalSite.nav = [
   { label: 'Blogs', href: '/blogs/' },
   { label: 'Locations', href: '/locations/' },
   { label: 'Dr. Vikas Singh', href: '/doctors/dr-vikas-singh/' },
+  { label: 'About', href: '/about-us/' },
   { label: 'Contact us', href: '/contact/' }
 ];
 finalSite.footerPatient = education.filter(([u]) => ['/breast-enlargement-safety/', '/research/', '/references/', '/glossary/', '/faqs/'].includes(u)).map(([href, label]) => ({ href, label }));
-finalSite.footerExplore = sections.concat([{ label: 'Dr. Vikas Singh', href: '/doctors/dr-vikas-singh/' }], finalSite.footerPatient);
+finalSite.footerExplore = sections.concat([{ label: 'Dr. Vikas Singh', href: '/doctors/dr-vikas-singh/' }, { label: 'About', href: '/about-us/' }], finalSite.footerPatient);
 finalSite.medicalDisclaimerShort = '';
 
 // Apply canonical replacements to every nested content field (including authored
