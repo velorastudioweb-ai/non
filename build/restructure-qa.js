@@ -22,9 +22,9 @@ const aboutHtml = html('/about-us/');
 assert(aboutHtml.includes('id="our-doctors"'), 'About must contain the doctors directory');
 assert(aboutHtml.includes('id="leadership"'), 'About must contain the leadership reference');
 assert(aboutHtml.includes('id="contact"') && aboutHtml.includes('href="/contact/">Contact us</a>'), 'About must end with a website-contact CTA');
-assert.equal((aboutHtml.match(/class="qh-card qh-doctor-card"/g) || []).length, 9, 'About must retain all doctor cards');
-assert.equal((aboutHtml.match(/<h4>Profile-listed expertise<\/h4>/g) || []).length, 9, 'Each doctor card must label supplied expertise');
-assert.equal((aboutHtml.match(/<h4>Profile-listed qualifications<\/h4>/g) || []).length, 9, 'Each doctor card must label supplied qualifications');
+assert.equal((aboutHtml.match(/class="qh-card qh-doctor-card"/g) || []).length, 10, 'About must retain all doctor cards');
+assert.equal((aboutHtml.match(/<h4>Profile-listed expertise<\/h4>/g) || []).length, 10, 'Each doctor card must label supplied expertise');
+assert.equal((aboutHtml.match(/<h4>Profile-listed qualifications<\/h4>/g) || []).length, 10, 'Each doctor card must label supplied qualifications');
 const { doctors } = require('./quantum-health');
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 for (const doctor of doctors) {
