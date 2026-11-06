@@ -8,7 +8,10 @@
 <link rel="stylesheet" href="/admin/admin.css">
 </head>
 <body>
-<div id="login" class="login-wrap hidden">
+<!-- Login is visible by default: admin.js hides it only after the session check
+     confirms a signed-in admin. This prevents any blank screen while the session
+     API is slow, cold or failing. -->
+<div id="login" class="login-wrap">
   <form id="login-form" class="login-card" autocomplete="on">
     <div class="login-brand"><span class="dot"></span> Quantum Health <em>CMS</em></div>
     <p class="muted" id="login-note">Sign in with the administrator account.</p>
